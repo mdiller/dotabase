@@ -1,4 +1,4 @@
-# Dotabase <img align="right" src="dotabase.png"/>
+# Dotabase
 An sqlite database representing much of the data from dota2's game files, and a folder holding files extracted from the dota2 vpk.
 
 ## Builder
@@ -10,5 +10,5 @@ The files extracted from dota's vpk are all of the ones of the following types:
 - mp3
 - png
 
-# dotabase.py
+## dotabase.py
 This is a python sqlalchemy representation/interface for the dotabase.
