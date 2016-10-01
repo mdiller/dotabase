@@ -4,7 +4,10 @@ from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Tabl
 from sqlalchemy.orm import sessionmaker, relationship
 import os
 
-# built using: http://docs.sqlalchemy.org/en/latest/orm/tutorial.html
+# The absolute path to the dotabase Python package
+dotabase_dir = os.path.dirname(os.path.abspath(__file__))
+# The filesystem location of the SQLite database file
+dotabase_db = os.path.join(dotabase_dir, 'dotabase.db')
 
 Base = declarative_base()
 
@@ -93,10 +96,8 @@ class CriteriArg(Base):
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
-def dotabase_session(recreate=True):
-	if recreate and os.path.exists("dotabase.db"):
-		os.remove("dotabase.db")
-	engine = create_engine('sqlite:///dotabase.db')
+def dotabase_session():
+	engine = create_engine('sqlite:///' + dotabase_db)
 	Base.metadata.create_all(engine)
 	Session = sessionmaker(bind=engine)
 	return Session()
