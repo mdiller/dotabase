@@ -62,6 +62,7 @@ class Response(Base):
 	mp3 = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
 	text = Column(String)
+	text_simple = Column(String)
 
 	hero = relationship("Hero", back_populates="responses")
 	groups = relationship("ResponseRule", secondary=responsegroupings_table, back_populates="responses")
