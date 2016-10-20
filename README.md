@@ -1,5 +1,5 @@
-# Dotabase
-An sqlite database representing much of the data from dota2's game files, and a folder holding files extracted from the dota2 vpk. As of now, the dota-vpk folder is not included, as it is is 4.2GB and currently holds 89,898 files (git doesnt like that). At a later time, this folder will become available somewhere.
+# Dotabase<img align="right" src="dotabase.png"/>
+An sqlite database representing much of the data from dota2's game files, and an sqlalchemy representation to be used with it.
 
 ## Description
 The goal of this project is to provide an interface into dota's game files so that applications can be built around them. This repository will be kept up to date with dota so that changes to the game are available immediately. 
