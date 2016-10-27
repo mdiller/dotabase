@@ -43,6 +43,7 @@ class Hero(Base):
 	attr_agility_gain = Column(Float)
 
 	responses = relationship("Response", back_populates="hero")
+	abilities = relationship("Ability", back_populates="hero")
 
 	json_data = Column(String)
 
@@ -54,12 +55,16 @@ class Ability(Base):
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	ability_slot = Column(Integer)
 	icon = Column(String)
 	localized_name = Column(String)
 	description = Column(String)
 	lore = Column(String)
 
 	json_data = Column(String)
+
+	hero = relationship("Hero", back_populates="abilities")
 
 	def __repr__(self):
 		return "Ability: %s" % (self.localized_name)
