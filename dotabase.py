@@ -49,6 +49,22 @@ class Hero(Base):
 	def __repr__(self):
 		return "Hero: %s" % (self.localized_name)
 
+class Ability(Base):
+	__tablename__ = 'abilities'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	icon = Column(String)
+	localized_name = Column(String)
+	description = Column(String)
+	lore = Column(String)
+
+	json_data = Column(String)
+
+	def __repr__(self):
+		return "Ability: %s" % (self.localized_name)
+
+
 class Response(Base):
 	__tablename__ = 'responses'
 
