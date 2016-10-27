@@ -49,11 +49,6 @@ class Hero(Base):
 	def __repr__(self):
 		return "Hero: %s" % (self.localized_name)
 
-responsegroupings_table = Table('responsegroupings', Base.metadata,
-    Column('response_fullname', Integer, ForeignKey('responses.fullname')),
-    Column('responserule_name', Integer, ForeignKey('responserules.name'))
-)
-
 class Response(Base):
 	__tablename__ = 'responses'
 
@@ -63,20 +58,12 @@ class Response(Base):
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
 	text = Column(String)
 	text_simple = Column(String)
+	criteria = Column(String)
 
 	hero = relationship("Hero", back_populates="responses")
-	groups = relationship("ResponseRule", secondary=responsegroupings_table, back_populates="responses")
 
 	def __repr__(self):
 		return "Response: %s" % (self.name)
-
-class ResponseRule(Base):
-	__tablename__ = 'responserules'
-
-	name = Column(String, primary_key=True)
-
-	responses = relationship("Response", secondary=responsegroupings_table, back_populates="groups")
-	criteriargs = relationship("CriteriArg", order_by="CriteriArg.index")
 
 class Criterion(Base):
 	__tablename__ = 'criteria'
@@ -86,13 +73,6 @@ class Criterion(Base):
 	matchvalue = Column(String)
 	weight = Column(Float)
 	required = Column(Boolean)
-
-class CriteriArg(Base):
-	__tablename__ = 'criteriargs'
-
-	group_name = Column(String, ForeignKey("responserules.name"), primary_key=True)
-	index = Column(Integer, primary_key=True)
-	criterion_name = Column(String, ForeignKey("criteria.name"))
 
 
 # returns an open dotabase session
