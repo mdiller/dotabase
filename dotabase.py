@@ -19,6 +19,8 @@ class Hero(Base):
 	full_name = Column(String)
 	media_name = Column(String)
 	localized_name = Column(String)
+	real_name = Column(String)
+	aliases = Column(String)
 	bio = Column(String)
 	image = Column(String)
 	icon = Column(String)
