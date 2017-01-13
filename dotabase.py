@@ -27,6 +27,7 @@ class Hero(Base):
 	portrait = Column(String)
 	talents = Column(String)
 
+	team = Column(String)
 	base_health_regen = Column(Float)
 	base_movement = Column(Integer)
 	turn_rate = Column(Float)
@@ -72,6 +73,21 @@ class Ability(Base):
 	def __repr__(self):
 		return "Ability: %s" % (self.localized_name)
 
+class Item(Base):
+	__tablename__ = 'items'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	localized_name = Column(String)
+	icon = Column(String)
+	cost = Column(Integer)
+	description = Column(String)
+	lore = Column(String)
+
+	json_data = Column(String)
+
+	def __repr__(self):
+		return "Item: %s" % (self.localized_name)
 
 class Response(Base):
 	__tablename__ = 'responses'
