@@ -99,6 +99,7 @@ class Response(Base):
 	text = Column(String)
 	text_simple = Column(String)
 	criteria = Column(String)
+	pretty_criteria = Column(String)
 
 	hero = relationship("Hero", back_populates="responses")
 
@@ -109,6 +110,7 @@ class Criterion(Base):
 	__tablename__ = 'criteria'
 
 	name = Column(String, primary_key=True)
+	pretty = Column(String)
 	matchkey = Column(String)
 	matchvalue = Column(String)
 	weight = Column(Float)
