@@ -116,6 +116,15 @@ class Criterion(Base):
 	weight = Column(Float)
 	required = Column(Boolean)
 
+class Emoticon(Base):
+	__tablename__ = 'emoticon'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	url = Column(String)
+	frames = Column(Integer)
+	ms_per_frame = Column(Integer)
+
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
