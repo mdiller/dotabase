@@ -26,6 +26,7 @@ class Hero(Base):
 	icon = Column(String)
 	portrait = Column(String)
 	talents = Column(String)
+	glow_color = Column(String)
 
 	team = Column(String)
 	base_health_regen = Column(Float)
@@ -60,11 +61,21 @@ class Ability(Base):
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	cast_range = Column(String)
+	cast_point = Column(String)
+	channel_time = Column(String)
+	cooldown = Column(String)
+	duration = Column(String)
+	damage = Column(String)
+	mana_cost = Column(String)
+
 	ability_slot = Column(Integer)
 	icon = Column(String)
+
 	localized_name = Column(String)
 	description = Column(String)
 	lore = Column(String)
+	note = Column(String)
 
 	json_data = Column(String)
 
