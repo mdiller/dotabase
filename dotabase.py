@@ -48,6 +48,9 @@ class Hero(Base):
 	attr_intelligence_gain = Column(Float)
 	attr_agility_base = Column(Integer)
 	attr_agility_gain = Column(Float)
+	vision_day = Column(Integer)
+	vision_night = Column(Integer)
+	magic_resistance = Column(Integer)
 
 	responses = relationship("Response", back_populates="hero")
 	abilities = relationship("Ability", back_populates="hero")
