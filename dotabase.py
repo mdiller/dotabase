@@ -51,6 +51,7 @@ class Hero(Base):
 	vision_day = Column(Integer)
 	vision_night = Column(Integer)
 	magic_resistance = Column(Integer)
+	is_melee = Column(Boolean)
 
 	responses = relationship("Response", back_populates="hero")
 	abilities = relationship("Ability", back_populates="hero")
