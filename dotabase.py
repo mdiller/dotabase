@@ -142,6 +142,15 @@ class Emoticon(Base):
 	frames = Column(Integer)
 	ms_per_frame = Column(Integer)
 
+class ChatWheelMessage(Base):
+	__tablename__ = 'chatwheelmessage'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	message = Column(String)
+	label = Column(String)
+	sound = Column(String)
+
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
