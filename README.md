@@ -10,7 +10,11 @@ NOTE: This project does not supply any player information or data from specific 
 ## Installation
 To start using the database, simply clone this repository and use any of the wide variety of ways to interface with the sqlite dotabase.db file.
 
-If you want to use the dotabase.py package in your python applications, add the directory of the repository to your PYTHONPATH environment variable. Then dotabase can be imported like any other package. 
+If you want to use the dotabase.py package in your python applications, you can install via pip like this:
+```
+pip install git+https://github.com/mdiller/dotabase
+```
+
 Example Usage:
 ```python
 from dotabase import *
