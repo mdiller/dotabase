@@ -106,19 +106,19 @@
 					"SlotIndex": "0",
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
-					"TextureWidth": "128",
+					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_Offhand_Weapon",
-					"TextureWidth": "128",
+					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -199,7 +199,7 @@
 		"image": "/resource/flash3/images/heroes/axe.png",
 		"icon": "/resource/flash3/images/miniheroes/axe.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_axe.png",
-		"talents": "+8 Strength|+40 Attack Speed|+3 Mana Regen|+30 Movement Speed|+20 Health Regen|Attacks Proc Counter Helix|+100 Berserker's Call AoE|+120 Battle Hunger DPS",
+		"talents": "+8 Strength|+40 Attack Speed|+3 Mana Regen|+30 Movement Speed|+20 Health Regen|Attacking Procs Counter Helix|+100 Berserker's Call AoE|+120 Battle Hunger DPS",
 		"glow_color": "#de3c24",
 		"team": "Bad",
 		"base_health_regen": 4.25,
@@ -585,16 +585,18 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_magic_stick": "ITEM_CORE | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
-					"item_staff_of_wizardry": "ITEM_EXTENSION",
-					"item_belt_of_strength": "ITEM_EXTENSION",
-					"item_recipe_necronomicon": "ITEM_LUXURY",
-					"item_necronomicon": "ITEM_DERIVED",
 					"item_blades_of_attack": "ITEM_EXTENSION",
 					"item_phase_boots": "ITEM_DERIVED",
+					"item_sobi_mask": "ITEM_EXTENSION",
+					"item_belt_of_strength": "ITEM_EXTENSION",
+					"item_recipe_necronomicon": "ITEM_EXTENSION",
+					"item_necronomicon": "ITEM_DERIVED",
 					"item_void_stone": "ITEM_LUXURY",
 					"item_mystic_staff": "ITEM_LUXURY",
 					"item_ultimate_orb": "ITEM_LUXURY",
-					"item_sheepstick": "ITEM_DERIVED"
+					"item_sheepstick": "ITEM_DERIVED",
+					"item_necronomicon_2": "ITEM_DERIVED",
+					"item_necronomicon_3": "ITEM_DERIVED"
 				},
 				"Build": {
 					"1": "bane_nightmare",
@@ -650,7 +652,7 @@
 		"image": "/resource/flash3/images/heroes/bloodseeker.png",
 		"icon": "/resource/flash3/images/miniheroes/bloodseeker.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_bloodseeker.png",
-		"talents": "+25 Attack Speed|+4 Armor|+300 Health|+75 Blood Rite Damage|+14% Rupture Damage|25% Lifesteal|-6s Blood Rite Cooldown|+20 Thirst",
+		"talents": "+25 Attack Speed|+4 Armor|+300 Health|+75 Blood Rite Damage|+14% Rupture Damage|25% Lifesteal|-6s Blood Rite Cooldown|+20 Max Thirst MS and Damage",
 		"glow_color": "#f73c0c",
 		"team": "Bad",
 		"base_health_regen": 1.5,
@@ -748,8 +750,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "250"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -766,8 +768,8 @@
 					"SlotText": "#LoadoutSlot_OffHand_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "250"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -819,9 +821,8 @@
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
 					"item_slippers": "ITEM_CORE | ITEM_SELLABLE",
-					"item_poor_mans_shield": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_gloves": "ITEM_EXTENSION",
 					"item_boots_of_elves": "ITEM_EXTENSION",
@@ -1249,7 +1250,7 @@
 					"item_quarterstaff": "ITEM_CORE",
 					"item_mask_of_madness": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_shadow_amulet": "ITEM_CORE",
-					"item_claymore": "ITEM_EXTENSION",
+					"item_claymore": "ITEM_LUXURY",
 					"item_invis_sword": "ITEM_DERIVED",
 					"item_blade_of_alacrity": "ITEM_CORE",
 					"item_recipe_yasha": "ITEM_EXTENSION",
@@ -1319,8 +1320,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -1552,12 +1553,13 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_EXTENSION",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_energy_booster": "ITEM_CORE",
 					"item_arcane_boots": "ITEM_DERIVED",
 					"item_blink": "ITEM_CORE",
+					"item_circlet": "ITEM_EXTENSION",
 					"item_infused_raindrop": "ITEM_EXTENSION",
 					"item_ring_of_protection": "ITEM_EXTENSION",
 					"item_recipe_urn_of_shadows": "ITEM_EXTENSION",
@@ -1722,9 +1724,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -1816,8 +1818,7 @@
 					"item_phase_boots": "ITEM_DERIVED",
 					"item_ring_of_health": "ITEM_CORE",
 					"item_void_stone": "ITEM_CORE",
-					"item_claymore": "ITEM_CORE",
-					"item_broadsword": "ITEM_CORE",
+					"item_demon_edge": "ITEM_CORE",
 					"item_bfury": "ITEM_DERIVED",
 					"item_blade_of_alacrity": "ITEM_LUXURY",
 					"item_boots_of_elves": "ITEM_EXTENSION",
@@ -1826,7 +1827,7 @@
 					"item_ultimate_orb": "ITEM_EXTENSION",
 					"item_recipe_manta": "ITEM_EXTENSION",
 					"item_manta": "ITEM_DERIVED",
-					"item_demon_edge": "ITEM_LUXURY",
+					"item_hyperstone": "ITEM_LUXURY",
 					"item_javelin": "ITEM_LUXURY",
 					"item_monkey_king_bar": "ITEM_DERIVED",
 					"item_quarterstaff": "ITEM_LUXURY",
@@ -1839,7 +1840,7 @@
 					"item_ultimate_scepter": "ITEM_DERIVED",
 					"item_lifesteal": "ITEM_LUXURY",
 					"item_reaver": "ITEM_LUXURY",
-					"item_mithril_hammer": "ITEM_LUXURY",
+					"item_claymore": "ITEM_LUXURY",
 					"item_satanic": "ITEM_DERIVED"
 				},
 				"Build": {
@@ -1996,8 +1997,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -2069,7 +2070,7 @@
 					"item_boots_of_elves": "ITEM_EXTENSION",
 					"item_gloves": "ITEM_EXTENSION",
 					"item_treads": "ITEM_DERIVED",
-					"item_circlet": "ITEM_EXTENSION",
+					"item_enchanted_mango": "ITEM_EXTENSION",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_blade_of_alacrity": "ITEM_EXTENSION",
 					"item_robe": "ITEM_EXTENSION",
@@ -2179,7 +2180,7 @@
 			"LoadoutScale": "1",
 			"SpectatorLoadoutScale": "1",
 			"HeroGlowColor": "33 255 255",
-			"CMEnabled": "1",
+			"CMEnabled": "0",
 			"workshop_guide_name": "Morphling",
 			"Legs": "0",
 			"NoCombine": "1",
@@ -2374,7 +2375,7 @@
 		"image": "/resource/flash3/images/heroes/nevermore.png",
 		"icon": "/resource/flash3/images/miniheroes/nevermore.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_nevermore.png",
-		"talents": "+10% Spell Amplification|+20 Attack Speed|Presence Aura Affects Building|+40 Movement Speed|20% Evasion|+150 Shadow Raze Damage|+3 Damage Per Soul|40% Cooldown Reduction",
+		"talents": "+10% Spell Amplification|+20 Attack Speed|Presence Aura Affects Building|+40 Movement Speed|20% Evasion|+150 Shadowraze Damage|+3 Damage Per Soul|40% Cooldown Reduction",
 		"glow_color": "#f02212",
 		"team": "Bad",
 		"base_health_regen": 1.75,
@@ -2538,7 +2539,7 @@
 					"item_bottle": "ITEM_CORE | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_gloves": "ITEM_CORE",
 					"item_boots_of_elves": "ITEM_EXTENSION",
@@ -2721,8 +2722,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "512",
 					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -3080,8 +3081,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -3152,7 +3153,7 @@
 			"Bot": {
 				"Loadout": {
 					"item_gauntlets": "ITEM_CORE",
-					"item_circlet": "ITEM_EXTENSION",
+					"item_circlet": "ITEM_CORE",
 					"item_flask": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_bottle": "ITEM_CORE",
 					"item_boots": "ITEM_CORE",
@@ -3160,6 +3161,7 @@
 					"item_bracer": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_magic_stick": "ITEM_CORE",
 					"item_branches": "ITEM_EXTENSION",
+					"item_enchanted_mango": "ITEM_EXTENSION",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_ring_of_regen": "ITEM_EXTENSION",
 					"item_wind_lace": "ITEM_EXTENSION",
@@ -3343,8 +3345,8 @@
 					"SlotText": "#LoadoutSlot_weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -3399,11 +3401,15 @@
 					"item_tango": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED",
 					"item_boots": "ITEM_CORE",
 					"item_blades_of_attack": "ITEM_CORE",
 					"item_phase_boots": "ITEM_DERIVED",
+					"item_slippers": "ITEM_CORE",
+					"item_circlet": "ITEM_CORE",
+					"item_recipe_wraith_band": "ITEM_CORE",
+					"item_wraith_band": "ITEM_DERIVED",
 					"item_boots_of_elves": "ITEM_LUXURY",
 					"item_ogre_axe": "ITEM_LUXURY",
 					"item_dragon_lance": "ITEM_DERIVED",
@@ -3411,7 +3417,6 @@
 					"item_staff_of_wizardry": "ITEM_EXTENSION",
 					"item_recipe_force_staff": "ITEM_EXTENSION",
 					"item_force_staff": "ITEM_DERIVED",
-					"item_recipe_hurricane_pike": "ITEM_EXTENSION",
 					"item_hurricane_pike": "ITEM_DERIVED",
 					"item_blade_of_alacrity": "ITEM_LUXURY",
 					"item_recipe_yasha": "ITEM_LUXURY",
@@ -3439,6 +3444,7 @@
 					"item_vitality_booster": "ITEM_LUXURY",
 					"item_heart": "ITEM_DERIVED",
 					"item_lifesteal": "ITEM_LUXURY",
+					"item_claymore": "ITEM_LUXURY",
 					"item_satanic": "ITEM_DERIVED"
 				},
 				"Build": {
@@ -4000,8 +4006,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -4074,7 +4080,7 @@
 					"item_branches": "ITEM_CORE",
 					"item_stout_shield": "ITEM_CORE | ITEM_SELLABLE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED",
 					"item_boots": "ITEM_CORE",
 					"item_quelling_blade": "ITEM_CORE | ITEM_SELLABLE",
@@ -4093,7 +4099,7 @@
 					"item_oblivion_staff": "ITEM_CORE | ITEM_DERIVED",
 					"item_echo_sabre": "ITEM_DERIVED",
 					"item_blink": "ITEM_CORE",
-					"item_mithril_hammer": "ITEM_LUXURY",
+					"item_mithril_hammer": "ITEM_EXTENSION",
 					"item_recipe_black_king_bar": "ITEM_EXTENSION",
 					"item_black_king_bar": "ITEM_DERIVED",
 					"item_platemail": "ITEM_EXTENSION",
@@ -4102,6 +4108,7 @@
 					"item_recipe_assault": "ITEM_EXTENSION",
 					"item_assault": "ITEM_DERIVED",
 					"item_reaver": "ITEM_LUXURY",
+					"item_claymore": "ITEM_LUXURY",
 					"item_lifesteal": "ITEM_LUXURY",
 					"item_satanic": "ITEM_DERIVED"
 				},
@@ -4326,7 +4333,7 @@
 					"item_branches": "ITEM_CORE",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_bottle": "ITEM_CORE | ITEM_SELLABLE",
 					"item_energy_booster": "ITEM_CORE",
@@ -4497,8 +4504,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -4556,7 +4563,7 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_EXTENSION",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_belt_of_strength": "ITEM_CORE",
@@ -4570,6 +4577,7 @@
 					"item_ring_of_health": "ITEM_EXTENSION",
 					"item_recipe_force_staff": "ITEM_EXTENSION",
 					"item_force_staff": "ITEM_DERIVED",
+					"item_circlet": "ITEM_EXTENSION",
 					"item_infused_raindrop": "ITEM_EXTENSION",
 					"item_ring_of_protection": "ITEM_EXTENSION",
 					"item_recipe_urn_of_shadows": "ITEM_EXTENSION",
@@ -4733,9 +4741,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -5031,10 +5039,9 @@
 					"item_tango": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
-					"item_ring_of_regen": "ITEM_CORE",
-					"item_sobi_mask": "ITEM_CORE",
-					"item_enchanted_mango": "ITEM_CORE",
-					"item_soul_ring": "ITEM_DERIVED",
+					"item_ring_of_health": "ITEM_EXTENSION",
+					"item_void_stone": "ITEM_LUXURY",
+					"item_pers": "ITEM_DERIVED",
 					"item_energy_booster": "ITEM_EXTENSION",
 					"item_arcane_boots": "ITEM_DERIVED",
 					"item_blink": "ITEM_CORE",
@@ -5043,11 +5050,8 @@
 					"item_soul_booster": "ITEM_DERIVED",
 					"item_recipe_bloodstone": "ITEM_CORE",
 					"item_bloodstone": "ITEM_DERIVED",
-					"item_void_stone": "ITEM_LUXURY",
 					"item_recipe_aether_lens": "ITEM_EXTENSION",
 					"item_aether_lens": "ITEM_DERIVED",
-					"item_ring_of_health": "ITEM_EXTENSION",
-					"item_pers": "ITEM_DERIVED",
 					"item_recipe_refresher": "ITEM_EXTENSION",
 					"item_refresher": "ITEM_DERIVED",
 					"item_mystic_staff": "ITEM_LUXURY",
@@ -5202,8 +5206,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -5284,9 +5288,10 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_gauntlets": "ITEM_CORE",
+					"item_circlet": "ITEM_CORE",
 					"item_recipe_bracer": "ITEM_EXTENSION",
 					"item_bracer": "ITEM_DERIVED",
 					"item_wind_lace": "ITEM_EXTENSION",
@@ -5517,7 +5522,7 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_energy_booster": "ITEM_CORE",
@@ -5700,7 +5705,7 @@
 					"TextureWidth": "256",
 					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "1000",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -5750,7 +5755,7 @@
 					"item_tango": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_EXTENSION",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_LUXURY",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_energy_booster": "ITEM_EXTENSION",
@@ -5775,6 +5780,7 @@
 					"item_staff_of_wizardry": "ITEM_LUXURY",
 					"item_blade_of_alacrity": "ITEM_LUXURY",
 					"item_ultimate_scepter": "ITEM_DERIVED",
+					"item_circlet": "ITEM_LUXURY",
 					"item_mantle": "ITEM_LUXURY",
 					"item_recipe_null_talisman": "ITEM_LUXURY",
 					"item_null_talisman": "ITEM_DERIVED",
@@ -5835,7 +5841,7 @@
 		"image": "/resource/flash3/images/heroes/shadow_shaman.png",
 		"icon": "/resource/flash3/images/miniheroes/shadow_shaman.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_shadow_shaman.png",
-		"talents": "+200 Health|+20% XP Gain|+125 Cast Range|-4s Hex Cooldown|+3s Shackles Duration|+1 Serpent Wards Attacks HP|+400 Ether Shock Damage|+60 Wards Attack Damage",
+		"talents": "+200 Health|+20% XP Gain|+125 Cast Range|-4s Hex Cooldown|+3s Shackles Duration|+1 Serpent Wards Max HP|+400 Ether Shock Damage|+60 Wards Attack Damage",
 		"glow_color": "#ffa726",
 		"team": "Good",
 		"base_health_regen": 1.5,
@@ -5964,8 +5970,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -6007,7 +6013,7 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_wind_lace": "ITEM_CORE",
@@ -6015,12 +6021,15 @@
 					"item_staff_of_wizardry": "ITEM_LUXURY",
 					"item_recipe_cyclone": "ITEM_CORE",
 					"item_cyclone": "ITEM_DERIVED",
-					"item_point_booster": "ITEM_EXTENSION",
+					"item_energy_booster": "ITEM_EXTENSION",
+					"item_arcane_boots": "ITEM_DERIVED",
+					"item_sobi_mask": "ITEM_EXTENSION",
 					"item_belt_of_strength": "ITEM_EXTENSION",
-					"item_recipe_travel_boots": "ITEM_EXTENSION",
-					"item_travel_boots": "ITEM_DERIVED",
-					"item_recipe_necronomicon": "ITEM_LUXURY",
+					"item_recipe_necronomicon": "ITEM_EXTENSION",
 					"item_necronomicon": "ITEM_DERIVED",
+					"item_necronomicon_2": "ITEM_DERIVED",
+					"item_necronomicon_3": "ITEM_DERIVED",
+					"item_point_booster": "ITEM_LUXURY",
 					"item_blade_of_alacrity": "ITEM_LUXURY",
 					"item_ogre_axe": "ITEM_LUXURY",
 					"item_ultimate_scepter": "ITEM_DERIVED"
@@ -6191,7 +6200,7 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
+					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "650",
 					"MaxPolygonsLOD1": "450"
 				},
@@ -6245,7 +6254,7 @@
 		"image": "/resource/flash3/images/heroes/tidehunter.png",
 		"icon": "/resource/flash3/images/miniheroes/tidehunter.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_tidehunter.png",
-		"talents": "+25 Movement Speed|+80 Gush Damage|+40% XP Gain|+25% Anchor Smash Damage Reduction|+24 Kraken Shell|-4 Gush Armor|25% Cooldown Reduction|+250 Damage",
+		"talents": "+25 Movement Speed|+80 Gush Damage|+40% XP Gain|+25% Anchor Smash Damage Reduction|+24 Kraken Shell Damage Block|-4 Gush Armor|25% Cooldown Reduction|+250 Damage",
 		"glow_color": "#36b551",
 		"team": "Bad",
 		"base_health_regen": 1.5,
@@ -6662,7 +6671,7 @@
 					"item_energy_booster": "ITEM_CORE",
 					"item_arcane_boots": "ITEM_DERIVED",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_point_booster": "ITEM_CORE",
 					"item_staff_of_wizardry": "ITEM_EXTENSION",
@@ -7078,18 +7087,18 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_Offhand_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -7156,15 +7165,13 @@
 					"item_boots_of_elves": "ITEM_EXTENSION",
 					"item_gloves": "ITEM_CORE",
 					"item_treads": "ITEM_DERIVED",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_stout_shield": "ITEM_LUXURY",
-					"item_poor_mans_shield": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_blade_of_alacrity": "ITEM_EXTENSION",
 					"item_robe": "ITEM_EXTENSION",
 					"item_recipe_diffusal_blade": "ITEM_EXTENSION",
 					"item_diffusal_blade": "ITEM_DERIVED",
-					"item_diffusal_blade_2": "ITEM_DERIVED",
 					"item_recipe_yasha": "ITEM_EXTENSION",
 					"item_yasha": "ITEM_DERIVED",
 					"item_quarterstaff": "ITEM_LUXURY",
@@ -7184,7 +7191,7 @@
 					"item_vanguard": "ITEM_DERIVED",
 					"item_recipe_abyssal_blade": "ITEM_LUXURY",
 					"item_abyssal_blade": "ITEM_DERIVED",
-					"item_demon_edge": "ITEM_LUXURY",
+					"item_hyperstone": "ITEM_LUXURY",
 					"item_monkey_king_bar": "ITEM_DERIVED"
 				},
 				"Build": {
@@ -7766,6 +7773,7 @@
 					"item_recipe_wraith_band": "ITEM_CORE",
 					"item_wraith_band": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_magic_stick": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_boots_of_elves": "ITEM_LUXURY",
@@ -7965,7 +7973,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "750",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
@@ -8197,8 +8205,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -8214,18 +8222,18 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "500"
 				},
 				"3": {
 					"SlotIndex": "3",
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
+					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -8417,7 +8425,7 @@
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
 			"AbilityDraftDisabled": "1",
 			"HeroSelectSoundEffect": "Hero_Beastmaster.Pick",
-			"AbilityLayout": "5",
+			"AbilityLayout": "4",
 			"Ability1": "beastmaster_wild_axes",
 			"Ability2": "beastmaster_call_of_the_wild",
 			"Ability3": "beastmaster_inner_beast",
@@ -8459,8 +8467,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1200",
+					"MaxPolygonsLOD1": "800"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -8485,18 +8493,18 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "550",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "750",
+					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "750",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -8669,8 +8677,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -9007,8 +9015,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "750",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -9206,8 +9214,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -9276,7 +9284,7 @@
 					"item_quelling_blade": "ITEM_CORE | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_belt_of_strength": "ITEM_EXTENSION",
 					"item_gloves": "ITEM_CORE",
@@ -9298,13 +9306,12 @@
 					"item_blight_stone": "ITEM_LUXURY",
 					"item_mithril_hammer": "ITEM_EXTENSION",
 					"item_desolator": "ITEM_DERIVED",
-					"item_demon_edge": "ITEM_LUXURY",
+					"item_hyperstone": "ITEM_LUXURY",
 					"item_javelin": "ITEM_LUXURY",
 					"item_monkey_king_bar": "ITEM_DERIVED",
 					"item_recipe_black_king_bar": "ITEM_EXTENSION",
 					"item_black_king_bar": "ITEM_DERIVED",
 					"item_platemail": "ITEM_LUXURY",
-					"item_hyperstone": "ITEM_LUXURY",
 					"item_recipe_assault": "ITEM_LUXURY",
 					"item_assault": "ITEM_DERIVED"
 				},
@@ -9721,7 +9728,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "600"
 				},
 				"1": {
@@ -9779,8 +9786,7 @@
 					"item_magic_stick": "ITEM_CORE",
 					"item_boots": "ITEM_CORE",
 					"item_slippers": "ITEM_CORE",
-					"item_poor_mans_shield": "ITEM_DERIVED | ITEM_SELLABLE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_gloves": "ITEM_CORE",
 					"item_boots_of_elves": "ITEM_CORE",
@@ -9800,13 +9806,13 @@
 					"item_abyssal_blade": "ITEM_DERIVED",
 					"item_lifesteal": "ITEM_LUXURY",
 					"item_reaver": "ITEM_LUXURY",
+					"item_claymore": "ITEM_LUXURY",
 					"item_satanic": "ITEM_DERIVED",
 					"item_platemail": "ITEM_LUXURY",
 					"item_hyperstone": "ITEM_LUXURY",
 					"item_chainmail": "ITEM_LUXURY",
 					"item_recipe_assault": "ITEM_LUXURY",
 					"item_assault": "ITEM_DERIVED",
-					"item_demon_edge": "ITEM_LUXURY",
 					"item_monkey_king_bar": "ITEM_DERIVED"
 				},
 				"Build": {
@@ -9946,8 +9952,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "750",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -10241,7 +10247,7 @@
 		"image": "/resource/flash3/images/heroes/viper.png",
 		"icon": "/resource/flash3/images/miniheroes/viper.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_viper.png",
-		"talents": "+20 Attack Speed|8% Spell Lifesteal|+100 Attack Range|+6 Corrosive Skin|+100 Viper Strike DPS|Poison Attack Affects Buildings|Nethertoxin Silences|+120 Damage",
+		"talents": "+20 Attack Speed|8% Spell Lifesteal|+100 Attack Range|+6 Corrosive Skin DPS|+100 Viper Strike DPS|Poison Attack Affects Buildings|Nethertoxin Silences|+120 Damage",
 		"glow_color": "#a0e551",
 		"team": "Bad",
 		"base_health_regen": 1.5,
@@ -10379,7 +10385,7 @@
 					"item_slippers": "ITEM_CORE",
 					"item_circlet": "ITEM_CORE",
 					"item_recipe_wraith_band": "ITEM_CORE",
-					"item_wraith_band": "ITEM_DERIVED | ITEM_SELLABLE",
+					"item_wraith_band": "ITEM_DERIVED",
 					"item_boots": "ITEM_CORE",
 					"item_boots_of_elves": "ITEM_CORE",
 					"item_gloves": "ITEM_CORE",
@@ -10405,13 +10411,12 @@
 					"item_ring_of_health": "ITEM_EXTENSION",
 					"item_recipe_force_staff": "ITEM_EXTENSION",
 					"item_force_staff": "ITEM_DERIVED",
-					"item_recipe_hurricane_pike": "ITEM_EXTENSION",
 					"item_hurricane_pike": "ITEM_DERIVED",
 					"item_point_booster": "ITEM_LUXURY",
 					"item_blade_of_alacrity": "ITEM_LUXURY",
 					"item_ultimate_scepter": "ITEM_DERIVED",
 					"item_javelin": "ITEM_LUXURY",
-					"item_demon_edge": "ITEM_LUXURY",
+					"item_hyperstone": "ITEM_LUXURY",
 					"item_monkey_king_bar": "ITEM_DERIVED"
 				},
 				"Build": {
@@ -10570,9 +10575,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -10588,9 +10593,9 @@
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_Shield",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -10623,12 +10628,13 @@
 					"item_ring_of_protection": "ITEM_CORE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_sobi_mask": "ITEM_CORE",
 					"item_ring_of_basilius": "ITEM_DERIVED",
 					"item_boots": "ITEM_CORE",
 					"item_slippers": "ITEM_CORE",
+					"item_circlet": "ITEM_CORE",
 					"item_recipe_wraith_band": "ITEM_CORE",
 					"item_ring_of_aquila": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots_of_elves": "ITEM_CORE",
@@ -10841,6 +10847,7 @@
 					"item_assault_cuirass": "ITEM_DERIVED",
 					"item_lifesteal": "ITEM_LUXURY",
 					"item_reaver": "ITEM_LUXURY",
+					"item_claymore": "ITEM_LUXURY",
 					"item_satanic": "ITEM_DERIVED",
 					"item_broadsword": "ITEM_LUXURY",
 					"item_recipe_lesser_crit": "ITEM_LUXURY",
@@ -10894,8 +10901,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -10912,8 +10919,8 @@
 					"SlotText": "#LoadoutSlot_Shield",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -10938,9 +10945,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -10974,7 +10981,7 @@
 		"image": "/resource/flash3/images/heroes/dazzle.png",
 		"icon": "/resource/flash3/images/miniheroes/dazzle.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_dazzle.png",
-		"talents": "+60 Damage|+175 Health|+125 Cast Range|+20 Shadow Wave Heal|+50 Movement Speed|+30 Poison Touch DPS|-4s Shadow Wave Cooldown|+0.5 Weave Armor Per Second",
+		"talents": "+60 Damage|+175 Health|+125 Cast Range|+20 Shadow Wave Heal / Damage|+50 Movement Speed|+30 Poison Touch DPS|-4s Shadow Wave Cooldown|+0.5 Weave Armor Per Second",
 		"glow_color": "#de3cec",
 		"team": "Bad",
 		"base_health_regen": 1.5,
@@ -11123,25 +11130,27 @@
 					"item_clarity": "ITEM_CONSUMABLE | ITEM_SELLABLE",
 					"item_branches": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
+					"item_circlet": "ITEM_CORE",
 					"item_infused_raindrop": "ITEM_CORE",
 					"item_ring_of_protection": "ITEM_CORE",
 					"item_recipe_urn_of_shadows": "ITEM_CORE",
 					"item_urn_of_shadows": "ITEM_DERIVED",
-					"item_staff_of_wizardry": "ITEM_EXTENSION",
+					"item_energy_booster": "ITEM_EXTENSION",
+					"item_arcane_boots": "ITEM_DERIVED",
+					"item_sobi_mask": "ITEM_LUXURY",
 					"item_belt_of_strength": "ITEM_EXTENSION",
 					"item_recipe_necronomicon": "ITEM_EXTENSION",
 					"item_necronomicon": "ITEM_DERIVED",
-					"item_energy_booster": "ITEM_EXTENSION",
-					"item_arcane_boots": "ITEM_DERIVED",
+					"item_necronomicon_2": "ITEM_DERIVED",
+					"item_necronomicon_3": "ITEM_DERIVED",
 					"item_ultimate_orb": "ITEM_LUXURY",
 					"item_void_stone": "ITEM_LUXURY",
 					"item_mystic_staff": "ITEM_LUXURY",
 					"item_sheepstick": "ITEM_DERIVED",
 					"item_quarterstaff": "ITEM_LUXURY",
-					"item_sobi_mask": "ITEM_LUXURY",
 					"item_robe": "ITEM_LUXURY",
 					"item_oblivion_staff": "ITEM_DERIVED",
 					"item_recipe_orchid": "ITEM_LUXURY",
@@ -11303,8 +11312,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -11657,8 +11666,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -11701,9 +11710,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -11752,7 +11761,7 @@
 		"image": "/resource/flash3/images/heroes/life_stealer.png",
 		"icon": "/resource/flash3/images/miniheroes/life_stealer.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_life_stealer.png",
-		"talents": "+200 Health|+20 Attack Speed|+30 Damage|+35 Movement Speed|20% Evasion|+50% Open Wounds Heal|+2% Feast|+2s Rage Duration",
+		"talents": "+200 Health|+20 Attack Speed|+30 Damage|+35 Movement Speed|20% Evasion|+50% Open Wounds Lifesteal|+2% Feast Damage/Lifesteal|+2s Rage Duration",
 		"glow_color": "#d10401",
 		"team": "Bad",
 		"base_health_regen": 1.5,
@@ -12217,8 +12226,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -12400,8 +12409,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -12426,9 +12435,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "550",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -12465,7 +12474,7 @@
 					"item_ring_of_basilius": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_ring_of_regen": "ITEM_EXTENSION",
-					"item_enchanted_mango": "ITEM_CORE",
+					"item_gauntlets": "ITEM_CORE",
 					"item_soul_ring": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_energy_booster": "ITEM_CORE",
 					"item_arcane_boots": "ITEM_DERIVED",
@@ -12633,8 +12642,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -12820,10 +12829,10 @@
 					"SlotIndex": "0",
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
-					"TextureWidth": "128",
+					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -13394,9 +13403,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -13412,27 +13421,27 @@
 					"SlotName": "shoulder",
 					"SlotText": "#LoadoutSlot_Misc",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"3": {
 					"SlotIndex": "3",
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_OffHand_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -13462,7 +13471,6 @@
 					"item_branches": "ITEM_CORE | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_slippers": "ITEM_CORE",
-					"item_poor_mans_shield": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_blades_of_attack": "ITEM_CORE",
 					"item_phase_boots": "ITEM_DERIVED",
 					"item_chainmail": "ITEM_CORE",
@@ -13541,7 +13549,7 @@
 		"image": "/resource/flash3/images/heroes/weaver.png",
 		"icon": "/resource/flash3/images/miniheroes/weaver.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_weaver.png",
-		"talents": "+20 Mana Break|+25% XP Gain|+12 Strength|+75 Shukuchi Damage|-0.5 Swarm Armor Reduction|+2 Swarm Attacks to Kill|+200 Shukuchi Movement Speed|+1 Geminate Attack",
+		"talents": "+20 Mana Break|+25% XP Gain|+12 Strength|+75 Shukuchi Damage|+0.5 Swarm Armor Reduction|+2 Swarm Attacks to Kill|+200 Shukuchi Movement Speed|+1 Geminate Attack",
 		"team": "Bad",
 		"base_health_regen": 1.5,
 		"base_movement": 280,
@@ -13870,7 +13878,7 @@
 					"item_sobi_mask": "ITEM_CORE",
 					"item_ring_of_basilius": "ITEM_DERIVED",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_boots": "ITEM_CORE",
 					"item_energy_booster": "ITEM_CORE",
@@ -14158,7 +14166,7 @@
 			"workshop_guide_name": "Chen",
 			"LastHitChallengeRival": "npc_dota_hero_sven",
 			"HeroSelectSoundEffect": "Hero_Chen.Pick",
-			"AbilityLayout": "5",
+			"AbilityLayout": "4",
 			"Ability1": "chen_penitence",
 			"Ability2": "chen_test_of_faith",
 			"Ability3": "chen_holy_persuasion",
@@ -14426,8 +14434,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -14745,8 +14753,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -14772,8 +14780,8 @@
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "800",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -14789,9 +14797,9 @@
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -14799,8 +14807,8 @@
 					"SlotText": "#LoadoutSlot_Tail",
 					"TextureWidth": "256",
 					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "150",
-					"MaxPolygonsLOD1": "150"
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "350"
 				},
 				"7": {
 					"SlotIndex": "7",
@@ -14836,7 +14844,7 @@
 		"image": "/resource/flash3/images/heroes/ursa.png",
 		"icon": "/resource/flash3/images/miniheroes/ursa.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_ursa.png",
-		"talents": "+1.75 Mana Regen|+8 Strength|+16 Agility|-1s Earthshock Cooldown|+1 Enrage Duration|+25s Fury Swipes|+600 AoE Earthshock|+14 Fury Swipes Damage",
+		"talents": "+1.75 Mana Regen|+8 Strength|+16 Agility|-1s Earthshock Cooldown|+1 Enrage Duration|+25s Fury Swipes Reset Time|+600 AoE Earthshock|+14 Fury Swipes Damage",
 		"glow_color": "#6b4a35",
 		"team": "Good",
 		"base_health_regen": 2.0,
@@ -14893,6 +14901,13 @@
 			"Ability15": "special_bonus_unique_ursa_4",
 			"Ability16": "special_bonus_unique_ursa_5",
 			"Ability17": "special_bonus_unique_ursa",
+			"AbilityDraftIgnoreCount": "6",
+			"AbilityDraftAbilities": {
+				"Ability1": "ursa_earthshock",
+				"Ability2": "ursa_overpower",
+				"Ability3": "ursa_fury_swipes",
+				"Ability4": "ursa_enrage"
+			},
 			"ArmorPhysical": "3",
 			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
 			"AttackDamageMin": "24",
@@ -15468,7 +15483,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
@@ -15571,7 +15586,7 @@
 		"image": "/resource/flash3/images/heroes/invoker.png",
 		"icon": "/resource/flash3/images/miniheroes/invoker.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_invoker.png",
-		"talents": "+0.3s Tornado Duration|+30 Chaos Meteor Damage|+1 Forged Spirit Summoned|+1.5s Cold Snap Duration|Cataclysm|+35 Alacrity Damage/Speed|AoE Deafening Blast|-16s Tornado Cooldown",
+		"talents": "+0.3s Tornado Lift Time|+30 Chaos Meteor Contact Damage|+1 Forged Spirit Summoned|+1.5s Cold Snap Duration|Cataclysm|+35 Alacrity Damage/Speed|AoE Deafening Blast|-16s Tornado Cooldown",
 		"team": "Bad",
 		"base_health_regen": 1.5,
 		"base_movement": 280,
@@ -15776,7 +15791,7 @@
 		"image": "/resource/flash3/images/heroes/silencer.png",
 		"icon": "/resource/flash3/images/miniheroes/silencer.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_silencer.png",
-		"talents": "+5 Armor|+25 Attack Speed|+90 Gold/Min|+2 Intelligence Steal|+125 Attack Range|+30 Curse Damage|+20% Glaives of Wisdom|+2s Global Silence",
+		"talents": "+5 Armor|+25 Attack Speed|+90 Gold/Min|+2 Intelligence Steal|+125 Attack Range|+30 Curse Of The Silent Damage|+20% Glaives of Wisdom|+2s Global Silence",
 		"team": "Good",
 		"base_health_regen": 1.5,
 		"base_movement": 295,
@@ -15871,8 +15886,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -15880,8 +15895,8 @@
 					"SlotText": "#LoadoutSlot_Shield",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -15906,9 +15921,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -16050,8 +16065,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -16254,7 +16269,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "500"
 				},
 				"4": {
@@ -16330,7 +16345,7 @@
 		"image": "/resource/flash3/images/heroes/brewmaster.png",
 		"icon": "/resource/flash3/images/miniheroes/brewmaster.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_brewmaster.png",
-		"talents": "+30 Damage|+200 Health|+3s Thunder Clap Slow|+20% Magic Resistance|+1500 Health to Primal Split Units|+100 Attack Speed|-65s Primal Split Cooldown|+15% Drunken Brawler",
+		"talents": "+30 Damage|+200 Health|+3s Thunder Clap Slow|+20% Magic Resistance|+1500 Health to Primal Split Units|+100 Attack Speed|-65s Primal Split Cooldown|+15% Drunken Brawler Chance",
 		"glow_color": "#8b0101",
 		"team": "Good",
 		"base_health_regen": 2.0,
@@ -16432,8 +16447,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -16441,8 +16456,8 @@
 					"SlotText": "#LoadoutSlot_Brewmaster_Barrel",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -16476,9 +16491,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -16872,9 +16887,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "450"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"7": {
 					"SlotIndex": "7",
@@ -16992,8 +17007,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -17001,8 +17016,8 @@
 					"SlotText": "#LoadoutSlot_Shield",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -17048,6 +17063,7 @@
 					"item_circlet": "ITEM_EXTENSION",
 					"item_recipe_bracer": "ITEM_EXTENSION",
 					"item_bracer": "ITEM_DERIVED | ITEM_SELLABLE",
+					"item_enchanted_mango": "ITEM_EXTENSION",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_wind_lace": "ITEM_EXTENSION",
 					"item_belt_of_strength": "ITEM_EXTENSION",
@@ -17226,8 +17242,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "512",
 					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -17243,9 +17259,9 @@
 					"SlotName": "shoulder",
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -17261,9 +17277,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "200",
-					"MaxPolygonsLOD1": "150"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -17271,8 +17287,8 @@
 					"SlotText": "#LoadoutSlot_Tail",
 					"TextureWidth": "256",
 					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "150",
-					"MaxPolygonsLOD1": "150"
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "250"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -17581,9 +17597,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -17608,18 +17624,18 @@
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "850",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -17955,8 +17971,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -18117,9 +18133,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "200"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -18135,9 +18151,9 @@
 					"SlotName": "shoulder",
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "250",
-					"MaxPolygonsLOD1": "150"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "600"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -18153,9 +18169,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "200"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -18314,8 +18330,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -18341,8 +18357,8 @@
 					"SlotText": "#LoadoutSlot_Misc",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "200",
-					"MaxPolygonsLOD1": "150"
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "250"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -18496,8 +18512,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "800",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -18532,8 +18548,8 @@
 					"SlotText": "#LoadoutSlot_OffHand_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "800",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -18738,7 +18754,7 @@
 		"image": "/resource/flash3/images/heroes/wisp.png",
 		"icon": "/resource/flash3/images/miniheroes/wisp.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_wisp.png",
-		"talents": "+400 Spirits Max Range|+60 Damage|+90 Spirits Damage|Tether Grants Scepter Bonus|+150 Gold/Min|Attack Tethered Ally's Target|Tether Stuns|+50 Health Regen",
+		"talents": "+400 Spirits Max Range|+60 Damage|+90 Spirits Hero Damage|Tether Grants Scepter Bonus|+150 Gold/Min|Attack Tethered Ally's Target|Tether Stuns|+50 Health Regen",
 		"team": "Good",
 		"base_health_regen": 1.5,
 		"base_movement": 295,
@@ -18874,7 +18890,7 @@
 		"image": "/resource/flash3/images/heroes/visage.png",
 		"icon": "/resource/flash3/images/miniheroes/visage.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_visage.png",
-		"talents": "+125 Cast Range|+30 Damage|+40% XP Gain|Soul Assumption Double Strike|+15 Soul Assumption Damage Per Charge|+80 Familiars Movement Speed|-2s Gravekeeper's Cloak|+1 Familiar",
+		"talents": "+125 Cast Range|+30 Damage|+40% XP Gain|Soul Assumption Hits 2 Targets|+15 Soul Assumption Damage Per Charge|+80 Familiars Movement Speed|-2s Gravekeeper's Cloak|+1 Familiar",
 		"team": "Bad",
 		"base_health_regen": 1.5,
 		"base_movement": 285,
@@ -19138,8 +19154,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -19164,9 +19180,9 @@
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "250",
-					"MaxPolygonsLOD1": "150"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "600",
+					"MaxPolygonsLOD1": "300"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -19174,8 +19190,8 @@
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "850",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -19324,8 +19340,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -19350,9 +19366,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -19360,8 +19376,8 @@
 					"SlotText": "#LoadoutSlot_Armor",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "900",
-					"MaxPolygonsLOD1": "500"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -19670,9 +19686,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -19689,35 +19705,35 @@
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "800",
-					"MaxPolygonsLOD1": "500"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "600"
 				},
 				"3": {
 					"SlotIndex": "3",
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
-					"TextureWidth": "128",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "200"
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "200"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "200"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -19725,8 +19741,8 @@
 					"SlotText": "#LoadoutSlot_Tail",
 					"TextureWidth": "256",
 					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "200"
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "300"
 				},
 				"7": {
 					"SlotIndex": "7",
@@ -19758,7 +19774,7 @@
 		"image": "/resource/flash3/images/heroes/magnataur.png",
 		"icon": "/resource/flash3/images/miniheroes/magnataur.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_magnataur.png",
-		"talents": "+25 Attack Speed|+200 Health|+15 Strength|+75 Shockwave Damage|+12 Armor|+500 Skewer Range|+20% Empower Damage/Cleave|+0.75s Reverse Polarity",
+		"talents": "+25 Attack Speed|+200 Health|+15 Strength|+75 Shockwave Damage|+12 Armor|+500 Skewer Range|+20% Empower Damage/Cleave|+0.75s Reverse Polarity Stun Duration",
 		"team": "Bad",
 		"base_health_regen": 2.0,
 		"base_movement": 310,
@@ -19858,8 +19874,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -19884,18 +19900,18 @@
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_Arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -20032,9 +20048,9 @@
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_OffHand_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -20042,8 +20058,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -20077,9 +20093,9 @@
 					"SlotName": "armor",
 					"SlotText": "#LoadoutSlot_Armor",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "225"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -20225,7 +20241,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "700",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "550"
 				},
 				"1": {
@@ -20251,18 +20267,18 @@
 					"SlotName": "neck",
 					"SlotText": "#LoadoutSlot_Neck",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "400"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -20293,7 +20309,7 @@
 					"item_branches": "ITEM_CORE",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_ring_of_protection": "ITEM_CORE",
 					"item_sobi_mask": "ITEM_CORE",
@@ -20477,8 +20493,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -20495,8 +20511,8 @@
 					"SlotText": "#LoadoutSlot_Back",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"3": {
 					"SlotIndex": "3",
@@ -20504,8 +20520,8 @@
 					"SlotText": "#LoadoutSlot_Tusk_Tusks",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "250"
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -20578,7 +20594,7 @@
 		"image": "/resource/flash3/images/heroes/skywrath_mage.png",
 		"icon": "/resource/flash3/images/miniheroes/skywrath_mage.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_skywrath_mage.png",
-		"talents": "+25 Movement Speed|+8 Intelligence|-6s Ancient Seal Cooldown|+1 Arcane Bolt|Global Concussive Shot|+15% Ancient Seal Magic Resistance Reduction|+300 Gold/Min|+600 Mystic Flare Damage",
+		"talents": "+25 Movement Speed|+8 Intelligence|-6s Ancient Seal Cooldown|+1 Arcane Bolt Per Cast|Global Concussive Shot|+15% Ancient Seal Magic Resistance Reduction|+300 Gold/Min|+600 Mystic Flare Damage",
 		"glow_color": "#c250a3",
 		"team": "Good",
 		"base_health_regen": 1.5,
@@ -20681,8 +20697,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "350"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -20707,9 +20723,9 @@
 					"SlotName": "belt",
 					"SlotText": "#LoadoutSlot_Belt",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "200"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -20717,17 +20733,17 @@
 					"SlotText": "#LoadoutSlot_Shoulder",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"6": {
 					"SlotIndex": "6",
@@ -20744,8 +20760,9 @@
 					"item_branches": "ITEM_CORE",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
+					"item_circlet": "ITEM_CORE",
 					"item_recipe_null_talisman": "ITEM_CORE",
 					"item_null_talisman": "ITEM_DERIVED | ITEM_SELLABLE",
 					"item_energy_booster": "ITEM_CORE",
@@ -20822,7 +20839,7 @@
 		"image": "/resource/flash3/images/heroes/abaddon.png",
 		"icon": "/resource/flash3/images/miniheroes/abaddon.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_abaddon.png",
-		"talents": "+25 Movement Speed|+20% XP Gain|+6 Armor|+50 Mist Coil Heal/Damage|15% Cooldown Reduction|+90 Damage|+250 Aphotic Shield Health|+25% Curse of Avernus Slow",
+		"talents": "+25 Movement Speed|+20% XP Gain|+6 Armor|+50 Mist Coil Heal/Damage|15% Cooldown Reduction|+90 Damage|+250 Aphotic Shield Health|+25% Curse of Avernus MS Slow",
 		"team": "Bad",
 		"base_health_regen": 1.5,
 		"base_movement": 310,
@@ -20907,8 +20924,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "450",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -21086,8 +21103,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "650",
-					"MaxPolygonsLOD1": "400"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -21121,9 +21138,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -21256,8 +21273,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "530",
-					"MaxPolygonsLOD1": "450"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -21292,8 +21309,8 @@
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -21558,7 +21575,7 @@
 		"image": "/resource/flash3/images/heroes/ember_spirit.png",
 		"icon": "/resource/flash3/images/miniheroes/ember_spirit.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_ember_spirit.png",
-		"talents": "+20 Damage|+150 Flame Guard Absorption|+30 Flame Guard DPS|+1s Searing Chains|+10% Spell Amplification|True Strike|2 Sleight of Fist Charges|-25 Remnant Charge Replenish",
+		"talents": "+20 Damage|+150 Flame Guard Absorption|+30 Flame Guard DPS|+1s Searing Chains|+10% Spell Amplification|True Strike|2 Sleight of Fist Charges|-25 Remnant Charge Restore Time",
 		"team": "Good",
 		"base_health_regen": 2.0,
 		"base_movement": 305,
@@ -21670,17 +21687,17 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_Offhand_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "400",
-					"MaxPolygonsLOD1": "300"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -21705,9 +21722,9 @@
 					"SlotName": "arms",
 					"SlotText": "#LoadoutSlot_arms",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "300",
-					"MaxPolygonsLOD1": "250"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "600"
 				},
 				"5": {
 					"SlotIndex": "5",
@@ -21842,8 +21859,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "550",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -21937,7 +21954,7 @@
 		"image": "/resource/flash3/images/heroes/abyssal_underlord.png",
 		"icon": "/resource/flash3/images/miniheroes/abyssal_underlord.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_abyssal_underlord.png",
-		"talents": "+18 Firestorm Damage|+30 Movement Speed|+100 Cast Range|+15 Atrophy Atack Bonus Damage|+70 Attack Speed|+30 Health Regen|+0.8s Pit of Malice Root|25% Firestorm Building Damage",
+		"talents": "+18 Firestorm Wave Damage|+30 Movement Speed|+100 Cast Range|+15 Atrophy Attack Bonus Damage From Heroes|+70 Attack Speed|+30 Health Regen|+0.8s Pit of Malice Root|25% Firestorm Building Damage",
 		"team": "Bad",
 		"base_health_regen": 1.5,
 		"base_movement": 290,
@@ -22021,7 +22038,7 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
@@ -22541,9 +22558,9 @@
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
-					"TextureHeight": "128",
-					"MaxPolygonsLOD0": "590",
-					"MaxPolygonsLOD1": "358"
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -22591,9 +22608,9 @@
 					"item_branches": "ITEM_EXTENSION",
 					"item_boots": "ITEM_CORE",
 					"item_magic_stick": "ITEM_CORE",
-					"item_circlet": "ITEM_CORE",
+					"item_enchanted_mango": "ITEM_CORE",
 					"item_magic_wand": "ITEM_DERIVED | ITEM_SELLABLE",
-					"item_energy_booster": "ITEM_EXTENSION",
+					"item_energy_booster": "ITEM_CORE",
 					"item_arcane_boots": "ITEM_DERIVED",
 					"item_wind_lace": "ITEM_EXTENSION",
 					"item_void_stone": "ITEM_LUXURY",
@@ -22608,18 +22625,11 @@
 					"item_buckler": "ITEM_DERIVED",
 					"item_recipe_mekansm": "ITEM_EXTENSION",
 					"item_mekansm": "ITEM_DERIVED",
-					"item_sobi_mask": "ITEM_LUXURY",
-					"item_enchanted_mango": "ITEM_EXTENSION",
-					"item_soul_ring": "ITEM_DERIVED",
-					"item_point_booster": "ITEM_EXTENSION",
-					"item_vitality_booster": "ITEM_EXTENSION",
-					"item_soul_booster": "ITEM_DERIVED",
-					"item_recipe_bloodstone": "ITEM_EXTENSION",
-					"item_bloodstone": "ITEM_DERIVED",
 					"item_ultimate_orb": "ITEM_LUXURY",
 					"item_mystic_staff": "ITEM_LUXURY",
 					"item_sheepstick": "ITEM_DERIVED",
 					"item_quarterstaff": "ITEM_LUXURY",
+					"item_sobi_mask": "ITEM_LUXURY",
 					"item_robe": "ITEM_LUXURY",
 					"item_oblivion_staff": "ITEM_DERIVED",
 					"item_recipe_orchid": "ITEM_LUXURY",
@@ -23342,7 +23352,7 @@
 		"aliases": "pangolier|donte panlin",
 		"roles": "Carry|Nuker|Disabler|Durable|Escape|Initiator",
 		"role_levels": "2|2|1|1|2|2",
-		"bio": "The men and women that make up the Nivan Gallants live a life of swordplay, chandelier swinging, and tawdry romance. And while all adhere to their creed that \u201cA life of adventure is the only life worth living,\u201d the exploits of Donte Panlin still manage to raise the eyebrows of even the most hedonistic of swordsmen.<br><br>There is no monster he won\u2019t slay. No creature he won\u2019t woo. No tyrant he won\u2019t stand against. And no noble immune to his silver tongue.",
+		"bio": "The men and women that make up the Nivan Gallants live a life of swordplay, chandelier swinging, and tawdry romance. And while all adhere to their creed that \u201cA life of adventure is the only life worth living,\u201d the exploits of Dont\u00e9 Panlin still manage to raise the eyebrows of even the most hedonistic of swordsmen.<br><br>There is no monster he won\u2019t slay. No creature he won\u2019t woo. No tyrant he won\u2019t stand against. And no noble immune to his silver tongue.",
 		"image": "/resource/flash3/images/heroes/pangolier.png",
 		"icon": "/resource/flash3/images/miniheroes/pangolier.png",
 		"portrait": "/resource/flash3/images/heroes/selection/npc_dota_hero_pangolier.png",

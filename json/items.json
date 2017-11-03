@@ -515,7 +515,7 @@
 	{
 		"id": 21,
 		"name": "item_ogre_axe",
-		"localized_name": "Ogre Club",
+		"localized_name": "Ogre Axe",
 		"icon": "/resource/flash3/images/items/ogre_axe.png",
 		"cost": 1000,
 		"lore": "You grow stronger just by holding it.",
@@ -831,7 +831,7 @@
 			"AbilityCooldown": "40.0",
 			"ItemCost": "1000",
 			"ItemShopTags": "",
-			"ItemQuality": "epic",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemStackable": "1",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
@@ -1345,7 +1345,7 @@
 			"ItemAliases": "donkey;chicken;animal courier",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
 			"ItemStockMax": "1",
-			"ItemStockTime": "4000.0",
+			"ItemStockTime": "36000.0",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0"
 		}
@@ -2019,10 +2019,6 @@
 				"02": {
 					"var_type": "FIELD_FLOAT",
 					"bonus_mana_regen": "1.5"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10"
 				}
 			}
 		}
@@ -5449,7 +5445,7 @@
 		"localized_name": "Diffusal Blade",
 		"icon": "/resource/flash3/images/items/diffusal_blade.png",
 		"cost": 3150,
-		"description": "<h1>Active: Purge</h1> Targets an enemy, slowing it for %purge_slow_duration% seconds.<br><br>Range: %cast_range_tooltip%\n<h1>Passive: Manabreak</h1>Each attack burns %feedback_mana_burn% mana from the target, and deals %damage_per_burn% physical damage per burned mana. <br><br>Burns %feedback_mana_burn_illusion_melee% mana per attack from melee illusions and %feedback_mana_burn_illusion_ranged% mana per attack from ranged illusions. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+		"description": "<h1>Active: Purge</h1> Targets an enemy, slowing it for %purge_slow_duration% seconds.<br><br>Range: %cast_range_tooltip%\n<h1>Passive: Manabreak</h1>Each attack burns %feedback_mana_burn% mana from the target, and deals %damage_per_burn% physical damage per burned mana. <br><br>Burns %feedback_mana_burn_illusion_melee% mana per attack from melee illusions and %feedback_mana_burn_illusion_ranged% mana per attack from ranged illusions.",
 		"lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
 		"json_data": {
 			"ID": "174",
@@ -7844,6 +7840,7 @@
 			"ItemCost": "0",
 			"ItemShopTags": "",
 			"IsObsolete": "1",
+			"ItemPurchasable": "0",
 			"ItemRecipe": "1",
 			"ItemRequirements": {}
 		}
@@ -7871,6 +7868,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "quelling blade",
 			"IsObsolete": "1",
+			"ItemPurchasable": "0",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -8165,7 +8163,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CUSTOM",
 			"ItemCost": "4000",
 			"ItemShopTags": "attack_speed",
-			"ItemQuality": "common",
+			"ItemQuality": "consumable",
 			"ItemAliases": "moon shard",
 			"SideShop": "0",
 			"AbilitySpecial": {
@@ -8492,7 +8490,7 @@
 	{
 		"id": 255,
 		"name": "item_recipe_combo_breaker",
-		"localized_name": "item_recipe_combo_breaker",
+		"localized_name": "Aeon Disk Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
 		"cost": 1750,
 		"json_data": {
@@ -8652,7 +8650,7 @@
 			"AbilityCooldown": "200.0",
 			"ItemCost": "1000",
 			"ItemShopTags": "",
-			"ItemQuality": "epic",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemStackable": "0",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
@@ -8821,7 +8819,7 @@
 		"icon": "/resource/flash3/images/items/recipe.png",
 		"cost": 600,
 		"json_data": {
-			"ID": "195",
+			"ID": "266",
 			"Model": "models/props_gameplay/recipe.vmdl",
 			"ItemCost": "600",
 			"ItemShopTags": "",
@@ -8840,7 +8838,7 @@
 		"cost": 2825,
 		"description": "<h1>Active: Soul Release</h1> When used against enemies, it reduces health by %enemy_hp_drain%%% of current health per second, and reduces HP regeneration and healing by %hp_regen_reduction_enemy%%%. Deals %soul_damage_amount% damage per second. <br><br>When used on allies, it increases health by %ally_hp_gain%%% of current health per second, and increases HP regeneration and healing by %hp_regen_increase_allies%%%. Provides %soul_heal_amount% health regeneration per second. <br><br>Lasts %duration% seconds.  <br><br>Gains charges every time an enemy hero dies within %soul_radius% units.  Only the closest Spirit Vessel to the dying hero will gain a charge.<br><br>Cast Range: %soul_release_range_tooltip% ",
 		"json_data": {
-			"ID": "196",
+			"ID": "267",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
