@@ -1330,7 +1330,6 @@
 		"cast_range": "1500",
 		"cast_point": "0.4",
 		"cooldown": "16 14 12 10",
-		"damage": "75 150 225 300",
 		"mana_cost": "90 100 110 120",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/kunkka_torrent.png",
@@ -1349,7 +1348,6 @@
 			"AbilityCastRange": "1500",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "16 14 12 10",
-			"AbilityDamage": "75 150 225 300",
 			"AbilityManaCost": "90 100 110 120",
 			"AbilityModifierSupportValue": "0.5",
 			"AbilitySpecial": {
@@ -1373,6 +1371,11 @@
 				"05": {
 					"var_type": "FIELD_FLOAT",
 					"delay": "1.6 1.6 1.6 1.6"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"torrent_damage": "75 150 225 300",
+					"LinkedSpecialBonus": "special_bonus_unique_kunkka_2"
 				}
 			}
 		}
@@ -1632,7 +1635,6 @@
 		"cast_point": "0.45",
 		"cooldown": "7",
 		"duration": "1.6 1.9 2.2 2.5",
-		"damage": "80 120 160 200",
 		"mana_cost": "100 110 120 130",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/lina_light_strike_array.png",
@@ -1652,7 +1654,6 @@
 			"AbilityCastPoint": "0.45 0.45 0.45 0.45",
 			"AbilityCooldown": "7.0 7.0 7.0 7.0",
 			"AbilityDuration": "1.6 1.9 2.2 2.5",
-			"AbilityDamage": "80 120 160 200",
 			"AbilityManaCost": "100 110 120 130",
 			"AbilitySpecial": {
 				"01": {
@@ -1666,6 +1667,11 @@
 				"03": {
 					"var_type": "FIELD_FLOAT",
 					"light_strike_array_stun_duration": "1.6 1.9 2.2 2.5"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"light_strike_array_damage": "80 120 160 200",
+					"LinkedSpecialBonus": "special_bonus_unique_lina_3"
 				}
 			}
 		}
@@ -2310,7 +2316,7 @@
 		"cooldown": "0",
 		"ability_slot": 5,
 		"icon": "/resource/flash3/images/spellicons/morphling_morph_str.png",
-		"localized_name": "Atribute Shift (Strength Gain)",
+		"localized_name": "Attribute Shift (Strength Gain)",
 		"description": "Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Strength.",
 		"lore": "Shifting water makes it difficult to discern the nature of Morphling.",
 		"note": "Morph works while Morphling is disabled, but not when silenced.\nMorph can't convert stats from items.",
@@ -2397,7 +2403,6 @@
 		"hero_id": 11,
 		"cast_point": "0.55",
 		"cooldown": "10",
-		"damage": "90 160 230 300",
 		"mana_cost": "90",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze1.png",
@@ -2414,26 +2419,30 @@
 			"LinkedAbility": "nevermore_shadowraze2",
 			"AbilityCastPoint": "0.55",
 			"AbilityCooldown": "10",
-			"AbilityDamage": "90 160 230 300",
 			"AbilityManaCost": "90",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_radius": "250"
+					"shadowraze_damage": "90 160 230 300",
+					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_range": "200"
+					"shadowraze_radius": "250"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_cooldown": "3"
+					"shadowraze_range": "200"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"stack_bonus_damage": "60"
+					"shadowraze_cooldown": "3"
 				},
 				"05": {
+					"var_type": "FIELD_INTEGER",
+					"stack_bonus_damage": "60"
+				},
+				"06": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "8"
 				}
@@ -2446,7 +2455,6 @@
 		"hero_id": 11,
 		"cast_point": "0.55",
 		"cooldown": "10",
-		"damage": "90 160 230 300",
 		"mana_cost": "90",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze2.png",
@@ -2463,26 +2471,30 @@
 			"LinkedAbility": "nevermore_shadowraze3",
 			"AbilityCastPoint": "0.55",
 			"AbilityCooldown": "10",
-			"AbilityDamage": "90 160 230 300",
 			"AbilityManaCost": "90",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_radius": "250"
+					"shadowraze_damage": "90 160 230 300",
+					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_range": "450"
+					"shadowraze_radius": "250"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_cooldown": "3"
+					"shadowraze_range": "450"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"stack_bonus_damage": "60"
+					"shadowraze_cooldown": "3"
 				},
 				"05": {
+					"var_type": "FIELD_INTEGER",
+					"stack_bonus_damage": "60"
+				},
+				"06": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "8"
 				}
@@ -2495,7 +2507,6 @@
 		"hero_id": 11,
 		"cast_point": "0.55",
 		"cooldown": "10",
-		"damage": "90 160 230 300",
 		"mana_cost": "90",
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze3.png",
@@ -2512,26 +2523,30 @@
 			"LinkedAbility": "nevermore_shadowraze1",
 			"AbilityCastPoint": "0.55",
 			"AbilityCooldown": "10",
-			"AbilityDamage": "90 160 230 300",
 			"AbilityManaCost": "90",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_radius": "250"
+					"shadowraze_damage": "90 160 230 300",
+					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_range": "700"
+					"shadowraze_radius": "250"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"shadowraze_cooldown": "3"
+					"shadowraze_range": "700"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"stack_bonus_damage": "60"
+					"shadowraze_cooldown": "3"
 				},
 				"05": {
+					"var_type": "FIELD_INTEGER",
+					"stack_bonus_damage": "60"
+				},
+				"06": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "8"
 				}
@@ -2707,7 +2722,6 @@
 		"cast_range": "750",
 		"cast_point": "0.3",
 		"cooldown": "7",
-		"damage": "100 150 200 250",
 		"mana_cost": "125 130 135 140",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/phantom_lancer_spirit_lance.png",
@@ -2728,55 +2742,59 @@
 			"AbilitySound": "Hero_PhantomLancer.SpiritLance.Throw",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "7.0 7.0 7.0 7.0",
-			"AbilityDamage": "100 150 200 250",
 			"AbilityManaCost": "125 130 135 140",
 			"AbilityCastRange": "750",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"lance_speed": "1000 1000 1000 1000"
+					"lance_damage": "100 150 200 250",
+					"LinkedSpecialBonus": "special_bonus_unique_phantom_lancer_2"
 				},
 				"02": {
+					"var_type": "FIELD_INTEGER",
+					"lance_speed": "1000 1000 1000 1000"
+				},
+				"03": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "3.25"
 				},
-				"03": {
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"movement_speed_pct": "-10 -20 -30 -40"
 				},
-				"04": {
+				"05": {
 					"var_type": "FIELD_FLOAT",
 					"illusion_duration": "2.0 4.0 6.0 8.0"
 				},
-				"05": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"illusion_damage_out_pct": "-80"
 				},
-				"06": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"tooltip_illusion_damage": "20"
 				},
-				"07": {
+				"08": {
 					"var_type": "FIELD_INTEGER",
 					"illusion_damage_in_pct": "300 300 300 300"
 				},
-				"08": {
+				"09": {
 					"var_type": "FIELD_INTEGER",
 					"tooltip_illusion_total_damage_in_pct": "400 400 400 400"
 				},
-				"09": {
+				"10": {
 					"var_type": "FIELD_INTEGER",
 					"fake_lance_distance": "675"
 				},
-				"10": {
+				"11": {
 					"var_type": "FIELD_INTEGER",
 					"scepter_radius": "400"
 				},
-				"11": {
+				"12": {
 					"var_type": "FIELD_INTEGER",
 					"scepter_jumps": "5"
 				},
-				"12": {
+				"13": {
 					"var_type": "FIELD_INTEGER",
 					"lance_speed_bounces": "700"
 				}
@@ -3376,7 +3394,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "140 200 260 320"
+					"damage": "140 200 260 320",
+					"LinkedSpecialBonus": "special_bonus_unique_shadow_shaman_3"
 				}
 			}
 		}
@@ -3498,7 +3517,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage_tooltip": "40 70 100"
+					"damage_tooltip": "40 70 100",
+					"LinkedSpecialBonus": "special_bonus_unique_shadow_shaman_4"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -3705,7 +3725,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"strike_interval": "0.7 0.6 0.5"
+					"strike_interval": "0.7 0.6 0.5",
+					"LinkedSpecialBonus": "special_bonus_unique_razor_2"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -3717,7 +3738,8 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"strike_interval_scepter": "0.6 0.5 0.4"
+					"strike_interval_scepter": "0.6 0.5 0.4",
+					"LinkedSpecialBonus": "special_bonus_unique_razor_2"
 				}
 			}
 		}
@@ -3736,7 +3758,7 @@
 		"localized_name": "Wraithfire Blast",
 		"description": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target.",
 		"lore": "Ostarion calls on his damned lineage, laying waste to his opponents.",
-		"note": "Deals 80 / 160 / 230 / 300 total damage.",
+		"note": "Deals 80 / 160 / 230 / 300 total damage.\nIf Wraith King has summoned skeletons, casting Wraithfire Blast on a target will order all of the skeletons to attack that target.",
 		"json_data": {
 			"ID": "5086",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -3821,6 +3843,7 @@
 		"localized_name": "Mortal Strike",
 		"description": "Wraith King passively gains a chance to deal bonus damage on an attack. Kill non-player units when it triggers and convert them into a skeleton army.",
 		"lore": "One blow to crush a foe.",
+		"note": "Summoned skeletons will automatically attack any unit targeted by Wraithfire Blast.",
 		"json_data": {
 			"ID": "5088",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -4577,7 +4600,6 @@
 		"channel_time": "50",
 		"cooldown": "34 26 18 10",
 		"duration": "50",
-		"damage": "40 60 80 100",
 		"mana_cost": "60 50 40 30",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/sandking_sand_storm.png",
@@ -4598,7 +4620,6 @@
 			"AbilityCooldown": "34 26 18 10",
 			"AbilityChannelTime": "50",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
-			"AbilityDamage": "40 60 80 100",
 			"AbilityManaCost": "60 50 40 30",
 			"AbilitySpecial": {
 				"01": {
@@ -4612,6 +4633,11 @@
 				"03": {
 					"var_type": "FIELD_FLOAT",
 					"AbilityDuration": "50"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"sand_storm_damage": "40 60 80 100",
+					"LinkedSpecialBonus": "special_bonus_unique_sand_king_2"
 				}
 			}
 		}
@@ -4715,7 +4741,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"epicenter_slow_as": "-30"
+					"epicenter_slow_as": "-30",
+					"LinkedSpecialBonus": "special_bonus_unique_sand_king_3"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -4827,17 +4854,13 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"grow_bonus_damage_pct": "35 50 65 80"
+					"tooltip_range": "1300"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_range": "1300"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
 					"toss_damage": "75 150 225 300"
 				},
-				"08": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"charge_restore_time": "8"
 				}
@@ -4854,7 +4877,8 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/tiny_craggy_exterior.png",
 		"localized_name": "Tree Grab",
-		"description": "Grabs a tree to whack enemies on the head for a limited number of times. Grants bonus attack range. Attacks deal more damage and fully splash on units along the way. Affects buildings.",
+		"description": "Grabs a tree to whack enemies on the head for a limited number of times. Grants bonus attack range. Attacks deal more damage (increased vs. buildings) and fully splash on units along the way. The tree can be thrown, expending all the charges, to deal your attack to a unit at a distance.",
+		"note": "The cooldown begins when the charges are expended.",
 		"json_data": {
 			"ID": "5108",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -5122,7 +5146,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/slardar_sprint.png",
 		"localized_name": "Guardian Sprint",
-		"description": "Slardar slithers ahead, moving significantly faster and passing through units, though becoming more vulnerable to damage.",
+		"description": "Slardar slithers ahead, moving significantly faster and passing through units, though becoming more vulnerable to damage.  At ability level 4, Slardar may move at 700 speed while in the river.",
 		"lore": "As Slardar has made the transition from the Deeps, it has been necessary to use his powerful tail for sprinting instead of swimming.",
 		"note": "Activating this skill doesn't interrupt channeling abilities.",
 		"json_data": {
@@ -5297,7 +5321,6 @@
 		"cast_point": "0.3",
 		"cooldown": "12",
 		"duration": "4",
-		"damage": "110 160 210 260",
 		"mana_cost": "90 100 110 120",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/tidehunter_gush.png",
@@ -5319,35 +5342,39 @@
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "12",
 			"AbilityDuration": "4.0 4.0 4.0 4.0",
-			"AbilityDamage": "110 160 210 260",
 			"AbilityManaCost": "90 100 110 120",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"projectile_speed": "2500"
+					"gush_damage": "110 160 210 260",
+					"LinkedSpecialBonus": "special_bonus_unique_tidehunter_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed": "-40 -40 -40 -40"
+					"projectile_speed": "2500"
 				},
 				"03": {
+					"var_type": "FIELD_INTEGER",
+					"movement_speed": "-40 -40 -40 -40"
+				},
+				"04": {
 					"var_type": "FIELD_FLOAT",
 					"negative_armor": "3 4 5 6",
 					"LinkedSpecialBonus": "special_bonus_unique_tidehunter"
 				},
-				"04": {
+				"05": {
 					"var_type": "FIELD_INTEGER",
 					"speed_scepter": "1500"
 				},
-				"05": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"aoe_scepter": "240"
 				},
-				"06": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"cooldown_scepter": "7"
 				},
-				"07": {
+				"08": {
 					"var_type": "FIELD_INTEGER",
 					"cast_range_scepter": "1800"
 				}
@@ -5371,7 +5398,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_reduction": "12 24 36 48"
+					"damage_reduction": "12 24 36 48",
+					"LinkedSpecialBonus": "special_bonus_unique_tidehunter_4"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -5415,7 +5443,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_reduction": "-45 -50 -55 -60"
+					"damage_reduction": "-45 -50 -55 -60",
+					"LinkedSpecialBonus": "special_bonus_unique_tidehunter_3"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -5605,7 +5634,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"armor_reduction": "-3 -4 -5 -6"
+					"armor_reduction": "-3 -4 -5 -6",
+					"LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_4"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -5956,7 +5986,6 @@
 		"cast_point": "0",
 		"channel_time": "1",
 		"cooldown": "12 11 10 9",
-		"damage": "180 260 340 420",
 		"mana_cost": "90 100 110 120",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/windrunner_powershot.png",
@@ -5975,34 +6004,38 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "12 11 10 9",
 			"AbilityChannelTime": "1.0 1.0 1.0 1.0",
-			"AbilityDamage": "180 260 340 420",
 			"AbilityManaCost": "90 100 110 120",
 			"AbilitySpecial": {
 				"01": {
+					"var_type": "FIELD_INTEGER",
+					"powershot_damage": "180 260 340 420",
+					"LinkedSpecialBonus": "special_bonus_unique_windranger_3"
+				},
+				"02": {
 					"var_type": "FIELD_FLOAT",
 					"damage_reduction": "0.2"
 				},
-				"02": {
+				"03": {
 					"var_type": "FIELD_INTEGER",
 					"arrow_width": "125 125 125 125"
 				},
-				"03": {
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"arrow_range": "2600"
 				},
-				"04": {
+				"05": {
 					"var_type": "FIELD_FLOAT",
 					"arrow_speed": "3000.0 3000.0 3000.0 3000.0"
 				},
-				"05": {
+				"06": {
 					"var_type": "FIELD_FLOAT",
 					"tree_width": "75 75 75 75"
 				},
-				"06": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"vision_radius": "400"
 				},
-				"07": {
+				"08": {
 					"var_type": "FIELD_FLOAT",
 					"vision_duration": "3.34 3.34 3.34 3.34"
 				}
@@ -6045,7 +6078,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"enemy_movespeed_bonus_pct": "-15 -20 -25 -30"
+					"enemy_movespeed_bonus_pct": "-15 -20 -25 -30",
+					"LinkedSpecialBonus": "special_bonus_unique_windranger_2"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -6623,7 +6657,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_range": "700"
+					"tooltip_range": "700",
+					"LinkedSpecialBonus": "special_bonus_unique_riki_3"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6700,7 +6735,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"range": "500"
+					"range": "500",
+					"LinkedSpecialBonus": "special_bonus_unique_riki_4"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -7537,7 +7573,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage_share_percentage": "25"
+					"damage_share_percentage": "25",
+					"LinkedSpecialBonus": "special_bonus_unique_warlock_5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -7838,7 +7875,7 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/beastmaster_call_of_the_wild.png",
 		"localized_name": "Call of the Wild",
-		"description": "Beastmaster calls forth beasts to aid in the battlefield. <br><br>Level 1: Boar Level 1 <br>Level 2: Boar Level 2 <br>Level 3: Boar Level 3 + Hawk <br>Level 1: Boar Level 4 + Hawk + Random Neutral",
+		"description": "Beastmaster calls forth beasts to aid in the battlefield. <br><br>Level 1: Boar Level 1 <br>Level 2: Boar Level 2 <br>Level 3: Boar Level 3 + Hawk <br>Level 4: Boar Level 4 + Hawk + Random Neutral",
 		"lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need.",
 		"json_data": {
 			"ID": "5169",
@@ -8314,7 +8351,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed": "-11 -12 -13 -14"
+					"movement_speed": "-11 -12 -13 -14",
+					"LinkedSpecialBonus": "special_bonus_unique_venomancer_2"
 				}
 			}
 		}
@@ -8395,7 +8433,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "830"
+					"radius": "830",
+					"LinkedSpecialBonus": "special_bonus_unique_venomancer_6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -8403,7 +8442,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "16"
+					"duration": "16",
+					"LinkedSpecialBonus": "special_bonus_unique_venomancer_4"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8559,7 +8599,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "425"
+					"radius": "425",
+					"LinkedSpecialBonus": "special_bonus_unique_faceless_void_2"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -8677,7 +8718,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"tooltip_duration": "3.5"
+					"tooltip_duration": "3.5",
+					"LinkedSpecialBonus": "special_bonus_unique_pugna_5"
 				}
 			}
 		}
@@ -8716,7 +8758,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"mana_multiplier": "1.0 1.25 1.50 1.75"
+					"mana_multiplier": "1.0 1.25 1.50 1.75",
+					"LinkedSpecialBonus": "special_bonus_unique_pugna_3"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -9144,7 +9187,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"MaxLevel": "1",
+			"MaxLevel": "3",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "0.5",
 			"AbilityManaCost": "0",
@@ -9187,7 +9230,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"MaxLevel": "1",
+			"MaxLevel": "3",
 			"AbilityCastPoint": "0.3",
 			"AbilityCooldown": "0.5",
 			"AbilityManaCost": "0",
@@ -10794,11 +10837,13 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "100 140 180"
+					"damage": "100 140 180",
+					"LinkedSpecialBonus": "special_bonus_unique_leshrac_3"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"damage_scepter": "160 190 220"
+					"damage_scepter": "160 190 220",
+					"LinkedSpecialBonus": "special_bonus_unique_leshrac_3"
 				}
 			}
 		}
@@ -11053,7 +11098,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"hp_leech_percent": "4.5 5.5 6.5 7.5"
+					"hp_leech_percent": "4.5 5.5 6.5 7.5",
+					"LinkedSpecialBonus": "special_bonus_unique_lifestealer_3"
 				}
 			}
 		}
@@ -11094,7 +11140,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"heal_percent": "50"
+					"heal_percent": "50",
+					"LinkedSpecialBonus": "special_bonus_unique_lifestealer_2"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -11406,8 +11453,9 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/clinkz_strafe.png",
 		"localized_name": "Strafe",
-		"description": "Clinkz attacks with a barrage of arrows.  Dramatically increases attack speed for a short time.",
+		"description": "Clinkz nimbly attacks with a barrage of arrows. Dramatically increases attack speed for a short time and grants Clinkz the ability to automatically dodge up to 3 projectiles.",
 		"lore": "It's hard to say whether the blur around the Bone Fletcher is from his flaming heart or his speed with the quiver.",
+		"note": "Can dodge ranged attacks or spells.\nStrafe ends if Clinkz loses the 3 dodge.",
 		"json_data": {
 			"ID": "5259",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -11932,7 +11980,6 @@
 		"cast_point": "0",
 		"cooldown": "0",
 		"duration": "8",
-		"damage": "5 10 15 20",
 		"mana_cost": "0",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/huskar_burning_spear.png",
@@ -11953,12 +12000,16 @@
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "0.0 0.0 0.0 0.0",
 			"AbilityDuration": "8",
-			"AbilityDamage": "5 10 15 20",
 			"AbilityManaCost": "0 0 0 0",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"health_cost": "15"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"burn_damage": "5 10 15 20",
+					"LinkedSpecialBonus": "special_bonus_unique_huskar_2"
 				}
 			}
 		}
@@ -12302,7 +12353,7 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/broodmother_spin_web.png",
 		"localized_name": "Spin Web",
-		"description": "Spins a large web that renders Broodmother grants a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every %charge_restore_time% seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
+		"description": "Spins a large web that grants Broodmother a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every %charge_restore_time% seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
 		"lore": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of forboding.",
 		"note": "Has a fade time of 2 seconds.\nAlso affects Spiderling and Spiderites.\nIf free movement is disabled, you will destroy nearby trees.",
 		"json_data": {
@@ -12640,11 +12691,13 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_gold_self": "150 250 350"
+					"bonus_gold_self": "150 250 350",
+					"LinkedSpecialBonus": "special_bonus_unique_bounty_hunter_3"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_gold": "40 80 120"
+					"bonus_gold": "40 80 120",
+					"LinkedSpecialBonus": "special_bonus_unique_bounty_hunter_3"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -12753,7 +12806,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "75 100 125 150"
+					"damage": "75 100 125 150",
+					"LinkedSpecialBonus": "special_bonus_unique_weaver_1"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -14843,11 +14897,13 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_pct": "-15 -20 -25 -30"
+					"movement_speed_pct": "-15 -20 -25 -30",
+					"LinkedSpecialBonus": "special_bonus_unique_ancient_apparition_4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"spell_resist_pct": "-15 -20 -25 -30"
+					"spell_resist_pct": "-15 -20 -25 -30",
+					"LinkedSpecialBonus": "special_bonus_unique_ancient_apparition_4"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -15195,7 +15251,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"damage": "12 24 36 48"
+					"damage": "12 24 36 48",
+					"LinkedSpecialBonus": "special_bonus_unique_spirit_breaker_3"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -15315,7 +15372,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"shock_radius": "385"
+					"shock_radius": "385",
+					"LinkedSpecialBonus": "special_bonus_unique_ursa_5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -15383,7 +15441,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_reset_time": "20"
+					"bonus_reset_time": "20",
+					"LinkedSpecialBonus": "special_bonus_unique_ursa_4"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -15449,7 +15508,6 @@
 		"cast_point": "0",
 		"cooldown": "7 6.5 6 5.5",
 		"duration": "3",
-		"damage": "7 12 17 22",
 		"mana_cost": "90",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/gyrocopter_rocket_barrage.png",
@@ -15468,7 +15526,6 @@
 			"AbilityCastPoint": "0",
 			"AbilityCooldown": "7.0 6.5 6 5.5",
 			"AbilityDuration": "3 3 3 3",
-			"AbilityDamage": "7 12 17 22",
 			"AbilityManaCost": "90 90 90 90",
 			"AbilitySpecial": {
 				"01": {
@@ -15478,6 +15535,11 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"rockets_per_second": "10"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"rocket_damage": "7 12 17 22",
+					"LinkedSpecialBonus": "special_bonus_unique_gyrocopter_3"
 				}
 			}
 		}
@@ -16123,7 +16185,8 @@
 				"01": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5",
-					"levelkey": "quaslevel"
+					"levelkey": "quaslevel",
+					"LinkedSpecialBonus": "special_bonus_unique_invoker_7"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -16177,7 +16240,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "14 22 30 38"
+					"damage": "14 22 30 38",
+					"LinkedSpecialBonus": "special_bonus_unique_silencer"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -16193,8 +16257,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"movespeed": "-9 -12 -15 -18",
-					"LinkedSpecialBonus": "special_bonus_unique_silencer"
+					"movespeed": "-9 -12 -15 -18"
 				}
 			}
 		}
@@ -17133,6 +17196,11 @@
 				"07": {
 					"var_type": "FIELD_FLOAT",
 					"bash_duration": "1.0"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"tooltip_wolf_count": "2 2 2 2",
+					"LinkedSpecialBonus": "special_bonus_unique_lycan_2"
 				}
 			}
 		}
@@ -17853,7 +17921,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"transformation_time": "0.8"
+					"transformation_time": "1.933"
 				}
 			}
 		}
@@ -18009,7 +18077,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"disruption_duration": "2.5 2.5 2.5 2.5"
+					"disruption_duration": "2.5 2.5 2.5 2.5",
+					"LinkedSpecialBonus": "special_bonus_unique_shadow_demon_5"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -18486,7 +18555,6 @@
 		"cast_point": "1.5",
 		"channel_time": "0",
 		"cooldown": "12 10 8 6",
-		"damage": "80 100 120 140",
 		"mana_cost": "80",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/meepo_poof.png",
@@ -18507,11 +18575,15 @@
 			"AbilityChannelTime": "0.0",
 			"AbilityCooldown": "12 10 8 6",
 			"AbilityManaCost": "80",
-			"AbilityDamage": "80 100 120 140",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "375"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"poof_damage": "80 100 120 140",
+					"LinkedSpecialBonus": "special_bonus_unique_meepo_2"
 				}
 			}
 		}
@@ -18625,7 +18697,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"bash_duration": "0.4 1.0 1.6 2.2"
+					"bash_duration": "0.4 1.0 1.6 2.2",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_4"
 				}
 			}
 		}
@@ -18664,7 +18737,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"leech_damage": "15 30 45 60"
+					"leech_damage": "15 30 45 60",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_2"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -18766,11 +18840,13 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "800"
+					"radius": "800",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"eyes_radius": "800"
+					"eyes_radius": "800",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_5"
 				}
 			}
 		}
@@ -18782,7 +18858,6 @@
 		"cast_range": "475",
 		"cast_point": "0.45",
 		"cooldown": "12",
-		"damage": "55 110 165 220",
 		"mana_cost": "75 85 95 105",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/ogre_magi_fireblast.png",
@@ -18804,7 +18879,6 @@
 			"AbilityCastPoint": "0.45",
 			"AbilityCooldown": "12",
 			"AbilityManaCost": "75 85 95 105",
-			"AbilityDamage": "55 110 165 220",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -18813,6 +18887,11 @@
 				"02": {
 					"var_type": "FIELD_FLOAT",
 					"multicast_delay": "0.5"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"fireblast_damage": "55 110 165 220",
+					"LinkedSpecialBonus": "special_bonus_unique_ogre_magi_2"
 				}
 			}
 		}
@@ -19023,7 +19102,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"decay_duration": "45"
+					"decay_duration": "45",
+					"LinkedSpecialBonus": "special_bonus_unique_undying_4"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -19119,7 +19199,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"hits_to_destroy_tooltip": "4 5 6 8"
+					"hits_to_destroy_tooltip": "4 5 6 8",
+					"LinkedSpecialBonus": "special_bonus_unique_undying_5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -19566,7 +19647,6 @@
 		"cast_range": "800",
 		"cast_point": "0.05",
 		"cooldown": "12 11 10 9",
-		"damage": "40 60 80 100",
 		"mana_cost": "130",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/disruptor_thunder_strike.png",
@@ -19587,7 +19667,6 @@
 			"AbilityCooldown": "12 11 10 9",
 			"AbilityManaCost": "130 130 130 130",
 			"AbilityCastRange": "800 800 800 800",
-			"AbilityDamage": "40 60 80 100",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -19601,6 +19680,11 @@
 				"03": {
 					"var_type": "FIELD_FLOAT",
 					"strike_interval": "2.0 2.0 2.0 2.0"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"strike_damage": "40 60 80 100",
+					"LinkedSpecialBonus": "special_bonus_unique_disruptor_3"
 				}
 			}
 		}
@@ -19748,7 +19832,6 @@
 		"cast_range": "700",
 		"cast_point": "0.4",
 		"cooldown": "14",
-		"damage": "80 140 200 260",
 		"mana_cost": "95 115 135 155",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/nyx_assassin_impale.png",
@@ -19770,7 +19853,6 @@
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "14.0",
 			"AbilityManaCost": "95 115 135 155",
-			"AbilityDamage": "80 140 200 260",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -19791,6 +19873,11 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"cooldown_upgrade": "7"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"impale_damage": "80 140 200 260",
+					"LinkedSpecialBonus": "special_bonus_unique_nyx_2"
 				}
 			}
 		}
@@ -20665,7 +20752,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"soul_charge_damage": "65"
+					"soul_charge_damage": "65",
+					"LinkedSpecialBonus": "special_bonus_unique_visage_4"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -21678,7 +21766,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"axe_damage": "75"
+					"axe_damage": "75",
+					"LinkedSpecialBonus": "special_bonus_unique_troll_warlord_3"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -21725,7 +21814,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "75 125 175 225"
+					"damage": "75 125 175 225",
+					"LinkedSpecialBonus": "special_bonus_unique_troll_warlord_3"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -21770,7 +21860,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"max_stacks": "7"
+					"max_stacks": "7",
+					"LinkedSpecialBonus": "special_bonus_unique_troll_warlord_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -22354,7 +22445,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"range": "850 1050 1250 1450"
+					"range": "850 1050 1250 1450",
+					"LinkedSpecialBonus": "special_bonus_unique_timbersaw_3"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -22395,7 +22487,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"stack_limit": "5 10 15 20"
+					"stack_limit": "5 10 15 20",
+					"LinkedSpecialBonus": "special_bonus_unique_timbersaw_2"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -23381,7 +23474,7 @@
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/bristleback_warpath.png",
 		"localized_name": "Warpath",
-		"description": "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage.",
 		"lore": "'Temper, temper,' his mum always chided.  But in a fight, a temper can come in handy.",
 		"note": "Bristleback's illusions will receive the bonuses.\nItems will not trigger Warpath.",
 		"json_data": {
@@ -23988,11 +24081,13 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"snowball_damage": "80 120 160 200"
+					"snowball_damage": "80 120 160 200",
+					"LinkedSpecialBonus": "special_bonus_unique_tusk_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"snowball_speed": "675"
+					"snowball_speed": "675",
+					"LinkedSpecialBonus": "special_bonus_unique_tusk_3"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -25303,7 +25398,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_hero": "30 60 90 120"
+					"damage_per_hero": "30 60 90 120",
+					"LinkedSpecialBonus": "special_bonus_unique_legion_commander_4"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -26290,7 +26386,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"wave_damage": "25 40 55 70"
+					"wave_damage": "25 40 55 70",
+					"LinkedSpecialBonus": "special_bonus_unique_underlord_2"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -26402,7 +26499,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage_from_hero": "30 35 40 45"
+					"bonus_damage_from_hero": "30 35 40 45",
+					"LinkedSpecialBonus": "special_bonus_unique_underlord_3"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -26612,7 +26710,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_range": "400"
+					"bonus_range": "400",
+					"LinkedSpecialBonus": "special_bonus_unique_terrorblade_3"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -26802,7 +26901,8 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_second": "10 30 50 70"
+					"damage_per_second": "10 30 50 70",
+					"LinkedSpecialBonus": "special_bonus_unique_phoenix_3"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -27615,11 +27715,13 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"vision_aoe": "800"
+					"vision_aoe": "800",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"overgrowth_aoe": "800"
+					"overgrowth_aoe": "800",
+					"LinkedSpecialBonus": "special_bonus_unique_treant_5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -28176,6 +28278,7 @@
 			"FightRecapLevel": "1",
 			"IsGrantedByScepter": "1",
 			"AbilitySound": "Hero_NyxAssassin.Burrow.In",
+			"LinkedAbility": "nyx_assassin_unburrow",
 			"HasScepterUpgrade": "1",
 			"AbilityCastPoint": "1.5",
 			"AbilitySpecial": {
@@ -28586,7 +28689,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"cast_range_tooltip": "600 700 800 900"
+					"cast_range_tooltip": "500 600 700 800"
 				}
 			}
 		}
@@ -29323,7 +29426,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "60 90 120 150"
+					"bonus_damage": "60 90 120 150",
+					"LinkedSpecialBonus": "special_bonus_unique_monkey_king_2"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -31926,7 +32030,7 @@
 		"id": 6052,
 		"name": "special_bonus_unique_shadow_shaman_1",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+1 Serpent Wards Attacks HP",
+		"localized_name": "+1 Serpent Wards Max HP",
 		"json_data": {
 			"ID": "6052",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -32232,7 +32336,7 @@
 		"id": 6070,
 		"name": "special_bonus_unique_nevermore_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+150 Shadow Raze Damage",
+		"localized_name": "+150 Shadowraze Damage",
 		"json_data": {
 			"ID": "6070",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -33542,7 +33646,7 @@
 		"id": 6156,
 		"name": "special_bonus_unique_viper_1",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+6 Corrosive Skin",
+		"localized_name": "+6 Corrosive Skin DPS",
 		"json_data": {
 			"ID": "6156",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -33954,7 +34058,7 @@
 		"id": 6184,
 		"name": "special_bonus_unique_silencer",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+30 Curse Damage",
+		"localized_name": "+30 Curse Of The Silent Damage",
 		"json_data": {
 			"ID": "6184",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -34751,7 +34855,7 @@
 		"id": 6232,
 		"name": "special_bonus_unique_dazzle_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+20 Shadow Wave Heal",
+		"localized_name": "+20 Shadow Wave Heal / Damage",
 		"json_data": {
 			"ID": "6232",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -35210,7 +35314,7 @@
 		"id": 6265,
 		"name": "special_bonus_unique_wisp",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+90 Spirits Damage",
+		"localized_name": "+90 Spirits Hero Damage",
 		"json_data": {
 			"ID": "6265",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -36138,6 +36242,7 @@
 		"icon": "/resource/flash3/images/spellicons/dark_willow_bramble_maze.png",
 		"localized_name": "Bramble Maze",
 		"description": "Dark Willow creates a maze of brambles in the target area.  Enemies that walk into a bramble take damage and are rooted.",
+		"lore": "The fae realm exists all around you, merely waiting to draw you in...",
 		"json_data": {
 			"ID": "6339",
 			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
@@ -36145,6 +36250,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "1200",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
@@ -36200,6 +36306,7 @@
 		"icon": "/resource/flash3/images/spellicons/dark_willow_bedlam.png",
 		"localized_name": "Bedlam",
 		"description": "Dark Willow's pet wisp roams around her for the duraton, rapidly attacking nearby enemies.  Bedlam cannot be used while Terrorize is active.",
+		"lore": "You'll have to excuse my friend Jex. He's really into murder.",
 		"json_data": {
 			"ID": "6340",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
@@ -36252,6 +36359,7 @@
 		"icon": "/resource/flash3/images/spellicons/dark_willow_shadow_realm.png",
 		"localized_name": "Shadow Realm",
 		"description": "Dark Willow recedes into the shadows, becoming untargetable.  Her next attack has increased attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after %max_damage_duration% seconds.",
+		"lore": "What you can't see will most definitely hurt you.",
 		"json_data": {
 			"ID": "6341",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -36292,6 +36400,7 @@
 		"icon": "/resource/flash3/images/spellicons/dark_willow_cursed_crown.png",
 		"localized_name": "Cursed Crown",
 		"description": "Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned.",
+		"lore": "Didn't anyone ever tell you? Never strike a deal with a fairy...",
 		"json_data": {
 			"ID": "6342",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -36334,6 +36443,7 @@
 		"icon": "/resource/flash3/images/spellicons/pangolier_gyroshell.png",
 		"localized_name": "Rolling Thunder",
 		"description": "Pangolier curls into a magic-immune ball and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction.",
+		"lore": "Where his ancestors sought only refuge, the Pangolier saw opportunity...",
 		"json_data": {
 			"ID": "6343",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -36416,6 +36526,7 @@
 		"icon": "/resource/flash3/images/spellicons/pangolier_swashbuckle.png",
 		"localized_name": "Swashbuckle",
 		"description": "Vector Targeted. Pangolier dashes along the target line, then slashes all enemies in the drawn direction with several quick swipes.\n\nHeartpiercer has a chance to activate from this damage.",
+		"lore": "The Pangolier's blade is even nimbler than his tongue.",
 		"json_data": {
 			"ID": "6344",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -36436,7 +36547,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "24 42 60 78"
+					"damage": "24 42 60 78",
+					"LinkedSpecialBonus": "special_bonus_unique_pangolier_3"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -36473,6 +36585,7 @@
 		"icon": "/resource/flash3/images/spellicons/pangolier_heartpiercer.png",
 		"localized_name": "Heartpiercer",
 		"description": "Pangolier reads his enemies perfectly, deftly slipping his blade past defenses. Each attack has a chance to negate enemy armor and slow the target for a duration, activating after a short delay.",
+		"lore": "These fools know nothing of real armor...",
 		"json_data": {
 			"ID": "6346",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -37715,6 +37828,7 @@
 		"icon": "/resource/flash3/images/spellicons/pangolier_shield_crash.png",
 		"localized_name": "Shield Crash",
 		"description": "Pangolier jumps in the air and slams back to the ground, damaging all enemies in a radius. For each enemy hero hit, he gains a percentage of incoming damage reduction for a short time.\n\nForward movement is maintained if Shield Crash is used while Rolling Thunder is active, and allows Rolling Thunder to clear walls or cliffs.",
+		"lore": "Only in the midst of his enemies does the Pangolier truly thrive.",
 		"json_data": {
 			"ID": "6461",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -38195,7 +38309,7 @@
 		"id": 6522,
 		"name": "special_bonus_unique_visage_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "Soul Assumption Double Strike",
+		"localized_name": "Soul Assumption Hits 2 Targets",
 		"json_data": {
 			"ID": "6522",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -38807,7 +38921,7 @@
 		"id": 6602,
 		"name": "special_bonus_unique_abaddon_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+25% Curse of Avernus Slow",
+		"localized_name": "+25% Curse of Avernus MS Slow",
 		"json_data": {
 			"ID": "6602",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -39011,7 +39125,7 @@
 		"id": 6614,
 		"name": "special_bonus_unique_brewmaster_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+15% Drunken Brawler",
+		"localized_name": "+15% Drunken Brawler Chance",
 		"json_data": {
 			"ID": "6614",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -39754,7 +39868,7 @@
 		"id": 6676,
 		"name": "special_bonus_unique_lifestealer_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+50% Open Wounds Heal",
+		"localized_name": "+50% Open Wounds Lifesteal",
 		"json_data": {
 			"ID": "6676",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -39958,7 +40072,7 @@
 		"id": 6691,
 		"name": "special_bonus_unique_magnus_5",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+0.75s Reverse Polarity",
+		"localized_name": "+0.75s Reverse Polarity Stun Duration",
 		"json_data": {
 			"ID": "6691",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -40488,7 +40602,7 @@
 		"id": 6809,
 		"name": "special_bonus_unique_bloodseeker_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+20 Thirst",
+		"localized_name": "+20 Max Thirst MS and Damage",
 		"json_data": {
 			"ID": "6809",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -40522,7 +40636,7 @@
 		"id": 6811,
 		"name": "special_bonus_unique_invoker_6",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+30 Chaos Meteor Damage",
+		"localized_name": "+30 Chaos Meteor Contact Damage",
 		"json_data": {
 			"ID": "6811",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -40573,7 +40687,7 @@
 		"id": 6815,
 		"name": "special_bonus_unique_axe_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "Attacks Proc Counter Helix",
+		"localized_name": "Attacking Procs Counter Helix",
 		"json_data": {
 			"ID": "6815",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -41319,7 +41433,7 @@
 		"id": 6884,
 		"name": "special_bonus_unique_skywrath_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+1 Arcane Bolt",
+		"localized_name": "+1 Arcane Bolt Per Cast",
 		"json_data": {
 			"ID": "6884",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -41901,7 +42015,9 @@
 		"cast_point": "0.2",
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/tiny_toss_tree.png",
-		"localized_name": "tiny_toss_tree",
+		"localized_name": "Tree Throw",
+		"description": "Consume the remaining Tree Grab charges and throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+		"lore": "Even enemies can share in Tiny's arbor ardor.",
 		"json_data": {
 			"ID": "6937",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
@@ -42063,7 +42179,7 @@
 		"id": 6947,
 		"name": "special_bonus_unique_tidehunter_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+24 Kraken Shell",
+		"localized_name": "+24 Kraken Shell Damage Block",
 		"json_data": {
 			"ID": "6947",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -42318,7 +42434,7 @@
 		"id": 6967,
 		"name": "special_bonus_unique_underlord_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+18 Firestorm Damage",
+		"localized_name": "+18 Firestorm Wave Damage",
 		"json_data": {
 			"ID": "6967",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -42335,7 +42451,7 @@
 		"id": 6968,
 		"name": "special_bonus_unique_underlord_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+15 Atrophy Atack Bonus Damage",
+		"localized_name": "+15 Atrophy Attack Bonus Damage From Heroes",
 		"json_data": {
 			"ID": "6968",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -42454,7 +42570,7 @@
 		"id": 6975,
 		"name": "special_bonus_unique_ursa_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+25s Fury Swipes",
+		"localized_name": "+25s Fury Swipes Reset Time",
 		"json_data": {
 			"ID": "6975",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -42687,7 +42803,7 @@
 		"id": 6988,
 		"name": "special_bonus_unique_weaver_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-0.5 Swarm Armor Reduction",
+		"localized_name": "+0.5 Swarm Armor Reduction",
 		"json_data": {
 			"ID": "6988",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -43020,7 +43136,7 @@
 		"id": 7012,
 		"name": "special_bonus_unique_lifestealer_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+2% Feast",
+		"localized_name": "+2% Feast Damage/Lifesteal",
 		"json_data": {
 			"ID": "7012",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -43054,7 +43170,7 @@
 		"id": 7017,
 		"name": "special_bonus_unique_invoker_8",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+0.3s Tornado Duration",
+		"localized_name": "+0.3s Tornado Lift Time",
 		"json_data": {
 			"ID": "7017",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -43419,7 +43535,7 @@
 		"id": 7051,
 		"name": "special_bonus_unique_ember_spirit_5",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-25 Remnant Charge Replenish",
+		"localized_name": "-25 Remnant Charge Restore Time",
 		"json_data": {
 			"ID": "7051",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -43491,6 +43607,7 @@
 		"icon": "/resource/flash3/images/spellicons/dark_willow_terrorize.png",
 		"localized_name": "Terrorize",
 		"description": "Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active.",
+		"lore": "You think you know the first thing about fear? Jex'll show you what that word truly means...",
 		"json_data": {
 			"ID": "8340",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
