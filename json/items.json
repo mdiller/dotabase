@@ -1347,6 +1347,8 @@
 			"ItemStockMax": "1",
 			"ItemStockTime": "36000.0",
 			"ItemSupport": "1",
+			"ItemKillable": "0",
+			"ItemSellable": "0",
 			"IsTempestDoubleClonable": "0"
 		}
 	},
@@ -2775,7 +2777,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "2",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "22.0",
@@ -3122,7 +3124,7 @@
 		"localized_name": "Necronomicon",
 		"icon": "/resource/flash3/images/items/necronomicon.png",
 		"cost": 2400,
-		"description": "<h1>Active: Demonic Summoning</h1>Summons a Warrior and an Archer to fight for you for %summon_duration% seconds.<br><br><h1>Warrior:</h1>Burns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.<br>Health: %warrior_health_tooltip%<br>Damage: %warrior_damage_tooltip%<br>Mana Break Damage: %warrior_mana_break_tooltip%<br>Last Will Damage: %explosion%<br><br><h1>Archer:</h1>Has an activated mana burn ability, and a passive movement and attack speed aura.<br>Health: %archer_health_tooltip%<br>Damage: %archer_damage_tooltip%<br>Mana Burn Damage: %archer_mana_burn%<br>Aura Move Speed: %archer_move_speed%<br>Aura Attack Speed: %archer_attack_speed%<br>Aura Radius: %archer_aura_radius_tooltip%",
+		"description": "<h1>Active: Demonic Summoning</h1>Summons a Warrior and an Archer to fight for you for %summon_duration% seconds.<br><br><h1>Warrior:</h1>Burns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.<br>Health: %warrior_health_tooltip%<br>Damage: %warrior_damage_tooltip%<br>Mana Break Damage: %warrior_mana_break_tooltip%<br>Last Will Damage: %explosion%<br><br><h1>Archer:</h1>Has a passive movement and attack speed aura.<br>Health: %archer_health_tooltip%<br>Damage: %archer_damage_tooltip%<br>Mana Burn Damage: %archer_mana_burn%<br>Aura Move Speed: %archer_move_speed%<br>Aura Attack Speed: %archer_attack_speed%<br>Aura Radius: %archer_aura_radius_tooltip%",
 		"lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
 		"json_data": {
 			"ID": "106",
@@ -4350,7 +4352,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "50"
+					"bonus_damage": "45"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -5412,7 +5414,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"berserk_armor_reduction": "6"
+					"berserk_armor_reduction": "7"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -7267,7 +7269,7 @@
 		"localized_name": "Meteor Hammer",
 		"icon": "/resource/flash3/images/items/meteor_hammer.png",
 		"cost": 2625,
-		"description": "<h1>Active: Meteor Hammer</h1> CHANNELED - After a succesful channel, summons a meteor that strikes a %impact_radius% AoE, stunning enemies for %stun_duration% seconds. Deals damage over time to enemies units and buildings for %burn_duration% seconds.<BR><BR>Building DPS: %burn_dps_buildings% <BR>Non-Building DPS: %burn_dps_units% <BR>Channel Duration: %max_duration% seconds.<BR>Landing Time: %land_time% seconds.",
+		"description": "<h1>Active: Meteor Hammer</h1> CHANNELED - After a succesful channel, summons a meteor that strikes a %impact_radius% AoE, stunning enemies for %stun_duration% seconds and dealing impact damage. Continues to deal damage over time to enemies units and buildings for %burn_duration% seconds.<BR><BR>Building Impact Damage: %impact_damage_buildings% <BR>Building Over Time Damage: %burn_dps_buildings% <BR><BR>Non-Building Impact Damage: %impact_damage_units% <BR>Non-Building Over Time Damage: %burn_dps_units% <BR><BR>Channel Duration: %max_duration% seconds.<BR>Landing Time: %land_time% seconds.",
 		"json_data": {
 			"ID": "223",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
@@ -7330,6 +7332,14 @@
 				"12": {
 					"var_type": "FIELD_INTEGER",
 					"max_duration": "3"
+				},
+				"13": {
+					"var_type": "FIELD_INTEGER",
+					"impact_damage_buildings": "75"
+				},
+				"14": {
+					"var_type": "FIELD_INTEGER",
+					"impact_damage_units": "150"
 				}
 			}
 		}
@@ -8209,7 +8219,7 @@
 		"localized_name": "Silver Edge",
 		"icon": "/resource/flash3/images/items/silver_edge.png",
 		"cost": 5550,
-		"description": "<h1>Active: Shadow Walk</h1>Makes you invisible for %windwalk_duration% seconds, or until you attack or cast a spell.  While invisible, you move %windwalk_movement_speed%%% faster and can move through units.  <br><br>Attacking to end the invisibility will deal %windwalk_bonus_damage% bonus damage to the target, and for %backstab_duration% seconds, disable their passive abilities, and reduce their damage output by %backstab_reduction%%%.",
+		"description": "<h1>Active: Shadow Walk</h1>Makes you invisible for %windwalk_duration% seconds, or until you attack or cast a spell.  While invisible, you move %windwalk_movement_speed%%% faster and can move through units.  <br><br>Attacking to end the invisibility will deal %windwalk_bonus_damage% bonus damage to the target, and for %backstab_duration% seconds, disable their passive abilities.",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"json_data": {
 			"ID": "249",
@@ -8492,11 +8502,11 @@
 		"name": "item_recipe_combo_breaker",
 		"localized_name": "Aeon Disk Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1750,
+		"cost": 1675,
 		"json_data": {
 			"ID": "255",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1750",
+			"ItemCost": "1675",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_combo_breaker",
@@ -8510,13 +8520,13 @@
 		"name": "item_combo_breaker",
 		"localized_name": "Aeon Disk",
 		"icon": "/resource/flash3/images/items/combo_breaker.png",
-		"cost": 3750,
+		"cost": 3675,
 		"description": "<h1>Passive: Combo Breaker</h1> When you take damage and your health falls below %health_threshold_pct%%, a strong dispel is applied and you gain a %buff_duration% second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. \n\n<h1>Passive: Status Resistance</h1> Reduces status effect durations by %status_resistance%%. ",
 		"json_data": {
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "100.0",
-			"ItemCost": "3750",
+			"ItemCost": "3675",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "ad;aeon disk",
