@@ -164,7 +164,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"spell_shield_resistance": "26 34 42 50",
+					"spell_shield_resistance": "20 30 40 50",
 					"LinkedSpecialBonus": "special_bonus_unique_antimage_4"
 				},
 				"02": {
@@ -916,7 +916,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"trueshot_ranged_damage": "20 26 32 38",
+					"trueshot_ranged_damage": "16 22 28 34",
 					"LinkedSpecialBonus": "special_bonus_unique_drow_ranger_1"
 				}
 			}
@@ -1830,7 +1830,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Lion.Voodoo",
 			"AbilityCastRange": "500",
@@ -2070,8 +2070,8 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/mirana_leap.png",
 		"localized_name": "Leap",
-		"description": "Mirana leaps forward into battle, empowering allied units with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts %leap_bonus_duration% seconds.",
-		"lore": "Both friend and foe alike recognize Mirana's iconic white beast in the heat of battle.",
+		"description": "Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts %leap_bonus_duration% seconds.",
+		"lore": "None can fail to recognize Mirana's iconic white beast in the heat of battle.",
 		"json_data": {
 			"ID": "5050",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -2194,6 +2194,10 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"width": "200"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"charge_restore_time": "11"
 				}
 			}
 		}
@@ -2222,6 +2226,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Morphling.AdaptiveStrike",
+			"LinkedAbility": "morphling_adaptive_strike_str",
 			"AbilityCastRange": "600 700 800 900",
 			"AbilityCastPoint": "0.25",
 			"AbilityCooldown": "10",
@@ -2234,11 +2239,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"damage_min": "0.25 0.25 0.25 0.25"
+					"damage_min": "0.5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"damage_max": "0.5 1.0 1.5 2.0"
+					"damage_max": "1.0 1.5 2.0 2.5"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -2268,7 +2273,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attributes": "3 4 5 6"
+					"bonus_attributes": "4 5 6 7"
 				}
 			}
 		}
@@ -2407,8 +2412,9 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze1.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the area in front of him, dealing damage to enemy units in an area. Adds a stacking magic resistance reduction debuff on the target. ",
+		"description": "Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
+		"note": "Stack duration refreshes on stack gain.",
 		"json_data": {
 			"ID": "5059",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -2459,8 +2465,9 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze2.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the area in front of him, dealing damage to enemy units in an area. Adds a stacking magic resistance reduction debuff on the target. ",
+		"description": "Shadow Fiend razes the ground a short distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
+		"note": "Stack duration refreshes on stack gain.",
 		"json_data": {
 			"ID": "5060",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -2511,8 +2518,9 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/nevermore_shadowraze3.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the area in front of him, dealing damage to enemy units in an area. Adds a stacking magic resistance reduction debuff on the target. ",
+		"description": "Shadow Fiend razes the ground a longer distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
+		"note": "Stack duration refreshes on stack gain.",
 		"json_data": {
 			"ID": "5061",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -3420,7 +3428,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_ShadowShaman.Hex.Target",
 			"AbilityCastRange": "500",
@@ -4306,7 +4314,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"gods_strength_bonus_str": "12 24 36",
+					"gods_strength_bonus_str": "10 20 30",
 					"LinkedSpecialBonus": "special_bonus_unique_sven_2"
 				},
 				"03": {
@@ -4850,7 +4858,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage_pct": "20 20 20 20"
+					"bonus_damage_pct": "30"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -4872,7 +4880,8 @@
 		"name": "tiny_craggy_exterior",
 		"hero_id": 19,
 		"cast_range": "165",
-		"cooldown": "40 32 24 16",
+		"cast_point": "0.2",
+		"cooldown": "15",
 		"mana_cost": "20 30 40 50",
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/tiny_craggy_exterior.png",
@@ -4888,17 +4897,18 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilitySound": "Hero_Tiny.CraggyExterior.Stun",
 			"AbilityCastRange": "165",
-			"AbilityCooldown": "40 32 24 16",
+			"AbilityCastPoint": "0.2",
+			"AbilityCooldown": "15",
 			"AbilityManaCost": "20 30 40 50",
 			"AbilityModifierSupportBonus": "35",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"attack_count": "2 3 4 5"
+					"attack_count": "2 3 4 6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "25"
+					"bonus_damage": "30"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4914,11 +4924,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"splash_range": "375"
+					"splash_range": "400"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"splash_pct": "70"
+					"splash_pct": "100"
 				}
 			}
 		}
@@ -4948,7 +4958,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"attack_speed_reduction": "30"
+					"attack_speed_reduction": "20 25 30"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -4964,7 +4974,6 @@
 		"cast_range": "850",
 		"cast_point": "0.2",
 		"cooldown": "1.6",
-		"damage": "85 100 115 145",
 		"mana_cost": "65 70 75 80",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/zuus_arc_lightning.png",
@@ -4981,19 +4990,23 @@
 			"AbilitySound": "Hero_Zuus.ArcLightning.Cast",
 			"AbilityCastRange": "850",
 			"AbilityCastPoint": "0.2",
-			"AbilityDamage": "85 100 115 145",
 			"AbilityCooldown": "1.6",
 			"AbilityManaCost": "65 70 75 80",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "500 500 500 500"
+					"arc_damage": "85 100 115 145",
+					"LinkedSpecialBonus": "special_bonus_unique_zeus_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"jump_count": "5 7 9 15"
+					"radius": "500 500 500 500"
 				},
 				"03": {
+					"var_type": "FIELD_INTEGER",
+					"jump_count": "5 7 9 15"
+				},
+				"04": {
 					"var_type": "FIELD_FLOAT",
 					"jump_delay": "0.25 0.25 0.25 0.25"
 				}
@@ -5570,7 +5583,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -5590,7 +5603,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"illusion_duration": "7"
+					"illusion_duration": "6"
 				}
 			}
 		}
@@ -7415,7 +7428,7 @@
 		"id": 5159,
 		"name": "necrolyte_heartstopper_aura",
 		"hero_id": 36,
-		"cast_range": "900",
+		"cast_range": "700",
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/necrolyte_heartstopper_aura.png",
 		"localized_name": "Heartstopper Aura",
@@ -7427,7 +7440,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "700",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -7816,11 +7829,11 @@
 		"cast_range": "1500",
 		"cast_point": "0.4",
 		"cooldown": "8",
-		"mana_cost": "60 65 70 75",
+		"mana_cost": "80",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/beastmaster_wild_axes.png",
 		"localized_name": "Wild Axes",
-		"description": "Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once.",
+		"description": "Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once, and amplifies subsequent damage from Beastmaster and his units.",
 		"lore": "While learning to maneuver in nature alone, the Beastmaster also mastered the use of a pair of tomahawks, adept at cutting down trees as well as adversaries.",
 		"note": "This ability destroys trees.",
 		"json_data": {
@@ -7835,7 +7848,7 @@
 			"AbilityCastRange": "1500",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "8",
-			"AbilityManaCost": "60 65 70 75",
+			"AbilityManaCost": "80",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -7895,7 +7908,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"boar_damage_tooltip": "20 30 40 50"
+					"boar_damage_tooltip": "16 24 32 40"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8188,7 +8201,7 @@
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/beastmaster_primal_roar.png",
 		"localized_name": "Primal Roar",
-		"description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 30% movement speed for 3 seconds.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies.",
 		"note": "The stun will hit Spell Immune units. The damage will not.",
 		"json_data": {
@@ -9166,7 +9179,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "100 125 150"
+					"trap_bonus_damage": "175 250 325"
 				}
 			}
 		}
@@ -9211,7 +9224,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "100 125 150"
+					"trap_bonus_damage": "175 250 325"
 				}
 			}
 		}
@@ -9253,7 +9266,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "100 125 150"
+					"trap_bonus_damage": "175 250 325"
 				}
 			}
 		}
@@ -15287,7 +15300,7 @@
 		"hero_id": 71,
 		"cast_range": "700",
 		"cast_point": "1.2",
-		"cooldown": "80 70 60",
+		"cooldown": "100 80 60",
 		"mana_cost": "125 150 175",
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/spirit_breaker_nether_strike.png",
@@ -15310,7 +15323,7 @@
 			"AbilityCastPoint": "1.2",
 			"AbilityCastRange": "700",
 			"AbilityCastRangeBuffer": "500",
-			"AbilityCooldown": "80 70 60",
+			"AbilityCooldown": "100 80 60",
 			"AbilityManaCost": "125 150 175",
 			"AbilitySpecial": {
 				"01": {
@@ -17756,7 +17769,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bear_regen_tooltip": "2 3 4 5"
+					"bear_regen_tooltip": "4 5 6 7"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -19503,7 +19516,7 @@
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/rubick_null_field.png",
 		"localized_name": "Null Field",
-		"description": "Rubick's mastery of the arcane nullifies nearby enemy senses, reducing their magic resistance.",
+		"description": "Rubick's mastery of the arcane creates an aura that nullifies nearby enemy senses or increases his own. Can be toggled offensively or defensively to reduce enemy magic resistance or increase allied magic resistance.",
 		"lore": "Not every magus can be a Grand Magus...",
 		"note": "Stacks multiplicatively with other spell resistance sources.",
 		"json_data": {
@@ -20035,7 +20048,6 @@
 		"cast_range": "475",
 		"cast_point": "0.45",
 		"cooldown": "6",
-		"damage": "275",
 		"mana_cost": "400",
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/ogre_magi_unrefined_fireblast.png",
@@ -20058,7 +20070,6 @@
 			"AbilityCastPoint": "0.45",
 			"AbilityCooldown": "6",
 			"AbilityManaCost": "400",
-			"AbilityDamage": "275",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -20071,6 +20082,10 @@
 				"03": {
 					"var_type": "FIELD_FLOAT",
 					"scepter_mana": "0.6"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"fireblast_damage": "275"
 				}
 			}
 		}
@@ -20857,7 +20872,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"familiar_attack_damage": "20 35 50"
+					"familiar_attack_damage": "30 45 60"
 				}
 			}
 		}
@@ -21492,11 +21507,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_modifier": "-65 -50 -35 -20"
+					"damage_modifier": "-70 -55 -40 -25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage_modifier_tooltip": "35 50 65 80"
+					"damage_modifier_tooltip": "30 45 60 75"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -28532,6 +28547,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
+			"LinkedAbility": "nyx_assassin_burrow",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "0.0",
 			"AbilityManaCost": "0"
@@ -31928,7 +31944,7 @@
 		"id": 6045,
 		"name": "special_bonus_unique_sven",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-8s Storm Hammer Cooldown",
+		"localized_name": "-9s Storm Hammer Cooldown",
 		"json_data": {
 			"ID": "6045",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -31936,7 +31952,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "8"
+					"value": "9"
 				}
 			}
 		}
@@ -32200,7 +32216,7 @@
 		"id": 6062,
 		"name": "special_bonus_unique_morphling_1",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+800 Waveform Range",
+		"localized_name": "+300 Waveform Range",
 		"json_data": {
 			"ID": "6062",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -32208,7 +32224,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "800"
+					"value": "300"
 				}
 			}
 		}
@@ -32846,7 +32862,7 @@
 		"id": 6103,
 		"name": "special_bonus_unique_beastmaster",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+120 Wild Axes Damage",
+		"localized_name": "+100 Wild Axes Damage",
 		"json_data": {
 			"ID": "6103",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -32854,7 +32870,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "120"
+					"value": "100"
 				}
 			}
 		}
@@ -34024,15 +34040,15 @@
 		"id": 6182,
 		"name": "special_bonus_unique_medusa",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+2s Stone Gaze Duration",
+		"localized_name": "+2.5s Stone Gaze Duration",
 		"json_data": {
 			"ID": "6182",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "2"
+					"var_type": "FIELD_FLOAT",
+					"value": "2.5"
 				}
 			}
 		}
@@ -34058,7 +34074,7 @@
 		"id": 6184,
 		"name": "special_bonus_unique_silencer",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+30 Curse Of The Silent Damage",
+		"localized_name": "+30 Arcane Curse Damage",
 		"json_data": {
 			"ID": "6184",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -34160,7 +34176,7 @@
 		"id": 6193,
 		"name": "special_bonus_unique_riki_2",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-4s Smokescreen Cooldown",
+		"localized_name": "-5s Smokescreen Cooldown",
 		"json_data": {
 			"ID": "6193",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -34168,7 +34184,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "4"
+					"value": "5"
 				}
 			}
 		}
@@ -36241,7 +36257,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/dark_willow_bramble_maze.png",
 		"localized_name": "Bramble Maze",
-		"description": "Dark Willow creates a maze of brambles in the target area.  Enemies that walk into a bramble take damage and are rooted.",
+		"description": "Dark Willow creates a maze of brambles in the target area.  Enemies that walk into a bramble are rooted and take damage over time.",
 		"lore": "The fae realm exists all around you, merely waiting to draw you in...",
 		"json_data": {
 			"ID": "6339",
@@ -36300,7 +36316,7 @@
 		"id": 6340,
 		"name": "dark_willow_bedlam",
 		"hero_id": 119,
-		"cooldown": "20",
+		"cooldown": "40 30 20",
 		"mana_cost": "100 150 200",
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/dark_willow_bedlam.png",
@@ -36315,12 +36331,12 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "3",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "20",
+			"AbilityCooldown": "40 30 20",
 			"AbilityManaCost": "100 150 200",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"attack_damage": "75 150 225"
+					"attack_damage": "60 140 220"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -36365,6 +36381,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityCooldown": "30 24 18 12",
 			"AbilityManaCost": "70 80 90 100",
 			"AbilitySpecial": {
@@ -36392,7 +36409,7 @@
 		"id": 6342,
 		"name": "dark_willow_cursed_crown",
 		"hero_id": 119,
-		"cast_range": "800",
+		"cast_range": "600",
 		"cast_point": "0.1",
 		"cooldown": "18 16 14 12",
 		"mana_cost": "100 120 140 160",
@@ -36408,7 +36425,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"AbilityCastRange": "800",
+			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "18 16 14 12",
 			"AbilityManaCost": "100 120 140 160",
@@ -36433,11 +36450,10 @@
 		"name": "pangolier_gyroshell",
 		"hero_id": 120,
 		"cast_range": "0",
-		"cast_point": "0",
-		"channel_time": "1.2",
+		"cast_point": "1.2",
 		"cooldown": "50 45 40",
 		"duration": "8",
-		"damage": "200 250 300",
+		"damage": "200 275 350",
 		"mana_cost": "100",
 		"ability_slot": 4,
 		"icon": "/resource/flash3/images/spellicons/pangolier_gyroshell.png",
@@ -36446,19 +36462,18 @@
 		"lore": "Where his ancestors sought only refuge, the Pangolier saw opportunity...",
 		"json_data": {
 			"ID": "6343",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "0",
-			"AbilityChannelTime": "1.2",
-			"AbilityCastPoint": "0.0",
+			"AbilityCastPoint": "1.2",
 			"AbilityCooldown": "50 45 40",
 			"AbilityDuration": "8.0",
 			"AbilityManaCost": "100",
-			"AbilityDamage": "200 250 300",
+			"AbilityDamage": "200 275 350",
 			"precache": {
 				"model": "models/heroes/pangolier/pangolier_gyroshell2.vmdl"
 			},
@@ -36473,7 +36488,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"forward_move_speed": "550 575 600"
+					"forward_move_speed": "600"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -36481,7 +36496,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"turn_rate": "105 110 115"
+					"turn_rate": "120"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -36569,10 +36584,6 @@
 				"08": {
 					"var_type": "FIELD_INTEGER",
 					"strikes": "4"
-				},
-				"09": {
-					"var_type": "FIELD_INTEGER",
-					"charge_restore_time": "15 12 9 6"
 				}
 			}
 		}
@@ -36605,7 +36616,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"debuff_delay": "2"
+					"debuff_delay": "2.0"
 				}
 			}
 		}
@@ -37302,7 +37313,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "4"
+					"value": "5"
 				}
 			}
 		}
@@ -37831,7 +37842,7 @@
 		"lore": "Only in the midst of his enemies does the Pangolier truly thrive.",
 		"json_data": {
 			"ID": "6461",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
@@ -37847,7 +37858,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"hero_stacks": "8 10 12 14"
+					"hero_stacks": "9 12 15 18"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -37872,6 +37883,10 @@
 				"08": {
 					"var_type": "FIELD_INTEGER",
 					"jump_height_gyroshell": "350"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"jump_horizontal_distance": "225"
 				}
 			}
 		}
@@ -39006,7 +39021,7 @@
 		"id": 6607,
 		"name": "special_bonus_unique_antimage_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+30% Spell Shield",
+		"localized_name": "+25% Spell Shield",
 		"json_data": {
 			"ID": "6607",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -39014,7 +39029,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "30"
+					"value": "25"
 				}
 			}
 		}
@@ -39380,7 +39395,7 @@
 		"id": 6634,
 		"name": "special_bonus_unique_drow_ranger_4",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+1.5s Gust Duration",
+		"localized_name": "+2s Gust Duration",
 		"json_data": {
 			"ID": "6634",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -39388,7 +39403,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "1.5"
+					"value": "2.0"
 				}
 			}
 		}
@@ -40021,7 +40036,7 @@
 		"id": 6687,
 		"name": "special_bonus_unique_medusa_3",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+10% Mystic Snake Mana Steal",
+		"localized_name": "+15% Mystic Snake Mana Steal",
 		"json_data": {
 			"ID": "6687",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -40029,7 +40044,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "10"
+					"value": "15"
 				}
 			}
 		}
@@ -40470,7 +40485,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"incoming_damage": "150"
+					"incoming_damage": "200"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -41356,7 +41371,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "3"
+					"value": "4"
 				}
 			}
 		}
@@ -42039,15 +42054,15 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "25"
+					"bonus_damage": "30"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"splash_radius": "250"
+					"splash_radius": "275"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"splash_pct": "70"
+					"splash_pct": "100"
 				}
 			}
 		}
@@ -43010,6 +43025,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Morphling.AdaptiveStrike",
+			"LinkedAbility": "morphling_adaptive_strike_agi",
 			"AbilityCastRange": "600 700 800 900",
 			"AbilityCastPoint": "0.25",
 			"AbilityCooldown": "10",
@@ -43018,7 +43034,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"stun_min": "0.25 0.25 0.25 0.25"
+					"stun_min": "0.5"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -43549,6 +43565,23 @@
 		}
 	},
 	{
+		"id": 7052,
+		"name": "special_bonus_unique_morphling_6",
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "2 Waveform Charges",
+		"json_data": {
+			"ID": "7052",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "2"
+				}
+			}
+		}
+	},
+	{
 		"id": 7055,
 		"name": "special_bonus_unique_luna_5",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
@@ -43678,7 +43711,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "25"
+					"value": "30"
 				}
 			}
 		}
@@ -43704,7 +43737,7 @@
 		"id": 9062,
 		"name": "special_bonus_unique_pangolier_5",
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-12s Rolling Thunder",
+		"localized_name": "-16s Rolling Thunder",
 		"json_data": {
 			"ID": "9062",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -43712,7 +43745,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "12.0"
+					"value": "16.0"
 				}
 			}
 		}
