@@ -1250,7 +1250,8 @@
 		"fullname": "undying_undying_big_fleshgolem_02",
 		"mp3": "/sounds/vo/undying/undying_big_fleshgolem_02.mp3",
 		"hero_id": 85,
-		"pretty_criteria": "Unused"
+		"criteria": "Powerup Isundying IsGolem IsPowerupArcane",
+		"pretty_criteria": "Activating an arcane rune while in golem form"
 	},
 	{
 		"name": "undying_big_fleshgolem_03",
@@ -1824,8 +1825,8 @@
 		"hero_id": 85,
 		"text": "Death tax.",
 		"text_simple": " death tax ",
-		"criteria": "LastHit Isundying IsGolem",
-		"pretty_criteria": "Last hitting while in golem form"
+		"criteria": "LastHit Isundying IsGolem|Powerup Isundying IsGolem IsPowerupBounty",
+		"pretty_criteria": "Last hitting while in golem form\nActivating a bounty rune while in golem form"
 	},
 	{
 		"name": "undying_big_lasthit_09",
@@ -3815,7 +3816,8 @@
 		"hero_id": 85,
 		"text": "My belly bursts!",
 		"text_simple": " my belly bursts ",
-		"pretty_criteria": "Unused"
+		"criteria": "Powerup Isundying IsPowerupArcane",
+		"pretty_criteria": "Activating an arcane rune"
 	},
 	{
 		"name": "undying_fleshgolem_03",
