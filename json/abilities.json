@@ -473,12 +473,12 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"brain_sap_damage": "90 160 230 300",
+					"brain_sap_damage": "75 150 225 300",
 					"LinkedSpecialBonus": "special_bonus_unique_bane_2"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_brain_sap_heal_amt": "90 160 230 300",
+					"tooltip_brain_sap_heal_amt": "75 150 225 300",
 					"LinkedSpecialBonus": "special_bonus_unique_bane_2"
 				},
 				"03": {
@@ -496,7 +496,7 @@
 		"cast_range": "1000",
 		"cast_point": "0.4",
 		"cooldown": "8",
-		"duration": "20",
+		"duration": "14 16 18 20",
 		"mana_cost": "95",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/bane_enfeeble.png",
@@ -516,7 +516,7 @@
 			"AbilityCastRange": "1000",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "8",
-			"AbilityDuration": "20",
+			"AbilityDuration": "14 16 18 20",
 			"AbilityManaCost": "95",
 			"AbilitySpecial": {
 				"01": {
@@ -1548,7 +1548,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Ability.XMarksTheSpot.Return",
-			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
 			"AbilityCastPoint": "0.4 0.4 0.4 0.4",
 			"AbilityCooldown": "1.0",
 			"AbilityManaCost": "0"
@@ -2232,7 +2232,7 @@
 		"cast_range": "1000",
 		"cast_point": "0.25",
 		"cooldown": "11",
-		"damage": "100 175 250 325",
+		"damage": "75 150 225 300",
 		"mana_cost": "140 155 160 165",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/morphling_waveform.png",
@@ -2250,7 +2250,7 @@
 			"AbilityCastPoint": "0.25",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
 			"AbilityCooldown": "11.0 11.0 11.0 11.0",
-			"AbilityDamage": "100 175 250 325",
+			"AbilityDamage": "75 150 225 300",
 			"AbilityManaCost": "140 155 160 165",
 			"AbilitySpecial": {
 				"01": {
@@ -2358,7 +2358,7 @@
 		"note": "Can't convert stats from items.",
 		"json_data": {
 			"ID": "5055",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"LinkedAbility": "morphling_morph_str",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "0.0",
@@ -2395,7 +2395,7 @@
 		"note": "Attribute Shift works while Morphling is disabled, but not when silenced.\nAttribute Shift can't convert stats from items.",
 		"json_data": {
 			"ID": "5056",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"LinkedAbility": "morphling_morph_agi",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "0.0",
@@ -3301,7 +3301,7 @@
 		"cast_point": "0.3",
 		"cooldown": "14 13 12 11",
 		"damage": "90 180 270 360",
-		"mana_cost": "110 120 130 140",
+		"mana_cost": "140",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/pudge_meat_hook.png",
 		"localized_name": "Meat Hook",
@@ -3320,7 +3320,7 @@
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "14 13 12 11",
 			"AbilityDamage": "90 180 270 360",
-			"AbilityManaCost": "110 120 130 140",
+			"AbilityManaCost": "140",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -3689,7 +3689,7 @@
 		"hero_id": 15,
 		"cast_range": "600",
 		"cast_point": "0.3",
-		"cooldown": "32 30 28 26",
+		"cooldown": "40 35 30 25",
 		"mana_cost": "50",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/razor_static_link.png",
@@ -3708,7 +3708,7 @@
 			"AbilitySound": "Ability.static.start",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "32 30 28 26",
+			"AbilityCooldown": "40 35 30 25",
 			"AbilityManaCost": "50",
 			"AbilitySpecial": {
 				"01": {
@@ -4631,7 +4631,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"ball_lightning_aoe": "125 200 275"
+					"ball_lightning_aoe": "200"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -4663,7 +4663,7 @@
 		"cast_range": "350 450 550 650",
 		"cast_point": "0",
 		"cooldown": "11",
-		"damage": "100 160 220 280",
+		"damage": "85 150 215 280",
 		"mana_cost": "110 120 130 140",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/sandking_burrowstrike.png",
@@ -4685,7 +4685,7 @@
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "11.0 11.0 11.0 11.0",
 			"AbilityManaCost": "110 120 130 140",
-			"AbilityDamage": "100 160 220 280",
+			"AbilityDamage": "85 150 215 280",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -5090,7 +5090,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"attack_speed_reduction": "20 30 40"
+					"attack_speed_reduction": "20 35 50"
 				}
 			}
 		}
@@ -6714,7 +6714,7 @@
 		"ability_slot": 6,
 		"icon": "/resource/flash3/images/spellicons/witch_doctor_death_ward.png",
 		"localized_name": "Death Ward",
-		"description": "CHANNELED - Summons a deadly ward with true strike to attack enemy heroes within 700 range. Lasts a maximum of 8 seconds.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "CHANNELED - Summons a deadly ward to attack enemy heroes within 700 range. Lasts a maximum of 8 seconds.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "Witch Doctor performs a ritualistic dance, one that haunts the dreams of those who live to recount it.",
 		"note": "The Death Ward is invulnerable, and is only destroyed if Witch Doctor is interrupted or its duration expires.\nThe Death Ward can be controlled, and made to attack a specific target.\nDeath Ward attacks once every 0.22 seconds.",
 		"json_data": {
@@ -7171,7 +7171,7 @@
 		"hero_id": 34,
 		"cast_range": "650",
 		"cast_point": "0.4",
-		"cooldown": "14",
+		"cooldown": "20 18 16 14",
 		"mana_cost": "95 120 145 170",
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/tinker_laser.png",
@@ -7191,7 +7191,7 @@
 			"AbilitySound": "Hero_Tinker.Laser",
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.4",
-			"AbilityCooldown": "14.0 14.0 14.0 14.0",
+			"AbilityCooldown": "20 18 16 14",
 			"AbilityManaCost": "95 120 145 170",
 			"AbilityModifierSupportValue": "0.3",
 			"AbilitySpecial": {
@@ -9422,7 +9422,8 @@
 					"var_type": "FIELD_FLOAT",
 					"trap_max_charge_duration": "4"
 				}
-			}
+			},
+			"AbilityDraftPreAbility": "templar_assassin_trap"
 		}
 	},
 	{
@@ -9575,11 +9576,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"burn_amount": "20 30 40"
+					"burn_amount": "30 40 50"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"burn_damage_conversion": "60"
+					"burn_damage_conversion": "50"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -11925,7 +11926,7 @@
 		"id": 5263,
 		"name": "omniknight_purification",
 		"hero_id": 57,
-		"cast_range": "575",
+		"cast_range": "450",
 		"cast_point": "0.2",
 		"cooldown": "11 10 9 8",
 		"mana_cost": "85 100 115 130",
@@ -11944,7 +11945,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Omniknight.Purification",
-			"AbilityCastRange": "575",
+			"AbilityCastRange": "450",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "11 10 9 8",
 			"AbilityManaCost": "85 100 115 130",
@@ -12041,7 +12042,7 @@
 		"name": "omniknight_guardian_angel",
 		"hero_id": 57,
 		"cast_point": "0.4",
-		"cooldown": "160",
+		"cooldown": "180 170 160",
 		"mana_cost": "125 175 250",
 		"ability_slot": 6,
 		"icon": "/resource/flash3/images/spellicons/omniknight_guardian_angel.png",
@@ -12058,7 +12059,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Omniknight.GuardianAngel.Cast",
 			"HasScepterUpgrade": "1",
-			"AbilityCooldown": "160",
+			"AbilityCooldown": "180 170 160",
 			"AbilityCastPoint": "0.4",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityManaCost": "125 175 250",
@@ -12577,7 +12578,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed_night": "45 60 75 90",
+					"bonus_attack_speed_night": "30 50 70 90",
 					"LinkedSpecialBonus": "special_bonus_unique_night_stalker_2"
 				},
 				"03": {
@@ -16275,7 +16276,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"max_damage": "150 220 290 360",
+					"max_damage": "160 240 320 400",
 					"LinkedSpecialBonus": "special_bonus_unique_alchemist_2"
 				},
 				"07": {
@@ -17898,7 +17899,7 @@
 		"hero_id": 78,
 		"cast_range": "850",
 		"cast_point": "0.2",
-		"cooldown": "8 7 6 5",
+		"cooldown": "11 9 7 5",
 		"mana_cost": "25",
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/brewmaster_drunken_haze.png",
@@ -17917,7 +17918,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Brewmaster.DrunkenHaze.Cast",
 			"AbilityCastPoint": "0.2",
-			"AbilityCooldown": "8 7 6 5",
+			"AbilityCooldown": "11 9 7 5",
 			"AbilityManaCost": "25",
 			"AbilitySpecial": {
 				"01": {
@@ -18047,7 +18048,7 @@
 					"speed": "800 800 800 800"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
 	},
 	{
@@ -18145,7 +18146,7 @@
 					"duration_unit": "20.0 20.0 20.0 20.0"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5"
 		}
 	},
 	{
@@ -18433,7 +18434,7 @@
 			"MaxLevel": "3",
 			"AbilitySound": "Hero_LoneDruid.BattleCry",
 			"AbilityCastPoint": "0.5 0.5 0.5",
-			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "45.0",
 			"AbilityManaCost": "50 50 50",
 			"AbilitySpecial": {
@@ -18607,7 +18608,7 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/shadow_demon_soul_catcher.png",
 		"localized_name": "Soul Catcher",
-		"description": "Captures the soul of a random enemy in an area, amplifies all damage they take. Units under the effect of Disruption can still be affected by Soul Catcher. If the unit dies under the effect of Soul Catcher, an illusions of that unit is created under your control until the enemy respawns.",
+		"description": "Captures the soul of a random enemy in an area, amplifies all damage they take. Units under the effect of Disruption can still be affected by Soul Catcher.",
 		"lore": "Trying to resist the Shadow Demon's corruption is mostly a useless endeavor.",
 		"json_data": {
 			"ID": "5422",
@@ -19941,7 +19942,7 @@
 			"ID": "5449",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_AOE",
 			"MaxLevel": "1",
-			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -26639,7 +26640,8 @@
 					"var_type": "FIELD_FLOAT",
 					"duration": "45.0"
 				}
-			}
+			},
+			"AbilityDraftPreAbility": "ember_spirit_activate_fire_remnant"
 		}
 	},
 	{
@@ -26740,7 +26742,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"stun_duration": "0.75 1.25 1.75 2.25",
+					"stun_duration": "0.5 1.0 1.5 2.0",
 					"LinkedSpecialBonus": "special_bonus_unique_earth_spirit_3"
 				},
 				"05": {
@@ -28473,7 +28475,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"percent_damage": "7.5 8 8.5 9"
+					"percent_damage": "6 7 8 9"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -28611,7 +28613,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"heal_additive": "15"
+					"heal_additive": "10"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -44484,6 +44486,23 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "15"
+				}
+			}
+		}
+	},
+	{
+		"id": 7061,
+		"name": "special_bonus_unique_shadow_demon_6",
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "Soul Catcher Creates Illusion On Death",
+		"json_data": {
+			"ID": "7061",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"value": "0"
 				}
 			}
 		}
