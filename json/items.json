@@ -768,7 +768,6 @@
 			"ItemContributesToNetWorthWhenDropped": "0",
 			"AllowedInBackpack": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeSuggested": "1",
 			"UIPickupSound": "Item.PickUpGemShop",
 			"UIDropSound": "Item.DropGemShop",
 			"WorldDropSound": "Item.DropGemWorld",
@@ -1374,7 +1373,8 @@
 			"ItemSupport": "1",
 			"ItemKillable": "0",
 			"ItemSellable": "0",
-			"IsTempestDoubleClonable": "0"
+			"IsTempestDoubleClonable": "0",
+			"ShouldBeInitiallySuggested": "1"
 		}
 	},
 	{
@@ -3209,11 +3209,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_feedback": "20 30 40"
+					"warrior_mana_feedback": "30 40 50"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_break_tooltip": "20 30 40"
+					"warrior_mana_break_tooltip": "30 40 50"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -3749,11 +3749,11 @@
 		"name": "item_recipe_sphere",
 		"localized_name": "Linken's Sphere Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1000,
+		"cost": 1200,
 		"json_data": {
 			"ID": "122",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1000",
+			"ItemCost": "1200",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_sphere",
@@ -3767,7 +3767,7 @@
 		"name": "item_sphere",
 		"localized_name": "Linken's Sphere",
 		"icon": "/resource/flash3/images/items/sphere.png",
-		"cost": 4850,
+		"cost": 5050,
 		"description": "<h1>Passive: Spellblock</h1>Blocks most targeted spells once every %block_cooldown% seconds.\n<h1>Active: Transfer Spellblock</h1>Temporarily removes Spellblock from the item's owner and transfers it to an allied unit for %block_cooldown% seconds.<br><br>Range: %cast_range_tooltip%",
 		"lore": "This magical sphere once protected one of the most famous heroes in history.",
 		"json_data": {
@@ -3778,7 +3778,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700",
 			"AbilityCooldown": "13.0",
-			"ItemCost": "4850",
+			"ItemCost": "5050",
 			"ItemShopTags": "regen_health;regen_mana;str;agi;int;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "ls;linken's sphere",
@@ -4231,7 +4231,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "30"
+					"bonus_damage": "25"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4522,11 +4522,11 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "15"
+					"bonus_attack_speed": "10"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "10"
+					"bonus_movement_speed": "8"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -5224,11 +5224,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"attack_speed": "10"
+					"attack_speed": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"attack_speed_aura": "15"
+					"attack_speed_aura": "20"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -5486,11 +5486,11 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"berserk_bonus_movement_speed": "17"
+					"berserk_bonus_movement_speed": "12"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"berserk_armor_reduction": "7"
+					"berserk_armor_reduction": "8"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -6258,11 +6258,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_feedback": "20 30 40"
+					"warrior_mana_feedback": "30 40 50"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_break_tooltip": "20 30 40"
+					"warrior_mana_break_tooltip": "30 40 50"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -6346,11 +6346,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_feedback": "20 30 40"
+					"warrior_mana_feedback": "30 40 50"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"warrior_mana_break_tooltip": "20 30 40"
+					"warrior_mana_break_tooltip": "30 40 50"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -7118,7 +7118,6 @@
 			"ItemCost": "1300",
 			"ItemShopTags": "",
 			"ItemAliases": "shadow amulet",
-			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -7375,7 +7374,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
-			"AbilityChannelTime": "3.0",
+			"AbilityChannelTime": "2.5",
 			"AbilityCastRange": "600",
 			"AbilityCooldown": "40",
 			"AbilityManaCost": "125",
@@ -7430,8 +7429,8 @@
 					"impact_radius": "300"
 				},
 				"12": {
-					"var_type": "FIELD_INTEGER",
-					"max_duration": "3"
+					"var_type": "FIELD_FLOAT",
+					"max_duration": "2.5"
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
@@ -7476,9 +7475,9 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "14.0",
+			"AbilityCooldown": "13.0",
 			"AbilityCastRange": "600",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "75",
 			"ItemCost": "4700",
 			"ItemQuality": "epic",
 			"ItemAliases": "nlf;nullifier",
@@ -8618,11 +8617,11 @@
 		"name": "item_recipe_aeon_disk",
 		"localized_name": "Aeon Disk Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1600,
+		"cost": 1350,
 		"json_data": {
 			"ID": "255",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1600",
+			"ItemCost": "1350",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_aeon_disk",
@@ -8636,13 +8635,13 @@
 		"name": "item_aeon_disk",
 		"localized_name": "Aeon Disk",
 		"icon": "/resource/flash3/images/items/aeon_disk.png",
-		"cost": 3600,
+		"cost": 3350,
 		"description": "<h1>Passive: Combo Breaker</h1> When you take damage and your health falls below %health_threshold_pct%%, a strong dispel is applied and you gain a %buff_duration% second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. \n\n<h1>Passive: Status Resistance</h1> Reduces status effect durations by %status_resistance%%. ",
 		"json_data": {
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "100.0",
-			"ItemCost": "3600",
+			"ItemCost": "3350",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "ad;aeon disk",
@@ -8823,7 +8822,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "15.0",
+			"AbilityCooldown": "18.0",
 			"AbilitySharedCooldown": "force",
 			"AbilityManaCost": "25",
 			"ItemCost": "4615",
