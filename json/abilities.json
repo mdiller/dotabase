@@ -5022,6 +5022,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilitySound": "Hero_Tiny.CraggyExterior.Stun",
+			"LinkedAbility": "tiny_toss_tree",
 			"AbilityCastRange": "165",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "18 16 14 12",
@@ -8508,7 +8509,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Venomancer.VenomousGale",
 			"AbilityCastRange": "800",
@@ -16573,7 +16574,7 @@
 		"note": "The arrangement of instances does not matter.\nInvoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells.",
 		"json_data": {
 			"ID": "5375",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"MaxLevel": "1",
 			"RequiredLevel": "1",
@@ -16614,7 +16615,7 @@
 		"note": "The freeze stun only triggers on damage greater than 10 after reductions.",
 		"json_data": {
 			"ID": "5376",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"MaxLevel": "1",
@@ -16848,7 +16849,7 @@
 		"note": "The slow effect does not work on Spell Immune enemies.",
 		"json_data": {
 			"ID": "5381",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "1",
@@ -16900,7 +16901,7 @@
 		"note": "Units are invulnerable while affected by Tornado, and the damage is dealt when landing.",
 		"json_data": {
 			"ID": "5382",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"MaxLevel": "1",
@@ -16973,7 +16974,7 @@
 		"note": "Will not affect cycloned units (Tornado or Eul's Scepter of Divinity).",
 		"json_data": {
 			"ID": "5383",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "1",
 			"HotKeyOverride": "C",
@@ -17021,7 +17022,7 @@
 		"lore": "Gaster's Mandate of Impetuous Strife.",
 		"json_data": {
 			"ID": "5384",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"MaxLevel": "1",
 			"HotKeyOverride": "Z",
 			"AbilitySound": "Hero_Invoker.Alacrity",
@@ -17070,7 +17071,7 @@
 		"note": "Deals main damage to enemy units under meteor every 0.5 seconds and burns enemies for smaller damage over 3 seconds.\nThe meteor moves at a speed of 300.",
 		"json_data": {
 			"ID": "5385",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"MaxLevel": "1",
 			"HotKeyOverride": "D",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -17150,7 +17151,7 @@
 		"note": "Gives vision of the target area before the strike.\nInvoker gains experience with kills made from Sun Strike, even if made from outside of experience range.",
 		"json_data": {
 			"ID": "5386",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"MaxLevel": "1",
 			"HotKeyOverride": "T",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
@@ -17202,7 +17203,7 @@
 		"note": "Casting this ability will replace currently summoned Forged Spirits.",
 		"json_data": {
 			"ID": "5387",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "1",
 			"HotKeyOverride": "F",
@@ -17291,7 +17292,7 @@
 		"note": "The slow will still affect Spell Immune enemies if their spell immunity was created after being affected by Ice Wall.",
 		"json_data": {
 			"ID": "5389",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "1",
@@ -17357,7 +17358,7 @@
 		"lore": "Buluphont's Aureal Incapacitator.",
 		"json_data": {
 			"ID": "5390",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "1",
@@ -18400,7 +18401,7 @@
 		"description": "Return to Druid form.\n\nUpgradable by Aghanim's Scepter.",
 		"json_data": {
 			"ID": "5416",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityCastPoint": "0 0 0",
@@ -18429,7 +18430,7 @@
 		"lore": "When Sylla cries in the forest, the reverberations are felt for a great distance.",
 		"json_data": {
 			"ID": "5417",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_TYPE_ULTIMATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_TYPE_ULTIMATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"MaxLevel": "3",
 			"AbilitySound": "Hero_LoneDruid.BattleCry",
@@ -21034,7 +21035,7 @@
 		"note": "If Keeper of the Light dies, the spell effect is interrupted.\nRecall will interrupt channeling spells.\nYou can disable help to prevent Keeper from casting this spell on you.\nCan be cast through the minimap, choosing the nearest friendly hero.",
 		"json_data": {
 			"ID": "5475",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
@@ -21071,7 +21072,7 @@
 		"note": "Causes knockback of 250 range over 0.4 seconds, centered on the middle of the target area. Upon landing, units will destroy trees in a 150 radius.\nDoes not interrupt channeling.",
 		"json_data": {
 			"ID": "5476",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"MaxLevel": "3",
@@ -21162,7 +21163,7 @@
 		"note": "Gives increasing vision over the channeling time.\nDamages mechanical units.",
 		"json_data": {
 			"ID": "5479",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
@@ -21723,7 +21724,7 @@
 		"description": "Calls the spirits closer to you. Can be toggled on and off.",
 		"json_data": {
 			"ID": "5490",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0 0 0 0",
 			"AbilityCastAnimation": "ACT_INVALID"
@@ -21777,7 +21778,7 @@
 		"description": "Sends the spirits farther away from you. Can be toggled on and off.",
 		"json_data": {
 			"ID": "5493",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0 0 0 0",
 			"AbilityCastAnimation": "ACT_INVALID"
@@ -26659,7 +26660,7 @@
 		"lore": "With blazing speed does a spirit fly!",
 		"json_data": {
 			"ID": "5607",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
 			"MaxLevel": "3",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -26730,7 +26731,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "160"
+					"radius": "180"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -26912,7 +26913,7 @@
 		"lore": "Earth Spirit calls forth a remnant of his stone army, long buried with him in the dark embrace of the Earth.",
 		"json_data": {
 			"ID": "5611",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
 			"MaxLevel": "1",
 			"AbilitySound": "Hero_EarthSpirit.StoneRemnant.Impact",
@@ -27909,7 +27910,7 @@
 		"lore": "Why light one fuse when you can light them all?",
 		"json_data": {
 			"ID": "5635",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilityCastRange": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
@@ -28225,7 +28226,7 @@
 		"lore": "Watch your step!",
 		"json_data": {
 			"ID": "5644",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_NONE",
 			"MaxLevel": "1",
 			"HasScepterUpgrade": "1",
@@ -28262,7 +28263,7 @@
 		"note": "The Chakram will return if Timbersaw runs out of mana or moves over 2000 distance away.",
 		"json_data": {
 			"ID": "5645",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
@@ -28348,7 +28349,7 @@
 		"lore": "Kaolin uses the elemental power of the Earth to temporarily petrify living beings, so that they might be conscripted into his stone funerary army.",
 		"json_data": {
 			"ID": "5648",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -28396,7 +28397,7 @@
 		"note": "Being entangled by Overgrowth through enchanted trees from Eyes of the Forest does damage. Being entangled by Overgrowth directly from Treant Protector does not.\nIf the enemy has True Sight, they will be able to see which trees are enchanted.",
 		"json_data": {
 			"ID": "5649",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_TREE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"MaxLevel": "1",
@@ -28978,7 +28979,7 @@
 		"note": "Casting Vendetta will cancel burrow.",
 		"json_data": {
 			"ID": "5666",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -29177,7 +29178,7 @@
 		"description": "Kicks the target unit back, damaging them and slowing their movement speed.",
 		"json_data": {
 			"ID": "5672",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
@@ -36814,7 +36815,7 @@
 		"note": "Grants 100 gold if destroyed by an enemy hero.\nAffects the closest enemy unit.",
 		"json_data": {
 			"ID": "6325",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "1",
@@ -37068,9 +37069,10 @@
 		"lore": "You'll have to excuse my friend Jex. He's really into murder.",
 		"json_data": {
 			"ID": "6340",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "3",
 			"FightRecapLevel": "1",
@@ -42788,12 +42790,13 @@
 		"lore": "Even enemies can share in Tiny's arbor ardor.",
 		"json_data": {
 			"ID": "6937",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
+			"LinkedAbility": "tiny_craggy_exterior",
 			"AbilityCastRange": "1300",
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_INVALID",
