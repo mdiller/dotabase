@@ -100,6 +100,8 @@ class Item(Base):
 	localized_name = Column(String)
 	icon = Column(String)
 	cost = Column(Integer)
+	cooldown = Column(String)
+	mana_cost = Column(String)
 	description = Column(String)
 	lore = Column(String)
 	ability_special = Column(String)
