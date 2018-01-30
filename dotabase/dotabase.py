@@ -74,6 +74,7 @@ class Ability(Base):
 	duration = Column(String)
 	damage = Column(String)
 	mana_cost = Column(String)
+	ability_special = Column(String)
 
 	ability_slot = Column(Integer)
 	icon = Column(String)
@@ -82,6 +83,7 @@ class Ability(Base):
 	description = Column(String)
 	lore = Column(String)
 	note = Column(String)
+	aghanim = Column(String)
 
 	json_data = Column(String)
 
@@ -100,6 +102,7 @@ class Item(Base):
 	cost = Column(Integer)
 	description = Column(String)
 	lore = Column(String)
+	ability_special = Column(String)
 
 	json_data = Column(String)
 
