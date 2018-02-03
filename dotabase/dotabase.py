@@ -102,6 +102,7 @@ class Item(Base):
 	cost = Column(Integer)
 	cooldown = Column(String)
 	mana_cost = Column(String)
+	base_level = Column(Integer)
 	description = Column(String)
 	lore = Column(String)
 	ability_special = Column(String)
