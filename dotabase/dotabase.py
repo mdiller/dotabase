@@ -98,6 +98,8 @@ class Item(Base):
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
 	localized_name = Column(String)
+	aliases = Column(String)
+	quality = Column(String)
 	icon = Column(String)
 	cost = Column(Integer)
 	cooldown = Column(String)
