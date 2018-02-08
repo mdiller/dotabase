@@ -127,9 +127,9 @@ class Voice(Base):
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
-	localized_name = Column(String)
 	icon = Column(String)
 	image = Column(String)
+	url = Column(String)
 	vsndevts_path = Column(String)
 	voice_actor = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
