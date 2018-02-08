@@ -1,331 +1,273 @@
 [
 	{
-		"name": "luna_ability_eclipse_01",
-		"fullname": "luna_luna_ability_eclipse_01",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_01.mp3",
+		"name": "luna_spawn_01",
+		"fullname": "luna_luna_spawn_01",
+		"mp3": "/sounds/vo/luna/luna_spawn_01.mp3",
 		"hero_id": 48,
-		"text": "Eclipse!",
-		"text_simple": " eclipse ",
-		"criteria": "CastExecute Isluna IsLunaEclipse",
-		"pretty_criteria": "Casting Eclipse"
+		"text": "Luna!",
+		"text_simple": " luna ",
+		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
+		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
 	},
 	{
-		"name": "luna_ability_eclipse_02",
-		"fullname": "luna_luna_ability_eclipse_02",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_02.mp3",
+		"name": "luna_spawn_02",
+		"fullname": "luna_luna_spawn_02",
+		"mp3": "/sounds/vo/luna/luna_spawn_02.mp3",
 		"hero_id": 48,
-		"text": "Eclipse!",
-		"text_simple": " eclipse ",
-		"criteria": "CastExecute Isluna IsLunaEclipse",
-		"pretty_criteria": "Casting Eclipse"
+		"text": "The Moon Rider has arrived.",
+		"text_simple": " the moon rider has arrived ",
+		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
+		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
 	},
 	{
-		"name": "luna_ability_eclipse_03",
-		"fullname": "luna_luna_ability_eclipse_03",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_03.mp3",
+		"name": "luna_spawn_03",
+		"fullname": "luna_luna_spawn_03",
+		"mp3": "/sounds/vo/luna/luna_spawn_03.mp3",
 		"hero_id": 48,
-		"text": "Eclipse!",
-		"text_simple": " eclipse ",
-		"criteria": "CastExecute Isluna IsLunaEclipse",
-		"pretty_criteria": "Casting Eclipse"
+		"text": "In the service of Selemene.",
+		"text_simple": " in the service of selemene ",
+		"criteria": "Spawn Isluna Chance_15%|Custom Isluna IsLunaLoadoutSpawn",
+		"pretty_criteria": "Spawning (15% chance)\n IsLunaLoadoutSpawn"
 	},
 	{
-		"name": "luna_ability_eclipse_04",
-		"fullname": "luna_luna_ability_eclipse_04",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_04.mp3",
+		"name": "luna_spawn_04",
+		"fullname": "luna_luna_spawn_04",
+		"mp3": "/sounds/vo/luna/luna_spawn_04.mp3",
 		"hero_id": 48,
-		"text": "Feel the moon!",
-		"text_simple": " feel the moon ",
-		"pretty_criteria": "Unused"
+		"text": "Nova could use a snack.",
+		"text_simple": " nova could use a snack ",
+		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
+		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
 	},
 	{
-		"name": "luna_ability_eclipse_05",
-		"fullname": "luna_luna_ability_eclipse_05",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_05.mp3",
+		"name": "luna_battlebegins_01",
+		"fullname": "luna_luna_battlebegins_01",
+		"mp3": "/sounds/vo/luna/luna_battlebegins_01.mp3",
 		"hero_id": 48,
-		"text": "The night sky opens wide!",
-		"text_simple": " the night sky opens wide ",
-		"pretty_criteria": "Unused"
+		"text": "The Dark Moon comes.",
+		"text_simple": " the dark moon comes ",
+		"criteria": "Custom Isluna IsGameStart|Custom Isluna IsLunaLoadoutSpawn",
+		"pretty_criteria": " As the game starts\n IsLunaLoadoutSpawn"
 	},
 	{
-		"name": "luna_ability_eclipse_06",
-		"fullname": "luna_luna_ability_eclipse_06",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_06.mp3",
+		"name": "luna_battlebegins_02",
+		"fullname": "luna_luna_battlebegins_02",
+		"mp3": "/sounds/vo/luna/luna_battlebegins_02.mp3",
 		"hero_id": 48,
-		"text": "The eclipse is upon you!",
-		"text_simple": " the eclipse is upon you ",
-		"pretty_criteria": "Unused"
+		"text": "Watch over me, Goddess. It'll be a good show.",
+		"text_simple": " watch over me goddess itll be a good show ",
+		"criteria": "Custom Isluna IsGameStart",
+		"pretty_criteria": " As the game starts"
 	},
 	{
-		"name": "luna_ability_eclipse_07",
-		"fullname": "luna_luna_ability_eclipse_07",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_07.mp3",
+		"name": "luna_firstblood_01",
+		"fullname": "luna_luna_firstblood_01",
+		"mp3": "/sounds/vo/luna/luna_firstblood_01.mp3",
 		"hero_id": 48,
-		"text": "Blessed be the night!",
-		"text_simple": " blessed be the night ",
-		"criteria": "CastExecute Isluna IsLunaEclipse",
-		"pretty_criteria": "Casting Eclipse"
+		"text": "First blood! For Selemene and for the Dark Moon!",
+		"text_simple": " first blood for selemene and for the dark moon ",
+		"criteria": "Kill Isluna IsFirstBlood",
+		"pretty_criteria": "Killing a hero (First Blood)"
 	},
 	{
-		"name": "luna_ability_eclipse_08",
-		"fullname": "luna_luna_ability_eclipse_08",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_08.mp3",
+		"name": "luna_move_01",
+		"fullname": "luna_luna_move_01",
+		"mp3": "/sounds/vo/luna/luna_move_01.mp3",
 		"hero_id": 48,
-		"text": "Let the sky tear down the unworthy!",
-		"text_simple": " let the sky tear down the unworthy ",
-		"pretty_criteria": "Unused"
+		"text": "Yes!",
+		"text_simple": " yes ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_eclipse_09",
-		"fullname": "luna_luna_ability_eclipse_09",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_09.mp3",
+		"name": "luna_move_02",
+		"fullname": "luna_luna_move_02",
+		"mp3": "/sounds/vo/luna/luna_move_02.mp3",
 		"hero_id": 48,
-		"text": "Wrath of the Goddess!",
-		"text_simple": " wrath of the goddess ",
-		"pretty_criteria": "Unused"
+		"text": "Yes.",
+		"text_simple": " yes ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_eclipse_10",
-		"fullname": "luna_luna_ability_eclipse_10",
-		"mp3": "/sounds/vo/luna/luna_ability_eclipse_10.mp3",
+		"name": "luna_move_03",
+		"fullname": "luna_luna_move_03",
+		"mp3": "/sounds/vo/luna/luna_move_03.mp3",
 		"hero_id": 48,
-		"text": "Behold the piercing sky!",
-		"text_simple": " behold the piercing sky ",
-		"pretty_criteria": "Unused"
+		"text": "Hyah!",
+		"text_simple": " hyah ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_failure_01",
-		"fullname": "luna_luna_ability_failure_01",
-		"mp3": "/sounds/vo/luna/luna_ability_failure_01.mp3",
+		"name": "luna_move_04",
+		"fullname": "luna_luna_move_04",
+		"mp3": "/sounds/vo/luna/luna_move_04.mp3",
 		"hero_id": 48,
-		"text": "The stars are against me.",
-		"text_simple": " the stars are against me ",
-		"pretty_criteria": "Unused"
+		"text": "Hyah!",
+		"text_simple": " hyah ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_failure_02",
-		"fullname": "luna_luna_ability_failure_02",
-		"mp3": "/sounds/vo/luna/luna_ability_failure_02.mp3",
+		"name": "luna_move_05",
+		"fullname": "luna_luna_move_05",
+		"mp3": "/sounds/vo/luna/luna_move_05.mp3",
 		"hero_id": 48,
-		"text": "Damn clouds.",
-		"text_simple": " damn clouds ",
-		"pretty_criteria": "Unused"
+		"text": "Let's go!",
+		"text_simple": " lets go ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_failure_03",
-		"fullname": "luna_luna_ability_failure_03",
-		"mp3": "/sounds/vo/luna/luna_ability_failure_03.mp3",
+		"name": "luna_move_06",
+		"fullname": "luna_luna_move_06",
+		"mp3": "/sounds/vo/luna/luna_move_06.mp3",
 		"hero_id": 48,
-		"text": "Scratch that idea!",
-		"text_simple": " scratch that idea ",
-		"pretty_criteria": "Unused"
+		"text": "Let's go!",
+		"text_simple": " lets go ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_01",
-		"fullname": "luna_luna_ability_lucentbeam_01",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_01.mp3",
+		"name": "luna_move_07",
+		"fullname": "luna_luna_move_07",
+		"mp3": "/sounds/vo/luna/luna_move_07.mp3",
 		"hero_id": 48,
-		"text": "Lunar light!",
-		"text_simple": " lunar light ",
-		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
-		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+		"text": "Absolutely.",
+		"text_simple": " absolutely ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_02",
-		"fullname": "luna_luna_ability_lucentbeam_02",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_02.mp3",
+		"name": "luna_move_08",
+		"fullname": "luna_luna_move_08",
+		"mp3": "/sounds/vo/luna/luna_move_08.mp3",
 		"hero_id": 48,
-		"text": "Lucent beam!",
-		"text_simple": " lucent beam ",
-		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
-		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+		"text": "Good plan.",
+		"text_simple": " good plan ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_03",
-		"fullname": "luna_luna_ability_lucentbeam_03",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_03.mp3",
+		"name": "luna_move_09",
+		"fullname": "luna_luna_move_09",
+		"mp3": "/sounds/vo/luna/luna_move_09.mp3",
 		"hero_id": 48,
-		"text": "Stars shine!",
-		"text_simple": " stars shine ",
-		"pretty_criteria": "Unused"
+		"text": "Illuminating.",
+		"text_simple": " illuminating ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_04",
-		"fullname": "luna_luna_ability_lucentbeam_04",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_04.mp3",
+		"name": "luna_move_10",
+		"fullname": "luna_luna_move_10",
+		"mp3": "/sounds/vo/luna/luna_move_10.mp3",
 		"hero_id": 48,
-		"text": "Starlight!",
-		"text_simple": " starlight ",
-		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
-		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+		"text": "For the night.",
+		"text_simple": " for the night ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_05",
-		"fullname": "luna_luna_ability_lucentbeam_05",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_05.mp3",
+		"name": "luna_move_11",
+		"fullname": "luna_luna_move_11",
+		"mp3": "/sounds/vo/luna/luna_move_11.mp3",
 		"hero_id": 48,
-		"text": "Piercing light!",
-		"text_simple": " piercing light ",
-		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
-		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+		"text": "Come, Nova!",
+		"text_simple": " come nova ",
+		"criteria": "Move Isluna Chance_1%",
+		"pretty_criteria": "Moving (1% chance)"
 	},
 	{
-		"name": "luna_ability_lucentbeam_06",
-		"fullname": "luna_luna_ability_lucentbeam_06",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_06.mp3",
+		"name": "luna_move_12",
+		"fullname": "luna_luna_move_12",
+		"mp3": "/sounds/vo/luna/luna_move_12.mp3",
 		"hero_id": 48,
-		"text": "Piercing!",
-		"text_simple": " piercing ",
-		"pretty_criteria": "Unused"
+		"text": "Quickly now!",
+		"text_simple": " quickly now ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ability_lucentbeam_07",
-		"fullname": "luna_luna_ability_lucentbeam_07",
-		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_07.mp3",
+		"name": "luna_move_13",
+		"fullname": "luna_luna_move_13",
+		"mp3": "/sounds/vo/luna/luna_move_13.mp3",
 		"hero_id": 48,
-		"text": "Selemene!",
-		"text_simple": " selemene ",
-		"pretty_criteria": "Unused"
+		"text": "The night sees all.",
+		"text_simple": " the night sees all ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving"
 	},
 	{
-		"name": "luna_ally_01",
-		"fullname": "luna_luna_ally_01",
-		"mp3": "/sounds/vo/luna/luna_ally_01.mp3",
+		"name": "luna_move_14",
+		"fullname": "luna_luna_move_14",
+		"mp3": "/sounds/vo/luna/luna_move_14.mp3",
 		"hero_id": 48,
-		"text": "You will have your vengeance, Spirit.",
-		"text_simple": " you will have your vengeance spirit ",
-		"criteria": "AllyNear Isluna IsAllyVengefulSpirit EarlyGame",
-		"pretty_criteria": "Vengeful Spirit is nearby at between 1 minute and 11 minutes in"
+		"text": "By starlight.",
+		"text_simple": " by starlight ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ally_02",
-		"fullname": "luna_luna_ally_02",
-		"mp3": "/sounds/vo/luna/luna_ally_02.mp3",
+		"name": "luna_move_15",
+		"fullname": "luna_luna_move_15",
+		"mp3": "/sounds/vo/luna/luna_move_15.mp3",
 		"hero_id": 48,
-		"text": "Bring them winter, Crystal Maiden.",
-		"text_simple": " bring them winter crystal maiden ",
-		"criteria": "AllyNear Isluna IsAllyCrystalMaiden EarlyGame",
-		"pretty_criteria": "Crystal Maiden is nearby at between 1 minute and 11 minutes in"
+		"text": "Selemene commands.",
+		"text_simple": " selemene commands ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna Chance_3%",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving (3% chance)"
 	},
 	{
-		"name": "luna_ally_03",
-		"fullname": "luna_luna_ally_03",
-		"mp3": "/sounds/vo/luna/luna_ally_03.mp3",
+		"name": "luna_move_16",
+		"fullname": "luna_luna_move_16",
+		"mp3": "/sounds/vo/luna/luna_move_16.mp3",
 		"hero_id": 48,
-		"text": "Light the way, Lina.",
-		"text_simple": " light the way lina ",
-		"criteria": "AllyNear Isluna IsAllyLina EarlyGame",
-		"pretty_criteria": "Lina is nearby at between 1 minute and 11 minutes in"
+		"text": "We ride.",
+		"text_simple": " we ride ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_ally_04",
-		"fullname": "luna_luna_ally_04",
-		"mp3": "/sounds/vo/luna/luna_ally_04.mp3",
+		"name": "luna_move_17",
+		"fullname": "luna_luna_move_17",
+		"mp3": "/sounds/vo/luna/luna_move_17.mp3",
 		"hero_id": 48,
-		"text": "By your leave, Princess Mirana.",
-		"text_simple": " by your leave princess mirana ",
-		"criteria": "AllyNear Isluna IsAllyMirana EarlyGame",
-		"pretty_criteria": "Mirana is nearby at between 1 minute and 11 minutes in"
+		"text": "On the prowl.",
+		"text_simple": " on the prowl ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving"
 	},
 	{
-		"name": "luna_ally_05",
-		"fullname": "luna_luna_ally_05",
-		"mp3": "/sounds/vo/luna/luna_ally_05.mp3",
+		"name": "luna_move_18",
+		"fullname": "luna_luna_move_18",
+		"mp3": "/sounds/vo/luna/luna_move_18.mp3",
 		"hero_id": 48,
-		"text": "Ah, Zeus! The heavens are with us.",
-		"text_simple": " ah zeus the heavens are with us ",
-		"criteria": "AllyNear Isluna IsAllyZuus EarlyGame",
-		"pretty_criteria": "Zeus is nearby at between 1 minute and 11 minutes in"
+		"text": "Stalking.",
+		"text_simple": " stalking ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_anger_01",
-		"fullname": "luna_luna_anger_01",
-		"mp3": "/sounds/vo/luna/luna_anger_01.mp3",
+		"name": "luna_move_19",
+		"fullname": "luna_luna_move_19",
+		"mp3": "/sounds/vo/luna/luna_move_19.mp3",
 		"hero_id": 48,
-		"text": "Ahh!",
-		"text_simple": " ahh ",
-		"pretty_criteria": "Unused"
+		"text": "What do you see?",
+		"text_simple": " what do you see ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
-		"name": "luna_anger_02",
-		"fullname": "luna_luna_anger_02",
-		"mp3": "/sounds/vo/luna/luna_anger_02.mp3",
+		"name": "luna_move_20",
+		"fullname": "luna_luna_move_20",
+		"mp3": "/sounds/vo/luna/luna_move_20.mp3",
 		"hero_id": 48,
-		"text": "Rrr!",
-		"text_simple": " rrr ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_03",
-		"fullname": "luna_luna_anger_03",
-		"mp3": "/sounds/vo/luna/luna_anger_03.mp3",
-		"hero_id": 48,
-		"text": "Mmmuh!",
-		"text_simple": " mmmuh ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_04",
-		"fullname": "luna_luna_anger_04",
-		"mp3": "/sounds/vo/luna/luna_anger_04.mp3",
-		"hero_id": 48,
-		"text": "Uh!",
-		"text_simple": " uh ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_05",
-		"fullname": "luna_luna_anger_05",
-		"mp3": "/sounds/vo/luna/luna_anger_05.mp3",
-		"hero_id": 48,
-		"text": "Houh!",
-		"text_simple": " houh ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_06",
-		"fullname": "luna_luna_anger_06",
-		"mp3": "/sounds/vo/luna/luna_anger_06.mp3",
-		"hero_id": 48,
-		"text": "Ey!",
-		"text_simple": " ey ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_07",
-		"fullname": "luna_luna_anger_07",
-		"mp3": "/sounds/vo/luna/luna_anger_07.mp3",
-		"hero_id": 48,
-		"text": "Psss!",
-		"text_simple": " psss ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_08",
-		"fullname": "luna_luna_anger_08",
-		"mp3": "/sounds/vo/luna/luna_anger_08.mp3",
-		"hero_id": 48,
-		"text": "Hhr!",
-		"text_simple": " hhr ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_09",
-		"fullname": "luna_luna_anger_09",
-		"mp3": "/sounds/vo/luna/luna_anger_09.mp3",
-		"hero_id": 48,
-		"text": "Mmuh!",
-		"text_simple": " mmuh ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_anger_10",
-		"fullname": "luna_luna_anger_10",
-		"mp3": "/sounds/vo/luna/luna_anger_10.mp3",
-		"hero_id": 48,
-		"text": "Ehh.",
-		"text_simple": " ehh ",
-		"pretty_criteria": "Unused"
+		"text": "On the hunt.",
+		"text_simple": " on the hunt ",
+		"criteria": "Move Isluna",
+		"pretty_criteria": "Moving"
 	},
 	{
 		"name": "luna_attack_01",
@@ -608,86 +550,6 @@
 		"pretty_criteria": "Attacking"
 	},
 	{
-		"name": "luna_battlebegins_01",
-		"fullname": "luna_luna_battlebegins_01",
-		"mp3": "/sounds/vo/luna/luna_battlebegins_01.mp3",
-		"hero_id": 48,
-		"text": "The Dark Moon comes.",
-		"text_simple": " the dark moon comes ",
-		"criteria": "Custom Isluna IsGameStart|Custom Isluna IsLunaLoadoutSpawn",
-		"pretty_criteria": " As the game starts\n IsLunaLoadoutSpawn"
-	},
-	{
-		"name": "luna_battlebegins_02",
-		"fullname": "luna_luna_battlebegins_02",
-		"mp3": "/sounds/vo/luna/luna_battlebegins_02.mp3",
-		"hero_id": 48,
-		"text": "Watch over me, Goddess. It'll be a good show.",
-		"text_simple": " watch over me goddess itll be a good show ",
-		"criteria": "Custom Isluna IsGameStart",
-		"pretty_criteria": " As the game starts"
-	},
-	{
-		"name": "luna_blink_01",
-		"fullname": "luna_luna_blink_01",
-		"mp3": "/sounds/vo/luna/luna_blink_01.mp3",
-		"hero_id": 48,
-		"text": "Blink dagger!",
-		"text_simple": " blink dagger ",
-		"criteria": "Purchase Isluna IsBlinkDagger",
-		"pretty_criteria": "Buying Blink Dagger"
-	},
-	{
-		"name": "luna_blink_02",
-		"fullname": "luna_luna_blink_02",
-		"mp3": "/sounds/vo/luna/luna_blink_02.mp3",
-		"hero_id": 48,
-		"text": "They can't run from us now.",
-		"text_simple": " they cant run from us now ",
-		"criteria": "Purchase Isluna IsBlinkDagger",
-		"pretty_criteria": "Buying Blink Dagger"
-	},
-	{
-		"name": "luna_bottle_01",
-		"fullname": "luna_luna_bottle_01",
-		"mp3": "/sounds/vo/luna/luna_bottle_01.mp3",
-		"hero_id": 48,
-		"text": "Patience, Nova.",
-		"text_simple": " patience nova ",
-		"criteria": "Bottling Isluna",
-		"pretty_criteria": "Bottling a rune"
-	},
-	{
-		"name": "luna_bottle_02",
-		"fullname": "luna_luna_bottle_02",
-		"mp3": "/sounds/vo/luna/luna_bottle_02.mp3",
-		"hero_id": 48,
-		"text": "For when the skies clear!",
-		"text_simple": " for when the skies clear ",
-		"criteria": "Bottling Isluna",
-		"pretty_criteria": "Bottling a rune"
-	},
-	{
-		"name": "luna_bottle_03",
-		"fullname": "luna_luna_bottle_03",
-		"mp3": "/sounds/vo/luna/luna_bottle_03.mp3",
-		"hero_id": 48,
-		"text": "Soon.",
-		"text_simple": " soon ",
-		"criteria": "Bottling Isluna",
-		"pretty_criteria": "Bottling a rune"
-	},
-	{
-		"name": "luna_bottle_04",
-		"fullname": "luna_luna_bottle_04",
-		"mp3": "/sounds/vo/luna/luna_bottle_04.mp3",
-		"hero_id": 48,
-		"text": "Soon.",
-		"text_simple": " soon ",
-		"criteria": "Bottling Isluna",
-		"pretty_criteria": "Bottling a rune"
-	},
-	{
 		"name": "luna_cast_01",
 		"fullname": "luna_luna_cast_01",
 		"mp3": "/sounds/vo/luna/luna_cast_01.mp3",
@@ -728,544 +590,292 @@
 		"pretty_criteria": "Attacking"
 	},
 	{
-		"name": "luna_crumwiz_01",
-		"fullname": "luna_luna_crumwiz_01",
-		"mp3": "/sounds/vo/luna/luna_crumwiz_01.mp3",
+		"name": "luna_ability_lucentbeam_01",
+		"fullname": "luna_luna_ability_lucentbeam_01",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_01.mp3",
 		"hero_id": 48,
-		"text": "Crummy wizard!",
-		"text_simple": " crummy wizard ",
+		"text": "Lunar light!",
+		"text_simple": " lunar light ",
+		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
+		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+	},
+	{
+		"name": "luna_ability_lucentbeam_02",
+		"fullname": "luna_luna_ability_lucentbeam_02",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_02.mp3",
+		"hero_id": 48,
+		"text": "Lucent beam!",
+		"text_simple": " lucent beam ",
+		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
+		"pretty_criteria": "Casting Lucent Beam (50% chance)"
+	},
+	{
+		"name": "luna_ability_lucentbeam_03",
+		"fullname": "luna_luna_ability_lucentbeam_03",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_03.mp3",
+		"hero_id": 48,
+		"text": "Stars shine!",
+		"text_simple": " stars shine ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_death_01",
-		"fullname": "luna_luna_death_01",
-		"mp3": "/sounds/vo/luna/luna_death_01.mp3",
+		"name": "luna_ability_lucentbeam_04",
+		"fullname": "luna_luna_ability_lucentbeam_04",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_04.mp3",
 		"hero_id": 48,
-		"text": "No!",
-		"text_simple": " no ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
+		"text": "Starlight!",
+		"text_simple": " starlight ",
+		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
+		"pretty_criteria": "Casting Lucent Beam (50% chance)"
 	},
 	{
-		"name": "luna_death_02",
-		"fullname": "luna_luna_death_02",
-		"mp3": "/sounds/vo/luna/luna_death_02.mp3",
+		"name": "luna_ability_lucentbeam_05",
+		"fullname": "luna_luna_ability_lucentbeam_05",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_05.mp3",
 		"hero_id": 48,
-		"text": "No!",
-		"text_simple": " no ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
+		"text": "Piercing light!",
+		"text_simple": " piercing light ",
+		"criteria": "CastExecute Isluna IsLunaLucentBeam Chance_50%",
+		"pretty_criteria": "Casting Lucent Beam (50% chance)"
 	},
 	{
-		"name": "luna_death_03",
-		"fullname": "luna_luna_death_03",
-		"mp3": "/sounds/vo/luna/luna_death_03.mp3",
+		"name": "luna_ability_lucentbeam_06",
+		"fullname": "luna_luna_ability_lucentbeam_06",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_06.mp3",
 		"hero_id": 48,
-		"text": "Am I forsaken?",
-		"text_simple": " am i forsaken ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_04",
-		"fullname": "luna_luna_death_04",
-		"mp3": "/sounds/vo/luna/luna_death_04.mp3",
-		"hero_id": 48,
-		"text": "I go willingly...",
-		"text_simple": " i go willingly ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_05",
-		"fullname": "luna_luna_death_05",
-		"mp3": "/sounds/vo/luna/luna_death_05.mp3",
-		"hero_id": 48,
-		"text": "You honor me...",
-		"text_simple": " you honor me ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_06",
-		"fullname": "luna_luna_death_06",
-		"mp3": "/sounds/vo/luna/luna_death_06.mp3",
-		"hero_id": 48,
-		"text": "I hear whispers.",
-		"text_simple": " i hear whispers ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_07",
-		"fullname": "luna_luna_death_07",
-		"mp3": "/sounds/vo/luna/luna_death_07.mp3",
-		"hero_id": 48,
-		"text": "Nova? Nova?",
-		"text_simple": " nova nova ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_08",
-		"fullname": "luna_luna_death_08",
-		"mp3": "/sounds/vo/luna/luna_death_08.mp3",
-		"hero_id": 48,
-		"text": "Not... now...",
-		"text_simple": " not now ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_09",
-		"fullname": "luna_luna_death_09",
-		"mp3": "/sounds/vo/luna/luna_death_09.mp3",
-		"hero_id": 48,
-		"text": "Worthy opponent.",
-		"text_simple": " worthy opponent ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_10",
-		"fullname": "luna_luna_death_10",
-		"mp3": "/sounds/vo/luna/luna_death_10.mp3",
-		"hero_id": 48,
-		"text": "Well done.",
-		"text_simple": " well done ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_11",
-		"fullname": "luna_luna_death_11",
-		"mp3": "/sounds/vo/luna/luna_death_11.mp3",
-		"hero_id": 48,
-		"text": "Just... getting started.",
-		"text_simple": " just getting started ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_12",
-		"fullname": "luna_luna_death_12",
-		"mp3": "/sounds/vo/luna/luna_death_12.mp3",
-		"hero_id": 48,
-		"text": "I'm better than... this.",
-		"text_simple": " im better than this ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_death_13",
-		"fullname": "luna_luna_death_13",
-		"mp3": "/sounds/vo/luna/luna_death_13.mp3",
-		"hero_id": 48,
-		"text": "You'll regret that.",
-		"text_simple": " youll regret that ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
-	},
-	{
-		"name": "luna_deny_01",
-		"fullname": "luna_luna_deny_01",
-		"mp3": "/sounds/vo/luna/luna_deny_01.mp3",
-		"hero_id": 48,
-		"text": "Denied.",
-		"text_simple": " denied ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_02",
-		"fullname": "luna_luna_deny_02",
-		"mp3": "/sounds/vo/luna/luna_deny_02.mp3",
-		"hero_id": 48,
-		"text": "Denied.",
-		"text_simple": " denied ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_03",
-		"fullname": "luna_luna_deny_03",
-		"mp3": "/sounds/vo/luna/luna_deny_03.mp3",
-		"hero_id": 48,
-		"text": "Uh-uh!",
-		"text_simple": " uhuh ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_04",
-		"fullname": "luna_luna_deny_04",
-		"mp3": "/sounds/vo/luna/luna_deny_04.mp3",
-		"hero_id": 48,
-		"text": "Uh-uh!",
-		"text_simple": " uhuh ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_05",
-		"fullname": "luna_luna_deny_05",
-		"mp3": "/sounds/vo/luna/luna_deny_05.mp3",
-		"hero_id": 48,
-		"text": "Absolutely not.",
-		"text_simple": " absolutely not ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_06",
-		"fullname": "luna_luna_deny_06",
-		"mp3": "/sounds/vo/luna/luna_deny_06.mp3",
-		"hero_id": 48,
-		"text": "Ours.",
-		"text_simple": " ours ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_07",
-		"fullname": "luna_luna_deny_07",
-		"mp3": "/sounds/vo/luna/luna_deny_07.mp3",
-		"hero_id": 48,
-		"text": "No.",
-		"text_simple": " no ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_08",
-		"fullname": "luna_luna_deny_08",
-		"mp3": "/sounds/vo/luna/luna_deny_08.mp3",
-		"hero_id": 48,
-		"text": "Bad luck.",
-		"text_simple": " bad luck ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_09",
-		"fullname": "luna_luna_deny_09",
-		"mp3": "/sounds/vo/luna/luna_deny_09.mp3",
-		"hero_id": 48,
-		"text": "Not on my watch.",
-		"text_simple": " not on my watch ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_10",
-		"fullname": "luna_luna_deny_10",
-		"mp3": "/sounds/vo/luna/luna_deny_10.mp3",
-		"hero_id": 48,
-		"text": "Hands to yourself!",
-		"text_simple": " hands to yourself ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_11",
-		"fullname": "luna_luna_deny_11",
-		"mp3": "/sounds/vo/luna/luna_deny_11.mp3",
-		"hero_id": 48,
-		"text": "Denied!",
-		"text_simple": " denied ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_12",
-		"fullname": "luna_luna_deny_12",
-		"mp3": "/sounds/vo/luna/luna_deny_12.mp3",
-		"hero_id": 48,
-		"text": "Denied!",
-		"text_simple": " denied ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_deny_13",
-		"fullname": "luna_luna_deny_13",
-		"mp3": "/sounds/vo/luna/luna_deny_13.mp3",
-		"hero_id": 48,
-		"text": "Mm-mm denied!",
-		"text_simple": " mmmm denied ",
-		"criteria": "Deny Isluna",
-		"pretty_criteria": "Denying"
-	},
-	{
-		"name": "luna_doubdam_01",
-		"fullname": "luna_luna_doubdam_01",
-		"mp3": "/sounds/vo/luna/luna_doubdam_01.mp3",
-		"hero_id": 48,
-		"text": "Double damage!",
-		"text_simple": " double damage ",
-		"criteria": "Powerup Isluna IsPowerupDoubleDamage",
-		"pretty_criteria": "Activating a double damage rune"
-	},
-	{
-		"name": "luna_doubdam_02",
-		"fullname": "luna_luna_doubdam_02",
-		"mp3": "/sounds/vo/luna/luna_doubdam_02.mp3",
-		"hero_id": 48,
-		"text": "The crescent cuts twice as deep!",
-		"text_simple": " the crescent cuts twice as deep ",
+		"text": "Piercing!",
+		"text_simple": " piercing ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_drop_common",
-		"fullname": "luna_luna_drop_common",
-		"mp3": "/sounds/vo/luna/luna_drop_common.mp3",
+		"name": "luna_ability_lucentbeam_07",
+		"fullname": "luna_luna_ability_lucentbeam_07",
+		"mp3": "/sounds/vo/luna/luna_ability_lucentbeam_07.mp3",
 		"hero_id": 48,
-		"text": "Interesting!",
-		"text_simple": " interesting ",
-		"criteria": "ItemDrop Isluna IsCommonDrop",
-		"pretty_criteria": "Recieving a common cosmetic item"
-	},
-	{
-		"name": "luna_drop_medium",
-		"fullname": "luna_luna_drop_medium",
-		"mp3": "/sounds/vo/luna/luna_drop_medium.mp3",
-		"hero_id": 48,
-		"text": "Isn't that a pretty thing!",
-		"text_simple": " isnt that a pretty thing ",
-		"criteria": "ItemDrop Isluna IsRareDrop|Powerup Isluna IsPowerupArcane",
-		"pretty_criteria": "Recieving a rare cosmetic item\nActivating an arcane rune"
-	},
-	{
-		"name": "luna_drop_rare",
-		"fullname": "luna_luna_drop_rare",
-		"mp3": "/sounds/vo/luna/luna_drop_rare.mp3",
-		"hero_id": 48,
-		"text": "By the moon!!",
-		"text_simple": " by the moon ",
-		"criteria": "ItemDrop Isluna IsUltraRareDrop",
-		"pretty_criteria": "Recieving an ultra rare cosmetic item"
-	},
-	{
-		"name": "luna_fastres_01",
-		"fullname": "luna_luna_fastres_01",
-		"mp3": "/sounds/vo/luna/luna_fastres_01.mp3",
-		"hero_id": 48,
-		"text": "Another phase begins.",
-		"text_simple": " another phase begins ",
-		"criteria": "Death Isluna IsReincarnating",
-		"pretty_criteria": "Dying and respawning from aegis"
-	},
-	{
-		"name": "luna_firstblood_01",
-		"fullname": "luna_luna_firstblood_01",
-		"mp3": "/sounds/vo/luna/luna_firstblood_01.mp3",
-		"hero_id": 48,
-		"text": "First blood! For Selemene and for the Dark Moon!",
-		"text_simple": " first blood for selemene and for the dark moon ",
-		"criteria": "Kill Isluna IsFirstBlood",
-		"pretty_criteria": "Killing a hero (First Blood)"
-	},
-	{
-		"name": "luna_happy_01",
-		"fullname": "luna_luna_happy_01",
-		"mp3": "/sounds/vo/luna/luna_happy_01.mp3",
-		"hero_id": 48,
-		"text": "Aye.",
-		"text_simple": " aye ",
+		"text": "Selemene!",
+		"text_simple": " selemene ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_happy_02",
-		"fullname": "luna_luna_happy_02",
-		"mp3": "/sounds/vo/luna/luna_happy_02.mp3",
+		"name": "luna_ability_eclipse_01",
+		"fullname": "luna_luna_ability_eclipse_01",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_01.mp3",
 		"hero_id": 48,
-		"text": "Ahh.",
-		"text_simple": " ahh ",
+		"text": "Eclipse!",
+		"text_simple": " eclipse ",
+		"criteria": "CastExecute Isluna IsLunaEclipse",
+		"pretty_criteria": "Casting Eclipse"
+	},
+	{
+		"name": "luna_ability_eclipse_02",
+		"fullname": "luna_luna_ability_eclipse_02",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_02.mp3",
+		"hero_id": 48,
+		"text": "Eclipse!",
+		"text_simple": " eclipse ",
+		"criteria": "CastExecute Isluna IsLunaEclipse",
+		"pretty_criteria": "Casting Eclipse"
+	},
+	{
+		"name": "luna_ability_eclipse_03",
+		"fullname": "luna_luna_ability_eclipse_03",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_03.mp3",
+		"hero_id": 48,
+		"text": "Eclipse!",
+		"text_simple": " eclipse ",
+		"criteria": "CastExecute Isluna IsLunaEclipse",
+		"pretty_criteria": "Casting Eclipse"
+	},
+	{
+		"name": "luna_ability_eclipse_04",
+		"fullname": "luna_luna_ability_eclipse_04",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_04.mp3",
+		"hero_id": 48,
+		"text": "Feel the moon!",
+		"text_simple": " feel the moon ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_happy_03",
-		"fullname": "luna_luna_happy_03",
-		"mp3": "/sounds/vo/luna/luna_happy_03.mp3",
+		"name": "luna_ability_eclipse_05",
+		"fullname": "luna_luna_ability_eclipse_05",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_05.mp3",
 		"hero_id": 48,
-		"text": "Ohhh yeah.",
-		"text_simple": " ohhh yeah ",
+		"text": "The night sky opens wide!",
+		"text_simple": " the night sky opens wide ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_happy_04",
-		"fullname": "luna_luna_happy_04",
-		"mp3": "/sounds/vo/luna/luna_happy_04.mp3",
+		"name": "luna_ability_eclipse_06",
+		"fullname": "luna_luna_ability_eclipse_06",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_06.mp3",
 		"hero_id": 48,
-		"text": "Mmm.",
-		"text_simple": " mmm ",
+		"text": "The eclipse is upon you!",
+		"text_simple": " the eclipse is upon you ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_happy_05",
-		"fullname": "luna_luna_happy_05",
-		"mp3": "/sounds/vo/luna/luna_happy_05.mp3",
+		"name": "luna_ability_eclipse_07",
+		"fullname": "luna_luna_ability_eclipse_07",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_07.mp3",
 		"hero_id": 48,
-		"text": "Ahh!",
-		"text_simple": " ahh ",
+		"text": "Blessed be the night!",
+		"text_simple": " blessed be the night ",
+		"criteria": "CastExecute Isluna IsLunaEclipse",
+		"pretty_criteria": "Casting Eclipse"
+	},
+	{
+		"name": "luna_ability_eclipse_08",
+		"fullname": "luna_luna_ability_eclipse_08",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_08.mp3",
+		"hero_id": 48,
+		"text": "Let the sky tear down the unworthy!",
+		"text_simple": " let the sky tear down the unworthy ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_happy_06",
-		"fullname": "luna_luna_happy_06",
-		"mp3": "/sounds/vo/luna/luna_happy_06.mp3",
+		"name": "luna_ability_eclipse_09",
+		"fullname": "luna_luna_ability_eclipse_09",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_09.mp3",
 		"hero_id": 48,
-		"text": "Hooh!",
-		"text_simple": " hooh ",
+		"text": "Wrath of the Goddess!",
+		"text_simple": " wrath of the goddess ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_haste_01",
-		"fullname": "luna_luna_haste_01",
-		"mp3": "/sounds/vo/luna/luna_haste_01.mp3",
+		"name": "luna_ability_eclipse_10",
+		"fullname": "luna_luna_ability_eclipse_10",
+		"mp3": "/sounds/vo/luna/luna_ability_eclipse_10.mp3",
 		"hero_id": 48,
-		"text": "Haste!",
-		"text_simple": " haste ",
-		"criteria": "Powerup Isluna IsPowerupHaste",
-		"pretty_criteria": "Activating a haste rune"
-	},
-	{
-		"name": "luna_haste_02",
-		"fullname": "luna_luna_haste_02",
-		"mp3": "/sounds/vo/luna/luna_haste_02.mp3",
-		"hero_id": 48,
-		"text": "Quickly Nova!",
-		"text_simple": " quickly nova ",
-		"criteria": "Powerup Isluna IsPowerupHaste Chance_25%",
-		"pretty_criteria": "Activating a haste rune (25% chance)"
-	},
-	{
-		"name": "luna_illus_01",
-		"fullname": "luna_luna_illus_01",
-		"mp3": "/sounds/vo/luna/luna_illus_01.mp3",
-		"hero_id": 48,
-		"text": "Illusion!",
-		"text_simple": " illusion ",
-		"criteria": "Powerup Isluna IsPowerupIllusion",
-		"pretty_criteria": "Activating an illusion rune"
-	},
-	{
-		"name": "luna_illus_02",
-		"fullname": "luna_luna_illus_02",
-		"mp3": "/sounds/vo/luna/luna_illus_02.mp3",
-		"hero_id": 48,
-		"text": "The cavalry has arrived!",
-		"text_simple": " the cavalry has arrived ",
-		"criteria": "Powerup Isluna IsPowerupIllusion Chance_25%",
-		"pretty_criteria": "Activating an illusion rune (25% chance)"
-	},
-	{
-		"name": "luna_immort_01",
-		"fullname": "luna_luna_immort_01",
-		"mp3": "/sounds/vo/luna/luna_immort_01.mp3",
-		"hero_id": 48,
-		"text": "Immortality!",
-		"text_simple": " immortality ",
-		"criteria": "Immortality Isluna",
-		"pretty_criteria": "Grabbing aegis"
-	},
-	{
-		"name": "luna_immort_02",
-		"fullname": "luna_luna_immort_02",
-		"mp3": "/sounds/vo/luna/luna_immort_02.mp3",
-		"hero_id": 48,
-		"text": "As eternal as the moon.",
-		"text_simple": " as eternal as the moon ",
+		"text": "Behold the piercing sky!",
+		"text_simple": " behold the piercing sky ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_inthebag_01",
-		"fullname": "luna_luna_inthebag_01",
-		"mp3": "/sounds/vo/luna/luna_inthebag_01.mp3",
+		"name": "luna_ability_failure_01",
+		"fullname": "luna_luna_ability_failure_01",
+		"mp3": "/sounds/vo/luna/luna_ability_failure_01.mp3",
 		"hero_id": 48,
-		"text": "Look how they flee before us. This one's in the bag!",
-		"text_simple": " look how they flee before us this ones in the bag ",
-		"criteria": "InTheBag Isluna",
-		"pretty_criteria": "In-the-bag"
-	},
-	{
-		"name": "luna_invis_01",
-		"fullname": "luna_luna_invis_01",
-		"mp3": "/sounds/vo/luna/luna_invis_01.mp3",
-		"hero_id": 48,
-		"text": "Invisibility!",
-		"text_simple": " invisibility ",
-		"criteria": "Powerup Isluna IsPowerupInvisibility",
-		"pretty_criteria": "Activating an invisibility rune"
-	},
-	{
-		"name": "luna_invis_02",
-		"fullname": "luna_luna_invis_02",
-		"mp3": "/sounds/vo/luna/luna_invis_02.mp3",
-		"hero_id": 48,
-		"text": "We stalk unhindered.",
-		"text_simple": " we stalk unhindered ",
+		"text": "The stars are against me.",
+		"text_simple": " the stars are against me ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_items_01",
-		"fullname": "luna_luna_items_01",
-		"mp3": "/sounds/vo/luna/luna_items_01.mp3",
+		"name": "luna_ability_failure_02",
+		"fullname": "luna_luna_ability_failure_02",
+		"mp3": "/sounds/vo/luna/luna_ability_failure_02.mp3",
 		"hero_id": 48,
-		"text": "Black King Bar!",
-		"text_simple": " black king bar ",
-		"criteria": "Purchase Isluna IsBlackKingBar",
-		"pretty_criteria": "Buying Black King Bar"
+		"text": "Damn clouds.",
+		"text_simple": " damn clouds ",
+		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_items_02",
-		"fullname": "luna_luna_items_02",
-		"mp3": "/sounds/vo/luna/luna_items_02.mp3",
+		"name": "luna_ability_failure_03",
+		"fullname": "luna_luna_ability_failure_03",
+		"mp3": "/sounds/vo/luna/luna_ability_failure_03.mp3",
 		"hero_id": 48,
-		"text": "Yasha!",
-		"text_simple": " yasha ",
-		"criteria": "Purchase Isluna IsYasha",
-		"pretty_criteria": "Buying Yasha"
+		"text": "Scratch that idea!",
+		"text_simple": " scratch that idea ",
+		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_items_03",
-		"fullname": "luna_luna_items_03",
-		"mp3": "/sounds/vo/luna/luna_items_03.mp3",
+		"name": "luna_levelup_01",
+		"fullname": "luna_luna_levelup_01",
+		"mp3": "/sounds/vo/luna/luna_levelup_01.mp3",
 		"hero_id": 48,
-		"text": "Manta Style!",
-		"text_simple": " manta style ",
-		"criteria": "Purchase Isluna IsManta",
-		"pretty_criteria": "Buying Manta Style"
+		"text": "The moon smiles upon me!",
+		"text_simple": " the moon smiles upon me ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
 	},
 	{
-		"name": "luna_items_04",
-		"fullname": "luna_luna_items_04",
-		"mp3": "/sounds/vo/luna/luna_items_04.mp3",
+		"name": "luna_levelup_02",
+		"fullname": "luna_luna_levelup_02",
+		"mp3": "/sounds/vo/luna/luna_levelup_02.mp3",
 		"hero_id": 48,
-		"text": "Butterfly!",
-		"text_simple": " butterfly ",
-		"criteria": "Purchase Isluna IsButterfly",
-		"pretty_criteria": "Buying Butterfly"
+		"text": "A new moon!",
+		"text_simple": " a new moon ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
 	},
 	{
-		"name": "luna_items_05",
-		"fullname": "luna_luna_items_05",
-		"mp3": "/sounds/vo/luna/luna_items_05.mp3",
+		"name": "luna_levelup_03",
+		"fullname": "luna_luna_levelup_03",
+		"mp3": "/sounds/vo/luna/luna_levelup_03.mp3",
 		"hero_id": 48,
-		"text": "Satanic!",
-		"text_simple": " satanic ",
-		"criteria": "Purchase Isluna IsSatanic",
-		"pretty_criteria": "Buying Satanic"
+		"text": "Blessings upon a loyal warrior.",
+		"text_simple": " blessings upon a loyal warrior ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna|Powerup Isluna IsPowerupBounty",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up\nActivating a bounty rune"
 	},
 	{
-		"name": "luna_items_06",
-		"fullname": "luna_luna_items_06",
-		"mp3": "/sounds/vo/luna/luna_items_06.mp3",
+		"name": "luna_levelup_04",
+		"fullname": "luna_luna_levelup_04",
+		"mp3": "/sounds/vo/luna/luna_levelup_04.mp3",
 		"hero_id": 48,
-		"text": "Heart of Tarrasque!",
-		"text_simple": " heart of tarrasque ",
-		"criteria": "Purchase Isluna IsHeart",
-		"pretty_criteria": "Buying Heart of Tarrasque"
+		"text": "The sky alight!",
+		"text_simple": " the sky alight ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
+	},
+	{
+		"name": "luna_levelup_05",
+		"fullname": "luna_luna_levelup_05",
+		"mp3": "/sounds/vo/luna/luna_levelup_05.mp3",
+		"hero_id": 48,
+		"text": "The night settles in.",
+		"text_simple": " the night settles in ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
+	},
+	{
+		"name": "luna_levelup_06",
+		"fullname": "luna_luna_levelup_06",
+		"mp3": "/sounds/vo/luna/luna_levelup_06.mp3",
+		"hero_id": 48,
+		"text": "Beautiful.",
+		"text_simple": " beautiful ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
+	},
+	{
+		"name": "luna_levelup_07",
+		"fullname": "luna_luna_levelup_07",
+		"mp3": "/sounds/vo/luna/luna_levelup_07.mp3",
+		"hero_id": 48,
+		"text": "They will fear me.",
+		"text_simple": " they will fear me ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up"
+	},
+	{
+		"name": "luna_levelup_08",
+		"fullname": "luna_luna_levelup_08",
+		"mp3": "/sounds/vo/luna/luna_levelup_08.mp3",
+		"hero_id": 48,
+		"text": "They will find my blade sharp, and cruel.",
+		"text_simple": " they will find my blade sharp and cruel ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up"
+	},
+	{
+		"name": "luna_levelup_09",
+		"fullname": "luna_luna_levelup_09",
+		"mp3": "/sounds/vo/luna/luna_levelup_09.mp3",
+		"hero_id": 48,
+		"text": "I'm done being merciful!",
+		"text_simple": " im done being merciful ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
+	},
+	{
+		"name": "luna_levelup_10",
+		"fullname": "luna_luna_levelup_10",
+		"mp3": "/sounds/vo/luna/luna_levelup_10.mp3",
+		"hero_id": 48,
+		"text": "The moon waxes, and my mercy wanes.",
+		"text_simple": " the moon waxes and my mercy wanes ",
+		"criteria": "LevelUp Isluna",
+		"pretty_criteria": "Leveling up"
 	},
 	{
 		"name": "luna_kill_01",
@@ -1376,1124 +986,6 @@
 		"text_simple": " pathetic ",
 		"criteria": "Kill Isluna",
 		"pretty_criteria": "Killing a hero"
-	},
-	{
-		"name": "luna_lane_missing_01",
-		"fullname": "luna_luna_lane_missing_01",
-		"mp3": "/sounds/vo/luna/luna_lane_missing_01.mp3",
-		"hero_id": 48,
-		"text": "Missing top!",
-		"text_simple": " missing top ",
-		"criteria": "Missing Isluna IsLaneTop",
-		"pretty_criteria": "Calling missing for from top lane"
-	},
-	{
-		"name": "luna_lane_missing_02",
-		"fullname": "luna_luna_lane_missing_02",
-		"mp3": "/sounds/vo/luna/luna_lane_missing_02.mp3",
-		"hero_id": 48,
-		"text": "Missing middle!",
-		"text_simple": " missing middle ",
-		"criteria": "Missing Isluna IsLaneMid",
-		"pretty_criteria": "Calling missing for from middle lane"
-	},
-	{
-		"name": "luna_lane_missing_03",
-		"fullname": "luna_luna_lane_missing_03",
-		"mp3": "/sounds/vo/luna/luna_lane_missing_03.mp3",
-		"hero_id": 48,
-		"text": "Missing bottom!",
-		"text_simple": " missing bottom ",
-		"criteria": "Missing Isluna IsLaneBot",
-		"pretty_criteria": "Calling missing for from bottom lane"
-	},
-	{
-		"name": "luna_lasthit_01",
-		"fullname": "luna_luna_lasthit_01",
-		"mp3": "/sounds/vo/luna/luna_lasthit_01.mp3",
-		"hero_id": 48,
-		"text": "For the cause.",
-		"text_simple": " for the cause ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_02",
-		"fullname": "luna_luna_lasthit_02",
-		"mp3": "/sounds/vo/luna/luna_lasthit_02.mp3",
-		"hero_id": 48,
-		"text": "Unworthy.",
-		"text_simple": " unworthy ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_03",
-		"fullname": "luna_luna_lasthit_03",
-		"mp3": "/sounds/vo/luna/luna_lasthit_03.mp3",
-		"hero_id": 48,
-		"text": "Unworthy.",
-		"text_simple": " unworthy ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_04",
-		"fullname": "luna_luna_lasthit_04",
-		"mp3": "/sounds/vo/luna/luna_lasthit_04.mp3",
-		"hero_id": 48,
-		"text": "Weakling.",
-		"text_simple": " weakling ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_05",
-		"fullname": "luna_luna_lasthit_05",
-		"mp3": "/sounds/vo/luna/luna_lasthit_05.mp3",
-		"hero_id": 48,
-		"text": "Cat food.",
-		"text_simple": " cat food ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_06",
-		"fullname": "luna_luna_lasthit_06",
-		"mp3": "/sounds/vo/luna/luna_lasthit_06.mp3",
-		"hero_id": 48,
-		"text": "Another death.",
-		"text_simple": " another death ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_07",
-		"fullname": "luna_luna_lasthit_07",
-		"mp3": "/sounds/vo/luna/luna_lasthit_07.mp3",
-		"hero_id": 48,
-		"text": "Insignificant.",
-		"text_simple": " insignificant ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_08",
-		"fullname": "luna_luna_lasthit_08",
-		"mp3": "/sounds/vo/luna/luna_lasthit_08.mp3",
-		"hero_id": 48,
-		"text": "Is that it?",
-		"text_simple": " is that it ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_09",
-		"fullname": "luna_luna_lasthit_09",
-		"mp3": "/sounds/vo/luna/luna_lasthit_09.mp3",
-		"hero_id": 48,
-		"text": "Poor thing.",
-		"text_simple": " poor thing ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_10",
-		"fullname": "luna_luna_lasthit_10",
-		"mp3": "/sounds/vo/luna/luna_lasthit_10.mp3",
-		"hero_id": 48,
-		"text": "A harvest moon.",
-		"text_simple": " a harvest moon ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_lasthit_11",
-		"fullname": "luna_luna_lasthit_11",
-		"mp3": "/sounds/vo/luna/luna_lasthit_11.mp3",
-		"hero_id": 48,
-		"text": "Poor wee thing.",
-		"text_simple": " poor wee thing ",
-		"criteria": "LastHit Isluna",
-		"pretty_criteria": "Last hitting"
-	},
-	{
-		"name": "luna_laugh_01",
-		"fullname": "luna_luna_laugh_01",
-		"mp3": "/sounds/vo/luna/luna_laugh_01.mp3",
-		"hero_id": 48,
-		"text": "Mm mm mm ha ha ha ha ha ha ha ha ha ha ha! Hh ah ha ha ha ha ha ha ha ha ha ha ha!",
-		"text_simple": " mm mm mm ha ha ha ha ha ha ha ha ha ha ha hh ah ha ha ha ha ha ha ha ha ha ha ha ",
-		"criteria": "Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Laughing"
-	},
-	{
-		"name": "luna_laugh_02",
-		"fullname": "luna_luna_laugh_02",
-		"mp3": "/sounds/vo/luna/luna_laugh_02.mp3",
-		"hero_id": 48,
-		"text": "Ha ha ha ha ha ha ha ha ha!",
-		"text_simple": " ha ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_03",
-		"fullname": "luna_luna_laugh_03",
-		"mp3": "/sounds/vo/luna/luna_laugh_03.mp3",
-		"hero_id": 48,
-		"text": "Ha ha ha ha ha ha ha ha ha ha ha!",
-		"text_simple": " ha ha ha ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
-		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
-	},
-	{
-		"name": "luna_laugh_04",
-		"fullname": "luna_luna_laugh_04",
-		"mp3": "/sounds/vo/luna/luna_laugh_04.mp3",
-		"hero_id": 48,
-		"text": "Hm hm hm ha ha ha ha ha ha ha ha!",
-		"text_simple": " hm hm hm ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_05",
-		"fullname": "luna_luna_laugh_05",
-		"mp3": "/sounds/vo/luna/luna_laugh_05.mp3",
-		"hero_id": 48,
-		"text": "Ha ha!",
-		"text_simple": " ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_06",
-		"fullname": "luna_luna_laugh_06",
-		"mp3": "/sounds/vo/luna/luna_laugh_06.mp3",
-		"hero_id": 48,
-		"text": "Arr har har har!",
-		"text_simple": " arr har har har ",
-		"criteria": "Kill Isluna IsEnemyKunkka Chance_3%",
-		"pretty_criteria": "Killing Kunkka (3% chance)"
-	},
-	{
-		"name": "luna_laugh_07",
-		"fullname": "luna_luna_laugh_07",
-		"mp3": "/sounds/vo/luna/luna_laugh_07.mp3",
-		"hero_id": 48,
-		"text": "Hhh! Ah ha ha ha ha ha ha ha!",
-		"text_simple": " hhh ah ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
-		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
-	},
-	{
-		"name": "luna_laugh_08",
-		"fullname": "luna_luna_laugh_08",
-		"mp3": "/sounds/vo/luna/luna_laugh_08.mp3",
-		"hero_id": 48,
-		"text": "Huh huh ha ha ha ha ha ha!",
-		"text_simple": " huh huh ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_09",
-		"fullname": "luna_luna_laugh_09",
-		"mp3": "/sounds/vo/luna/luna_laugh_09.mp3",
-		"hero_id": 48,
-		"text": "Ah ha ha ha ha ha ha!",
-		"text_simple": " ah ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_10",
-		"fullname": "luna_luna_laugh_10",
-		"mp3": "/sounds/vo/luna/luna_laugh_10.mp3",
-		"hero_id": 48,
-		"text": "Ha ha!",
-		"text_simple": " ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_11",
-		"fullname": "luna_luna_laugh_11",
-		"mp3": "/sounds/vo/luna/luna_laugh_11.mp3",
-		"hero_id": 48,
-		"text": "Huh ha ha ha!",
-		"text_simple": " huh ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_12",
-		"fullname": "luna_luna_laugh_12",
-		"mp3": "/sounds/vo/luna/luna_laugh_12.mp3",
-		"hero_id": 48,
-		"text": "Heh heh heh!",
-		"text_simple": " heh heh heh ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_13",
-		"fullname": "luna_luna_laugh_13",
-		"mp3": "/sounds/vo/luna/luna_laugh_13.mp3",
-		"hero_id": 48,
-		"text": "Oh ho ho ho ho!",
-		"text_simple": " oh ho ho ho ho ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_14",
-		"fullname": "luna_luna_laugh_14",
-		"mp3": "/sounds/vo/luna/luna_laugh_14.mp3",
-		"hero_id": 48,
-		"text": "Ah ha ha ha ha ha ha ha ha!",
-		"text_simple": " ah ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
-		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
-	},
-	{
-		"name": "luna_laugh_15",
-		"fullname": "luna_luna_laugh_15",
-		"mp3": "/sounds/vo/luna/luna_laugh_15.mp3",
-		"hero_id": 48,
-		"text": "Hhh! Ho ho ho ho ho ho!",
-		"text_simple": " hhh ho ho ho ho ho ho ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_16",
-		"fullname": "luna_luna_laugh_16",
-		"mp3": "/sounds/vo/luna/luna_laugh_16.mp3",
-		"hero_id": 48,
-		"text": "Hhh! Ho ha ha ha ha ha ha ha ha!",
-		"text_simple": " hhh ho ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
-		"pretty_criteria": "Killing a hero\nLaughing"
-	},
-	{
-		"name": "luna_laugh_17",
-		"fullname": "luna_luna_laugh_17",
-		"mp3": "/sounds/vo/luna/luna_laugh_17.mp3",
-		"hero_id": 48,
-		"text": "Hhh! Ah ho ha ha ha ha ha ha ha ha ha!",
-		"text_simple": " hhh ah ho ha ha ha ha ha ha ha ha ha ",
-		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
-		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
-	},
-	{
-		"name": "luna_levelup_01",
-		"fullname": "luna_luna_levelup_01",
-		"mp3": "/sounds/vo/luna/luna_levelup_01.mp3",
-		"hero_id": 48,
-		"text": "The moon smiles upon me!",
-		"text_simple": " the moon smiles upon me ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_02",
-		"fullname": "luna_luna_levelup_02",
-		"mp3": "/sounds/vo/luna/luna_levelup_02.mp3",
-		"hero_id": 48,
-		"text": "A new moon!",
-		"text_simple": " a new moon ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_03",
-		"fullname": "luna_luna_levelup_03",
-		"mp3": "/sounds/vo/luna/luna_levelup_03.mp3",
-		"hero_id": 48,
-		"text": "Blessings upon a loyal warrior.",
-		"text_simple": " blessings upon a loyal warrior ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna|Powerup Isluna IsPowerupBounty",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up\nActivating a bounty rune"
-	},
-	{
-		"name": "luna_levelup_04",
-		"fullname": "luna_luna_levelup_04",
-		"mp3": "/sounds/vo/luna/luna_levelup_04.mp3",
-		"hero_id": 48,
-		"text": "The sky alight!",
-		"text_simple": " the sky alight ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_05",
-		"fullname": "luna_luna_levelup_05",
-		"mp3": "/sounds/vo/luna/luna_levelup_05.mp3",
-		"hero_id": 48,
-		"text": "The night settles in.",
-		"text_simple": " the night settles in ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_06",
-		"fullname": "luna_luna_levelup_06",
-		"mp3": "/sounds/vo/luna/luna_levelup_06.mp3",
-		"hero_id": 48,
-		"text": "Beautiful.",
-		"text_simple": " beautiful ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_07",
-		"fullname": "luna_luna_levelup_07",
-		"mp3": "/sounds/vo/luna/luna_levelup_07.mp3",
-		"hero_id": 48,
-		"text": "They will fear me.",
-		"text_simple": " they will fear me ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up"
-	},
-	{
-		"name": "luna_levelup_08",
-		"fullname": "luna_luna_levelup_08",
-		"mp3": "/sounds/vo/luna/luna_levelup_08.mp3",
-		"hero_id": 48,
-		"text": "They will find my blade sharp, and cruel.",
-		"text_simple": " they will find my blade sharp and cruel ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|LevelUp Isluna",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nLeveling up"
-	},
-	{
-		"name": "luna_levelup_09",
-		"fullname": "luna_luna_levelup_09",
-		"mp3": "/sounds/vo/luna/luna_levelup_09.mp3",
-		"hero_id": 48,
-		"text": "I'm done being merciful!",
-		"text_simple": " im done being merciful ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_levelup_10",
-		"fullname": "luna_luna_levelup_10",
-		"mp3": "/sounds/vo/luna/luna_levelup_10.mp3",
-		"hero_id": 48,
-		"text": "The moon waxes, and my mercy wanes.",
-		"text_simple": " the moon waxes and my mercy wanes ",
-		"criteria": "LevelUp Isluna",
-		"pretty_criteria": "Leveling up"
-	},
-	{
-		"name": "luna_lose_01",
-		"fullname": "luna_luna_lose_01",
-		"mp3": "/sounds/vo/luna/luna_lose_01.mp3",
-		"hero_id": 48,
-		"text": "No!",
-		"text_simple": " no ",
-		"criteria": "Defeat Isluna",
-		"pretty_criteria": "Losing a game"
-	},
-	{
-		"name": "luna_lose_02",
-		"fullname": "luna_luna_lose_02",
-		"mp3": "/sounds/vo/luna/luna_lose_02.mp3",
-		"hero_id": 48,
-		"text": "Defeated!",
-		"text_simple": " defeated ",
-		"criteria": "Defeat Isluna",
-		"pretty_criteria": "Losing a game"
-	},
-	{
-		"name": "luna_lose_03",
-		"fullname": "luna_luna_lose_03",
-		"mp3": "/sounds/vo/luna/luna_lose_03.mp3",
-		"hero_id": 48,
-		"text": "Has Selemene forsaken me?",
-		"text_simple": " has selemene forsaken me ",
-		"criteria": "Defeat Isluna",
-		"pretty_criteria": "Losing a game"
-	},
-	{
-		"name": "luna_move_01",
-		"fullname": "luna_luna_move_01",
-		"mp3": "/sounds/vo/luna/luna_move_01.mp3",
-		"hero_id": 48,
-		"text": "Yes!",
-		"text_simple": " yes ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_02",
-		"fullname": "luna_luna_move_02",
-		"mp3": "/sounds/vo/luna/luna_move_02.mp3",
-		"hero_id": 48,
-		"text": "Yes.",
-		"text_simple": " yes ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_03",
-		"fullname": "luna_luna_move_03",
-		"mp3": "/sounds/vo/luna/luna_move_03.mp3",
-		"hero_id": 48,
-		"text": "Hyah!",
-		"text_simple": " hyah ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_04",
-		"fullname": "luna_luna_move_04",
-		"mp3": "/sounds/vo/luna/luna_move_04.mp3",
-		"hero_id": 48,
-		"text": "Hyah!",
-		"text_simple": " hyah ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_05",
-		"fullname": "luna_luna_move_05",
-		"mp3": "/sounds/vo/luna/luna_move_05.mp3",
-		"hero_id": 48,
-		"text": "Let's go!",
-		"text_simple": " lets go ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_06",
-		"fullname": "luna_luna_move_06",
-		"mp3": "/sounds/vo/luna/luna_move_06.mp3",
-		"hero_id": 48,
-		"text": "Let's go!",
-		"text_simple": " lets go ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_07",
-		"fullname": "luna_luna_move_07",
-		"mp3": "/sounds/vo/luna/luna_move_07.mp3",
-		"hero_id": 48,
-		"text": "Absolutely.",
-		"text_simple": " absolutely ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_08",
-		"fullname": "luna_luna_move_08",
-		"mp3": "/sounds/vo/luna/luna_move_08.mp3",
-		"hero_id": 48,
-		"text": "Good plan.",
-		"text_simple": " good plan ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_09",
-		"fullname": "luna_luna_move_09",
-		"mp3": "/sounds/vo/luna/luna_move_09.mp3",
-		"hero_id": 48,
-		"text": "Illuminating.",
-		"text_simple": " illuminating ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_10",
-		"fullname": "luna_luna_move_10",
-		"mp3": "/sounds/vo/luna/luna_move_10.mp3",
-		"hero_id": 48,
-		"text": "For the night.",
-		"text_simple": " for the night ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_11",
-		"fullname": "luna_luna_move_11",
-		"mp3": "/sounds/vo/luna/luna_move_11.mp3",
-		"hero_id": 48,
-		"text": "Come, Nova!",
-		"text_simple": " come nova ",
-		"criteria": "Move Isluna Chance_1%",
-		"pretty_criteria": "Moving (1% chance)"
-	},
-	{
-		"name": "luna_move_12",
-		"fullname": "luna_luna_move_12",
-		"mp3": "/sounds/vo/luna/luna_move_12.mp3",
-		"hero_id": 48,
-		"text": "Quickly now!",
-		"text_simple": " quickly now ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_13",
-		"fullname": "luna_luna_move_13",
-		"mp3": "/sounds/vo/luna/luna_move_13.mp3",
-		"hero_id": 48,
-		"text": "The night sees all.",
-		"text_simple": " the night sees all ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving"
-	},
-	{
-		"name": "luna_move_14",
-		"fullname": "luna_luna_move_14",
-		"mp3": "/sounds/vo/luna/luna_move_14.mp3",
-		"hero_id": 48,
-		"text": "By starlight.",
-		"text_simple": " by starlight ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_15",
-		"fullname": "luna_luna_move_15",
-		"mp3": "/sounds/vo/luna/luna_move_15.mp3",
-		"hero_id": 48,
-		"text": "Selemene commands.",
-		"text_simple": " selemene commands ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna Chance_3%",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving (3% chance)"
-	},
-	{
-		"name": "luna_move_16",
-		"fullname": "luna_luna_move_16",
-		"mp3": "/sounds/vo/luna/luna_move_16.mp3",
-		"hero_id": 48,
-		"text": "We ride.",
-		"text_simple": " we ride ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_17",
-		"fullname": "luna_luna_move_17",
-		"mp3": "/sounds/vo/luna/luna_move_17.mp3",
-		"hero_id": 48,
-		"text": "On the prowl.",
-		"text_simple": " on the prowl ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Move Isluna",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nMoving"
-	},
-	{
-		"name": "luna_move_18",
-		"fullname": "luna_luna_move_18",
-		"mp3": "/sounds/vo/luna/luna_move_18.mp3",
-		"hero_id": 48,
-		"text": "Stalking.",
-		"text_simple": " stalking ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_19",
-		"fullname": "luna_luna_move_19",
-		"mp3": "/sounds/vo/luna/luna_move_19.mp3",
-		"hero_id": 48,
-		"text": "What do you see?",
-		"text_simple": " what do you see ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_move_20",
-		"fullname": "luna_luna_move_20",
-		"mp3": "/sounds/vo/luna/luna_move_20.mp3",
-		"hero_id": 48,
-		"text": "On the hunt.",
-		"text_simple": " on the hunt ",
-		"criteria": "Move Isluna",
-		"pretty_criteria": "Moving"
-	},
-	{
-		"name": "luna_nomana_01",
-		"fullname": "luna_luna_nomana_01",
-		"mp3": "/sounds/vo/luna/luna_nomana_01.mp3",
-		"hero_id": 48,
-		"text": "Out of mana.",
-		"text_simple": " out of mana ",
-		"criteria": "NoMana Isluna LittleNag",
-		"pretty_criteria": "Not enough mana"
-	},
-	{
-		"name": "luna_nomana_02",
-		"fullname": "luna_luna_nomana_02",
-		"mp3": "/sounds/vo/luna/luna_nomana_02.mp3",
-		"hero_id": 48,
-		"text": "Out of mana.",
-		"text_simple": " out of mana ",
-		"criteria": "NoMana Isluna MediumNag",
-		"pretty_criteria": "Not enough mana (medium naggy)"
-	},
-	{
-		"name": "luna_nomana_03",
-		"fullname": "luna_luna_nomana_03",
-		"mp3": "/sounds/vo/luna/luna_nomana_03.mp3",
-		"hero_id": 48,
-		"text": "Out of mana!",
-		"text_simple": " out of mana ",
-		"criteria": "NoMana Isluna SuperNag",
-		"pretty_criteria": "Not enough mana (very naggy)"
-	},
-	{
-		"name": "luna_nomana_04",
-		"fullname": "luna_luna_nomana_04",
-		"mp3": "/sounds/vo/luna/luna_nomana_04.mp3",
-		"hero_id": 48,
-		"text": "No mana.",
-		"text_simple": " no mana ",
-		"criteria": "NoMana Isluna LittleNag",
-		"pretty_criteria": "Not enough mana"
-	},
-	{
-		"name": "luna_nomana_05",
-		"fullname": "luna_luna_nomana_05",
-		"mp3": "/sounds/vo/luna/luna_nomana_05.mp3",
-		"hero_id": 48,
-		"text": "No mana.",
-		"text_simple": " no mana ",
-		"criteria": "NoMana Isluna MediumNag",
-		"pretty_criteria": "Not enough mana (medium naggy)"
-	},
-	{
-		"name": "luna_nomana_06",
-		"fullname": "luna_luna_nomana_06",
-		"mp3": "/sounds/vo/luna/luna_nomana_06.mp3",
-		"hero_id": 48,
-		"text": "No mana!",
-		"text_simple": " no mana ",
-		"criteria": "NoMana Isluna SuperNag",
-		"pretty_criteria": "Not enough mana (very naggy)"
-	},
-	{
-		"name": "luna_nomana_07",
-		"fullname": "luna_luna_nomana_07",
-		"mp3": "/sounds/vo/luna/luna_nomana_07.mp3",
-		"hero_id": 48,
-		"text": "Not enough mana.",
-		"text_simple": " not enough mana ",
-		"criteria": "NoMana Isluna LittleNag",
-		"pretty_criteria": "Not enough mana"
-	},
-	{
-		"name": "luna_nomana_08",
-		"fullname": "luna_luna_nomana_08",
-		"mp3": "/sounds/vo/luna/luna_nomana_08.mp3",
-		"hero_id": 48,
-		"text": "Not enough mana.",
-		"text_simple": " not enough mana ",
-		"criteria": "NoMana Isluna MediumNag",
-		"pretty_criteria": "Not enough mana (medium naggy)"
-	},
-	{
-		"name": "luna_nomana_09",
-		"fullname": "luna_luna_nomana_09",
-		"mp3": "/sounds/vo/luna/luna_nomana_09.mp3",
-		"hero_id": 48,
-		"text": "Not enough mana!",
-		"text_simple": " not enough mana ",
-		"criteria": "NoMana Isluna SuperNag",
-		"pretty_criteria": "Not enough mana (very naggy)"
-	},
-	{
-		"name": "luna_notyet_01",
-		"fullname": "luna_luna_notyet_01",
-		"mp3": "/sounds/vo/luna/luna_notyet_01.mp3",
-		"hero_id": 48,
-		"text": "Not yet.",
-		"text_simple": " not yet ",
-		"criteria": "Cooldown Isluna LittleNag",
-		"pretty_criteria": "Item/Ability on cooldown"
-	},
-	{
-		"name": "luna_notyet_02",
-		"fullname": "luna_luna_notyet_02",
-		"mp3": "/sounds/vo/luna/luna_notyet_02.mp3",
-		"hero_id": 48,
-		"text": "Not yet.",
-		"text_simple": " not yet ",
-		"criteria": "Cooldown Isluna MediumNag",
-		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
-	},
-	{
-		"name": "luna_notyet_03",
-		"fullname": "luna_luna_notyet_03",
-		"mp3": "/sounds/vo/luna/luna_notyet_03.mp3",
-		"hero_id": 48,
-		"text": "Not yet!",
-		"text_simple": " not yet ",
-		"criteria": "Cooldown Isluna SuperNag",
-		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
-	},
-	{
-		"name": "luna_notyet_04",
-		"fullname": "luna_luna_notyet_04",
-		"mp3": "/sounds/vo/luna/luna_notyet_04.mp3",
-		"hero_id": 48,
-		"text": "I'm not ready.",
-		"text_simple": " im not ready ",
-		"criteria": "Cooldown Isluna LittleNag",
-		"pretty_criteria": "Item/Ability on cooldown"
-	},
-	{
-		"name": "luna_notyet_05",
-		"fullname": "luna_luna_notyet_05",
-		"mp3": "/sounds/vo/luna/luna_notyet_05.mp3",
-		"hero_id": 48,
-		"text": "I'm not ready.",
-		"text_simple": " im not ready ",
-		"criteria": "Cooldown Isluna MediumNag",
-		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
-	},
-	{
-		"name": "luna_notyet_06",
-		"fullname": "luna_luna_notyet_06",
-		"mp3": "/sounds/vo/luna/luna_notyet_06.mp3",
-		"hero_id": 48,
-		"text": "I'm not ready!",
-		"text_simple": " im not ready ",
-		"criteria": "Cooldown Isluna SuperNag",
-		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
-	},
-	{
-		"name": "luna_notyet_07",
-		"fullname": "luna_luna_notyet_07",
-		"mp3": "/sounds/vo/luna/luna_notyet_07.mp3",
-		"hero_id": 48,
-		"text": "It's not time yet.",
-		"text_simple": " its not time yet ",
-		"criteria": "Cooldown Isluna LittleNag",
-		"pretty_criteria": "Item/Ability on cooldown"
-	},
-	{
-		"name": "luna_notyet_08",
-		"fullname": "luna_luna_notyet_08",
-		"mp3": "/sounds/vo/luna/luna_notyet_08.mp3",
-		"hero_id": 48,
-		"text": "It's not time yet.",
-		"text_simple": " its not time yet ",
-		"criteria": "Cooldown Isluna MediumNag",
-		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
-	},
-	{
-		"name": "luna_notyet_09",
-		"fullname": "luna_luna_notyet_09",
-		"mp3": "/sounds/vo/luna/luna_notyet_09.mp3",
-		"hero_id": 48,
-		"text": "It's not time yet!",
-		"text_simple": " its not time yet ",
-		"criteria": "Cooldown Isluna SuperNag",
-		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
-	},
-	{
-		"name": "luna_pain_01",
-		"fullname": "luna_luna_pain_01",
-		"mp3": "/sounds/vo/luna/luna_pain_01.mp3",
-		"hero_id": 48,
-		"text": "Ouh!",
-		"text_simple": " ouh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_02",
-		"fullname": "luna_luna_pain_02",
-		"mp3": "/sounds/vo/luna/luna_pain_02.mp3",
-		"hero_id": 48,
-		"text": "Ah! Hhh!",
-		"text_simple": " ah hhh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_03",
-		"fullname": "luna_luna_pain_03",
-		"mp3": "/sounds/vo/luna/luna_pain_03.mp3",
-		"hero_id": 48,
-		"text": "Uh!",
-		"text_simple": " uh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_04",
-		"fullname": "luna_luna_pain_04",
-		"mp3": "/sounds/vo/luna/luna_pain_04.mp3",
-		"hero_id": 48,
-		"text": "Ow!",
-		"text_simple": " ow ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_05",
-		"fullname": "luna_luna_pain_05",
-		"mp3": "/sounds/vo/luna/luna_pain_05.mp3",
-		"hero_id": 48,
-		"text": "Mm!",
-		"text_simple": " mm ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_pain_06",
-		"fullname": "luna_luna_pain_06",
-		"mp3": "/sounds/vo/luna/luna_pain_06.mp3",
-		"hero_id": 48,
-		"text": "Muh!",
-		"text_simple": " muh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_07",
-		"fullname": "luna_luna_pain_07",
-		"mp3": "/sounds/vo/luna/luna_pain_07.mp3",
-		"hero_id": 48,
-		"text": "Eeh!",
-		"text_simple": " eeh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_08",
-		"fullname": "luna_luna_pain_08",
-		"mp3": "/sounds/vo/luna/luna_pain_08.mp3",
-		"hero_id": 48,
-		"text": "Iy!",
-		"text_simple": " iy ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_09",
-		"fullname": "luna_luna_pain_09",
-		"mp3": "/sounds/vo/luna/luna_pain_09.mp3",
-		"hero_id": 48,
-		"text": "Oh!",
-		"text_simple": " oh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_10",
-		"fullname": "luna_luna_pain_10",
-		"mp3": "/sounds/vo/luna/luna_pain_10.mp3",
-		"hero_id": 48,
-		"text": "Mm!",
-		"text_simple": " mm ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_pain_11",
-		"fullname": "luna_luna_pain_11",
-		"mp3": "/sounds/vo/luna/luna_pain_11.mp3",
-		"hero_id": 48,
-		"text": "Ouh!",
-		"text_simple": " ouh ",
-		"criteria": "Pain Isluna",
-		"pretty_criteria": "Taking damage"
-	},
-	{
-		"name": "luna_purch_01",
-		"fullname": "luna_luna_purch_01",
-		"mp3": "/sounds/vo/luna/luna_purch_01.mp3",
-		"hero_id": 48,
-		"text": "A gift from the Goddess.",
-		"text_simple": " a gift from the goddess ",
-		"criteria": "Purchase Isluna IsExpensiveItem",
-		"pretty_criteria": "Buying an expensive item"
-	},
-	{
-		"name": "luna_purch_02",
-		"fullname": "luna_luna_purch_02",
-		"mp3": "/sounds/vo/luna/luna_purch_02.mp3",
-		"hero_id": 48,
-		"text": "Worthy of my arsenal.",
-		"text_simple": " worthy of my arsenal ",
-		"criteria": "Purchase Isluna IsExpensiveItem",
-		"pretty_criteria": "Buying an expensive item"
-	},
-	{
-		"name": "luna_purch_03",
-		"fullname": "luna_luna_purch_03",
-		"mp3": "/sounds/vo/luna/luna_purch_03.mp3",
-		"hero_id": 48,
-		"text": "This will come in handy!",
-		"text_simple": " this will come in handy ",
-		"criteria": "Purchase Isluna IsExpensiveItem",
-		"pretty_criteria": "Buying an expensive item"
-	},
-	{
-		"name": "luna_rare_01",
-		"fullname": "luna_luna_rare_01",
-		"mp3": "/sounds/vo/luna/luna_rare_01.mp3",
-		"hero_id": 48,
-		"text": "I would water the trees with their entrails if Selemene would smile on me.",
-		"text_simple": " i would water the trees with their entrails if selemene would smile on me ",
-		"criteria": "Select Isluna",
-		"pretty_criteria": "Rare"
-	},
-	{
-		"name": "luna_rare_02",
-		"fullname": "luna_luna_rare_02",
-		"mp3": "/sounds/vo/luna/luna_rare_02.mp3",
-		"hero_id": 48,
-		"text": "Hah! I remember when Nova tried to kill me. Good girl.",
-		"text_simple": " hah i remember when nova tried to kill me good girl ",
-		"criteria": "Select Isluna",
-		"pretty_criteria": "Rare"
-	},
-	{
-		"name": "luna_rare_03",
-		"fullname": "luna_luna_rare_03",
-		"mp3": "/sounds/vo/luna/luna_rare_03.mp3",
-		"hero_id": 48,
-		"text": "I was once the scourge of the plains, a terror on the wind. What hope do our enemies think they have?",
-		"text_simple": " i was once the scourge of the plains a terror on the wind what hope do our enemies think they have ",
-		"criteria": "Select Isluna",
-		"pretty_criteria": "Rare"
-	},
-	{
-		"name": "luna_regen_01",
-		"fullname": "luna_luna_regen_01",
-		"mp3": "/sounds/vo/luna/luna_regen_01.mp3",
-		"hero_id": 48,
-		"text": "Regeneration!",
-		"text_simple": " regeneration ",
-		"criteria": "Powerup Isluna IsPowerupRegeneration",
-		"pretty_criteria": "Activating a regeneration rune"
-	},
-	{
-		"name": "luna_regen_02",
-		"fullname": "luna_luna_regen_02",
-		"mp3": "/sounds/vo/luna/luna_regen_02.mp3",
-		"hero_id": 48,
-		"text": "Wounds are nothing to us!",
-		"text_simple": " wounds are nothing to us ",
-		"pretty_criteria": "Unused"
-	},
-	{
-		"name": "luna_respawn_01",
-		"fullname": "luna_luna_respawn_01",
-		"mp3": "/sounds/vo/luna/luna_respawn_01.mp3",
-		"hero_id": 48,
-		"text": "The hunt continues!",
-		"text_simple": " the hunt continues ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_02",
-		"fullname": "luna_luna_respawn_02",
-		"mp3": "/sounds/vo/luna/luna_respawn_02.mp3",
-		"hero_id": 48,
-		"text": "Nova! I missed you!",
-		"text_simple": " nova i missed you ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_03",
-		"fullname": "luna_luna_respawn_03",
-		"mp3": "/sounds/vo/luna/luna_respawn_03.mp3",
-		"hero_id": 48,
-		"text": "We ride once more.",
-		"text_simple": " we ride once more ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_04",
-		"fullname": "luna_luna_respawn_04",
-		"mp3": "/sounds/vo/luna/luna_respawn_04.mp3",
-		"hero_id": 48,
-		"text": "Selemene has sent me back.",
-		"text_simple": " selemene has sent me back ",
-		"criteria": "Respawn Isluna Chance_5%",
-		"pretty_criteria": "Respawning (5% chance)"
-	},
-	{
-		"name": "luna_respawn_05",
-		"fullname": "luna_luna_respawn_05",
-		"mp3": "/sounds/vo/luna/luna_respawn_05.mp3",
-		"hero_id": 48,
-		"text": "The woods are unsafe. My work is not yet complete!",
-		"text_simple": " the woods are unsafe my work is not yet complete ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_06",
-		"fullname": "luna_luna_respawn_06",
-		"mp3": "/sounds/vo/luna/luna_respawn_06.mp3",
-		"hero_id": 48,
-		"text": "Oh they will rue this day.",
-		"text_simple": " oh they will rue this day ",
-		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Respawn Isluna",
-		"pretty_criteria": " IsLunaLoadoutSpawn\nRespawning"
-	},
-	{
-		"name": "luna_respawn_07",
-		"fullname": "luna_luna_respawn_07",
-		"mp3": "/sounds/vo/luna/luna_respawn_07.mp3",
-		"hero_id": 48,
-		"text": "No time to lose!",
-		"text_simple": " no time to lose ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_08",
-		"fullname": "luna_luna_respawn_08",
-		"mp3": "/sounds/vo/luna/luna_respawn_08.mp3",
-		"hero_id": 48,
-		"text": "I will not fail again.",
-		"text_simple": " i will not fail again ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_09",
-		"fullname": "luna_luna_respawn_09",
-		"mp3": "/sounds/vo/luna/luna_respawn_09.mp3",
-		"hero_id": 48,
-		"text": "Ready for battle once more.",
-		"text_simple": " ready for battle once more ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_10",
-		"fullname": "luna_luna_respawn_10",
-		"mp3": "/sounds/vo/luna/luna_respawn_10.mp3",
-		"hero_id": 48,
-		"text": "Now for payback!",
-		"text_simple": " now for payback ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
-	},
-	{
-		"name": "luna_respawn_11",
-		"fullname": "luna_luna_respawn_11",
-		"mp3": "/sounds/vo/luna/luna_respawn_11.mp3",
-		"hero_id": 48,
-		"text": "Back on the hunt!",
-		"text_simple": " back on the hunt ",
-		"criteria": "Respawn Isluna",
-		"pretty_criteria": "Respawning"
 	},
 	{
 		"name": "luna_rival_01",
@@ -2686,6 +1178,616 @@
 		"pretty_criteria": "Killing Chaos Knight (20% chance)"
 	},
 	{
+		"name": "luna_ally_01",
+		"fullname": "luna_luna_ally_01",
+		"mp3": "/sounds/vo/luna/luna_ally_01.mp3",
+		"hero_id": 48,
+		"text": "You will have your vengeance, Spirit.",
+		"text_simple": " you will have your vengeance spirit ",
+		"criteria": "AllyNear Isluna IsAllyVengefulSpirit EarlyGame",
+		"pretty_criteria": "Vengeful Spirit is nearby at between 1 minute and 11 minutes in"
+	},
+	{
+		"name": "luna_ally_02",
+		"fullname": "luna_luna_ally_02",
+		"mp3": "/sounds/vo/luna/luna_ally_02.mp3",
+		"hero_id": 48,
+		"text": "Bring them winter, Crystal Maiden.",
+		"text_simple": " bring them winter crystal maiden ",
+		"criteria": "AllyNear Isluna IsAllyCrystalMaiden EarlyGame",
+		"pretty_criteria": "Crystal Maiden is nearby at between 1 minute and 11 minutes in"
+	},
+	{
+		"name": "luna_ally_03",
+		"fullname": "luna_luna_ally_03",
+		"mp3": "/sounds/vo/luna/luna_ally_03.mp3",
+		"hero_id": 48,
+		"text": "Light the way, Lina.",
+		"text_simple": " light the way lina ",
+		"criteria": "AllyNear Isluna IsAllyLina EarlyGame",
+		"pretty_criteria": "Lina is nearby at between 1 minute and 11 minutes in"
+	},
+	{
+		"name": "luna_ally_04",
+		"fullname": "luna_luna_ally_04",
+		"mp3": "/sounds/vo/luna/luna_ally_04.mp3",
+		"hero_id": 48,
+		"text": "By your leave, Princess Mirana.",
+		"text_simple": " by your leave princess mirana ",
+		"criteria": "AllyNear Isluna IsAllyMirana EarlyGame",
+		"pretty_criteria": "Mirana is nearby at between 1 minute and 11 minutes in"
+	},
+	{
+		"name": "luna_ally_05",
+		"fullname": "luna_luna_ally_05",
+		"mp3": "/sounds/vo/luna/luna_ally_05.mp3",
+		"hero_id": 48,
+		"text": "Ah, Zeus! The heavens are with us.",
+		"text_simple": " ah zeus the heavens are with us ",
+		"criteria": "AllyNear Isluna IsAllyZuus EarlyGame",
+		"pretty_criteria": "Zeus is nearby at between 1 minute and 11 minutes in"
+	},
+	{
+		"name": "luna_death_01",
+		"fullname": "luna_luna_death_01",
+		"mp3": "/sounds/vo/luna/luna_death_01.mp3",
+		"hero_id": 48,
+		"text": "No!",
+		"text_simple": " no ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_02",
+		"fullname": "luna_luna_death_02",
+		"mp3": "/sounds/vo/luna/luna_death_02.mp3",
+		"hero_id": 48,
+		"text": "No!",
+		"text_simple": " no ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_03",
+		"fullname": "luna_luna_death_03",
+		"mp3": "/sounds/vo/luna/luna_death_03.mp3",
+		"hero_id": 48,
+		"text": "Am I forsaken?",
+		"text_simple": " am i forsaken ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_04",
+		"fullname": "luna_luna_death_04",
+		"mp3": "/sounds/vo/luna/luna_death_04.mp3",
+		"hero_id": 48,
+		"text": "I go willingly...",
+		"text_simple": " i go willingly ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_05",
+		"fullname": "luna_luna_death_05",
+		"mp3": "/sounds/vo/luna/luna_death_05.mp3",
+		"hero_id": 48,
+		"text": "You honor me...",
+		"text_simple": " you honor me ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_06",
+		"fullname": "luna_luna_death_06",
+		"mp3": "/sounds/vo/luna/luna_death_06.mp3",
+		"hero_id": 48,
+		"text": "I hear whispers.",
+		"text_simple": " i hear whispers ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_07",
+		"fullname": "luna_luna_death_07",
+		"mp3": "/sounds/vo/luna/luna_death_07.mp3",
+		"hero_id": 48,
+		"text": "Nova? Nova?",
+		"text_simple": " nova nova ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_08",
+		"fullname": "luna_luna_death_08",
+		"mp3": "/sounds/vo/luna/luna_death_08.mp3",
+		"hero_id": 48,
+		"text": "Not... now...",
+		"text_simple": " not now ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_09",
+		"fullname": "luna_luna_death_09",
+		"mp3": "/sounds/vo/luna/luna_death_09.mp3",
+		"hero_id": 48,
+		"text": "Worthy opponent.",
+		"text_simple": " worthy opponent ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_10",
+		"fullname": "luna_luna_death_10",
+		"mp3": "/sounds/vo/luna/luna_death_10.mp3",
+		"hero_id": 48,
+		"text": "Well done.",
+		"text_simple": " well done ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_11",
+		"fullname": "luna_luna_death_11",
+		"mp3": "/sounds/vo/luna/luna_death_11.mp3",
+		"hero_id": 48,
+		"text": "Just... getting started.",
+		"text_simple": " just getting started ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_12",
+		"fullname": "luna_luna_death_12",
+		"mp3": "/sounds/vo/luna/luna_death_12.mp3",
+		"hero_id": 48,
+		"text": "I'm better than... this.",
+		"text_simple": " im better than this ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_death_13",
+		"fullname": "luna_luna_death_13",
+		"mp3": "/sounds/vo/luna/luna_death_13.mp3",
+		"hero_id": 48,
+		"text": "You'll regret that.",
+		"text_simple": " youll regret that ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_shite_01",
+		"fullname": "luna_luna_shite_01",
+		"mp3": "/sounds/vo/luna/luna_shite_01.mp3",
+		"hero_id": 48,
+		"text": "Shite.",
+		"text_simple": " shite ",
+		"criteria": "Death Isluna",
+		"pretty_criteria": "Dying"
+	},
+	{
+		"name": "luna_fastres_01",
+		"fullname": "luna_luna_fastres_01",
+		"mp3": "/sounds/vo/luna/luna_fastres_01.mp3",
+		"hero_id": 48,
+		"text": "Another phase begins.",
+		"text_simple": " another phase begins ",
+		"criteria": "Death Isluna IsReincarnating",
+		"pretty_criteria": "Dying and respawning from aegis"
+	},
+	{
+		"name": "luna_respawn_01",
+		"fullname": "luna_luna_respawn_01",
+		"mp3": "/sounds/vo/luna/luna_respawn_01.mp3",
+		"hero_id": 48,
+		"text": "The hunt continues!",
+		"text_simple": " the hunt continues ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_02",
+		"fullname": "luna_luna_respawn_02",
+		"mp3": "/sounds/vo/luna/luna_respawn_02.mp3",
+		"hero_id": 48,
+		"text": "Nova! I missed you!",
+		"text_simple": " nova i missed you ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_03",
+		"fullname": "luna_luna_respawn_03",
+		"mp3": "/sounds/vo/luna/luna_respawn_03.mp3",
+		"hero_id": 48,
+		"text": "We ride once more.",
+		"text_simple": " we ride once more ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_04",
+		"fullname": "luna_luna_respawn_04",
+		"mp3": "/sounds/vo/luna/luna_respawn_04.mp3",
+		"hero_id": 48,
+		"text": "Selemene has sent me back.",
+		"text_simple": " selemene has sent me back ",
+		"criteria": "Respawn Isluna Chance_5%",
+		"pretty_criteria": "Respawning (5% chance)"
+	},
+	{
+		"name": "luna_respawn_05",
+		"fullname": "luna_luna_respawn_05",
+		"mp3": "/sounds/vo/luna/luna_respawn_05.mp3",
+		"hero_id": 48,
+		"text": "The woods are unsafe. My work is not yet complete!",
+		"text_simple": " the woods are unsafe my work is not yet complete ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_06",
+		"fullname": "luna_luna_respawn_06",
+		"mp3": "/sounds/vo/luna/luna_respawn_06.mp3",
+		"hero_id": 48,
+		"text": "Oh they will rue this day.",
+		"text_simple": " oh they will rue this day ",
+		"criteria": "Custom Isluna IsLunaLoadoutSpawn|Respawn Isluna",
+		"pretty_criteria": " IsLunaLoadoutSpawn\nRespawning"
+	},
+	{
+		"name": "luna_respawn_07",
+		"fullname": "luna_luna_respawn_07",
+		"mp3": "/sounds/vo/luna/luna_respawn_07.mp3",
+		"hero_id": 48,
+		"text": "No time to lose!",
+		"text_simple": " no time to lose ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_08",
+		"fullname": "luna_luna_respawn_08",
+		"mp3": "/sounds/vo/luna/luna_respawn_08.mp3",
+		"hero_id": 48,
+		"text": "I will not fail again.",
+		"text_simple": " i will not fail again ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_09",
+		"fullname": "luna_luna_respawn_09",
+		"mp3": "/sounds/vo/luna/luna_respawn_09.mp3",
+		"hero_id": 48,
+		"text": "Ready for battle once more.",
+		"text_simple": " ready for battle once more ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_10",
+		"fullname": "luna_luna_respawn_10",
+		"mp3": "/sounds/vo/luna/luna_respawn_10.mp3",
+		"hero_id": 48,
+		"text": "Now for payback!",
+		"text_simple": " now for payback ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_respawn_11",
+		"fullname": "luna_luna_respawn_11",
+		"mp3": "/sounds/vo/luna/luna_respawn_11.mp3",
+		"hero_id": 48,
+		"text": "Back on the hunt!",
+		"text_simple": " back on the hunt ",
+		"criteria": "Respawn Isluna",
+		"pretty_criteria": "Respawning"
+	},
+	{
+		"name": "luna_lasthit_01",
+		"fullname": "luna_luna_lasthit_01",
+		"mp3": "/sounds/vo/luna/luna_lasthit_01.mp3",
+		"hero_id": 48,
+		"text": "For the cause.",
+		"text_simple": " for the cause ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_02",
+		"fullname": "luna_luna_lasthit_02",
+		"mp3": "/sounds/vo/luna/luna_lasthit_02.mp3",
+		"hero_id": 48,
+		"text": "Unworthy.",
+		"text_simple": " unworthy ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_03",
+		"fullname": "luna_luna_lasthit_03",
+		"mp3": "/sounds/vo/luna/luna_lasthit_03.mp3",
+		"hero_id": 48,
+		"text": "Unworthy.",
+		"text_simple": " unworthy ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_04",
+		"fullname": "luna_luna_lasthit_04",
+		"mp3": "/sounds/vo/luna/luna_lasthit_04.mp3",
+		"hero_id": 48,
+		"text": "Weakling.",
+		"text_simple": " weakling ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_05",
+		"fullname": "luna_luna_lasthit_05",
+		"mp3": "/sounds/vo/luna/luna_lasthit_05.mp3",
+		"hero_id": 48,
+		"text": "Cat food.",
+		"text_simple": " cat food ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_06",
+		"fullname": "luna_luna_lasthit_06",
+		"mp3": "/sounds/vo/luna/luna_lasthit_06.mp3",
+		"hero_id": 48,
+		"text": "Another death.",
+		"text_simple": " another death ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_07",
+		"fullname": "luna_luna_lasthit_07",
+		"mp3": "/sounds/vo/luna/luna_lasthit_07.mp3",
+		"hero_id": 48,
+		"text": "Insignificant.",
+		"text_simple": " insignificant ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_08",
+		"fullname": "luna_luna_lasthit_08",
+		"mp3": "/sounds/vo/luna/luna_lasthit_08.mp3",
+		"hero_id": 48,
+		"text": "Is that it?",
+		"text_simple": " is that it ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_09",
+		"fullname": "luna_luna_lasthit_09",
+		"mp3": "/sounds/vo/luna/luna_lasthit_09.mp3",
+		"hero_id": 48,
+		"text": "Poor thing.",
+		"text_simple": " poor thing ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_10",
+		"fullname": "luna_luna_lasthit_10",
+		"mp3": "/sounds/vo/luna/luna_lasthit_10.mp3",
+		"hero_id": 48,
+		"text": "A harvest moon.",
+		"text_simple": " a harvest moon ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_lasthit_11",
+		"fullname": "luna_luna_lasthit_11",
+		"mp3": "/sounds/vo/luna/luna_lasthit_11.mp3",
+		"hero_id": 48,
+		"text": "Poor wee thing.",
+		"text_simple": " poor wee thing ",
+		"criteria": "LastHit Isluna",
+		"pretty_criteria": "Last hitting"
+	},
+	{
+		"name": "luna_deny_01",
+		"fullname": "luna_luna_deny_01",
+		"mp3": "/sounds/vo/luna/luna_deny_01.mp3",
+		"hero_id": 48,
+		"text": "Denied.",
+		"text_simple": " denied ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_02",
+		"fullname": "luna_luna_deny_02",
+		"mp3": "/sounds/vo/luna/luna_deny_02.mp3",
+		"hero_id": 48,
+		"text": "Denied.",
+		"text_simple": " denied ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_03",
+		"fullname": "luna_luna_deny_03",
+		"mp3": "/sounds/vo/luna/luna_deny_03.mp3",
+		"hero_id": 48,
+		"text": "Uh-uh!",
+		"text_simple": " uhuh ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_04",
+		"fullname": "luna_luna_deny_04",
+		"mp3": "/sounds/vo/luna/luna_deny_04.mp3",
+		"hero_id": 48,
+		"text": "Uh-uh!",
+		"text_simple": " uhuh ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_05",
+		"fullname": "luna_luna_deny_05",
+		"mp3": "/sounds/vo/luna/luna_deny_05.mp3",
+		"hero_id": 48,
+		"text": "Absolutely not.",
+		"text_simple": " absolutely not ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_06",
+		"fullname": "luna_luna_deny_06",
+		"mp3": "/sounds/vo/luna/luna_deny_06.mp3",
+		"hero_id": 48,
+		"text": "Ours.",
+		"text_simple": " ours ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_07",
+		"fullname": "luna_luna_deny_07",
+		"mp3": "/sounds/vo/luna/luna_deny_07.mp3",
+		"hero_id": 48,
+		"text": "No.",
+		"text_simple": " no ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_08",
+		"fullname": "luna_luna_deny_08",
+		"mp3": "/sounds/vo/luna/luna_deny_08.mp3",
+		"hero_id": 48,
+		"text": "Bad luck.",
+		"text_simple": " bad luck ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_09",
+		"fullname": "luna_luna_deny_09",
+		"mp3": "/sounds/vo/luna/luna_deny_09.mp3",
+		"hero_id": 48,
+		"text": "Not on my watch.",
+		"text_simple": " not on my watch ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_10",
+		"fullname": "luna_luna_deny_10",
+		"mp3": "/sounds/vo/luna/luna_deny_10.mp3",
+		"hero_id": 48,
+		"text": "Hands to yourself!",
+		"text_simple": " hands to yourself ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_11",
+		"fullname": "luna_luna_deny_11",
+		"mp3": "/sounds/vo/luna/luna_deny_11.mp3",
+		"hero_id": 48,
+		"text": "Denied!",
+		"text_simple": " denied ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_12",
+		"fullname": "luna_luna_deny_12",
+		"mp3": "/sounds/vo/luna/luna_deny_12.mp3",
+		"hero_id": 48,
+		"text": "Denied!",
+		"text_simple": " denied ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_deny_13",
+		"fullname": "luna_luna_deny_13",
+		"mp3": "/sounds/vo/luna/luna_deny_13.mp3",
+		"hero_id": 48,
+		"text": "Mm-mm denied!",
+		"text_simple": " mmmm denied ",
+		"criteria": "Deny Isluna",
+		"pretty_criteria": "Denying"
+	},
+	{
+		"name": "luna_rare_01",
+		"fullname": "luna_luna_rare_01",
+		"mp3": "/sounds/vo/luna/luna_rare_01.mp3",
+		"hero_id": 48,
+		"text": "I would water the trees with their entrails if Selemene would smile on me.",
+		"text_simple": " i would water the trees with their entrails if selemene would smile on me ",
+		"criteria": "Select Isluna",
+		"pretty_criteria": "Rare"
+	},
+	{
+		"name": "luna_rare_02",
+		"fullname": "luna_luna_rare_02",
+		"mp3": "/sounds/vo/luna/luna_rare_02.mp3",
+		"hero_id": 48,
+		"text": "Hah! I remember when Nova tried to kill me. Good girl.",
+		"text_simple": " hah i remember when nova tried to kill me good girl ",
+		"criteria": "Select Isluna",
+		"pretty_criteria": "Rare"
+	},
+	{
+		"name": "luna_rare_03",
+		"fullname": "luna_luna_rare_03",
+		"mp3": "/sounds/vo/luna/luna_rare_03.mp3",
+		"hero_id": 48,
+		"text": "I was once the scourge of the plains, a terror on the wind. What hope do our enemies think they have?",
+		"text_simple": " i was once the scourge of the plains a terror on the wind what hope do our enemies think they have ",
+		"criteria": "Select Isluna",
+		"pretty_criteria": "Rare"
+	},
+	{
+		"name": "luna_purch_01",
+		"fullname": "luna_luna_purch_01",
+		"mp3": "/sounds/vo/luna/luna_purch_01.mp3",
+		"hero_id": 48,
+		"text": "A gift from the Goddess.",
+		"text_simple": " a gift from the goddess ",
+		"criteria": "Purchase Isluna IsExpensiveItem",
+		"pretty_criteria": "Buying an expensive item"
+	},
+	{
+		"name": "luna_purch_02",
+		"fullname": "luna_luna_purch_02",
+		"mp3": "/sounds/vo/luna/luna_purch_02.mp3",
+		"hero_id": 48,
+		"text": "Worthy of my arsenal.",
+		"text_simple": " worthy of my arsenal ",
+		"criteria": "Purchase Isluna IsExpensiveItem",
+		"pretty_criteria": "Buying an expensive item"
+	},
+	{
+		"name": "luna_purch_03",
+		"fullname": "luna_luna_purch_03",
+		"mp3": "/sounds/vo/luna/luna_purch_03.mp3",
+		"hero_id": 48,
+		"text": "This will come in handy!",
+		"text_simple": " this will come in handy ",
+		"criteria": "Purchase Isluna IsExpensiveItem",
+		"pretty_criteria": "Buying an expensive item"
+	},
+	{
 		"name": "luna_scepter_01",
 		"fullname": "luna_luna_scepter_01",
 		"mp3": "/sounds/vo/luna/luna_scepter_01.mp3",
@@ -2706,72 +1808,480 @@
 		"pretty_criteria": "Buying Aghanim's Scepter"
 	},
 	{
-		"name": "luna_shite_01",
-		"fullname": "luna_luna_shite_01",
-		"mp3": "/sounds/vo/luna/luna_shite_01.mp3",
+		"name": "luna_blink_01",
+		"fullname": "luna_luna_blink_01",
+		"mp3": "/sounds/vo/luna/luna_blink_01.mp3",
 		"hero_id": 48,
-		"text": "Shite.",
-		"text_simple": " shite ",
-		"criteria": "Death Isluna",
-		"pretty_criteria": "Dying"
+		"text": "Blink dagger!",
+		"text_simple": " blink dagger ",
+		"criteria": "Purchase Isluna IsBlinkDagger",
+		"pretty_criteria": "Buying Blink Dagger"
 	},
 	{
-		"name": "luna_shiwiz_01",
-		"fullname": "luna_luna_shiwiz_01",
-		"mp3": "/sounds/vo/luna/luna_shiwiz_01.mp3",
+		"name": "luna_blink_02",
+		"fullname": "luna_luna_blink_02",
+		"mp3": "/sounds/vo/luna/luna_blink_02.mp3",
 		"hero_id": 48,
-		"text": "Shitty wizard!",
-		"text_simple": " shitty wizard ",
+		"text": "They can't run from us now.",
+		"text_simple": " they cant run from us now ",
+		"criteria": "Purchase Isluna IsBlinkDagger",
+		"pretty_criteria": "Buying Blink Dagger"
+	},
+	{
+		"name": "luna_items_01",
+		"fullname": "luna_luna_items_01",
+		"mp3": "/sounds/vo/luna/luna_items_01.mp3",
+		"hero_id": 48,
+		"text": "Black King Bar!",
+		"text_simple": " black king bar ",
+		"criteria": "Purchase Isluna IsBlackKingBar",
+		"pretty_criteria": "Buying Black King Bar"
+	},
+	{
+		"name": "luna_items_02",
+		"fullname": "luna_luna_items_02",
+		"mp3": "/sounds/vo/luna/luna_items_02.mp3",
+		"hero_id": 48,
+		"text": "Yasha!",
+		"text_simple": " yasha ",
+		"criteria": "Purchase Isluna IsYasha",
+		"pretty_criteria": "Buying Yasha"
+	},
+	{
+		"name": "luna_items_03",
+		"fullname": "luna_luna_items_03",
+		"mp3": "/sounds/vo/luna/luna_items_03.mp3",
+		"hero_id": 48,
+		"text": "Manta Style!",
+		"text_simple": " manta style ",
+		"criteria": "Purchase Isluna IsManta",
+		"pretty_criteria": "Buying Manta Style"
+	},
+	{
+		"name": "luna_items_04",
+		"fullname": "luna_luna_items_04",
+		"mp3": "/sounds/vo/luna/luna_items_04.mp3",
+		"hero_id": 48,
+		"text": "Butterfly!",
+		"text_simple": " butterfly ",
+		"criteria": "Purchase Isluna IsButterfly",
+		"pretty_criteria": "Buying Butterfly"
+	},
+	{
+		"name": "luna_items_05",
+		"fullname": "luna_luna_items_05",
+		"mp3": "/sounds/vo/luna/luna_items_05.mp3",
+		"hero_id": 48,
+		"text": "Satanic!",
+		"text_simple": " satanic ",
+		"criteria": "Purchase Isluna IsSatanic",
+		"pretty_criteria": "Buying Satanic"
+	},
+	{
+		"name": "luna_items_06",
+		"fullname": "luna_luna_items_06",
+		"mp3": "/sounds/vo/luna/luna_items_06.mp3",
+		"hero_id": 48,
+		"text": "Heart of Tarrasque!",
+		"text_simple": " heart of tarrasque ",
+		"criteria": "Purchase Isluna IsHeart",
+		"pretty_criteria": "Buying Heart of Tarrasque"
+	},
+	{
+		"name": "luna_bottle_01",
+		"fullname": "luna_luna_bottle_01",
+		"mp3": "/sounds/vo/luna/luna_bottle_01.mp3",
+		"hero_id": 48,
+		"text": "Patience, Nova.",
+		"text_simple": " patience nova ",
+		"criteria": "Bottling Isluna",
+		"pretty_criteria": "Bottling a rune"
+	},
+	{
+		"name": "luna_bottle_02",
+		"fullname": "luna_luna_bottle_02",
+		"mp3": "/sounds/vo/luna/luna_bottle_02.mp3",
+		"hero_id": 48,
+		"text": "For when the skies clear!",
+		"text_simple": " for when the skies clear ",
+		"criteria": "Bottling Isluna",
+		"pretty_criteria": "Bottling a rune"
+	},
+	{
+		"name": "luna_bottle_03",
+		"fullname": "luna_luna_bottle_03",
+		"mp3": "/sounds/vo/luna/luna_bottle_03.mp3",
+		"hero_id": 48,
+		"text": "Soon.",
+		"text_simple": " soon ",
+		"criteria": "Bottling Isluna",
+		"pretty_criteria": "Bottling a rune"
+	},
+	{
+		"name": "luna_bottle_04",
+		"fullname": "luna_luna_bottle_04",
+		"mp3": "/sounds/vo/luna/luna_bottle_04.mp3",
+		"hero_id": 48,
+		"text": "Soon.",
+		"text_simple": " soon ",
+		"criteria": "Bottling Isluna",
+		"pretty_criteria": "Bottling a rune"
+	},
+	{
+		"name": "luna_lane_missing_01",
+		"fullname": "luna_luna_lane_missing_01",
+		"mp3": "/sounds/vo/luna/luna_lane_missing_01.mp3",
+		"hero_id": 48,
+		"text": "Missing top!",
+		"text_simple": " missing top ",
+		"criteria": "Missing Isluna IsLaneTop",
+		"pretty_criteria": "Calling missing for from top lane"
+	},
+	{
+		"name": "luna_lane_missing_02",
+		"fullname": "luna_luna_lane_missing_02",
+		"mp3": "/sounds/vo/luna/luna_lane_missing_02.mp3",
+		"hero_id": 48,
+		"text": "Missing middle!",
+		"text_simple": " missing middle ",
+		"criteria": "Missing Isluna IsLaneMid",
+		"pretty_criteria": "Calling missing for from middle lane"
+	},
+	{
+		"name": "luna_lane_missing_03",
+		"fullname": "luna_luna_lane_missing_03",
+		"mp3": "/sounds/vo/luna/luna_lane_missing_03.mp3",
+		"hero_id": 48,
+		"text": "Missing bottom!",
+		"text_simple": " missing bottom ",
+		"criteria": "Missing Isluna IsLaneBot",
+		"pretty_criteria": "Calling missing for from bottom lane"
+	},
+	{
+		"name": "luna_drop_common",
+		"fullname": "luna_luna_drop_common",
+		"mp3": "/sounds/vo/luna/luna_drop_common.mp3",
+		"hero_id": 48,
+		"text": "Interesting!",
+		"text_simple": " interesting ",
+		"criteria": "ItemDrop Isluna IsCommonDrop",
+		"pretty_criteria": "Recieving a common cosmetic item"
+	},
+	{
+		"name": "luna_drop_medium",
+		"fullname": "luna_luna_drop_medium",
+		"mp3": "/sounds/vo/luna/luna_drop_medium.mp3",
+		"hero_id": 48,
+		"text": "Isn't that a pretty thing!",
+		"text_simple": " isnt that a pretty thing ",
+		"criteria": "ItemDrop Isluna IsRareDrop|Powerup Isluna IsPowerupArcane",
+		"pretty_criteria": "Recieving a rare cosmetic item\nActivating an arcane rune"
+	},
+	{
+		"name": "luna_drop_rare",
+		"fullname": "luna_luna_drop_rare",
+		"mp3": "/sounds/vo/luna/luna_drop_rare.mp3",
+		"hero_id": 48,
+		"text": "By the moon!!",
+		"text_simple": " by the moon ",
+		"criteria": "ItemDrop Isluna IsUltraRareDrop",
+		"pretty_criteria": "Recieving an ultra rare cosmetic item"
+	},
+	{
+		"name": "luna_immort_01",
+		"fullname": "luna_luna_immort_01",
+		"mp3": "/sounds/vo/luna/luna_immort_01.mp3",
+		"hero_id": 48,
+		"text": "Immortality!",
+		"text_simple": " immortality ",
+		"criteria": "Immortality Isluna",
+		"pretty_criteria": "Grabbing aegis"
+	},
+	{
+		"name": "luna_immort_02",
+		"fullname": "luna_luna_immort_02",
+		"mp3": "/sounds/vo/luna/luna_immort_02.mp3",
+		"hero_id": 48,
+		"text": "As eternal as the moon.",
+		"text_simple": " as eternal as the moon ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_shiwiz_02",
-		"fullname": "luna_luna_shiwiz_02",
-		"mp3": "/sounds/vo/luna/luna_shiwiz_02.mp3",
+		"name": "luna_haste_01",
+		"fullname": "luna_luna_haste_01",
+		"mp3": "/sounds/vo/luna/luna_haste_01.mp3",
 		"hero_id": 48,
-		"text": "Piece of shite wizard.",
-		"text_simple": " piece of shite wizard ",
+		"text": "Haste!",
+		"text_simple": " haste ",
+		"criteria": "Powerup Isluna IsPowerupHaste",
+		"pretty_criteria": "Activating a haste rune"
+	},
+	{
+		"name": "luna_haste_02",
+		"fullname": "luna_luna_haste_02",
+		"mp3": "/sounds/vo/luna/luna_haste_02.mp3",
+		"hero_id": 48,
+		"text": "Quickly Nova!",
+		"text_simple": " quickly nova ",
+		"criteria": "Powerup Isluna IsPowerupHaste Chance_25%",
+		"pretty_criteria": "Activating a haste rune (25% chance)"
+	},
+	{
+		"name": "luna_doubdam_01",
+		"fullname": "luna_luna_doubdam_01",
+		"mp3": "/sounds/vo/luna/luna_doubdam_01.mp3",
+		"hero_id": 48,
+		"text": "Double damage!",
+		"text_simple": " double damage ",
+		"criteria": "Powerup Isluna IsPowerupDoubleDamage",
+		"pretty_criteria": "Activating a double damage rune"
+	},
+	{
+		"name": "luna_doubdam_02",
+		"fullname": "luna_luna_doubdam_02",
+		"mp3": "/sounds/vo/luna/luna_doubdam_02.mp3",
+		"hero_id": 48,
+		"text": "The crescent cuts twice as deep!",
+		"text_simple": " the crescent cuts twice as deep ",
 		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_spawn_01",
-		"fullname": "luna_luna_spawn_01",
-		"mp3": "/sounds/vo/luna/luna_spawn_01.mp3",
+		"name": "luna_regen_01",
+		"fullname": "luna_luna_regen_01",
+		"mp3": "/sounds/vo/luna/luna_regen_01.mp3",
 		"hero_id": 48,
-		"text": "Luna!",
-		"text_simple": " luna ",
-		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
-		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
+		"text": "Regeneration!",
+		"text_simple": " regeneration ",
+		"criteria": "Powerup Isluna IsPowerupRegeneration",
+		"pretty_criteria": "Activating a regeneration rune"
 	},
 	{
-		"name": "luna_spawn_02",
-		"fullname": "luna_luna_spawn_02",
-		"mp3": "/sounds/vo/luna/luna_spawn_02.mp3",
+		"name": "luna_regen_02",
+		"fullname": "luna_luna_regen_02",
+		"mp3": "/sounds/vo/luna/luna_regen_02.mp3",
 		"hero_id": 48,
-		"text": "The Moon Rider has arrived.",
-		"text_simple": " the moon rider has arrived ",
-		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
-		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
+		"text": "Wounds are nothing to us!",
+		"text_simple": " wounds are nothing to us ",
+		"pretty_criteria": "Unused"
 	},
 	{
-		"name": "luna_spawn_03",
-		"fullname": "luna_luna_spawn_03",
-		"mp3": "/sounds/vo/luna/luna_spawn_03.mp3",
+		"name": "luna_illus_01",
+		"fullname": "luna_luna_illus_01",
+		"mp3": "/sounds/vo/luna/luna_illus_01.mp3",
 		"hero_id": 48,
-		"text": "In the service of Selemene.",
-		"text_simple": " in the service of selemene ",
-		"criteria": "Spawn Isluna Chance_15%|Custom Isluna IsLunaLoadoutSpawn",
-		"pretty_criteria": "Spawning (15% chance)\n IsLunaLoadoutSpawn"
+		"text": "Illusion!",
+		"text_simple": " illusion ",
+		"criteria": "Powerup Isluna IsPowerupIllusion",
+		"pretty_criteria": "Activating an illusion rune"
 	},
 	{
-		"name": "luna_spawn_04",
-		"fullname": "luna_luna_spawn_04",
-		"mp3": "/sounds/vo/luna/luna_spawn_04.mp3",
+		"name": "luna_illus_02",
+		"fullname": "luna_luna_illus_02",
+		"mp3": "/sounds/vo/luna/luna_illus_02.mp3",
 		"hero_id": 48,
-		"text": "Nova could use a snack.",
-		"text_simple": " nova could use a snack ",
-		"criteria": "Spawn Isluna|Custom Isluna IsLunaLoadoutSpawn",
-		"pretty_criteria": "Spawning\n IsLunaLoadoutSpawn"
+		"text": "The cavalry has arrived!",
+		"text_simple": " the cavalry has arrived ",
+		"criteria": "Powerup Isluna IsPowerupIllusion Chance_25%",
+		"pretty_criteria": "Activating an illusion rune (25% chance)"
+	},
+	{
+		"name": "luna_invis_01",
+		"fullname": "luna_luna_invis_01",
+		"mp3": "/sounds/vo/luna/luna_invis_01.mp3",
+		"hero_id": 48,
+		"text": "Invisibility!",
+		"text_simple": " invisibility ",
+		"criteria": "Powerup Isluna IsPowerupInvisibility",
+		"pretty_criteria": "Activating an invisibility rune"
+	},
+	{
+		"name": "luna_invis_02",
+		"fullname": "luna_luna_invis_02",
+		"mp3": "/sounds/vo/luna/luna_invis_02.mp3",
+		"hero_id": 48,
+		"text": "We stalk unhindered.",
+		"text_simple": " we stalk unhindered ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_notyet_01",
+		"fullname": "luna_luna_notyet_01",
+		"mp3": "/sounds/vo/luna/luna_notyet_01.mp3",
+		"hero_id": 48,
+		"text": "Not yet.",
+		"text_simple": " not yet ",
+		"criteria": "Cooldown Isluna LittleNag",
+		"pretty_criteria": "Item/Ability on cooldown"
+	},
+	{
+		"name": "luna_notyet_02",
+		"fullname": "luna_luna_notyet_02",
+		"mp3": "/sounds/vo/luna/luna_notyet_02.mp3",
+		"hero_id": 48,
+		"text": "Not yet.",
+		"text_simple": " not yet ",
+		"criteria": "Cooldown Isluna MediumNag",
+		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
+	},
+	{
+		"name": "luna_notyet_03",
+		"fullname": "luna_luna_notyet_03",
+		"mp3": "/sounds/vo/luna/luna_notyet_03.mp3",
+		"hero_id": 48,
+		"text": "Not yet!",
+		"text_simple": " not yet ",
+		"criteria": "Cooldown Isluna SuperNag",
+		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
+	},
+	{
+		"name": "luna_notyet_04",
+		"fullname": "luna_luna_notyet_04",
+		"mp3": "/sounds/vo/luna/luna_notyet_04.mp3",
+		"hero_id": 48,
+		"text": "I'm not ready.",
+		"text_simple": " im not ready ",
+		"criteria": "Cooldown Isluna LittleNag",
+		"pretty_criteria": "Item/Ability on cooldown"
+	},
+	{
+		"name": "luna_notyet_05",
+		"fullname": "luna_luna_notyet_05",
+		"mp3": "/sounds/vo/luna/luna_notyet_05.mp3",
+		"hero_id": 48,
+		"text": "I'm not ready.",
+		"text_simple": " im not ready ",
+		"criteria": "Cooldown Isluna MediumNag",
+		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
+	},
+	{
+		"name": "luna_notyet_06",
+		"fullname": "luna_luna_notyet_06",
+		"mp3": "/sounds/vo/luna/luna_notyet_06.mp3",
+		"hero_id": 48,
+		"text": "I'm not ready!",
+		"text_simple": " im not ready ",
+		"criteria": "Cooldown Isluna SuperNag",
+		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
+	},
+	{
+		"name": "luna_notyet_07",
+		"fullname": "luna_luna_notyet_07",
+		"mp3": "/sounds/vo/luna/luna_notyet_07.mp3",
+		"hero_id": 48,
+		"text": "It's not time yet.",
+		"text_simple": " its not time yet ",
+		"criteria": "Cooldown Isluna LittleNag",
+		"pretty_criteria": "Item/Ability on cooldown"
+	},
+	{
+		"name": "luna_notyet_08",
+		"fullname": "luna_luna_notyet_08",
+		"mp3": "/sounds/vo/luna/luna_notyet_08.mp3",
+		"hero_id": 48,
+		"text": "It's not time yet.",
+		"text_simple": " its not time yet ",
+		"criteria": "Cooldown Isluna MediumNag",
+		"pretty_criteria": "Item/Ability on cooldown (medium naggy)"
+	},
+	{
+		"name": "luna_notyet_09",
+		"fullname": "luna_luna_notyet_09",
+		"mp3": "/sounds/vo/luna/luna_notyet_09.mp3",
+		"hero_id": 48,
+		"text": "It's not time yet!",
+		"text_simple": " its not time yet ",
+		"criteria": "Cooldown Isluna SuperNag",
+		"pretty_criteria": "Item/Ability on cooldown (very naggy)"
+	},
+	{
+		"name": "luna_nomana_01",
+		"fullname": "luna_luna_nomana_01",
+		"mp3": "/sounds/vo/luna/luna_nomana_01.mp3",
+		"hero_id": 48,
+		"text": "Out of mana.",
+		"text_simple": " out of mana ",
+		"criteria": "NoMana Isluna LittleNag",
+		"pretty_criteria": "Not enough mana"
+	},
+	{
+		"name": "luna_nomana_02",
+		"fullname": "luna_luna_nomana_02",
+		"mp3": "/sounds/vo/luna/luna_nomana_02.mp3",
+		"hero_id": 48,
+		"text": "Out of mana.",
+		"text_simple": " out of mana ",
+		"criteria": "NoMana Isluna MediumNag",
+		"pretty_criteria": "Not enough mana (medium naggy)"
+	},
+	{
+		"name": "luna_nomana_03",
+		"fullname": "luna_luna_nomana_03",
+		"mp3": "/sounds/vo/luna/luna_nomana_03.mp3",
+		"hero_id": 48,
+		"text": "Out of mana!",
+		"text_simple": " out of mana ",
+		"criteria": "NoMana Isluna SuperNag",
+		"pretty_criteria": "Not enough mana (very naggy)"
+	},
+	{
+		"name": "luna_nomana_04",
+		"fullname": "luna_luna_nomana_04",
+		"mp3": "/sounds/vo/luna/luna_nomana_04.mp3",
+		"hero_id": 48,
+		"text": "No mana.",
+		"text_simple": " no mana ",
+		"criteria": "NoMana Isluna LittleNag",
+		"pretty_criteria": "Not enough mana"
+	},
+	{
+		"name": "luna_nomana_05",
+		"fullname": "luna_luna_nomana_05",
+		"mp3": "/sounds/vo/luna/luna_nomana_05.mp3",
+		"hero_id": 48,
+		"text": "No mana.",
+		"text_simple": " no mana ",
+		"criteria": "NoMana Isluna MediumNag",
+		"pretty_criteria": "Not enough mana (medium naggy)"
+	},
+	{
+		"name": "luna_nomana_06",
+		"fullname": "luna_luna_nomana_06",
+		"mp3": "/sounds/vo/luna/luna_nomana_06.mp3",
+		"hero_id": 48,
+		"text": "No mana!",
+		"text_simple": " no mana ",
+		"criteria": "NoMana Isluna SuperNag",
+		"pretty_criteria": "Not enough mana (very naggy)"
+	},
+	{
+		"name": "luna_nomana_07",
+		"fullname": "luna_luna_nomana_07",
+		"mp3": "/sounds/vo/luna/luna_nomana_07.mp3",
+		"hero_id": 48,
+		"text": "Not enough mana.",
+		"text_simple": " not enough mana ",
+		"criteria": "NoMana Isluna LittleNag",
+		"pretty_criteria": "Not enough mana"
+	},
+	{
+		"name": "luna_nomana_08",
+		"fullname": "luna_luna_nomana_08",
+		"mp3": "/sounds/vo/luna/luna_nomana_08.mp3",
+		"hero_id": 48,
+		"text": "Not enough mana.",
+		"text_simple": " not enough mana ",
+		"criteria": "NoMana Isluna MediumNag",
+		"pretty_criteria": "Not enough mana (medium naggy)"
+	},
+	{
+		"name": "luna_nomana_09",
+		"fullname": "luna_luna_nomana_09",
+		"mp3": "/sounds/vo/luna/luna_nomana_09.mp3",
+		"hero_id": 48,
+		"text": "Not enough mana!",
+		"text_simple": " not enough mana ",
+		"criteria": "NoMana Isluna SuperNag",
+		"pretty_criteria": "Not enough mana (very naggy)"
 	},
 	{
 		"name": "luna_thanks_01",
@@ -2814,6 +2324,73 @@
 		"pretty_criteria": "Taking damage (25% chance)"
 	},
 	{
+		"name": "luna_inthebag_01",
+		"fullname": "luna_luna_inthebag_01",
+		"mp3": "/sounds/vo/luna/luna_inthebag_01.mp3",
+		"hero_id": 48,
+		"text": "Look how they flee before us. This one's in the bag!",
+		"text_simple": " look how they flee before us this ones in the bag ",
+		"criteria": "InTheBag Isluna",
+		"pretty_criteria": "In-the-bag"
+	},
+	{
+		"name": "luna_crumwiz_01",
+		"fullname": "luna_luna_crumwiz_01",
+		"mp3": "/sounds/vo/luna/luna_crumwiz_01.mp3",
+		"hero_id": 48,
+		"text": "Crummy wizard!",
+		"text_simple": " crummy wizard ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_shiwiz_01",
+		"fullname": "luna_luna_shiwiz_01",
+		"mp3": "/sounds/vo/luna/luna_shiwiz_01.mp3",
+		"hero_id": 48,
+		"text": "Shitty wizard!",
+		"text_simple": " shitty wizard ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_shiwiz_02",
+		"fullname": "luna_luna_shiwiz_02",
+		"mp3": "/sounds/vo/luna/luna_shiwiz_02.mp3",
+		"hero_id": 48,
+		"text": "Piece of shite wizard.",
+		"text_simple": " piece of shite wizard ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_lose_01",
+		"fullname": "luna_luna_lose_01",
+		"mp3": "/sounds/vo/luna/luna_lose_01.mp3",
+		"hero_id": 48,
+		"text": "No!",
+		"text_simple": " no ",
+		"criteria": "Defeat Isluna",
+		"pretty_criteria": "Losing a game"
+	},
+	{
+		"name": "luna_lose_02",
+		"fullname": "luna_luna_lose_02",
+		"mp3": "/sounds/vo/luna/luna_lose_02.mp3",
+		"hero_id": 48,
+		"text": "Defeated!",
+		"text_simple": " defeated ",
+		"criteria": "Defeat Isluna",
+		"pretty_criteria": "Losing a game"
+	},
+	{
+		"name": "luna_lose_03",
+		"fullname": "luna_luna_lose_03",
+		"mp3": "/sounds/vo/luna/luna_lose_03.mp3",
+		"hero_id": 48,
+		"text": "Has Selemene forsaken me?",
+		"text_simple": " has selemene forsaken me ",
+		"criteria": "Defeat Isluna",
+		"pretty_criteria": "Losing a game"
+	},
+	{
 		"name": "luna_win_01",
 		"fullname": "luna_luna_win_01",
 		"mp3": "/sounds/vo/luna/luna_win_01.mp3",
@@ -2842,5 +2419,428 @@
 		"text_simple": " nightsilver is safe once more ",
 		"criteria": "Victory Isluna",
 		"pretty_criteria": "Winning a game"
+	},
+	{
+		"name": "luna_pain_01",
+		"fullname": "luna_luna_pain_01",
+		"mp3": "/sounds/vo/luna/luna_pain_01.mp3",
+		"hero_id": 48,
+		"text": "Ouh!",
+		"text_simple": " ouh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_02",
+		"fullname": "luna_luna_pain_02",
+		"mp3": "/sounds/vo/luna/luna_pain_02.mp3",
+		"hero_id": 48,
+		"text": "Ah! Hhh!",
+		"text_simple": " ah hhh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_03",
+		"fullname": "luna_luna_pain_03",
+		"mp3": "/sounds/vo/luna/luna_pain_03.mp3",
+		"hero_id": 48,
+		"text": "Uh!",
+		"text_simple": " uh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_04",
+		"fullname": "luna_luna_pain_04",
+		"mp3": "/sounds/vo/luna/luna_pain_04.mp3",
+		"hero_id": 48,
+		"text": "Ow!",
+		"text_simple": " ow ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_05",
+		"fullname": "luna_luna_pain_05",
+		"mp3": "/sounds/vo/luna/luna_pain_05.mp3",
+		"hero_id": 48,
+		"text": "Mm!",
+		"text_simple": " mm ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_pain_06",
+		"fullname": "luna_luna_pain_06",
+		"mp3": "/sounds/vo/luna/luna_pain_06.mp3",
+		"hero_id": 48,
+		"text": "Muh!",
+		"text_simple": " muh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_07",
+		"fullname": "luna_luna_pain_07",
+		"mp3": "/sounds/vo/luna/luna_pain_07.mp3",
+		"hero_id": 48,
+		"text": "Eeh!",
+		"text_simple": " eeh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_08",
+		"fullname": "luna_luna_pain_08",
+		"mp3": "/sounds/vo/luna/luna_pain_08.mp3",
+		"hero_id": 48,
+		"text": "Iy!",
+		"text_simple": " iy ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_09",
+		"fullname": "luna_luna_pain_09",
+		"mp3": "/sounds/vo/luna/luna_pain_09.mp3",
+		"hero_id": 48,
+		"text": "Oh!",
+		"text_simple": " oh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_10",
+		"fullname": "luna_luna_pain_10",
+		"mp3": "/sounds/vo/luna/luna_pain_10.mp3",
+		"hero_id": 48,
+		"text": "Mm!",
+		"text_simple": " mm ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_pain_11",
+		"fullname": "luna_luna_pain_11",
+		"mp3": "/sounds/vo/luna/luna_pain_11.mp3",
+		"hero_id": 48,
+		"text": "Ouh!",
+		"text_simple": " ouh ",
+		"criteria": "Pain Isluna",
+		"pretty_criteria": "Taking damage"
+	},
+	{
+		"name": "luna_anger_01",
+		"fullname": "luna_luna_anger_01",
+		"mp3": "/sounds/vo/luna/luna_anger_01.mp3",
+		"hero_id": 48,
+		"text": "Ahh!",
+		"text_simple": " ahh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_02",
+		"fullname": "luna_luna_anger_02",
+		"mp3": "/sounds/vo/luna/luna_anger_02.mp3",
+		"hero_id": 48,
+		"text": "Rrr!",
+		"text_simple": " rrr ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_03",
+		"fullname": "luna_luna_anger_03",
+		"mp3": "/sounds/vo/luna/luna_anger_03.mp3",
+		"hero_id": 48,
+		"text": "Mmmuh!",
+		"text_simple": " mmmuh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_04",
+		"fullname": "luna_luna_anger_04",
+		"mp3": "/sounds/vo/luna/luna_anger_04.mp3",
+		"hero_id": 48,
+		"text": "Uh!",
+		"text_simple": " uh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_05",
+		"fullname": "luna_luna_anger_05",
+		"mp3": "/sounds/vo/luna/luna_anger_05.mp3",
+		"hero_id": 48,
+		"text": "Houh!",
+		"text_simple": " houh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_06",
+		"fullname": "luna_luna_anger_06",
+		"mp3": "/sounds/vo/luna/luna_anger_06.mp3",
+		"hero_id": 48,
+		"text": "Ey!",
+		"text_simple": " ey ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_07",
+		"fullname": "luna_luna_anger_07",
+		"mp3": "/sounds/vo/luna/luna_anger_07.mp3",
+		"hero_id": 48,
+		"text": "Psss!",
+		"text_simple": " psss ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_08",
+		"fullname": "luna_luna_anger_08",
+		"mp3": "/sounds/vo/luna/luna_anger_08.mp3",
+		"hero_id": 48,
+		"text": "Hhr!",
+		"text_simple": " hhr ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_09",
+		"fullname": "luna_luna_anger_09",
+		"mp3": "/sounds/vo/luna/luna_anger_09.mp3",
+		"hero_id": 48,
+		"text": "Mmuh!",
+		"text_simple": " mmuh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_anger_10",
+		"fullname": "luna_luna_anger_10",
+		"mp3": "/sounds/vo/luna/luna_anger_10.mp3",
+		"hero_id": 48,
+		"text": "Ehh.",
+		"text_simple": " ehh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_01",
+		"fullname": "luna_luna_happy_01",
+		"mp3": "/sounds/vo/luna/luna_happy_01.mp3",
+		"hero_id": 48,
+		"text": "Aye.",
+		"text_simple": " aye ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_02",
+		"fullname": "luna_luna_happy_02",
+		"mp3": "/sounds/vo/luna/luna_happy_02.mp3",
+		"hero_id": 48,
+		"text": "Ahh.",
+		"text_simple": " ahh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_03",
+		"fullname": "luna_luna_happy_03",
+		"mp3": "/sounds/vo/luna/luna_happy_03.mp3",
+		"hero_id": 48,
+		"text": "Ohhh yeah.",
+		"text_simple": " ohhh yeah ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_04",
+		"fullname": "luna_luna_happy_04",
+		"mp3": "/sounds/vo/luna/luna_happy_04.mp3",
+		"hero_id": 48,
+		"text": "Mmm.",
+		"text_simple": " mmm ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_05",
+		"fullname": "luna_luna_happy_05",
+		"mp3": "/sounds/vo/luna/luna_happy_05.mp3",
+		"hero_id": 48,
+		"text": "Ahh!",
+		"text_simple": " ahh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_happy_06",
+		"fullname": "luna_luna_happy_06",
+		"mp3": "/sounds/vo/luna/luna_happy_06.mp3",
+		"hero_id": 48,
+		"text": "Hooh!",
+		"text_simple": " hooh ",
+		"pretty_criteria": "Unused"
+	},
+	{
+		"name": "luna_laugh_01",
+		"fullname": "luna_luna_laugh_01",
+		"mp3": "/sounds/vo/luna/luna_laugh_01.mp3",
+		"hero_id": 48,
+		"text": "Mm mm mm ha ha ha ha ha ha ha ha ha ha ha! Hh ah ha ha ha ha ha ha ha ha ha ha ha!",
+		"text_simple": " mm mm mm ha ha ha ha ha ha ha ha ha ha ha hh ah ha ha ha ha ha ha ha ha ha ha ha ",
+		"criteria": "Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Laughing"
+	},
+	{
+		"name": "luna_laugh_02",
+		"fullname": "luna_luna_laugh_02",
+		"mp3": "/sounds/vo/luna/luna_laugh_02.mp3",
+		"hero_id": 48,
+		"text": "Ha ha ha ha ha ha ha ha ha!",
+		"text_simple": " ha ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_03",
+		"fullname": "luna_luna_laugh_03",
+		"mp3": "/sounds/vo/luna/luna_laugh_03.mp3",
+		"hero_id": 48,
+		"text": "Ha ha ha ha ha ha ha ha ha ha ha!",
+		"text_simple": " ha ha ha ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
+		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
+	},
+	{
+		"name": "luna_laugh_04",
+		"fullname": "luna_luna_laugh_04",
+		"mp3": "/sounds/vo/luna/luna_laugh_04.mp3",
+		"hero_id": 48,
+		"text": "Hm hm hm ha ha ha ha ha ha ha ha!",
+		"text_simple": " hm hm hm ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_05",
+		"fullname": "luna_luna_laugh_05",
+		"mp3": "/sounds/vo/luna/luna_laugh_05.mp3",
+		"hero_id": 48,
+		"text": "Ha ha!",
+		"text_simple": " ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_06",
+		"fullname": "luna_luna_laugh_06",
+		"mp3": "/sounds/vo/luna/luna_laugh_06.mp3",
+		"hero_id": 48,
+		"text": "Arr har har har!",
+		"text_simple": " arr har har har ",
+		"criteria": "Kill Isluna IsEnemyKunkka Chance_3%",
+		"pretty_criteria": "Killing Kunkka (3% chance)"
+	},
+	{
+		"name": "luna_laugh_07",
+		"fullname": "luna_luna_laugh_07",
+		"mp3": "/sounds/vo/luna/luna_laugh_07.mp3",
+		"hero_id": 48,
+		"text": "Hhh! Ah ha ha ha ha ha ha ha!",
+		"text_simple": " hhh ah ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
+		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
+	},
+	{
+		"name": "luna_laugh_08",
+		"fullname": "luna_luna_laugh_08",
+		"mp3": "/sounds/vo/luna/luna_laugh_08.mp3",
+		"hero_id": 48,
+		"text": "Huh huh ha ha ha ha ha ha!",
+		"text_simple": " huh huh ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_09",
+		"fullname": "luna_luna_laugh_09",
+		"mp3": "/sounds/vo/luna/luna_laugh_09.mp3",
+		"hero_id": 48,
+		"text": "Ah ha ha ha ha ha ha!",
+		"text_simple": " ah ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_10",
+		"fullname": "luna_luna_laugh_10",
+		"mp3": "/sounds/vo/luna/luna_laugh_10.mp3",
+		"hero_id": 48,
+		"text": "Ha ha!",
+		"text_simple": " ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_11",
+		"fullname": "luna_luna_laugh_11",
+		"mp3": "/sounds/vo/luna/luna_laugh_11.mp3",
+		"hero_id": 48,
+		"text": "Huh ha ha ha!",
+		"text_simple": " huh ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_12",
+		"fullname": "luna_luna_laugh_12",
+		"mp3": "/sounds/vo/luna/luna_laugh_12.mp3",
+		"hero_id": 48,
+		"text": "Heh heh heh!",
+		"text_simple": " heh heh heh ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_13",
+		"fullname": "luna_luna_laugh_13",
+		"mp3": "/sounds/vo/luna/luna_laugh_13.mp3",
+		"hero_id": 48,
+		"text": "Oh ho ho ho ho!",
+		"text_simple": " oh ho ho ho ho ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_14",
+		"fullname": "luna_luna_laugh_14",
+		"mp3": "/sounds/vo/luna/luna_laugh_14.mp3",
+		"hero_id": 48,
+		"text": "Ah ha ha ha ha ha ha ha ha!",
+		"text_simple": " ah ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
+		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
+	},
+	{
+		"name": "luna_laugh_15",
+		"fullname": "luna_luna_laugh_15",
+		"mp3": "/sounds/vo/luna/luna_laugh_15.mp3",
+		"hero_id": 48,
+		"text": "Hhh! Ho ho ho ho ho ho!",
+		"text_simple": " hhh ho ho ho ho ho ho ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_16",
+		"fullname": "luna_luna_laugh_16",
+		"mp3": "/sounds/vo/luna/luna_laugh_16.mp3",
+		"hero_id": 48,
+		"text": "Hhh! Ho ha ha ha ha ha ha ha ha!",
+		"text_simple": " hhh ho ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh",
+		"pretty_criteria": "Killing a hero\nLaughing"
+	},
+	{
+		"name": "luna_laugh_17",
+		"fullname": "luna_luna_laugh_17",
+		"mp3": "/sounds/vo/luna/luna_laugh_17.mp3",
+		"hero_id": 48,
+		"text": "Hhh! Ah ho ha ha ha ha ha ha ha ha ha!",
+		"text_simple": " hhh ah ho ha ha ha ha ha ha ha ha ha ",
+		"criteria": "Kill Isluna|Emote Isluna IsEmoteLaugh|Taunt Isluna IsLunaTauntCatDance",
+		"pretty_criteria": "Killing a hero\nLaughing\nTaunting"
 	}
 ]
