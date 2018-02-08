@@ -55,6 +55,7 @@ class Hero(Base):
 
 	responses = relationship("Response", back_populates="hero")
 	abilities = relationship("Ability", back_populates="hero")
+	voice = relationship("Voice", uselist=False, back_populates="hero")
 
 	json_data = Column(String)
 
@@ -121,6 +122,21 @@ class Item(Base):
 	def __repr__(self):
 		return "Item: %s" % (self.localized_name)
 
+class Voice(Base):
+	__tablename__ = 'voices'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	localized_name = Column(String)
+	icon = Column(String)
+	image = Column(String)
+	vsndevts_path = Column(String)
+	voice_actor = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"))
+
+	hero = relationship("Hero", back_populates="voice")
+	responses = relationship("Response", back_populates="voice")
+
 class Response(Base):
 	__tablename__ = 'responses'
 
@@ -128,12 +144,14 @@ class Response(Base):
 	fullname = Column(String, primary_key=True)
 	mp3 = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	voice_id = Column(Integer, ForeignKey("voices.id"))
 	text = Column(String)
 	text_simple = Column(String)
 	criteria = Column(String)
 	pretty_criteria = Column(String)
 
 	hero = relationship("Hero", back_populates="responses")
+	voice = relationship("Voice", back_populates="responses")
 
 	def __repr__(self):
 		return "Response: %s" % (self.name)
