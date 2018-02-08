@@ -1,5 +1,5 @@
 # Dotabase<img align="right" src="dotabase.png"/>
-An sqlite database representing much of the data from dota2's game files, and an sqlalchemy representation to be used with it.
+An sqlite database representing much of the data from dota2's game files, and an sqlalchemy representation to be used with it. This was built using my [dotabase-builder](https://github.com/mdiller/dotabase-builder) project.
 
 ## Description
 The goal of this project is to provide an interface into dota's game files so that applications can be built around them. This repository will be kept up to date with dota so that changes to the game are available immediately. 
