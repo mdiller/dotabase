@@ -28,7 +28,7 @@ class Hero(Base):
 	icon = Column(String)
 	portrait = Column(String)
 	talents = Column(String)
-	glow_color = Column(String)
+	color = Column(String)
 
 	team = Column(String)
 	base_health_regen = Column(Float)
