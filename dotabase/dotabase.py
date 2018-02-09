@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table
+from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date
 from sqlalchemy.orm import sessionmaker, relationship
 import os
 
@@ -167,7 +167,7 @@ class Criterion(Base):
 	required = Column(Boolean)
 
 class Emoticon(Base):
-	__tablename__ = 'emoticon'
+	__tablename__ = 'emoticons'
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
@@ -176,13 +176,26 @@ class Emoticon(Base):
 	ms_per_frame = Column(Integer)
 
 class ChatWheelMessage(Base):
-	__tablename__ = 'chatwheelmessage'
+	__tablename__ = 'chatwheelmessages'
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
 	message = Column(String)
 	label = Column(String)
 	sound = Column(String)
+
+class LoadingScreen(Base):
+	__tablename__ = 'loadingscreens'
+
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	image = Column(String)
+	thumbnail = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	creation_date = Column(Date)
+	color = Column(String)
+
+	hero = relationship("Hero")
 
 
 # returns an open dotabase session
