@@ -1047,13 +1047,13 @@
 		"aliases": "boots of speed",
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/boots.png",
-		"cost": 400,
+		"cost": 500,
 		"description": "Flat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Fleet footwear, increasing movement.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "40",
+				"value": "50",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -1062,7 +1062,7 @@
 			"ID": "29",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"Model": "models/props_gameplay/boots_of_speed.vmdl",
-			"ItemCost": "400",
+			"ItemCost": "500",
 			"ItemShopTags": "move_speed",
 			"ItemQuality": "component",
 			"ItemAliases": "boots of speed",
@@ -1072,7 +1072,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "40"
+					"bonus_movement_speed": "50"
 				}
 			}
 		}
@@ -2084,7 +2084,7 @@
 		"aliases": "bot|boots of travel|tp",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/travel_boots.png",
-		"cost": 2400,
+		"cost": 2500,
 		"cooldown": "45",
 		"mana_cost": "75",
 		"base_level": 1,
@@ -2116,7 +2116,7 @@
 			"AbilitySharedCooldown": "teleport",
 			"AbilityChannelTime": "3.0",
 			"AbilityManaCost": "75",
-			"ItemCost": "2400",
+			"ItemCost": "2500",
 			"ItemShopTags": "teleport;move_speed",
 			"ItemQuality": "common",
 			"ItemAliases": "bot;boots of travel;tp",
@@ -2168,14 +2168,14 @@
 		"aliases": "phase boots",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/phase_boots.png",
-		"cost": 1240,
+		"cost": 1340,
 		"cooldown": "8",
 		"description": "# Active: Phase\nGives **24%** increased movement speed on melee heroes, and **20%** on ranged heroes, and lets you move through units for **2.5** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Boots that allow the wearer to travel between the ether.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "45",
+				"value": "50",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -2222,7 +2222,7 @@
 			"ID": "50",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCooldown": "8.0",
-			"ItemCost": "1240",
+			"ItemCost": "1340",
 			"ItemShopTags": "damage;move_speed;hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "phase boots",
@@ -2231,7 +2231,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "45"
+					"bonus_movement_speed": "50"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -2683,13 +2683,13 @@
 		"aliases": "power treads",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/power_treads.png",
-		"cost": 1350,
+		"cost": 1450,
 		"description": "# Active: Switch Attribute\nSwitches between +**10** Strength, +**10** Agility, or +**10** Intelligence.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "A pair of tough-skinned boots that change to meet the demands of the wearer.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "45",
+				"value": "50",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -2713,7 +2713,7 @@
 		"json_data": {
 			"ID": "63",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"ItemCost": "1350",
+			"ItemCost": "1450",
 			"ItemShopTags": "attack_speed;move_speed;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "power treads",
@@ -2722,7 +2722,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "45"
+					"bonus_movement_speed": "50"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -3693,7 +3693,6 @@
 			"ItemAliases": "rob;ring of basilius",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ActiveDescriptionLine": "2",
-			"ShouldBeSuggested": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -5173,7 +5172,7 @@
 		"icon": "/resource/flash3/images/items/black_king_bar.png",
 		"cost": 3975,
 		"cooldown": "70",
-		"description": "# Active: Avatar\nGrants Spell Immunity and 100% Magic Damage Resistance.  Duration and cooldown decrease with each use. \n\nDuration: **10**/**9**/**8**/**7**/**6**/**5** \nDispel Type: **Basic Dispel**",
+		"description": "# Active: Avatar\nGrants Spell Immunity and 100% Magic Damage Resistance.  Duration decreases with each use. \n\nDuration: **10**/**9**/**8**/**7**/**6**/**5** \nDispel Type: **Basic Dispel**",
 		"lore": "A powerful staff imbued with the strength of giants.",
 		"ability_special": [
 			{
@@ -8617,7 +8616,7 @@
 		"cost": 770,
 		"cooldown": "25",
 		"mana_cost": "0",
-		"description": "# Active: Sacrifice\nConsume **150** health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
+		"description": "# Active: Sacrifice\nConsume **170** health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
 		"lore": "A ring that feeds on the souls of those who wear it.",
 		"ability_special": [
 			{
@@ -8634,7 +8633,7 @@
 			},
 			{
 				"key": "health_sacrifice",
-				"value": "150"
+				"value": "170"
 			},
 			{
 				"key": "mana_gain",
@@ -8670,7 +8669,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"health_sacrifice": "150"
+					"health_sacrifice": "170"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8708,7 +8707,7 @@
 		"aliases": "mana|mb|arcane boots",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/arcane_boots.png",
-		"cost": 1300,
+		"cost": 1400,
 		"cooldown": "55",
 		"mana_cost": "0",
 		"description": "# Active: Replenish Mana\nRestores **135** mana to all nearby allies.\n\nRadius: **900**\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
@@ -8741,7 +8740,7 @@
 			"AbilityCooldown": "55.0",
 			"AbilityCastRange": "900",
 			"AbilityManaCost": "0",
-			"ItemCost": "1300",
+			"ItemCost": "1400",
 			"ItemShopTags": "move_speed;boost_mana;mana_pool",
 			"ItemQuality": "rare",
 			"ItemAliases": "mana;mb;arcane boots",
@@ -10696,7 +10695,7 @@
 		"aliases": "tranquil boots",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/tranquil_boots.png",
-		"cost": 950,
+		"cost": 1050,
 		"cooldown": "13",
 		"mana_cost": "0",
 		"description": "# Passive: Break\nWhenever you attack or are attacked, the bonus **13** HP regen is lost and the movement speed bonus is reduced to **65** for **13** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
@@ -10752,7 +10751,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "13.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "950",
+			"ItemCost": "1050",
 			"ItemShopTags": "move_speed;regen_health;armor",
 			"ItemQuality": "rare",
 			"ItemAliases": "tranquil boots",
@@ -11091,7 +11090,7 @@
 		"aliases": "bot|boots of travel|tp",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/travel_boots_2.png",
-		"cost": 4400,
+		"cost": 4500,
 		"cooldown": "45",
 		"mana_cost": "75",
 		"base_level": 2,
@@ -11123,7 +11122,7 @@
 			"AbilitySharedCooldown": "teleport",
 			"AbilityChannelTime": "3.0",
 			"AbilityManaCost": "75",
-			"ItemCost": "4400",
+			"ItemCost": "4500",
 			"ItemShopTags": "teleport;move_speed",
 			"ItemQuality": "common",
 			"ItemAliases": "bot;boots of travel;tp",
@@ -11692,7 +11691,7 @@
 		"aliases": "guardian greaves",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/guardian_greaves.png",
-		"cost": 5350,
+		"cost": 5450,
 		"cooldown": "40",
 		"mana_cost": "0",
 		"description": "# Active: Mend\nRestores **250** health and **160** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **900**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **3.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **12** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
@@ -11766,7 +11765,7 @@
 			"AbilityCooldown": "40",
 			"AbilityCastRange": "900",
 			"AbilityManaCost": "0",
-			"ItemCost": "5350",
+			"ItemCost": "5450",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "guardian greaves",
@@ -13183,7 +13182,7 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/aeon_disk.png",
 		"cost": 3350,
-		"cooldown": "100",
+		"cooldown": "90",
 		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. \n\n\n# Passive: Status Resistance\nReduces status effect durations by **25%**.",
 		"ability_special": [
 			{
@@ -13214,7 +13213,7 @@
 		"json_data": {
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCooldown": "100.0",
+			"AbilityCooldown": "90.0",
 			"ItemCost": "3350",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
@@ -13254,12 +13253,12 @@
 		"icon": "/resource/flash3/images/items/tome_of_knowledge.png",
 		"cost": 150,
 		"cooldown": "0",
-		"description": "# Use: Enlighten\nGrants you **500** experience plus **135** per tome consumed by your team.\n\nTomes Used By Team: %customval_team_tomes_used%",
+		"description": "# Use: Enlighten\nGrants you **700** experience plus **135** per tome consumed by your team.\n\nTomes Used By Team: %customval_team_tomes_used%",
 		"lore": "That which raises beast to man and man to god.",
 		"ability_special": [
 			{
 				"key": "xp_bonus",
-				"value": "500"
+				"value": "700"
 			},
 			{
 				"key": "xp_per_use",
@@ -13290,7 +13289,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"xp_bonus": "500"
+					"xp_bonus": "700"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
