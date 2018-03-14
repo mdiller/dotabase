@@ -985,7 +985,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/bloodseeker_bloodrage.png",
 		"localized_name": "Bloodrage",
-		"description": "Drives a unit into a bloodthirsty rage during which a unit deals, and takes, increased damage. Units affected by Bloodrage will be healed for a percentage of the max health of any units they kill. Units affected by Bloodrage when killed will heal a percentage of their max health to their killer. If you do not get the last hit, but are within 300 AoE of the dying unit, you will take 50% of the heal.",
+		"description": "Drives a unit into a bloodthirsty rage during which a unit deals, and takes, increased damage. Units affected by Bloodrage will be healed for a percentage of the max health of any units they kill. Units affected by Bloodrage when killed will heal a percentage of their max health to their killer. If you do not get the last hit, but are within 300 AoE of the dying hero, you will take 50% of the heal.",
 		"lore": "Strygwyr shares his animalistic thirst for bloodshed.",
 		"note": "Bloodrage can be cast on enemy and allied units, as well as Bloodseeker himself.\nOnly amplifies for half values when the damage dealer and the receiver are over 2200 range apart.",
 		"json_data": {
@@ -11368,7 +11368,7 @@
 		"cast_range": "650",
 		"cast_point": "0.4",
 		"cooldown": "20 18 16 14",
-		"mana_cost": "110 120 130 140",
+		"mana_cost": "110 130 150 170",
 		"ability_special": [
 			{
 				"key": "miss_rate",
@@ -11423,7 +11423,7 @@
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "20 18 16 14",
-			"AbilityManaCost": "110 120 130 140",
+			"AbilityManaCost": "110 130 150 170",
 			"AbilityModifierSupportValue": "0.3",
 			"AbilitySpecial": {
 				"01": {
@@ -15856,7 +15856,7 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/viper_corrosive_skin.png",
 		"localized_name": "Corrosive Skin",
-		"description": "Viper exudes an infectious toxin that damages and slows any enemy that damages it in a **1400** radius. The acid exudate also increases Viper's resistance to magic.",
+		"description": "Viper exudes an infectious toxin that damages and slows the attack speed of any enemy that damages it in a **1400** radius. The acid exudate also increases Viper's resistance to magic.",
 		"lore": "It is not unusual for sword and shield alike to corrode in the very hands of those who attack the Netherdrake.",
 		"note": "Stacks multiplicatively with other magic damage resistance sources.",
 		"json_data": {
@@ -18692,7 +18692,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/clinkz_strafe.png",
 		"localized_name": "Strafe",
-		"description": "Clinkz nimbly attacks with a barrage of arrows. Dramatically increases attack speed for a short time and grants Clinkz the ability to automatically dodge up to 3 projectiles.",
+		"description": "Clinkz nimbly attacks with a barrage of arrows. Dramatically increases attack speed for a short time and grants Clinkz the ability to automatically dodge up to 4 projectiles.",
 		"lore": "It's hard to say whether the blur around the Bone Fletcher is from his flaming heart or his speed with the quiver.",
 		"note": "Can dodge ranged attacks or spells.\nStrafe ends if Clinkz loses the 3 dodge stacks.",
 		"json_data": {
@@ -23113,7 +23113,6 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Chen.TestOfFaith.Target",
-			"LinkedAbility": "chen_test_of_faith_teleport",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCastRange": "600 600 600 600",
 			"AbilityCooldown": "16",
@@ -25375,7 +25374,7 @@
 			},
 			{
 				"key": "charge_restore_time",
-				"value": "20 17 14 11"
+				"value": "26 21 16 11"
 			}
 		],
 		"ability_slot": 2,
@@ -25445,7 +25444,7 @@
 				},
 				"12": {
 					"var_type": "FIELD_INTEGER",
-					"charge_restore_time": "20 17 14 11"
+					"charge_restore_time": "26 21 16 11"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -34054,7 +34053,7 @@
 		"cast_range": "1800",
 		"cast_point": "0.001",
 		"cooldown": "12",
-		"duration": "12",
+		"duration": "14",
 		"mana_cost": "40",
 		"ability_special": [
 			{
@@ -34116,7 +34115,7 @@
 			"AbilityCastPoint": "0.001 0.001 0.001 0.001",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "12.0 12.0 12.0 12.0",
-			"AbilityDuration": "12.0 12.0 12.0 12.0",
+			"AbilityDuration": "14",
 			"AbilityManaCost": "40 40 40 40",
 			"AbilityCastRange": "1800 1800 1800 1800",
 			"AbilitySpecial": {
@@ -41978,6 +41977,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "500",
@@ -64777,7 +64777,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "-50 Fade Bolt Hero Attack",
+		"localized_name": "-45 Fade Bolt Hero Attack",
 		"json_data": {
 			"ID": "6862",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -66381,7 +66381,7 @@
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
 		"localized_name": "2s Tree Respawn Time",
-		"description": "Any tree that is destroyed on the map will respawn 3 seconds later.",
+		"description": "Any tree that is destroyed on the map will respawn 2 seconds later.",
 		"json_data": {
 			"ID": "6955",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -68904,7 +68904,7 @@
 		"id": 7116,
 		"name": "visage_stone_form_self_cast",
 		"hero_id": 92,
-		"behavior": "not_learnable|no_target|immediate",
+		"behavior": "not_learnable|no_target|immediate|ignore_channel|ignore_pseudo_queue",
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_point": "0",
@@ -68946,7 +68946,7 @@
 		"description": "After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After **6** seconds, the Familiar will automatically leave Stone Form.",
 		"json_data": {
 			"ID": "7116",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"MaxLevel": "3",
