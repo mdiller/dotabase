@@ -195,6 +195,10 @@ class LoadingScreen(Base):
 	creation_date = Column(Date)
 	color = Column(String)
 
+	hue = Column(Integer)
+	saturation = Column(Integer)
+	value = Column(Integer)
+
 	hero = relationship("Hero")
 
 
