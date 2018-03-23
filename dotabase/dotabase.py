@@ -191,15 +191,15 @@ class LoadingScreen(Base):
 	name = Column(String)
 	image = Column(String)
 	thumbnail = Column(String)
-	hero_id = Column(Integer, ForeignKey("heroes.id"))
 	creation_date = Column(Date)
+	
 	color = Column(String)
-
 	hue = Column(Integer)
 	saturation = Column(Integer)
 	value = Column(Integer)
 
-	hero = relationship("Hero")
+	hero_ids = Column(String)
+	category = Column(String)
 
 
 # returns an open dotabase session
