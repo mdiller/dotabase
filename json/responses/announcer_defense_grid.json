@@ -15,7 +15,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_pick_yr_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Generic Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_10% IsPickYour",
-		"pretty_criteria": "10% chance Followup IsPickYour"
+		"pretty_criteria": "IsPickYour Followup (10% chance)"
 	},
 	{
 		"name": "announcer_pick_enm",
@@ -49,7 +49,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_pick_enm_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Generic Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_10% IsPlayerTeam_Radiant IsPickDire|Followup_Generic Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_10% IsPlayerTeam_Dire IsPickRadiant",
-		"pretty_criteria": "10% chance Followup IsPickDire|10% chance Followup IsPickRadiant"
+		"pretty_criteria": "IsPickDire Followup (10% chance)|IsPickRadiant Followup (10% chance)"
 	},
 	{
 		"name": "announcer_pick_dire",
@@ -103,7 +103,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_ban_yr_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_10% IsBanYour",
-		"pretty_criteria": "10% chance IsBanYour"
+		"pretty_criteria": "IsBanYour (10% chance)"
 	},
 	{
 		"name": "announcer_ban_enm",
@@ -121,7 +121,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_ban_enm_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_15% IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_15% IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "15% chance IsBanDire|15% chance IsBanRadiant"
+		"pretty_criteria": "IsBanDire (15% chance)|IsBanRadiant (15% chance)"
 	},
 	{
 		"name": "announcer_ban_dire",
@@ -139,7 +139,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_ban_dire_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_5% IsBanDire IsPlayerTeam_Spectator",
-		"pretty_criteria": "5% chance IsBanDire"
+		"pretty_criteria": "IsBanDire (5% chance)"
 	},
 	{
 		"name": "announcer_ban_rad",
@@ -157,7 +157,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_ban_rad_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_10% IsBanRadiant IsPlayerTeam_Spectator",
-		"pretty_criteria": "10% chance IsBanRadiant"
+		"pretty_criteria": "IsBanRadiant (10% chance)"
 	},
 	{
 		"name": "announcer_team_complete_rad",
@@ -248,7 +248,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_time_reserve_using_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_5% IsReserveTime IsPlayerTeam_Dire|Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_5% IsReserveTime IsPlayerTeam_Radiant",
-		"pretty_criteria": "5% chance IsReserveTime|5% chance IsReserveTime"
+		"pretty_criteria": "IsReserveTime (5% chance)"
 	},
 	{
 		"name": "announcer_time_extra",
@@ -327,7 +327,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_count_pick_10_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_5% Is10SecToPick|Custom Isannouncer_dlc_defensegrid IsTenSecondsRemaining Chance_5% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "5% chance Is10SecToPick|IsTenSecondsRemaining (5% chance)"
+		"pretty_criteria": "Is10SecToPick (5% chance)|IsTenSecondsRemaining (5% chance)"
 	},
 	{
 		"name": "announcer_count_pick_5",
@@ -345,7 +345,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_count_pick_5_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsAnnouncerVoice_DefenseGrid Chance_5% Is5SecToPick|Custom Isannouncer_dlc_defensegrid IsFiveSecondsRemaining Chance_5% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "5% chance Is5SecToPick|IsFiveSecondsRemaining (5% chance)"
+		"pretty_criteria": "Is5SecToPick (5% chance)|IsFiveSecondsRemaining (5% chance)"
 	},
 	{
 		"name": "announcer_count_battle_30",
@@ -475,7 +475,7 @@
 		"text": "Your ancient is under attack.",
 		"text_simple": " your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsNotSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked"
+		"pretty_criteria": "Your ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_yr_01",
@@ -483,7 +483,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_yr_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsNotSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked"
+		"pretty_criteria": "Your ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_yr_02",
@@ -491,7 +491,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_yr_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsNotSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked"
+		"pretty_criteria": "Your ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_yr_03",
@@ -499,7 +499,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_yr_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsNotSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked"
+		"pretty_criteria": "Your ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_yr_04",
@@ -507,7 +507,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_yr_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsNotSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked"
+		"pretty_criteria": "Your ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_rad",
@@ -517,7 +517,7 @@
 		"text": "Radiant's ancient is under attack.",
 		"text_simple": " radiants ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsGoodAttacked IsSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked Radiant"
+		"pretty_criteria": "Radiant's ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_rad_01",
@@ -525,7 +525,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_rad_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsGoodAttacked IsSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked Radiant"
+		"pretty_criteria": "Radiant's ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_dire",
@@ -535,7 +535,7 @@
 		"text": "Dire's ancient is under attack.",
 		"text_simple": " dires ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsBadAttacked IsSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked Dire"
+		"pretty_criteria": "Dire's ancient is being attacked"
 	},
 	{
 		"name": "announcer_anc_attack_dire_01",
@@ -543,7 +543,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_anc_attack_dire_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsFortAttacked IsBadAttacked IsSpectator IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsFortAttacked Dire"
+		"pretty_criteria": "Dire's ancient is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_top",
@@ -553,7 +553,7 @@
 		"text": "Your top tower is under attack.",
 		"text_simple": " your top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A top tower is being attacked"
+		"pretty_criteria": "Your top tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_top_01",
@@ -561,7 +561,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A top tower is being attacked"
+		"pretty_criteria": "Your top tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_top_02",
@@ -569,7 +569,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A top tower is being attacked"
+		"pretty_criteria": "Your top tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_top_03",
@@ -577,7 +577,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A top tower is being attacked"
+		"pretty_criteria": "Your top tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_top_04",
@@ -585,7 +585,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A top tower is being attacked"
+		"pretty_criteria": "Your top tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_mid",
@@ -595,7 +595,7 @@
 		"text": "Your middle tower is under attack.",
 		"text_simple": " your middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A middle tower is being attacked"
+		"pretty_criteria": "Your middle tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_mid_01",
@@ -603,7 +603,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A middle tower is being attacked"
+		"pretty_criteria": "Your middle tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_mid_02",
@@ -611,7 +611,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A middle tower is being attacked"
+		"pretty_criteria": "Your middle tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_mid_03",
@@ -619,7 +619,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A middle tower is being attacked"
+		"pretty_criteria": "Your middle tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_mid_04",
@@ -627,7 +627,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A middle tower is being attacked"
+		"pretty_criteria": "Your middle tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_bot",
@@ -635,7 +635,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_bot.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A bottom tower is being attacked"
+		"pretty_criteria": "Your bottom tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_bot_01",
@@ -643,7 +643,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A bottom tower is being attacked"
+		"pretty_criteria": "Your bottom tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_bot_02",
@@ -651,7 +651,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A bottom tower is being attacked"
+		"pretty_criteria": "Your bottom tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_bot_03",
@@ -659,7 +659,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A bottom tower is being attacked"
+		"pretty_criteria": "Your bottom tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_yr_bot_04",
@@ -667,7 +667,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_attack_yr_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "A bottom tower is being attacked"
+		"pretty_criteria": "Your bottom tower is being attacked"
 	},
 	{
 		"name": "announcer_twr_attack_rad_top",
@@ -785,7 +785,7 @@
 		"text": "Your top tower has fallen.",
 		"text_simple": " your top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsNotDeny"
+		"pretty_criteria": "A friendly top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_top_01",
@@ -793,7 +793,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsNotDeny"
+		"pretty_criteria": "A friendly top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_top_02",
@@ -801,7 +801,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsNotDeny"
+		"pretty_criteria": "A friendly top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_top_03",
@@ -809,7 +809,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsNotDeny"
+		"pretty_criteria": "A friendly top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_top_04",
@@ -817,7 +817,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsNotDeny"
+		"pretty_criteria": "A friendly top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_mid",
@@ -827,7 +827,7 @@
 		"text": "Your middle tower has fallen.",
 		"text_simple": " your middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
+		"pretty_criteria": "A friendly middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_mid_01",
@@ -835,7 +835,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
+		"pretty_criteria": "A friendly middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_mid_02",
@@ -843,7 +843,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
+		"pretty_criteria": "A friendly middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_mid_03",
@@ -851,7 +851,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
+		"pretty_criteria": "A friendly middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_mid_04",
@@ -859,7 +859,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
+		"pretty_criteria": "A friendly middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_bot",
@@ -869,7 +869,7 @@
 		"text": "Your bottom tower has fallen.",
 		"text_simple": " your bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "A friendly bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_bot_01",
@@ -877,7 +877,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "A friendly bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_bot_02",
@@ -885,7 +885,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "A friendly bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_bot_03",
@@ -893,7 +893,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "A friendly bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_yr_bot_04",
@@ -901,7 +901,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_yr_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "A friendly bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_top",
@@ -911,7 +911,7 @@
 		"text": "The enemy's top tower has fallen.",
 		"text_simple": " the enemys top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
+		"pretty_criteria": "An enemy's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_top_01",
@@ -919,7 +919,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
+		"pretty_criteria": "An enemy's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_top_02",
@@ -927,7 +927,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
+		"pretty_criteria": "An enemy's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_top_03",
@@ -935,7 +935,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
+		"pretty_criteria": "An enemy's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_top_04",
@@ -943,7 +943,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
+		"pretty_criteria": "An enemy's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_mid",
@@ -953,7 +953,7 @@
 		"text": "The enemy's middle tower has fallen.",
 		"text_simple": " the enemys middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
+		"pretty_criteria": "An enemy's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_mid_01",
@@ -961,7 +961,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
+		"pretty_criteria": "An enemy's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_mid_02",
@@ -969,7 +969,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
+		"pretty_criteria": "An enemy's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_mid_03",
@@ -977,7 +977,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
+		"pretty_criteria": "An enemy's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_mid_04",
@@ -985,7 +985,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
+		"pretty_criteria": "An enemy's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot",
@@ -995,7 +995,7 @@
 		"text": "The enemy's bottom tower has fallen.",
 		"text_simple": " the enemys bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot_01",
@@ -1003,7 +1003,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot_02",
@@ -1011,7 +1011,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot_03",
@@ -1019,7 +1019,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot_04",
@@ -1027,7 +1027,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_enm_bot_05",
@@ -1035,7 +1035,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_enm_bot_05.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "An enemy's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_rad_top",
@@ -1045,7 +1045,7 @@
 		"text": "Radiant's top tower has fallen.",
 		"text_simple": " radiants top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled top IsNotDeny"
+		"pretty_criteria": "Radiant's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_rad_top_01",
@@ -1053,7 +1053,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_rad_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled top IsNotDeny"
+		"pretty_criteria": "Radiant's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_rad_mid",
@@ -1063,7 +1063,7 @@
 		"text": "Radiant's middle tower has fallen.",
 		"text_simple": " radiants middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled middle IsNotDeny"
+		"pretty_criteria": "Radiant's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_rad_mid_01",
@@ -1071,7 +1071,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_rad_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled middle IsNotDeny"
+		"pretty_criteria": "Radiant's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_rad_bot",
@@ -1081,7 +1081,7 @@
 		"text": "Radiant's bottom tower has fallen.",
 		"text_simple": " radiants bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "Radiant's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_top",
@@ -1091,7 +1091,7 @@
 		"text": "Dire's top tower has fallen.",
 		"text_simple": " dires top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled top IsNotDeny"
+		"pretty_criteria": "Dire's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_top_01",
@@ -1099,7 +1099,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_dire_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled top IsNotDeny"
+		"pretty_criteria": "Dire's top tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_mid",
@@ -1109,7 +1109,7 @@
 		"text": "Dire's middle tower has fallen.",
 		"text_simple": " dires middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled middle IsNotDeny"
+		"pretty_criteria": "Dire's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_mid_01",
@@ -1117,7 +1117,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_dire_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled middle IsNotDeny"
+		"pretty_criteria": "Dire's middle tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_bot",
@@ -1127,7 +1127,7 @@
 		"text": "Dire's bottom tower has fallen.",
 		"text_simple": " dires bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "Dire's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_fall_dire_bot_01",
@@ -1135,7 +1135,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_fall_dire_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsBotLane IsNotDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled bottom IsNotDeny"
+		"pretty_criteria": "Dire's bottom tower was destroyed"
 	},
 	{
 		"name": "announcer_twr_deny_yr_top",
@@ -1145,7 +1145,7 @@
 		"text": "Your top tower has been denied.",
 		"text_simple": " your top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsDeny"
+		"pretty_criteria": "A friendly top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_top_01",
@@ -1153,7 +1153,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsDeny"
+		"pretty_criteria": "A friendly top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_top_02",
@@ -1161,7 +1161,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled top IsDeny"
+		"pretty_criteria": "A friendly top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_mid",
@@ -1171,7 +1171,7 @@
 		"text": "Your middle tower has been denied.",
 		"text_simple": " your middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsDeny"
+		"pretty_criteria": "A friendly middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_mid_01",
@@ -1179,7 +1179,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsDeny"
+		"pretty_criteria": "A friendly middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_mid_02",
@@ -1187,7 +1187,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsDeny"
+		"pretty_criteria": "A friendly middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_mid_03",
@@ -1195,7 +1195,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsDeny"
+		"pretty_criteria": "A friendly middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_mid_04",
@@ -1203,7 +1203,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled middle IsDeny"
+		"pretty_criteria": "A friendly middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_bot",
@@ -1213,7 +1213,7 @@
 		"text": "Your bottom tower has been denied.",
 		"text_simple": " your bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsDeny"
+		"pretty_criteria": "A friendly bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_bot_01",
@@ -1221,7 +1221,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsDeny"
+		"pretty_criteria": "A friendly bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_yr_bot_02",
@@ -1229,7 +1229,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_yr_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsTowerKilled bottom IsDeny"
+		"pretty_criteria": "A friendly bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_top",
@@ -1239,7 +1239,7 @@
 		"text": "The enemy's top tower has been denied.",
 		"text_simple": " the enemys top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
+		"pretty_criteria": "An enemy's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_top_01",
@@ -1247,7 +1247,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
+		"pretty_criteria": "An enemy's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_top_02",
@@ -1255,7 +1255,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
+		"pretty_criteria": "An enemy's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_top_03",
@@ -1263,7 +1263,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
+		"pretty_criteria": "An enemy's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_mid",
@@ -1273,7 +1273,7 @@
 		"text": "The enemy's middle tower has been denied.",
 		"text_simple": " the enemys middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
+		"pretty_criteria": "An enemy's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_mid_01",
@@ -1281,7 +1281,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
+		"pretty_criteria": "An enemy's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_mid_02",
@@ -1289,7 +1289,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
+		"pretty_criteria": "An enemy's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_bot",
@@ -1299,7 +1299,7 @@
 		"text": "The enemy's bottom tower has been denied.",
 		"text_simple": " the enemys bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
+		"pretty_criteria": "An enemy's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_bot_01",
@@ -1307,7 +1307,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
+		"pretty_criteria": "An enemy's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_bot_02",
@@ -1315,7 +1315,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
+		"pretty_criteria": "An enemy's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_enm_bot_03",
@@ -1323,7 +1323,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_enm_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
+		"pretty_criteria": "An enemy's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_top",
@@ -1333,7 +1333,7 @@
 		"text": "Radiant's top tower has been denied.",
 		"text_simple": " radiants top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled top IsDeny"
+		"pretty_criteria": "Radiant's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_top_01",
@@ -1341,7 +1341,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_rad_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled top IsDeny"
+		"pretty_criteria": "Radiant's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_mid",
@@ -1351,7 +1351,7 @@
 		"text": "Radiant's middle tower has been denied.",
 		"text_simple": " radiants middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled middle IsDeny"
+		"pretty_criteria": "Radiant's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_mid_01",
@@ -1359,7 +1359,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_rad_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled middle IsDeny"
+		"pretty_criteria": "Radiant's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_bot",
@@ -1369,7 +1369,7 @@
 		"text": "Radiant's bottom tower has been denied.",
 		"text_simple": " radiants bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled bottom IsDeny"
+		"pretty_criteria": "Radiant's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_rad_bot_01",
@@ -1377,7 +1377,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_rad_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodTowerKilled IsSpectator IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodTowerKilled bottom IsDeny"
+		"pretty_criteria": "Radiant's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_top",
@@ -1387,7 +1387,7 @@
 		"text": "Dire's top tower has been denied.",
 		"text_simple": " dires top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled top IsDeny"
+		"pretty_criteria": "Dire's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_top_01",
@@ -1395,7 +1395,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_dire_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsTopLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled top IsDeny"
+		"pretty_criteria": "Dire's top tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_mid",
@@ -1405,7 +1405,7 @@
 		"text": "Dire's middle tower has been denied.",
 		"text_simple": " dires middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled middle IsDeny"
+		"pretty_criteria": "Dire's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_mid_01",
@@ -1413,7 +1413,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_dire_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsMidLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled middle IsDeny"
+		"pretty_criteria": "Dire's middle tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_bot",
@@ -1423,7 +1423,7 @@
 		"text": "Dire's bottom tower has been denied.",
 		"text_simple": " dires bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled bottom IsDeny"
+		"pretty_criteria": "Dire's bottom tower was denied"
 	},
 	{
 		"name": "announcer_twr_deny_dire_bot_01",
@@ -1431,7 +1431,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_twr_deny_dire_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadTowerKilled IsSpectator IsBotLane IsDeny IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadTowerKilled bottom IsDeny"
+		"pretty_criteria": "Dire's bottom tower was denied"
 	},
 	{
 		"name": "announcer_rax_attack_yr_top",
@@ -1441,7 +1441,7 @@
 		"text": "Your top barracks are under attack.",
 		"text_simple": " your top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked top"
+		"pretty_criteria": "Your top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_top_01",
@@ -1449,7 +1449,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked top"
+		"pretty_criteria": "Your top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_top_02",
@@ -1457,7 +1457,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked top"
+		"pretty_criteria": "Your top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_top_03",
@@ -1465,7 +1465,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked top"
+		"pretty_criteria": "Your top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_top_04",
@@ -1473,7 +1473,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked top"
+		"pretty_criteria": "Your top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_mid",
@@ -1483,7 +1483,7 @@
 		"text": "Your middle barracks are under attack.",
 		"text_simple": " your middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked middle"
+		"pretty_criteria": "Your middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_mid_01",
@@ -1491,7 +1491,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked middle"
+		"pretty_criteria": "Your middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_mid_02",
@@ -1499,7 +1499,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked middle"
+		"pretty_criteria": "Your middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_mid_03",
@@ -1507,7 +1507,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked middle"
+		"pretty_criteria": "Your middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_mid_04",
@@ -1515,7 +1515,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked middle"
+		"pretty_criteria": "Your middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_bot",
@@ -1525,7 +1525,7 @@
 		"text": "Your bottom barracks are under attack.",
 		"text_simple": " your bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked bottom"
+		"pretty_criteria": "Your bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_bot_01",
@@ -1533,7 +1533,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked bottom"
+		"pretty_criteria": "Your bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_bot_02",
@@ -1541,7 +1541,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked bottom"
+		"pretty_criteria": "Your bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_bot_03",
@@ -1549,7 +1549,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked bottom"
+		"pretty_criteria": "Your bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_yr_bot_04",
@@ -1557,7 +1557,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_yr_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked bottom"
+		"pretty_criteria": "Your bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_top",
@@ -1567,7 +1567,7 @@
 		"text": "Radiant's top barracks are under attack.",
 		"text_simple": " radiants top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant top"
+		"pretty_criteria": "Radiant's top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_top_01",
@@ -1575,7 +1575,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_rad_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant top"
+		"pretty_criteria": "Radiant's top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_mid",
@@ -1585,7 +1585,7 @@
 		"text": "Radiant's middle barracks are under attack.",
 		"text_simple": " radiants middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant middle"
+		"pretty_criteria": "Radiant's middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_mid_01",
@@ -1593,7 +1593,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_rad_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant middle"
+		"pretty_criteria": "Radiant's middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_bot",
@@ -1603,7 +1603,7 @@
 		"text": "Radiant's bottom barracks are under attack.",
 		"text_simple": " radiants bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant bottom"
+		"pretty_criteria": "Radiant's bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_rad_bot_01",
@@ -1611,7 +1611,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_rad_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsGoodAttacked IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Radiant bottom"
+		"pretty_criteria": "Radiant's bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_top",
@@ -1621,7 +1621,7 @@
 		"text": "Dire's top barracks are under attack.",
 		"text_simple": " dires top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire top"
+		"pretty_criteria": "Dire's top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_top_01",
@@ -1629,7 +1629,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_dire_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire top"
+		"pretty_criteria": "Dire's top barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_mid",
@@ -1639,7 +1639,7 @@
 		"text": "Dire's middle barracks are under attack.",
 		"text_simple": " dires middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire middle"
+		"pretty_criteria": "Dire's middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_mid_01",
@@ -1647,7 +1647,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_dire_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire middle"
+		"pretty_criteria": "Dire's middle barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_bot",
@@ -1657,7 +1657,7 @@
 		"text": "Dire's bottom barracks are under attack.",
 		"text_simple": " dires bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire bottom"
+		"pretty_criteria": "Dire's bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_attack_dire_bot_01",
@@ -1665,7 +1665,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_attack_dire_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksAttacked Dire bottom"
+		"pretty_criteria": "Dire's bottom barracks are being attacked"
 	},
 	{
 		"name": "announcer_rax_fall_yr_top",
@@ -1675,7 +1675,7 @@
 		"text": "Your top barracks has fallen.",
 		"text_simple": " your top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled top"
+		"pretty_criteria": "A friendly top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_top_01",
@@ -1683,7 +1683,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled top"
+		"pretty_criteria": "A friendly top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_top_02",
@@ -1691,7 +1691,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled top"
+		"pretty_criteria": "A friendly top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_top_03",
@@ -1699,7 +1699,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled top"
+		"pretty_criteria": "A friendly top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_top_04",
@@ -1707,7 +1707,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled top"
+		"pretty_criteria": "A friendly top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid",
@@ -1717,7 +1717,7 @@
 		"text": "Your middle barracks has fallen.",
 		"text_simple": " your middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid_01",
@@ -1725,7 +1725,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid_02",
@@ -1733,7 +1733,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid_03",
@@ -1741,7 +1741,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid_04",
@@ -1749,7 +1749,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_mid_05",
@@ -1757,7 +1757,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_mid_05.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled middle"
+		"pretty_criteria": "A friendly middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_bot",
@@ -1767,7 +1767,7 @@
 		"text": "Your bottom barracks has fallen.",
 		"text_simple": " your bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled bottom"
+		"pretty_criteria": "A friendly bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_bot_01",
@@ -1775,7 +1775,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled bottom"
+		"pretty_criteria": "A friendly bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_bot_02",
@@ -1783,7 +1783,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled bottom"
+		"pretty_criteria": "A friendly bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_bot_03",
@@ -1791,7 +1791,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled bottom"
+		"pretty_criteria": "A friendly bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_yr_bot_04",
@@ -1799,7 +1799,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_yr_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBarracksKilled bottom"
+		"pretty_criteria": "A friendly bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_top",
@@ -1809,7 +1809,7 @@
 		"text": "The enemy's top barracks has fallen.",
 		"text_simple": " the enemys top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled top"
+		"pretty_criteria": "An enemy's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_top_01",
@@ -1817,7 +1817,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled top"
+		"pretty_criteria": "An enemy's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_top_02",
@@ -1825,7 +1825,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_top_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled top"
+		"pretty_criteria": "An enemy's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_top_03",
@@ -1833,7 +1833,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_top_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled top"
+		"pretty_criteria": "An enemy's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_top_04",
@@ -1841,7 +1841,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_top_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled top"
+		"pretty_criteria": "An enemy's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_mid",
@@ -1851,7 +1851,7 @@
 		"text": "The enemy's middle barracks has fallen.",
 		"text_simple": " the enemys middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled middle"
+		"pretty_criteria": "An enemy's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_mid_01",
@@ -1859,7 +1859,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled middle"
+		"pretty_criteria": "An enemy's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_mid_02",
@@ -1867,7 +1867,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_mid_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled middle"
+		"pretty_criteria": "An enemy's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_mid_03",
@@ -1875,7 +1875,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_mid_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled middle"
+		"pretty_criteria": "An enemy's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_mid_04",
@@ -1883,7 +1883,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_mid_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled middle"
+		"pretty_criteria": "An enemy's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot",
@@ -1893,7 +1893,7 @@
 		"text": "The enemy's bottom barracks has fallen.",
 		"text_simple": " the enemys bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot_01",
@@ -1901,7 +1901,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot_02",
@@ -1909,7 +1909,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_bot_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot_03",
@@ -1917,7 +1917,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_bot_03.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot_04",
@@ -1925,7 +1925,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_bot_04.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_enm_bot_05",
@@ -1933,7 +1933,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_enm_bot_05.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsEnemyBarracksKilled bottom"
+		"pretty_criteria": "An enemy's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_top",
@@ -1943,7 +1943,7 @@
 		"text": "Radiant's top barracks has fallen.",
 		"text_simple": " radiants top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled top"
+		"pretty_criteria": "Radiant's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_top_01",
@@ -1951,7 +1951,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_rad_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled top"
+		"pretty_criteria": "Radiant's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_mid",
@@ -1961,7 +1961,7 @@
 		"text": "Radiant's middle barracks has fallen.",
 		"text_simple": " radiants middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled middle"
+		"pretty_criteria": "Radiant's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_mid_01",
@@ -1969,7 +1969,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_rad_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled middle"
+		"pretty_criteria": "Radiant's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_bot",
@@ -1979,7 +1979,7 @@
 		"text": "Radiant's bottom barracks has fallen.",
 		"text_simple": " radiants bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled bottom"
+		"pretty_criteria": "Radiant's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_rad_bot_01",
@@ -1987,7 +1987,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_rad_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsGoodBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsGoodBarracksKilled bottom"
+		"pretty_criteria": "Radiant's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_top",
@@ -1997,7 +1997,7 @@
 		"text": "Dire's top barracks has fallen.",
 		"text_simple": " dires top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled top"
+		"pretty_criteria": "Dire's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_top_01",
@@ -2005,7 +2005,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_dire_top_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled top"
+		"pretty_criteria": "Dire's top barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_mid",
@@ -2015,7 +2015,7 @@
 		"text": "Dire's middle barracks has fallen.",
 		"text_simple": " dires middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled middle"
+		"pretty_criteria": "Dire's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_mid_01",
@@ -2023,7 +2023,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_dire_mid_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled middle"
+		"pretty_criteria": "Dire's middle barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_bot",
@@ -2033,7 +2033,7 @@
 		"text": "Dire's bottom barracks has fallen.",
 		"text_simple": " dires bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled bottom"
+		"pretty_criteria": "Dire's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_rax_fall_dire_bot_01",
@@ -2041,7 +2041,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_rax_fall_dire_bot_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Custom Isannouncer_dlc_defensegrid IsBadBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "IsBadBarracksKilled bottom"
+		"pretty_criteria": "Dire's bottom barracks was destroyed"
 	},
 	{
 		"name": "announcer_fort_dire",
@@ -3101,7 +3101,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_positive_1.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Negative Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Negative)"
+		"pretty_criteria": "Followup (Negative) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_positive_2",
@@ -3109,7 +3109,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_positive_2.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Positive Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Positive)"
+		"pretty_criteria": "Followup (Positive) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_positive_3",
@@ -3117,7 +3117,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_positive_3.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Positive Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Positive)"
+		"pretty_criteria": "Followup (Positive) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_positive_4",
@@ -3125,7 +3125,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_positive_4.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Positive Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Positive)"
+		"pretty_criteria": "Followup (Positive) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_positive_5",
@@ -3133,7 +3133,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_positive_5.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Positive Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Positive)"
+		"pretty_criteria": "Followup (Positive) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_neg_01",
@@ -3141,7 +3141,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_neg_01.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Negative Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Negative)"
+		"pretty_criteria": "Followup (Negative) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_neg_02",
@@ -3149,7 +3149,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_defensegrid/announcer_followup_neg_02.mp3",
 		"voice_id": 10307,
 		"criteria": "Followup_Negative Isannouncer_dlc_defensegrid Chance_15% IsAnnouncerVoice_DefenseGrid",
-		"pretty_criteria": "15% chance Followup (Negative)"
+		"pretty_criteria": "Followup (Negative) (15% chance)"
 	},
 	{
 		"name": "announcer_followup_respawn_01",
