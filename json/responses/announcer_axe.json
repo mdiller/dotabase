@@ -16,7 +16,7 @@
 		"text": "Choose your hero.",
 		"text_simple": " choose your hero ",
 		"criteria": "Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe IsSelectHero|Custom Isannouncer_dlc_axe IsMidOnly IsAnnouncerVoice_Axe|Custom Isannouncer_dlc_axe IsLeastPlayed IsAnnouncerVoice_Axe|Custom Isannouncer_dlc_axe IsLimitedHeroes IsAnnouncerVoice_Axe|Custom Isannouncer_dlc_axe IsCustomMode IsAnnouncerVoice_Axe|Custom Isannouncer_dlc_axe IsOneVsOne IsAnnouncerVoice_Axe",
-		"pretty_criteria": "IsSelectHero\nIsMidOnly\nIsLeastPlayed\nIsLimitedHeroes\nIsCustomMode\nIsOneVsOne"
+		"pretty_criteria": "IsSelectHero|IsMidOnly|IsLeastPlayed|IsLimitedHeroes|IsCustomMode|IsOneVsOne"
 	},
 	{
 		"name": "announcer_pick_yr",
@@ -36,7 +36,7 @@
 		"text": "Enemy's turn to pick.",
 		"text_simple": " enemys turn to pick ",
 		"criteria": "Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe IsPlayerTeam_Radiant IsPickDire|Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe IsPlayerTeam_Dire IsPickRadiant",
-		"pretty_criteria": "IsPickDire\nIsPickRadiant"
+		"pretty_criteria": "IsPickDire|IsPickRadiant"
 	},
 	{
 		"name": "announcer_pick_dire",
@@ -76,7 +76,7 @@
 		"text": "Enemy's turn to ban.",
 		"text_simple": " enemys turn to ban ",
 		"criteria": "Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_ban_dire",
@@ -133,7 +133,7 @@
 		"text": "Ten seconds remaining.",
 		"text_simple": " ten seconds remaining ",
 		"criteria": "Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe Is10SecToPick|Custom Isannouncer_dlc_axe IsTenSecondsRemaining IsAnnouncerVoice_Axe",
-		"pretty_criteria": "Is10SecToPick\nIsTenSecondsRemaining"
+		"pretty_criteria": "Is10SecToPick|IsTenSecondsRemaining"
 	},
 	{
 		"name": "announcer_count_pick_5",
@@ -143,7 +143,7 @@
 		"text": "Five seconds remaining.",
 		"text_simple": " five seconds remaining ",
 		"criteria": "Custom Isannouncer_dlc_axe IsAnnouncerVoice_Axe Is5SecToPick|Custom Isannouncer_dlc_axe IsFiveSecondsRemaining IsAnnouncerVoice_Axe",
-		"pretty_criteria": "Is5SecToPick\nIsFiveSecondsRemaining"
+		"pretty_criteria": "Is5SecToPick|IsFiveSecondsRemaining"
 	},
 	{
 		"name": "announcer_time_reserve",
@@ -180,7 +180,7 @@
 		"fullname": "announcer_dlc_axe_announcer_battle_prepare_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_battle_prepare_01.mp3",
 		"voice_id": 10061,
-		"text": "Prepare for battle! ",
+		"text": "Prepare for battle!",
 		"text_simple": " prepare for battle ",
 		"criteria": "Custom Isannouncer_dlc_axe IsPrepStart IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsPrepStart"
@@ -580,7 +580,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_yr_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Your top tower has fallen. ",
+		"text": "Your top tower has fallen.",
 		"text_simple": " your top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled top IsNotDeny"
@@ -610,7 +610,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_yr_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_yr_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Your middle tower has fallen. ",
+		"text": "Your middle tower has fallen.",
 		"text_simple": " your middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
@@ -640,7 +640,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_yr_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Your bottom tower has fallen. ",
+		"text": "Your bottom tower has fallen.",
 		"text_simple": " your bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
@@ -670,7 +670,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_rad_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_rad_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's top tower has fallen. ",
+		"text": "Radiant's top tower has fallen.",
 		"text_simple": " radiants top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodTowerKilled top IsNotDeny"
@@ -700,7 +700,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_rad_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_rad_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's middle tower has fallen. ",
+		"text": "Radiant's middle tower has fallen.",
 		"text_simple": " radiants middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodTowerKilled middle IsNotDeny"
@@ -730,7 +730,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_rad_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_rad_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's bottom tower has fallen. ",
+		"text": "Radiant's bottom tower has fallen.",
 		"text_simple": " radiants bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodTowerKilled IsSpectator IsBotLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodTowerKilled bottom IsNotDeny"
@@ -760,7 +760,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_dire_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_dire_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's top tower has fallen. ",
+		"text": "Dire's top tower has fallen.",
 		"text_simple": " dires top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadTowerKilled IsSpectator IsTopLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadTowerKilled top IsNotDeny"
@@ -790,7 +790,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_dire_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_dire_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's middle tower has fallen. ",
+		"text": "Dire's middle tower has fallen.",
 		"text_simple": " dires middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadTowerKilled IsSpectator IsMidLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadTowerKilled middle IsNotDeny"
@@ -820,7 +820,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_dire_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_dire_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's bottom tower has fallen. ",
+		"text": "Dire's bottom tower has fallen.",
 		"text_simple": " dires bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadTowerKilled IsSpectator IsBotLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadTowerKilled bottom IsNotDeny"
@@ -860,7 +860,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_enm_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_enm_top_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's top tower has fallen. ",
+		"text": "The enemy's top tower has fallen.",
 		"text_simple": " the enemys top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
@@ -890,7 +890,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_enm_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_enm_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's middle tower has fallen. ",
+		"text": "The enemy's middle tower has fallen.",
 		"text_simple": " the enemys middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
@@ -920,7 +920,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_fall_enm_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_fall_enm_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's bottom tower has fallen. ",
+		"text": "The enemy's bottom tower has fallen.",
 		"text_simple": " the enemys bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
@@ -950,7 +950,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_yr_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Your top barracks are under attack. ",
+		"text": "Your top barracks are under attack.",
 		"text_simple": " your top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked top"
@@ -980,7 +980,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_yr_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_yr_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Your middle barracks are under attack. ",
+		"text": "Your middle barracks are under attack.",
 		"text_simple": " your middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked middle"
@@ -1010,7 +1010,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_yr_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Your bottom barracks are under attack. ",
+		"text": "Your bottom barracks are under attack.",
 		"text_simple": " your bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked bottom"
@@ -1040,7 +1040,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_rad_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_rad_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's top barracks are under attack. ",
+		"text": "Radiant's top barracks are under attack.",
 		"text_simple": " radiants top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsGoodAttacked IsSpectator IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Radiant top"
@@ -1070,7 +1070,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_rad_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_rad_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's middle barracks are under attack. ",
+		"text": "Radiant's middle barracks are under attack.",
 		"text_simple": " radiants middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsGoodAttacked IsSpectator IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Radiant middle"
@@ -1100,7 +1100,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_rad_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_rad_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's bottom barracks are under attack. ",
+		"text": "Radiant's bottom barracks are under attack.",
 		"text_simple": " radiants bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsGoodAttacked IsSpectator IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Radiant bottom"
@@ -1140,7 +1140,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_dire_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_dire_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's top barracks are under attack. ",
+		"text": "Dire's top barracks are under attack.",
 		"text_simple": " dires top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsBadAttacked IsSpectator IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Dire top"
@@ -1170,7 +1170,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_dire_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_dire_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's middle barracks are under attack. ",
+		"text": "Dire's middle barracks are under attack.",
 		"text_simple": " dires middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsBadAttacked IsSpectator IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Dire middle"
@@ -1200,7 +1200,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_attack_dire_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_attack_dire_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's bottom barracks are under attack. ",
+		"text": "Dire's bottom barracks are under attack.",
 		"text_simple": " dires bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksAttacked Dire bottom"
@@ -1230,7 +1230,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_yr_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Your top barracks have fallen. ",
+		"text": "Your top barracks have fallen.",
 		"text_simple": " your top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksKilled IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksKilled top"
@@ -1270,7 +1270,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_yr_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_yr_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Your middle barracks have fallen. ",
+		"text": "Your middle barracks have fallen.",
 		"text_simple": " your middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksKilled IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksKilled middle"
@@ -1300,7 +1300,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_yr_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Your bottom barracks have fallen. ",
+		"text": "Your bottom barracks have fallen.",
 		"text_simple": " your bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBarracksKilled IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBarracksKilled bottom"
@@ -1330,7 +1330,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_rad_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_rad_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's top barracks have fallen. ",
+		"text": "Radiant's top barracks have fallen.",
 		"text_simple": " radiants top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodBarracksKilled top"
@@ -1360,7 +1360,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_rad_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_rad_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's middle barracks have fallen. ",
+		"text": "Radiant's middle barracks have fallen.",
 		"text_simple": " radiants middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodBarracksKilled middle"
@@ -1390,7 +1390,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_rad_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_rad_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's bottom barracks have fallen. ",
+		"text": "Radiant's bottom barracks have fallen.",
 		"text_simple": " radiants bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsGoodBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsGoodBarracksKilled bottom"
@@ -1420,7 +1420,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_dire_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_dire_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's top barracks have fallen. ",
+		"text": "Dire's top barracks have fallen.",
 		"text_simple": " dires top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadBarracksKilled IsSpectator IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadBarracksKilled top"
@@ -1450,7 +1450,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_dire_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_dire_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's middle barracks have fallen. ",
+		"text": "Dire's middle barracks have fallen.",
 		"text_simple": " dires middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadBarracksKilled IsSpectator IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadBarracksKilled middle"
@@ -1480,7 +1480,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_dire_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_dire_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Dire's bottom barracks have fallen. ",
+		"text": "Dire's bottom barracks have fallen.",
 		"text_simple": " dires bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsBadBarracksKilled IsSpectator IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsBadBarracksKilled bottom"
@@ -1510,7 +1510,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_enm_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_enm_top_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's top barracks have fallen. ",
+		"text": "The enemy's top barracks have fallen.",
 		"text_simple": " the enemys top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyBarracksKilled top"
@@ -1540,7 +1540,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_enm_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_enm_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's middle barracks have fallen. ",
+		"text": "The enemy's middle barracks have fallen.",
 		"text_simple": " the enemys middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyBarracksKilled middle"
@@ -1570,7 +1570,7 @@
 		"fullname": "announcer_dlc_axe_announcer_rax_fall_enm_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_rax_fall_enm_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's bottom barracks have fallen. ",
+		"text": "The enemy's bottom barracks have fallen.",
 		"text_simple": " the enemys bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyBarracksKilled bottom"
@@ -1600,7 +1600,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_yr_top_02.mp3",
 		"voice_id": 10061,
-		"text": "Your top tower has been denied. ",
+		"text": "Your top tower has been denied.",
 		"text_simple": " your top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled top IsDeny"
@@ -1630,7 +1630,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_yr_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_yr_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "Your middle tower has been denied. ",
+		"text": "Your middle tower has been denied.",
 		"text_simple": " your middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled middle IsDeny"
@@ -1660,7 +1660,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_yr_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "Your bottom tower has been denied. ",
+		"text": "Your bottom tower has been denied.",
 		"text_simple": " your bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsTowerKilled bottom IsDeny"
@@ -1690,7 +1690,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_enm_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_enm_top_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's top tower has been denied. ",
+		"text": "The enemy's top tower has been denied.",
 		"text_simple": " the enemys top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
@@ -1720,7 +1720,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_enm_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_enm_mid_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's middle tower has been denied. ",
+		"text": "The enemy's middle tower has been denied.",
 		"text_simple": " the enemys middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
@@ -1750,7 +1750,7 @@
 		"fullname": "announcer_dlc_axe_announcer_twr_deny_enm_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_twr_deny_enm_bot_02.mp3",
 		"voice_id": 10061,
-		"text": "The enemy's bottom tower has been denied. ",
+		"text": "The enemy's bottom tower has been denied.",
 		"text_simple": " the enemys bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_axe IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Axe",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
@@ -2050,7 +2050,7 @@
 		"fullname": "announcer_dlc_axe_announcer_cour_kill_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_cour_kill_dire_01.mp3",
 		"voice_id": 10061,
-		"text": "Dire's courier has been slain. ",
+		"text": "Dire's courier has been slain.",
 		"text_simple": " dires courier has been slain ",
 		"criteria": "Custom Isannouncer_dlc_axe CourierLostBad IsAnnouncerVoice_Axe",
 		"pretty_criteria": "CourierLostBad"
@@ -2090,7 +2090,7 @@
 		"fullname": "announcer_dlc_axe_announcer_cour_kill_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_cour_kill_rad_01.mp3",
 		"voice_id": 10061,
-		"text": "Radiant's courier has been slain. ",
+		"text": "Radiant's courier has been slain.",
 		"text_simple": " radiants courier has been slain ",
 		"criteria": "Custom Isannouncer_dlc_axe CourierLostGood IsAnnouncerVoice_Axe",
 		"pretty_criteria": "CourierLostGood"
@@ -2123,7 +2123,7 @@
 		"text": "Axe does not believe in killing innocent couriers. Killing courtiers is fine though.",
 		"text_simple": " axe does not believe in killing innocent couriers killing courtiers is fine though ",
 		"criteria": "Followup_Generic Isannouncer_dlc_axe CourierLostBad IsAnnouncerVoice_Axe Chance_25%|Followup_Generic Isannouncer_dlc_axe CourierLostGood IsAnnouncerVoice_Axe Chance_25%",
-		"pretty_criteria": "CourierLostBad Followup (25% chance)\nCourierLostGood Followup (25% chance)"
+		"pretty_criteria": "CourierLostBad Followup (25% chance)|CourierLostGood Followup (25% chance)"
 	},
 	{
 		"name": "announcer_cour_follow_02",
@@ -2133,14 +2133,14 @@
 		"text": "Even couriers are not safe! Now this is a battle!",
 		"text_simple": " even couriers are not safe now this is a battle ",
 		"criteria": "Followup_Generic Isannouncer_dlc_axe CourierLostBad IsAnnouncerVoice_Axe Chance_25%|Followup_Generic Isannouncer_dlc_axe CourierLostGood IsAnnouncerVoice_Axe Chance_25%",
-		"pretty_criteria": "CourierLostBad Followup (25% chance)\nCourierLostGood Followup (25% chance)"
+		"pretty_criteria": "CourierLostBad Followup (25% chance)|CourierLostGood Followup (25% chance)"
 	},
 	{
 		"name": "announcer_cour_stumpy_kill_01",
 		"fullname": "announcer_dlc_axe_announcer_cour_stumpy_kill_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_cour_stumpy_kill_01.mp3",
 		"voice_id": 10061,
-		"text": " There fell Stumpy, sad to say. Axe made Stumpy what he is today!",
+		"text": "There fell Stumpy, sad to say. Axe made Stumpy what he is today!",
 		"text_simple": " there fell stumpy sad to say axe made stumpy what he is today ",
 		"pretty_criteria": "Unused"
 	},
@@ -2209,7 +2209,7 @@
 		"fullname": "announcer_dlc_axe_announcer_roshan_fallen_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_roshan_fallen_dire_01.mp3",
 		"voice_id": 10061,
-		"text": "Roshan has fallen to the Dire! ",
+		"text": "Roshan has fallen to the Dire!",
 		"text_simple": " roshan has fallen to the dire ",
 		"criteria": "Custom Isannouncer_dlc_axe IsRoshanKilledBad IsAnnouncerVoice_Axe",
 		"pretty_criteria": "Roshan killed by The Dire"
@@ -2219,7 +2219,7 @@
 		"fullname": "announcer_dlc_axe_announcer_roshan_fallen_dire_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_roshan_fallen_dire_02.mp3",
 		"voice_id": 10061,
-		"text": "Roshan has fallen to the Dire! ",
+		"text": "Roshan has fallen to the Dire!",
 		"text_simple": " roshan has fallen to the dire ",
 		"criteria": "Custom Isannouncer_dlc_axe IsRoshanKilledBad IsAnnouncerVoice_Axe",
 		"pretty_criteria": "Roshan killed by The Dire"
@@ -2259,7 +2259,7 @@
 		"fullname": "announcer_dlc_axe_announcer_roshan_fallen_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_roshan_fallen_rad_01.mp3",
 		"voice_id": 10061,
-		"text": "Roshan has fallen to the Radiant! ",
+		"text": "Roshan has fallen to the Radiant!",
 		"text_simple": " roshan has fallen to the radiant ",
 		"criteria": "Custom Isannouncer_dlc_axe IsRoshanKilledGood IsAnnouncerVoice_Axe",
 		"pretty_criteria": "Roshan killed by The Radiant"
@@ -2269,7 +2269,7 @@
 		"fullname": "announcer_dlc_axe_announcer_roshan_fallen_rad_02",
 		"mp3": "/sounds/vo/announcer_dlc_axe/announcer_roshan_fallen_rad_02.mp3",
 		"voice_id": 10061,
-		"text": "Roshan has fallen to the Radiant! ",
+		"text": "Roshan has fallen to the Radiant!",
 		"text_simple": " roshan has fallen to the radiant ",
 		"criteria": "Custom Isannouncer_dlc_axe IsRoshanKilledGood IsAnnouncerVoice_Axe",
 		"pretty_criteria": "Roshan killed by The Radiant"
@@ -2302,7 +2302,7 @@
 		"text": "Axe dreams about Roshan sometimes. Axe wakes sweating in the dark, clutching for his axe, a scream rising in his throat and... Never mind.",
 		"text_simple": " axe dreams about roshan sometimes axe wakes sweating in the dark clutching for his axe a scream rising in his throat and never mind ",
 		"criteria": "Followup_Generic Isannouncer_dlc_axe IsRoshanKilledBad IsAnnouncerVoice_Axe Chance_5%|Followup_Generic Isannouncer_dlc_axe IsRoshanKilledGood IsAnnouncerVoice_Axe Chance_5%",
-		"pretty_criteria": "Roshan killed by The Dire Followup (5% chance)\nRoshan killed by The Radiant Followup (5% chance)"
+		"pretty_criteria": "Roshan killed by The Dire Followup (5% chance)|Roshan killed by The Radiant Followup (5% chance)"
 	},
 	{
 		"name": "announcer_victory_dire_01",
@@ -2447,7 +2447,7 @@
 		"text": "Captains mode.",
 		"text_simple": " captains mode ",
 		"criteria": "Custom Isannouncer_dlc_axe IsCaptainsMode IsDraftBegin IsAnnouncerVoice_Axe|Custom Isannouncer_dlc_axe IsReverseCaptainsMode IsDraftBegin IsAnnouncerVoice_Axe",
-		"pretty_criteria": "IsCaptainsMode IsDraftBegin\nIsReverseCaptainsMode IsDraftBegin"
+		"pretty_criteria": "IsCaptainsMode IsDraftBegin|IsReverseCaptainsMode IsDraftBegin"
 	},
 	{
 		"name": "announcer_type_random_draft",

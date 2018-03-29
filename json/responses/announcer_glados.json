@@ -67,7 +67,7 @@
 		"text": "Their pick.",
 		"text_simple": " their pick ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsPlayerTeam_Radiant IsPickDire|Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsPlayerTeam_Dire IsPickRadiant",
-		"pretty_criteria": "IsPickDire\nIsPickRadiant"
+		"pretty_criteria": "IsPickDire|IsPickRadiant"
 	},
 	{
 		"name": "ann_glados_ban_dire_01",
@@ -117,7 +117,7 @@
 		"text": "Their ban.",
 		"text_simple": " their ban ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "ann_glados_ban_enm_02",
@@ -127,7 +127,7 @@
 		"text": "Now they get to ban.",
 		"text_simple": " now they get to ban ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "ann_glados_ban_yr_01",
@@ -157,7 +157,7 @@
 		"text": "Choose your hero.",
 		"text_simple": " choose your hero ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsSelectHero|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados|Custom Isannouncer_dlc_glados IsCustomMode IsAnnouncerVoice_Glados|Custom Isannouncer_dlc_glados IsOneVsOne IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsSelectHero\nIsLimitedHeroes\nIsCustomMode\nIsOneVsOne\nIsLimitedHeroes Followup"
+		"pretty_criteria": "IsSelectHero|IsLimitedHeroes|IsCustomMode|IsOneVsOne|IsLimitedHeroes Followup"
 	},
 	{
 		"name": "ann_glados_now_select_01",
@@ -167,7 +167,7 @@
 		"text": "Time to select from all these... things.",
 		"text_simple": " time to select from all these things ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsSelectHero|Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsSelectHero\nIsAllPick"
+		"pretty_criteria": "IsSelectHero|IsAllPick"
 	},
 	{
 		"name": "ann_glados_team_complete_dire_01",
@@ -201,7 +201,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_team_complete_yr_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_team_complete_yr_01.mp3",
 		"voice_id": 10315,
-		"text": "Your team is ready. ",
+		"text": "Your team is ready.",
 		"text_simple": " your team is ready ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados IsSelectHero Chance_20%",
 		"pretty_criteria": "IsSelectHero (20% chance)"
@@ -264,7 +264,7 @@
 		"text": "Ten seconds to go.",
 		"text_simple": " ten seconds to go ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados Is10SecToPick|Custom Isannouncer_dlc_glados IsTenSecondsRemaining IsAnnouncerVoice_Glados",
-		"pretty_criteria": "Is10SecToPick\nIsTenSecondsRemaining"
+		"pretty_criteria": "Is10SecToPick|IsTenSecondsRemaining"
 	},
 	{
 		"name": "ann_glados_count_pick_02",
@@ -274,7 +274,7 @@
 		"text": "Five seconds.",
 		"text_simple": " five seconds ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAnnouncerVoice_Glados Is5SecToPick|Custom Isannouncer_dlc_glados IsFiveSecondsRemaining IsAnnouncerVoice_Glados",
-		"pretty_criteria": "Is5SecToPick\nIsFiveSecondsRemaining"
+		"pretty_criteria": "Is5SecToPick|IsFiveSecondsRemaining"
 	},
 	{
 		"name": "ann_glados_time_extra_01",
@@ -438,7 +438,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_count_battle_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_count_battle_01.mp3",
 		"voice_id": 10315,
-		"text": "Battle starts in 3, 2, 1. ",
+		"text": "Battle starts in 3, 2, 1.",
 		"text_simple": " battle starts in 3 2 1 ",
 		"criteria": "Custom Isannouncer_dlc_glados IsGameStart IsAnnouncerVoice_Glados",
 		"pretty_criteria": "As the game starts"
@@ -498,7 +498,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_dire_01.mp3",
 		"voice_id": 10315,
-		"text": "Dire's ancient is under attack. ",
+		"text": "Dire's ancient is under attack.",
 		"text_simple": " dires ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsBadAttacked IsSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked Dire"
@@ -508,7 +508,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_dire_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_dire_02.mp3",
 		"voice_id": 10315,
-		"text": "Dire's ancient is being attacked. ",
+		"text": "Dire's ancient is being attacked.",
 		"text_simple": " dires ancient is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsBadAttacked IsSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked Dire"
@@ -518,7 +518,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_rad_01.mp3",
 		"voice_id": 10315,
-		"text": "Radiant's ancient is under attack. ",
+		"text": "Radiant's ancient is under attack.",
 		"text_simple": " radiants ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsGoodAttacked IsSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked Radiant"
@@ -528,7 +528,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_rad_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_rad_02.mp3",
 		"voice_id": 10315,
-		"text": "Radiant's ancient is being attacked. ",
+		"text": "Radiant's ancient is being attacked.",
 		"text_simple": " radiants ancient is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsGoodAttacked IsSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked Radiant"
@@ -538,7 +538,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_yr_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_yr_01.mp3",
 		"voice_id": 10315,
-		"text": "Your ancient is under attack. ",
+		"text": "Your ancient is under attack.",
 		"text_simple": " your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsNotSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked"
@@ -548,7 +548,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_yr_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_yr_02.mp3",
 		"voice_id": 10315,
-		"text": "Isn't that your ancient under attack? ",
+		"text": "Isn't that your ancient under attack?",
 		"text_simple": " isnt that your ancient under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsNotSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked"
@@ -558,7 +558,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_yr_03",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_yr_03.mp3",
 		"voice_id": 10315,
-		"text": "I think your ancient's under attack. ",
+		"text": "I think your ancient's under attack.",
 		"text_simple": " i think your ancients under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsNotSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked"
@@ -568,7 +568,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_yr_04",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_yr_04.mp3",
 		"voice_id": 10315,
-		"text": "By the way, your ancient is under attack. ",
+		"text": "By the way, your ancient is under attack.",
 		"text_simple": " by the way your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsNotSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked"
@@ -578,7 +578,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_anc_attack_yr_05",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_anc_attack_yr_05.mp3",
 		"voice_id": 10315,
-		"text": "Your ancient's under attack. ",
+		"text": "Your ancient's under attack.",
 		"text_simple": " your ancients under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsFortAttacked IsNotSpectator IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsFortAttacked"
@@ -668,7 +668,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_dire_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_dire_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Dire's bottom tower is under attack. ",
+		"text": "Dire's bottom tower is under attack.",
 		"text_simple": " dires bottom tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Dire's bottom tower is being attacked"
@@ -698,7 +698,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_dire_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_dire_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Dire's middle tower is under attack. ",
+		"text": "Dire's middle tower is under attack.",
 		"text_simple": " dires middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsBadAttacked IsSpectator IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Dire's middle tower is being attacked"
@@ -728,7 +728,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_dire_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_dire_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Dire's top tower is under attack. ",
+		"text": "Dire's top tower is under attack.",
 		"text_simple": " dires top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsBadAttacked IsSpectator IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Dire's top tower is being attacked"
@@ -758,7 +758,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_rad_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_rad_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Radiant's bottom tower is being attacked. ",
+		"text": "Radiant's bottom tower is being attacked.",
 		"text_simple": " radiants bottom tower is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsGoodAttacked IsSpectator IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Radiant's bottom tower is being attacked"
@@ -778,7 +778,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_rad_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_rad_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Radiant's middle tower is under attack. ",
+		"text": "Radiant's middle tower is under attack.",
 		"text_simple": " radiants middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsGoodAttacked IsSpectator IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Radiant's middle tower is being attacked"
@@ -808,7 +808,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_rad_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_rad_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Radiant's top tower is under attack. ",
+		"text": "Radiant's top tower is under attack.",
 		"text_simple": " radiants top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsGoodAttacked IsSpectator IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "Radiant's top tower is being attacked"
@@ -838,7 +838,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_yr_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom tower is under attack. ",
+		"text": "Your bottom tower is under attack.",
 		"text_simple": " your bottom tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "A bottom tower is being attacked"
@@ -878,7 +878,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_yr_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Your middle tower is under attack. ",
+		"text": "Your middle tower is under attack.",
 		"text_simple": " your middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "A middle tower is being attacked"
@@ -918,7 +918,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_attack_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_attack_yr_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Your top tower is under attack. ",
+		"text": "Your top tower is under attack.",
 		"text_simple": " your top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "A top tower is being attacked"
@@ -1078,7 +1078,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_enm_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's bottom tower has fallen. ",
+		"text": "The enemy's bottom tower has fallen.",
 		"text_simple": " the enemys bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
@@ -1098,7 +1098,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_enm_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's middle tower has fallen. ",
+		"text": "The enemy's middle tower has fallen.",
 		"text_simple": " the enemys middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
@@ -1118,7 +1118,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_enm_top_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's top tower has fallen. ",
+		"text": "The enemy's top tower has fallen.",
 		"text_simple": " the enemys top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
@@ -1138,7 +1138,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_yr_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom tower has fallen. ",
+		"text": "Your bottom tower has fallen.",
 		"text_simple": " your bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
@@ -1158,7 +1158,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_yr_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Your middle tower has fallen. ",
+		"text": "Your middle tower has fallen.",
 		"text_simple": " your middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
@@ -1178,7 +1178,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_fall_yr_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Your top tower has fallen. ",
+		"text": "Your top tower has fallen.",
 		"text_simple": " your top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled top IsNotDeny"
@@ -1258,7 +1258,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_enm_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's bottom tower has been denied. ",
+		"text": "The enemy's bottom tower has been denied.",
 		"text_simple": " the enemys bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
@@ -1268,7 +1268,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_enm_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's middle tower has been denied. ",
+		"text": "The enemy's middle tower has been denied.",
 		"text_simple": " the enemys middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
@@ -1278,7 +1278,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_enm_top_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's top tower has been denied. ",
+		"text": "The enemy's top tower has been denied.",
 		"text_simple": " the enemys top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
@@ -1288,7 +1288,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_yr_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom tower has been denied. ",
+		"text": "Your bottom tower has been denied.",
 		"text_simple": " your bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled bottom IsDeny"
@@ -1298,7 +1298,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_yr_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Your middle tower has been denied. ",
+		"text": "Your middle tower has been denied.",
 		"text_simple": " your middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled middle IsDeny"
@@ -1308,7 +1308,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_twr_deny_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_twr_deny_yr_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Your top tower has been denied. ",
+		"text": "Your top tower has been denied.",
 		"text_simple": " your top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_glados IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsTowerKilled top IsDeny"
@@ -1438,7 +1438,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom barracks is under attack. ",
+		"text": "Your bottom barracks is under attack.",
 		"text_simple": " your bottom barracks is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked bottom"
@@ -1448,7 +1448,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_bot_02.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom barracks is being attacked. ",
+		"text": "Your bottom barracks is being attacked.",
 		"text_simple": " your bottom barracks is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked bottom"
@@ -1458,7 +1458,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Your middle barracks is under attack. ",
+		"text": "Your middle barracks is under attack.",
 		"text_simple": " your middle barracks is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked middle"
@@ -1468,7 +1468,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_mid_02.mp3",
 		"voice_id": 10315,
-		"text": "Your middle barracks is being attacked. ",
+		"text": "Your middle barracks is being attacked.",
 		"text_simple": " your middle barracks is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked middle"
@@ -1478,7 +1478,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Your top barracks is under attack. ",
+		"text": "Your top barracks is under attack.",
 		"text_simple": " your top barracks is under attack ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked top"
@@ -1488,7 +1488,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_attack_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_attack_yr_top_02.mp3",
 		"voice_id": 10315,
-		"text": "Your top barracks is being attacked. ",
+		"text": "Your top barracks is being attacked.",
 		"text_simple": " your top barracks is being attacked ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksAttacked top"
@@ -1618,7 +1618,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_enm_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's bottom barracks has fallen. ",
+		"text": "The enemy's bottom barracks has fallen.",
 		"text_simple": " the enemys bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyBarracksKilled bottom"
@@ -1638,7 +1638,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_enm_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's middle barracks has fallen. ",
+		"text": "The enemy's middle barracks has fallen.",
 		"text_simple": " the enemys middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyBarracksKilled middle"
@@ -1658,7 +1658,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_enm_top_01.mp3",
 		"voice_id": 10315,
-		"text": "The enemy's top barracks has fallen. ",
+		"text": "The enemy's top barracks has fallen.",
 		"text_simple": " the enemys top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyBarracksKilled top"
@@ -1678,7 +1678,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_yr_bot_01.mp3",
 		"voice_id": 10315,
-		"text": "Your bottom barracks has fallen. ",
+		"text": "Your bottom barracks has fallen.",
 		"text_simple": " your bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksKilled IsBotLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksKilled bottom"
@@ -1698,7 +1698,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_yr_mid_01.mp3",
 		"voice_id": 10315,
-		"text": "Your middle barracks has fallen. ",
+		"text": "Your middle barracks has fallen.",
 		"text_simple": " your middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksKilled IsMidLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksKilled middle"
@@ -1718,7 +1718,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_rax_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_rax_fall_yr_top_01.mp3",
 		"voice_id": 10315,
-		"text": "Your top barracks has fallen. ",
+		"text": "Your top barracks has fallen.",
 		"text_simple": " your top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBarracksKilled IsTopLane IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsBarracksKilled top"
@@ -1938,7 +1938,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_mega_now_enm_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_mega_now_enm_01.mp3",
 		"voice_id": 10315,
-		"text": "Your enemy has spawned megacreeps. ",
+		"text": "Your enemy has spawned megacreeps.",
 		"text_simple": " your enemy has spawned megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_glados IsEnemyMegaCreeps IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsEnemyMegaCreeps"
@@ -1948,7 +1948,7 @@
 		"fullname": "announcer_dlc_glados_ann_glados_mega_now_you_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_mega_now_you_01.mp3",
 		"voice_id": 10315,
-		"text": "You have spawned megacreeps. ",
+		"text": "You have spawned megacreeps.",
 		"text_simple": " you have spawned megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_glados IsMegaCreeps IsAnnouncerVoice_Glados",
 		"pretty_criteria": "IsMegaCreeps"
@@ -1961,17 +1961,17 @@
 		"text": "You lost.",
 		"text_simple": " you lost ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Radiant Chance_15% IsAnnouncerVoice_Glados|Custom Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Dire Chance_15% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory (15% chance)\nIsGoodVictory (15% chance)"
+		"pretty_criteria": "IsBadVictory (15% chance)|IsGoodVictory (15% chance)"
 	},
 	{
 		"name": "ann_glados_victory_01",
 		"fullname": "announcer_dlc_glados_ann_glados_victory_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_victory_01.mp3",
 		"voice_id": 10315,
-		"text": "You won. ",
+		"text": "You won.",
 		"text_simple": " you won ",
 		"criteria": "Custom Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_20% IsAnnouncerVoice_Glados|Custom Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_20% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory (20% chance)\nIsGoodVictory (20% chance)"
+		"pretty_criteria": "IsBadVictory (20% chance)|IsGoodVictory (20% chance)"
 	},
 	{
 		"name": "ann_glados_victory_dire_01",
@@ -2061,7 +2061,7 @@
 		"text": "Wait until your loved ones hear about this. This should make them proud. Or bored. One of those.",
 		"text_simple": " wait until your loved ones hear about this this should make them proud or bored one of those ",
 		"criteria": "Followup_Generic Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "ann_glados_vict_follow_02",
@@ -2071,7 +2071,7 @@
 		"text": "Well, really there should be an entirely new word for whatever it was you just stumbled and pinwheeled your arms through. But I guess for now let's call it winning.",
 		"text_simple": " well really there should be an entirely new word for whatever it was you just stumbled and pinwheeled your arms through but i guess for now lets call it winning ",
 		"criteria": "Followup_Generic Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "ann_glados_vict_follow_03",
@@ -2081,7 +2081,7 @@
 		"text": "All your little goblins destroyed a magic whatever-it-was in the middle of a forest. That's quite a skill you have. If I were you I'd wait by the mailbox for my big check.",
 		"text_simple": " all your little goblins destroyed a magic whateveritwas in the middle of a forest thats quite a skill you have if i were you id wait by the mailbox for my big check ",
 		"criteria": "Followup_Generic Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "ann_glados_vict_follow_04",
@@ -2091,7 +2091,7 @@
 		"text": "I was going to say it's not that big a deal, but then I looked at your file and saw the list of your other accomplishements. The space on the form where they should have been, I mean.",
 		"text_simple": " i was going to say its not that big a deal but then i looked at your file and saw the list of your other accomplishements the space on the form where they should have been i mean ",
 		"criteria": "Followup_Generic Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "ann_glados_vict_follow_05",
@@ -2101,177 +2101,177 @@
 		"text": "Congratulations. You solved Dota. You are the best hero. Turn off your computer now.",
 		"text_simple": " congratulations you solved dota you are the best hero turn off your computer now ",
 		"criteria": "Followup_Generic Isannouncer_dlc_glados IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_01",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_01",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_01.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Dota. ",
+		"text": "Welcome to Dota.",
 		"text_simple": " welcome to dota ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_02",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_02",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_02.mp3",
 		"voice_id": 10315,
-		"text": "Well, look who's come crawling back. ",
+		"text": "Well, look who's come crawling back.",
 		"text_simple": " well look whos come crawling back ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_03",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_03",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_03.mp3",
 		"voice_id": 10315,
-		"text": "Oh, it's you. ",
+		"text": "Oh, it's you.",
 		"text_simple": " oh its you ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_04",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_04",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_04.mp3",
 		"voice_id": 10315,
-		"text": "This is Dota. ",
+		"text": "This is Dota.",
 		"text_simple": " this is dota ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_05",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_05",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_05.mp3",
 		"voice_id": 10315,
-		"text": "Oh good, you're back. ",
+		"text": "Oh good, you're back.",
 		"text_simple": " oh good youre back ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_06",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_06",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_06.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Ota. The D is silent. ",
+		"text": "Welcome to Ota. The D is silent.",
 		"text_simple": " welcome to ota the d is silent ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_07",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_07",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_07.mp3",
 		"voice_id": 10315,
-		"text": "Hello. ",
+		"text": "Hello.",
 		"text_simple": " hello ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_08",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_08",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_08.mp3",
 		"voice_id": 10315,
-		"text": "You're back. You must really enjoy crushing defeat. ",
+		"text": "You're back. You must really enjoy crushing defeat.",
 		"text_simple": " youre back you must really enjoy crushing defeat ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_10",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_10",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_10.mp3",
 		"voice_id": 10315,
-		"text": "Today is a good day to die in a forest defending a statue from goblins. ",
+		"text": "Today is a good day to die in a forest defending a statue from goblins.",
 		"text_simple": " today is a good day to die in a forest defending a statue from goblins ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_11",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_11",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_11.mp3",
 		"voice_id": 10315,
-		"text": "Hello. I hope you're ready this time. ",
+		"text": "Hello. I hope you're ready this time.",
 		"text_simple": " hello i hope youre ready this time ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_12",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_12",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_12.mp3",
 		"voice_id": 10315,
-		"text": "You must be the one the others were talking about. The-well, I'm sure you'll do fine. ",
+		"text": "You must be the one the others were talking about. The-well, I'm sure you'll do fine.",
 		"text_simple": " you must be the one the others were talking about thewell im sure youll do fine ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_13",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_13",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_13.mp3",
 		"voice_id": 10315,
-		"text": "You must be the one the others were talking about. That talent-less one. ",
+		"text": "You must be the one the others were talking about. That talent-less one.",
 		"text_simple": " you must be the one the others were talking about that talentless one ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_14",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_14",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_14.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Dota. It's the hot new game you've been reading about in your eating magazines. ",
+		"text": "Welcome to Dota. It's the hot new game you've been reading about in your eating magazines.",
 		"text_simple": " welcome to dota its the hot new game youve been reading about in your eating magazines ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_10%",
-		"pretty_criteria": "IsAllPick (10% chance)\nIsMidOnly (10% chance)\nIsLeastPlayed (10% chance)\nIsLimitedHeroes (10% chance)"
+		"pretty_criteria": "IsAllPick (10% chance)|IsMidOnly (10% chance)|IsLeastPlayed (10% chance)|IsLimitedHeroes (10% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_15",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_15",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_15.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Dota. Don't forget your little plastic sword. And all your chins. And your giant flagon of gravy. ",
+		"text": "Welcome to Dota. Don't forget your little plastic sword. And all your chins. And your giant flagon of gravy.",
 		"text_simple": " welcome to dota dont forget your little plastic sword and all your chins and your giant flagon of gravy ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_10%",
-		"pretty_criteria": "IsAllPick (10% chance)\nIsMidOnly (10% chance)\nIsLeastPlayed (10% chance)\nIsLimitedHeroes (10% chance)"
+		"pretty_criteria": "IsAllPick (10% chance)|IsMidOnly (10% chance)|IsLeastPlayed (10% chance)|IsLimitedHeroes (10% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_16",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_16",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_16.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Medieval Times. How many in your party tonight? ",
+		"text": "Welcome to Medieval Times. How many in your party tonight?",
 		"text_simple": " welcome to medieval times how many in your party tonight ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados IsEvening Chance_1%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados IsEvening Chance_1%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados IsEvening Chance_1%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados IsEvening Chance_1%",
-		"pretty_criteria": "IsAllPick IsEvening (1% chance)\nIsMidOnly IsEvening (1% chance)\nIsLeastPlayed IsEvening (1% chance)\nIsLimitedHeroes IsEvening (1% chance)"
+		"pretty_criteria": "IsAllPick IsEvening (1% chance)|IsMidOnly IsEvening (1% chance)|IsLeastPlayed IsEvening (1% chance)|IsLimitedHeroes IsEvening (1% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_17",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_17",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_17.mp3",
 		"voice_id": 10315,
-		"text": "Welcome to Dota. It's like chess with one piece and a forest. ",
+		"text": "Welcome to Dota. It's like chess with one piece and a forest.",
 		"text_simple": " welcome to dota its like chess with one piece and a forest ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_19",
 		"fullname": "announcer_dlc_glados_ann_glados_prelim_19",
 		"mp3": "/sounds/vo/announcer_dlc_glados/ann_glados_prelim_19.mp3",
 		"voice_id": 10315,
-		"text": "You must be the one the others were talking about. The one with all the chins. ",
+		"text": "You must be the one the others were talking about. The one with all the chins.",
 		"text_simple": " you must be the one the others were talking about the one with all the chins ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_10%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_10%",
-		"pretty_criteria": "IsAllPick (10% chance)\nIsMidOnly (10% chance)\nIsLeastPlayed (10% chance)\nIsLimitedHeroes (10% chance)"
+		"pretty_criteria": "IsAllPick (10% chance)|IsMidOnly (10% chance)|IsLeastPlayed (10% chance)|IsLimitedHeroes (10% chance)"
 	},
 	{
 		"name": "ann_glados_prelim_20",
@@ -2281,7 +2281,7 @@
 		"text": "Welcome to Dota.",
 		"text_simple": " welcome to dota ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados Chance_50%|Custom Isannouncer_dlc_glados IsLimitedHeroes IsAnnouncerVoice_Glados Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "ann_glados_gamemode_01",
@@ -2291,7 +2291,7 @@
 		"text": "All pick.",
 		"text_simple": " all pick ",
 		"criteria": "Custom Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsAllPick IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsAllPick\nIsAllPick Followup"
+		"pretty_criteria": "IsAllPick|IsAllPick Followup"
 	},
 	{
 		"name": "ann_glados_gamemode_09",
@@ -2301,7 +2301,7 @@
 		"text": "Mid only.",
 		"text_simple": " mid only ",
 		"criteria": "Custom Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsMidOnly IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsMidOnly\nIsMidOnly Followup"
+		"pretty_criteria": "IsMidOnly|IsMidOnly Followup"
 	},
 	{
 		"name": "ann_glados_gamemode_11",
@@ -2311,7 +2311,7 @@
 		"text": "Least played.",
 		"text_simple": " least played ",
 		"criteria": "Custom Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados|Followup_Generic Isannouncer_dlc_glados IsLeastPlayed IsAnnouncerVoice_Glados",
-		"pretty_criteria": "IsLeastPlayed\nIsLeastPlayed Followup"
+		"pretty_criteria": "IsLeastPlayed|IsLeastPlayed Followup"
 	},
 	{
 		"name": "ann_glados_gamemode_02",
@@ -2848,7 +2848,7 @@
 		"text": "This should be interesting.",
 		"text_simple": " this should be interesting ",
 		"criteria": "Followup_Negative Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Negative_Ongoing Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Positive Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "10% chance Followup (Negative)\n10% chance Followup (Ongoing Negative)\n10% chance Followup (Positive)"
+		"pretty_criteria": "10% chance Followup (Negative)|10% chance Followup (Ongoing Negative)|10% chance Followup (Positive)"
 	},
 	{
 		"name": "ann_glados_neutral_followup_02",
@@ -2858,7 +2858,7 @@
 		"text": "I was on the edge of my seat.",
 		"text_simple": " i was on the edge of my seat ",
 		"criteria": "Followup_Negative Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Positive Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "10% chance Followup (Negative)\n10% chance Followup (Positive)"
+		"pretty_criteria": "10% chance Followup (Negative)|10% chance Followup (Positive)"
 	},
 	{
 		"name": "ann_glados_neutral_followup_05",
@@ -2868,7 +2868,7 @@
 		"text": "Let's watch and see what happens.",
 		"text_simple": " lets watch and see what happens ",
 		"criteria": "Followup_Negative Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Negative_Ongoing Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Positive Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "10% chance Followup (Negative)\n10% chance Followup (Ongoing Negative)\n10% chance Followup (Positive)"
+		"pretty_criteria": "10% chance Followup (Negative)|10% chance Followup (Ongoing Negative)|10% chance Followup (Positive)"
 	},
 	{
 		"name": "ann_glados_neutral_followup_08",
@@ -2878,7 +2878,7 @@
 		"text": "Good.",
 		"text_simple": " good ",
 		"criteria": "Followup_Negative Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Positive Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "10% chance Followup (Negative)\n10% chance Followup (Positive)"
+		"pretty_criteria": "10% chance Followup (Negative)|10% chance Followup (Positive)"
 	},
 	{
 		"name": "ann_glados_neutral_followup_10",
@@ -2888,7 +2888,7 @@
 		"text": "In case you weren't paying attention.",
 		"text_simple": " in case you werent paying attention ",
 		"criteria": "Followup_Negative Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Negative_Ongoing Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados|Followup_Positive Isannouncer_dlc_glados Chance_10% IsAnnouncerVoice_Glados",
-		"pretty_criteria": "10% chance Followup (Negative)\n10% chance Followup (Ongoing Negative)\n10% chance Followup (Positive)"
+		"pretty_criteria": "10% chance Followup (Negative)|10% chance Followup (Ongoing Negative)|10% chance Followup (Positive)"
 	},
 	{
 		"name": "ann_glados_event_neg_01",

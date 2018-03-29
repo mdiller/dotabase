@@ -17,7 +17,7 @@
 		"text": "Enemy's turn to pick.",
 		"text_simple": " enemys turn to pick ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsPlayerTeam_Radiant IsPickDire|Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsPlayerTeam_Dire IsPickRadiant",
-		"pretty_criteria": "IsPickDire\nIsPickRadiant"
+		"pretty_criteria": "IsPickDire|IsPickRadiant"
 	},
 	{
 		"name": "announcer_draft_pick_rad",
@@ -57,7 +57,7 @@
 		"text": "Enemy's turn to ban.",
 		"text_simple": " enemys turn to ban ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_draft_ban_rad",
@@ -114,7 +114,7 @@
 		"text": "Choose your hero.",
 		"text_simple": " choose your hero ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsSelectHero|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsCustomMode IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsOneVsOne IsAnnouncerVoice_Trine|Followup_Generic Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsSelectHero\nIsLimitedHeroes\nIsCustomMode\nIsOneVsOne\nIsLimitedHeroes Followup"
+		"pretty_criteria": "IsSelectHero|IsLimitedHeroes|IsCustomMode|IsOneVsOne|IsLimitedHeroes Followup"
 	},
 	{
 		"name": "announcer_draft_choose_hero_02",
@@ -134,7 +134,7 @@
 		"text": "Choose wisely.",
 		"text_simple": " choose wisely ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine IsSelectHero|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsCustomMode IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsOneVsOne IsAnnouncerVoice_Trine|Followup_Generic Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsSelectHero\nIsLimitedHeroes\nIsCustomMode\nIsOneVsOne\nIsLimitedHeroes Followup"
+		"pretty_criteria": "IsSelectHero|IsLimitedHeroes|IsCustomMode|IsOneVsOne|IsLimitedHeroes Followup"
 	},
 	{
 		"name": "announcer_draft_count_ten",
@@ -144,7 +144,7 @@
 		"text": "Ten seconds remaining.",
 		"text_simple": " ten seconds remaining ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine Is10SecToPick|Custom Isannouncer_dlc_trine IsTenSecondsRemaining IsAnnouncerVoice_Trine",
-		"pretty_criteria": "Is10SecToPick\nIsTenSecondsRemaining"
+		"pretty_criteria": "Is10SecToPick|IsTenSecondsRemaining"
 	},
 	{
 		"name": "announcer_draft_count_five",
@@ -154,7 +154,7 @@
 		"text": "Five seconds remaining.",
 		"text_simple": " five seconds remaining ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnouncerVoice_Trine Is5SecToPick|Custom Isannouncer_dlc_trine IsFiveSecondsRemaining IsAnnouncerVoice_Trine",
-		"pretty_criteria": "Is5SecToPick\nIsFiveSecondsRemaining"
+		"pretty_criteria": "Is5SecToPick|IsFiveSecondsRemaining"
 	},
 	{
 		"name": "announcer_draft_count_reserve",
@@ -278,7 +278,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_01.mp3",
 		"voice_id": 10348,
-		"text": "The battle begins! ",
+		"text": "The battle begins!",
 		"text_simple": " the battle begins ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -288,7 +288,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_02.mp3",
 		"voice_id": 10348,
-		"text": "To battle! ",
+		"text": "To battle!",
 		"text_simple": " to battle ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -298,7 +298,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_03",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_03.mp3",
 		"voice_id": 10348,
-		"text": "Off to glorious battle. ",
+		"text": "Off to glorious battle.",
 		"text_simple": " off to glorious battle ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -308,7 +308,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_04",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_04.mp3",
 		"voice_id": 10348,
-		"text": "Heroes rode out to the field of glory. ",
+		"text": "Heroes rode out to the field of glory.",
 		"text_simple": " heroes rode out to the field of glory ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -318,7 +318,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_05",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_05.mp3",
 		"voice_id": 10348,
-		"text": "May the best team win. ",
+		"text": "May the best team win.",
 		"text_simple": " may the best team win ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -328,7 +328,7 @@
 		"fullname": "announcer_dlc_trine_announcer_battle_begin_06",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_begin_06.mp3",
 		"voice_id": 10348,
-		"text": "To victory or peril. ",
+		"text": "To victory or peril.",
 		"text_simple": " to victory or peril ",
 		"criteria": "Custom Isannouncer_dlc_trine IsGameStart IsAnnouncerVoice_Trine",
 		"pretty_criteria": "As the game starts"
@@ -1028,7 +1028,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_enm_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's bottom tower has fallen. ",
+		"text": "The enemy's bottom tower has fallen.",
 		"text_simple": " the enemys bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
@@ -1058,7 +1058,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_enm_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's middle tower has fallen. ",
+		"text": "The enemy's middle tower has fallen.",
 		"text_simple": " the enemys middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
@@ -1088,7 +1088,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_enm_top_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's top tower has fallen. ",
+		"text": "The enemy's top tower has fallen.",
 		"text_simple": " the enemys top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
@@ -1118,7 +1118,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_yr_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "Your bottom tower has fallen. ",
+		"text": "Your bottom tower has fallen.",
 		"text_simple": " your bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
@@ -1148,7 +1148,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_yr_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "Your middle tower has fallen. ",
+		"text": "Your middle tower has fallen.",
 		"text_simple": " your middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
@@ -1178,7 +1178,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_fall_yr_top_01.mp3",
 		"voice_id": 10348,
-		"text": "Your top tower has fallen. ",
+		"text": "Your top tower has fallen.",
 		"text_simple": " your top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled top IsNotDeny"
@@ -1388,7 +1388,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's bottom tower has been denied. ",
+		"text": "The enemy's bottom tower has been denied.",
 		"text_simple": " the enemys bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
@@ -1398,7 +1398,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_bot_02.mp3",
 		"voice_id": 10348,
-		"text": "The enemy denied their bottom tower. ",
+		"text": "The enemy denied their bottom tower.",
 		"text_simple": " the enemy denied their bottom tower ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
@@ -1418,7 +1418,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's middle tower has been denied. ",
+		"text": "The enemy's middle tower has been denied.",
 		"text_simple": " the enemys middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
@@ -1428,7 +1428,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_mid_02.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's middle tower was denied. ",
+		"text": "The enemy's middle tower was denied.",
 		"text_simple": " the enemys middle tower was denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
@@ -1448,7 +1448,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_top_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's top tower has been denied. ",
+		"text": "The enemy's top tower has been denied.",
 		"text_simple": " the enemys top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
@@ -1458,7 +1458,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_enm_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_enm_top_02.mp3",
 		"voice_id": 10348,
-		"text": "Oh, they denied their top tower. ",
+		"text": "Oh, they denied their top tower.",
 		"text_simple": " oh they denied their top tower ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
@@ -1478,7 +1478,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "Your bottom tower has been denied. ",
+		"text": "Your bottom tower has been denied.",
 		"text_simple": " your bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled bottom IsDeny"
@@ -1488,7 +1488,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_bot_02.mp3",
 		"voice_id": 10348,
-		"text": "You denied your bottom tower. ",
+		"text": "You denied your bottom tower.",
 		"text_simple": " you denied your bottom tower ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled bottom IsDeny"
@@ -1508,7 +1508,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "Your middle tower has been denied. ",
+		"text": "Your middle tower has been denied.",
 		"text_simple": " your middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled middle IsDeny"
@@ -1528,7 +1528,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_mid_03",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_mid_03.mp3",
 		"voice_id": 10348,
-		"text": "Your middle tower was effectively denied. ",
+		"text": "Your middle tower was effectively denied.",
 		"text_simple": " your middle tower was effectively denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled middle IsDeny"
@@ -1538,7 +1538,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_top_01.mp3",
 		"voice_id": 10348,
-		"text": "Your top tower has been denied. ",
+		"text": "Your top tower has been denied.",
 		"text_simple": " your top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled top IsDeny"
@@ -1558,7 +1558,7 @@
 		"fullname": "announcer_dlc_trine_announcer_twr_deny_yr_top_03",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_twr_deny_yr_top_03.mp3",
 		"voice_id": 10348,
-		"text": "Your top tower was bravely denied. ",
+		"text": "Your top tower was bravely denied.",
 		"text_simple": " your top tower was bravely denied ",
 		"criteria": "Custom Isannouncer_dlc_trine IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsTowerKilled top IsDeny"
@@ -2018,7 +2018,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_enm_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's bottom barracks have fallen. ",
+		"text": "The enemy's bottom barracks have fallen.",
 		"text_simple": " the enemys bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyBarracksKilled bottom"
@@ -2048,7 +2048,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_enm_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's middle barracks have fallen. ",
+		"text": "The enemy's middle barracks have fallen.",
 		"text_simple": " the enemys middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyBarracksKilled middle"
@@ -2078,7 +2078,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_enm_top_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy's top barracks have fallen. ",
+		"text": "The enemy's top barracks have fallen.",
 		"text_simple": " the enemys top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyBarracksKilled IsTopLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyBarracksKilled top"
@@ -2108,7 +2108,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_yr_bot_01.mp3",
 		"voice_id": 10348,
-		"text": "Your bottom barracks have fallen. ",
+		"text": "Your bottom barracks have fallen.",
 		"text_simple": " your bottom barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsBarracksKilled IsBotLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsBarracksKilled bottom"
@@ -2138,7 +2138,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_yr_mid_01.mp3",
 		"voice_id": 10348,
-		"text": "Your middle barracks have fallen. ",
+		"text": "Your middle barracks have fallen.",
 		"text_simple": " your middle barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsBarracksKilled IsMidLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsBarracksKilled middle"
@@ -2168,7 +2168,7 @@
 		"fullname": "announcer_dlc_trine_announcer_rax_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_rax_fall_yr_top_01.mp3",
 		"voice_id": 10348,
-		"text": "Your top barracks have fallen. ",
+		"text": "Your top barracks have fallen.",
 		"text_simple": " your top barracks have fallen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsBarracksKilled IsTopLane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsBarracksKilled top"
@@ -2418,7 +2418,7 @@
 		"fullname": "announcer_dlc_trine_announcer_mega_now_enm_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_mega_now_enm_01.mp3",
 		"voice_id": 10348,
-		"text": "The enemy now has megacreeps. ",
+		"text": "The enemy now has megacreeps.",
 		"text_simple": " the enemy now has megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEnemyMegaCreeps IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsEnemyMegaCreeps"
@@ -2448,7 +2448,7 @@
 		"fullname": "announcer_dlc_trine_announcer_mega_now_you_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_mega_now_you_01.mp3",
 		"voice_id": 10348,
-		"text": "You now have megacreeps. ",
+		"text": "You now have megacreeps.",
 		"text_simple": " you now have megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_trine IsMegaCreeps IsAnnouncerVoice_Trine",
 		"pretty_criteria": "IsMegaCreeps"
@@ -2616,150 +2616,150 @@
 		"fullname": "announcer_dlc_trine_announcer_enable",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_enable.mp3",
 		"voice_id": 10348,
-		"text": "Why hello there. ",
+		"text": "Why hello there.",
 		"text_simple": " why hello there ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_battle_start_06",
 		"fullname": "announcer_dlc_trine_announcer_battle_start_06",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_battle_start_06.mp3",
 		"voice_id": 10348,
-		"text": "It's like chess, only with more queens. ",
+		"text": "It's like chess, only with more queens.",
 		"text_simple": " its like chess only with more queens ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_5%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsAllPick (5% chance)\nIsMidOnly (50% chance)\nIsMidOnly (5% chance)\nIsLeastPlayed (50% chance)\nIsLeastPlayed (5% chance)\nIsLimitedHeroes (50% chance)\nIsLimitedHeroes (5% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsAllPick (5% chance)|IsMidOnly (50% chance)|IsMidOnly (5% chance)|IsLeastPlayed (50% chance)|IsLeastPlayed (5% chance)|IsLimitedHeroes (50% chance)|IsLimitedHeroes (5% chance)"
 	},
 	{
 		"name": "announcer_welcome_01",
 		"fullname": "announcer_dlc_trine_announcer_welcome_01",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_01.mp3",
 		"voice_id": 10348,
-		"text": "Welcome to Dota! ",
+		"text": "Welcome to Dota!",
 		"text_simple": " welcome to dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_5%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_5%",
-		"pretty_criteria": "IsAllPick (5% chance)\nIsMidOnly (5% chance)\nIsLeastPlayed (5% chance)\nIsLimitedHeroes (5% chance)"
+		"pretty_criteria": "IsAllPick (5% chance)|IsMidOnly (5% chance)|IsLeastPlayed (5% chance)|IsLimitedHeroes (5% chance)"
 	},
 	{
 		"name": "announcer_welcome_02",
 		"fullname": "announcer_dlc_trine_announcer_welcome_02",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_02.mp3",
 		"voice_id": 10348,
-		"text": "Let me welcome you to Dota. ",
+		"text": "Let me welcome you to Dota.",
 		"text_simple": " let me welcome you to dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_03",
 		"fullname": "announcer_dlc_trine_announcer_welcome_03",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_03.mp3",
 		"voice_id": 10348,
-		"text": "Once upon a time there was Dota. ",
+		"text": "Once upon a time there was Dota.",
 		"text_simple": " once upon a time there was dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_04",
 		"fullname": "announcer_dlc_trine_announcer_welcome_04",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_04.mp3",
 		"voice_id": 10348,
-		"text": "Let me tell you a story of Dire and Radiant. ",
+		"text": "Let me tell you a story of Dire and Radiant.",
 		"text_simple": " let me tell you a story of dire and radiant ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_05",
 		"fullname": "announcer_dlc_trine_announcer_welcome_05",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_05.mp3",
 		"voice_id": 10348,
-		"text": "Once upon a time there were Dire and Radiant. ",
+		"text": "Once upon a time there were Dire and Radiant.",
 		"text_simple": " once upon a time there were dire and radiant ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_06",
 		"fullname": "announcer_dlc_trine_announcer_welcome_06",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_06.mp3",
 		"voice_id": 10348,
-		"text": "This is an epic tale of Dota. ",
+		"text": "This is an epic tale of Dota.",
 		"text_simple": " this is an epic tale of dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_07",
 		"fullname": "announcer_dlc_trine_announcer_welcome_07",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_07.mp3",
 		"voice_id": 10348,
-		"text": "Once upon a time glorious battle took place in the world of Dota. ",
+		"text": "Once upon a time glorious battle took place in the world of Dota.",
 		"text_simple": " once upon a time glorious battle took place in the world of dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_08",
 		"fullname": "announcer_dlc_trine_announcer_welcome_08",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_08.mp3",
 		"voice_id": 10348,
-		"text": "Gather round and listen to a tale of Dota. ",
+		"text": "Gather round and listen to a tale of Dota.",
 		"text_simple": " gather round and listen to a tale of dota ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_09",
 		"fullname": "announcer_dlc_trine_announcer_welcome_09",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_09.mp3",
 		"voice_id": 10348,
-		"text": "This is a story about Dire and Radiant. ",
+		"text": "This is a story about Dire and Radiant.",
 		"text_simple": " this is a story about dire and radiant ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine Chance_50%|Custom Isannouncer_dlc_trine IsLimitedHeroes IsAnnouncerVoice_Trine Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_10",
 		"fullname": "announcer_dlc_trine_announcer_welcome_10",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_10.mp3",
 		"voice_id": 10348,
-		"text": "It was early morning on the site of battle. ",
+		"text": "It was early morning on the site of battle.",
 		"text_simple": " it was early morning on the site of battle ",
 		"criteria": "Custom Isannouncer_dlc_trine IsMorning IsAllPick IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsMorning IsMidOnly IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsMorning IsLeastPlayed IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsMorning IsLimitedHeroes IsAnnouncerVoice_Trine Chance_15%",
-		"pretty_criteria": "IsMorning IsAllPick (15% chance)\nIsMorning IsMidOnly (15% chance)\nIsMorning IsLeastPlayed (15% chance)\nIsMorning IsLimitedHeroes (15% chance)"
+		"pretty_criteria": "IsMorning IsAllPick (15% chance)|IsMorning IsMidOnly (15% chance)|IsMorning IsLeastPlayed (15% chance)|IsMorning IsLimitedHeroes (15% chance)"
 	},
 	{
 		"name": "announcer_welcome_11",
 		"fullname": "announcer_dlc_trine_announcer_welcome_11",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_11.mp3",
 		"voice_id": 10348,
-		"text": "A fine afternoon for battle. ",
+		"text": "A fine afternoon for battle.",
 		"text_simple": " a fine afternoon for battle ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAfternoon IsAllPick IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsAfternoon IsMidOnly IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsAfternoon IsLeastPlayed IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsAfternoon IsLimitedHeroes IsAnnouncerVoice_Trine Chance_15%",
-		"pretty_criteria": "IsAfternoon IsAllPick (15% chance)\nIsAfternoon IsMidOnly (15% chance)\nIsAfternoon IsLeastPlayed (15% chance)\nIsAfternoon IsLimitedHeroes (15% chance)"
+		"pretty_criteria": "IsAfternoon IsAllPick (15% chance)|IsAfternoon IsMidOnly (15% chance)|IsAfternoon IsLeastPlayed (15% chance)|IsAfternoon IsLimitedHeroes (15% chance)"
 	},
 	{
 		"name": "announcer_welcome_12",
 		"fullname": "announcer_dlc_trine_announcer_welcome_12",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_12.mp3",
 		"voice_id": 10348,
-		"text": "Heroes gathered at the field of conquest in the light of dusk. ",
+		"text": "Heroes gathered at the field of conquest in the light of dusk.",
 		"text_simple": " heroes gathered at the field of conquest in the light of dusk ",
 		"criteria": "Custom Isannouncer_dlc_trine IsEvening IsAllPick IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsEvening IsMidOnly IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsEvening IsLeastPlayed IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsEvening IsLimitedHeroes IsAnnouncerVoice_Trine Chance_15%",
-		"pretty_criteria": "IsEvening IsAllPick (15% chance)\nIsEvening IsMidOnly (15% chance)\nIsEvening IsLeastPlayed (15% chance)\nIsEvening IsLimitedHeroes (15% chance)"
+		"pretty_criteria": "IsEvening IsAllPick (15% chance)|IsEvening IsMidOnly (15% chance)|IsEvening IsLeastPlayed (15% chance)|IsEvening IsLimitedHeroes (15% chance)"
 	},
 	{
 		"name": "announcer_welcome_13",
 		"fullname": "announcer_dlc_trine_announcer_welcome_13",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_welcome_13.mp3",
 		"voice_id": 10348,
-		"text": "This battle took place in the dead of the darkest night. ",
+		"text": "This battle took place in the dead of the darkest night.",
 		"text_simple": " this battle took place in the dead of the darkest night ",
 		"criteria": "Custom Isannouncer_dlc_trine IsLateNight IsAllPick IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsLateNight IsMidOnly IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsLateNight IsLeastPlayed IsAnnouncerVoice_Trine Chance_15%|Custom Isannouncer_dlc_trine IsLateNight IsLimitedHeroes IsAnnouncerVoice_Trine Chance_15%",
-		"pretty_criteria": "IsLateNight IsAllPick (15% chance)\nIsLateNight IsMidOnly (15% chance)\nIsLateNight IsLeastPlayed (15% chance)\nIsLateNight IsLimitedHeroes (15% chance)"
+		"pretty_criteria": "IsLateNight IsAllPick (15% chance)|IsLateNight IsMidOnly (15% chance)|IsLateNight IsLeastPlayed (15% chance)|IsLateNight IsLimitedHeroes (15% chance)"
 	},
 	{
 		"name": "announcer_type_all_pick",
@@ -2769,7 +2769,7 @@
 		"text": "All pick.",
 		"text_simple": " all pick ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine|Followup_Generic Isannouncer_dlc_trine IsAllPick IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsAllPick\nIsAllPick Followup"
+		"pretty_criteria": "IsAllPick|IsAllPick Followup"
 	},
 	{
 		"name": "announcer_type_all_mid",
@@ -2779,7 +2779,7 @@
 		"text": "All mid.",
 		"text_simple": " all mid ",
 		"criteria": "Custom Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine|Followup_Generic Isannouncer_dlc_trine IsMidOnly IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsMidOnly\nIsMidOnly Followup"
+		"pretty_criteria": "IsMidOnly|IsMidOnly Followup"
 	},
 	{
 		"name": "announcer_type_least_played",
@@ -2789,7 +2789,7 @@
 		"text": "Least played.",
 		"text_simple": " least played ",
 		"criteria": "Custom Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine|Followup_Generic Isannouncer_dlc_trine IsLeastPlayed IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsLeastPlayed\nIsLeastPlayed Followup"
+		"pretty_criteria": "IsLeastPlayed|IsLeastPlayed Followup"
 	},
 	{
 		"name": "announcer_type_all_random",
@@ -3058,7 +3058,7 @@
 		"text": "You win!",
 		"text_simple": " you win ",
 		"criteria": "Custom Isannouncer_dlc_trine IsBadVictory IsPlayerTeam_Dire Chance_20% IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsGoodVictory IsPlayerTeam_Radiant Chance_20% IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsBadVictory (20% chance)\nIsGoodVictory (20% chance)"
+		"pretty_criteria": "IsBadVictory (20% chance)|IsGoodVictory (20% chance)"
 	},
 	{
 		"name": "announcer_victory_dire_05",
@@ -3108,7 +3108,7 @@
 		"text": "Second place!",
 		"text_simple": " second place ",
 		"criteria": "Custom Isannouncer_dlc_trine IsBadVictory IsPlayerTeam_Radiant Chance_15% IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine IsGoodVictory IsPlayerTeam_Dire Chance_15% IsAnnouncerVoice_Trine",
-		"pretty_criteria": "IsBadVictory (15% chance)\nIsGoodVictory (15% chance)"
+		"pretty_criteria": "IsBadVictory (15% chance)|IsGoodVictory (15% chance)"
 	},
 	{
 		"name": "announcer_followup_positive_01",
@@ -3478,7 +3478,7 @@
 		"text": "There's all kinds of danger lurking in the wilderness.",
 		"text_simple": " theres all kinds of danger lurking in the wilderness ",
 		"criteria": "Custom Isannouncer_dlc_trine MidGameOnward IsVictimDire IsPlayerTeam_Dire HeroDeath FromNeutral IsAnnouncerVoice_Trine|Custom Isannouncer_dlc_trine MidGameOnward IsVictimRadiant IsPlayerTeam_Radiant HeroDeath FromNeutral IsAnnouncerVoice_Trine",
-		"pretty_criteria": "at more than 20 minutes in IsVictimDire HeroDeath FromNeutral\nat more than 20 minutes in IsVictimRadiant HeroDeath FromNeutral"
+		"pretty_criteria": "at more than 20 minutes in IsVictimDire HeroDeath FromNeutral|at more than 20 minutes in IsVictimRadiant HeroDeath FromNeutral"
 	},
 	{
 		"name": "announcer_gameunpaused",
@@ -3750,7 +3750,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_alchemist",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_alchemist.mp3",
 		"voice_id": 10348,
-		"text": "Alchemist ",
+		"text": "Alchemist",
 		"text_simple": " alchemist ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyAlchemist IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Alchemist (50% chance)"
@@ -3768,7 +3768,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_ancientapp",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_ancientapp.mp3",
 		"voice_id": 10348,
-		"text": "Ancient Apparition ",
+		"text": "Ancient Apparition",
 		"text_simple": " ancient apparition ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyAncient_Apparition IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Ancient Apparition (50% chance)"
@@ -3786,7 +3786,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_anti",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_anti.mp3",
 		"voice_id": 10348,
-		"text": "Anti-Mage ",
+		"text": "Anti-Mage",
 		"text_simple": " antimage ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyAntimage IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Anti-Mage (50% chance)"
@@ -3804,7 +3804,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_axe",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_axe.mp3",
 		"voice_id": 10348,
-		"text": "Axe ",
+		"text": "Axe",
 		"text_simple": " axe ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyAxe IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Axe (50% chance)"
@@ -3822,7 +3822,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_bane",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_bane.mp3",
 		"voice_id": 10348,
-		"text": "Bane ",
+		"text": "Bane",
 		"text_simple": " bane ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBane IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Bane (50% chance)"
@@ -3840,7 +3840,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_batrider",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_batrider.mp3",
 		"voice_id": 10348,
-		"text": "Batrider ",
+		"text": "Batrider",
 		"text_simple": " batrider ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBatrider IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Batrider (50% chance)"
@@ -3858,7 +3858,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_beastmaster",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_beastmaster.mp3",
 		"voice_id": 10348,
-		"text": "Beastmaster ",
+		"text": "Beastmaster",
 		"text_simple": " beastmaster ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBeastmaster IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Beastmaster (50% chance)"
@@ -3876,7 +3876,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_bloodseeker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_bloodseeker.mp3",
 		"voice_id": 10348,
-		"text": "Bloodseeker ",
+		"text": "Bloodseeker",
 		"text_simple": " bloodseeker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBloodseeker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Bloodseeker (50% chance)"
@@ -3894,7 +3894,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_bountyhunter",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_bountyhunter.mp3",
 		"voice_id": 10348,
-		"text": "Bounty Hunter ",
+		"text": "Bounty Hunter",
 		"text_simple": " bounty hunter ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBounty_Hunter IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Bounty Hunter (50% chance)"
@@ -3912,7 +3912,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_brewmaster",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_brewmaster.mp3",
 		"voice_id": 10348,
-		"text": "Brewmaster ",
+		"text": "Brewmaster",
 		"text_simple": " brewmaster ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBrewmaster IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Brewmaster (50% chance)"
@@ -3930,7 +3930,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_broodmother",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_broodmother.mp3",
 		"voice_id": 10348,
-		"text": "Broodmother ",
+		"text": "Broodmother",
 		"text_simple": " broodmother ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyBroodmother IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Broodmother (50% chance)"
@@ -3948,7 +3948,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_centaurrunner",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_centaurrunner.mp3",
 		"voice_id": 10348,
-		"text": "Centaur Warrunner ",
+		"text": "Centaur Warrunner",
 		"text_simple": " centaur warrunner ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyCentaur IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Centaur Warrunner (50% chance)"
@@ -3966,7 +3966,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_chaosknight",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_chaosknight.mp3",
 		"voice_id": 10348,
-		"text": "Chaos Knight ",
+		"text": "Chaos Knight",
 		"text_simple": " chaos knight ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyChaos_Knight IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Chaos Knight (50% chance)"
@@ -3984,7 +3984,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_chen",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_chen.mp3",
 		"voice_id": 10348,
-		"text": "Chen ",
+		"text": "Chen",
 		"text_simple": " chen ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyChen IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Chen (50% chance)"
@@ -4002,7 +4002,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_clinkz",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_clinkz.mp3",
 		"voice_id": 10348,
-		"text": "Clinkz ",
+		"text": "Clinkz",
 		"text_simple": " clinkz ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyClinkz IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Clinkz (50% chance)"
@@ -4020,7 +4020,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_clockwerk",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_clockwerk.mp3",
 		"voice_id": 10348,
-		"text": "Clockwerk ",
+		"text": "Clockwerk",
 		"text_simple": " clockwerk ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyRattletrap IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Clockwerk (50% chance)"
@@ -4038,7 +4038,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_crystalmaiden",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_crystalmaiden.mp3",
 		"voice_id": 10348,
-		"text": "Crystal Maiden ",
+		"text": "Crystal Maiden",
 		"text_simple": " crystal maiden ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyCrystalMaiden IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Crystal Maiden (50% chance)"
@@ -4056,7 +4056,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_darkseer",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_darkseer.mp3",
 		"voice_id": 10348,
-		"text": "Dark Seer ",
+		"text": "Dark Seer",
 		"text_simple": " dark seer ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDark_Seer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Dark Seer (50% chance)"
@@ -4074,7 +4074,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_dazzle",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_dazzle.mp3",
 		"voice_id": 10348,
-		"text": "Dazzle ",
+		"text": "Dazzle",
 		"text_simple": " dazzle ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDazzle IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Dazzle (50% chance)"
@@ -4092,7 +4092,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_deathprophet",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_deathprophet.mp3",
 		"voice_id": 10348,
-		"text": "Death Prophet ",
+		"text": "Death Prophet",
 		"text_simple": " death prophet ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDeath_Prophet IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Death Prophet (50% chance)"
@@ -4110,7 +4110,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_disruptor",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_disruptor.mp3",
 		"voice_id": 10348,
-		"text": "Disruptor ",
+		"text": "Disruptor",
 		"text_simple": " disruptor ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDisruptor IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Disruptor (50% chance)"
@@ -4128,7 +4128,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_doom",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_doom.mp3",
 		"voice_id": 10348,
-		"text": "Doom ",
+		"text": "Doom",
 		"text_simple": " doom ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDoom_Bringer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Doom (50% chance)"
@@ -4146,7 +4146,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_dragonknight",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_dragonknight.mp3",
 		"voice_id": 10348,
-		"text": "Dragon Knight ",
+		"text": "Dragon Knight",
 		"text_simple": " dragon knight ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDragon_Knight IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Dragon Knight (50% chance)"
@@ -4164,7 +4164,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_drowranger",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_drowranger.mp3",
 		"voice_id": 10348,
-		"text": "Drow Ranger ",
+		"text": "Drow Ranger",
 		"text_simple": " drow ranger ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyDrowRanger IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Drow Ranger (50% chance)"
@@ -4182,7 +4182,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_earthshaker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_earthshaker.mp3",
 		"voice_id": 10348,
-		"text": "Earthshaker ",
+		"text": "Earthshaker",
 		"text_simple": " earthshaker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyEarthshaker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Earthshaker (50% chance)"
@@ -4200,7 +4200,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_enchantress",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_enchantress.mp3",
 		"voice_id": 10348,
-		"text": "Enchantress ",
+		"text": "Enchantress",
 		"text_simple": " enchantress ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyEnchantress IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Enchantress (50% chance)"
@@ -4218,7 +4218,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_enigma",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_enigma.mp3",
 		"voice_id": 10348,
-		"text": "Enigma ",
+		"text": "Enigma",
 		"text_simple": " enigma ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyEnigma IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Enigma (50% chance)"
@@ -4236,7 +4236,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_facelessvoid",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_facelessvoid.mp3",
 		"voice_id": 10348,
-		"text": "Faceless Void ",
+		"text": "Faceless Void",
 		"text_simple": " faceless void ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyFaceless_Void IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Faceless Void (50% chance)"
@@ -4254,7 +4254,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_gyrocopter",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_gyrocopter.mp3",
 		"voice_id": 10348,
-		"text": "Gyrocopter ",
+		"text": "Gyrocopter",
 		"text_simple": " gyrocopter ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyGyrocopter IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Gyrocopter (50% chance)"
@@ -4272,7 +4272,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_huskar",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_huskar.mp3",
 		"voice_id": 10348,
-		"text": "Huskar ",
+		"text": "Huskar",
 		"text_simple": " huskar ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyHuskar IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Huskar (50% chance)"
@@ -4290,7 +4290,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_invoker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_invoker.mp3",
 		"voice_id": 10348,
-		"text": "Invoker ",
+		"text": "Invoker",
 		"text_simple": " invoker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyInvoker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Invoker (50% chance)"
@@ -4308,7 +4308,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_jakiro",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_jakiro.mp3",
 		"voice_id": 10348,
-		"text": "Jakiro ",
+		"text": "Jakiro",
 		"text_simple": " jakiro ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyJakiro IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Jakiro (50% chance)"
@@ -4326,7 +4326,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_juggernaut",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_juggernaut.mp3",
 		"voice_id": 10348,
-		"text": "Juggernaut ",
+		"text": "Juggernaut",
 		"text_simple": " juggernaut ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyJuggernaut IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Juggernaut (50% chance)"
@@ -4344,7 +4344,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_keeper",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_keeper.mp3",
 		"voice_id": 10348,
-		"text": "Keeper of the Light ",
+		"text": "Keeper of the Light",
 		"text_simple": " keeper of the light ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyKeeper_of_the_Light IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Keeper of the Light (50% chance)"
@@ -4362,7 +4362,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_kunkka",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_kunkka.mp3",
 		"voice_id": 10348,
-		"text": "Kunkka ",
+		"text": "Kunkka",
 		"text_simple": " kunkka ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyKunkka IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Kunkka (50% chance)"
@@ -4380,7 +4380,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_leshrac",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_leshrac.mp3",
 		"voice_id": 10348,
-		"text": "Leshrac ",
+		"text": "Leshrac",
 		"text_simple": " leshrac ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLeshrac IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Leshrac (50% chance)"
@@ -4417,7 +4417,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_lifestealer",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_lifestealer.mp3",
 		"voice_id": 10348,
-		"text": "Lifestealer ",
+		"text": "Lifestealer",
 		"text_simple": " lifestealer ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLife_Stealer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Lifestealer (50% chance)"
@@ -4435,7 +4435,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_lina",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_lina.mp3",
 		"voice_id": 10348,
-		"text": "Lina ",
+		"text": "Lina",
 		"text_simple": " lina ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLina IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Lina (50% chance)"
@@ -4453,7 +4453,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_lion",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_lion.mp3",
 		"voice_id": 10348,
-		"text": "Lion ",
+		"text": "Lion",
 		"text_simple": " lion ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLion IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Lion (50% chance)"
@@ -4471,7 +4471,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_lonedruid",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_lonedruid.mp3",
 		"voice_id": 10348,
-		"text": "Lone Druid ",
+		"text": "Lone Druid",
 		"text_simple": " lone druid ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLone_Druid IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Lone Druid (50% chance)"
@@ -4489,7 +4489,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_luna",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_luna.mp3",
 		"voice_id": 10348,
-		"text": "Luna ",
+		"text": "Luna",
 		"text_simple": " luna ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLuna IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Luna (50% chance)"
@@ -4507,7 +4507,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_lycanthrope",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_lycanthrope.mp3",
 		"voice_id": 10348,
-		"text": "Lycanthrope ",
+		"text": "Lycanthrope",
 		"text_simple": " lycanthrope ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyLycan IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Lycan (50% chance)"
@@ -4525,7 +4525,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_magnus",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_magnus.mp3",
 		"voice_id": 10348,
-		"text": "Magnus ",
+		"text": "Magnus",
 		"text_simple": " magnus ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyMagnataur IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Magnus (50% chance)"
@@ -4543,7 +4543,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_medusa",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_medusa.mp3",
 		"voice_id": 10348,
-		"text": "Medusa ",
+		"text": "Medusa",
 		"text_simple": " medusa ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyMedusa IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Medusa (50% chance)"
@@ -4561,7 +4561,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_meepo",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_meepo.mp3",
 		"voice_id": 10348,
-		"text": "Meepo ",
+		"text": "Meepo",
 		"text_simple": " meepo ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyMeepo IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Meepo (50% chance)"
@@ -4579,7 +4579,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_mirana",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_mirana.mp3",
 		"voice_id": 10348,
-		"text": "Mirana ",
+		"text": "Mirana",
 		"text_simple": " mirana ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyMirana IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Mirana (50% chance)"
@@ -4597,7 +4597,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_morphling",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_morphling.mp3",
 		"voice_id": 10348,
-		"text": "Morphling ",
+		"text": "Morphling",
 		"text_simple": " morphling ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyMorphling IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Morphling (50% chance)"
@@ -4615,7 +4615,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_nagasiren",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_nagasiren.mp3",
 		"voice_id": 10348,
-		"text": "Naga Siren ",
+		"text": "Naga Siren",
 		"text_simple": " naga siren ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyNaga_Siren IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Naga Siren (50% chance)"
@@ -4633,7 +4633,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_naturesprophet",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_naturesprophet.mp3",
 		"voice_id": 10348,
-		"text": "Nature's Prophet ",
+		"text": "Nature's Prophet",
 		"text_simple": " natures prophet ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyFurion IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Nature's Prophet (50% chance)"
@@ -4651,7 +4651,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_nightstalker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_nightstalker.mp3",
 		"voice_id": 10348,
-		"text": "Night Stalker ",
+		"text": "Night Stalker",
 		"text_simple": " night stalker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyNight_Stalker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Night Stalker (50% chance)"
@@ -4669,7 +4669,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_nyx",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_nyx.mp3",
 		"voice_id": 10348,
-		"text": "Nyx Assassin ",
+		"text": "Nyx Assassin",
 		"text_simple": " nyx assassin ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyNyx_Assassin IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Nyx Assassin (50% chance)"
@@ -4687,7 +4687,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_ogre",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_ogre.mp3",
 		"voice_id": 10348,
-		"text": "Ogre Magi ",
+		"text": "Ogre Magi",
 		"text_simple": " ogre magi ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyOgre_Magi IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Ogre Magi (50% chance)"
@@ -4705,7 +4705,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_omniknight",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_omniknight.mp3",
 		"voice_id": 10348,
-		"text": "Omniknight ",
+		"text": "Omniknight",
 		"text_simple": " omniknight ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyOmniknight IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Omniknight (50% chance)"
@@ -4723,7 +4723,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_outworld",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_outworld.mp3",
 		"voice_id": 10348,
-		"text": "Outworld Devourer ",
+		"text": "Outworld Devourer",
 		"text_simple": " outworld devourer ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyOutworld_Destroyer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Outworld Devourer (50% chance)"
@@ -4741,7 +4741,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_phantomassassin",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_phantomassassin.mp3",
 		"voice_id": 10348,
-		"text": "Phantom Assassin ",
+		"text": "Phantom Assassin",
 		"text_simple": " phantom assassin ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyPhantom_Assassin IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Phantom Assassin (50% chance)"
@@ -4759,7 +4759,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_phantomlancer",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_phantomlancer.mp3",
 		"voice_id": 10348,
-		"text": "Phantom Lancer ",
+		"text": "Phantom Lancer",
 		"text_simple": " phantom lancer ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyPhantom_Lancer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Phantom Lancer (50% chance)"
@@ -4777,7 +4777,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_puck",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_puck.mp3",
 		"voice_id": 10348,
-		"text": "Puck ",
+		"text": "Puck",
 		"text_simple": " puck ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyPuck IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Puck (50% chance)"
@@ -4795,7 +4795,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_pudge",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_pudge.mp3",
 		"voice_id": 10348,
-		"text": "Pudge ",
+		"text": "Pudge",
 		"text_simple": " pudge ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyPudge IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Pudge (50% chance)"
@@ -4832,7 +4832,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_queen",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_queen.mp3",
 		"voice_id": 10348,
-		"text": "Queen of Pain ",
+		"text": "Queen of Pain",
 		"text_simple": " queen of pain ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyQueenofPain IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Queen of Pain (50% chance)"
@@ -4850,7 +4850,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_razor",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_razor.mp3",
 		"voice_id": 10348,
-		"text": "Razor ",
+		"text": "Razor",
 		"text_simple": " razor ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyRazor IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Razor (50% chance)"
@@ -4868,7 +4868,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_riki",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_riki.mp3",
 		"voice_id": 10348,
-		"text": "Riki ",
+		"text": "Riki",
 		"text_simple": " riki ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyRiki IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Riki (50% chance)"
@@ -4886,7 +4886,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_rubick",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_rubick.mp3",
 		"voice_id": 10348,
-		"text": "Rubick ",
+		"text": "Rubick",
 		"text_simple": " rubick ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyRubick IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Rubick (50% chance)"
@@ -4904,7 +4904,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_sandking",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_sandking.mp3",
 		"voice_id": 10348,
-		"text": "Sand King ",
+		"text": "Sand King",
 		"text_simple": " sand king ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySandKing IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Sand King (50% chance)"
@@ -4922,7 +4922,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_shadowdemon",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_shadowdemon.mp3",
 		"voice_id": 10348,
-		"text": "Shadow Demon ",
+		"text": "Shadow Demon",
 		"text_simple": " shadow demon ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyShadow_Demon IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Shadow Demon (50% chance)"
@@ -4940,7 +4940,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_shadowfiend",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_shadowfiend.mp3",
 		"voice_id": 10348,
-		"text": "Shadow Fiend ",
+		"text": "Shadow Fiend",
 		"text_simple": " shadow fiend ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyNevermore IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Shadow Fiend (50% chance)"
@@ -4958,7 +4958,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_shadowshaman",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_shadowshaman.mp3",
 		"voice_id": 10348,
-		"text": "Shadow Shaman ",
+		"text": "Shadow Shaman",
 		"text_simple": " shadow shaman ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyShadowShaman IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Shadow Shaman (50% chance)"
@@ -4995,7 +4995,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_slardar",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_slardar.mp3",
 		"voice_id": 10348,
-		"text": "Slardar ",
+		"text": "Slardar",
 		"text_simple": " slardar ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySlardar IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Slardar (50% chance)"
@@ -5013,7 +5013,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_slark",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_slark.mp3",
 		"voice_id": 10348,
-		"text": "Slark ",
+		"text": "Slark",
 		"text_simple": " slark ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySlark IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Slark (50% chance)"
@@ -5031,7 +5031,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_sniper",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_sniper.mp3",
 		"voice_id": 10348,
-		"text": "Sniper ",
+		"text": "Sniper",
 		"text_simple": " sniper ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySniper IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Sniper (50% chance)"
@@ -5049,7 +5049,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_spectre",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_spectre.mp3",
 		"voice_id": 10348,
-		"text": "Spectre ",
+		"text": "Spectre",
 		"text_simple": " spectre ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySpectre IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Spectre (50% chance)"
@@ -5067,7 +5067,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_spiritbreaker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_spiritbreaker.mp3",
 		"voice_id": 10348,
-		"text": "Spirit Breaker ",
+		"text": "Spirit Breaker",
 		"text_simple": " spirit breaker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySpirit_Breaker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Spirit Breaker (50% chance)"
@@ -5085,7 +5085,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_stormspirit",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_stormspirit.mp3",
 		"voice_id": 10348,
-		"text": "Storm Spirit ",
+		"text": "Storm Spirit",
 		"text_simple": " storm spirit ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyStormSpirit IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Storm Spirit (50% chance)"
@@ -5103,7 +5103,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_sven",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_sven.mp3",
 		"voice_id": 10348,
-		"text": "Sven ",
+		"text": "Sven",
 		"text_simple": " sven ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemySven IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Sven (50% chance)"
@@ -5121,7 +5121,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_templar",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_templar.mp3",
 		"voice_id": 10348,
-		"text": "Templar Assassin ",
+		"text": "Templar Assassin",
 		"text_simple": " templar assassin ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTemplar_Assassin IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Templar Assassin (50% chance)"
@@ -5139,7 +5139,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_tidehunter",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_tidehunter.mp3",
 		"voice_id": 10348,
-		"text": "Tidehunter ",
+		"text": "Tidehunter",
 		"text_simple": " tidehunter ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTidehunter IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Tidehunter (50% chance)"
@@ -5157,7 +5157,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_timbersaw",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_timbersaw.mp3",
 		"voice_id": 10348,
-		"text": "Timbersaw ",
+		"text": "Timbersaw",
 		"text_simple": " timbersaw ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyShredder IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Timbersaw (50% chance)"
@@ -5175,7 +5175,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_tinker",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_tinker.mp3",
 		"voice_id": 10348,
-		"text": "Tinker ",
+		"text": "Tinker",
 		"text_simple": " tinker ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTinker IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Tinker (50% chance)"
@@ -5193,7 +5193,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_tiny",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_tiny.mp3",
 		"voice_id": 10348,
-		"text": "Tiny ",
+		"text": "Tiny",
 		"text_simple": " tiny ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTiny IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Tiny (50% chance)"
@@ -5211,7 +5211,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_treant",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_treant.mp3",
 		"voice_id": 10348,
-		"text": "Treant Protector ",
+		"text": "Treant Protector",
 		"text_simple": " treant protector ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTreant IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Treant Protector (50% chance)"
@@ -5229,7 +5229,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_trollwarlord",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_trollwarlord.mp3",
 		"voice_id": 10348,
-		"text": "Troll Warlord ",
+		"text": "Troll Warlord",
 		"text_simple": " troll warlord ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyTroll_Warlord IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Troll Warlord (50% chance)"
@@ -5266,7 +5266,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_ursa",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_ursa.mp3",
 		"voice_id": 10348,
-		"text": "Ursa ",
+		"text": "Ursa",
 		"text_simple": " ursa ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyUrsa IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Ursa (50% chance)"
@@ -5284,7 +5284,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_vengeful",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_vengeful.mp3",
 		"voice_id": 10348,
-		"text": "Vengeful Spirit ",
+		"text": "Vengeful Spirit",
 		"text_simple": " vengeful spirit ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyVengefulSpirit IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Vengeful Spirit (50% chance)"
@@ -5302,7 +5302,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_venomancer",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_venomancer.mp3",
 		"voice_id": 10348,
-		"text": "Venomancer ",
+		"text": "Venomancer",
 		"text_simple": " venomancer ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyVenomancer IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Venomancer (50% chance)"
@@ -5320,7 +5320,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_viper",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_viper.mp3",
 		"voice_id": 10348,
-		"text": "Viper ",
+		"text": "Viper",
 		"text_simple": " viper ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyViper IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Viper (50% chance)"
@@ -5338,7 +5338,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_visage",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_visage.mp3",
 		"voice_id": 10348,
-		"text": "Visage ",
+		"text": "Visage",
 		"text_simple": " visage ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyVisage IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Visage (50% chance)"
@@ -5375,7 +5375,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_weaver",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_weaver.mp3",
 		"voice_id": 10348,
-		"text": "Weaver ",
+		"text": "Weaver",
 		"text_simple": " weaver ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyWeaver IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Weaver (50% chance)"
@@ -5411,7 +5411,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_witchdr",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_witchdr.mp3",
 		"voice_id": 10348,
-		"text": "Witch Doctor ",
+		"text": "Witch Doctor",
 		"text_simple": " witch doctor ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyWitchDoctor IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Witch Doctor (50% chance)"
@@ -5429,7 +5429,7 @@
 		"fullname": "announcer_dlc_trine_announcer_char_zeus",
 		"mp3": "/sounds/vo/announcer_dlc_trine/announcer_char_zeus.mp3",
 		"voice_id": 10348,
-		"text": "Zeus ",
+		"text": "Zeus",
 		"text_simple": " zeus ",
 		"criteria": "Custom Isannouncer_dlc_trine IsAnnounceHeroPick Chance_50% IsEnemyZuus IsAnnouncerVoice_Trine",
 		"pretty_criteria": "A player picked Zeus (50% chance)"
