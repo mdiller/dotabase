@@ -17,7 +17,7 @@
 		"text": "Enemy team's turn to pick!",
 		"text_simple": " enemy teams turn to pick ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsPlayerTeam_Radiant IsPickDire|Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsPlayerTeam_Dire IsPickRadiant",
-		"pretty_criteria": "IsPickDire\nIsPickRadiant"
+		"pretty_criteria": "IsPickDire|IsPickRadiant"
 	},
 	{
 		"name": "announcer_pick_rad_02",
@@ -83,7 +83,7 @@
 		"text": "Soon they will ban.",
 		"text_simple": " soon they will ban ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_ban_enm_02",
@@ -93,7 +93,7 @@
 		"text": "They're gonna ban someone.",
 		"text_simple": " theyre gonna ban someone ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_ban_enm_03",
@@ -103,7 +103,7 @@
 		"text": "Enemy's turn to ban.",
 		"text_simple": " enemys turn to ban ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_ban_enm_04",
@@ -113,7 +113,7 @@
 		"text": "Your opponents are banning.",
 		"text_simple": " your opponents are banning ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanDire IsPlayerTeam_Radiant|Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsBanRadiant IsPlayerTeam_Dire",
-		"pretty_criteria": "IsBanDire\nIsBanRadiant"
+		"pretty_criteria": "IsBanDire|IsBanRadiant"
 	},
 	{
 		"name": "announcer_ban_dire_01",
@@ -244,7 +244,7 @@
 		"text": "5 seconds remaining.",
 		"text_simple": " 5 seconds remaining ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax Is5SecToPick|Custom Isannouncer_dlc_pflax IsFiveSecondsRemaining IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Is5SecToPick\nIsFiveSecondsRemaining"
+		"pretty_criteria": "Is5SecToPick|IsFiveSecondsRemaining"
 	},
 	{
 		"name": "announcer_count_pick_5_04",
@@ -260,7 +260,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_team_complete_yr_03",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_team_complete_yr_03.mp3",
 		"voice_id": 10185,
-		"text": "Well done, whoever did that. Let's just play Dota 2 now, geez. ",
+		"text": "Well done, whoever did that. Let's just play Dota 2 now, geez.",
 		"text_simple": " well done whoever did that lets just play dota 2 now geez ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsSelectHero",
 		"pretty_criteria": "IsSelectHero"
@@ -273,7 +273,7 @@
 		"text": "Pick your hero!",
 		"text_simple": " pick your hero ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsSelectHero|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax|Custom Isannouncer_dlc_pflax IsCustomMode IsAnnouncerVoice_Pflax|Custom Isannouncer_dlc_pflax IsOneVsOne IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsSelectHero|Followup_Generic Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsSelectHero\nIsLimitedHeroes\nIsCustomMode\nIsOneVsOne\nIsSelectHero Followup\nIsLimitedHeroes Followup"
+		"pretty_criteria": "IsSelectHero|IsLimitedHeroes|IsCustomMode|IsOneVsOne|IsSelectHero Followup|IsLimitedHeroes Followup"
 	},
 	{
 		"name": "announcer_now_select_03",
@@ -283,7 +283,7 @@
 		"text": "You may now select your hero.",
 		"text_simple": " you may now select your hero ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsSelectHero|Followup_Generic Isannouncer_dlc_pflax IsAnnouncerVoice_Pflax IsSelectHero",
-		"pretty_criteria": "IsSelectHero\nIsSelectHero Followup"
+		"pretty_criteria": "IsSelectHero|IsSelectHero Followup"
 	},
 	{
 		"name": "announcer_count_battle_10_01",
@@ -380,7 +380,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_battle_begin_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_battle_begin_02.mp3",
 		"voice_id": 10185,
-		"text": "Time to get angry with each other. ",
+		"text": "Time to get angry with each other.",
 		"text_simple": " time to get angry with each other ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -390,7 +390,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_battle_begin_03",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_battle_begin_03.mp3",
 		"voice_id": 10185,
-		"text": "Please just bear in mind I'm trying my best here. ",
+		"text": "Please just bear in mind I'm trying my best here.",
 		"text_simple": " please just bear in mind im trying my best here ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -400,7 +400,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_battle_begin_05",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_battle_begin_05.mp3",
 		"voice_id": 10185,
-		"text": "The battle begins! ",
+		"text": "The battle begins!",
 		"text_simple": " the battle begins ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -410,7 +410,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_battle_begin_07",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_battle_begin_07.mp3",
 		"voice_id": 10185,
-		"text": "Time to get angry with each other! ",
+		"text": "Time to get angry with each other!",
 		"text_simple": " time to get angry with each other ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -420,7 +420,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_battle_begin_08",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_battle_begin_08.mp3",
 		"voice_id": 10185,
-		"text": "The battle. A'begins. ",
+		"text": "The battle. A'begins.",
 		"text_simple": " the battle abegins ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -430,7 +430,7 @@
 		"fullname": "announcer_dlc_pflax_time_to_man_or_woman_up",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/time_to_man_or_woman_up.mp3",
 		"voice_id": 10185,
-		"text": "Time to man, or woman, up! ",
+		"text": "Time to man, or woman, up!",
 		"text_simple": " time to man or woman up ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -440,7 +440,7 @@
 		"fullname": "announcer_dlc_pflax_time_to_man_up",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/time_to_man_up.mp3",
 		"voice_id": 10185,
-		"text": "Time to man up! ",
+		"text": "Time to man up!",
 		"text_simple": " time to man up ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGameStart IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "As the game starts"
@@ -500,7 +500,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_anc_attack_yr_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_anc_attack_yr_01.mp3",
 		"voice_id": 10185,
-		"text": "Your ancient is under attack. ",
+		"text": "Your ancient is under attack.",
 		"text_simple": " your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsFortAttacked IsNotSpectator IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsFortAttacked"
@@ -510,7 +510,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_anc_attack_yr_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_anc_attack_yr_02.mp3",
 		"voice_id": 10185,
-		"text": "Your ancient is under attack! ",
+		"text": "Your ancient is under attack!",
 		"text_simple": " your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsFortAttacked IsNotSpectator IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsFortAttacked"
@@ -530,7 +530,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_anc_attack_yr_04",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_anc_attack_yr_04.mp3",
 		"voice_id": 10185,
-		"text": "Your ancient is under attack. ",
+		"text": "Your ancient is under attack.",
 		"text_simple": " your ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsFortAttacked IsNotSpectator IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsFortAttacked"
@@ -540,7 +540,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_anc_attack_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_anc_attack_rad_01.mp3",
 		"voice_id": 10185,
-		"text": "Radiant's ancient is under attack! ",
+		"text": "Radiant's ancient is under attack!",
 		"text_simple": " radiants ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsFortAttacked IsGoodAttacked IsSpectator IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsFortAttacked Radiant"
@@ -560,7 +560,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_anc_attack_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_anc_attack_dire_01.mp3",
 		"voice_id": 10185,
-		"text": "Dire's ancient is under attack! ",
+		"text": "Dire's ancient is under attack!",
 		"text_simple": " dires ancient is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsFortAttacked IsBadAttacked IsSpectator IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsFortAttacked Dire"
@@ -600,7 +600,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_rad_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_rad_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Radiant's middle tower is under attack! ",
+		"text": "Radiant's middle tower is under attack!",
 		"text_simple": " radiants middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsGoodAttacked IsSpectator IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Radiant's middle tower is being attacked"
@@ -610,7 +610,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_rad_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_rad_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Radiant's top tower is under attack! ",
+		"text": "Radiant's top tower is under attack!",
 		"text_simple": " radiants top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsGoodAttacked IsSpectator IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Radiant's top tower is being attacked"
@@ -630,7 +630,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_dire_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_dire_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Dire's bottom tower is under attack! ",
+		"text": "Dire's bottom tower is under attack!",
 		"text_simple": " dires bottom tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Dire's bottom tower is being attacked"
@@ -640,7 +640,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_dire_bot_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_dire_bot_02.mp3",
 		"voice_id": 10185,
-		"text": "Dire's bottom tower is under attack! ",
+		"text": "Dire's bottom tower is under attack!",
 		"text_simple": " dires bottom tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsBadAttacked IsSpectator IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Dire's bottom tower is being attacked"
@@ -660,7 +660,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_dire_mid_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_dire_mid_02.mp3",
 		"voice_id": 10185,
-		"text": "Dire's middle tower is under attack. ",
+		"text": "Dire's middle tower is under attack.",
 		"text_simple": " dires middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsBadAttacked IsSpectator IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Dire's middle tower is being attacked"
@@ -680,7 +680,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_dire_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_dire_top_02.mp3",
 		"voice_id": 10185,
-		"text": "Dire's top tower is under attack. ",
+		"text": "Dire's top tower is under attack.",
 		"text_simple": " dires top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsBadAttacked IsSpectator IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Dire's top tower is being attacked"
@@ -690,7 +690,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_yr_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Your bottom tower is under attack! ",
+		"text": "Your bottom tower is under attack!",
 		"text_simple": " your bottom tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "A bottom tower is being attacked"
@@ -700,7 +700,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_yr_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Your middle tower is under attack! ",
+		"text": "Your middle tower is under attack!",
 		"text_simple": " your middle tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "A middle tower is being attacked"
@@ -720,7 +720,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_yr_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Your top tower is under attack. ",
+		"text": "Your top tower is under attack.",
 		"text_simple": " your top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "A top tower is being attacked"
@@ -740,7 +740,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_attack_yr_top_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_attack_yr_top_02.mp3",
 		"voice_id": 10185,
-		"text": "Your top tower is under attack. ",
+		"text": "Your top tower is under attack.",
 		"text_simple": " your top tower is under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "A top tower is being attacked"
@@ -760,7 +760,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_yr_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Your top tower has fallen. ",
+		"text": "Your top tower has fallen.",
 		"text_simple": " your top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled top IsNotDeny"
@@ -780,7 +780,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_yr_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Your middle tower has fallen. ",
+		"text": "Your middle tower has fallen.",
 		"text_simple": " your middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled middle IsNotDeny"
@@ -800,7 +800,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_yr_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Your bottom tower has fallen. ",
+		"text": "Your bottom tower has fallen.",
 		"text_simple": " your bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled bottom IsNotDeny"
@@ -820,7 +820,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_enm_top_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's top tower has fallen. ",
+		"text": "The enemy's top tower has fallen.",
 		"text_simple": " the enemys top tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsTopLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled top IsNotDeny"
@@ -840,7 +840,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_enm_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's middle tower has fallen. ",
+		"text": "The enemy's middle tower has fallen.",
 		"text_simple": " the enemys middle tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsMidLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsNotDeny"
@@ -850,7 +850,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_fall_enm_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's bottom tower has fallen! ",
+		"text": "The enemy's bottom tower has fallen!",
 		"text_simple": " the enemys bottom tower has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsBotLane IsNotDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsNotDeny"
@@ -990,7 +990,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_attack_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_attack_yr_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Your top barracks are under attack. ",
+		"text": "Your top barracks are under attack.",
 		"text_simple": " your top barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksAttacked IsNotSpectator IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksAttacked top"
@@ -1000,7 +1000,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_attack_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_attack_yr_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Your middle barracks are under attack. ",
+		"text": "Your middle barracks are under attack.",
 		"text_simple": " your middle barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksAttacked IsNotSpectator IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksAttacked middle"
@@ -1020,7 +1020,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_attack_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_attack_yr_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Your bottom barracks are under attack. ",
+		"text": "Your bottom barracks are under attack.",
 		"text_simple": " your bottom barracks are under attack ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksAttacked IsNotSpectator IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksAttacked bottom"
@@ -1150,7 +1150,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_fall_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_fall_yr_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Your top barracks has fallen. ",
+		"text": "Your top barracks has fallen.",
 		"text_simple": " your top barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksKilled IsTopLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksKilled top"
@@ -1160,7 +1160,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_fall_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_fall_yr_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Your middle barracks has fallen. ",
+		"text": "Your middle barracks has fallen.",
 		"text_simple": " your middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksKilled IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksKilled middle"
@@ -1187,7 +1187,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_fall_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_fall_yr_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Your bottom barracks has fallen. ",
+		"text": "Your bottom barracks has fallen.",
 		"text_simple": " your bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsBarracksKilled IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsBarracksKilled bottom"
@@ -1227,7 +1227,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_fall_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_fall_enm_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's middle barracks has fallen. ",
+		"text": "The enemy's middle barracks has fallen.",
 		"text_simple": " the enemys middle barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyBarracksKilled IsMidLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyBarracksKilled middle"
@@ -1237,7 +1237,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_rax_fall_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_rax_fall_enm_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's bottom barracks has fallen. ",
+		"text": "The enemy's bottom barracks has fallen.",
 		"text_simple": " the enemys bottom barracks has fallen ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyBarracksKilled IsBotLane IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyBarracksKilled bottom"
@@ -1367,7 +1367,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_yr_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_yr_top_01.mp3",
 		"voice_id": 10185,
-		"text": "Your top tower has been denied. ",
+		"text": "Your top tower has been denied.",
 		"text_simple": " your top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled top IsDeny"
@@ -1387,7 +1387,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_yr_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_yr_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "Your middle tower has been denied. ",
+		"text": "Your middle tower has been denied.",
 		"text_simple": " your middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled middle IsDeny"
@@ -1407,7 +1407,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_yr_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_yr_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "Your bottom tower has been denied. ",
+		"text": "Your bottom tower has been denied.",
 		"text_simple": " your bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsTowerKilled bottom IsDeny"
@@ -1427,7 +1427,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_enm_top_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_enm_top_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's top tower has been denied. ",
+		"text": "The enemy's top tower has been denied.",
 		"text_simple": " the enemys top tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsTopLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled top IsDeny"
@@ -1447,7 +1447,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_enm_mid_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_enm_mid_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's middle tower has been denied. ",
+		"text": "The enemy's middle tower has been denied.",
 		"text_simple": " the enemys middle tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsMidLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled middle IsDeny"
@@ -1467,7 +1467,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_twr_deny_enm_bot_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_twr_deny_enm_bot_01.mp3",
 		"voice_id": 10185,
-		"text": "The enemy's bottom tower has been denied. ",
+		"text": "The enemy's bottom tower has been denied.",
 		"text_simple": " the enemys bottom tower has been denied ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyTowerKilled IsBotLane IsDeny IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyTowerKilled bottom IsDeny"
@@ -1587,7 +1587,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_fort_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_fort_dire_01.mp3",
 		"voice_id": 10185,
-		"text": "Dire structures are fortified! ",
+		"text": "Dire structures are fortified!",
 		"text_simple": " dire structures are fortified ",
 		"criteria": "Custom Isannouncer_dlc_pflax GlyphUsedBad IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "GlyphUsedBad"
@@ -1597,7 +1597,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_fort_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_fort_rad_01.mp3",
 		"voice_id": 10185,
-		"text": "Radiant structures are fortified. ",
+		"text": "Radiant structures are fortified.",
 		"text_simple": " radiant structures are fortified ",
 		"criteria": "Custom Isannouncer_dlc_pflax GlyphUsedGood IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "GlyphUsedGood"
@@ -1610,7 +1610,7 @@
 		"text": "Their tower's doing that woooo thing. Fortified!",
 		"text_simple": " their towers doing that woooo thing fortified ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax GlyphUsedBad IsPlayerTeam_Radiant IsAnnouncerVoice_Pflax Chance_10%|Followup_Generic Isannouncer_dlc_pflax GlyphUsedGood IsPlayerTeam_Dire IsAnnouncerVoice_Pflax Chance_10%",
-		"pretty_criteria": "GlyphUsedBad Followup (10% chance)\nGlyphUsedGood Followup (10% chance)"
+		"pretty_criteria": "GlyphUsedBad Followup (10% chance)|GlyphUsedGood Followup (10% chance)"
 	},
 	{
 		"name": "announcer_cour_kill_dire_01",
@@ -1650,7 +1650,7 @@
 		"text": "They killed the courier! Your courier is dead.",
 		"text_simple": " they killed the courier your courier is dead ",
 		"criteria": "Custom Isannouncer_dlc_pflax CourierLostBad IsPlayerTeam_Dire IsAnnouncerVoice_Pflax|Custom Isannouncer_dlc_pflax CourierLostGood IsPlayerTeam_Radiant IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "CourierLostBad\nCourierLostGood"
+		"pretty_criteria": "CourierLostBad|CourierLostGood"
 	},
 	{
 		"name": "your_courier_is_dead_02",
@@ -1660,7 +1660,7 @@
 		"text": "They killed your courier!",
 		"text_simple": " they killed your courier ",
 		"criteria": "Custom Isannouncer_dlc_pflax CourierLostBad IsPlayerTeam_Dire IsAnnouncerVoice_Pflax|Custom Isannouncer_dlc_pflax CourierLostGood IsPlayerTeam_Radiant IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "CourierLostBad\nCourierLostGood"
+		"pretty_criteria": "CourierLostBad|CourierLostGood"
 	},
 	{
 		"name": "your_courier_killed",
@@ -1715,7 +1715,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_mega_now_we_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_mega_now_we_01.mp3",
 		"voice_id": 10185,
-		"text": "We now have megacreeps. ",
+		"text": "We now have megacreeps.",
 		"text_simple": " we now have megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsMegaCreeps IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsMegaCreeps"
@@ -1755,7 +1755,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_mega_now_enm_03",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_mega_now_enm_03.mp3",
 		"voice_id": 10185,
-		"text": "The enemy now has megacreeps. ",
+		"text": "The enemy now has megacreeps.",
 		"text_simple": " the enemy now has megacreeps ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsEnemyMegaCreeps IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsEnemyMegaCreeps"
@@ -1805,7 +1805,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_roshan_fallen_dire_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_roshan_fallen_dire_01.mp3",
 		"voice_id": 10185,
-		"text": "Roshan has fallen to the Dire! ",
+		"text": "Roshan has fallen to the Dire!",
 		"text_simple": " roshan has fallen to the dire ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsRoshanKilledBad IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Roshan killed by The Dire"
@@ -1825,7 +1825,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_roshan_fallen_rad_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_roshan_fallen_rad_01.mp3",
 		"voice_id": 10185,
-		"text": "Roshan has fallen to the Radiant. ",
+		"text": "Roshan has fallen to the Radiant.",
 		"text_simple": " roshan has fallen to the radiant ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsRoshanKilledGood IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "Roshan killed by The Radiant"
@@ -1858,7 +1858,7 @@
 		"text": "The Aegis-slash-Aajis-slash-Eejis of the immortal!",
 		"text_simple": " the aegisslashaajisslasheejis of the immortal ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsRoshanKilledGood IsPlayerTeam_Radiant IsAnnouncerVoice_Pflax Chance_5%|Followup_Generic Isannouncer_dlc_pflax IsRoshanKilledBad IsPlayerTeam_Dire IsAnnouncerVoice_Pflax Chance_5%",
-		"pretty_criteria": "Roshan killed by The Radiant Followup (5% chance)\nRoshan killed by The Dire Followup (5% chance)"
+		"pretty_criteria": "Roshan killed by The Radiant Followup (5% chance)|Roshan killed by The Dire Followup (5% chance)"
 	},
 	{
 		"name": "roshan_dies_cheese_taken",
@@ -1979,7 +1979,7 @@
 		"fullname": "announcer_dlc_pflax_announcer_victory_rad_04",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_victory_rad_04.mp3",
 		"voice_id": 10185,
-		"text": "Radiant victory! ",
+		"text": "Radiant victory!",
 		"text_simple": " radiant victory ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsGoodVictory IsAnnouncerVoice_Pflax",
 		"pretty_criteria": "IsGoodVictory"
@@ -2022,7 +2022,7 @@
 		"text": "You lost. It was totally my fault. I'm really sorry.",
 		"text_simple": " you lost it was totally my fault im really sorry ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Radiant Chance_15% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Dire Chance_15% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (15% chance)\nIsGoodVictory Followup (15% chance)"
+		"pretty_criteria": "IsBadVictory Followup (15% chance)|IsGoodVictory Followup (15% chance)"
 	},
 	{
 		"name": "announcer_victory_01",
@@ -2032,7 +2032,7 @@
 		"text": "Wow! Oh! I mean I--I didn't see that coming!",
 		"text_simple": " wow oh i mean ii didnt see that coming ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_victory_02",
@@ -2042,7 +2042,7 @@
 		"text": "If it wasn't for my guides, this would not have been possible.",
 		"text_simple": " if it wasnt for my guides this would not have been possible ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_glad_we_won",
@@ -2052,7 +2052,7 @@
 		"text": "I'm glad we won.",
 		"text_simple": " im glad we won ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_incoherent_celebrating",
@@ -2062,7 +2062,7 @@
 		"text": "(Incoherent cheering)",
 		"text_simple": " incoherent cheering ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_incoherent_celebrating_two",
@@ -2070,7 +2070,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_incoherent_celebrating_two.mp3",
 		"voice_id": 10185,
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_mvp_guys_with_longest_name",
@@ -2080,7 +2080,7 @@
 		"text": "Yay! We won! MVP goes to the guy with the longest name.",
 		"text_simple": " yay we won mvp goes to the guy with the longest name ",
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_mvp_whoever_died_the_most",
@@ -2088,7 +2088,7 @@
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_mvp_whoever_died_the_most.mp3",
 		"voice_id": 10185,
 		"criteria": "Followup_Generic Isannouncer_dlc_pflax IsBadVictory IsPlayerTeam_Dire Chance_50% IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsGoodVictory IsPlayerTeam_Radiant Chance_50% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsBadVictory Followup (50% chance)\nIsGoodVictory Followup (50% chance)"
+		"pretty_criteria": "IsBadVictory Followup (50% chance)|IsGoodVictory Followup (50% chance)"
 	},
 	{
 		"name": "announcer_cognratulations_heres_the_end_screen",
@@ -2107,7 +2107,7 @@
 		"text": "All pick, thank God.",
 		"text_simple": " all pick thank god ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_25%",
-		"pretty_criteria": "IsAllPick\nIsAllPick Followup (25% chance)"
+		"pretty_criteria": "IsAllPick|IsAllPick Followup (25% chance)"
 	},
 	{
 		"name": "announcer_type_all_pick_03",
@@ -2117,7 +2117,7 @@
 		"text": "All pick.",
 		"text_simple": " all pick ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsAllPick\nIsAllPick Followup"
+		"pretty_criteria": "IsAllPick|IsAllPick Followup"
 	},
 	{
 		"name": "announcer_type_all_random_01",
@@ -2275,7 +2275,7 @@
 		"text": "All mid!",
 		"text_simple": " all mid ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsMidOnly\nIsMidOnly Followup"
+		"pretty_criteria": "IsMidOnly|IsMidOnly Followup"
 	},
 	{
 		"name": "announcer_all_mid_three",
@@ -2285,7 +2285,7 @@
 		"text": "All mid.",
 		"text_simple": " all mid ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsMidOnly\nIsMidOnly Followup"
+		"pretty_criteria": "IsMidOnly|IsMidOnly Followup"
 	},
 	{
 		"name": "announcer_all_mid_two",
@@ -2295,7 +2295,7 @@
 		"text": "All mid!",
 		"text_simple": " all mid ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsMidOnly\nIsMidOnly Followup"
+		"pretty_criteria": "IsMidOnly|IsMidOnly Followup"
 	},
 	{
 		"name": "announcer_reverse_captains_one",
@@ -2335,7 +2335,7 @@
 		"text": "Least played!",
 		"text_simple": " least played ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "IsLeastPlayed\nIsLeastPlayed Followup"
+		"pretty_criteria": "IsLeastPlayed|IsLeastPlayed Followup"
 	},
 	{
 		"name": "announcer_least_played_three",
@@ -2345,7 +2345,7 @@
 		"text": "Least played mode.",
 		"text_simple": " least played mode ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_25%",
-		"pretty_criteria": "IsLeastPlayed\nIsLeastPlayed Followup (25% chance)"
+		"pretty_criteria": "IsLeastPlayed|IsLeastPlayed Followup (25% chance)"
 	},
 	{
 		"name": "announcer_least_played_two",
@@ -2355,137 +2355,137 @@
 		"text": "Least played mode.",
 		"text_simple": " least played mode ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax|Followup_Generic Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_25%",
-		"pretty_criteria": "IsLeastPlayed\nIsLeastPlayed Followup (25% chance)"
+		"pretty_criteria": "IsLeastPlayed|IsLeastPlayed Followup (25% chance)"
 	},
 	{
 		"name": "is_this_thing_working",
 		"fullname": "announcer_dlc_pflax_is_this_thing_working",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/is_this_thing_working.mp3",
 		"voice_id": 10185,
-		"text": "Um, is this thing working? ",
+		"text": "Um, is this thing working?",
 		"text_simple": " um is this thing working ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_01",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_01",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_01.mp3",
 		"voice_id": 10185,
-		"text": "Dota 2. If you are playing with friends, say goodbye to them now. ",
+		"text": "Dota 2. If you are playing with friends, say goodbye to them now.",
 		"text_simple": " dota 2 if you are playing with friends say goodbye to them now ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_02",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_02",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_02.mp3",
 		"voice_id": 10185,
-		"text": "Willkommen, bienvenue, welcome to Dota 2. ",
+		"text": "Willkommen, bienvenue, welcome to Dota 2.",
 		"text_simple": " willkommen bienvenue welcome to dota 2 ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_02a",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_02a",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_02a.mp3",
 		"voice_id": 10185,
-		"text": "Willkommen, bienvenue, welcome to Dota 2. ",
+		"text": "Willkommen, bienvenue, welcome to Dota 2.",
 		"text_simple": " willkommen bienvenue welcome to dota 2 ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_03",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_03",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_03.mp3",
 		"voice_id": 10185,
-		"text": "Welcome to Pyrion Flax's guide to losing at Dota 2. ",
+		"text": "Welcome to Pyrion Flax's guide to losing at Dota 2.",
 		"text_simple": " welcome to pyrion flaxs guide to losing at dota 2 ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_04",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_04",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_04.mp3",
 		"voice_id": 10185,
-		"text": "Uh welcome to Pyrion Flax's guide to Dota 2. ",
+		"text": "Uh welcome to Pyrion Flax's guide to Dota 2.",
 		"text_simple": " uh welcome to pyrion flaxs guide to dota 2 ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_05",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_05",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_05.mp3",
 		"voice_id": 10185,
-		"text": "Phone off the hook. Shirt off. Pants off. Time to Dotes! ",
+		"text": "Phone off the hook. Shirt off. Pants off. Time to Dotes!",
 		"text_simple": " phone off the hook shirt off pants off time to dotes ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_06",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_06",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_06.mp3",
 		"voice_id": 10185,
-		"text": "Time for Dota! Mhu hu ha ha haa! ",
+		"text": "Time for Dota! Mhu hu ha ha haa!",
 		"text_simple": " time for dota mhu hu ha ha haa ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_06a",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_06a",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_06a.mp3",
 		"voice_id": 10185,
-		"text": "Mhu hu hu ha ha ha! Let us Dotes. ",
+		"text": "Mhu hu hu ha ha ha! Let us Dotes.",
 		"text_simple": " mhu hu hu ha ha ha let us dotes ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "announcer_welcome_07",
 		"fullname": "announcer_dlc_pflax_announcer_welcome_07",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/announcer_welcome_07.mp3",
 		"voice_id": 10185,
-		"text": "Dota 2 welcomes you! ",
+		"text": "Dota 2 welcomes you!",
 		"text_simple": " dota 2 welcomes you ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "lovely_day",
 		"fullname": "announcer_dlc_pflax_lovely_day",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/lovely_day.mp3",
 		"voice_id": 10185,
-		"text": "It's a lovely day outside and here you are, playing Dota 2. ",
+		"text": "It's a lovely day outside and here you are, playing Dota 2.",
 		"text_simple": " its a lovely day outside and here you are playing dota 2 ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_50%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_50%",
-		"pretty_criteria": "IsAllPick (50% chance)\nIsMidOnly (50% chance)\nIsLeastPlayed (50% chance)\nIsLimitedHeroes (50% chance)"
+		"pretty_criteria": "IsAllPick (50% chance)|IsMidOnly (50% chance)|IsLeastPlayed (50% chance)|IsLimitedHeroes (50% chance)"
 	},
 	{
 		"name": "pyrion_in_house",
 		"fullname": "announcer_dlc_pflax_pyrion_in_house",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/pyrion_in_house.mp3",
 		"voice_id": 10185,
-		"text": "Pyrion Flax in the house! ",
+		"text": "Pyrion Flax in the house!",
 		"text_simple": " pyrion flax in the house ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_1%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_1%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_1%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_1%",
-		"pretty_criteria": "IsAllPick (1% chance)\nIsMidOnly (1% chance)\nIsLeastPlayed (1% chance)\nIsLimitedHeroes (1% chance)"
+		"pretty_criteria": "IsAllPick (1% chance)|IsMidOnly (1% chance)|IsLeastPlayed (1% chance)|IsLimitedHeroes (1% chance)"
 	},
 	{
 		"name": "pyrion_announcer_pack_seriously",
 		"fullname": "announcer_dlc_pflax_pyrion_announcer_pack_seriously",
 		"mp3": "/sounds/vo/announcer_dlc_pflax/pyrion_announcer_pack_seriously.mp3",
 		"voice_id": 10185,
-		"text": "Pyrion Flax announcer pack? Seriously? ",
+		"text": "Pyrion Flax announcer pack? Seriously?",
 		"text_simple": " pyrion flax announcer pack seriously ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAllPick IsAnnouncerVoice_Pflax Chance_5%|Custom Isannouncer_dlc_pflax IsMidOnly IsAnnouncerVoice_Pflax Chance_5%|Custom Isannouncer_dlc_pflax IsLeastPlayed IsAnnouncerVoice_Pflax Chance_5%|Custom Isannouncer_dlc_pflax IsLimitedHeroes IsAnnouncerVoice_Pflax Chance_5%",
-		"pretty_criteria": "IsAllPick (5% chance)\nIsMidOnly (5% chance)\nIsLeastPlayed (5% chance)\nIsLimitedHeroes (5% chance)"
+		"pretty_criteria": "IsAllPick (5% chance)|IsMidOnly (5% chance)|IsLeastPlayed (5% chance)|IsLimitedHeroes (5% chance)"
 	},
 	{
 		"name": "missing_bot_01",
@@ -3655,7 +3655,7 @@
 		"text": "If in doubt, slap armour on it.",
 		"text_simple": " if in doubt slap armour on it ",
 		"criteria": "Purchase Isannouncer_dlc_pflax DuringGame IsAssaultCuirass Chance_20% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsChainmail Chance_20% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsShiva Chance_20% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsPlatemail Chance_20% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Buying Assault Cuirass at more than 1 minute in (20% chance)\nBuying Chainmail at more than 1 minute in (20% chance)\nBuying Shiva's Guard at more than 1 minute in (20% chance)\nBuying Platemail at more than 1 minute in (20% chance)"
+		"pretty_criteria": "Buying Assault Cuirass at more than 1 minute in (20% chance)|Buying Chainmail at more than 1 minute in (20% chance)|Buying Shiva's Guard at more than 1 minute in (20% chance)|Buying Platemail at more than 1 minute in (20% chance)"
 	},
 	{
 		"name": "announcer_invisible_swine_one",
@@ -3665,7 +3665,7 @@
 		"text": "Invisible swine!",
 		"text_simple": " invisible swine ",
 		"criteria": "Purchase Isannouncer_dlc_pflax DuringGame IsDust Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsSentryWard Chance_10% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Buying Dust of Appearance at more than 1 minute in (10% chance)\nBuying Sentry Ward at more than 1 minute in (10% chance)"
+		"pretty_criteria": "Buying Dust of Appearance at more than 1 minute in (10% chance)|Buying Sentry Ward at more than 1 minute in (10% chance)"
 	},
 	{
 		"name": "announcer_invisible_swine_two",
@@ -3675,7 +3675,7 @@
 		"text": "Take that, you invisible swine!",
 		"text_simple": " take that you invisible swine ",
 		"criteria": "Purchase Isannouncer_dlc_pflax DuringGame IsDust Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsSentryWard Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsGem Chance_25% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Buying Dust of Appearance at more than 1 minute in (10% chance)\nBuying Sentry Ward at more than 1 minute in (10% chance)\nBuying Gem of True Sight at more than 1 minute in (25% chance)"
+		"pretty_criteria": "Buying Dust of Appearance at more than 1 minute in (10% chance)|Buying Sentry Ward at more than 1 minute in (10% chance)|Buying Gem of True Sight at more than 1 minute in (25% chance)"
 	},
 	{
 		"name": "announcer_iron_branch_one",
@@ -4145,7 +4145,7 @@
 		"text": "Tryhards.",
 		"text_simple": " tryhards ",
 		"criteria": "Purchase Isannouncer_dlc_pflax DuringGame IsSmoke Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsDust Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsSentryWard Chance_10% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Buying Smoke of Deceit at more than 1 minute in (10% chance)\nBuying Dust of Appearance at more than 1 minute in (10% chance)\nBuying Sentry Ward at more than 1 minute in (10% chance)"
+		"pretty_criteria": "Buying Smoke of Deceit at more than 1 minute in (10% chance)|Buying Dust of Appearance at more than 1 minute in (10% chance)|Buying Sentry Ward at more than 1 minute in (10% chance)"
 	},
 	{
 		"name": "announcer_you_know_what_youre_doing",
@@ -4155,7 +4155,7 @@
 		"text": "You know what you're doing!",
 		"text_simple": " you know what youre doing ",
 		"criteria": "Purchase Isannouncer_dlc_pflax DuringGame IsSmoke Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsDust Chance_10% IsAnnouncerVoice_Pflax|Purchase Isannouncer_dlc_pflax DuringGame IsSentryWard Chance_10% IsAnnouncerVoice_Pflax",
-		"pretty_criteria": "Buying Smoke of Deceit at more than 1 minute in (10% chance)\nBuying Dust of Appearance at more than 1 minute in (10% chance)\nBuying Sentry Ward at more than 1 minute in (10% chance)"
+		"pretty_criteria": "Buying Smoke of Deceit at more than 1 minute in (10% chance)|Buying Dust of Appearance at more than 1 minute in (10% chance)|Buying Sentry Ward at more than 1 minute in (10% chance)"
 	},
 	{
 		"name": "ancient_apparition_is_old",
@@ -5123,7 +5123,7 @@
 		"text": "Hmm hm! Bearded!",
 		"text_simple": " hmm hm bearded ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAlchemist|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAxe|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyBeastmaster|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyCentaur|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyDark_Seer|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyDisruptor|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyEarthshaker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyFurion|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKeeper_of_the_Light|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKunkka|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLeshrac|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLone_Druid|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyNecrolyte|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyOmniknight|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemySniper|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemySpirit_Breaker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyStormSpirit|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTinker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTiny|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTreant|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTusk",
-		"pretty_criteria": "A player picked Alchemist (25% chance)\nA player picked Axe (25% chance)\nA player picked Beastmaster (25% chance)\nA player picked Centaur Warrunner (25% chance)\nA player picked Dark Seer (25% chance)\nA player picked Disruptor (25% chance)\nA player picked Earthshaker (25% chance)\nA player picked Nature's Prophet (25% chance)\nA player picked Keeper of the Light (25% chance)\nA player picked Kunkka (25% chance)\nA player picked Leshrac (25% chance)\nA player picked Lone Druid (25% chance)\nA player picked Necrophos (25% chance)\nA player picked Omniknight (25% chance)\nA player picked Sniper (25% chance)\nA player picked Spirit Breaker (25% chance)\nA player picked Storm Spirit (25% chance)\nA player picked Tinker (25% chance)\nA player picked Tiny (25% chance)\nA player picked Treant Protector (25% chance)\nA player picked Tusk (25% chance)"
+		"pretty_criteria": "A player picked Alchemist (25% chance)|A player picked Axe (25% chance)|A player picked Beastmaster (25% chance)|A player picked Centaur Warrunner (25% chance)|A player picked Dark Seer (25% chance)|A player picked Disruptor (25% chance)|A player picked Earthshaker (25% chance)|A player picked Nature's Prophet (25% chance)|A player picked Keeper of the Light (25% chance)|A player picked Kunkka (25% chance)|A player picked Leshrac (25% chance)|A player picked Lone Druid (25% chance)|A player picked Necrophos (25% chance)|A player picked Omniknight (25% chance)|A player picked Sniper (25% chance)|A player picked Spirit Breaker (25% chance)|A player picked Storm Spirit (25% chance)|A player picked Tinker (25% chance)|A player picked Tiny (25% chance)|A player picked Treant Protector (25% chance)|A player picked Tusk (25% chance)"
 	},
 	{
 		"name": "hmhm_nice_beard",
@@ -5133,7 +5133,7 @@
 		"text": "Ah! Nice beard!",
 		"text_simple": " ah nice beard ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAlchemist|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAxe|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyBeastmaster|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyCentaur|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyDark_Seer|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyDisruptor|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyEarthshaker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyFurion|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKeeper_of_the_Light|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKunkka|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLeshrac|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLone_Druid|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyNecrolyte|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyOmniknight|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemySniper|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemySpirit_Breaker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyStormSpirit|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTinker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTiny|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTreant|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyTusk",
-		"pretty_criteria": "A player picked Alchemist (25% chance)\nA player picked Axe (25% chance)\nA player picked Beastmaster (25% chance)\nA player picked Centaur Warrunner (25% chance)\nA player picked Dark Seer (25% chance)\nA player picked Disruptor (25% chance)\nA player picked Earthshaker (25% chance)\nA player picked Nature's Prophet (25% chance)\nA player picked Keeper of the Light (25% chance)\nA player picked Kunkka (25% chance)\nA player picked Leshrac (25% chance)\nA player picked Lone Druid (25% chance)\nA player picked Necrophos (25% chance)\nA player picked Omniknight (25% chance)\nA player picked Sniper (25% chance)\nA player picked Spirit Breaker (25% chance)\nA player picked Storm Spirit (25% chance)\nA player picked Tinker (25% chance)\nA player picked Tiny (25% chance)\nA player picked Treant Protector (25% chance)\nA player picked Tusk (25% chance)"
+		"pretty_criteria": "A player picked Alchemist (25% chance)|A player picked Axe (25% chance)|A player picked Beastmaster (25% chance)|A player picked Centaur Warrunner (25% chance)|A player picked Dark Seer (25% chance)|A player picked Disruptor (25% chance)|A player picked Earthshaker (25% chance)|A player picked Nature's Prophet (25% chance)|A player picked Keeper of the Light (25% chance)|A player picked Kunkka (25% chance)|A player picked Leshrac (25% chance)|A player picked Lone Druid (25% chance)|A player picked Necrophos (25% chance)|A player picked Omniknight (25% chance)|A player picked Sniper (25% chance)|A player picked Spirit Breaker (25% chance)|A player picked Storm Spirit (25% chance)|A player picked Tinker (25% chance)|A player picked Tiny (25% chance)|A player picked Treant Protector (25% chance)|A player picked Tusk (25% chance)"
 	},
 	{
 		"name": "popped_collar",
@@ -5143,7 +5143,7 @@
 		"text": "Ah! Popped collar! Pro player alarm sounded!",
 		"text_simple": " ah popped collar pro player alarm sounded ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKunkka|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLone_Druid|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAntimage|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyDeath_Prophet|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyEmber_Spirit|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyInvoker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyLion|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyPugna|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyRubick",
-		"pretty_criteria": "A player picked Kunkka (25% chance)\nA player picked Lone Druid (25% chance)\nA player picked Anti-Mage (25% chance)\nA player picked Death Prophet (25% chance)\nA player picked Ember Spirit (25% chance)\nA player picked Invoker (25% chance)\nA player picked Lion (25% chance)\nA player picked Pugna (25% chance)\nA player picked Rubick (25% chance)"
+		"pretty_criteria": "A player picked Kunkka (25% chance)|A player picked Lone Druid (25% chance)|A player picked Anti-Mage (25% chance)|A player picked Death Prophet (25% chance)|A player picked Ember Spirit (25% chance)|A player picked Invoker (25% chance)|A player picked Lion (25% chance)|A player picked Pugna (25% chance)|A player picked Rubick (25% chance)"
 	},
 	{
 		"name": "more_beef_01",
@@ -5153,6 +5153,6 @@
 		"text": "Yes! More beef! More beef!",
 		"text_simple": " yes more beef more beef ",
 		"criteria": "Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAxe|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyBeastmaster|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyCentaur|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyKunkka|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemySpirit_Breaker|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyAntimage|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsElder_Titan|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyMagnataur|Custom Isannouncer_dlc_pflax IsAnnounceHeroPick Chance_25% IsAnnouncerVoice_Pflax IsEnemyPudge",
-		"pretty_criteria": "A player picked Axe (25% chance)\nA player picked Beastmaster (25% chance)\nA player picked Centaur Warrunner (25% chance)\nA player picked Kunkka (25% chance)\nA player picked Spirit Breaker (25% chance)\nA player picked Anti-Mage (25% chance)\nA player picked a hero (25% chance)\nA player picked Magnus (25% chance)\nA player picked Pudge (25% chance)"
+		"pretty_criteria": "A player picked Axe (25% chance)|A player picked Beastmaster (25% chance)|A player picked Centaur Warrunner (25% chance)|A player picked Kunkka (25% chance)|A player picked Spirit Breaker (25% chance)|A player picked Anti-Mage (25% chance)|A player picked a hero (25% chance)|A player picked Magnus (25% chance)|A player picked Pudge (25% chance)"
 	}
 ]
