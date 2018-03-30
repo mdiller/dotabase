@@ -1460,12 +1460,12 @@
 		"quality": "consumable",
 		"icon": "/resource/flash3/images/items/clarity.png",
 		"cost": 50,
-		"description": "# Use: Replenish\nGrants **3.2** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
+		"description": "# Use: Replenish\nGrants **3** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
 		"lore": "Clear water that enhances the ability to meditate.",
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "3.2"
+				"value": "3"
 			},
 			{
 				"key": "buff_duration",
@@ -1498,7 +1498,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen": "3.2"
+					"mana_regen": "3.0"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -4929,7 +4929,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -4953,7 +4953,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "3.0"
+					"bonus_mana_regen": "5.0"
 				}
 			}
 		}
@@ -5088,7 +5088,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "40",
+				"value": "45",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -5124,7 +5124,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "40"
+					"bonus_strength": "45"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6399,7 +6399,7 @@
 		"icon": "/resource/flash3/images/items/basher.png",
 		"cost": 2700,
 		"cooldown": "2.3",
-		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.4** seconds and deal **100** bonus magical damage.  Bash pierces evasion. Bash chance for ranged heroes is **10%**.",
+		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash pierces evasion. Bash chance for ranged heroes is **10%**.",
 		"lore": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
 		"ability_special": [
 			{
@@ -6418,7 +6418,7 @@
 			},
 			{
 				"key": "bash_duration",
-				"value": "1.4"
+				"value": "1.5"
 			},
 			{
 				"key": "bash_cooldown",
@@ -6455,7 +6455,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bash_duration": "1.4"
+					"bash_duration": "1.5"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -7321,7 +7321,7 @@
 		"icon": "/resource/flash3/images/items/satanic.png",
 		"cost": 5500,
 		"cooldown": "35",
-		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **200%** for **4.5** seconds. \n\n# Passive: Lifesteal\nHeals the attacker for **25%** of attack damage dealt.",
+		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **200%** for **5** seconds. \n\n# Passive: Lifesteal\nHeals the attacker for **25%** of attack damage dealt.",
 		"lore": "Immense power at the cost of your soul.",
 		"ability_special": [
 			{
@@ -7350,7 +7350,7 @@
 			},
 			{
 				"key": "unholy_duration",
-				"value": "4.5"
+				"value": "5"
 			}
 		],
 		"json_data": {
@@ -7388,7 +7388,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"unholy_duration": "4.5"
+					"unholy_duration": "5"
 				}
 			}
 		}
@@ -10258,7 +10258,7 @@
 		"cost": 6400,
 		"cooldown": "35",
 		"mana_cost": "75",
-		"description": "# Active: Overwhelm\nStuns a target enemy unit for **2** seconds. \n\nPierces Spell Immunity.\n\nRange: **140**\n\n# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.4** seconds and deal **100** bonus magical damage.  Bash pierces evasion. Bash chance for ranged heroes is **10%**.\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
+		"description": "# Active: Overwhelm\nStuns a target enemy unit for **2** seconds. \n\nPierces Spell Immunity.\n\nRange: **140**\n\n# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash pierces evasion. Bash chance for ranged heroes is **10%**.\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
 		"lore": "The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul.",
 		"ability_special": [
 			{
@@ -10301,7 +10301,7 @@
 			},
 			{
 				"key": "bash_duration",
-				"value": "1.4"
+				"value": "1.5"
 			},
 			{
 				"key": "bash_cooldown",
@@ -10374,7 +10374,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"bash_duration": "1.4"
+					"bash_duration": "1.5"
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
@@ -11392,7 +11392,7 @@
 			},
 			{
 				"key": "projectile_speed",
-				"value": "1200"
+				"value": "900"
 			},
 			{
 				"key": "slow_pct",
@@ -11437,7 +11437,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"projectile_speed": "1200"
+					"projectile_speed": "900"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -12614,7 +12614,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "120",
+				"value": "130",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -12645,7 +12645,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "120"
+					"bonus_attack_speed": "130"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -12688,9 +12688,9 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/silver_edge.png",
 		"cost": 5550,
-		"cooldown": "24",
+		"cooldown": "22",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **14** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **175** bonus physical damage to the target, and for **5** seconds, disable their passive abilities.",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **14** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **175** bonus physical damage to the target, and for **4** seconds, disable their passive abilities.",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"ability_special": [
 			{
@@ -12733,14 +12733,14 @@
 			},
 			{
 				"key": "backstab_duration",
-				"value": "5"
+				"value": "4"
 			}
 		],
 		"json_data": {
 			"ID": "249",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "24.0",
+			"AbilityCooldown": "22.0",
 			"AbilitySharedCooldown": "shadow_blade",
 			"AbilityManaCost": "75",
 			"ItemCost": "5550",
@@ -12785,7 +12785,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"backstab_duration": "5"
+					"backstab_duration": "4"
 				}
 			}
 		}
@@ -13666,7 +13666,7 @@
 		"icon": "/resource/flash3/images/items/spirit_vessel.png",
 		"cost": 2975,
 		"cooldown": "7",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **3%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **20** damage per second. \n\nWhen used on allies, it increases health by **1%** of current health per second, and increases HP regeneration and healing by **20%**. Provides **35** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4.5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **20** damage per second. \n\nWhen used on allies, it increases health by **1%** of current health per second, and increases HP regeneration and healing by **20%**. Provides **35** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -13736,7 +13736,7 @@
 			},
 			{
 				"key": "enemy_hp_drain",
-				"value": "3"
+				"value": "4.5"
 			},
 			{
 				"key": "ally_hp_gain",
@@ -13820,7 +13820,7 @@
 				},
 				"15": {
 					"var_type": "FIELD_FLOAT",
-					"enemy_hp_drain": "3.0"
+					"enemy_hp_drain": "4.5"
 				},
 				"16": {
 					"var_type": "FIELD_FLOAT",
