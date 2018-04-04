@@ -6813,6 +6813,14 @@
 		"required": true
 	},
 	{
+		"name": "HookCatchFriend",
+		"pretty": "HookCatchFriend",
+		"matchkey": "hookedtarget",
+		"matchvalue": "-1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "ButchersDozen",
 		"pretty": "ButchersDozen",
 		"matchkey": "lasthitcount",
@@ -6833,6 +6841,348 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "pudge_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaPudgeLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "arcana_pudge_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaSpecialSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "arcana_pudge_intro",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaSpecialSpawn2",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "arcana_pudge_intro2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaSpecialSpawn3",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "arcana_pudge_intro3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaIdleRare",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "arcana_hook_scratch",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsArcanaChainSkip",
+		"matchkey": "taunt_type",
+		"matchvalue": "chain_skip",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsLongDismember",
+		"pretty": "IsLongDismember",
+		"matchkey": "long_dismember",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookTwo",
+		"pretty": "IsHookTwo",
+		"matchkey": "hook_streak",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookThree",
+		"pretty": "IsHookThree",
+		"matchkey": "hook_streak",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookFour",
+		"pretty": "IsHookFour",
+		"matchkey": "hook_streak",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookFive",
+		"pretty": "IsHookFive",
+		"matchkey": "hook_streak",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookSix",
+		"pretty": "IsHookSix",
+		"matchkey": "hook_streak",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookSeven",
+		"pretty": "IsHookSeven",
+		"matchkey": "hook_streak",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHookEight",
+		"pretty": "IsHookEight",
+		"matchkey": "hook_streak",
+		"matchvalue": ">=8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSmallStreak",
+		"pretty": "IsSmallStreak",
+		"matchkey": "hook_streak",
+		"matchvalue": ">=2,<=5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsBigStreak",
+		"pretty": "IsBigStreak",
+		"matchkey": "hook_streak",
+		"matchvalue": ">=6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsBloodyGib",
+		"pretty": "IsBloodyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "default",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsGhostlyGib",
+		"pretty": "IsGhostlyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "ethereal",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsIcyGib",
+		"pretty": "IsIcyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "ice",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsGooeyGib",
+		"pretty": "IsGooeyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "goo",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFlameyGib",
+		"pretty": "IsFlameyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "fire",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRockyGib",
+		"pretty": "IsRockyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "stone",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrinkyGib",
+		"pretty": "IsDrinkyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "water",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsChoppyGib",
+		"pretty": "IsChoppyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "wood",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsShockyGig",
+		"pretty": "IsShockyGig",
+		"matchkey": "flesh_type",
+		"matchvalue": "electric",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDustyGib",
+		"pretty": "IsDustyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "bone",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsStinkyGib",
+		"pretty": "IsStinkyGib",
+		"matchkey": "flesh_type",
+		"matchvalue": "undead",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono1",
+		"pretty": "IsMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono2",
+		"pretty": "IsMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono3",
+		"pretty": "IsMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono4",
+		"pretty": "IsMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono5",
+		"pretty": "IsMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono6",
+		"pretty": "IsMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono7",
+		"pretty": "IsMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono8",
+		"pretty": "IsMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono9",
+		"pretty": "IsMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono10",
+		"pretty": "IsMono10",
+		"matchkey": "line_count",
+		"matchvalue": "9",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono11",
+		"pretty": "IsMono11",
+		"matchkey": "line_count",
+		"matchvalue": "10",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono12",
+		"pretty": "IsMono12",
+		"matchkey": "line_count",
+		"matchvalue": "11",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono13",
+		"pretty": "IsMono13",
+		"matchkey": "line_count",
+		"matchvalue": "12",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMono14",
+		"pretty": "IsMono14",
+		"matchkey": "line_count",
+		"matchvalue": "13",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMonoDone",
+		"pretty": "IsMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=14",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPudgeChain",
+		"matchkey": "customresponse",
+		"matchvalue": "pudarc_chains",
 		"weight": 5.0,
 		"required": true
 	},
@@ -9345,6 +9695,22 @@
 		"required": true
 	},
 	{
+		"name": "IsAeonDisk",
+		"pretty": "Aeon Disk",
+		"matchkey": "itemname",
+		"matchvalue": "item_aeon_disk",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsAetherLens",
+		"pretty": "Aether Lens",
+		"matchkey": "itemname",
+		"matchvalue": "item_aether_lens",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsArcaneBoots",
 		"pretty": "Arcane Boots",
 		"matchkey": "itemname",
@@ -9801,6 +10167,14 @@
 		"required": true
 	},
 	{
+		"name": "IsMeteorHammer",
+		"pretty": "Meteor Hammer",
+		"matchkey": "itemname",
+		"matchvalue": "item_meteor_hammer",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsMjollnir",
 		"pretty": "Mjollnir",
 		"matchkey": "itemname",
@@ -9837,6 +10211,14 @@
 		"pretty": "Null Talisman",
 		"matchkey": "itemname",
 		"matchvalue": "item_null_talisman",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsNullifier",
+		"pretty": "Nullifier",
+		"matchkey": "itemname",
+		"matchvalue": "item_nullifier",
 		"weight": 1.0,
 		"required": true
 	},
@@ -10073,10 +10455,26 @@
 		"required": true
 	},
 	{
+		"name": "IsSpiritVessel",
+		"pretty": "Spirit Vessel",
+		"matchkey": "itemname",
+		"matchvalue": "item_spirit_vessel",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsTango",
 		"pretty": "Tango",
 		"matchkey": "itemname",
 		"matchvalue": "item_tango",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsTomeofKnowledge",
+		"pretty": "Tome of Knowledge",
+		"matchkey": "itemname",
+		"matchvalue": "item_tome_of_knowledge",
 		"weight": 1.0,
 		"required": true
 	},
