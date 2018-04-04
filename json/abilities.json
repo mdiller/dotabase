@@ -5372,6 +5372,10 @@
 			{
 				"key": "pull_distance_limit",
 				"value": "125"
+			},
+			{
+				"key": "animation_rate",
+				"value": "1.5"
 			}
 		],
 		"ability_slot": 6,
@@ -5418,6 +5422,10 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"pull_distance_limit": "125"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"animation_rate": "1.5"
 				}
 			}
 		}
@@ -14489,7 +14497,7 @@
 			"ID": "5190",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
-			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
@@ -69152,7 +69160,7 @@
 		"id": 8340,
 		"name": "dark_willow_terrorize",
 		"hero_id": 119,
-		"behavior": "point|aoe",
+		"behavior": "point|aoe|normal_when_stolen",
 		"spell_immunity": "no",
 		"target_team": "enemy",
 		"cast_range": "1500",
@@ -69180,10 +69188,6 @@
 				"value": "500"
 			},
 			{
-				"key": "initial_delay",
-				"value": "0.8"
-			},
-			{
 				"key": "starting_height",
 				"value": "300"
 			}
@@ -69195,7 +69199,7 @@
 		"lore": "You think you know the first thing about fear? Jex'll show you what that word truly means...",
 		"json_data": {
 			"ID": "8340",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
@@ -69225,10 +69229,6 @@
 					"return_travel_speed": "500"
 				},
 				"05": {
-					"var_type": "FIELD_FLOAT",
-					"initial_delay": "0.8"
-				},
-				"06": {
 					"var_type": "FIELD_FLOAT",
 					"starting_height": "300"
 				}
