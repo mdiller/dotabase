@@ -16,7 +16,7 @@ To start using the database, simply clone this repository and use any of the wid
 
 If you want to use the dotabase.py package in your python applications, you can install via pip like this:
 ```
-pip install git+https://github.com/mdiller/dotabase
+pip install dotabase
 ```
 
 Example Usage:
