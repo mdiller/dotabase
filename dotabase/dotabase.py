@@ -184,6 +184,10 @@ class ChatWheelMessage(Base):
 	message = Column(String)
 	label = Column(String)
 	sound = Column(String)
+	image = Column(String)
+	all_chat = Column(Boolean)
+	category = Column(String)
+
 
 class LoadingScreen(Base):
 	__tablename__ = 'loadingscreens'

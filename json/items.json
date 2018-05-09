@@ -938,6 +938,12 @@
 		"lore": "A mask that drains the energy of those caught in its gaze.",
 		"ability_special": [
 			{
+				"key": "bonus_damage",
+				"value": "10",
+				"header": "+",
+				"footer": "Damage"
+			},
+			{
 				"key": "lifesteal_percent",
 				"value": "15"
 			}
@@ -953,6 +959,10 @@
 			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage": "10"
+				},
+				"02": {
 					"var_type": "FIELD_INTEGER",
 					"lifesteal_percent": "15"
 				}
@@ -7724,7 +7734,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "8",
+				"value": "10",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -7771,7 +7781,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "8"
+					"bonus_damage": "10"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -14126,6 +14136,76 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"paint_duration": "900.0"
+				}
+			}
+		}
+	},
+	{
+		"id": 1028,
+		"name": "item_mutation_tombstone",
+		"localized_name": "Tombstone",
+		"quality": "consumable",
+		"cost": 0,
+		"ability_special": [],
+		"json_data": {
+			"ID": "1028",
+			"AbilityName": "item_tombstone",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"Model": "models/props_gameplay/tombstoneb01.vmdl",
+			"PingOverrideText": "DOTA_Chat_Tombstone_Pinged",
+			"precache": {
+				"particle_folder": "particles/units/heroes/hero_morphling"
+			},
+			"AbilityCastRange": "100",
+			"AbilityCastPoint": "0.0",
+			"ItemCost": "0",
+			"ItemPurchasable": "0",
+			"ItemShopTags": "consumable",
+			"ItemQuality": "consumable",
+			"ItemStackable": "1",
+			"ItemShareability": "ITEM_FULLY_SHAREABLE",
+			"ItemPermanent": "0",
+			"ItemInitialCharges": "1",
+			"ItemCastOnPickup": "1",
+			"ItemKillable": "0"
+		}
+	},
+	{
+		"id": 1029,
+		"name": "item_super_blink",
+		"localized_name": "Super Blink Dagger",
+		"icon": "/resource/flash3/images/items/super_blink.png",
+		"cooldown": "15",
+		"mana_cost": "0",
+		"description": "# Active: Blink\nTeleport to a target point up to **1200** units away.",
+		"lore": "The fabled dagger used by the fastest assassin ever to walk the lands.",
+		"ability_special": [
+			{
+				"key": "blink_range",
+				"value": "1200"
+			},
+			{
+				"key": "blink_range_clamp",
+				"value": "960"
+			}
+		],
+		"json_data": {
+			"ID": "1029",
+			"AbilityName": "item_super_blink",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+			"ItemPurchasable": "0",
+			"AbilityCastRange": "0",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "15.0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"blink_range": "1200"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"blink_range_clamp": "960"
 				}
 			}
 		}
