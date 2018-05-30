@@ -62,7 +62,7 @@
 		"aliases": "blades of attack",
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/blades_of_attack.png",
-		"cost": 420,
+		"cost": 430,
 		"lore": "The damage of these small, concealable blades should not be underestimated.",
 		"ability_special": [
 			{
@@ -75,7 +75,7 @@
 		"json_data": {
 			"ID": "2",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "420",
+			"ItemCost": "430",
 			"ItemShopTags": "damage;tutorial",
 			"ItemQuality": "component",
 			"ItemAliases": "blades of attack",
@@ -1630,16 +1630,16 @@
 		"icon": "/resource/flash3/images/items/bottle.png",
 		"cost": 650,
 		"cooldown": "0.5",
-		"description": "# Active: Regenerate\nConsumes a charge to restore **80** health and **40** mana over **2.5** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle. Stored Bounty Runes replenish 2/3 charges.",
+		"description": "# Active: Regenerate\nConsumes a charge to restore **100** health and **50** mana over **2.5** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle. Stored Bounty Runes replenish 2/3 charges.",
 		"lore": "An old bottle that survived the ages, the contents placed inside become enchanted.",
 		"ability_special": [
 			{
 				"key": "health_restore",
-				"value": "80"
+				"value": "100"
 			},
 			{
 				"key": "mana_restore",
-				"value": "40"
+				"value": "50"
 			},
 			{
 				"key": "restore_time",
@@ -1682,11 +1682,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"health_restore": "80"
+					"health_restore": "100"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"mana_restore": "40"
+					"mana_restore": "50"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -1710,7 +1710,7 @@
 		"aliases": "observer ward",
 		"quality": "consumable",
 		"icon": "/resource/flash3/images/items/ward_observer.png",
-		"cost": 80,
+		"cost": 75,
 		"cooldown": "1",
 		"description": "# Use: Plant\nPlants an Observer Ward, an invisible watcher that gives ground vision in a **1600** radius to your team. Lasts **6** minutes.\n\nHold Control to give one Observer Ward to an allied hero.\n\nRange: **500**",
 		"lore": "A form of half-sentient plant, often cultivated by apprentice wizards.",
@@ -1746,7 +1746,7 @@
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "1.0",
-			"ItemCost": "80",
+			"ItemCost": "75",
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "observer ward",
@@ -1756,7 +1756,7 @@
 			"ItemInitialCharges": "1",
 			"ItemStockMax": "4",
 			"ItemStockInitial": "2",
-			"ItemStockTime": "150.0",
+			"ItemStockTime": "135.0",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0",
@@ -1799,7 +1799,7 @@
 		"ability_special": [
 			{
 				"key": "lifetime",
-				"value": "240"
+				"value": "360"
 			},
 			{
 				"key": "vision_range",
@@ -1847,7 +1847,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"lifetime": "240"
+					"lifetime": "360"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -2158,7 +2158,7 @@
 		"aliases": "phase boots",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/phase_boots.png",
-		"cost": 1340,
+		"cost": 1360,
 		"cooldown": "8",
 		"description": "# Active: Phase\nGives **20%** increased movement speed on melee heroes, and **16%** on ranged heroes, and lets you move through units and turn more quickly for **3** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Boots that allow the wearer to travel between the ether.",
@@ -2212,7 +2212,7 @@
 			"ID": "50",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCooldown": "8.0",
-			"ItemCost": "1340",
+			"ItemCost": "1360",
 			"ItemShopTags": "damage;move_speed;hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "phase boots",
@@ -2758,7 +2758,7 @@
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/hand_of_midas.png",
 		"cost": 2150,
-		"cooldown": "100",
+		"cooldown": "95",
 		"mana_cost": "0",
 		"description": "# Active: Transmute\nKills a non-hero target for **200** gold and **1.85**x experience. \n\n Cannot be used on Ancient Creeps.\n\nRange: **600**",
 		"lore": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
@@ -2790,7 +2790,7 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "100.0",
+			"AbilityCooldown": "95.0",
 			"AbilityManaCost": "0",
 			"ItemCost": "2150",
 			"ItemShopTags": "attack_speed;hard_to_tag",
@@ -3433,7 +3433,7 @@
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/vladmir.png",
 		"cost": 2250,
-		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **2.5** health regeneration, **0.65** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **900**",
+		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **2.5** health regeneration, **1** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **900**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"ability_special": [
 			{
@@ -3448,7 +3448,7 @@
 			},
 			{
 				"key": "mana_regen_aura",
-				"value": "0.65"
+				"value": "1"
 			},
 			{
 				"key": "armor_aura",
@@ -3492,7 +3492,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen_aura": "0.65"
+					"mana_regen_aura": "1.0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -6319,7 +6319,7 @@
 		"aliases": "daedalus",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/greater_crit.png",
-		"cost": 5320,
+		"cost": 5330,
 		"description": "# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **235%** damage.",
 		"lore": "A weapon of incredible power that is difficult for even the strongest of warriors to control.",
 		"ability_special": [
@@ -6345,7 +6345,7 @@
 		"json_data": {
 			"ID": "141",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "5320",
+			"ItemCost": "5330",
 			"ItemShopTags": "damage;crit",
 			"ItemQuality": "epic",
 			"ItemAliases": "daedalus",
@@ -6376,12 +6376,12 @@
 		"name": "item_recipe_basher",
 		"localized_name": "Skull Basher Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1150,
+		"cost": 1000,
 		"ability_special": [],
 		"json_data": {
 			"ID": "142",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1150",
+			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_basher",
@@ -6397,7 +6397,7 @@
 		"aliases": "skull basher",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/basher.png",
-		"cost": 3200,
+		"cost": 3050,
 		"cooldown": "2.3",
 		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash chance for ranged heroes is **10%**.",
 		"lore": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
@@ -6440,7 +6440,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "2.3",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
-			"ItemCost": "3200",
+			"ItemCost": "3050",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "skull basher",
@@ -6884,7 +6884,7 @@
 		"aliases": "crystalys",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/lesser_crit.png",
-		"cost": 2120,
+		"cost": 2130,
 		"description": "# Passive: Critical Strike\nGrants each attack a **20%** chance to deal **175%** damage.",
 		"lore": "A blade forged from rare crystals, it seeks weak points in enemy armor.",
 		"ability_special": [
@@ -6910,7 +6910,7 @@
 		"json_data": {
 			"ID": "149",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2120",
+			"ItemCost": "2130",
 			"ItemShopTags": "damage;crit",
 			"ItemQuality": "epic",
 			"ItemAliases": "crystalys",
@@ -6961,7 +6961,7 @@
 		"aliases": "armlet of mordiggian",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/armlet.png",
-		"cost": 2370,
+		"cost": 2380,
 		"cooldown": "0",
 		"description": "# Toggle: Unholy Strength\nWhen active, Unholy Strength grants +**31** damage, +**25** strength and +**4** armor, but drains **54** health per second.\n\n You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated.",
 		"lore": "Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.",
@@ -7023,7 +7023,7 @@
 			"ID": "151",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCooldown": "0.0",
-			"ItemCost": "2370",
+			"ItemCost": "2380",
 			"ItemShopTags": "damage;attack_speed;armor;regen_health;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "armlet of mordiggian",
@@ -7084,7 +7084,7 @@
 		"aliases": "sb|invis|shadow blade|silver edge",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/invis_sword.png",
-		"cost": 2700,
+		"cost": 2800,
 		"cooldown": "28",
 		"mana_cost": "75",
 		"description": "# Active: Shadow Walk\nMakes you invisible for **14** seconds, or until you attack or cast a spell.  While Shadow Walk is active, you move **20%** faster and can move through units.  \n\nIf attacking to end the invisibility, you gain **175** bonus physical damage on that attack.",
@@ -7126,7 +7126,7 @@
 			"AbilityCooldown": "28.0",
 			"AbilitySharedCooldown": "shadow_blade",
 			"AbilityManaCost": "75",
-			"ItemCost": "2700",
+			"ItemCost": "2800",
 			"ItemShopTags": "damage;attack_speed;movespeed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "sb;invis;shadow blade;silver edge",
@@ -10126,11 +10126,11 @@
 		"name": "item_recipe_rod_of_atos",
 		"localized_name": "Rod of Atos Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1100,
+		"cost": 1000,
 		"ability_special": [],
 		"json_data": {
 			"ID": "205",
-			"ItemCost": "1100",
+			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_rod_of_atos",
@@ -10146,7 +10146,7 @@
 		"aliases": "rod of atos",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/rod_of_atos.png",
-		"cost": 3030,
+		"cost": 2930,
 		"cooldown": "16",
 		"mana_cost": "50",
 		"description": "# Active: Cripple\nRoots the target for **2** seconds.\n\nRange: **1150**",
@@ -10190,7 +10190,7 @@
 			"AbilityCastRange": "1150",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "50",
-			"ItemCost": "3030",
+			"ItemCost": "2930",
 			"ItemShopTags": "int;regen_health",
 			"ItemQuality": "rare",
 			"ItemAliases": "rod of atos",
@@ -10245,7 +10245,7 @@
 		"aliases": "abyssal blade",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/abyssal_blade.png",
-		"cost": 6900,
+		"cost": 6750,
 		"cooldown": "35",
 		"mana_cost": "75",
 		"description": "# Active: Overwhelm\nStuns a target enemy unit for **2** seconds. \n\nPierces Spell Immunity.\n\nRange: **140**\n\n# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash chance for ranged heroes is **10%**.\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
@@ -10328,7 +10328,7 @@
 			"AbilityCastRange": "140",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "75",
-			"ItemCost": "6900",
+			"ItemCost": "6750",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "abyssal blade",
@@ -10809,7 +10809,7 @@
 		"localized_name": "Shadow Amulet",
 		"aliases": "shadow amulet",
 		"icon": "/resource/flash3/images/items/shadow_amulet.png",
-		"cost": 1300,
+		"cost": 1400,
 		"cooldown": "7",
 		"mana_cost": "0",
 		"description": "# Active: Fade\nGrants invisibility to you or a target allied hero as long as the target unit remains still.  \n\nHas a **1.25** second fade time, and breaks instantly upon moving. \n\nThere is no cooldown when using this item on yourself.\n\nRange: **600**",
@@ -10839,7 +10839,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCooldown": "7.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "1300",
+			"ItemCost": "1400",
 			"ItemShopTags": "",
 			"ItemAliases": "shadow amulet",
 			"AbilitySpecial": {
@@ -10871,7 +10871,7 @@
 		"ability_special": [
 			{
 				"key": "hp_regen",
-				"value": "0.7",
+				"value": "0.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -10905,7 +10905,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"hp_regen": "0.7"
+					"hp_regen": "0.5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -10948,7 +10948,7 @@
 		"aliases": "ward",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/ward_dispenser.png",
-		"cost": 180,
+		"cost": 175,
 		"cooldown": "0",
 		"description": "# Use: Plant\nPlant the currently active ward.  Double-Click to switch the currently active ward.\n\nRange: **500**",
 		"lore": "Advancements in stacking efficiency have made wards easier to carry than ever.",
@@ -10971,7 +10971,7 @@
 			},
 			{
 				"key": "lifetime_sentry",
-				"value": "240"
+				"value": "360"
 			},
 			{
 				"key": "creation_delay",
@@ -10994,7 +10994,7 @@
 			},
 			{
 				"key": "sentry_duration_minutes_tooltip",
-				"value": "4",
+				"value": "6",
 				"header": "SENTRY DURATION (MINUTES):"
 			},
 			{
@@ -11008,7 +11008,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
-			"ItemCost": "180",
+			"ItemCost": "175",
 			"ItemQuality": "common",
 			"ItemAliases": "ward",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE_STACKING",
@@ -11036,7 +11036,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"lifetime_sentry": "240"
+					"lifetime_sentry": "360"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -11056,7 +11056,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"sentry_duration_minutes_tooltip": "4"
+					"sentry_duration_minutes_tooltip": "6"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
@@ -11392,7 +11392,7 @@
 			},
 			{
 				"key": "projectile_speed",
-				"value": "900"
+				"value": "750"
 			},
 			{
 				"key": "slow_pct",
@@ -11437,7 +11437,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"projectile_speed": "900"
+					"projectile_speed": "750"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -12614,7 +12614,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "130",
+				"value": "140",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -12645,7 +12645,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "130"
+					"bonus_attack_speed": "140"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -12667,11 +12667,11 @@
 		"name": "item_recipe_silver_edge",
 		"localized_name": "Silver Edge Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 700,
+		"cost": 600,
 		"ability_special": [],
 		"json_data": {
 			"ID": "248",
-			"ItemCost": "700",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_silver_edge",
@@ -12797,7 +12797,7 @@
 		"aliases": "orchid malevolence",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/bloodthorn.png",
-		"cost": 7195,
+		"cost": 7205,
 		"cooldown": "18",
 		"mana_cost": "100",
 		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **30%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will have True Strike and **100%** chance to crit for **140%** damage.\n\nRange: **900**\n\n# Passive: Critical Strike\nGrants a **20%** chance for attacks to inflict **175%** damage.",
@@ -12868,7 +12868,7 @@
 			"AbilityCooldown": "18.0",
 			"AbilitySharedCooldown": "orchid",
 			"AbilityManaCost": "100",
-			"ItemCost": "7195",
+			"ItemCost": "7205",
 			"ItemShopTags": "int;attack_speed;damage;regen_mana;damage;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "orchid malevolence",
@@ -13070,7 +13070,7 @@
 		"aliases": "glimmer cape",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/glimmer_cape.png",
-		"cost": 1850,
+		"cost": 1950,
 		"cooldown": "14",
 		"mana_cost": "90",
 		"description": "# Active: Glimmer\nAfter a **0.6** second delay, grants invisibility and **45%** magic resistance to you or a target allied unit for **5** seconds.\n\nRange: **800**\n\nCan be cast while channelling.",
@@ -13119,7 +13119,7 @@
 			"AbilityCastRange": "800",
 			"AbilityCooldown": "14.0",
 			"AbilityManaCost": "90",
-			"ItemCost": "1850",
+			"ItemCost": "1950",
 			"ItemShopTags": "",
 			"ItemQuality": "rare",
 			"ItemAliases": "glimmer cape",
