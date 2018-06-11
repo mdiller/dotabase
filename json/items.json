@@ -1172,12 +1172,12 @@
 		"aliases": "talisman of evasion",
 		"quality": "secret_shop",
 		"icon": "/resource/flash3/images/items/talisman_of_evasion.png",
-		"cost": 1450,
+		"cost": 1400,
 		"lore": "A necklace that allows you to anticipate enemy attacks.",
 		"ability_special": [
 			{
 				"key": "bonus_evasion",
-				"value": "20%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Evasion"
 			}
@@ -1185,7 +1185,7 @@
 		"json_data": {
 			"ID": "32",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1450",
+			"ItemCost": "1400",
 			"ItemShopTags": "evasion",
 			"ItemQuality": "secret_shop",
 			"ItemAliases": "talisman of evasion",
@@ -1193,7 +1193,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_evasion": "20"
+					"bonus_evasion": "15"
 				}
 			}
 		}
@@ -4358,7 +4358,7 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "40",
+				"value": "30",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -4403,7 +4403,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "40"
+					"bonus_movement_speed": "30"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -4883,13 +4883,13 @@
 		"name": "item_recipe_refresher",
 		"localized_name": "Refresher Orb Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1800,
+		"cost": 1700,
 		"ability_special": [],
 		"json_data": {
 			"ID": "109",
 			"Model": "models/props_gameplay/recipe.vmdl",
 			"FightRecapLevel": "2",
-			"ItemCost": "1800",
+			"ItemCost": "1700",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_refresher",
@@ -4905,7 +4905,7 @@
 		"aliases": "refresher orb",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/refresher.png",
-		"cost": 5200,
+		"cost": 5100,
 		"cooldown": "195",
 		"mana_cost": "375",
 		"description": "# Active: Reset Cooldowns\nResets the cooldowns of all your items and abilities.",
@@ -4930,7 +4930,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "195.0",
 			"AbilityManaCost": "375",
-			"ItemCost": "5200",
+			"ItemCost": "5100",
 			"ItemShopTags": "regen_health;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "refresher orb",
@@ -6217,7 +6217,7 @@
 		"aliases": "bfly|butterfly",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/butterfly.png",
-		"cost": 5525,
+		"cost": 5475,
 		"cooldown": "25",
 		"description": "# Active: Flutter\nGrants **35%** additional movement speed for **2** seconds.",
 		"lore": "Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat.",
@@ -6259,7 +6259,7 @@
 			"ID": "139",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "25.0",
-			"ItemCost": "5525",
+			"ItemCost": "5475",
 			"ItemShopTags": "agi;damage;evasion;attack_speed",
 			"ItemQuality": "epic",
 			"ItemAliases": "bfly;butterfly",
@@ -6481,7 +6481,7 @@
 	{
 		"id": 144,
 		"name": "item_recipe_bfury",
-		"localized_name": "item_recipe_bfury",
+		"localized_name": "Battle Fury Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
 		"cost": 300,
 		"ability_special": [],
@@ -10420,7 +10420,7 @@
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/heavens_halberd.png",
-		"cost": 3600,
+		"cost": 3550,
 		"cooldown": "18",
 		"mana_cost": "100",
 		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **5** seconds on ranged targets.\n\nRange: **600** \n\n# Passive: Maim\nEach attack has a **40%** chance to reduce enemy hero movement speed by **-26%** and attack speed by **-26** if the user is melee. Reduces enemy hero movement by **-13%** and attack speed by **-13** if the user is ranged. Effect lasts **5** seconds.",
@@ -10491,7 +10491,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "100",
-			"ItemCost": "3600",
+			"ItemCost": "3550",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
@@ -11584,7 +11584,7 @@
 		"aliases": "solar crest",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/solar_crest.png",
-		"cost": 2625,
+		"cost": 2575,
 		"cooldown": "7",
 		"description": "# Active: Shine\nWhen cast on an ally, grants them **10** armor and **20%** evasion. When cast on an enemy, removes **10** of their armor and grants your allies **40%** Accuracy on the target. \n\nRemoves the armor and evasion from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
 		"lore": "A talisman forged to honor the daytime sky.",
@@ -11602,10 +11602,14 @@
 				"footer": "Mana Regeneration"
 			},
 			{
-				"key": "bonus_evasion",
-				"value": "20%",
+				"key": "self_bonus_evasion",
+				"value": "15%",
 				"header": "+",
 				"footer": "Evasion"
+			},
+			{
+				"key": "bonus_evasion",
+				"value": "20"
 			},
 			{
 				"key": "truestrike_chance",
@@ -11631,7 +11635,7 @@
 			"AbilityCastRange": "1000",
 			"AbilityCooldown": "7.0",
 			"AbilitySharedCooldown": "medallion",
-			"ItemCost": "2625",
+			"ItemCost": "2575",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemShopTags": "armor;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
@@ -11649,17 +11653,21 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_evasion": "20"
+					"self_bonus_evasion": "15"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"truestrike_chance": "40"
+					"bonus_evasion": "20"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"duration": "7"
+					"truestrike_chance": "40"
 				},
 				"06": {
+					"var_type": "FIELD_INTEGER",
+					"duration": "7"
+				},
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"valor_cast_range_tooltip": "1000"
 				}
@@ -12609,7 +12617,7 @@
 		"quality": "consumable",
 		"icon": "/resource/flash3/images/items/moon_shard.png",
 		"cost": 4000,
-		"description": "# Use: Consume\nConsume the Moon Shard to permanently gain **60** attack speed and **150** bonus night vision. Max 1 use.\n\n# Passive: Shade Sight\nGrants **300** bonus night vision.",
+		"description": "# Use: Consume\nConsume the Moon Shard to permanently gain **60** attack speed and **200** bonus night vision. Max 1 use.\n\n# Passive: Shade Sight\nGrants **400** bonus night vision.",
 		"lore": "Said to be a tear from the lunar goddess Selemene.",
 		"ability_special": [
 			{
@@ -12620,7 +12628,7 @@
 			},
 			{
 				"key": "bonus_night_vision",
-				"value": "300"
+				"value": "400"
 			},
 			{
 				"key": "consumed_bonus",
@@ -12628,7 +12636,7 @@
 			},
 			{
 				"key": "consumed_bonus_night_vision",
-				"value": "150"
+				"value": "200"
 			}
 		],
 		"json_data": {
@@ -12649,7 +12657,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_night_vision": "300"
+					"bonus_night_vision": "400"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -12657,7 +12665,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"consumed_bonus_night_vision": "150"
+					"consumed_bonus_night_vision": "200"
 				}
 			}
 		}
