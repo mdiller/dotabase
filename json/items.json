@@ -1794,7 +1794,7 @@
 		"icon": "/resource/flash3/images/items/ward_sentry.png",
 		"cost": 100,
 		"cooldown": "1",
-		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **850** radius.\nLasts **4** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.\n\nRange: **500**",
+		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **850** radius.\nLasts **6** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.\n\nRange: **500**",
 		"lore": "A form of plant originally grown in the garden of a fearful king.",
 		"ability_special": [
 			{
@@ -1815,7 +1815,7 @@
 			},
 			{
 				"key": "duration_minutes_tooltip",
-				"value": "4"
+				"value": "6"
 			},
 			{
 				"key": "tooltip_range",
@@ -1863,7 +1863,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"duration_minutes_tooltip": "4"
+					"duration_minutes_tooltip": "6"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -2758,7 +2758,7 @@
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/hand_of_midas.png",
 		"cost": 2150,
-		"cooldown": "95",
+		"cooldown": "90",
 		"mana_cost": "0",
 		"description": "# Active: Transmute\nKills a non-hero target for **200** gold and **1.85**x experience. \n\n Cannot be used on Ancient Creeps.\n\nRange: **600**",
 		"lore": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
@@ -2790,7 +2790,7 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "95.0",
+			"AbilityCooldown": "90.0",
 			"AbilityManaCost": "0",
 			"ItemCost": "2150",
 			"ItemShopTags": "attack_speed;hard_to_tag",
@@ -6132,7 +6132,7 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/radiance.png",
 		"cost": 5150,
-		"description": "# Toggle: Burn\nWhen active, scorches enemies for **60** magical damage per second, and causes them to miss **17%** of their attacks.\n\nRadius: **700**",
+		"description": "# Toggle: Burn\nWhen active, scorches enemies for **60** magical damage per second, and causes them to miss **17%** of their attacks. Illusions deal **35** magical damage per second.\n\nRadius: **700**",
 		"lore": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.",
 		"ability_special": [
 			{
@@ -7958,7 +7958,7 @@
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/maelstrom.png",
 		"cost": 2700,
-		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **900** radius, dealing **170** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **900** radius, dealing **160** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"ability_special": [
 			{
@@ -7973,7 +7973,7 @@
 			},
 			{
 				"key": "chain_damage",
-				"value": "170"
+				"value": "160"
 			},
 			{
 				"key": "chain_strikes",
@@ -8012,7 +8012,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"chain_damage": "170"
+					"chain_damage": "160"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8767,12 +8767,16 @@
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/orb_of_venom.png",
 		"cost": 275,
-		"description": "# Passive: Poison Attack\nPoisons the target, dealing **5** magical damage per second for **3** seconds and slowing movement by **-12%** if the equipped hero is melee, or **-4%** if they are ranged.",
+		"description": "# Passive: Poison Attack\nPoisons the target, dealing **5** magical damage per second and slowing movement by **-12%** if the equipped hero is melee, or **3** magical damage per second and slowing movement by **-4%** if they are ranged. Lasts for **3** seconds.",
 		"lore": "Envenoms your veapon with the venom of a venomous viper.",
 		"ability_special": [
 			{
-				"key": "poison_damage",
+				"key": "poison_damage_melee",
 				"value": "5"
+			},
+			{
+				"key": "poison_damage_range",
+				"value": "3"
 			},
 			{
 				"key": "poison_movement_speed_melee",
@@ -8799,17 +8803,21 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"poison_damage": "5.0"
+					"poison_damage_melee": "5.0"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"poison_movement_speed_melee": "-12"
+					"var_type": "FIELD_FLOAT",
+					"poison_damage_range": "3.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"poison_movement_speed_range": "-4"
+					"poison_movement_speed_melee": "-12"
 				},
 				"04": {
+					"var_type": "FIELD_INTEGER",
+					"poison_movement_speed_range": "-4"
+				},
+				"05": {
 					"var_type": "FIELD_FLOAT",
 					"poison_duration": "3.0"
 				}
@@ -12959,7 +12967,7 @@
 		"cost": 2650,
 		"cooldown": "5",
 		"mana_cost": "0",
-		"description": "# Passive: Echo Strike\nCauses melee attacks to attack twice in quick succession. The double attacks apply a **100%** movement slow for **0.7** seconds on each strike.",
+		"description": "# Passive: Echo Strike\nCauses melee attacks to attack twice in quick succession. The double attacks apply a **100%** movement slow for **0.8** seconds on each strike.",
 		"lore": "A deceptively swift blade imbued with resonant magic.",
 		"ability_special": [
 			{
@@ -12968,7 +12976,7 @@
 			},
 			{
 				"key": "bonus_strength",
-				"value": "10"
+				"value": "12"
 			},
 			{
 				"key": "bonus_attack_speed",
@@ -12976,7 +12984,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "15"
+				"value": "12"
 			},
 			{
 				"key": "bonus_mana_regen",
@@ -12996,7 +13004,7 @@
 			},
 			{
 				"key": "slow_duration",
-				"value": "0.7"
+				"value": "0.8"
 			}
 		],
 		"json_data": {
@@ -13020,7 +13028,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "10"
+					"bonus_strength": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -13028,7 +13036,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "15"
+					"bonus_damage": "12"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -13048,7 +13056,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"slow_duration": "0.7"
+					"slow_duration": "0.8"
 				}
 			}
 		}
@@ -13191,8 +13199,8 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/aeon_disk.png",
 		"cost": 3350,
-		"cooldown": "90",
-		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage.",
+		"cooldown": "115",
+		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **80%**, a strong dispel is applied and you gain a **2.5** second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage.",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -13208,7 +13216,7 @@
 			},
 			{
 				"key": "health_threshold_pct",
-				"value": "70"
+				"value": "80"
 			},
 			{
 				"key": "status_resistance",
@@ -13223,7 +13231,7 @@
 		"json_data": {
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCooldown": "90.0",
+			"AbilityCooldown": "115.0",
 			"ItemCost": "3350",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
@@ -13241,7 +13249,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"health_threshold_pct": "70"
+					"health_threshold_pct": "80"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
