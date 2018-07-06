@@ -3487,7 +3487,7 @@
 			},
 			{
 				"key": "charge_restore_time",
-				"value": "11"
+				"value": "14 13 12 11"
 			}
 		],
 		"ability_slot": 1,
@@ -3519,7 +3519,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"charge_restore_time": "11"
+					"charge_restore_time": "14 13 12 11"
 				}
 			}
 		}
@@ -10145,11 +10145,6 @@
 				"header": "ALLY ARMOR BONUS:"
 			},
 			{
-				"key": "building_armor_bonus_tooltip",
-				"value": "3 5 7 9",
-				"header": "BUILDING ARMOR BONUS:"
-			},
-			{
 				"key": "slow_duration",
 				"value": "2",
 				"header": "SLOW DURATION:"
@@ -10192,18 +10187,14 @@
 					"armor_bonus": "4 6 8 10"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"building_armor_bonus_tooltip": "3 5 7 9"
-				},
-				"03": {
 					"var_type": "FIELD_FLOAT",
 					"slow_duration": "2.0 2.0 2.0 2.0"
 				},
-				"04": {
+				"03": {
 					"var_type": "FIELD_INTEGER",
 					"slow_movement_speed": "-8 -16 -24 -32"
 				},
-				"05": {
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"slow_attack_speed": "-8 -16 -24 -32"
 				}
@@ -10748,7 +10739,7 @@
 		"ability_special": [
 			{
 				"key": "radius",
-				"value": "250 275 300 325",
+				"value": "325",
 				"header": "RADIUS:"
 			},
 			{
@@ -10791,7 +10782,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "250 275 300 325"
+					"radius": "325"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -19761,6 +19752,11 @@
 		"mana_cost": "80 90 100 110",
 		"ability_special": [
 			{
+				"key": "duration_day",
+				"value": "1.25",
+				"header": "DAY DURATION:"
+			},
+			{
 				"key": "duration_night",
 				"value": "2.5 3 3.5 4",
 				"header": "NIGHT DURATION:"
@@ -19800,13 +19796,17 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"duration_night": "2.5 3 3.5 4"
+					"duration_day": "1.25"
 				},
 				"02": {
+					"var_type": "FIELD_FLOAT",
+					"duration_night": "2.5 3 3.5 4"
+				},
+				"03": {
 					"var_type": "FIELD_INTEGER",
 					"movespeed_slow": "-50 -50 -50 -50"
 				},
-				"03": {
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"attackspeed_slow": "-50 -50 -50 -50"
 				}
