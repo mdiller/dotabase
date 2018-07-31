@@ -74,6 +74,21 @@
 		}
 	},
 	{
+		"id": 84,
+		"name": "courier_autodeliver",
+		"behavior": "no_target|ignore_backswing|toggle",
+		"ability_special": [],
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "courier_autodeliver",
+		"json_data": {
+			"ID": "84",
+			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_TOGGLE",
+			"MaxLevel": "1",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_7"
+		}
+	},
+	{
 		"id": 5001,
 		"name": "default_attack",
 		"ability_special": [],
@@ -1129,15 +1144,15 @@
 			{
 				"talent_name": "special_bonus_unique_bloodseeker_4",
 				"key": "bonus_movement_speed",
-				"value": "16% 24% 32% 40%",
-				"talent_value": "36% 44% 52% 60%",
+				"value": "7% 18% 29% 40%",
+				"talent_value": "25% 36% 47% 58%",
 				"header": "MAX THIRST MOVE SPEED:"
 			},
 			{
 				"talent_name": "special_bonus_unique_bloodseeker_4",
 				"key": "bonus_damage",
-				"value": "16 24 32 40",
-				"talent_value": "36 44 52 60",
+				"value": "7 18 29 40",
+				"talent_value": "25 36 47 58",
 				"header": "MAX THIRST DAMAGE:"
 			},
 			{
@@ -1171,12 +1186,12 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "16 24 32 40",
+					"bonus_movement_speed": "7 18 29 40",
 					"LinkedSpecialBonus": "special_bonus_unique_bloodseeker_4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "16 24 32 40",
+					"bonus_damage": "7 18 29 40",
 					"LinkedSpecialBonus": "special_bonus_unique_bloodseeker_4"
 				},
 				"04": {
@@ -1897,8 +1912,8 @@
 			{
 				"talent_name": "special_bonus_unique_juggernaut_3",
 				"key": "blade_fury_damage",
-				"value": "80 105 130 155",
-				"talent_value": "180 205 230 255",
+				"value": "90 115 140 160",
+				"talent_value": "190 215 240 260",
 				"header": "DAMAGE:"
 			},
 			{
@@ -1937,7 +1952,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"blade_fury_damage": "80 105 130 155",
+					"blade_fury_damage": "90 115 140 160",
 					"LinkedSpecialBonus": "special_bonus_unique_juggernaut_3"
 				},
 				"04": {
@@ -4680,11 +4695,11 @@
 			},
 			{
 				"key": "illusion_damage_in_pct",
-				"value": "400"
+				"value": "500"
 			},
 			{
 				"key": "tooltip_total_illusion_damage_in_pct",
-				"value": "500%",
+				"value": "600%",
 				"header": "ILLUSION DAMAGE TAKEN:"
 			},
 			{
@@ -4731,11 +4746,11 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"illusion_damage_in_pct": "400"
+					"illusion_damage_in_pct": "500"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_total_illusion_damage_in_pct": "500"
+					"tooltip_total_illusion_damage_in_pct": "600"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
@@ -4936,7 +4951,7 @@
 			},
 			{
 				"key": "silence_duration",
-				"value": "1.5 2 2.5 3",
+				"value": "2 2.5 3 3.5",
 				"header": "DURATION:"
 			},
 			{
@@ -4970,7 +4985,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"silence_duration": "1.5 2 2.5 3"
+					"silence_duration": "2.0 2.5 3.0 3.5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -5199,7 +5214,7 @@
 		"spell_immunity": "yes",
 		"cast_range": "1300",
 		"cast_point": "0.3",
-		"cooldown": "17 15 13 11",
+		"cooldown": "27 22 17 12",
 		"damage": "150 220 290 360",
 		"mana_cost": "140",
 		"ability_special": [
@@ -5252,7 +5267,7 @@
 			"AbilitySound": "Hero_Pudge.AttackHookExtend",
 			"AbilityCastRange": "1300",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "17 15 13 11",
+			"AbilityCooldown": "27 22 17 12",
 			"AbilityDamage": "150 220 290 360",
 			"AbilityManaCost": "140",
 			"AbilitySpecial": {
@@ -9310,7 +9325,7 @@
 		"cast_range": "700",
 		"cast_point": "0.3",
 		"cooldown": "11 10 9 8",
-		"mana_cost": "100 120 140 160",
+		"mana_cost": "130 140 150 160",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -9361,7 +9376,7 @@
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "11 10 9 8",
-			"AbilityManaCost": "100 120 140 160",
+			"AbilityManaCost": "130 140 150 160",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -9874,7 +9889,7 @@
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_point": "0.3",
-		"cooldown": "12",
+		"cooldown": "15 14 13 12",
 		"duration": "3 4 5 6",
 		"mana_cost": "50",
 		"ability_special": [
@@ -9919,7 +9934,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Ability.Windrun",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "12",
+			"AbilityCooldown": "15 14 13 12",
 			"AbilityDuration": "3 4 5 6",
 			"AbilityManaCost": "50",
 			"AbilityModifierSupportValue": "0.1",
@@ -10732,7 +10747,7 @@
 		"spell_immunity": "no",
 		"dispellable": "no",
 		"cast_range": "550",
-		"cast_point": "0.4",
+		"cast_point": "0.2",
 		"cooldown": "17 15 13 11",
 		"duration": "6",
 		"mana_cost": "90",
@@ -10775,7 +10790,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilitySound": "Hero_Riki.Smoke_Screen",
 			"AbilityCastRange": "550",
-			"AbilityCastPoint": "0.4 0.4 0.4 0.4",
+			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "17 15 13 11",
 			"AbilityDuration": "6",
 			"AbilityManaCost": "90",
@@ -11727,7 +11742,7 @@
 				"talent_name": "special_bonus_unique_sniper_1",
 				"key": "shrapnel_damage",
 				"value": "15 35 55 75",
-				"talent_value": "40 60 80 100",
+				"talent_value": "50 70 90 110",
 				"header": "DAMAGE:"
 			},
 			{
@@ -12173,7 +12188,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "-30%",
+				"value": "-40%",
 				"header": "INCREASED MAGIC DAMAGE:"
 			}
 		],
@@ -12209,7 +12224,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "-30"
+					"bonus_damage": "-40"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -12225,7 +12240,7 @@
 		"target_team": "enemy",
 		"dispellable": "no",
 		"cast_range": "600",
-		"cast_point": "0.5",
+		"cast_point": "0.55",
 		"cooldown": "120",
 		"mana_cost": "200 350 500",
 		"ability_special": [
@@ -12241,7 +12256,7 @@
 			},
 			{
 				"key": "cooldown_scepter",
-				"value": "55 40 25",
+				"value": "60 50 40",
 				"header": "SCEPTER COOLDOWN:"
 			},
 			{
@@ -12270,7 +12285,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Necrolyte.ReapersScythe.Target",
 			"HasScepterUpgrade": "1",
-			"AbilityCastPoint": "0.5 0.5 0.5",
+			"AbilityCastPoint": "0.55",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "120",
 			"AbilityManaCost": "200 350 500",
@@ -12287,7 +12302,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"cooldown_scepter": "55 40 25"
+					"cooldown_scepter": "60 50 40"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -14944,8 +14959,8 @@
 			{
 				"talent_name": "special_bonus_unique_templar_assassin_3",
 				"key": "trap_bonus_damage",
-				"value": "250 350 450",
-				"talent_value": "450 550 650",
+				"value": "250 300 350",
+				"talent_value": "450 500 550",
 				"header": "BONUS DAMAGE:"
 			},
 			{
@@ -14995,7 +15010,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "250 350 450",
+					"trap_bonus_damage": "250 300 350",
 					"LinkedSpecialBonus": "special_bonus_unique_templar_assassin_3"
 				},
 				"07": {
@@ -15027,7 +15042,7 @@
 			},
 			{
 				"key": "trap_bonus_damage",
-				"value": "250 350 450"
+				"value": "250 300 350"
 			},
 			{
 				"key": "movement_speed_min",
@@ -15068,7 +15083,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "250 350 450"
+					"trap_bonus_damage": "250 300 350"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -15105,7 +15120,7 @@
 			},
 			{
 				"key": "trap_bonus_damage",
-				"value": "250 350 450"
+				"value": "250 300 350"
 			},
 			{
 				"key": "movement_speed_min",
@@ -15143,7 +15158,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "250 350 450"
+					"trap_bonus_damage": "250 300 350"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -19267,7 +19282,7 @@
 		"cast_point": "0.3",
 		"cooldown": "35",
 		"duration": "11",
-		"mana_cost": "110 120 130 140",
+		"mana_cost": "170 160 150 140",
 		"ability_special": [
 			{
 				"key": "heal_interval",
@@ -19307,7 +19322,7 @@
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "35",
 			"AbilityDuration": "11",
-			"AbilityManaCost": "110 120 130 140",
+			"AbilityManaCost": "170 160 150 140",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -20104,7 +20119,7 @@
 			},
 			{
 				"key": "bonus_movespeed",
-				"value": "40% 50% 60% 70%",
+				"value": "25% 40% 55% 70%",
 				"header": "MOVE INCREASE:"
 			},
 			{
@@ -20114,14 +20129,14 @@
 			},
 			{
 				"key": "charge_restore_time",
-				"value": "40",
+				"value": "45",
 				"header": "CHARGE RESTORE TIME:"
 			}
 		],
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/broodmother_spin_web.png",
 		"localized_name": "Spin Web",
-		"description": "Spins a large web that grants Broodmother a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every **40** seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
+		"description": "Spins a large web that grants Broodmother a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every **45** seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
 		"lore": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of forboding.",
 		"note": "Also affects Spiderling and Spiderites.\nIf free movement is disabled, you will destroy nearby trees.",
 		"json_data": {
@@ -20148,7 +20163,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movespeed": "40 50 60 70"
+					"bonus_movespeed": "25 40 55 70"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -20156,7 +20171,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"charge_restore_time": "40.0"
+					"charge_restore_time": "45.0"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -24196,7 +24211,7 @@
 		"cast_point": "0.01",
 		"cooldown": "4",
 		"duration": "16",
-		"mana_cost": "80 90 100 110",
+		"mana_cost": "65 80 95 110",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -24243,7 +24258,7 @@
 			"AbilityCastPoint": "0.01 0.01 0.01 0.01",
 			"AbilityCooldown": "4.0",
 			"AbilityDuration": "16",
-			"AbilityManaCost": "80 90 100 110",
+			"AbilityManaCost": "65 80 95 110",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -27798,7 +27813,7 @@
 			},
 			{
 				"key": "bonus_mana",
-				"value": "125 200 275 350",
+				"value": "150 250 350 450",
 				"header": "BASE MANA:"
 			},
 			{
@@ -27841,7 +27856,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_mana": "125 200 275 350"
+					"bonus_mana": "150 250 350 450"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -27879,8 +27894,8 @@
 			{
 				"talent_name": "special_bonus_unique_outworld_devourer_3",
 				"key": "damage_multiplier",
-				"value": "8 9 10",
-				"talent_value": "10 11 12",
+				"value": "9 10 11",
+				"talent_value": "11 12 13",
 				"header": "INT DIFF DAMAGE MULTIPLIER:"
 			},
 			{
@@ -27919,7 +27934,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_multiplier": "8 9 10",
+					"damage_multiplier": "9 10 11",
 					"LinkedSpecialBonus": "special_bonus_unique_outworld_devourer_3"
 				},
 				"02": {
@@ -30468,7 +30483,7 @@
 		"cast_range": "350",
 		"cast_point": "0.5",
 		"cooldown": "16 13 10 7",
-		"mana_cost": "80 95 110 125",
+		"mana_cost": "100 110 120 130",
 		"ability_special": [
 			{
 				"key": "damage_interval",
@@ -30519,7 +30534,7 @@
 			"AbilityCastPoint": "0.5 0.5 0.5 0.5",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "16 13 10 7",
-			"AbilityManaCost": "80 95 110 125",
+			"AbilityManaCost": "100 110 120 130",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -30723,8 +30738,8 @@
 			{
 				"talent_name": "special_bonus_unique_ogre_magi_2",
 				"key": "fireblast_damage",
-				"value": "55 110 165 220",
-				"talent_value": "330 385 440 495",
+				"value": "60 120 180 240",
+				"talent_value": "335 395 455 515",
 				"header": "FIREBLAST DAMAGE:"
 			}
 		],
@@ -30759,7 +30774,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"fireblast_damage": "55 110 165 220",
+					"fireblast_damage": "60 120 180 240",
 					"LinkedSpecialBonus": "special_bonus_unique_ogre_magi_2"
 				}
 			},
@@ -33854,7 +33869,7 @@
 			},
 			{
 				"key": "minimum_damage",
-				"value": "50",
+				"value": "40",
 				"header": "MINIMUM DAMAGE:"
 			},
 			{
@@ -33887,7 +33902,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"minimum_damage": "50"
+					"minimum_damage": "40"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -36579,7 +36594,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "1 1.2 1.4 1.6",
+				"value": "1.3 1.4 1.5 1.6",
 				"header": "BONUS ARMOR:"
 			},
 			{
@@ -36612,7 +36627,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_armor": "1 1.2 1.4 1.6"
+					"bonus_armor": "1.3 1.4 1.5 1.6"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -40480,7 +40495,7 @@
 		"cast_range": "800",
 		"cast_point": "0.25",
 		"cooldown": "4.5",
-		"mana_cost": "50 60 70 80",
+		"mana_cost": "50",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_abaddon_2",
@@ -40524,7 +40539,7 @@
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.25",
 			"AbilityCooldown": "4.5",
-			"AbilityManaCost": "50 60 70 80",
+			"AbilityManaCost": "50",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -43829,7 +43844,7 @@
 				"talent_name": "special_bonus_unique_phoenix_3",
 				"key": "damage_per_second",
 				"value": "20 40 60 80",
-				"talent_value": "80 100 120 140",
+				"talent_value": "70 90 110 130",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -44246,7 +44261,7 @@
 				"talent_name": "special_bonus_unique_phoenix_3",
 				"key": "damage_per_second",
 				"value": "20 40 60 80",
-				"talent_value": "80 100 120 140",
+				"talent_value": "70 90 110 130",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -45364,7 +45379,7 @@
 		"cast_point": "0.3",
 		"cooldown": "7",
 		"damage": "100 180 260 340",
-		"mana_cost": "90 110 130 150",
+		"mana_cost": "105 120 135 150",
 		"ability_special": [
 			{
 				"key": "projectile_speed",
@@ -45416,7 +45431,7 @@
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "7",
 			"AbilityDamage": "100 180 260 340",
-			"AbilityManaCost": "90 110 130 150",
+			"AbilityManaCost": "105 120 135 150",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -56983,7 +56998,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "25"
+				"value": "35"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
@@ -56995,7 +57010,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "25"
+					"value": "35"
 				}
 			}
 		}
@@ -57383,7 +57398,7 @@
 			},
 			{
 				"key": "cloud_radius",
-				"value": "500"
+				"value": "450"
 			}
 		],
 		"ability_slot": 4,
@@ -57418,7 +57433,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"cloud_radius": "500"
+					"cloud_radius": "450"
 				}
 			}
 		}
@@ -59340,7 +59355,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "60"
+				"value": "50"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
@@ -59352,7 +59367,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "60"
+					"value": "50"
 				}
 			}
 		}
@@ -63967,7 +63982,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "20"
+				"value": "18"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
@@ -63979,7 +63994,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "20"
+					"value": "18"
 				}
 			}
 		}
