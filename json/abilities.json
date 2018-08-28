@@ -79,7 +79,8 @@
 		"behavior": "no_target|ignore_backswing|toggle",
 		"ability_special": [],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "courier_autodeliver",
+		"localized_name": "Auto Deliver",
+		"description": "Toggle auto delivering of items.",
 		"json_data": {
 			"ID": "84",
 			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
@@ -1929,7 +1930,7 @@
 		"localized_name": "Blade Fury",
 		"description": "Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. \n\nDISPEL TYPE: Basic Dispel",
 		"lore": "Yurnero's renowned katana techniques are feared by warriors and sorcerors alike.",
-		"note": "This skill doesn't affect mechanical units.\nYou can use items during Blade Fury.\nJuggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks.\nDeals a total of 400/525/650/775 damage.",
+		"note": "You can use items during Blade Fury.\nJuggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks.\nDeals a total of 450/575/700/800 damage.",
 		"json_data": {
 			"ID": "5028",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -6165,7 +6166,7 @@
 		"localized_name": "Wraithfire Blast",
 		"description": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target.",
 		"lore": "Ostarion calls on his damned lineage, laying waste to his opponents.",
-		"note": "Deals 80 / 160 / 230 / 300 total damage.\nIf Wraith King has summoned skeletons, casting Wraithfire Blast on a target will order all of the skeletons to attack that target.",
+		"note": "If Wraith King has summoned skeletons, casting Wraithfire Blast on a target will order all of the skeletons to attack that target.",
 		"json_data": {
 			"ID": "5086",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -11929,7 +11930,7 @@
 			},
 			{
 				"key": "tooltip_range",
-				"value": "2000 2500 3000",
+				"value": "3000",
 				"header": "RANGE:"
 			},
 			{
@@ -11986,7 +11987,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_range": "2000 2500 3000"
+					"tooltip_range": "3000"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -12352,7 +12353,6 @@
 		"localized_name": "Fatal Bonds",
 		"description": "Binds several enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
 		"lore": "An ancient incantation that links the vital energies of multiple lifeforms into one collective body.",
-		"note": "Damage will not disable abilities or items like Blink Dagger which require player based damage.",
 		"json_data": {
 			"ID": "5162",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -15801,7 +15801,7 @@
 			},
 			{
 				"key": "magic_resistance",
-				"value": "-10 -15 -20 -25",
+				"value": "-10% -15% -20% -25%",
 				"header": "MAGIC RESISTANCE REDUCTION:"
 			},
 			{
@@ -24018,8 +24018,7 @@
 			},
 			{
 				"key": "duration_scepter",
-				"value": "16",
-				"header": "SCEPTER DURATION:"
+				"value": "16"
 			},
 			{
 				"key": "damage_scepter",
@@ -24036,7 +24035,7 @@
 		"description": "Inflicts a curse that prevents an enemy Hero from casting spells or using items, while taking damage over time.\n\nUpgradable by Aghanim's Scepter.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "When a name is tolled from the bell of Vashundol, doom is sure to follow.",
 		"note": "Units afflicted by Doom can be denied when their HP drops below 25%.",
-		"aghanim": "Increases Doom's duration, and will suspend its duration while the affected unit is within 900 range. Also causes it to remove positive buffs from the target when cast, and break most passive abilities while active.",
+		"aghanim": "Will suspend Doom's duration while the affected unit is within 900 range. Also causes it to remove positive buffs from the target when cast, and break most passive abilities while active.",
 		"json_data": {
 			"ID": "5342",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -24319,7 +24318,7 @@
 			},
 			{
 				"key": "move_speed_pct",
-				"value": "30",
+				"value": "30%",
 				"header": "SLOW AMOUNT:"
 			},
 			{
@@ -25376,8 +25375,7 @@
 			},
 			{
 				"key": "min_damage",
-				"value": "50",
-				"header": "MINIMUM DAMAGE:"
+				"value": "50"
 			},
 			{
 				"key": "max_distance",
@@ -25413,7 +25411,7 @@
 		"localized_name": "Homing Missile",
 		"description": "Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Enemy units can destroy the missile before it reaches its target.",
 		"lore": "The biggest missile Aurel could possibly attach to his craft, The Bomb\u2122 has carefully calculated aerodynamics and explosives for maximum impact.",
-		"note": "Towers do half damage to the missile.\nThe crosshair effect is visible to allies only.\nMaximum damage is reached when the missile is 1500 units away.\nThe missile will follow and hit invisible units.",
+		"note": "Towers do half damage to the missile.\nThe crosshair effect is visible to allies only.\nThe missile will follow and hit invisible units.",
 		"json_data": {
 			"ID": "5362",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -26298,8 +26296,7 @@
 			},
 			{
 				"key": "mana_cost_scepter",
-				"value": "0",
-				"header": "SCEPTER MANA COST:"
+				"value": "0"
 			}
 		],
 		"ability_slot": 6,
@@ -26308,7 +26305,7 @@
 		"description": "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use.  Click the help button to see the list of possible spells.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "So begins a new age of knowledge.",
 		"note": "The arrangement of instances does not matter.\nInvoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells.",
-		"aghanim": "Decreases cooldown and removes mana cost from Invoke. Adds one level to the stats provided by Quas, Wex, and Exort on all Invoked spells.",
+		"aghanim": "Decreases cooldown from Invoke. Adds one level to the stats provided by Quas, Wex, and Exort on all Invoked spells.",
 		"json_data": {
 			"ID": "5375",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -29777,7 +29774,7 @@
 		"description": "Purges the target enemy unit, removing positive buffs, and slowing the target for the duration.  The unit slowly regains its speed until the end of the duration, upon which damage is dealt.  Units under the effect of Disruption can still be affected by Demonic Purge.\n\nUpgradable by Aghanim's Scepter.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "Once Shadow Demon no longer has any need for his collected cultist, he releases it from its subservience - and its life.",
 		"note": "Demonic Purge will slow Spell Immune units.",
-		"aghanim": "Cooldown is removed, replaced with 3 charges that replenish every 40 seconds. Also causes Demonic Purge to break its target's passive abilities while active.",
+		"aghanim": "Cooldown is removed, replaced with 3 charges that replenish every 60 seconds. Also causes Demonic Purge to break its target's passive abilities while active.",
 		"json_data": {
 			"ID": "5425",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -35697,7 +35694,7 @@
 				"key": "stun_duration",
 				"value": "2 2.25 2.5 2.75",
 				"talent_value": "3.5 3.75 4 4.25",
-				"header": "STUN DURATION"
+				"header": "STUN DURATION:"
 			},
 			{
 				"key": "stomp_damage",
@@ -41023,24 +41020,24 @@
 			{
 				"key": "move_pct_creeps",
 				"value": "1%",
-				"header": "BONUS SPEED(CREEPS):"
+				"header": "BONUS SPEED (CREEPS):"
 			},
 			{
 				"key": "move_pct_heroes",
 				"value": "5%",
-				"header": "BONUS SPEED(HEROES):"
+				"header": "BONUS SPEED (HEROES):"
 			},
 			{
 				"key": "damage_creeps",
 				"value": "6 9 12 15",
-				"header": "BONUS DAMAGE(CREEPS):"
+				"header": "BONUS DAMAGE (CREEPS):"
 			},
 			{
 				"talent_name": "special_bonus_unique_elder_titan",
 				"key": "damage_heroes",
 				"value": "15 30 45 60",
 				"talent_value": "45 60 75 90",
-				"header": "BONUS DAMAGE(HEROES):"
+				"header": "BONUS DAMAGE (HEROES):"
 			},
 			{
 				"key": "move_pct_cap",
@@ -56043,7 +56040,7 @@
 	{
 		"id": 6251,
 		"name": "generic_hidden",
-		"hero_id": 119,
+		"hero_id": 121,
 		"behavior": "hidden|not_learnable",
 		"ability_special": [],
 		"ability_slot": 5,
@@ -57002,7 +56999,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+25 Shrapnel DPS",
+		"localized_name": "+35 Shrapnel DPS",
 		"json_data": {
 			"ID": "6305",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -59359,7 +59356,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+60 Fire Spirits DPS",
+		"localized_name": "+50 Fire Spirits DPS",
 		"json_data": {
 			"ID": "6401",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -60169,6 +60166,116 @@
 				"01": {
 					"var_type": "FIELD_FLOAT",
 					"value": "1.5"
+				}
+			}
+		}
+	},
+	{
+		"id": 6491,
+		"name": "grimstroke_soul_chain",
+		"hero_id": 121,
+		"behavior": "unit_target|aoe",
+		"damage_type": "magical",
+		"spell_immunity": "yes",
+		"target_team": "enemy",
+		"dispellable": "no",
+		"cast_range": "700 800 900",
+		"cast_point": "0.15",
+		"cooldown": "80 65 50",
+		"mana_cost": "150 200 250",
+		"ability_special": [
+			{
+				"key": "chain_duration",
+				"value": "4 6 8",
+				"header": "DURATION:"
+			},
+			{
+				"key": "chain_latch_radius",
+				"value": "550",
+				"header": "BIND RADIUS:"
+			},
+			{
+				"key": "chain_break_distance",
+				"value": "700"
+			},
+			{
+				"key": "leash_limit_multiplier",
+				"value": "1.3"
+			},
+			{
+				"key": "leash_radius_buffer",
+				"value": "50"
+			},
+			{
+				"key": "creep_duration_pct",
+				"value": "50"
+			},
+			{
+				"key": "movement_slow",
+				"value": "15% 30% 45%",
+				"header": "MOVEMENT SLOW:"
+			},
+			{
+				"key": "cast_range_tooltip",
+				"value": "700 800 900",
+				"header": "CAST RANGE:"
+			}
+		],
+		"ability_slot": 6,
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "Soulbind",
+		"description": "Binds a targeted enemy hero to its nearest allied hero within the bind radius, preventing both from moving away from each other. Any unit-targeted spell that either bound hero receives also gets cast on the other hero. If the bind is broken before the duration expires, the initial target will be bound to its nearest allied hero in the radius.",
+		"lore": "The Ascended were chosen sons of Ashkavor, granted immense power by the bonds forged between their own souls and those they were charged with protecting. In the years that followed the ruination of his kin, Grimstroke discovered much more sinister applications for the binding rituals...",
+		"note": "Blinking or teleporting can break the ink bind.",
+		"json_data": {
+			"ID": "6491",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"FightRecapLevel": "1",
+			"AbilityCooldown": "80 65 50",
+			"AbilityCastRange": "700 800 900",
+			"AbilityCastPoint": "0.15",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityManaCost": "150 200 250",
+			"AbilityModifierSupportValue": "0.75",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"chain_duration": "4.0 6.0 8.0"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"chain_latch_radius": "550"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"chain_break_distance": "700"
+				},
+				"04": {
+					"var_type": "FIELD_FLOAT",
+					"leash_limit_multiplier": "1.3"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"leash_radius_buffer": "50"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"creep_duration_pct": "50.0"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"movement_slow": "15 30 45"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"cast_range_tooltip": "700 800 900"
 				}
 			}
 		}
@@ -63986,7 +64093,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+20 Max Thirst MS and Damage",
+		"localized_name": "+18 Max Thirst MS and Damage",
 		"json_data": {
 			"ID": "6809",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -69410,6 +69517,502 @@
 					"value": "12"
 				}
 			}
+		}
+	},
+	{
+		"id": 8000,
+		"name": "grimstroke_dark_artistry",
+		"hero_id": 121,
+		"behavior": "point",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"cast_range": "1400",
+		"cast_point": "0.8",
+		"cooldown": "11 9 7 5",
+		"damage": "120 180 240 300",
+		"mana_cost": "100 110 120 130",
+		"ability_special": [
+			{
+				"key": "start_radius",
+				"value": "120"
+			},
+			{
+				"key": "end_radius",
+				"value": "160"
+			},
+			{
+				"key": "projectile_speed",
+				"value": "2400"
+			},
+			{
+				"key": "movement_slow_pct",
+				"value": "50% 60% 70% 80%",
+				"header": "MOVEMENT SLOW:"
+			},
+			{
+				"key": "activation_delay",
+				"value": "0.5"
+			},
+			{
+				"key": "slow_duration",
+				"value": "2",
+				"header": "SLOW DURATION:"
+			},
+			{
+				"key": "bonus_damage_per_target",
+				"value": "16 24 32 40",
+				"header": "BONUS DMG PER TARGET:"
+			}
+		],
+		"ability_slot": 1,
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "Stroke of Fate",
+		"description": "Grimstroke paints a path of ink with his brush, damaging and slowing enemies. The damage is increased with each enemy the ink hits.",
+		"lore": "The corruptive force of Grimstroke's ink, drawn from the reservoir of his fallen people, consumes any enemy caught in its path.",
+		"json_data": {
+			"ID": "8000",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"FightRecapLevel": "1",
+			"AbilityCastRange": "1400",
+			"AbilityCastPoint": "0.8",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
+			"AbilityCooldown": "11 9 7 5",
+			"AbilityManaCost": "100 110 120 130",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"AbilityDamage": "120 180 240 300",
+			"AbilityModifierSupportValue": "0.5",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"start_radius": "120"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"end_radius": "160"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"projectile_speed": "2400"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"movement_slow_pct": "50 60 70 80"
+				},
+				"05": {
+					"var_type": "FIELD_FLOAT",
+					"activation_delay": "0.5"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"slow_duration": "2.0"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage_per_target": "16 24 32 40"
+				}
+			}
+		}
+	},
+	{
+		"id": 8001,
+		"name": "special_bonus_unique_grimstroke_1",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_radius",
+				"value": "200"
+			}
+		],
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "+200 Ink Swell Radius",
+		"json_data": {
+			"ID": "8001",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_radius": "200"
+				}
+			}
+		}
+	},
+	{
+		"id": 8002,
+		"name": "special_bonus_unique_grimstroke_2",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "damage_multiplier",
+				"value": "1.5"
+			}
+		],
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "+50% Stroke of Fate Damage",
+		"json_data": {
+			"ID": "8002",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"damage_multiplier": "1.5"
+				}
+			}
+		}
+	},
+	{
+		"id": 8003,
+		"name": "special_bonus_unique_grimstroke_3",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "cast_range_bonus",
+				"value": "600"
+			}
+		],
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "+600 Stroke of Fate Cast Range",
+		"json_data": {
+			"ID": "8003",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"cast_range_bonus": "600"
+				}
+			}
+		}
+	},
+	{
+		"id": 8004,
+		"name": "special_bonus_unique_grimstroke_4",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "extra_hits_required",
+				"value": "4"
+			}
+		],
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "+2 Hits to Kill Phantom",
+		"json_data": {
+			"ID": "8004",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"extra_hits_required": "4"
+				}
+			}
+		}
+	},
+	{
+		"id": 8006,
+		"name": "grimstroke_ink_creature",
+		"hero_id": 121,
+		"behavior": "unit_target|ignore_backswing",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"target_team": "enemy",
+		"dispellable": "no",
+		"cast_range": "900",
+		"cast_point": "0",
+		"cooldown": "32 28 24 20",
+		"mana_cost": "110 120 130 140",
+		"ability_special": [
+			{
+				"key": "spawn_time",
+				"value": "0"
+			},
+			{
+				"key": "speed",
+				"value": "750"
+			},
+			{
+				"key": "latch_duration",
+				"value": "4 4.5 5 5.5",
+				"header": "LATCH DURATION:"
+			},
+			{
+				"key": "destroy_attacks",
+				"value": "6 6 9 9"
+			},
+			{
+				"key": "damage_per_tick",
+				"value": "6 9 12 15"
+			},
+			{
+				"key": "dps_tooltip",
+				"value": "12 18 24 30",
+				"header": "PHANTOM DPS:"
+			},
+			{
+				"key": "enemy_vision_time",
+				"value": "4"
+			},
+			{
+				"key": "tick_interval",
+				"value": "0.5"
+			},
+			{
+				"key": "infection_search_radius",
+				"value": "1000"
+			},
+			{
+				"key": "destroy_attacks_tooltip",
+				"value": "2 2 3 3",
+				"header": "ATTACKS TO DESTROY:"
+			},
+			{
+				"key": "pop_damage",
+				"value": "120 200 280 360",
+				"header": "REND DAMAGE:"
+			},
+			{
+				"key": "return_projectile_speed",
+				"value": "750"
+			},
+			{
+				"key": "return_mana_gain",
+				"value": "50 75 100 125"
+			},
+			{
+				"key": "latched_unit_offset",
+				"value": "130"
+			},
+			{
+				"key": "latched_unit_offset_short",
+				"value": "95"
+			}
+		],
+		"ability_slot": 2,
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "Phantom's Embrace",
+		"description": "Summons a phantom that moves quickly towards the target, latching to it when she arrives. Once latched, the phantom damages and silences. If she survives the full latch duration she rends her victim for heavy damage and refreshes Phantom's Embrace's cooldown.",
+		"lore": "Grimstroke holds no sorrow for the downfall of his people. Only for Yaovhi, she who was most dear to him, does he feel even a semblance of longing.",
+		"json_data": {
+			"ID": "8006",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"FightRecapLevel": "1",
+			"AbilityCastRange": "900",
+			"AbilityCastPoint": "0.0",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
+			"AbilityCooldown": "32 28 24 20",
+			"AbilityManaCost": "110 120 130 140",
+			"AbilityModifierSupportValue": "0.5",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"spawn_time": "0.0"
+				},
+				"02": {
+					"var_type": "FIELD_FLOAT",
+					"speed": "750"
+				},
+				"03": {
+					"var_type": "FIELD_FLOAT",
+					"latch_duration": "4.0 4.5 5.0 5.5"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"destroy_attacks": "6 6 9 9"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"damage_per_tick": "6 9 12 15"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"dps_tooltip": "12 18 24 30"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"enemy_vision_time": "4"
+				},
+				"08": {
+					"var_type": "FIELD_FLOAT",
+					"tick_interval": "0.5"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"infection_search_radius": "1000"
+				},
+				"10": {
+					"var_type": "FIELD_INTEGER",
+					"destroy_attacks_tooltip": "2 2 3 3"
+				},
+				"11": {
+					"var_type": "FIELD_INTEGER",
+					"pop_damage": "120 200 280 360"
+				},
+				"12": {
+					"var_type": "FIELD_INTEGER",
+					"return_projectile_speed": "750"
+				},
+				"13": {
+					"var_type": "FIELD_INTEGER",
+					"return_mana_gain": "50 75 100 125"
+				},
+				"14": {
+					"var_type": "FIELD_INTEGER",
+					"latched_unit_offset": "130"
+				},
+				"15": {
+					"var_type": "FIELD_INTEGER",
+					"latched_unit_offset_short": "95"
+				}
+			}
+		}
+	},
+	{
+		"id": 8007,
+		"name": "grimstroke_spirit_walk",
+		"hero_id": 121,
+		"behavior": "unit_target|dont_resume_attack",
+		"damage_type": "magical",
+		"target_team": "friendly",
+		"cast_range": "400 500 600 700",
+		"cast_point": "0.15",
+		"cooldown": "30 25 20 15",
+		"mana_cost": "90 100 110 120",
+		"ability_special": [
+			{
+				"key": "cast_range_tooltip",
+				"value": "400 500 600 700",
+				"header": "CAST RANGE:"
+			},
+			{
+				"key": "buff_duration",
+				"value": "3",
+				"header": "BUFF DURATION:"
+			},
+			{
+				"key": "movespeed_bonus_pct",
+				"value": "28% 32% 36% 40%",
+				"header": "MOVESPEED BONUS:"
+			},
+			{
+				"key": "radius",
+				"value": "400",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "damage",
+				"value": "55 70 85 100",
+				"header": "BASE DAMAGE:"
+			},
+			{
+				"key": "max_damage_tooltip",
+				"value": "220 280 340 400",
+				"header": "MAX DAMAGE:"
+			},
+			{
+				"key": "debuff_duration",
+				"value": "0.55 0.7 0.85 1",
+				"header": "BASE STUN DURATION:"
+			},
+			{
+				"key": "max_stun_tooltip",
+				"value": "2.2 2.8 3.4 4",
+				"header": "MAX STUN DURATION:"
+			},
+			{
+				"key": "damage_per_tick",
+				"value": "5 7 9 11"
+			},
+			{
+				"key": "tick_rate",
+				"value": "0.2"
+			},
+			{
+				"key": "tick_dps_tooltip",
+				"value": "25 35 45 55",
+				"header": "INK TENDRILS DPS:"
+			},
+			{
+				"key": "max_bonus_multiplier",
+				"value": "3"
+			}
+		],
+		"ability_slot": 3,
+		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
+		"localized_name": "Ink Swell",
+		"description": "Grimstroke shrouds an allied unit in ink, increasing its movement speed while silencing and disarming it, as well as making it immune to attacks. Enemies in range of the allied unit are damaged with inky tendrils over time. After **3** seconds it triggers, applying damage and stun in an area around the unit in proportion to how much ink tendril damage was inflicted across the duration.",
+		"lore": "Now that the rise of the ink tide no longer threatens to overwhelm Grimstroke, its tendrils of power are never far from his hand.",
+		"json_data": {
+			"ID": "8007",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"AbilitySound": "Hero_ObsidianDestroyer.AstralImprisonment",
+			"FightRecapLevel": "1",
+			"AbilityCooldown": "30 25 20 15",
+			"AbilityCastRange": "400 500 600 700",
+			"AbilityCastPoint": "0.15",
+			"AbilityManaCost": "90 100 110 120",
+			"AbilityModifierSupportValue": "0.75",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"cast_range_tooltip": "400 500 600 700"
+				},
+				"02": {
+					"var_type": "FIELD_FLOAT",
+					"buff_duration": "3.0"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"movespeed_bonus_pct": "28 32 36 40"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"radius": "400"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"damage": "55 70 85 100"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"max_damage_tooltip": "220 280 340 400"
+				},
+				"07": {
+					"var_type": "FIELD_FLOAT",
+					"debuff_duration": "0.55 0.7 0.85 1.0"
+				},
+				"08": {
+					"var_type": "FIELD_FLOAT",
+					"max_stun_tooltip": "2.2 2.8 3.4 4.0"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"damage_per_tick": "5 7 9 11"
+				},
+				"10": {
+					"var_type": "FIELD_FLOAT",
+					"tick_rate": "0.2"
+				},
+				"11": {
+					"var_type": "FIELD_INTEGER",
+					"tick_dps_tooltip": "25 35 45 55"
+				},
+				"12": {
+					"var_type": "FIELD_FLOAT",
+					"max_bonus_multiplier": "3.0"
+				}
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
 		}
 	},
 	{
