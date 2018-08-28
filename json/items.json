@@ -4540,7 +4540,7 @@
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 1,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: **400**/500/600/700/800\nRange: **600**/650/700/750/800\nMana Cost: **180**",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: **400**/500/600/700/800\nRange: **600**/650/700/750/800\nMana Cost: **120**",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"ability_special": [
 			{
@@ -4569,7 +4569,7 @@
 			},
 			{
 				"key": "mana_cost_tooltip",
-				"value": "180"
+				"value": "120"
 			}
 		],
 		"json_data": {
@@ -4616,7 +4616,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"mana_cost_tooltip": "180"
+					"mana_cost_tooltip": "120"
 				}
 			}
 		}
@@ -9774,7 +9774,7 @@
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 2,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/**500**/600/700/800\nRange: 600/**650**/700/750/800\nMana Cost: **180**",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/**500**/600/700/800\nRange: 600/**650**/700/750/800\nMana Cost: **140**",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"ability_special": [
 			{
@@ -9803,7 +9803,7 @@
 			},
 			{
 				"key": "mana_cost_tooltip",
-				"value": "180"
+				"value": "140"
 			}
 		],
 		"json_data": {
@@ -9850,7 +9850,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"mana_cost_tooltip": "180"
+					"mana_cost_tooltip": "140"
 				}
 			}
 		}
@@ -9866,7 +9866,7 @@
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 3,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/500/**600**/700/800\nRange: 600/650/**700**/750/800\nMana Cost: **180**",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/500/**600**/700/800\nRange: 600/650/**700**/750/800\nMana Cost: **160**",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"ability_special": [
 			{
@@ -9895,7 +9895,7 @@
 			},
 			{
 				"key": "mana_cost_tooltip",
-				"value": "180"
+				"value": "160"
 			}
 		],
 		"json_data": {
@@ -9942,7 +9942,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"mana_cost_tooltip": "180"
+					"mana_cost_tooltip": "160"
 				}
 			}
 		}
@@ -10050,7 +10050,7 @@
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 5,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit.\n\nDamage: 400/500/600/700/**800**\nRange: 600/650/700/750/**800**\nMana Cost: **180**",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit.\n\nDamage: 400/500/600/700/**800**\nRange: 600/650/700/750/**800**\nMana Cost: **200**",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"ability_special": [
 			{
@@ -10079,7 +10079,7 @@
 			},
 			{
 				"key": "mana_cost_tooltip",
-				"value": "180"
+				"value": "200"
 			}
 		],
 		"json_data": {
@@ -10124,7 +10124,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"mana_cost_tooltip": "180"
+					"mana_cost_tooltip": "200"
 				}
 			}
 		}
@@ -10908,6 +10908,7 @@
 			"ItemPermanent": "0",
 			"SideShop": "0",
 			"IsTempestDoubleClonable": "0",
+			"ItemInitiallySellable": "1",
 			"ItemSellable": "0",
 			"ShouldBeInitiallySuggested": "1",
 			"AbilitySpecial": {
@@ -13657,7 +13658,7 @@
 	{
 		"id": 266,
 		"name": "item_recipe_spirit_vessel",
-		"localized_name": "item_recipe_spirit_vessel",
+		"localized_name": "Spirit Vessel Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
 		"cost": 750,
 		"ability_special": [],
@@ -14244,6 +14245,38 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "0"
+		}
+	},
+	{
+		"id": 1032,
+		"name": "item_pocket_roshan",
+		"localized_name": "Pocket Roshan",
+		"quality": "rare",
+		"cost": 1000,
+		"cooldown": "60",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "summon_duration",
+				"value": "60"
+			}
+		],
+		"json_data": {
+			"ID": "1032",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "60.0",
+			"AbilityManaCost": "0",
+			"ItemCost": "1000",
+			"ItemQuality": "rare",
+			"ItemPurchasable": "0",
+			"IsTempestDoubleClonable": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"summon_duration": "60"
+				}
+			}
 		}
 	}
 ]
