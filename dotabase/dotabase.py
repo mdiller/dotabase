@@ -23,6 +23,7 @@ class Hero(Base):
 	aliases = Column(String)
 	roles = Column(String)
 	role_levels = Column(String)
+	hype = Column(String)
 	bio = Column(String)
 	image = Column(String)
 	icon = Column(String)
