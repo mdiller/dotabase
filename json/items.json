@@ -2160,7 +2160,7 @@
 		"icon": "/resource/flash3/images/items/phase_boots.png",
 		"cost": 1360,
 		"cooldown": "8",
-		"description": "# Active: Phase\nGives **20%** increased movement speed on melee heroes, and **16%** on ranged heroes, and lets you move through units and turn more quickly for **3** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Phase\nGives **20%** increased movement speed on melee heroes, and **13%** on ranged heroes, and lets you move through units and turn more quickly for **3** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Boots that allow the wearer to travel between the ether.",
 		"ability_special": [
 			{
@@ -2193,7 +2193,7 @@
 			},
 			{
 				"key": "phase_movement_speed_range",
-				"value": "16"
+				"value": "13"
 			},
 			{
 				"key": "phase_duration",
@@ -2245,7 +2245,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"phase_movement_speed_range": "16"
+					"phase_movement_speed_range": "13"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -3316,7 +3316,7 @@
 		"cost": 2350,
 		"cooldown": "65",
 		"mana_cost": "225",
-		"description": "# Active: Restore\nHeals **250** health and gives +**2** armor to allied units in a **900** radius.\n\n# Passive: Mekansm Aura\nGrants **3.5** health regeneration to allied units in a **900** radius.",
+		"description": "# Active: Restore\nHeals **275** health and gives +**2** armor to allied units in a **900** radius.\n\n# Passive: Mekansm Aura\nGrants **3.5** health regeneration to allied units in a **900** radius.",
 		"lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
 		"ability_special": [
 			{
@@ -3341,7 +3341,7 @@
 			},
 			{
 				"key": "heal_amount",
-				"value": "250"
+				"value": "275"
 			},
 			{
 				"key": "heal_bonus_armor",
@@ -3389,7 +3389,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"heal_amount": "250"
+					"heal_amount": "275"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -3890,7 +3890,7 @@
 		"icon": "/resource/flash3/images/items/urn_of_shadows.png",
 		"cost": 875,
 		"cooldown": "7",
-		"description": "# Active: Soul Release\nProvides **35** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge.\n\nCast Range: **950**",
+		"description": "# Active: Soul Release\nProvides **30** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge.\n\nCast Range: **950**",
 		"lore": "Contains the ashes of powerful demons.",
 		"ability_special": [
 			{
@@ -3925,7 +3925,7 @@
 			},
 			{
 				"key": "soul_heal_amount",
-				"value": "35"
+				"value": "30"
 			},
 			{
 				"key": "soul_damage_amount",
@@ -3989,7 +3989,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"soul_heal_amount": "35"
+					"soul_heal_amount": "30"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -4103,7 +4103,7 @@
 		"icon": "/resource/flash3/images/items/sheepstick.png",
 		"cost": 5700,
 		"cooldown": "22",
-		"mana_cost": "100",
+		"mana_cost": "250",
 		"description": "# Active: Hex\nTurns a target unit into a harmless critter for **3.5** seconds. The target has a base movement speed of 140 and will be silenced, muted, and disarmed.\nInstantly destroys illusions.\n\nRange: **800**",
 		"lore": "The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi.",
 		"ability_special": [
@@ -4154,7 +4154,7 @@
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "22.0",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "250",
 			"ItemCost": "5700",
 			"ItemShopTags": "int;regen_mana;agi;hard_to_tag",
 			"ItemQuality": "rare",
@@ -8832,12 +8832,12 @@
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/stout_shield.png",
 		"cost": 200,
-		"description": "# Passive: Damage Block\nGrants a **50%** chance to block **18** damage from incoming attacks on melee heroes, and **9** damage on ranged.",
+		"description": "# Passive: Damage Block\nGrants a **50%** chance to block **20** damage from incoming attacks on melee heroes, and **9** damage on ranged.",
 		"lore": "One man's wine barrel bottom is another man's shield.",
 		"ability_special": [
 			{
 				"key": "damage_block_melee",
-				"value": "18"
+				"value": "20"
 			},
 			{
 				"key": "damage_block_ranged",
@@ -8860,7 +8860,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_block_melee": "18"
+					"damage_block_melee": "20"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -10589,7 +10589,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "10",
+				"value": "7",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -10646,7 +10646,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10"
+					"bonus_damage": "7"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -11712,7 +11712,7 @@
 		"cost": 5450,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **250** health and **160** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **900**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **3.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **12** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **275** health and **160** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **900**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **3.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **12** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"ability_special": [
 			{
@@ -11765,7 +11765,7 @@
 			},
 			{
 				"key": "replenish_health",
-				"value": "250"
+				"value": "275"
 			},
 			{
 				"key": "replenish_mana",
@@ -11833,7 +11833,7 @@
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_health": "250"
+					"replenish_health": "275"
 				},
 				"12": {
 					"var_type": "FIELD_INTEGER",
@@ -13683,7 +13683,7 @@
 		"icon": "/resource/flash3/images/items/spirit_vessel.png",
 		"cost": 2975,
 		"cooldown": "7",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4.5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **20** damage per second. \n\nWhen used on allies, it increases health by **1%** of current health per second, and increases HP regeneration and healing by **20%**. Provides **35** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4.5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **20** damage per second. \n\nWhen used on allies, it increases health by **1%** of current health per second, and increases HP regeneration and healing by **20%**. Provides **30** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -13693,7 +13693,7 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "30",
+				"value": "20",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -13729,7 +13729,7 @@
 			},
 			{
 				"key": "soul_heal_amount",
-				"value": "35"
+				"value": "30"
 			},
 			{
 				"key": "soul_damage_amount",
@@ -13785,7 +13785,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "30"
+					"bonus_movement_speed": "20"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -13813,7 +13813,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"soul_heal_amount": "35"
+					"soul_heal_amount": "30"
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
