@@ -733,6 +733,66 @@
 		"required": true
 	},
 	{
+		"name": "Isannouncer_dlc_darkest_dungeon",
+		"matchkey": "classname",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEnemyannouncer_dlc_darkest_dungeon",
+		"pretty": "IsEnemyannouncer_dlc_darkest_dungeon",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAllyannouncer_dlc_darkest_dungeon",
+		"pretty": "IsAllyannouncer_dlc_darkest_dungeon",
+		"matchkey": "nearby_ally",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDarkestDungeonAnn",
+		"matchkey": "announcer_voice",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "Isannouncer_dlc_darkest_dungeon_killing_spree",
+		"matchkey": "classname",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon_killing_spree",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEnemyannouncer_dlc_darkest_dungeon_killing_spree",
+		"pretty": "IsEnemyannouncer_dlc_darkest_dungeon_killing_spree",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon_killing_spree",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAllyannouncer_dlc_darkest_dungeon_killing_spree",
+		"pretty": "IsAllyannouncer_dlc_darkest_dungeon_killing_spree",
+		"matchkey": "nearby_ally",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon_killing_spree",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAnnouncerKillingSpreeVoice_Darkest_Dungeon",
+		"matchkey": "announcer_voice",
+		"matchvalue": "npc_dota_hero_announcer_dlc_darkest_dungeon_killing_spree",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "Isannouncer_dlc_defensegrid",
 		"matchkey": "classname",
 		"matchvalue": "npc_dota_hero_announcer_dlc_defensegrid",
@@ -9970,6 +10030,30 @@
 		"pretty": "PetDeath",
 		"matchkey": "concept",
 		"matchvalue": "TLK_DOTA_SUMMON_DIED",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsPoorCourier",
+		"pretty": "IsPoorCourier",
+		"matchkey": "courier_worth",
+		"matchvalue": "<=600",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsAvgCourier",
+		"pretty": "IsAvgCourier",
+		"matchkey": "courier_worth",
+		"matchvalue": ">600,<1400",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsRichCourier",
+		"pretty": "IsRichCourier",
+		"matchkey": "courier_worth",
+		"matchvalue": ">=1400",
 		"weight": 1.0,
 		"required": true
 	},
