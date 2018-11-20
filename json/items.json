@@ -203,9 +203,7 @@
 			},
 			{
 				"key": "bonus_regen",
-				"value": "3",
-				"header": "+",
-				"footer": "HP Regeneration"
+				"value": "3.5"
 			}
 		],
 		"json_data": {
@@ -222,8 +220,8 @@
 					"bonus_armor": "5"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_regen": "3"
+					"var_type": "FIELD_FLOAT",
+					"bonus_regen": "3.5"
 				}
 			}
 		}
@@ -933,16 +931,10 @@
 		"aliases": "morbid mask",
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/lifesteal.png",
-		"cost": 1100,
+		"cost": 900,
 		"description": "# Passive: Lifesteal\nHeals the attacker for **15%** of attack damage dealt.",
 		"lore": "A mask that drains the energy of those caught in its gaze.",
 		"ability_special": [
-			{
-				"key": "bonus_damage",
-				"value": "10",
-				"header": "+",
-				"footer": "Damage"
-			},
 			{
 				"key": "lifesteal_percent",
 				"value": "15"
@@ -951,7 +943,7 @@
 		"json_data": {
 			"ID": "26",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1100",
+			"ItemCost": "900",
 			"ItemShopTags": "unique",
 			"ItemQuality": "component",
 			"ItemAliases": "morbid mask",
@@ -959,10 +951,6 @@
 			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10"
-				},
-				"02": {
 					"var_type": "FIELD_INTEGER",
 					"lifesteal_percent": "15"
 				}
@@ -981,7 +969,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "1.5",
+				"value": "2",
 				"header": "+",
 				"footer": "HP Regeneration"
 			}
@@ -992,8 +980,8 @@
 			"ItemCost": "300",
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
-			"ItemAliases": "ror",
 			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
+			"ItemAliases": "ror",
 			"ShouldBeInitiallySuggested": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
@@ -1001,7 +989,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "1.5"
+					"bonus_health_regen": "2"
 				}
 			}
 		}
@@ -1018,7 +1006,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.5",
+				"value": "0.75",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -1035,7 +1023,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "0.5"
+					"bonus_mana_regen": "0.75"
 				}
 			}
 		}
@@ -1053,7 +1041,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "50",
+				"value": "15%",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -1072,7 +1060,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "50"
+					"bonus_movement_speed": "15"
 				}
 			}
 		}
@@ -1450,12 +1438,12 @@
 		"quality": "consumable",
 		"icon": "/resource/flash3/images/items/clarity.png",
 		"cost": 50,
-		"description": "# Use: Replenish\nGrants **3** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
+		"description": "# Use: Replenish\nGrants **4.5** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nRange: **250**",
 		"lore": "Clear water that enhances the ability to meditate.",
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "3"
+				"value": "4.5"
 			},
 			{
 				"key": "buff_duration",
@@ -1488,7 +1476,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen": "3.0"
+					"mana_regen": "4.5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -1509,7 +1497,7 @@
 		"quality": "consumable",
 		"icon": "/resource/flash3/images/items/flask.png",
 		"cost": 110,
-		"description": "# Use: Salve\nGrants **50** health regeneration to the target for **8** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
+		"description": "# Use: Salve\nGrants **50** health regeneration to the target for **8** seconds.\n\nIf the unit is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nRange: **250**",
 		"lore": "A magical salve that can quickly mend even the deepest of wounds.",
 		"ability_special": [
 			{
@@ -1630,16 +1618,16 @@
 		"icon": "/resource/flash3/images/items/bottle.png",
 		"cost": 650,
 		"cooldown": "0.5",
-		"description": "# Active: Regenerate\nConsumes a charge to restore **100** health and **50** mana over **2.5** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle.",
+		"description": "# Active: Regenerate\nConsumes a charge to restore **125** health and **75** mana over **2.5** seconds. If the hero is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle.",
 		"lore": "An old bottle that survived the ages, the contents placed inside become enchanted.",
 		"ability_special": [
 			{
 				"key": "health_restore",
-				"value": "100"
+				"value": "125"
 			},
 			{
 				"key": "mana_restore",
-				"value": "50"
+				"value": "75"
 			},
 			{
 				"key": "restore_time",
@@ -1682,11 +1670,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"health_restore": "100"
+					"health_restore": "125"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"mana_restore": "50"
+					"mana_restore": "75"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -1794,7 +1782,7 @@
 		"icon": "/resource/flash3/images/items/ward_sentry.png",
 		"cost": 100,
 		"cooldown": "1",
-		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **850** radius.\nLasts **6** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.\n\nRange: **500**",
+		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **1000** radius.\nLasts **6** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.\n\nRange: **500**",
 		"lore": "A form of plant originally grown in the garden of a fearful king.",
 		"ability_special": [
 			{
@@ -1807,7 +1795,7 @@
 			},
 			{
 				"key": "true_sight_range",
-				"value": "850"
+				"value": "1000"
 			},
 			{
 				"key": "health",
@@ -1855,7 +1843,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"true_sight_range": "850"
+					"true_sight_range": "1000"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -2008,7 +1996,7 @@
 		],
 		"json_data": {
 			"ID": "46",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
@@ -2078,12 +2066,12 @@
 		"cooldown": "45",
 		"mana_cost": "75",
 		"base_level": 1,
-		"description": "# Active: Teleport\nTeleports you to an allied non-hero unit or structure. Teleporting to a unit is interrupted if the target unit dies.\n\nShares a cooldown with Town Portal Scroll.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Teleport\nTeleports you to an allied non-hero unit or structure. Teleporting to a unit is interrupted if the target unit dies.\n\nAdds **10** seconds to the cooldown of Town Portal Scroll.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Winged boots that grant omnipresence.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "100",
+				"value": "32%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -2094,16 +2082,20 @@
 			{
 				"key": "vision_radius",
 				"value": "200"
+			},
+			{
+				"key": "tp_penalty",
+				"value": "10"
 			}
 		],
 		"json_data": {
 			"ID": "48",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
 			"AbilityCooldown": "45.0",
-			"AbilitySharedCooldown": "teleport",
+			"AbilitySharedCooldown": "travel",
 			"AbilityChannelTime": "3.0",
 			"AbilityManaCost": "75",
 			"ItemCost": "2500",
@@ -2119,7 +2111,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "100"
+					"bonus_movement_speed": "32"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -2128,6 +2120,10 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"vision_radius": "200"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"tp_penalty": "10"
 				}
 			}
 		}
@@ -2147,7 +2143,7 @@
 			"ItemRecipe": "1",
 			"ItemResult": "item_phase_boots",
 			"ItemRequirements": {
-				"01": "item_boots;item_blades_of_attack;item_blades_of_attack"
+				"01": "item_boots;item_chainmail;item_gloves"
 			}
 		}
 	},
@@ -2158,22 +2154,19 @@
 		"aliases": "phase boots",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/phase_boots.png",
-		"cost": 1360,
-		"cooldown": "8",
-		"description": "# Active: Phase\nGives **20%** increased movement speed on melee heroes, and **13%** on ranged heroes, and lets you move through units and turn more quickly for **3** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"cost": 1550,
+		"description": "# Passive: Phase\nWhen targeting an enemy unit up to **900** range away, you gain **20%** increased movement speed on melee heroes, and **10%** on ranged heroes, and lets you move through units and turn more quickly.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Boots that allow the wearer to travel between the ether.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "50",
+				"value": "15%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
 			{
 				"key": "bonus_damage",
-				"value": "24",
-				"header": "+",
-				"footer": "Damage"
+				"value": "0"
 			},
 			{
 				"key": "damage_block_melee",
@@ -2193,7 +2186,7 @@
 			},
 			{
 				"key": "phase_movement_speed_range",
-				"value": "13"
+				"value": "10"
 			},
 			{
 				"key": "phase_duration",
@@ -2201,18 +2194,29 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "0"
+				"value": "25",
+				"header": "+",
+				"footer": "Attack Speed"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "0"
+				"value": "5",
+				"header": "+",
+				"footer": "Armor"
+			},
+			{
+				"key": "attack_range_limit",
+				"value": "900"
+			},
+			{
+				"key": "phase_buffer",
+				"value": "0.5"
 			}
 		],
 		"json_data": {
 			"ID": "50",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
-			"AbilityCooldown": "8.0",
-			"ItemCost": "1360",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ItemCost": "1550",
 			"ItemShopTags": "damage;move_speed;hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "phase boots",
@@ -2221,11 +2225,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "50"
+					"bonus_movement_speed": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "24"
+					"bonus_damage": "0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -2245,7 +2249,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"phase_movement_speed_range": "13"
+					"phase_movement_speed_range": "10"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -2253,11 +2257,19 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "0"
+					"bonus_attack_speed": "25"
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "0"
+					"bonus_armor": "5"
+				},
+				"11": {
+					"var_type": "FIELD_INTEGER",
+					"attack_range_limit": "900"
+				},
+				"12": {
+					"var_type": "FIELD_FLOAT",
+					"phase_buffer": "0.5"
 				}
 			}
 		}
@@ -2439,7 +2451,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "5",
+				"value": "6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			}
@@ -2460,7 +2472,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5"
+					"bonus_health_regen": "6"
 				}
 			}
 		}
@@ -2477,7 +2489,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_mana_regen",
-				"value": "1",
+				"value": "1.75",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2496,7 +2508,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.0"
+					"bonus_mana_regen": "1.75"
 				}
 			}
 		}
@@ -2660,9 +2672,9 @@
 			"ItemRecipe": "1",
 			"ItemResult": "item_power_treads",
 			"ItemRequirements": {
-				"01": "item_boots;item_gloves;item_belt_of_strength",
-				"02": "item_boots;item_gloves;item_robe",
-				"03": "item_boots;item_gloves;item_boots_of_elves"
+				"01": "item_boots;item_belt_of_strength;item_blades_of_attack",
+				"04": "item_boots;item_boots_of_elves;item_blades_of_attack",
+				"06": "item_boots;item_robe;item_blades_of_attack"
 			}
 		}
 	},
@@ -2673,37 +2685,37 @@
 		"aliases": "power treads",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/power_treads.png",
-		"cost": 1450,
-		"description": "# Active: Switch Attribute\nSwitches between +**10** Strength, +**10** Agility, or +**10** Intelligence.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"cost": 1380,
+		"description": "# Active: Switch Attribute\nSwitches between +**12** Strength, +**12** Agility, or +**12** Intelligence.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "A pair of tough-skinned boots that change to meet the demands of the wearer.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "50",
+				"value": "15%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
 			{
 				"key": "bonus_stat",
-				"value": "10",
+				"value": "12",
 				"header": "+",
 				"footer": "Selected Attribute"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "25",
-				"header": "+",
-				"footer": "Attack Speed"
+				"value": "0"
 			},
 			{
 				"key": "bonus_damage",
-				"value": "0"
+				"value": "16",
+				"header": "+",
+				"footer": "Damage"
 			}
 		],
 		"json_data": {
 			"ID": "63",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"ItemCost": "1450",
+			"ItemCost": "1380",
 			"ItemShopTags": "attack_speed;move_speed;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "power treads",
@@ -2712,19 +2724,19 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "50"
+					"bonus_movement_speed": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_stat": "10"
+					"bonus_stat": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "25"
+					"bonus_attack_speed": "0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "0"
+					"bonus_damage": "16"
 				}
 			}
 		}
@@ -2765,7 +2777,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "30",
+				"value": "40",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -2801,7 +2813,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "30"
+					"bonus_attack_speed": "40"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -2867,7 +2879,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.75",
+				"value": "1.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2894,7 +2906,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "0.75"
+					"bonus_mana_regen": "1.25"
 				}
 			}
 		}
@@ -2930,13 +2942,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "5.5",
+				"value": "6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.5",
+				"value": "2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2953,11 +2965,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.5"
+					"bonus_health_regen": "6.0"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.5"
+					"bonus_mana_regen": "2.0"
 				}
 			}
 		}
@@ -3079,11 +3091,11 @@
 		"name": "item_recipe_bracer",
 		"localized_name": "Bracer Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 165,
+		"cost": 210,
 		"ability_special": [],
 		"json_data": {
 			"ID": "72",
-			"ItemCost": "165",
+			"ItemCost": "210",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_bracer",
@@ -3099,12 +3111,12 @@
 		"aliases": "bracer",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/bracer.png",
-		"cost": 465,
+		"cost": 510,
 		"lore": "The bracer is a common choice to toughen up defenses and increase longevity.",
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "7",
+				"value": "8",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -3119,12 +3131,18 @@
 				"value": "3",
 				"header": "+",
 				"footer": "Intelligence"
+			},
+			{
+				"key": "bonus_magic_resistance",
+				"value": "6%",
+				"header": "+",
+				"footer": "Magic Resistance"
 			}
 		],
 		"json_data": {
 			"ID": "73",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "465",
+			"ItemCost": "510",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
@@ -3132,7 +3150,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "7"
+					"bonus_strength": "8"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -3141,6 +3159,10 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_intellect": "3"
+				},
+				"04": {
+					"var_type": "FIELD_FLOAT",
+					"bonus_magic_resistance": "6"
 				}
 			}
 		}
@@ -3150,11 +3172,11 @@
 		"name": "item_recipe_wraith_band",
 		"localized_name": "Wraith Band Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 165,
+		"cost": 210,
 		"ability_special": [],
 		"json_data": {
 			"ID": "74",
-			"ItemCost": "165",
+			"ItemCost": "210",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_wraith_band",
@@ -3170,7 +3192,7 @@
 		"aliases": "wraith band",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/wraith_band.png",
-		"cost": 465,
+		"cost": 510,
 		"lore": "A circlet with faint whispers echoing about it.",
 		"ability_special": [
 			{
@@ -3181,7 +3203,7 @@
 			},
 			{
 				"key": "bonus_agility",
-				"value": "7",
+				"value": "8",
 				"header": "+",
 				"footer": "Agility"
 			},
@@ -3190,12 +3212,18 @@
 				"value": "3",
 				"header": "+",
 				"footer": "Intelligence"
+			},
+			{
+				"key": "bonus_attack_speed",
+				"value": "8",
+				"header": "+",
+				"footer": "Attack Speed"
 			}
 		],
 		"json_data": {
 			"ID": "75",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "465",
+			"ItemCost": "510",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "wraith band",
@@ -3207,11 +3235,15 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "7"
+					"bonus_agility": "8"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_intellect": "3"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_attack_speed": "8"
 				}
 			}
 		}
@@ -3221,11 +3253,11 @@
 		"name": "item_recipe_null_talisman",
 		"localized_name": "Null Talisman Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 165,
+		"cost": 210,
 		"ability_special": [],
 		"json_data": {
 			"ID": "76",
-			"ItemCost": "165",
+			"ItemCost": "210",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_null_talisman",
@@ -3241,7 +3273,7 @@
 		"aliases": "null talisman",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/null_talisman.png",
-		"cost": 465,
+		"cost": 510,
 		"lore": "A small gemstone attached to several chains.",
 		"ability_special": [
 			{
@@ -3258,15 +3290,20 @@
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "7",
+				"value": "8",
 				"header": "+",
 				"footer": "Intelligence"
+			},
+			{
+				"key": "bonus_spell_amp",
+				"value": "3%",
+				"header": "+Spell Amplification"
 			}
 		],
 		"json_data": {
 			"ID": "77",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "465",
+			"ItemCost": "510",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "null talisman",
@@ -3282,7 +3319,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "7"
+					"bonus_intellect": "8"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_spell_amp": "3"
 				}
 			}
 		}
@@ -3292,12 +3333,12 @@
 		"name": "item_recipe_mekansm",
 		"localized_name": "Mekansm Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 900,
+		"cost": 950,
 		"ability_special": [],
 		"json_data": {
 			"ID": "78",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "900",
+			"ItemCost": "950",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_mekansm",
@@ -3313,10 +3354,10 @@
 		"aliases": "mechanism|mekansm",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/mekansm.png",
-		"cost": 2350,
+		"cost": 2275,
 		"cooldown": "65",
 		"mana_cost": "225",
-		"description": "# Active: Restore\nHeals **275** health and gives +**2** armor to allied units in a **900** radius.\n\n# Passive: Mekansm Aura\nGrants **3.5** health regeneration to allied units in a **900** radius.",
+		"description": "# Active: Restore\nHeals **275** health and gives +**2** armor to allied units in a **1200** radius.\n\n# Passive: Mekansm Aura\nGrants **4.5** health regeneration to allied units in a **1200** radius.",
 		"lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
 		"ability_special": [
 			{
@@ -3333,11 +3374,11 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "3.5"
+				"value": "4.5"
 			},
 			{
 				"key": "heal_amount",
@@ -3353,7 +3394,7 @@
 			},
 			{
 				"key": "heal_radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
@@ -3361,9 +3402,9 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "2",
 			"AbilityCooldown": "65.0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"AbilityManaCost": "225",
-			"ItemCost": "2350",
+			"ItemCost": "2275",
 			"ItemShopTags": "agi;int;str;armor;boost_health",
 			"ItemQuality": "rare",
 			"ItemAliases": "mechanism;mekansm",
@@ -3381,11 +3422,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "3.5"
+					"aura_health_regen": "4.5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -3401,7 +3442,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"heal_radius": "900"
+					"heal_radius": "1200"
 				}
 			}
 		}
@@ -3432,8 +3473,8 @@
 		"aliases": "vladmir's offering|vlads",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/vladmir.png",
-		"cost": 2250,
-		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **2.5** health regeneration, **1** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **900**",
+		"cost": 1925,
+		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **2.5** health regeneration, **1.75** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"ability_special": [
 			{
@@ -3448,7 +3489,7 @@
 			},
 			{
 				"key": "mana_regen_aura",
-				"value": "1"
+				"value": "1.75"
 			},
 			{
 				"key": "armor_aura",
@@ -3468,14 +3509,14 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
 			"ID": "81",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCastRange": "900",
-			"ItemCost": "2250",
+			"AbilityCastRange": "1200",
+			"ItemCost": "1925",
 			"ItemShopTags": "lifesteal;damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
@@ -3492,7 +3533,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen_aura": "1.0"
+					"mana_regen_aura": "1.75"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -3512,7 +3553,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				}
 			}
 		}
@@ -3547,7 +3588,7 @@
 		"cost": 800,
 		"cooldown": "25",
 		"mana_cost": "10",
-		"description": "# Active: Armor Bonus\nGives +**2** armor to all allied units.  Lasts **25** seconds on heroes, **30** seconds on units.\n\nRadius: **900**",
+		"description": "# Active: Armor Bonus\nGives +**2** armor to all allied units.  Lasts **25** seconds on heroes, **30** seconds on units.\n\nRadius: **1200**",
 		"lore": "A powerful shield that imbues the bearer with the strength of heroes past, it is capable of protecting entire armies in battle.",
 		"ability_special": [
 			{
@@ -3564,7 +3605,7 @@
 			},
 			{
 				"key": "bonus_aoe_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "bonus_aoe_armor",
@@ -3583,7 +3624,7 @@
 			"ID": "86",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "25.0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityManaCost": "10",
 			"ItemCost": "800",
@@ -3601,7 +3642,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_aoe_radius": "900"
+					"bonus_aoe_radius": "1200"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -3647,7 +3688,7 @@
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/ring_of_basilius.png",
 		"cost": 500,
-		"description": "# Passive: Basilius Aura\nGrants **0.5** mana regeneration and **2** armor in a **900** radius.\n\n# Toggle: Aura\nDeactivate aura to stop affecting non-hero units.",
+		"description": "# Passive: Basilius Aura\nGrants **0.75** mana regeneration and **2** armor in a **1200** radius.\n\n# Toggle: Aura\nDeactivate aura to stop affecting non-hero units.",
 		"lore": "Ring given as a reward to the greatest mages.",
 		"ability_special": [
 			{
@@ -3662,11 +3703,11 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "aura_mana_regen",
-				"value": "0.5"
+				"value": "0.75"
 			},
 			{
 				"key": "aura_bonus_armor",
@@ -3676,7 +3717,7 @@
 		"json_data": {
 			"ID": "88",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"ItemCost": "500",
 			"ItemShopTags": "damage;regen_mana;armor",
 			"ItemQuality": "rare",
@@ -3698,11 +3739,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"aura_mana_regen": "0.5"
+					"aura_mana_regen": "0.75"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -3737,15 +3778,15 @@
 		"aliases": "pipe of insight",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/pipe.png",
-		"cost": 3150,
+		"cost": 3025,
 		"cooldown": "60",
 		"mana_cost": "100",
-		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **900**\n\n# Passive: Insight Aura\nGives allied units **2** health regeneration and **10%** magic resistance.\n\nRadius: **900**",
+		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n# Passive: Insight Aura\nGives allied units **3** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"ability_special": [
 			{
 				"key": "health_regen",
-				"value": "6.5",
+				"value": "8",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -3765,7 +3806,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "2"
+				"value": "3"
 			},
 			{
 				"key": "magic_resistance_aura",
@@ -3773,7 +3814,7 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "barrier_block",
@@ -3785,11 +3826,13 @@
 			},
 			{
 				"key": "barrier_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "0"
+				"value": "2",
+				"header": "+",
+				"footer": "All Attributes"
 			},
 			{
 				"key": "barrier_block_creep",
@@ -3802,8 +3845,8 @@
 			"FightRecapLevel": "2",
 			"AbilityCooldown": "60.0",
 			"AbilityManaCost": "100",
-			"AbilityCastRange": "900",
-			"ItemCost": "3150",
+			"AbilityCastRange": "1200",
+			"ItemCost": "3025",
 			"ItemShopTags": "regen_health;boost_magic_resist",
 			"ItemQuality": "rare",
 			"ItemAliases": "pipe of insight",
@@ -3813,7 +3856,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"health_regen": "6.5"
+					"health_regen": "8.0"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -3829,7 +3872,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"aura_health_regen": "2"
+					"aura_health_regen": "3"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -3837,7 +3880,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -3849,11 +3892,11 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"barrier_radius": "900"
+					"barrier_radius": "1200"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "0"
+					"bonus_all_stats": "2"
 				},
 				"12": {
 					"var_type": "FIELD_INTEGER",
@@ -3895,7 +3938,7 @@
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "1",
+				"value": "1.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -3965,7 +4008,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen": "1.0"
+					"mana_regen": "1.5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -4011,12 +4054,12 @@
 		"name": "item_recipe_headdress",
 		"localized_name": "Headdress Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 300,
+		"cost": 175,
 		"ability_special": [],
 		"json_data": {
 			"ID": "93",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "300",
+			"ItemCost": "175",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_headdress",
@@ -4032,8 +4075,8 @@
 		"aliases": "headdress",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/headdress.png",
-		"cost": 650,
-		"description": "# Passive: Regeneration Aura\nGrants **2** health regeneration to allies.\n\nRadius: **900**",
+		"cost": 525,
+		"description": "# Passive: Regeneration Aura\nGrants **2** health regeneration to allies.\n\nRadius: **1200**",
 		"lore": "Creates a soothing aura that restores allies in battle.",
 		"ability_special": [
 			{
@@ -4048,29 +4091,29 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
 			"ID": "94",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "650",
+			"ItemCost": "525",
 			"ItemShopTags": "str;int;agi;regen_health",
 			"ItemQuality": "rare",
 			"ItemAliases": "headdress",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_all_stats": "2"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"aura_health_regen": "2"
+					"var_type": "FIELD_FLOAT",
+					"aura_health_regen": "2.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				}
 			}
 		}
@@ -4127,7 +4170,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "9",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -4150,7 +4193,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "2",
-			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "22.0",
@@ -4176,7 +4219,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "9.0"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -4245,7 +4288,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "5.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -4295,7 +4338,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "5.5"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -4352,13 +4395,13 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "30",
+				"value": "6%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -4399,11 +4442,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "5.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "30"
+					"bonus_movement_speed": "6"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -4460,7 +4503,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "2",
+				"value": "2.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -4497,7 +4540,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "2"
+					"bonus_health_regen": "2.5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4525,7 +4568,7 @@
 			"ItemRecipe": "1",
 			"ItemResult": "item_dagon",
 			"ItemRequirements": {
-				"01": "item_staff_of_wizardry;item_null_talisman"
+				"01": "item_staff_of_wizardry;item_crown"
 			}
 		}
 	},
@@ -4536,7 +4579,7 @@
 		"aliases": "dagon 1",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/dagon.png",
-		"cost": 2715,
+		"cost": 2700,
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 1,
@@ -4545,13 +4588,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15 18 21 24 27",
+				"value": "13 16 19 22 25",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -4586,7 +4629,7 @@
 			"ItemBaseLevel": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AbilityManaCost": "120 140 160 180 200",
-			"ItemCost": "2715",
+			"ItemCost": "2700",
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 1",
@@ -4596,11 +4639,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "15 18 21 24 27"
+					"bonus_intellect": "13 16 19 22 25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "3"
+					"bonus_all_stats": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4651,7 +4694,7 @@
 		"cooldown": "90",
 		"mana_cost": "50",
 		"base_level": 1,
-		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: **700**/800/900\nDamage: **75**/100/125\nMana Break Damage: **30**/40/50\nLast Will Damage: **550**/675/800\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: **700**/800/900\nDamage: **60**/90/120\nAura Move Speed: **5**/7/9\nAura Attack Speed: **5**/7/9\nAura Radius: **900**",
+		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: **700**/800/900\nDamage: **75**/100/125\nMana Break Damage: **30**/40/50\nLast Will Damage: **550**/675/800\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: **700**/800/900\nDamage: **60**/90/120\nAura Move Speed: **5**/7/9\nAura Attack Speed: **5**/7/9\nAura Radius: **1200**",
 		"lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
 		"ability_special": [
 			{
@@ -4662,7 +4705,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1 1.25 1.5",
+				"value": "2 2.5 3",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -4708,7 +4751,7 @@
 			},
 			{
 				"key": "archer_aura_radius_tooltip",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "archer_move_speed",
@@ -4744,7 +4787,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1 1.25 1.5"
+					"bonus_mana_regen": "2 2.5 3.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4788,7 +4831,7 @@
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"archer_aura_radius_tooltip": "900"
+					"archer_aura_radius_tooltip": "1200"
 				},
 				"14": {
 					"var_type": "FIELD_INTEGER",
@@ -4913,13 +4956,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "11",
+				"value": "13",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "5",
+				"value": "12",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -4939,11 +4982,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "11"
+					"bonus_health_regen": "13"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "5.0"
+					"bonus_mana_regen": "12.0"
 				}
 			}
 		}
@@ -4975,7 +5018,7 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/assault.png",
 		"cost": 5250,
-		"description": "# Passive: Assault Aura\nGrants **25** attack speed and **5** armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by **-5**.\n\nRadius: **900**",
+		"description": "# Passive: Assault Aura\nGrants **25** attack speed and **5** armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by **-5**.\n\nRadius: **1200**",
 		"lore": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed.",
 		"ability_special": [
 			{
@@ -4992,7 +5035,7 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "aura_attack_speed",
@@ -5010,7 +5053,7 @@
 		"json_data": {
 			"ID": "112",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"ItemCost": "5250",
 			"ItemShopTags": "attack_speed;armor;hard_to_tag",
 			"ItemQuality": "epic",
@@ -5028,7 +5071,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -5050,17 +5093,17 @@
 		"name": "item_recipe_heart",
 		"localized_name": "Heart of Tarrasque Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 0,
+		"cost": 400,
 		"ability_special": [],
 		"json_data": {
 			"ID": "113",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_heart",
 			"ItemRequirements": {
-				"01": "item_reaver;item_vitality_booster;item_vitality_booster"
+				"01": "item_ring_of_tarrasque;item_vitality_booster;item_reaver"
 			}
 		}
 	},
@@ -5073,7 +5116,7 @@
 		"icon": "/resource/flash3/images/items/heart.png",
 		"cost": 5200,
 		"cooldown": "7",
-		"description": "# Passive: Health Regeneration\nRestores **7%** of max health per second. \n\nIf damage is taken from an enemy hero or Roshan, this ability is disabled for **5** seconds for melee heroes, or **7** seconds for ranged heroes.",
+		"description": "# Passive: Health Regeneration\nRestores **5%** of max health per second. \n\nIf damage is taken from an enemy hero or Roshan, this ability is disabled for **5** seconds for melee heroes, or **7** seconds for ranged heroes.",
 		"lore": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
 		"ability_special": [
 			{
@@ -5084,13 +5127,18 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "500",
+				"value": "400",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
+				"key": "hp_regen_amp",
+				"value": "50%",
+				"header": "+Health Regen Amplification"
+			},
+			{
 				"key": "health_regen_rate",
-				"value": "7"
+				"value": "5"
 			},
 			{
 				"key": "cooldown_melee",
@@ -5118,17 +5166,21 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health": "500"
+					"bonus_health": "400"
 				},
 				"03": {
-					"var_type": "FIELD_FLOAT",
-					"health_regen_rate": "7"
+					"var_type": "FIELD_INTEGER",
+					"hp_regen_amp": "50"
 				},
 				"04": {
+					"var_type": "FIELD_FLOAT",
+					"health_regen_rate": "5"
+				},
+				"05": {
 					"var_type": "FIELD_INTEGER",
 					"cooldown_melee": "5"
 				},
-				"05": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"cooldown_ranged_tooltip": "7"
 				}
@@ -5140,12 +5192,12 @@
 		"name": "item_recipe_black_king_bar",
 		"localized_name": "Black King Bar Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1375,
+		"cost": 1450,
 		"ability_special": [],
 		"json_data": {
 			"ID": "115",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1375",
+			"ItemCost": "1450",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_black_king_bar",
@@ -5161,7 +5213,7 @@
 		"aliases": "bkb|black king bar",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/black_king_bar.png",
-		"cost": 3975,
+		"cost": 4050,
 		"cooldown": "70",
 		"description": "# Active: Avatar\nGrants Spell Immunity and 100% Magic Damage Resistance.  Duration decreases with each use. \n\nDuration: **10**/**9**/**8**/**7**/**6**/**5** \nDispel Type: **Basic Dispel**",
 		"lore": "A powerful staff imbued with the strength of giants.",
@@ -5196,7 +5248,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "2",
 			"AbilityCooldown": "70",
-			"ItemCost": "3975",
+			"ItemCost": "4050",
 			"ItemShopTags": "str;damage;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "bkb;black king bar",
@@ -5311,7 +5363,7 @@
 		"cost": 4750,
 		"cooldown": "30",
 		"mana_cost": "100",
-		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **200** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **900**\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-45**. \n\nRadius: **900**",
+		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **200** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **900**\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-45**. \n\nRadius: **1200**",
 		"lore": "Said to have belonged to a goddess, today it retains much of its former power.",
 		"ability_special": [
 			{
@@ -5328,7 +5380,7 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "aura_attack_speed",
@@ -5381,7 +5433,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -5437,8 +5489,8 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/bloodstone.png",
 		"cost": 4900,
-		"cooldown": "300",
-		"description": "# Active: Pocket Deny\nInstantly causes you to die.\n\nMust ground target to cast.  Cannot self cast.\n\n# Passive: Bloodpact\nBegins with **14** charges, and gains a charge each time an enemy hero dies within **1600** range. \n\nEach charge grants **0.35** mana regeneration per second, and reduces respawn time by **3** seconds. \n\nIf the bearer dies, the Bloodstone loses a third of its charges.",
+		"cooldown": "250",
+		"description": "# Active: Bloodpact\nConverts **60%** of your current mana to health regeneration over **2** seconds.\n \n# Passive: Mana Battery\nEach charge provides **0.25** HP and MP regen. Nearby kills provide **1** charges. Dying causes you to lose **3** charges. Starts with **12** charges.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"ability_special": [
 			{
@@ -5455,49 +5507,61 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2",
+				"value": "3",
 				"header": "+",
 				"footer": "Mana Regeneration"
+			},
+			{
+				"key": "mana_regen_multiplier",
+				"value": "200%",
+				"header": "+Mana Regeneration"
+			},
+			{
+				"key": "regen_per_charge",
+				"value": "0.25"
+			},
+			{
+				"key": "death_charges",
+				"value": "3"
+			},
+			{
+				"key": "kill_charges",
+				"value": "1"
 			},
 			{
 				"key": "charge_range",
 				"value": "1600"
 			},
 			{
-				"key": "respawn_time_reduction",
-				"value": "3"
+				"key": "initial_charges_tooltip",
+				"value": "12"
 			},
 			{
-				"key": "on_death_removal",
-				"value": "0.67"
+				"key": "mana_cost_percentage",
+				"value": "60"
 			},
 			{
-				"key": "tooltip_charges",
-				"value": "14"
-			},
-			{
-				"key": "mana_per_charge",
-				"value": "0.35"
+				"key": "restore_duration",
+				"value": "2"
 			}
 		],
 		"json_data": {
 			"ID": "121",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "2",
-			"AbilityCastRange": "150",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "300.0",
+			"AbilityCooldown": "250.0",
 			"ItemCost": "4900",
 			"ItemShopTags": "regen_health;regen_mana;mana_pool;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "bs;bloodstone",
-			"ItemInitialCharges": "14",
+			"ItemInitialCharges": "12",
 			"ItemDisplayCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AllowedInBackpack": "0",
@@ -5512,32 +5576,44 @@
 					"bonus_mana": "425"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "7"
+					"var_type": "FIELD_FLOAT",
+					"bonus_health_regen": "6.0"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.0"
+					"bonus_mana_regen": "3.0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"charge_range": "1600"
+					"mana_regen_multiplier": "200"
 				},
 				"06": {
-					"var_type": "FIELD_INTEGER",
-					"respawn_time_reduction": "3"
+					"var_type": "FIELD_FLOAT",
+					"regen_per_charge": "0.25"
 				},
 				"07": {
-					"var_type": "FIELD_FLOAT",
-					"on_death_removal": "0.67"
+					"var_type": "FIELD_INTEGER",
+					"death_charges": "3"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_charges": "14"
+					"kill_charges": "1"
 				},
 				"09": {
-					"var_Type": "FIELD_FLOAT",
-					"mana_per_charge": "0.35"
+					"var_type": "FIELD_INTEGER",
+					"charge_range": "1600"
+				},
+				"10": {
+					"var_type": "FIELD_INTEGER",
+					"initial_charges_tooltip": "12"
+				},
+				"11": {
+					"var_type": "FIELD_INTEGER",
+					"mana_cost_percentage": "60"
+				},
+				"12": {
+					"var_type": "FIELD_FLOAT",
+					"restore_duration": "2.0"
 				}
 			}
 		}
@@ -5581,13 +5657,13 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "5.5",
+				"value": "6.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -5622,11 +5698,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.5"
+					"bonus_health_regen": "6.5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "5.0"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -5677,7 +5753,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "5.5",
+				"value": "7",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -5710,7 +5786,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.5"
+					"bonus_health_regen": "7.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -5911,7 +5987,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "6.5",
+				"value": "8",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -5948,7 +6024,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "6.5"
+					"bonus_health_regen": "8.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -6218,8 +6294,6 @@
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/butterfly.png",
 		"cost": 5475,
-		"cooldown": "25",
-		"description": "# Active: Flutter\nGrants **35%** additional movement speed for **2** seconds.",
 		"lore": "Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat.",
 		"ability_special": [
 			{
@@ -6245,20 +6319,11 @@
 				"value": "30",
 				"header": "+",
 				"footer": "Attack Speed"
-			},
-			{
-				"key": "bonus_move_speed",
-				"value": "35"
-			},
-			{
-				"key": "duration",
-				"value": "2"
 			}
 		],
 		"json_data": {
 			"ID": "139",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityCooldown": "25.0",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ItemCost": "5475",
 			"ItemShopTags": "agi;damage;evasion;attack_speed",
 			"ItemQuality": "epic",
@@ -6281,14 +6346,6 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_attack_speed": "30"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_move_speed": "35"
-				},
-				"06": {
-					"var_type": "FIELD_FLOAT",
-					"duration": "2"
 				}
 			}
 		}
@@ -6376,12 +6433,12 @@
 		"name": "item_recipe_basher",
 		"localized_name": "Skull Basher Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1000,
+		"cost": 900,
 		"ability_special": [],
 		"json_data": {
 			"ID": "142",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1000",
+			"ItemCost": "900",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_basher",
@@ -6397,7 +6454,7 @@
 		"aliases": "skull basher",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/basher.png",
-		"cost": 3050,
+		"cost": 2950,
 		"cooldown": "2.3",
 		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash chance for ranged heroes is **10%**.",
 		"lore": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
@@ -6440,7 +6497,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "2.3",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
-			"ItemCost": "3050",
+			"ItemCost": "2950",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "skull basher",
@@ -6505,7 +6562,7 @@
 		"icon": "/resource/flash3/images/items/bfury.png",
 		"cost": 4400,
 		"cooldown": "4",
-		"description": "# Active: Chop Tree/Ward\nDestroy a target tree or ward.\n\nTree Cast Range: **350**\nWard Cast Range: **450** \n\n# Passive: Quell\nIncreases attack damage against non-hero units by **60%** for melee heroes, and **25%** for ranged. \n\n# Passive: Cleave\nDeals **40%** of attack damage as physical damage in a cone up to **625** around the target. (Melee Only)",
+		"description": "# Active: Chop Tree/Ward\nDestroy a target tree or ward.\n\nTree Cast Range: **350**\nWard Cast Range: **450** \n\n# Passive: Quell\nIncreases attack damage against non-hero units by **60%** for melee heroes, and **25%** for ranged. \n\n# Passive: Cleave\nDeals **60%** of attack damage as physical damage in a cone up to **650** around the target. (Melee Only)",
 		"lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
 		"ability_special": [
 			{
@@ -6516,19 +6573,19 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "6",
+				"value": "7.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "3.75",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
 			{
 				"key": "cleave_damage_percent",
-				"value": "40"
+				"value": "60"
 			},
 			{
 				"key": "quelling_bonus",
@@ -6544,11 +6601,11 @@
 			},
 			{
 				"key": "cleave_ending_width",
-				"value": "330"
+				"value": "360"
 			},
 			{
 				"key": "cleave_distance",
-				"value": "625"
+				"value": "650"
 			},
 			{
 				"key": "cast_range_tooltip",
@@ -6587,16 +6644,16 @@
 					"bonus_damage": "45"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "6"
+					"var_type": "FIELD_FLOAT",
+					"bonus_health_regen": "7.5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "3.75"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_damage_percent": "40"
+					"cleave_damage_percent": "60"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -6612,11 +6669,11 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_ending_width": "330"
+					"cleave_ending_width": "360"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_distance": "625"
+					"cleave_distance": "650"
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
@@ -6664,7 +6721,7 @@
 		"aliases": "manta style",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/manta.png",
-		"cost": 4800,
+		"cost": 4750,
 		"cooldown": "45",
 		"mana_cost": "125",
 		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage and take **350%** damage, while Ranged images deal **28%** and take **400%** damage. \n\nCooldown increased by **15** seconds on ranged heroes.\n\nDispel Type: **Basic Dispel**",
@@ -6767,7 +6824,7 @@
 			"AbilityCooldown": "45.0",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "125",
-			"ItemCost": "4800",
+			"ItemCost": "4750",
 			"ItemShopTags": "agi;str;int;attack_speed;move_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "manta style",
@@ -6890,7 +6947,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "30",
+				"value": "38",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6918,7 +6975,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "30"
+					"bonus_damage": "38"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6986,7 +7043,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "4",
+				"value": "5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -7044,7 +7101,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "4"
+					"bonus_health_regen": "5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -7185,16 +7242,9 @@
 		"aliases": "sny|s&y|sy|sange and yasha",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/sange_and_yasha.png",
-		"cost": 4300,
-		"description": "# Passive: Maim\nEach attack has a **40%** chance to reduce enemy hero movement speed by **-26%** and attack speed by **-26** when used by a melee hero. Reduces enemy hero movement by **-13%** and attack speed by **-13** when used by a ranged hero. Effect lasts **5** seconds.",
+		"cost": 4200,
 		"lore": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination.",
 		"ability_special": [
-			{
-				"key": "bonus_damage",
-				"value": "16",
-				"header": "+",
-				"footer": "Damage"
-			},
 			{
 				"key": "bonus_strength",
 				"value": "16",
@@ -7208,6 +7258,11 @@
 				"footer": "Agility"
 			},
 			{
+				"key": "status_resistance",
+				"value": "16%",
+				"header": "+Status Resistance"
+			},
+			{
 				"key": "bonus_attack_speed",
 				"value": "16",
 				"header": "+",
@@ -7215,40 +7270,22 @@
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "16%",
+				"value": "12%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
 			{
-				"key": "maim_chance",
-				"value": "40"
-			},
-			{
-				"key": "maim_slow_movement",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_attack",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_movement_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_slow_attack_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_duration",
-				"value": "5"
+				"key": "bonus_damage",
+				"value": "12",
+				"header": "+",
+				"footer": "Damage"
 			}
 		],
 		"json_data": {
 			"ID": "154",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "4300",
+			"ItemCost": "4200",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sny;s&y;sy;sange and yasha",
@@ -7258,15 +7295,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "16"
+					"bonus_strength": "16"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "16"
+					"bonus_agility": "16"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "16"
+					"status_resistance": "16"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -7274,31 +7311,11 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_percent_bonus": "16"
+					"movement_speed_percent_bonus": "12"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"maim_chance": "40"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement": "-26"
-				},
-				"08": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack": "-26"
-				},
-				"09": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement_range": "-13"
-				},
-				"10": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack_range": "-13"
-				},
-				"11": {
-					"var_type": "FIELD_FLOAT",
-					"maim_duration": "5.0"
+					"bonus_damage": "12"
 				}
 			}
 		}
@@ -7329,7 +7346,7 @@
 		"aliases": "satanic",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/satanic.png",
-		"cost": 5500,
+		"cost": 5300,
 		"cooldown": "35",
 		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **200%** for **5** seconds. \n\n# Passive: Lifesteal\nHeals the attacker for **25%** of attack damage dealt.",
 		"lore": "Immense power at the cost of your soul.",
@@ -7342,7 +7359,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "50",
+				"value": "25",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -7361,6 +7378,11 @@
 			{
 				"key": "unholy_duration",
 				"value": "5"
+			},
+			{
+				"key": "status_resistance",
+				"value": "30%",
+				"header": "+Status Resistance"
 			}
 		],
 		"json_data": {
@@ -7369,7 +7391,7 @@
 			"FightRecapLevel": "2",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "35.0",
-			"ItemCost": "5500",
+			"ItemCost": "5300",
 			"ItemShopTags": "damage;str;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "satanic",
@@ -7382,7 +7404,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "50"
+					"bonus_damage": "25"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -7399,6 +7421,10 @@
 				"07": {
 					"var_type": "FIELD_FLOAT",
 					"unholy_duration": "5.0"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"status_resistance": "30"
 				}
 			}
 		}
@@ -7707,12 +7733,12 @@
 		"name": "item_recipe_sange",
 		"localized_name": "Sange Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 700,
+		"cost": 650,
 		"ability_special": [],
 		"json_data": {
 			"ID": "161",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "700",
+			"ItemCost": "650",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_sange",
@@ -7728,16 +7754,9 @@
 		"aliases": "sange",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/sange.png",
-		"cost": 2150,
-		"description": "# Passive: Maim\nEach attack has a **40%** chance to reduce enemy hero movement speed by **-26%** and attack speed by **-26** when used by a melee hero. Reduces enemy hero movement by **-13%** and attack speed by **-13** when used by a ranged hero. Effect lasts **5** seconds.",
+		"cost": 2100,
 		"lore": "Sange is an unusually accurate weapon, seeking weak points automatically.",
 		"ability_special": [
-			{
-				"key": "bonus_damage",
-				"value": "10",
-				"header": "+",
-				"footer": "Damage"
-			},
 			{
 				"key": "bonus_strength",
 				"value": "16",
@@ -7745,35 +7764,22 @@
 				"footer": "Strength"
 			},
 			{
-				"key": "maim_chance",
-				"value": "40"
+				"key": "status_resistance",
+				"value": "12%",
+				"header": "+Status Resistance"
 			},
 			{
-				"key": "maim_slow_movement",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_attack",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_movement_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_slow_attack_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_duration",
-				"value": "5"
+				"key": "bonus_damage",
+				"value": "8",
+				"header": "+",
+				"footer": "Damage"
 			}
 		],
 		"json_data": {
 			"ID": "162",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "2150",
+			"ItemCost": "2100",
 			"ItemShopTags": "damage;str;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sange",
@@ -7781,35 +7787,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10"
+					"bonus_strength": "16"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "16"
+					"status_resistance": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"maim_chance": "40"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement": "-26"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack": "-26"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement_range": "-13"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack_range": "-13"
-				},
-				"08": {
-					"var_type": "FIELD_FLOAT",
-					"maim_duration": "5.0"
+					"bonus_damage": "8"
 				}
 			}
 		}
@@ -7839,10 +7825,10 @@
 		"aliases": "hotd|helm of the dominator",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/helm_of_the_dominator.png",
-		"cost": 2000,
+		"cost": 1875,
 		"cooldown": "60",
 		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**.\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**\n\n# Passive: Dominator Aura\nIncreases nearby allies' attack speed by **20** and health regen by **7**.\n\nRadius: **900**",
+		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**.\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**\n\n# Passive: Dominator Aura\nIncreases nearby allies' attack speed by **20** and health regen by **8.5**.\n\nRadius: **1200**",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"ability_special": [
 			{
@@ -7857,11 +7843,11 @@
 			},
 			{
 				"key": "hp_regen_aura",
-				"value": "7"
+				"value": "8.5"
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "health_min",
@@ -7890,7 +7876,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "60.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "2000",
+			"ItemCost": "1875",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hotd;helm of the dominator",
@@ -7905,12 +7891,12 @@
 					"attack_speed_aura": "20"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"hp_regen_aura": "7"
+					"var_type": "FIELD_FLOAT",
+					"hp_regen_aura": "8.5"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -8060,7 +8046,7 @@
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/desolator.png",
 		"cost": 3500,
-		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **15** seconds.",
+		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-7** for **15** seconds.",
 		"lore": "A wicked weapon, used in torturing political criminals.",
 		"ability_special": [
 			{
@@ -8071,7 +8057,7 @@
 			},
 			{
 				"key": "corruption_armor",
-				"value": "-6"
+				"value": "-7"
 			},
 			{
 				"key": "corruption_duration",
@@ -8095,7 +8081,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"corruption_armor": "-6"
+					"corruption_armor": "-7"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -8109,11 +8095,11 @@
 		"name": "item_recipe_yasha",
 		"localized_name": "Yasha Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 700,
+		"cost": 650,
 		"ability_special": [],
 		"json_data": {
 			"ID": "169",
-			"ItemCost": "700",
+			"ItemCost": "650",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_yasha",
@@ -8129,7 +8115,7 @@
 		"aliases": "yasha",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/yasha.png",
-		"cost": 2150,
+		"cost": 2100,
 		"lore": "Yasha is regarded as the swiftest weapon ever created.",
 		"ability_special": [
 			{
@@ -8140,7 +8126,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "10",
+				"value": "12",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -8154,7 +8140,7 @@
 		"json_data": {
 			"ID": "170",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2150",
+			"ItemCost": "2100",
 			"ItemShopTags": "agi;attack_speed;move_speed",
 			"ItemQuality": "artifact",
 			"ItemAliases": "yasha",
@@ -8166,7 +8152,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "10"
+					"bonus_attack_speed": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -8201,7 +8187,7 @@
 		"aliases": "mom|mask of madness",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/mask_of_madness.png",
-		"cost": 1975,
+		"cost": 1775,
 		"cooldown": "22",
 		"mana_cost": "25",
 		"description": "# Active: Berserk\nGives **110** attack speed and **12%** movement speed, but reduces your armor by **8** and silences you.  Lasts **8** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **15%** of attack damage dealt.",
@@ -8209,7 +8195,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "20",
+				"value": "10",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -8247,7 +8233,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "22.0",
 			"AbilityManaCost": "25",
-			"ItemCost": "1975",
+			"ItemCost": "1775",
 			"ItemShopTags": "unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "mom;mask of madness",
@@ -8257,7 +8243,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "20"
+					"bonus_damage": "10"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -8618,7 +8604,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "2",
+				"value": "2.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -8656,7 +8642,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "2.0"
+					"bonus_health_regen": "2.5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -8701,12 +8687,12 @@
 		"cost": 1400,
 		"cooldown": "55",
 		"mana_cost": "0",
-		"description": "# Active: Replenish Mana\nRestores **135** mana to all nearby allies.\n\nRadius: **900**\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Replenish Mana\nRestores **160** mana to all nearby allies.\n\nRadius: **1200**\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Magi equipped with these boots are valued in battle.",
 		"ability_special": [
 			{
 				"key": "bonus_movement",
-				"value": "50",
+				"value": "15%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -8718,18 +8704,18 @@
 			},
 			{
 				"key": "replenish_amount",
-				"value": "135"
+				"value": "160"
 			},
 			{
 				"key": "replenish_radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
 			"ID": "180",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "55.0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
 			"ItemCost": "1400",
 			"ItemShopTags": "move_speed;boost_mana;mana_pool",
@@ -8742,7 +8728,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement": "50"
+					"bonus_movement": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -8750,11 +8736,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_amount": "135"
+					"replenish_amount": "160"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_radius": "900"
+					"replenish_radius": "1200"
 				}
 			}
 		}
@@ -8896,17 +8882,17 @@
 		"name": "item_recipe_ancient_janggo",
 		"localized_name": "Drum of Endurance Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 575,
+		"cost": 500,
 		"ability_special": [],
 		"json_data": {
 			"ID": "184",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "575",
+			"ItemCost": "500",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_ancient_janggo",
 			"ItemRequirements": {
-				"01": "item_sobi_mask;item_bracer;item_wind_lace",
+				"01": "item_sobi_mask;item_crown;item_wind_lace",
 				"02": "item_ancient_janggo"
 			}
 		}
@@ -8918,9 +8904,9 @@
 		"aliases": "drum of endurance",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/ancient_janggo.png",
-		"cost": 1615,
+		"cost": 1525,
 		"cooldown": "30",
-		"description": "# Active: Endurance\nGives +**35** attack speed and +**13%** movement speed to nearby allies for **6** seconds. \n\nRadius: **900**\n\n# Passive: Swiftness Aura\nGives **20** movement speed to nearby allies. \n\nRadius: **900**",
+		"description": "# Active: Endurance\nGives +**35** attack speed and +**13%** movement speed to nearby allies for **6** seconds. \n\nRadius: **1200**\n\n# Passive: Swiftness Aura\nGives **6** movement speed to nearby allies. \n\nRadius: **1200**",
 		"lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
 		"ability_special": [
 			{
@@ -8931,25 +8917,25 @@
 			},
 			{
 				"key": "bonus_str",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agi",
-				"value": "3",
+				"value": "6",
 				"header": "+",
 				"footer": "Agility"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.75",
+				"value": "1.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
 			{
 				"key": "bonus_aura_movement_speed",
-				"value": "20"
+				"value": "6"
 			},
 			{
 				"key": "bonus_attack_speed_pct",
@@ -8965,7 +8951,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
@@ -8974,9 +8960,9 @@
 			"ItemPermanent": "1",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "30.0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "1615",
+			"ItemCost": "1525",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "drum of endurance",
@@ -8992,19 +8978,19 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_str": "7"
+					"bonus_str": "6"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agi": "3"
+					"bonus_agi": "6"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "0.75"
+					"bonus_mana_regen": "1.5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_aura_movement_speed": "20"
+					"bonus_aura_movement_speed": "6"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -9020,7 +9006,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "900"
+					"radius": "1200"
 				}
 			}
 		}
@@ -9064,7 +9050,7 @@
 			},
 			{
 				"key": "bonus_mana_regen_pct",
-				"value": "0.5",
+				"value": "0.75",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9105,7 +9091,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen_pct": "0.5"
+					"bonus_mana_regen_pct": "0.75"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9199,17 +9185,17 @@
 		"name": "item_recipe_veil_of_discord",
 		"localized_name": "Veil of Discord Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 500,
+		"cost": 700,
 		"ability_special": [],
 		"json_data": {
 			"ID": "189",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "500",
+			"ItemCost": "700",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_veil_of_discord",
 			"ItemRequirements": {
-				"01": "item_helm_of_iron_will;item_null_talisman;item_null_talisman"
+				"01": "item_helm_of_iron_will;item_crown"
 			}
 		}
 	},
@@ -9220,7 +9206,7 @@
 		"aliases": "vod|veil of discord",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/veil_of_discord.png",
-		"cost": 2330,
+		"cost": 2050,
 		"cooldown": "20",
 		"mana_cost": "50",
 		"description": "# Active: Magic Weakness\nCast a **600** radius blast that decreases enemy magic resistance by **-25%**.\n\nRange: **1000**\nDuration: **16** seconds.",
@@ -9228,7 +9214,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "5",
+				"value": "6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -9252,7 +9238,7 @@
 			},
 			{
 				"key": "bonus_int",
-				"value": "14",
+				"value": "15",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -9281,7 +9267,7 @@
 			"AbilityCastRange": "1000",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "50",
-			"ItemCost": "2330",
+			"ItemCost": "2050",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "vod;veil of discord",
@@ -9290,7 +9276,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "5"
+					"bonus_health_regen": "6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -9306,7 +9292,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_int": "14"
+					"bonus_int": "15"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -9378,7 +9364,7 @@
 		"cooldown": "90",
 		"mana_cost": "50",
 		"base_level": 2,
-		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: 700/**800**/900\nDamage: 75/**100**/125\nMana Break Damage: 30/**40**/50\nLast Will Damage: 550/**675**/800\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: 700/**800**/900\nDamage: 60/**90**/120\nAura Move Speed: 5/**7**/9\nAura Attack Speed: 5/**10**/15\nAura Radius: **900**",
+		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: 700/**800**/900\nDamage: 75/**100**/125\nMana Break Damage: 30/**40**/50\nLast Will Damage: 550/**675**/800\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: 700/**800**/900\nDamage: 60/**90**/120\nAura Move Speed: 5/**7**/9\nAura Attack Speed: 5/**10**/15\nAura Radius: **1200**",
 		"lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
 		"ability_special": [
 			{
@@ -9389,7 +9375,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1 1.25 1.5",
+				"value": "2 2.5 3",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9435,7 +9421,7 @@
 			},
 			{
 				"key": "archer_aura_radius_tooltip",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "archer_move_speed",
@@ -9471,7 +9457,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1 1.25 1.5"
+					"bonus_mana_regen": "2 2.5 3.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9515,7 +9501,7 @@
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"archer_aura_radius_tooltip": "900"
+					"archer_aura_radius_tooltip": "1200"
 				},
 				"14": {
 					"var_type": "FIELD_INTEGER",
@@ -9539,7 +9525,7 @@
 		"cooldown": "90",
 		"mana_cost": "50",
 		"base_level": 3,
-		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: 700/800/**900**\nDamage: 75/100/**125**\nMana Break Damage: 30/40/**50**\nLast Will Damage: 550/675/**800**\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: 700/800/**900**\nDamage: 60/90/**120**\nAura Move Speed: 5/7/**9**\nAura Attack Speed: 5/10/**15**\nAura Radius: **900**",
+		"description": "# Active: Demonic Summoning\nSummons a Warrior and an Archer to fight for you for **60** seconds.\n\n\n# Warrior:\nBurns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.\nHealth: 700/800/**900**\nDamage: 75/100/**125**\nMana Break Damage: 30/40/**50**\nLast Will Damage: 550/675/**800**\n\n\n# Archer:\nHas a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: 700/800/**900**\nDamage: 60/90/**120**\nAura Move Speed: 5/7/**9**\nAura Attack Speed: 5/10/**15**\nAura Radius: **1200**",
 		"lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
 		"ability_special": [
 			{
@@ -9550,7 +9536,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1 1.25 1.5",
+				"value": "2 2.5 3",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9596,7 +9582,7 @@
 			},
 			{
 				"key": "archer_aura_radius_tooltip",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "archer_move_speed",
@@ -9630,7 +9616,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1 1.25 1.5"
+					"bonus_mana_regen": "2 2.5 3.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9674,7 +9660,7 @@
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"archer_aura_radius_tooltip": "900"
+					"archer_aura_radius_tooltip": "1200"
 				},
 				"14": {
 					"var_type": "FIELD_INTEGER",
@@ -9770,7 +9756,7 @@
 		"aliases": "dagon 2",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/dagon_2.png",
-		"cost": 3965,
+		"cost": 3950,
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 2,
@@ -9779,13 +9765,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15 18 21 24 27",
+				"value": "13 16 19 22 25",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -9820,7 +9806,7 @@
 			"ItemBaseLevel": "2",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AbilityManaCost": "120 140 160 180 200",
-			"ItemCost": "3965",
+			"ItemCost": "3950",
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 2",
@@ -9830,11 +9816,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "15 18 21 24 27"
+					"bonus_intellect": "13 16 19 22 25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "3"
+					"bonus_all_stats": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9862,7 +9848,7 @@
 		"aliases": "dagon 3",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/dagon_3.png",
-		"cost": 5215,
+		"cost": 5200,
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 3,
@@ -9871,13 +9857,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15 18 21 24 27",
+				"value": "13 16 19 22 25",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -9912,7 +9898,7 @@
 			"ItemBaseLevel": "3",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AbilityManaCost": "120 140 160 180 200",
-			"ItemCost": "5215",
+			"ItemCost": "5200",
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 3",
@@ -9922,11 +9908,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "15 18 21 24 27"
+					"bonus_intellect": "13 16 19 22 25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "3"
+					"bonus_all_stats": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9954,7 +9940,7 @@
 		"aliases": "dagon 4",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/dagon_4.png",
-		"cost": 6465,
+		"cost": 6450,
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 4,
@@ -9963,13 +9949,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15 18 21 24 27",
+				"value": "13 16 19 22 25",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -10004,7 +9990,7 @@
 			"ItemBaseLevel": "4",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AbilityManaCost": "120 140 160 180 200",
-			"ItemCost": "6465",
+			"ItemCost": "6450",
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 4",
@@ -10014,11 +10000,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "15 18 21 24 27"
+					"bonus_intellect": "13 16 19 22 25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "3"
+					"bonus_all_stats": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -10046,7 +10032,7 @@
 		"aliases": "dagon 5",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/dagon_5.png",
-		"cost": 7715,
+		"cost": 7700,
 		"cooldown": "35 30 25 20 15",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 5,
@@ -10055,13 +10041,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15 18 21 24 27",
+				"value": "13 16 19 22 25",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "3",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -10096,7 +10082,7 @@
 			"ItemBaseLevel": "5",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AbilityManaCost": "120 140 160 180 200",
-			"ItemCost": "7715",
+			"ItemCost": "7700",
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 5",
@@ -10104,11 +10090,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "15 18 21 24 27"
+					"bonus_intellect": "13 16 19 22 25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "3"
+					"bonus_all_stats": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -10134,16 +10120,16 @@
 		"name": "item_recipe_rod_of_atos",
 		"localized_name": "Rod of Atos Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 1000,
+		"cost": 850,
 		"ability_special": [],
 		"json_data": {
 			"ID": "205",
-			"ItemCost": "1000",
+			"ItemCost": "850",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_rod_of_atos",
 			"ItemRequirements": {
-				"01": "item_staff_of_wizardry;item_bracer;item_bracer"
+				"01": "item_staff_of_wizardry;item_crown;item_crown"
 			}
 		}
 	},
@@ -10154,7 +10140,7 @@
 		"aliases": "rod of atos",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/rod_of_atos.png",
-		"cost": 2930,
+		"cost": 2750,
 		"cooldown": "16",
 		"mana_cost": "50",
 		"description": "# Active: Cripple\nRoots the target for **2** seconds.\n\nRange: **1150**",
@@ -10168,13 +10154,13 @@
 			},
 			{
 				"key": "bonus_strength",
-				"value": "15",
+				"value": "12",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "6",
+				"value": "12",
 				"header": "+",
 				"footer": "Agility"
 			},
@@ -10198,7 +10184,7 @@
 			"AbilityCastRange": "1150",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "50",
-			"ItemCost": "2930",
+			"ItemCost": "2750",
 			"ItemShopTags": "int;regen_health",
 			"ItemQuality": "rare",
 			"ItemAliases": "rod of atos",
@@ -10211,11 +10197,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "15"
+					"bonus_strength": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "6"
+					"bonus_agility": "12"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -10253,7 +10239,7 @@
 		"aliases": "abyssal blade",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/abyssal_blade.png",
-		"cost": 6750,
+		"cost": 6650,
 		"cooldown": "35",
 		"mana_cost": "75",
 		"description": "# Active: Overwhelm\nStuns a target enemy unit for **2** seconds. \n\nPierces Spell Immunity.\n\nRange: **140**\n\n# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus magical damage.  Bash chance for ranged heroes is **10%**.\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
@@ -10273,7 +10259,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "7",
+				"value": "10",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -10336,7 +10322,7 @@
 			"AbilityCastRange": "140",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "75",
-			"ItemCost": "6750",
+			"ItemCost": "6650",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "abyssal blade",
@@ -10353,8 +10339,8 @@
 					"bonus_health": "250"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "7"
+					"var_type": "FIELD_FLOAT",
+					"bonus_health_regen": "10"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -10428,10 +10414,10 @@
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/heavens_halberd.png",
-		"cost": 3550,
+		"cost": 3500,
 		"cooldown": "18",
 		"mana_cost": "100",
-		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **5** seconds on ranged targets.\n\nRange: **600** \n\n# Passive: Maim\nEach attack has a **40%** chance to reduce enemy hero movement speed by **-26%** and attack speed by **-26** if the user is melee. Reduces enemy hero movement by **-13%** and attack speed by **-13** if the user is ranged. Effect lasts **5** seconds.",
+		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **5** seconds on ranged targets.\n\nRange: **600**",
 		"lore": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not.",
 		"ability_special": [
 			{
@@ -10453,30 +10439,6 @@
 				"footer": "Strength"
 			},
 			{
-				"key": "maim_chance",
-				"value": "40"
-			},
-			{
-				"key": "maim_slow_movement",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_attack",
-				"value": "-26"
-			},
-			{
-				"key": "maim_slow_movement_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_slow_attack_range",
-				"value": "-13"
-			},
-			{
-				"key": "maim_duration",
-				"value": "5"
-			},
-			{
 				"key": "disarm_range",
 				"value": "5"
 			},
@@ -10487,6 +10449,11 @@
 			{
 				"key": "disarm_cast_range_tooltip",
 				"value": "600"
+			},
+			{
+				"key": "status_resistance",
+				"value": "14%",
+				"header": "+Status Resistance"
 			}
 		],
 		"json_data": {
@@ -10499,7 +10466,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "100",
-			"ItemCost": "3550",
+			"ItemCost": "3500",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
@@ -10520,40 +10487,20 @@
 					"bonus_strength": "20"
 				},
 				"04": {
-					"var_type": "FIELD_INTEGER",
-					"maim_chance": "40"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement": "-26"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack": "-26"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_movement_range": "-13"
-				},
-				"08": {
-					"var_type": "FIELD_INTEGER",
-					"maim_slow_attack_range": "-13"
-				},
-				"09": {
-					"var_type": "FIELD_FLOAT",
-					"maim_duration": "5.0"
-				},
-				"10": {
 					"var_type": "FIELD_FLOAT",
 					"disarm_range": "5.0"
 				},
-				"11": {
+				"05": {
 					"var_type": "FIELD_FLOAT",
 					"disarm_melee": "3.0"
 				},
-				"12": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"disarm_cast_range_tooltip": "600"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"status_resistance": "14"
 				}
 			}
 		}
@@ -10569,11 +10516,11 @@
 			"ID": "211",
 			"ItemCost": "0",
 			"ItemShopTags": "",
+			"ItemPurchasable": "0",
+			"IsObsolete": "1",
 			"ItemRecipe": "1",
 			"ItemResult": "item_ring_of_aquila",
-			"ItemRequirements": {
-				"01": "item_wraith_band;item_ring_of_basilius"
-			}
+			"ItemRequirements": {}
 		}
 	},
 	{
@@ -10584,7 +10531,7 @@
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/ring_of_aquila.png",
 		"cost": 965,
-		"description": "# Passive: Aquila Aura\nGrants **0.5** mana regeneration and **2** armor to nearby allies.\n\nRadius: **900**\n\n# Toggle: Aura\nDeactivate to stop affecting non-hero units.",
+		"description": "# Passive: Aquila Aura\nGrants **0.5** mana regeneration and **2** armor to nearby allies.\n\nRadius: **1200**\n\n# Toggle: Aura\nDeactivate to stop affecting non-hero units.",
 		"lore": "The ring of the fallen Warlord Aquila continues to support armies in battle.",
 		"ability_special": [
 			{
@@ -10617,7 +10564,7 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "aura_mana_regen",
@@ -10631,7 +10578,7 @@
 		"json_data": {
 			"ID": "212",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"ItemCost": "965",
 			"ItemShopTags": "",
 			"ItemQuality": "rare",
@@ -10640,6 +10587,8 @@
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ActiveDescriptionLine": "2",
 			"ShouldBeSuggested": "1",
+			"ItemPurchasable": "0",
+			"IsObsolete": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -10666,7 +10615,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -10707,12 +10656,12 @@
 		"cost": 1050,
 		"cooldown": "13",
 		"mana_cost": "0",
-		"description": "# Passive: Break\nWhenever you attack or are attacked, the bonus **13** HP regen is lost and the movement speed bonus is reduced to **65** for **13** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Passive: Break\nWhenever you attack a hero or are attacked by any unit, the bonus **16** HP regen is lost and the movement speed bonus is reduced to **20%** for **13** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "While they increase the longevity of the wearer, this boot is not particularly reliable.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "90",
+				"value": "28%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -10722,7 +10671,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "13",
+				"value": "16",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -10752,7 +10701,7 @@
 			},
 			{
 				"key": "broken_movement_speed",
-				"value": "65"
+				"value": "20"
 			}
 		],
 		"json_data": {
@@ -10770,7 +10719,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "90"
+					"bonus_movement_speed": "28"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -10778,7 +10727,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "13"
+					"bonus_health_regen": "16"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -10806,7 +10755,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"broken_movement_speed": "65"
+					"broken_movement_speed": "20"
 				}
 			}
 		}
@@ -10879,7 +10828,7 @@
 		"ability_special": [
 			{
 				"key": "hp_regen",
-				"value": "0.5",
+				"value": "0.6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -10914,7 +10863,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"hp_regen": "0.5"
+					"hp_regen": "0.6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -11104,12 +11053,12 @@
 		"cooldown": "45",
 		"mana_cost": "75",
 		"base_level": 2,
-		"description": "# Active: Teleport\nTeleports you to any allied structure or unit, including heroes. Teleporting to a unit is interrupted if the target unit dies.\n\nShares a cooldown with Town Portal Scroll.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Teleport\nTeleports you to any allied structure or unit, including heroes. Teleporting to a unit is interrupted if the target unit dies.\n\nAdds **10** seconds to the cooldown of Town Portal Scroll.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Winged boots that grant omnipresence.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "100",
+				"value": "32%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -11120,16 +11069,20 @@
 			{
 				"key": "vision_radius",
 				"value": "200"
+			},
+			{
+				"key": "tp_penalty",
+				"value": "10"
 			}
 		],
 		"json_data": {
 			"ID": "220",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
 			"AbilityCooldown": "45.0",
-			"AbilitySharedCooldown": "teleport",
+			"AbilitySharedCooldown": "travel",
 			"AbilityChannelTime": "3.0",
 			"AbilityManaCost": "75",
 			"ItemCost": "4500",
@@ -11143,7 +11096,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "100"
+					"bonus_movement_speed": "32"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -11152,6 +11105,10 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"vision_radius": "200"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"tp_penalty": "10"
 				}
 			}
 		}
@@ -11220,13 +11177,13 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "4",
+				"value": "5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.5",
+				"value": "3",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -11297,11 +11254,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "4.0"
+					"bonus_health_regen": "5.0"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.5"
+					"bonus_mana_regen": "3.0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -11391,7 +11348,7 @@
 			},
 			{
 				"key": "bonus_regen",
-				"value": "5",
+				"value": "6",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -11438,7 +11395,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_regen": "5"
+					"bonus_regen": "6"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -11480,13 +11437,13 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "5.5",
+				"value": "6.5",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.75",
+				"value": "4",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -11528,11 +11485,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.5"
+					"bonus_health_regen": "6.5"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.75"
+					"bonus_mana_regen": "4.0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -11554,17 +11511,17 @@
 		"name": "item_recipe_solar_crest",
 		"localized_name": "item_recipe_solar_crest",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 0,
+		"cost": 300,
 		"ability_special": [],
 		"json_data": {
 			"ID": "227",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
+			"ItemCost": "300",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_solar_crest",
 			"ItemRequirements": {
-				"01": "item_medallion_of_courage;item_talisman_of_evasion"
+				"01": "item_medallion_of_courage;item_ultimate_orb;item_wind_lace"
 			}
 		}
 	},
@@ -11593,36 +11550,42 @@
 		"aliases": "solar crest",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/solar_crest.png",
-		"cost": 2575,
+		"cost": 3875,
 		"cooldown": "7",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **10** armor and **20%** evasion. When cast on an enemy, removes **10** of their armor and grants your allies **40%** Accuracy on the target. \n\nRemoves the armor and evasion from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **12** armor, **70** attack speed, and **10%** movement speed. When cast on an enemy, removes **12** armor, **70** attack speed, and **10%** movement speed.\n\nRemoves the armor from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "10",
+				"value": "12",
 				"header": "+",
 				"footer": "Armor"
 			},
 			{
+				"key": "bonus_all_stats",
+				"value": "10",
+				"header": "+",
+				"footer": "All Attributes"
+			},
+			{
+				"key": "self_movement_speed",
+				"value": "6%",
+				"header": "+",
+				"footer": "Movement Speed"
+			},
+			{
 				"key": "bonus_mana_regen_pct",
-				"value": "1",
+				"value": "1.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
 			{
-				"key": "self_bonus_evasion",
-				"value": "15%",
-				"header": "+",
-				"footer": "Evasion"
+				"key": "target_movement_speed",
+				"value": "10"
 			},
 			{
-				"key": "bonus_evasion",
-				"value": "20"
-			},
-			{
-				"key": "truestrike_chance",
-				"value": "40"
+				"key": "target_attack_speed",
+				"value": "70"
 			},
 			{
 				"key": "duration",
@@ -11644,7 +11607,7 @@
 			"AbilityCastRange": "1000",
 			"AbilityCooldown": "7.0",
 			"AbilitySharedCooldown": "medallion",
-			"ItemCost": "2575",
+			"ItemCost": "3875",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemShopTags": "armor;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
@@ -11654,29 +11617,33 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "10"
+					"bonus_armor": "12"
 				},
 				"02": {
-					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen_pct": "1.0"
+					"var_type": "FIELD_INTEGER",
+					"bonus_all_stats": "10"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"self_bonus_evasion": "15"
+					"self_movement_speed": "6"
 				},
 				"04": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_evasion": "20"
+					"var_type": "FIELD_FLOAT",
+					"bonus_mana_regen_pct": "1.5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"truestrike_chance": "40"
+					"target_movement_speed": "10"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"duration": "7"
+					"target_attack_speed": "70"
 				},
 				"07": {
+					"var_type": "FIELD_INTEGER",
+					"duration": "7"
+				},
+				"08": {
 					"var_type": "FIELD_INTEGER",
 					"valor_cast_range_tooltip": "1000"
 				}
@@ -11709,15 +11676,15 @@
 		"aliases": "guardian greaves",
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/guardian_greaves.png",
-		"cost": 5450,
+		"cost": 5375,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **275** health and **160** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **900**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **3.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **12** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **4.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"ability_special": [
 			{
 				"key": "bonus_movement",
-				"value": "55",
+				"value": "17%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -11741,7 +11708,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "3.5"
+				"value": "4.5"
 			},
 			{
 				"key": "aura_armor",
@@ -11749,7 +11716,7 @@
 			},
 			{
 				"key": "aura_health_regen_bonus",
-				"value": "12"
+				"value": "16"
 			},
 			{
 				"key": "aura_armor_bonus",
@@ -11761,19 +11728,19 @@
 			},
 			{
 				"key": "aura_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "replenish_health",
-				"value": "275"
+				"value": "300"
 			},
 			{
 				"key": "replenish_mana",
-				"value": "160"
+				"value": "200"
 			},
 			{
 				"key": "replenish_radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
@@ -11781,9 +11748,9 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "40",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
-			"ItemCost": "5450",
+			"ItemCost": "5375",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "guardian greaves",
@@ -11793,7 +11760,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement": "55"
+					"bonus_movement": "17"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -11809,7 +11776,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "3.5"
+					"aura_health_regen": "4.5"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -11817,7 +11784,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"aura_health_regen_bonus": "12"
+					"aura_health_regen_bonus": "16"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -11829,19 +11796,19 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"aura_radius": "900"
+					"aura_radius": "1200"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_health": "275"
+					"replenish_health": "300"
 				},
 				"12": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_mana": "160"
+					"replenish_mana": "200"
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_radius": "900"
+					"replenish_radius": "1200"
 				}
 			}
 		}
@@ -11865,7 +11832,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.25",
+				"value": "3",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -11890,7 +11857,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.25"
+					"bonus_mana_regen": "3.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -12369,7 +12336,7 @@
 		"icon": "/resource/flash3/images/items/crimson_guard.png",
 		"cost": 3550,
 		"cooldown": "46",
-		"description": "# Active: Guard\nFor **12** seconds, grant nearby allied heroes and buildings +**2** armor, and a **100%** chance to block **60** damage from each incoming attack.\n\nUnits may only be affected by Guard once every **46** seconds.\n\nRadius: **900**\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
+		"description": "# Active: Guard\nFor **12** seconds, grant nearby allied heroes and buildings +**2** armor, and a **100%** chance to block **60** damage from each incoming attack.\n\nUnits may only be affected by Guard once every **46** seconds.\n\nRadius: **1200**\n\n# Passive: Damage Block\nGrants a **50%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
 		"lore": "A cuirass originally built to protect against the dreaded Year Beast.",
 		"ability_special": [
 			{
@@ -12380,7 +12347,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "6",
+				"value": "7",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -12418,7 +12385,7 @@
 			},
 			{
 				"key": "bonus_aoe_radius",
-				"value": "900"
+				"value": "1200"
 			},
 			{
 				"key": "block_damage_melee_active",
@@ -12442,7 +12409,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "46.0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"ItemCost": "3550",
 			"ItemShopTags": "armor;boost_armor;regen_health;block;health_pool",
 			"ItemQuality": "epic",
@@ -12456,7 +12423,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "6"
+					"bonus_health_regen": "7"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -12488,7 +12455,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_aoe_radius": "900"
+					"bonus_aoe_radius": "1200"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
@@ -12541,7 +12508,7 @@
 		"ability_special": [
 			{
 				"key": "movement_speed",
-				"value": "20"
+				"value": "6"
 			},
 			{
 				"key": "bonus_speed",
@@ -12567,7 +12534,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed": "20"
+					"movement_speed": "6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -12840,7 +12807,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.25",
+				"value": "5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -12906,7 +12873,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.25"
+					"bonus_mana_regen": "5.0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -12989,7 +12956,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.75"
+				"value": "1.25"
 			},
 			{
 				"key": "proc_damage",
@@ -13041,7 +13008,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "0.75"
+					"bonus_mana_regen": "1.25"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -13201,17 +13168,17 @@
 		"icon": "/resource/flash3/images/items/aeon_disk.png",
 		"cost": 3350,
 		"cooldown": "115",
-		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage.",
+		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that provides +**50%** Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage.",
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "250",
+				"value": "300",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
 				"key": "bonus_mana",
-				"value": "250",
+				"value": "300",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -13221,8 +13188,7 @@
 			},
 			{
 				"key": "status_resistance",
-				"value": "25%",
-				"header": "+Status Resistance"
+				"value": "50"
 			},
 			{
 				"key": "buff_duration",
@@ -13242,11 +13208,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health": "250"
+					"bonus_health": "300"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_mana": "250"
+					"bonus_mana": "300"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -13254,7 +13220,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"status_resistance": "25"
+					"status_resistance": "50"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -13322,12 +13288,12 @@
 		"name": "item_recipe_kaya",
 		"localized_name": "Kaya Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 500,
+		"cost": 650,
 		"ability_special": [],
 		"json_data": {
 			"ID": "258",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "500",
+			"ItemCost": "650",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_kaya",
@@ -13343,7 +13309,7 @@
 		"aliases": "ky|kaya",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/kaya.png",
-		"cost": 1950,
+		"cost": 2100,
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
@@ -13352,20 +13318,20 @@
 				"footer": "Intelligence"
 			},
 			{
-				"key": "spell_amp",
-				"value": "10%",
-				"header": "+Spell Amplification"
+				"key": "manacost_reduction",
+				"value": "12%",
+				"header": "+Manacost and Manaloss Reduction"
 			},
 			{
-				"key": "manacost_reduction",
-				"value": "10%",
-				"header": "+Manacost and Manaloss Reduction"
+				"key": "spell_amp",
+				"value": "8%",
+				"header": "+Spell Amplification"
 			}
 		],
 		"json_data": {
 			"ID": "259",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1950",
+			"ItemCost": "2100",
 			"ItemShopTags": "int;mana",
 			"ItemQuality": "epic",
 			"ItemAliases": "ky;kaya",
@@ -13378,11 +13344,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"spell_amp": "10"
+					"manacost_reduction": "12"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"manacost_reduction": "10"
+					"spell_amp": "8"
 				}
 			}
 		}
@@ -13418,21 +13384,54 @@
 		}
 	},
 	{
+		"id": 261,
+		"name": "item_crown",
+		"localized_name": "Crown",
+		"aliases": "crown",
+		"quality": "component",
+		"icon": "/resource/flash3/images/items/crown.png",
+		"cost": 450,
+		"ability_special": [
+			{
+				"key": "bonus_all_stats",
+				"value": "4",
+				"header": "+",
+				"footer": "All Attributes"
+			}
+		],
+		"json_data": {
+			"ID": "261",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ItemCost": "450",
+			"ItemShopTags": "agi;int;str",
+			"ItemQuality": "component",
+			"ItemAliases": "crown",
+			"ShouldBeInitiallySuggested": "1",
+			"SideShop": "1",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_all_stats": "4"
+				}
+			}
+		}
+	},
+	{
 		"id": 262,
 		"name": "item_recipe_hurricane_pike",
 		"localized_name": "Hurricane Pike Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 0,
+		"cost": 450,
 		"ability_special": [],
 		"json_data": {
 			"ID": "262",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
+			"ItemCost": "450",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_hurricane_pike",
 			"ItemRequirements": {
-				"01": "item_wraith_band;item_force_staff;item_dragon_lance"
+				"01": "item_force_staff;item_dragon_lance"
 			}
 		}
 	},
@@ -13443,7 +13442,7 @@
 		"aliases": "fs|force staff",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/hurricane_pike.png",
-		"cost": 4615,
+		"cost": 4600,
 		"cooldown": "23",
 		"mana_cost": "100",
 		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **5** seconds, allows you to make **4** attacks against the target without range restrictions and with +**100** attack speed.\n\nWorks like Force Staff when used on self or allies.\n\nAllied Range: **800**\nEnemy Range: **400**\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes by **140**.",
@@ -13455,7 +13454,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "2"
+				"value": "2.5"
 			},
 			{
 				"key": "bonus_agility",
@@ -13509,7 +13508,7 @@
 			"AbilityCooldown": "23.0",
 			"AbilitySharedCooldown": "force",
 			"AbilityManaCost": "100",
-			"ItemCost": "4615",
+			"ItemCost": "4600",
 			"ItemShopTags": "int;damage;attack_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "fs;force staff",
@@ -13522,7 +13521,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "2"
+					"bonus_health_regen": "2.5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -13581,7 +13580,7 @@
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "0.5",
+				"value": "0.75",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -13630,7 +13629,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen": "0.5"
+					"mana_regen": "0.75"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -13683,7 +13682,7 @@
 		"icon": "/resource/flash3/images/items/spirit_vessel.png",
 		"cost": 2975,
 		"cooldown": "7",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4.5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **20** damage per second. \n\nWhen used on allies, it increases health by **1%** of current health per second, and increases HP regeneration and healing by **20%**. Provides **30** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4.5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **25** damage per second. \n\nWhen used on allies, it provides **30** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -13693,13 +13692,13 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "20",
+				"value": "6%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1",
+				"value": "1.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -13733,7 +13732,7 @@
 			},
 			{
 				"key": "soul_damage_amount",
-				"value": "20"
+				"value": "25"
 			},
 			{
 				"key": "duration",
@@ -13748,16 +13747,8 @@
 				"value": "70"
 			},
 			{
-				"key": "hp_regen_increase_allies",
-				"value": "20"
-			},
-			{
 				"key": "enemy_hp_drain",
 				"value": "4.5"
-			},
-			{
-				"key": "ally_hp_gain",
-				"value": "1"
 			}
 		],
 		"json_data": {
@@ -13785,11 +13776,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "20"
+					"bonus_movement_speed": "6"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.0"
+					"bonus_mana_regen": "1.5"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -13817,7 +13808,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"soul_damage_amount": "20"
+					"soul_damage_amount": "25"
 				},
 				"11": {
 					"var_type": "FIELD_FLOAT",
@@ -13832,17 +13823,218 @@
 					"hp_regen_reduction_enemy": "70"
 				},
 				"14": {
-					"var_type": "FIELD_INTEGER",
-					"hp_regen_increase_allies": "20"
-				},
-				"15": {
 					"var_type": "FIELD_FLOAT",
 					"enemy_hp_drain": "4.5"
-				},
-				"16": {
-					"var_type": "FIELD_FLOAT",
-					"ally_hp_gain": "1.0"
 				}
+			}
+		}
+	},
+	{
+		"id": 268,
+		"name": "item_recipe_holy_locket",
+		"localized_name": "item_recipe_holy_locket",
+		"icon": "/resource/flash3/images/items/recipe.png",
+		"cost": 550,
+		"ability_special": [],
+		"json_data": {
+			"ID": "268",
+			"ItemCost": "550",
+			"ItemShopTags": "",
+			"UIPickupSound": "Item.PickUpRingShop",
+			"UIDropSound": "Item.DropRingShop",
+			"WorldDropSound": "Item.DropRingWorld",
+			"ItemRecipe": "1",
+			"ItemResult": "item_holy_locket",
+			"ItemRequirements": {
+				"01": "item_ring_of_tarrasque;item_void_stone;item_cloak"
+			}
+		}
+	},
+	{
+		"id": 269,
+		"name": "item_holy_locket",
+		"localized_name": "Holy Locket",
+		"quality": "rare",
+		"cost": 2650,
+		"description": "# Passive: Holy Blessing\nAmplifies heals and regeneration you provided by **25%**.",
+		"ability_special": [
+			{
+				"key": "bonus_health",
+				"value": "200",
+				"header": "+",
+				"footer": "Health"
+			},
+			{
+				"key": "health_regen",
+				"value": "4",
+				"header": "+",
+				"footer": "HP Regeneration"
+			},
+			{
+				"key": "mana_regen",
+				"value": "3",
+				"header": "+",
+				"footer": "Mana Regeneration"
+			},
+			{
+				"key": "magic_resist",
+				"value": "15%",
+				"header": "+",
+				"footer": "Magic Resistance"
+			},
+			{
+				"key": "heal_increase",
+				"value": "25"
+			}
+		],
+		"json_data": {
+			"ID": "269",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ItemCost": "2650",
+			"ItemQuality": "rare",
+			"ActiveDescriptionLine": "2",
+			"ShouldBeInitiallySuggested": "1",
+			"UIPickupSound": "Item.PickUpRingShop",
+			"UIDropSound": "Item.DropRingShop",
+			"WorldDropSound": "Item.DropRingWorld",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_health": "200"
+				},
+				"02": {
+					"var_type": "FIELD_FLOAT",
+					"health_regen": "4"
+				},
+				"03": {
+					"var_type": "FIELD_FLOAT",
+					"mana_regen": "3"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"magic_resist": "15"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"heal_increase": "25"
+				}
+			}
+		}
+	},
+	{
+		"id": 272,
+		"name": "item_recipe_kaya_and_sange",
+		"localized_name": "Kaya and Sange Recipe",
+		"icon": "/resource/flash3/images/items/recipe.png",
+		"cost": 0,
+		"ability_special": [],
+		"json_data": {
+			"ID": "272",
+			"ItemCost": "0",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_kaya_and_sange",
+			"ItemRequirements": {
+				"01": "item_sange;item_kaya"
+			}
+		}
+	},
+	{
+		"id": 273,
+		"name": "item_kaya_and_sange",
+		"localized_name": "Kaya and Sange",
+		"aliases": "snk|s&k|sk|sange and kaya",
+		"quality": "artifact",
+		"cost": 4200,
+		"ability_special": [
+			{
+				"key": "bonus_strength",
+				"value": "16",
+				"header": "+",
+				"footer": "Strength"
+			},
+			{
+				"key": "bonus_intellect",
+				"value": "16",
+				"header": "+",
+				"footer": "Intelligence"
+			},
+			{
+				"key": "status_resistance",
+				"value": "16%",
+				"header": "+Status Resistance"
+			},
+			{
+				"key": "manacost_reduction",
+				"value": "16%",
+				"header": "+Manacost and Manaloss Reduction"
+			},
+			{
+				"key": "spell_amp",
+				"value": "12%",
+				"header": "+Spell Amplification"
+			},
+			{
+				"key": "bonus_damage",
+				"value": "12",
+				"header": "+",
+				"footer": "Damage"
+			}
+		],
+		"json_data": {
+			"ID": "273",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"ItemCost": "4200",
+			"ItemShopTags": "damage;str;agi;attack_speed;unique",
+			"ItemQuality": "artifact",
+			"ItemAliases": "snk;s&k;sk;sange and kaya",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
+			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
+			"ShouldBeSuggested": "1",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_strength": "16"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_intellect": "16"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"status_resistance": "16"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"manacost_reduction": "16"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"spell_amp": "12"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage": "12"
+				}
+			}
+		}
+	},
+	{
+		"id": 274,
+		"name": "item_recipe_yasha_and_kaya",
+		"localized_name": "Yasha and Kaya Recipe",
+		"icon": "/resource/flash3/images/items/recipe.png",
+		"cost": 0,
+		"ability_special": [],
+		"json_data": {
+			"ID": "274",
+			"ItemCost": "0",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_yasha_and_kaya",
+			"ItemRequirements": {
+				"01": "item_kaya;item_yasha"
 			}
 		}
 	},
@@ -13868,6 +14060,133 @@
 			"ID": "276",
 			"IsObsolete": "1",
 			"ItemPurchasable": "0"
+		}
+	},
+	{
+		"id": 277,
+		"name": "item_yasha_and_kaya",
+		"localized_name": "Yasha and Kaya",
+		"aliases": "ynk|y&k|sk|yasha and kaya",
+		"quality": "artifact",
+		"cost": 4200,
+		"ability_special": [
+			{
+				"key": "bonus_agility",
+				"value": "16",
+				"header": "+",
+				"footer": "Agility"
+			},
+			{
+				"key": "bonus_intellect",
+				"value": "16",
+				"header": "+",
+				"footer": "Intelligence"
+			},
+			{
+				"key": "bonus_attack_speed",
+				"value": "16",
+				"header": "+",
+				"footer": "Attack Speed"
+			},
+			{
+				"key": "manacost_reduction",
+				"value": "16%",
+				"header": "+Manacost and Manaloss Reduction"
+			},
+			{
+				"key": "movement_speed_percent_bonus",
+				"value": "12%",
+				"header": "+",
+				"footer": "Movement Speed"
+			},
+			{
+				"key": "spell_amp",
+				"value": "12%",
+				"header": "+Spell Amplification"
+			}
+		],
+		"json_data": {
+			"ID": "277",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"ItemCost": "4200",
+			"ItemShopTags": "damage;str;agi;attack_speed;unique",
+			"ItemQuality": "artifact",
+			"ItemAliases": "ynk;y&k;sk;yasha and kaya",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
+			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
+			"ShouldBeSuggested": "1",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_agility": "16"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_intellect": "16"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_attack_speed": "16"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"manacost_reduction": "16"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"movement_speed_percent_bonus": "12"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"spell_amp": "12"
+				}
+			}
+		}
+	},
+	{
+		"id": 279,
+		"name": "item_ring_of_tarrasque",
+		"localized_name": "Ring of Tarrasque",
+		"aliases": "rot",
+		"quality": "component",
+		"cost": 700,
+		"ability_special": [
+			{
+				"key": "bonus_health",
+				"value": "150",
+				"header": "+",
+				"footer": "Health"
+			},
+			{
+				"key": "bonus_health_regen",
+				"value": "3.75",
+				"header": "+",
+				"footer": "HP Regeneration"
+			}
+		],
+		"json_data": {
+			"ID": "279",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ItemCost": "700",
+			"ItemShopTags": "regen_health",
+			"ItemQuality": "component",
+			"ItemAliases": "rot",
+			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
+			"ShouldBeInitiallySuggested": "1",
+			"UIPickupSound": "Item.PickUpRingShop",
+			"UIDropSound": "Item.DropRingShop",
+			"WorldDropSound": "Item.DropRingWorld",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_health": "150"
+				},
+				"02": {
+					"var_type": "FIELD_FLOAT",
+					"bonus_health_regen": "3.75"
+				}
+			}
 		}
 	},
 	{
