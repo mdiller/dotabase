@@ -203,7 +203,9 @@
 			},
 			{
 				"key": "bonus_regen",
-				"value": "3.5"
+				"value": "3.5",
+				"header": "+",
+				"footer": "HP Regeneration"
 			}
 		],
 		"json_data": {
@@ -2673,8 +2675,8 @@
 			"ItemResult": "item_power_treads",
 			"ItemRequirements": {
 				"01": "item_boots;item_belt_of_strength;item_blades_of_attack",
-				"04": "item_boots;item_boots_of_elves;item_blades_of_attack",
-				"06": "item_boots;item_robe;item_blades_of_attack"
+				"04": "item_boots;item_robe;item_blades_of_attack",
+				"06": "item_boots;item_boots_of_elves;item_blades_of_attack"
 			}
 		}
 	},
@@ -3215,7 +3217,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "8",
+				"value": "7",
 				"header": "+",
 				"footer": "Attack Speed"
 			}
@@ -3243,7 +3245,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "8"
+					"bonus_attack_speed": "7"
 				}
 			}
 		}
@@ -12807,7 +12809,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "5",
+				"value": "5.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -12873,7 +12875,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "5.0"
+					"bonus_mana_regen": "5.5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -13832,7 +13834,7 @@
 	{
 		"id": 268,
 		"name": "item_recipe_holy_locket",
-		"localized_name": "item_recipe_holy_locket",
+		"localized_name": "Holy Locket Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
 		"cost": 550,
 		"ability_special": [],
@@ -13857,7 +13859,7 @@
 		"quality": "rare",
 		"icon": "/resource/flash3/images/items/holy_locket.png",
 		"cost": 2650,
-		"description": "# Passive: Holy Blessing\nAmplifies heals and regeneration you provided by **25%**.",
+		"description": "# Passive: Holy Blessing\nAmplifies heals and regeneration you provide by **25%**.",
 		"ability_special": [
 			{
 				"key": "bonus_health",

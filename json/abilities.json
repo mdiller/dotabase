@@ -782,6 +782,7 @@
 			"AbilitySound": "Hero_Bane.Enfeeble",
 			"AbilityCastRange": "1000",
 			"AbilityCastPoint": "0.3",
+			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCooldown": "12 10 8 6",
 			"AbilityManaCost": "70 90 110 130",
 			"AbilitySpecial": {
@@ -1442,8 +1443,8 @@
 			{
 				"talent_name": "special_bonus_unique_drow_ranger_1",
 				"key": "trueshot_ranged_attack_speed",
-				"value": "20% 36% 52% 68%",
-				"talent_value": "45% 61% 77% 93%",
+				"value": "20% 40% 60% 80%",
+				"talent_value": "45% 65% 85% 105%",
 				"header": "RANGE ATTACK SPEED:"
 			}
 		],
@@ -1465,7 +1466,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"trueshot_ranged_attack_speed": "20 36 52 68",
+					"trueshot_ranged_attack_speed": "20 40 60 80",
 					"LinkedSpecialBonus": "special_bonus_unique_drow_ranger_1"
 				}
 			}
@@ -2069,7 +2070,7 @@
 		"description": "Juggernaut leaps towards the target enemy unit with an attack, and then slashes other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "'The fruits of discipline; with practice comes strength.'",
 		"note": "You can use items during Omnislash.\nCan target Spell Immune units.",
-		"aghanim": "Increases number of slashes and decreases cooldown.",
+		"aghanim": "Increases duration and decreases cooldown.",
 		"json_data": {
 			"ID": "5030",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -6931,7 +6932,7 @@
 			},
 			{
 				"key": "hp_shield",
-				"value": "100 200 300 400",
+				"value": "110 220 330 440",
 				"header": "ATTACK SHIELD HEALTH :"
 			},
 			{
@@ -6967,7 +6968,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"hp_shield": "100 200 300 400"
+					"hp_shield": "110 220 330 440"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -7138,8 +7139,8 @@
 		"dispellable": "yes_strong",
 		"cast_range": "300",
 		"cast_point": "0.3",
-		"cooldown": "21 20 19 18",
-		"duration": "1 1.5 2 2.5",
+		"cooldown": "22 20 18 16",
+		"duration": "1.4 1.8 2.2 2.6",
 		"mana_cost": "85",
 		"ability_special": [
 			{
@@ -7191,8 +7192,8 @@
 			"AbilitySound": "Hero_StormSpirit.ElectricVortex",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCastRange": "300",
-			"AbilityCooldown": "21 20 19 18",
-			"AbilityDuration": "1.0 1.5 2.0 2.5",
+			"AbilityCooldown": "22 20 18 16",
+			"AbilityDuration": "1.4 1.8 2.2 2.6",
 			"AbilityManaCost": "85",
 			"AbilitySpecial": {
 				"01": {
@@ -7247,7 +7248,7 @@
 			},
 			{
 				"key": "overload_attack_slow",
-				"value": "-50",
+				"value": "-80",
 				"header": "ATTACK SLOW:"
 			},
 			{
@@ -7283,7 +7284,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"overload_attack_slow": "-50"
+					"overload_attack_slow": "-80"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -7513,9 +7514,9 @@
 		"dispellable": "no",
 		"cast_range": "0",
 		"cast_point": "0",
-		"cooldown": "34 28 22 16",
+		"cooldown": "40 32 24 16",
 		"duration": "20 25 30 35",
-		"mana_cost": "60 50 40 30",
+		"mana_cost": "60",
 		"ability_special": [
 			{
 				"key": "damage_tick_rate",
@@ -7559,9 +7560,9 @@
 			"AbilitySound": "Ability.SandKing_SandStorm.start",
 			"AbilityCastRange": "0",
 			"AbilityDuration": "20 25 30 35",
-			"AbilityCooldown": "34 28 22 16",
+			"AbilityCooldown": "40 32 24 16",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
-			"AbilityManaCost": "60 50 40 30",
+			"AbilityManaCost": "60",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -8582,7 +8583,8 @@
 			},
 			{
 				"key": "duration",
-				"value": "1 1.1 1.2 1.3"
+				"value": "1 1.1 1.2 1.3",
+				"header": "BASH DURATION:"
 			},
 			{
 				"key": "attack_count",
@@ -12069,7 +12071,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/necrolyte_death_pulse.png",
 		"localized_name": "Death Pulse",
-		"description": "Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units. Passively provides regen for %regen_duration% seconds for each unit Necrophos kills.",
+		"description": "Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units.",
 		"lore": "Poor souls who succumb to Rotund'jere's plagues are recycled for future use.",
 		"note": "Death Pulse can't be disjointed.\nCan heal Spell Immune units.",
 		"json_data": {
@@ -12147,7 +12149,7 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/necrolyte_heartstopper_aura.png",
 		"localized_name": "Heartstopper Aura",
-		"description": "Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time.",
+		"description": "Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time. Passively provides regen for **7** seconds for each unit Necrophos kills.",
 		"lore": "Those who come within a short distance of Necrophos can feel pestilence and plague in the air.",
 		"note": "Damage won't disable items like Blink Dagger.\nDoes not affect ancient creeps.",
 		"json_data": {
@@ -13474,7 +13476,7 @@
 		"ability_slot": 6,
 		"icon": "/resource/flash3/images/spellicons/beastmaster_primal_roar.png",
 		"localized_name": "Primal Roar",
-		"description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 30% movement speed for 3 seconds.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain **40%** movement speed for 3 seconds.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies.",
 		"note": "The stun will hit Spell Immune units. The damage will not.",
 		"aghanim": "Reduces cooldown, and increases cast range.",
@@ -13673,8 +13675,8 @@
 			{
 				"talent_name": "special_bonus_unique_venomancer_2",
 				"key": "movement_speed",
-				"value": "-11% -12% -13% -14%",
-				"talent_value": "-17% -18% -19% -20%",
+				"value": "-11% -13% -15% -17%",
+				"talent_value": "-17% -19% -21% -23%",
 				"header": "SLOW:"
 			}
 		],
@@ -13702,7 +13704,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed": "-11 -12 -13 -14",
+					"movement_speed": "-11 -13 -15 -17",
 					"LinkedSpecialBonus": "special_bonus_unique_venomancer_2"
 				}
 			},
@@ -16244,10 +16246,8 @@
 				"header": "BLESSING RADIUS:"
 			},
 			{
-				"talent_name": "special_bonus_unique_luna_3",
 				"key": "primary_attribute",
-				"value": "8 14 20 26",
-				"talent_value": "22 28 34 40",
+				"value": "6 12 18 24",
 				"header": "BONUS PRIMARY ATTRIBUTE:"
 			},
 			{
@@ -16271,8 +16271,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"primary_attribute": "8 14 20 26",
-					"LinkedSpecialBonus": "special_bonus_unique_luna_3"
+					"primary_attribute": "6 12 18 24"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -16810,7 +16809,7 @@
 		"cast_range": "600 700 800 900",
 		"cast_point": "0.3",
 		"cooldown": "27 24 21 18",
-		"mana_cost": "80 90 100 110",
+		"mana_cost": "80 100 120 140",
 		"ability_special": [
 			{
 				"key": "start_radius",
@@ -16877,7 +16876,7 @@
 			"AbilityCastRange": "600 700 800 900",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "27 24 21 18",
-			"AbilityManaCost": "80 90 100 110",
+			"AbilityManaCost": "80 100 120 140",
 			"AbilityModifierSupportValue": "0.35",
 			"AbilitySpecial": {
 				"01": {
@@ -20040,7 +20039,7 @@
 		"localized_name": "Dark Ascension",
 		"description": "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. Nightstalker gains flight and bonus damage during this time. Has **900** unobstructed vision. \n\nUpgradable by Aghanim's Scepter.",
 		"lore": "It is a humbling sight to see when the mightiest of warriors become afraid of the dark.",
-		"aghanim": "Grants unobstructed vision in the night. The improved vision does not depend on using Darkness.",
+		"aghanim": "Grants unobstructed vision in the night. The improved vision does not depend on using Dark Ascension.",
 		"json_data": {
 			"ID": "5278",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -28190,8 +28189,10 @@
 				"header": "TRANSFORM TIME:"
 			},
 			{
+				"talent_name": "special_bonus_unique_lycan_5",
 				"key": "crit_chance",
 				"value": "40%",
+				"talent_value": "80%",
 				"header": "CRITICAL CHANCE:"
 			},
 			{
@@ -28236,7 +28237,8 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"crit_chance": "40"
+					"crit_chance": "40",
+					"LinkedSpecialBonus": "special_bonus_unique_lycan_5"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -28573,7 +28575,7 @@
 		"description": "Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "It isn't clear whether Mangix is consciously aware of his potent bond with nature, as it often occurs in the midst of a drunken stupor.",
 		"note": "The Earth Element will carry all auras that the Brewmaster has, as well as True Sight.\nThe Fire Element has phased movement.\nWhen the spell ends, Brewmaster will take the place of an element in this order, assuming they are alive: Earth, Storm, Fire.",
-		"aghanim": "Earth gains Thunder Clap, Storm gains Drunken Haze and Fire gains Drunken Brawler.",
+		"aghanim": "Earth gains Thunder Clap, Storm gains Cinder Brew and Fire gains Drunken Brawler.",
 		"json_data": {
 			"ID": "5403",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -29986,7 +29988,7 @@
 		"hero_id": 81,
 		"behavior": "passive",
 		"dispellable": "yes",
-		"cooldown": "8 7 6 5",
+		"cooldown": "7 6 5 4",
 		"ability_special": [
 			{
 				"key": "crit_min",
@@ -30014,7 +30016,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_ChaosKnight.ChaosStrike",
-			"AbilityCooldown": "8 7 6 5",
+			"AbilityCooldown": "7 6 5 4",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -30055,11 +30057,11 @@
 			},
 			{
 				"key": "outgoing_damage",
-				"value": "-60 -30 0"
+				"value": "-50 -25 0"
 			},
 			{
 				"key": "outgoing_damage_tooltip",
-				"value": "40% 70% 100%",
+				"value": "50% 75% 100%",
 				"header": "PHANTASM DAMAGE:"
 			},
 			{
@@ -30088,7 +30090,7 @@
 		"ability_slot": 6,
 		"icon": "/resource/flash3/images/spellicons/chaos_knight_phantasm.png",
 		"localized_name": "Phantasm",
-		"description": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms deal **40%**/**70%**/**100%** damage, but take **260%** damage.\n\nUpgradeable by Aghanim's Scepter.\nDISPEL TYPE: Basic Dispel",
+		"description": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms deal **50%**/**75%**/**100%** damage, but take **260%** damage.\n\nUpgradeable by Aghanim's Scepter.\nDISPEL TYPE: Basic Dispel",
 		"lore": "Drawing on his battles fought across many worlds and many times, phantasms of the Chaos Knight rise up to quell all who oppose him.",
 		"note": "Removes most negative buffs from Chaos Knight.\nChaos Knight is invulnerable for 0.5 seconds when casting, allowing him to dodge stuns and damage.",
 		"aghanim": "Reduces cooldown to %cooldown_scepter% seconds and allows Phantasm to be cast on an allied hero. 1200 Cast Range",
@@ -30118,11 +30120,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"outgoing_damage": "-60 -30 0"
+					"outgoing_damage": "-50 -25 0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"outgoing_damage_tooltip": "40 70 100"
+					"outgoing_damage_tooltip": "50 75 100"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -30241,8 +30243,8 @@
 			{
 				"talent_name": "special_bonus_unique_meepo_2",
 				"key": "poof_damage",
-				"value": "80 100 120 140",
-				"talent_value": "120 140 160 180",
+				"value": "70 90 110 130",
+				"talent_value": "110 130 150 170",
 				"header": "POOF DAMAGE:"
 			}
 		],
@@ -30272,7 +30274,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"poof_damage": "80 100 120 140",
+					"poof_damage": "70 90 110 130",
 					"LinkedSpecialBonus": "special_bonus_unique_meepo_2"
 				}
 			},
@@ -30398,7 +30400,7 @@
 		"ability_special": [
 			{
 				"key": "fade_time",
-				"value": "4.75 4 3.25 2.5",
+				"value": "4 3.5 3 2.5",
 				"header": "FADE TIME:"
 			},
 			{
@@ -30412,7 +30414,7 @@
 			},
 			{
 				"key": "movement_speed",
-				"value": "10% 15% 20% 25%",
+				"value": "14% 18% 22% 26%",
 				"header": "MOVEMENT SPEED:"
 			},
 			{
@@ -30447,7 +30449,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"fade_time": "4.75 4 3.25 2.5"
+					"fade_time": "4 3.5 3 2.5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -30459,7 +30461,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed": "10 15 20 25"
+					"movement_speed": "14 18 22 26"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -34602,13 +34604,13 @@
 			{
 				"talent_name": "special_bonus_unique_slark",
 				"key": "leash_duration",
-				"value": "3.5",
-				"talent_value": "6.5",
+				"value": "2.75 3 3.25 3.5",
+				"talent_value": "4.75 5 5.25 5.5",
 				"header": "LEASH DURATION:"
 			},
 			{
 				"key": "leash_radius",
-				"value": "325",
+				"value": "350",
 				"header": "LEASH RADIUS:"
 			}
 		],
@@ -34651,12 +34653,12 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"leash_duration": "3.5",
+					"leash_duration": "2.75 3 3.25 3.5",
 					"LinkedSpecialBonus": "special_bonus_unique_slark"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"leash_radius": "325"
+					"leash_radius": "350"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -34691,7 +34693,7 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/slark_essence_shift.png",
 		"localized_name": "Essence Shift",
-		"description": "Slark steals the life essence of enemy heroes with his attacks, draining each of their attributes and converting them to bonus Agility.",
+		"description": "Slark steals the life essence of enemy heroes with his attacks, draining each of their attributes and converting them to bonus Agility. If an enemy hero dies while affected, Slark permanently steals 1 Agility.",
 		"lore": "With each strike at his adversaries, Slark's knowledge of their weaknesses improves.",
 		"note": "Attributes cannot be dropped below 1.\nEssence Shifted stats are returned to normal on death. The stat return for Slark and for the affected hero are separate.",
 		"json_data": {
@@ -34723,7 +34725,7 @@
 		"hero_id": 93,
 		"behavior": "immediate|no_target",
 		"dispellable": "no",
-		"cooldown": "60",
+		"cooldown": "80 70 60",
 		"mana_cost": "120",
 		"ability_special": [
 			{
@@ -34781,7 +34783,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilitySound": "Hero_Slark.ShadowDance",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
-			"AbilityCooldown": "60.0",
+			"AbilityCooldown": "80 70 60",
 			"AbilityManaCost": "120 120 120",
 			"AbilitySpecial": {
 				"01": {
@@ -34997,7 +34999,7 @@
 				"talent_name": "special_bonus_unique_medusa_3",
 				"key": "snake_mana_steal",
 				"value": "11% 14% 17% 20%",
-				"talent_value": "31% 34% 37% 40%",
+				"talent_value": "46% 49% 52% 55%",
 				"header": "MANA STEAL:"
 			},
 			{
@@ -35726,15 +35728,15 @@
 		"mana_cost": "0",
 		"ability_special": [
 			{
-				"talent_name": "special_bonus_unique_centaur_4",
 				"key": "edge_damage",
 				"value": "150 200 250 300",
-				"talent_value": "200 250 300 350",
 				"header": "DAMAGE:"
 			},
 			{
+				"talent_name": "special_bonus_unique_centaur_4",
 				"key": "strength_damage",
 				"value": "40% 60% 80% 100%",
+				"talent_value": "90% 110% 130% 150%",
 				"header": "STRENGTH DAMAGE:"
 			},
 			{
@@ -35764,12 +35766,12 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"edge_damage": "150 200 250 300",
-					"LinkedSpecialBonus": "special_bonus_unique_centaur_4"
+					"edge_damage": "150 200 250 300"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"strength_damage": "40 60 80 100"
+					"strength_damage": "40 60 80 100",
+					"LinkedSpecialBonus": "special_bonus_unique_centaur_4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -35807,7 +35809,7 @@
 			},
 			{
 				"key": "max_stacks",
-				"value": "10",
+				"value": "13",
 				"header": "MAX STACKS:"
 			},
 			{
@@ -35845,7 +35847,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"max_stacks": "10"
+					"max_stacks": "13"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -35994,11 +35996,13 @@
 			},
 			{
 				"key": "movement_slow",
-				"value": "60"
+				"value": "60%",
+				"header": "SCEPTER MOVEMENT SLOW:"
 			},
 			{
 				"key": "slow_duration",
-				"value": "2"
+				"value": "2",
+				"header": "SCEPTER SLOW DURATION:"
 			},
 			{
 				"key": "scepter_distance",
@@ -36022,6 +36026,7 @@
 		"localized_name": "Shockwave",
 		"description": "Magnus sends out a wave of force, damaging enemy units in a line and pulling them towards him.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "Mt. Joerlak was a somewhat unstable mass, and Magnus has learned to channel its reverberations.",
+		"aghanim": "Increases travel distance and speed, and causes Shockwave to come back. Return wave slows units, but deals half damage to creeps.",
 		"json_data": {
 			"ID": "5518",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
@@ -42203,7 +42208,7 @@
 			},
 			{
 				"key": "bonus_hero_damage",
-				"value": "30 60 90 120",
+				"value": "35 70 105 140",
 				"header": "BONUS HERO DAMAGE:"
 			},
 			{
@@ -42244,7 +42249,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_hero_damage": "30 60 90 120",
+					"bonus_hero_damage": "35 70 105 140",
 					"CalculateSpellDamageTooltip": "0"
 				},
 				"03": {
@@ -47154,19 +47159,19 @@
 		"behavior": "no_target|immediate",
 		"spell_immunity": "no",
 		"dispellable": "yes",
-		"cooldown": "20",
+		"cooldown": "18",
 		"mana_cost": "50",
 		"ability_special": [
 			{
 				"key": "mana_steal",
-				"value": "60% 80% 100% 120%",
+				"value": "80% 100% 120% 140%",
 				"header": "SPELL MANA STEAL:"
 			},
 			{
 				"talent_name": "special_bonus_unique_outworld_devourer_2",
 				"key": "movement_slow",
-				"value": "8% 16% 24% 32%",
-				"talent_value": "38% 46% 54% 62%",
+				"value": "12% 20% 28% 36%",
+				"talent_value": "42% 50% 58% 66%",
 				"header": "MOVEMENT SLOW:"
 			},
 			{
@@ -47189,18 +47194,18 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"AbilityCooldown": "20",
+			"AbilityCooldown": "18",
 			"AbilityManaCost": "50",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"mana_steal": "60 80 100 120"
+					"mana_steal": "80 100 120 140"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"movement_slow": "8 16 24 32",
+					"movement_slow": "12 20 28 36",
 					"LinkedSpecialBonus": "special_bonus_unique_outworld_devourer_2"
 				},
 				"03": {
@@ -53805,11 +53810,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "3"
+				"value": "2"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+3s Pounce Leash",
+		"localized_name": "+2s Pounce Leash",
 		"json_data": {
 			"ID": "6147",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -53817,7 +53822,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "3"
+					"value": "2"
 				}
 			}
 		}
@@ -58273,7 +58278,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/pangolier_swashbuckle.png",
 		"localized_name": "Swashbuckle",
-		"description": "Vector Targeted. Pangolier dashes along the target line, then slashes all enemies in the drawn direction with several quick swipes.\n\nHeartpiercer has a chance to activate from this damage.",
+		"description": "Vector Targeted. Pangolier dashes along the target line, then slashes all enemies in the drawn direction with several quick swipes.\n\nLucky Shot has a chance to activate from this damage.",
 		"lore": "The Pangolier's blade is even nimbler than his tongue.",
 		"note": "Attack modifiers have a chance to proc on Swashbuckle attacks.\nCasting Swashbuckle during Rolling Thunder ends Rolling Thunder.",
 		"json_data": {
@@ -62075,7 +62080,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+200% Critical Strike Damage",
+		"localized_name": "+200% Drunken Brawler Critical Strike Damage",
 		"json_data": {
 			"ID": "6614",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -62123,7 +62128,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+50 Return Damage",
+		"localized_name": "+50 Retaliate Damage",
 		"json_data": {
 			"ID": "6616",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -63298,11 +63303,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "600"
+				"value": "40"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+600 Howl Hero Health",
+		"localized_name": "+40% Chance Shapeshift Critical Strike",
 		"json_data": {
 			"ID": "6685",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -63310,7 +63315,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "600"
+					"value": "40"
 				}
 			}
 		}
@@ -63346,11 +63351,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "20"
+				"value": "35"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+20% Mystic Snake Mana Steal",
+		"localized_name": "+35% Mystic Snake Mana Steal",
 		"json_data": {
 			"ID": "6687",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -63358,7 +63363,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "20"
+					"value": "35"
 				}
 			}
 		}
@@ -70011,7 +70016,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "10",
+				"value": "8",
 				"header": "DURATION:"
 			},
 			{
@@ -70045,7 +70050,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "10.0"
+					"duration": "8.0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -70205,14 +70210,14 @@
 		"behavior": "no_target|immediate",
 		"dispellable": "yes",
 		"cast_point": "0.5",
-		"cooldown": "42 34 26 18",
+		"cooldown": "44 36 28 20",
 		"mana_cost": "50 60 70 80",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_lone_druid_6",
 				"key": "bonus_attack_speed",
-				"value": "30 50 70 90",
-				"talent_value": "70 90 110 130",
+				"value": "20 40 60 80",
+				"talent_value": "60 80 100 120",
 				"header": "ATTACK SPEED:"
 			},
 			{
@@ -70237,12 +70242,12 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_LoneDruid.Rabid",
 			"AbilityCastPoint": "0.5",
-			"AbilityCooldown": "42 34 26 18",
+			"AbilityCooldown": "44 36 28 20",
 			"AbilityManaCost": "50 60 70 80",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "30 50 70 90",
+					"bonus_attack_speed": "20 40 60 80",
 					"LinkedSpecialBonus": "special_bonus_unique_lone_druid_6"
 				},
 				"02": {
@@ -70613,7 +70618,7 @@
 		"ability_special": [
 			{
 				"key": "health_steal_heroes",
-				"value": "8 12 16 20",
+				"value": "6 10 14 18",
 				"header": "HEALTH STEAL (HEROES):"
 			},
 			{
@@ -70636,7 +70641,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"health_steal_heroes": "8 12 16 20"
+					"health_steal_heroes": "6 10 14 18"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -70652,7 +70657,7 @@
 		"hero_id": 56,
 		"behavior": "point",
 		"damage_type": "physical",
-		"cast_range": "800",
+		"cast_range": "1200",
 		"cast_point": "0",
 		"cooldown": "110",
 		"mana_cost": "125 175 225",
@@ -70674,7 +70679,7 @@
 			},
 			{
 				"key": "attack_rate",
-				"value": "1.8 1.65 1.5",
+				"value": "1.65 1.5 1.35",
 				"header": "ATTACK RATE:"
 			},
 			{
@@ -70686,7 +70691,7 @@
 		"ability_slot": 6,
 		"icon": "/resource/flash3/images/spellicons/clinkz_burning_army.png",
 		"localized_name": "Burning Army",
-		"description": "Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons use your current Searing Arrows ability. Base damage is equal to your hero's base damage. Attack range is equal to your hero's attack range. ",
+		"description": "Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons use your current Searing Arrows ability and attack only heroes. Base damage is equal to your hero's base damage. Attack range is equal to your hero's attack range. ",
 		"json_data": {
 			"ID": "7319",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -70694,7 +70699,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Clinkz.DeathPact",
-			"AbilityCastRange": "800",
+			"AbilityCastRange": "1200",
 			"AbilityCastPoint": "0",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "110",
@@ -70714,7 +70719,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"attack_rate": "1.8 1.65 1.5"
+					"attack_rate": "1.65 1.5 1.35"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -70803,6 +70808,7 @@
 		"icon": "/resource/flash3/images/spellicons/tusk_tag_team.png",
 		"localized_name": "Tag Team",
 		"description": "Temporarily applies a negative debuff aura around you, causing enemies that are attacked under it to take bonus physical damage and reduced movement speed. Lasts **5** seconds.",
+		"note": "Affects attacks from allied heroes, Tusk or any of his units.",
 		"json_data": {
 			"ID": "7322",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
