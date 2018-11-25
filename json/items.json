@@ -2674,9 +2674,9 @@
 			"ItemRecipe": "1",
 			"ItemResult": "item_power_treads",
 			"ItemRequirements": {
-				"01": "item_boots;item_belt_of_strength;item_blades_of_attack",
-				"04": "item_boots;item_robe;item_blades_of_attack",
-				"06": "item_boots;item_boots_of_elves;item_blades_of_attack"
+				"01": "item_boots;item_blades_of_attack;item_belt_of_strength",
+				"04": "item_boots;item_blades_of_attack;item_robe",
+				"06": "item_boots;item_blades_of_attack;item_boots_of_elves"
 			}
 		}
 	},
@@ -3093,11 +3093,11 @@
 		"name": "item_recipe_bracer",
 		"localized_name": "Bracer Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 210,
+		"cost": 220,
 		"ability_special": [],
 		"json_data": {
 			"ID": "72",
-			"ItemCost": "210",
+			"ItemCost": "220",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_bracer",
@@ -3113,7 +3113,7 @@
 		"aliases": "bracer",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/bracer.png",
-		"cost": 510,
+		"cost": 520,
 		"lore": "The bracer is a common choice to toughen up defenses and increase longevity.",
 		"ability_special": [
 			{
@@ -3144,7 +3144,7 @@
 		"json_data": {
 			"ID": "73",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "510",
+			"ItemCost": "520",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
@@ -3174,11 +3174,11 @@
 		"name": "item_recipe_wraith_band",
 		"localized_name": "Wraith Band Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 210,
+		"cost": 220,
 		"ability_special": [],
 		"json_data": {
 			"ID": "74",
-			"ItemCost": "210",
+			"ItemCost": "220",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_wraith_band",
@@ -3194,7 +3194,7 @@
 		"aliases": "wraith band",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/wraith_band.png",
-		"cost": 510,
+		"cost": 520,
 		"lore": "A circlet with faint whispers echoing about it.",
 		"ability_special": [
 			{
@@ -3217,7 +3217,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "Attack Speed"
 			}
@@ -3225,7 +3225,7 @@
 		"json_data": {
 			"ID": "75",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "510",
+			"ItemCost": "520",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "wraith band",
@@ -3245,7 +3245,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "7"
+					"bonus_attack_speed": "6"
 				}
 			}
 		}
@@ -3255,11 +3255,11 @@
 		"name": "item_recipe_null_talisman",
 		"localized_name": "Null Talisman Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 210,
+		"cost": 220,
 		"ability_special": [],
 		"json_data": {
 			"ID": "76",
-			"ItemCost": "210",
+			"ItemCost": "220",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_null_talisman",
@@ -3275,7 +3275,7 @@
 		"aliases": "null talisman",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/null_talisman.png",
-		"cost": 510,
+		"cost": 520,
 		"lore": "A small gemstone attached to several chains.",
 		"ability_special": [
 			{
@@ -3305,7 +3305,7 @@
 		"json_data": {
 			"ID": "77",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "510",
+			"ItemCost": "520",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "null talisman",
@@ -5492,7 +5492,7 @@
 		"icon": "/resource/flash3/images/items/bloodstone.png",
 		"cost": 4900,
 		"cooldown": "250",
-		"description": "# Active: Bloodpact\nConverts **60%** of your current mana to health regeneration over **2** seconds.\n \n# Passive: Mana Battery\nEach charge provides **0.25** HP and MP regen. Nearby kills provide **1** charges. Dying causes you to lose **3** charges. Starts with **12** charges.",
+		"description": "# Active: Bloodpact\nConverts **60%** of your current mana to health regeneration over **2** seconds.\n \n# Passive: Mana Battery\nEach charge provides **0.3** HP and MP regen. Nearby kills provide **1** charges. Dying causes you to lose **3** charges. Starts with **14** charges.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"ability_special": [
 			{
@@ -5526,7 +5526,7 @@
 			},
 			{
 				"key": "regen_per_charge",
-				"value": "0.25"
+				"value": "0.3"
 			},
 			{
 				"key": "death_charges",
@@ -5542,7 +5542,7 @@
 			},
 			{
 				"key": "initial_charges_tooltip",
-				"value": "12"
+				"value": "14"
 			},
 			{
 				"key": "mana_cost_percentage",
@@ -5563,7 +5563,7 @@
 			"ItemShopTags": "regen_health;regen_mana;mana_pool;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "bs;bloodstone",
-			"ItemInitialCharges": "12",
+			"ItemInitialCharges": "14",
 			"ItemDisplayCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AllowedInBackpack": "0",
@@ -5591,7 +5591,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"regen_per_charge": "0.25"
+					"regen_per_charge": "0.3"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -5607,7 +5607,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"initial_charges_tooltip": "12"
+					"initial_charges_tooltip": "14"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
@@ -6723,7 +6723,7 @@
 		"aliases": "manta style",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/manta.png",
-		"cost": 4750,
+		"cost": 4700,
 		"cooldown": "45",
 		"mana_cost": "125",
 		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage and take **350%** damage, while Ranged images deal **28%** and take **400%** damage. \n\nCooldown increased by **15** seconds on ranged heroes.\n\nDispel Type: **Basic Dispel**",
@@ -6826,7 +6826,7 @@
 			"AbilityCooldown": "45.0",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "125",
-			"ItemCost": "4750",
+			"ItemCost": "4700",
 			"ItemShopTags": "agi;str;int;attack_speed;move_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "manta style",
@@ -7244,7 +7244,7 @@
 		"aliases": "sny|s&y|sy|sange and yasha",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/sange_and_yasha.png",
-		"cost": 4200,
+		"cost": 4100,
 		"lore": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination.",
 		"ability_special": [
 			{
@@ -7287,7 +7287,7 @@
 			"ID": "154",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "4200",
+			"ItemCost": "4100",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sny;s&y;sy;sange and yasha",
@@ -7735,12 +7735,12 @@
 		"name": "item_recipe_sange",
 		"localized_name": "Sange Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 650,
+		"cost": 600,
 		"ability_special": [],
 		"json_data": {
 			"ID": "161",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "650",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_sange",
@@ -7756,7 +7756,7 @@
 		"aliases": "sange",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/sange.png",
-		"cost": 2100,
+		"cost": 2050,
 		"lore": "Sange is an unusually accurate weapon, seeking weak points automatically.",
 		"ability_special": [
 			{
@@ -7781,7 +7781,7 @@
 			"ID": "162",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "2100",
+			"ItemCost": "2050",
 			"ItemShopTags": "damage;str;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sange",
@@ -8097,11 +8097,11 @@
 		"name": "item_recipe_yasha",
 		"localized_name": "Yasha Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 650,
+		"cost": 600,
 		"ability_special": [],
 		"json_data": {
 			"ID": "169",
-			"ItemCost": "650",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_yasha",
@@ -8117,7 +8117,7 @@
 		"aliases": "yasha",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/yasha.png",
-		"cost": 2100,
+		"cost": 2050,
 		"lore": "Yasha is regarded as the swiftest weapon ever created.",
 		"ability_special": [
 			{
@@ -8142,7 +8142,7 @@
 		"json_data": {
 			"ID": "170",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2100",
+			"ItemCost": "2050",
 			"ItemShopTags": "agi;attack_speed;move_speed",
 			"ItemQuality": "artifact",
 			"ItemAliases": "yasha",
@@ -10416,7 +10416,7 @@
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/heavens_halberd.png",
-		"cost": 3500,
+		"cost": 3450,
 		"cooldown": "18",
 		"mana_cost": "100",
 		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **5** seconds on ranged targets.\n\nRange: **600**",
@@ -10468,7 +10468,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "100",
-			"ItemCost": "3500",
+			"ItemCost": "3450",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
@@ -10949,7 +10949,7 @@
 			},
 			{
 				"key": "true_sight_range",
-				"value": "850",
+				"value": "1000",
 				"header": "SENTRY TRUE SIGHT RANGE:"
 			},
 			{
@@ -11012,7 +11012,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"true_sight_range": "850"
+					"true_sight_range": "1000"
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
@@ -13290,12 +13290,12 @@
 		"name": "item_recipe_kaya",
 		"localized_name": "Kaya Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 650,
+		"cost": 600,
 		"ability_special": [],
 		"json_data": {
 			"ID": "258",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "650",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_kaya",
@@ -13311,7 +13311,7 @@
 		"aliases": "ky|kaya",
 		"quality": "epic",
 		"icon": "/resource/flash3/images/items/kaya.png",
-		"cost": 2100,
+		"cost": 2050,
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
@@ -13333,7 +13333,7 @@
 		"json_data": {
 			"ID": "259",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2100",
+			"ItemCost": "2050",
 			"ItemShopTags": "int;mana",
 			"ItemQuality": "epic",
 			"ItemAliases": "ky;kaya",
@@ -13949,7 +13949,7 @@
 		"aliases": "snk|s&k|sk|sange and kaya",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/kaya_and_sange.png",
-		"cost": 4200,
+		"cost": 4100,
 		"ability_special": [
 			{
 				"key": "bonus_strength",
@@ -13989,7 +13989,7 @@
 			"ID": "273",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "4200",
+			"ItemCost": "4100",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "snk;s&k;sk;sange and kaya",
@@ -14073,7 +14073,7 @@
 		"aliases": "ynk|y&k|sk|yasha and kaya",
 		"quality": "artifact",
 		"icon": "/resource/flash3/images/items/yasha_and_kaya.png",
-		"cost": 4200,
+		"cost": 4100,
 		"ability_special": [
 			{
 				"key": "bonus_agility",
@@ -14114,7 +14114,7 @@
 			"ID": "277",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "4200",
+			"ItemCost": "4100",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "ynk;y&k;sk;yasha and kaya",
