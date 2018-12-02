@@ -1038,7 +1038,7 @@
 		"quality": "component",
 		"icon": "/resource/flash3/images/items/boots.png",
 		"cost": 500,
-		"description": "Flat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "Movement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Fleet footwear, increasing movement.",
 		"ability_special": [
 			{
@@ -2157,7 +2157,8 @@
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/phase_boots.png",
 		"cost": 1550,
-		"description": "# Passive: Phase\nWhen targeting an enemy unit up to **900** range away, you gain **20%** increased movement speed on melee heroes, and **10%** on ranged heroes, and lets you move through units and turn more quickly.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"cooldown": "8",
+		"description": "# Active: Phase\nGives **20%** increased movement speed on melee heroes, and **10%** on ranged heroes, and lets you move through units and turn more quickly for **3** seconds.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Boots that allow the wearer to travel between the ether.",
 		"ability_special": [
 			{
@@ -2205,19 +2206,12 @@
 				"value": "5",
 				"header": "+",
 				"footer": "Armor"
-			},
-			{
-				"key": "attack_range_limit",
-				"value": "900"
-			},
-			{
-				"key": "phase_buffer",
-				"value": "0.5"
 			}
 		],
 		"json_data": {
 			"ID": "50",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityCooldown": "8.0",
 			"ItemCost": "1550",
 			"ItemShopTags": "damage;move_speed;hard_to_tag",
 			"ItemQuality": "common",
@@ -2264,14 +2258,6 @@
 				"10": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_armor": "5"
-				},
-				"11": {
-					"var_type": "FIELD_INTEGER",
-					"attack_range_limit": "900"
-				},
-				"12": {
-					"var_type": "FIELD_FLOAT",
-					"phase_buffer": "0.5"
 				}
 			}
 		}
@@ -2688,7 +2674,7 @@
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/power_treads.png",
 		"cost": 1380,
-		"description": "# Active: Switch Attribute\nSwitches between +**12** Strength, +**12** Agility, or +**12** Intelligence.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Switch Attribute\nSwitches between +**14** Strength, +**14** Agility, or +**14** Intelligence.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "A pair of tough-skinned boots that change to meet the demands of the wearer.",
 		"ability_special": [
 			{
@@ -2699,7 +2685,7 @@
 			},
 			{
 				"key": "bonus_stat",
-				"value": "12",
+				"value": "14",
 				"header": "+",
 				"footer": "Selected Attribute"
 			},
@@ -2730,7 +2716,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_stat": "12"
+					"bonus_stat": "14"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -3093,11 +3079,11 @@
 		"name": "item_recipe_bracer",
 		"localized_name": "Bracer Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 220,
+		"cost": 240,
 		"ability_special": [],
 		"json_data": {
 			"ID": "72",
-			"ItemCost": "220",
+			"ItemCost": "240",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_bracer",
@@ -3113,7 +3099,7 @@
 		"aliases": "bracer",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/bracer.png",
-		"cost": 520,
+		"cost": 540,
 		"lore": "The bracer is a common choice to toughen up defenses and increase longevity.",
 		"ability_special": [
 			{
@@ -3144,7 +3130,7 @@
 		"json_data": {
 			"ID": "73",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "520",
+			"ItemCost": "540",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
@@ -3174,11 +3160,11 @@
 		"name": "item_recipe_wraith_band",
 		"localized_name": "Wraith Band Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 220,
+		"cost": 240,
 		"ability_special": [],
 		"json_data": {
 			"ID": "74",
-			"ItemCost": "220",
+			"ItemCost": "240",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_wraith_band",
@@ -3194,7 +3180,7 @@
 		"aliases": "wraith band",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/wraith_band.png",
-		"cost": 520,
+		"cost": 540,
 		"lore": "A circlet with faint whispers echoing about it.",
 		"ability_special": [
 			{
@@ -3225,7 +3211,7 @@
 		"json_data": {
 			"ID": "75",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "520",
+			"ItemCost": "540",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "wraith band",
@@ -3255,11 +3241,11 @@
 		"name": "item_recipe_null_talisman",
 		"localized_name": "Null Talisman Recipe",
 		"icon": "/resource/flash3/images/items/recipe.png",
-		"cost": 220,
+		"cost": 240,
 		"ability_special": [],
 		"json_data": {
 			"ID": "76",
-			"ItemCost": "220",
+			"ItemCost": "240",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_null_talisman",
@@ -3275,7 +3261,7 @@
 		"aliases": "null talisman",
 		"quality": "common",
 		"icon": "/resource/flash3/images/items/null_talisman.png",
-		"cost": 520,
+		"cost": 540,
 		"lore": "A small gemstone attached to several chains.",
 		"ability_special": [
 			{
@@ -3305,7 +3291,7 @@
 		"json_data": {
 			"ID": "77",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "520",
+			"ItemCost": "540",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "null talisman",
@@ -6749,13 +6735,13 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "10",
+				"value": "12",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "8%",
+				"value": "25",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -6848,11 +6834,11 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "10"
+					"bonus_attack_speed": "12"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "8"
+					"bonus_movement_speed": "25"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -7272,7 +7258,7 @@
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "12%",
+				"value": "35",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -7313,7 +7299,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_percent_bonus": "12"
+					"movement_speed_percent_bonus": "35"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -8134,7 +8120,7 @@
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "8%",
+				"value": "25",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -8158,7 +8144,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_percent_bonus": "8"
+					"movement_speed_percent_bonus": "25"
 				}
 			}
 		}
@@ -8192,7 +8178,7 @@
 		"cost": 1775,
 		"cooldown": "22",
 		"mana_cost": "25",
-		"description": "# Active: Berserk\nGives **110** attack speed and **12%** movement speed, but reduces your armor by **8** and silences you.  Lasts **8** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **15%** of attack damage dealt.",
+		"description": "# Active: Berserk\nGives **110** attack speed and **25** movement speed, but reduces your armor by **8** and silences you.  Lasts **8** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **15%** of attack damage dealt.",
 		"lore": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force.",
 		"ability_special": [
 			{
@@ -8217,7 +8203,7 @@
 			},
 			{
 				"key": "berserk_bonus_movement_speed",
-				"value": "12"
+				"value": "25"
 			},
 			{
 				"key": "berserk_armor_reduction",
@@ -8261,7 +8247,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"berserk_bonus_movement_speed": "12"
+					"berserk_bonus_movement_speed": "25"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -8689,7 +8675,7 @@
 		"cost": 1400,
 		"cooldown": "55",
 		"mana_cost": "0",
-		"description": "# Active: Replenish Mana\nRestores **160** mana to all nearby allies.\n\nRadius: **1200**\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Replenish Mana\nRestores **160** mana to all nearby allies.\n\nRadius: **1200**\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Magi equipped with these boots are valued in battle.",
 		"ability_special": [
 			{
@@ -10658,12 +10644,12 @@
 		"cost": 1050,
 		"cooldown": "13",
 		"mana_cost": "0",
-		"description": "# Passive: Break\nWhenever you attack a hero or are attacked by any unit, the bonus **16** HP regen is lost and the movement speed bonus is reduced to **20%** for **13** seconds.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Passive: Break\nWhenever you attack a hero or are attacked by any unit, the bonus **16** HP regen is lost and the movement speed bonus is reduced to **20%** for **13** seconds.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "While they increase the longevity of the wearer, this boot is not particularly reliable.",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "28%",
+				"value": "24%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -10721,7 +10707,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "28"
+					"bonus_movement_speed": "24"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -11681,7 +11667,7 @@
 		"cost": 5375,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **4.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **15** armor.\nFlat movement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **4.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **15** armor.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"ability_special": [
 			{
@@ -12803,7 +12789,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "60",
+				"value": "68",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -12871,7 +12857,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "60"
+					"bonus_damage": "68"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -14100,7 +14086,7 @@
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "12%",
+				"value": "35",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -14140,7 +14126,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_percent_bonus": "12"
+					"movement_speed_percent_bonus": "35"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
