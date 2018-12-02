@@ -516,7 +516,7 @@
 		"damage_type": "pure",
 		"spell_immunity": "yes",
 		"cooldown": "0.45 0.4 0.35 0.3",
-		"damage": "75 110 145 180",
+		"damage": "60 100 140 180",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -546,7 +546,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilitySound": "Hero_Axe.CounterHelix",
 			"AbilityCooldown": "0.45 0.4 0.35 0.3",
-			"AbilityDamage": "75 110 145 180",
+			"AbilityDamage": "60 100 140 180",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -3510,7 +3510,7 @@
 			},
 			{
 				"key": "charge_restore_time",
-				"value": "14 13 12 11"
+				"value": "17 15 13 11"
 			}
 		],
 		"ability_slot": 1,
@@ -3542,7 +3542,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"charge_restore_time": "14 13 12 11"
+					"charge_restore_time": "17 15 13 11"
 				}
 			}
 		}
@@ -5075,7 +5075,7 @@
 			},
 			{
 				"key": "coil_stun_duration",
-				"value": "1.5 2.25 3",
+				"value": "1.8 2.4 3",
 				"header": "BREAK STUN DURATION:"
 			},
 			{
@@ -5140,7 +5140,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"coil_stun_duration": "1.5 2.25 3.0"
+					"coil_stun_duration": "1.8 2.4 3.0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -7433,7 +7433,7 @@
 			},
 			{
 				"key": "burrow_duration",
-				"value": "1.9 2 2.1 2.2",
+				"value": "1.6 1.8 2 2.2",
 				"header": "STUN DURATION:"
 			},
 			{
@@ -7488,7 +7488,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"burrow_duration": "1.9 2.0 2.1 2.2"
+					"burrow_duration": "1.6 1.8 2.0 2.2"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -7524,7 +7524,7 @@
 		"dispellable": "no",
 		"cast_range": "0",
 		"cast_point": "0",
-		"cooldown": "40 32 24 16",
+		"cooldown": "40 34 28 22",
 		"duration": "20 25 30 35",
 		"mana_cost": "60",
 		"ability_special": [
@@ -7546,7 +7546,7 @@
 				"talent_name": "special_bonus_unique_sand_king_2",
 				"key": "sand_storm_damage",
 				"value": "25 50 75 100",
-				"talent_value": "75 100 125 150",
+				"talent_value": "65 90 115 140",
 				"header": "SAND STORM DAMAGE:"
 			},
 			{
@@ -7570,7 +7570,7 @@
 			"AbilitySound": "Ability.SandKing_SandStorm.start",
 			"AbilityCastRange": "0",
 			"AbilityDuration": "20 25 30 35",
-			"AbilityCooldown": "40 32 24 16",
+			"AbilityCooldown": "40 34 28 22",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityManaCost": "60",
 			"AbilitySpecial": {
@@ -10243,7 +10243,7 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/lich_frost_shield.png",
 		"localized_name": "Frost Shield",
-		"description": "Applies a magical frost shield around you, reducing damage from attacks against you. While the shield is active, ice magic will be launched towards the nearest enemy unit every **1** seconds, doing minor damage and slowing.",
+		"description": "Applies a magical frost shield around you, reducing damage from attacks against you. While the shield is active, ice magic will be affect nearby enemy units every **1** seconds, doing minor damage and slowing.",
 		"lore": "First conceived of to protect him in his mortal years, the frost magic that Ethreain weaves around himself has only grown colder with time.",
 		"json_data": {
 			"ID": "5136",
@@ -12137,7 +12137,7 @@
 			},
 			{
 				"key": "health_regen",
-				"value": "2 3 4 5",
+				"value": "2 3.5 5 6.5",
 				"header": "HEALTH REGEN PER KILL:"
 			},
 			{
@@ -12179,8 +12179,8 @@
 					"LinkedSpecialBonus": "special_bonus_unique_necrophos_2"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"health_regen": "2 3 4 5"
+					"var_type": "FIELD_FLOAT",
+					"health_regen": "2 3.5 5 6.5"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -14033,7 +14033,7 @@
 			},
 			{
 				"key": "chance_pct",
-				"value": "10% 15% 20% 25%",
+				"value": "10% 14% 18% 22%",
 				"header": "CHANCE:"
 			},
 			{
@@ -14069,7 +14069,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"chance_pct": "10 15 20 25"
+					"chance_pct": "10 14 18 22"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -14642,7 +14642,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "2.5",
+				"value": "2.25",
 				"header": "DURATION:"
 			},
 			{
@@ -14675,7 +14675,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "2.5"
+					"duration": "2.25"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -14689,7 +14689,8 @@
 		"id": 5192,
 		"name": "phantom_assassin_blur",
 		"hero_id": 44,
-		"behavior": "no_target|immediate",
+		"behavior": "no_target",
+		"cast_point": "0.4",
 		"cooldown": "60 55 50 45",
 		"mana_cost": "30",
 		"ability_special": [
@@ -14702,7 +14703,8 @@
 			},
 			{
 				"key": "duration",
-				"value": "25"
+				"value": "25",
+				"header": "DURATION:"
 			},
 			{
 				"key": "radius",
@@ -14722,8 +14724,9 @@
 		"lore": "Meditation allows a Veiled Sister to carefully anticipate her opponents in combat.",
 		"json_data": {
 			"ID": "5192",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "60 55 50 45",
+			"AbilityCastPoint": "0.4",
 			"AbilityManaCost": "30",
 			"AbilitySpecial": {
 				"01": {
@@ -14763,7 +14766,7 @@
 			},
 			{
 				"key": "crit_bonus",
-				"value": "230% 340% 450%",
+				"value": "210% 330% 450%",
 				"header": "CRITICAL DAMAGE:"
 			}
 		],
@@ -14787,7 +14790,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"crit_bonus": "230 340 450"
+					"crit_bonus": "210 330 450"
 				}
 			}
 		}
@@ -16870,7 +16873,7 @@
 		"ability_slot": 1,
 		"icon": "/resource/flash3/images/spellicons/dazzle_poison_touch.png",
 		"localized_name": "Poison Touch",
-		"description": "Releases a cone of poisonous magic that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked, the debuff duration is refreshed.",
+		"description": "Releases a cone of poison that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked, the debuff duration is refreshed.",
 		"lore": "One of the few Dezun rites used for offensive purposes, the paralytic enchantment often proves useful.",
 		"note": "The damage is not reduced by damage block abilities.",
 		"json_data": {
@@ -18058,7 +18061,7 @@
 		"ability_special": [
 			{
 				"key": "max_targets",
-				"value": "16",
+				"value": "18",
 				"header": "MAX TARGETS:"
 			},
 			{
@@ -18116,7 +18119,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"max_targets": "16"
+					"max_targets": "18"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -19683,7 +19686,7 @@
 		"ability_slot": 3,
 		"icon": "/resource/flash3/images/spellicons/huskar_berserkers_blood.png",
 		"localized_name": "Berserker's Blood",
-		"description": "Huskar's injuries feed his power, giving increased attack speed and health regen resistance based on missing health. Health Regen is a percentage of your strength.",
+		"description": "Huskar's injuries feed his power, giving increased attack speed and health regen based on missing health. Health regen is a percentage of your strength.",
 		"lore": "After losing his birthright, Huskar gained a lethality in physical combat that is only heightened as his own blood is spilled.",
 		"note": "Maximum bonus is achieved when Huskar has strictly less than 10% of his maximum HP.\nBonuses are provided linearly, no bonus at 100% HP and full bonus at 10% HP.",
 		"json_data": {
@@ -20570,7 +20573,7 @@
 		"ability_slot": 2,
 		"icon": "/resource/flash3/images/spellicons/bounty_hunter_jinada.png",
 		"localized_name": "Jinada",
-		"description": "Bounty Hunter plans his next hit, dealing bonus damage and stealing some unrealiable gold.",
+		"description": "Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.",
 		"json_data": {
 			"ID": "5286",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -24832,8 +24835,8 @@
 			{
 				"talent_name": "special_bonus_unique_spirit_breaker_3",
 				"key": "damage",
-				"value": "12% 20% 28% 36%",
-				"talent_value": "27% 35% 43% 51%",
+				"value": "8% 16% 24% 32%",
+				"talent_value": "23% 31% 39% 47%",
 				"header": "MOVESPEED AS DAMAGE:"
 			},
 			{
@@ -24886,7 +24889,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"damage": "12 20 28 36",
+					"damage": "8 16 24 32",
 					"LinkedSpecialBonus": "special_bonus_unique_spirit_breaker_3"
 				},
 				"03": {
@@ -28565,7 +28568,7 @@
 		"behavior": "no_target",
 		"dispellable": "no",
 		"cast_point": "0.65",
-		"cooldown": "140 120 100",
+		"cooldown": "140 130 120",
 		"mana_cost": "125 150 175",
 		"ability_special": [
 			{
@@ -28594,7 +28597,7 @@
 			"AbilitySound": "Hero_Brewmaster.PrimalSplit.Spawn",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"HasScepterUpgrade": "1",
-			"AbilityCooldown": "140 120 100",
+			"AbilityCooldown": "140 130 120",
 			"AbilityCastPoint": "0.65",
 			"AbilityManaCost": "125 150 175",
 			"AbilitySpecial": {
@@ -29299,7 +29302,7 @@
 	{
 		"id": 5418,
 		"name": "lone_druid_spirit_bear_return",
-		"behavior": "no_target",
+		"behavior": "no_target|root_disables",
 		"cast_point": "0",
 		"cooldown": "5",
 		"mana_cost": "0",
@@ -29314,7 +29317,7 @@
 		"description": "Immediately teleports the Spirit Bear back to the Lone Druid.  The Spirit Bear cannot teleport if it has taken damage from a player unit in the last 3 seconds.",
 		"json_data": {
 			"ID": "5418",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityCastPoint": "0",
 			"AbilityCooldown": "5.0",
 			"AbilityManaCost": "0",
@@ -31550,12 +31553,12 @@
 		"dispellable": "yes_strong",
 		"cast_range": "550 575 600 625",
 		"cast_point": "0.1",
-		"cooldown": "28 26 24 22",
+		"cooldown": "34 30 26 22",
 		"mana_cost": "125",
 		"ability_special": [
 			{
 				"key": "lift_duration",
-				"value": "1.1 1.5 1.9 2.3",
+				"value": "1 1.4 1.8 2.2",
 				"header": "LIFT DURATION:"
 			},
 			{
@@ -31599,13 +31602,13 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"AbilityCastPoint": "0.1 0.1 0.1 0.1",
-			"AbilityCooldown": "28 26 24 22",
+			"AbilityCooldown": "34 30 26 22",
 			"AbilityManaCost": "125",
 			"AbilityCastRange": "550 575 600 625",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"lift_duration": "1.1 1.5 1.9 2.3"
+					"lift_duration": "1.0 1.4 1.8 2.2"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -32802,7 +32805,6 @@
 		"localized_name": "Ensnare",
 		"description": "Interrupts the target and traps them in place, preventing movement or blinking.",
 		"lore": "The only way to escape the onslaught of a Slithereen is to never oppose one in the first place.",
-		"note": "Works on Spell Immune units.",
 		"json_data": {
 			"ID": "5468",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -34068,7 +34070,7 @@
 			},
 			{
 				"key": "tether_heal_amp",
-				"value": "1.2 1.3 1.4 1.5",
+				"value": "1.05 1.2 1.35 1.5",
 				"header": "HP/MANA AMP:"
 			}
 		],
@@ -34109,7 +34111,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"tether_heal_amp": "1.2 1.3 1.4 1.5"
+					"tether_heal_amp": "1.05 1.2 1.35 1.5"
 				}
 			}
 		}
@@ -34622,7 +34624,7 @@
 			},
 			{
 				"key": "leash_radius",
-				"value": "350",
+				"value": "400",
 				"header": "LEASH RADIUS:"
 			}
 		],
@@ -34670,7 +34672,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"leash_radius": "350"
+					"leash_radius": "400"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -34698,7 +34700,7 @@
 				"talent_name": "special_bonus_unique_slark_4",
 				"key": "duration",
 				"value": "15 30 60 120",
-				"talent_value": "115 130 160 220",
+				"talent_value": "95 110 140 200",
 				"header": "DURATION:"
 			}
 		],
@@ -34753,7 +34755,7 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "30% 40% 50%",
+				"value": "20% 35% 50%",
 				"header": "BONUS MOVEMENT SPEED:"
 			},
 			{
@@ -34809,7 +34811,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "30 40 50"
+					"bonus_movement_speed": "20 35 50"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -36127,8 +36129,8 @@
 			{
 				"talent_name": "special_bonus_unique_magnus_2",
 				"key": "cleave_damage_pct",
-				"value": "30% 45% 60% 75%",
-				"talent_value": "50% 65% 80% 95%",
+				"value": "20% 38% 56% 74%",
+				"talent_value": "40% 58% 76% 94%",
 				"header": "CLEAVE DAMAGE:"
 			},
 			{
@@ -36187,7 +36189,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"cleave_damage_pct": "30 45 60 75",
+					"cleave_damage_pct": "20 38 56 74",
 					"LinkedSpecialBonus": "special_bonus_unique_magnus_2"
 				},
 				"04": {
@@ -40890,8 +40892,10 @@
 				"value": "0"
 			},
 			{
+				"talent_name": "special_bonus_unique_elder_titan_4",
 				"key": "wake_damage_limit",
 				"value": "50 100 150 200",
+				"talent_value": "650 700 750 800",
 				"header": "WAKEUP DAMAGE THRESHOLD:"
 			}
 		],
@@ -40942,7 +40946,8 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"wake_damage_limit": "50 100 150 200"
+					"wake_damage_limit": "50 100 150 200",
+					"LinkedSpecialBonus": "special_bonus_unique_elder_titan_4"
 				}
 			}
 		}
@@ -47752,13 +47757,13 @@
 			},
 			{
 				"key": "invul_duration",
-				"value": "0.3"
+				"value": "0.2"
 			}
 		],
 		"ability_slot": 5,
 		"icon": "/resource/flash3/images/spellicons/monkey_king_mischief.png",
 		"localized_name": "Mischief",
-		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants invulnerability for **0.3** upon transforming.",
+		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants invulnerability for **0.2** upon transforming.",
 		"lore": "Watch out for that tree.",
 		"json_data": {
 			"ID": "5719",
@@ -47781,7 +47786,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"invul_duration": "0.3"
+					"invul_duration": "0.2"
 				}
 			}
 		}
@@ -55600,7 +55605,7 @@
 		"icon": "/resource/flash3/images/spellicons/filler_ability.png",
 		"localized_name": "Sanctuary",
 		"description": "Generates an aura that provides increased health and mana regeneration to nearby allies when activated.",
-		"note": "Right click the Shrine to activate.\nRegeneration values increase by +2/1 health/mana per minute.",
+		"note": "Right click the Shrine to activate.\nRegeneration values increase by +2/1 health/mana per minute.\nAdditionally restores 2% health/mana pool per second.",
 		"json_data": {
 			"ID": "6226",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -58576,7 +58581,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "400"
+				"value": "600"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
@@ -58588,7 +58593,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "400"
+					"value": "600"
 				}
 			}
 		}
@@ -59632,11 +59637,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "50"
+				"value": "40"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+50 Sand Storm DPS",
+		"localized_name": "+40 Sand Storm DPS",
 		"json_data": {
 			"ID": "6409",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -59644,7 +59649,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "50"
+					"value": "40"
 				}
 			}
 		}
@@ -60292,7 +60297,7 @@
 		"dispellable": "no",
 		"cast_range": "700 800 900",
 		"cast_point": "0.15",
-		"cooldown": "80 65 50",
+		"cooldown": "90 70 50",
 		"mana_cost": "150 200 250",
 		"ability_special": [
 			{
@@ -60350,7 +60355,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastAnimation": "ACT_DOTA_GS_SOUL_CHAIN",
 			"AbilityCastGestureSlot": "DEFAULT",
-			"AbilityCooldown": "80 65 50",
+			"AbilityCooldown": "90 70 50",
 			"AbilityCastRange": "700 800 900",
 			"AbilityCastPoint": "0.15",
 			"AbilityManaCost": "150 200 250",
@@ -64155,7 +64160,7 @@
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "70 Time Lock Damage",
+		"localized_name": "+70 Time Lock Damage",
 		"json_data": {
 			"ID": "6807",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -65591,11 +65596,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "100"
+				"value": "80"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "+100s Essence Shift Duration",
+		"localized_name": "+80s Essence Shift Duration",
 		"json_data": {
 			"ID": "6894",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -65603,7 +65608,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "100"
+					"value": "80"
 				}
 			}
 		}
@@ -69882,6 +69887,8 @@
 		"name": "huskar_inner_fire",
 		"hero_id": 59,
 		"behavior": "no_target",
+		"damage_type": "magical",
+		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_range": "500",
 		"cast_point": "0.2",
@@ -69921,6 +69928,8 @@
 			"ID": "7300",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Hero_Huskar.Inner_Vitality",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.2",
@@ -70016,7 +70025,7 @@
 		"ability_special": [
 			{
 				"key": "cooldown_reduction",
-				"value": "30% 40% 50%",
+				"value": "20% 35% 50%",
 				"header": "COOLDOWN REDUCTION:"
 			},
 			{
@@ -70053,7 +70062,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"cooldown_reduction": "30 40 50"
+					"cooldown_reduction": "20 35 50"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -70548,7 +70557,7 @@
 		"cast_range": "900",
 		"cast_point": "0.1",
 		"cooldown": "120",
-		"mana_cost": "200 300 400",
+		"mana_cost": "250 350 450",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_keeper_of_the_light_3",
@@ -70584,6 +70593,10 @@
 			{
 				"key": "fixed_movement_speed",
 				"value": "25"
+			},
+			{
+				"key": "bounty",
+				"value": "100 125 150"
 			}
 		],
 		"ability_slot": 6,
@@ -70601,7 +70614,7 @@
 			"AbilitySound": "Hero_KeeperOfTheLight.ManaLeak.Cast",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "120",
-			"AbilityManaCost": "200 300 400",
+			"AbilityManaCost": "250 350 450",
 			"AbilityCastRange": "900",
 			"AbilitySpecial": {
 				"01": {
@@ -70632,6 +70645,10 @@
 				"07": {
 					"var_type": "FIELD_INTEGER",
 					"fixed_movement_speed": "25"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"bounty": "100 125 150"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -70709,7 +70726,7 @@
 			},
 			{
 				"key": "attack_rate",
-				"value": "1.5 1.35 1.2",
+				"value": "1.75 1.6 1.45",
 				"header": "ATTACK RATE:"
 			},
 			{
@@ -70749,7 +70766,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"attack_rate": "1.5 1.35 1.2"
+					"attack_rate": "1.75 1.6 1.45"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -71058,11 +71075,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "1"
+				"value": "600"
 			}
 		],
 		"icon": "/resource/flash3/images/spellicons/wisp_empty1.png",
-		"localized_name": "Astral Spirit Grants Spell Immunity",
+		"localized_name": "+600 Echo Stomp Wake Damage",
 		"json_data": {
 			"ID": "7350",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -71070,7 +71087,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "1"
+					"value": "600"
 				}
 			}
 		}
@@ -71735,12 +71752,12 @@
 			},
 			{
 				"key": "max_damage",
-				"value": "160 240 320 400",
+				"value": "100 200 300 400",
 				"header": "MAX DAMAGE:"
 			},
 			{
 				"key": "max_stun",
-				"value": "2 2.6 3.2 3.8",
+				"value": "1.7 2.4 3.1 3.8",
 				"header": "MAX STUN DURATION:"
 			},
 			{
@@ -71797,11 +71814,11 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"max_damage": "160 240 320 400"
+					"max_damage": "100 200 300 400"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"max_stun": "2.0 2.6 3.2 3.8"
+					"max_stun": "1.7 2.4 3.1 3.8"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
