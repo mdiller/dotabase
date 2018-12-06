@@ -132,7 +132,7 @@ class Voice(Base):
 	icon = Column(String)
 	image = Column(String)
 	url = Column(String)
-	vsndevts_path = Column(String)
+	media_name = Column(String)
 	voice_actor = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
 
