@@ -49,7 +49,6 @@
 			"Rolelevels": "3,3,1",
 			"Complexity": "1",
 			"Team": "Good",
-			"Portrait": "vgui/hud/heroportraits/portrait_antimage",
 			"ModelScale": "0.900000",
 			"HeroGlowColor": "120 64 148",
 			"PickSound": "antimage_anti_spawn_01",
@@ -229,7 +228,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/axe/axe.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_axe",
 			"SoundSet": "Hero_Axe",
 			"PickSound": "axe_axe_spawn_01",
 			"BanSound": "axe_axe_anger_01",
@@ -467,7 +465,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/bane/bane.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_bane",
 			"IdleExpression": "scenes/bane/bane_exp_idle_01.vcd",
 			"SoundSet": "Hero_Bane",
 			"IdleSoundLoop": "Hero_Bane.IdleLoop",
@@ -689,7 +686,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/blood_seeker/blood_seeker.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_blood_seeker",
 			"IdleExpression": "scenes/bloodseeker/bloodseeker_exp_idle_01.vcd",
 			"SoundSet": "Hero_Bloodseeker",
 			"PickSound": "bloodseeker_blod_spawn_01",
@@ -944,7 +940,6 @@
 		"material": "ice",
 		"json_data": {
 			"Model": "models/heroes/crystal_maiden/crystal_maiden.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_crystal_maiden",
 			"IdleExpression": "scenes/crystalmaiden/crystalmaiden_exp_idle_05.vcd",
 			"SoundSet": "hero_Crystal",
 			"PickSound": "crystalmaiden_cm_spawn_01",
@@ -1170,8 +1165,7 @@
 		"is_melee": false,
 		"material": "default",
 		"json_data": {
-			"Model": "models/heroes/drow/drow.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_drowranger",
+			"Model": "models/heroes/drow/drow_base.vmdl",
 			"IdleExpression": "scenes/drowranger/drowranger_exp_idle_01.vcd",
 			"SoundSet": "Hero_DrowRanger",
 			"PickSound": "drowranger_dro_spawn_03",
@@ -1339,10 +1333,10 @@
 					"SlotIndex": "1",
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
-					"TextureWidth": "256",
-					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "350",
-					"MaxPolygonsLOD1": "350"
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "500"
 				},
 				"2": {
 					"SlotIndex": "2",
@@ -1357,10 +1351,10 @@
 					"SlotIndex": "3",
 					"SlotName": "shoulder",
 					"SlotText": "#LoadoutSlot_Shoulder",
-					"TextureWidth": "256",
-					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "300"
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "800"
 				},
 				"4": {
 					"SlotIndex": "4",
@@ -1368,15 +1362,15 @@
 					"SlotText": "#LoadoutSlot_Legs",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "600",
-					"MaxPolygonsLOD1": "300"
+					"MaxPolygonsLOD0": "800",
+					"MaxPolygonsLOD1": "500"
 				},
 				"5": {
 					"SlotIndex": "5",
 					"SlotName": "head",
 					"SlotText": "#LoadoutSlot_Head_Accessory",
-					"TextureWidth": "256",
-					"TextureHeight": "256",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
 					"MaxPolygonsLOD0": "1000",
 					"MaxPolygonsLOD1": "500"
 				},
@@ -1439,7 +1433,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/earthshaker/earthshaker.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_earthshaker",
 			"IdleExpression": "scenes/earthshaker/earthshaker_exp_idle_01.vcd",
 			"SoundSet": "Hero_Earthshaker",
 			"PickSound": "earthshaker_erth_spawn_01",
@@ -1670,7 +1663,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/juggernaut/juggernaut.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_juggernaut",
 			"SoundSet": "Hero_Juggernaut",
 			"PickSound": "juggernaut_jug_spawn_03",
 			"BanSound": "juggernaut_jug_anger_04",
@@ -1937,8 +1929,8 @@
 		"attr_primary": "agility",
 		"attr_strength_base": 18,
 		"attr_strength_gain": 2.2,
-		"attr_intelligence_base": 17,
-		"attr_intelligence_gain": 1.7,
+		"attr_intelligence_base": 19,
+		"attr_intelligence_gain": 1.9,
 		"attr_agility_base": 18,
 		"attr_agility_gain": 3.7,
 		"vision_day": 1800,
@@ -1948,7 +1940,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/mirana/mirana.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_mirana",
 			"IdleExpression": "scenes/mirana/mirana_exp_idle_01.vcd",
 			"SoundSet": "Hero_Mirana",
 			"PickSound": "mirana_mir_spawn_01",
@@ -1996,8 +1987,8 @@
 			"AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
 			"AttributeBaseStrength": "18",
 			"AttributeStrengthGain": "2.20000",
-			"AttributeBaseIntelligence": "17",
-			"AttributeIntelligenceGain": "1.7000",
+			"AttributeBaseIntelligence": "19",
+			"AttributeIntelligenceGain": "1.9000",
 			"AttributeBaseAgility": "18",
 			"AttributeAgilityGain": "3.70000",
 			"MovementSpeed": "290",
@@ -2179,7 +2170,7 @@
 		"attack_point": 0.5,
 		"attr_primary": "agility",
 		"attr_strength_base": 20,
-		"attr_strength_gain": 2.6,
+		"attr_strength_gain": 3.0,
 		"attr_intelligence_base": 13,
 		"attr_intelligence_gain": 1.1,
 		"attr_agility_base": 24,
@@ -2191,7 +2182,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/morphling/morphling.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_morphling",
 			"SoundSet": "Hero_Morphling",
 			"PickSound": "morphling_mrph_spawn_01",
 			"BanSound": "morphling_mrph_anger_07",
@@ -2246,7 +2236,7 @@
 			"ProjectileSpeed": "1300",
 			"AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
 			"AttributeBaseStrength": "20",
-			"AttributeStrengthGain": "2.600000",
+			"AttributeStrengthGain": "3.000000",
 			"AttributeBaseIntelligence": "13",
 			"AttributeIntelligenceGain": "1.100000",
 			"AttributeBaseAgility": "24",
@@ -2362,7 +2352,7 @@
 		"attack_rate": 1.7,
 		"attack_point": 0.5,
 		"attr_primary": "agility",
-		"attr_strength_base": 17,
+		"attr_strength_base": 19,
 		"attr_strength_gain": 2.3,
 		"attr_intelligence_base": 18,
 		"attr_intelligence_gain": 2.2,
@@ -2375,7 +2365,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/shadow_fiend/shadow_fiend.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_nevermore",
 			"IdleExpression": "scenes/nevermore/nevermore_exp_idle_01.vcd",
 			"SoundSet": "Hero_Nevermore",
 			"IdleSoundLoop": "Hero_Nevermore.IdleLoop",
@@ -2398,7 +2387,7 @@
 			"NameAliases": "sf",
 			"workshop_guide_name": "Shadow Fiend",
 			"LastHitChallengeRival": "npc_dota_hero_lion",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftDisabled": "0",
 			"HeroSelectSoundEffect": "Hero_Nevermore.Pick",
 			"GibType": "ethereal",
 			"GibTintColor": "78 27 27 255",
@@ -2417,6 +2406,12 @@
 			"Ability15": "special_bonus_unique_nevermore_2",
 			"Ability16": "special_bonus_unique_nevermore_5",
 			"Ability17": "special_bonus_cooldown_reduction_40",
+			"AbilityDraftAbilities": {
+				"Ability1": "nevermore_shadowraze1",
+				"Ability2": "nevermore_shadowraze3",
+				"Ability3": "nevermore_necromastery",
+				"Ability6": "nevermore_requiem"
+			},
 			"ArmorPhysical": "0",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
 			"AttackDamageMin": "15",
@@ -2433,7 +2428,7 @@
 			"ProjectileModel": "particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf",
 			"ProjectileSpeed": "1200",
 			"AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
-			"AttributeBaseStrength": "17",
+			"AttributeBaseStrength": "19",
 			"AttributeStrengthGain": "2.300000",
 			"AttributeBaseIntelligence": "18",
 			"AttributeIntelligenceGain": "2.200000",
@@ -2628,7 +2623,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/phantom_lancer/phantom_lancer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_phantom_lancer",
 			"SoundSet": "Hero_PhantomLancer",
 			"Enabled": "1",
 			"HeroUnlockOrder": "2",
@@ -2802,7 +2796,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/puck/puck.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_puck",
 			"IdleExpression": "scenes/puck/puck_exp_idle_01.vcd",
 			"SoundSet": "Hero_Puck",
 			"IdleSoundLoop": "Hero_Puck.IdleLoop",
@@ -2970,7 +2963,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/pudge/pudge.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_pudge",
 			"IdleExpression": "scenes/pudge/pudge_exp_idle_01.vcd",
 			"SoundSet": "Hero_Pudge",
 			"PickSound": "pudge_pud_spawn_10",
@@ -3232,7 +3224,6 @@
 		"material": "electric",
 		"json_data": {
 			"Model": "models/heroes/razor/razor.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_razor",
 			"IdleExpression": "scenes/razor/razor_exp_idle_01.vcd",
 			"PickSound": "razor_raz_spawn_01",
 			"BanSound": "razor_raz_anger_04",
@@ -3479,7 +3470,7 @@
 		"attr_primary": "strength",
 		"attr_strength_base": 22,
 		"attr_strength_gain": 3.2,
-		"attr_intelligence_base": 16,
+		"attr_intelligence_base": 19,
 		"attr_intelligence_gain": 1.8,
 		"attr_agility_base": 19,
 		"attr_agility_gain": 1.8,
@@ -3490,7 +3481,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/sand_king/sand_king.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_sandking",
 			"SoundSet": "Hero_SandKing",
 			"PickSound": "sandking_skg_spawn_02",
 			"BanSound": "sandking_skg_anger_06",
@@ -3539,7 +3529,7 @@
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "22",
 			"AttributeStrengthGain": "3.200000",
-			"AttributeBaseIntelligence": "16",
+			"AttributeBaseIntelligence": "19",
 			"AttributeIntelligenceGain": "1.800000",
 			"AttributeBaseAgility": "19",
 			"AttributeAgilityGain": "1.800000",
@@ -3714,7 +3704,6 @@
 		"material": "electric",
 		"json_data": {
 			"Model": "models/heroes/storm_spirit/storm_spirit.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_stormspirit",
 			"IdleExpression": "scenes/stormspirit/stormspirit_exp_idle_01.vcd",
 			"SoundSet": "Hero_StormSpirit",
 			"PickSound": "stormspirit_ss_spawn_09",
@@ -3865,7 +3854,7 @@
 		"attack_point": 0.4,
 		"attr_primary": "strength",
 		"attr_strength_base": 23,
-		"attr_strength_gain": 3.5,
+		"attr_strength_gain": 3.2,
 		"attr_intelligence_base": 16,
 		"attr_intelligence_gain": 1.3,
 		"attr_agility_base": 21,
@@ -3877,7 +3866,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/sven/sven.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_sven",
 			"SoundSet": "Hero_Sven",
 			"PickSound": "sven_sven_spawn_04",
 			"BanSound": "sven_sven_anger_03",
@@ -3926,7 +3914,7 @@
 			"ProjectileSpeed": "0",
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "23",
-			"AttributeStrengthGain": "3.500000",
+			"AttributeStrengthGain": "3.200000",
 			"AttributeBaseIntelligence": "16",
 			"AttributeIntelligenceGain": "1.300000",
 			"AttributeBaseAgility": "21",
@@ -4007,11 +3995,6 @@
 					"GeneratesUnits": {
 						"0": "npc_dota_companion"
 					}
-				},
-				"8": {
-					"SlotIndex": "7",
-					"SlotName": "taunt",
-					"SlotText": "#LoadoutSlot_Taunt"
 				}
 			},
 			"particle_folder": "particles/units/heroes/hero_sven",
@@ -4141,7 +4124,6 @@
 			"Model1": "models/heroes/tiny_02/tiny_02.vmdl",
 			"Model2": "models/heroes/tiny_03/tiny_03.vmdl",
 			"Model3": "models/heroes/tiny_04/tiny_04.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_tiny",
 			"SoundSet": "Hero_Tiny",
 			"PickSound": "tiny_tiny_spawn_09",
 			"BanSound": "tiny_tiny_anger_01",
@@ -4179,11 +4161,6 @@
 			"Ability16": "special_bonus_unique_tiny_3",
 			"Ability17": "special_bonus_unique_tiny_2",
 			"AbilityDraftIgnoreCount": "7",
-			"AbilityDraftAbilities": {
-				"Ability1": "tiny_avalanche",
-				"Ability2": "tiny_toss",
-				"Ability3": "tiny_grow"
-			},
 			"ArmorPhysical": "0",
 			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
 			"AttackDamageMin": "44",
@@ -4387,7 +4364,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/vengeful/vengeful.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_vengeful",
 			"IdleExpression": "scenes/vengefulspirit/vengefulspirit_exp_idle_01.vcd",
 			"SoundSet": "Hero_VengefulSpirit",
 			"PickSound": "vengefulspirit_vng_spawn_01",
@@ -4618,7 +4594,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/windrunner/windrunner.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_windrunner",
 			"IdleExpression": "scenes/windrunner/windrunner_exp_idle_01.vcd",
 			"SoundSet": "Hero_Windrunner",
 			"PickSound": "windrunner_wind_spawn_01",
@@ -4849,7 +4824,6 @@
 		"json_data": {
 			"Model": "models/heroes/zeus/zeus.vmdl",
 			"ModelScale": "1.0",
-			"Portrait": "vgui/hud/heroportraits/portrait_zuus",
 			"IdleExpression": "scenes/zuus/zuus_exp_idle_01.vcd",
 			"SoundSet": "Hero_zuus",
 			"PickSound": "zuus_zuus_spawn_01",
@@ -5081,7 +5055,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/kunkka/kunkka.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_kunkka",
 			"IdleExpression": "scenes/kunkka/kunkka_exp_idle_01.vcd",
 			"SoundSet": "Hero_Kunkka",
 			"PickSound": "kunkka_kunk_spawn_11",
@@ -5313,7 +5286,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_lina_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_lina_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_lina_png.png",
-		"talents": "+30 Damage|+125 Cast Range|+350 Health|+140 Light Strike Array Damage|+12% Spell Amplification|+25/2% Fiery Soul Per Stack|-6s Dragon Slave Cooldown|+175 Attack Range",
+		"talents": "+30 Damage|+125 Cast Range|+350 Health|+140 Light Strike Array Damage|+14% Spell Amplification|+30/2% Fiery Soul Per Stack|-6s Dragon Slave Cooldown|+175 Attack Range",
 		"color": "#fe5a05",
 		"team": "Good",
 		"base_movement": 290,
@@ -5339,7 +5312,6 @@
 		"material": "fire",
 		"json_data": {
 			"Model": "models/heroes/lina/lina.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_lina",
 			"IdleExpression": "scenes/lina/lina_exp_idle_01.vcd",
 			"SoundSet": "Hero_Lina",
 			"IdleSoundLoop": "Hero_Lina.IdleLoop",
@@ -5373,7 +5345,7 @@
 			"Ability11": "special_bonus_cast_range_125",
 			"Ability12": "special_bonus_hp_350",
 			"Ability13": "special_bonus_unique_lina_3",
-			"Ability14": "special_bonus_spell_amplify_12",
+			"Ability14": "special_bonus_spell_amplify_14",
 			"Ability15": "special_bonus_unique_lina_2",
 			"Ability16": "special_bonus_unique_lina_1",
 			"Ability17": "special_bonus_attack_range_175",
@@ -5561,7 +5533,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/lion/lion.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_lion",
 			"IdleExpression": "scenes/lion/lion_exp_idle_01.vcd",
 			"SoundSet": "Hero_Lion",
 			"Enabled": "1",
@@ -5798,7 +5769,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/shadowshaman/shadowshaman.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_shadow_shaman",
 			"IdleExpression": "scenes/shadowshaman/shadowshaman_exp_idle_01.vcd",
 			"SoundSet": "Hero_ShadowShaman",
 			"Enabled": "1",
@@ -6043,7 +6013,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/slardar/slardar.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_slardar",
 			"IdleExpression": "scenes/default_idle.vcd",
 			"SoundSet": "Hero_Slardar",
 			"HeroID": "28",
@@ -6149,6 +6118,11 @@
 					"SlotName": "ambient_effects",
 					"SlotText": "#LoadoutSlot_Ambient_Effects",
 					"DisplayInLoadout": "0"
+				},
+				"6": {
+					"SlotIndex": "6",
+					"SlotName": "taunt",
+					"SlotText": "#LoadoutSlot_Taunt"
 				}
 			},
 			"RenderablePortrait": {
@@ -6198,7 +6172,7 @@
 		"attack_point": 0.6,
 		"attr_primary": "strength",
 		"attr_strength_base": 22,
-		"attr_strength_gain": 3.8,
+		"attr_strength_gain": 3.5,
 		"attr_intelligence_base": 16,
 		"attr_intelligence_gain": 1.7,
 		"attr_agility_base": 15,
@@ -6210,7 +6184,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/tidehunter/tidehunter.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_tidehunter",
 			"IdleExpression": "scenes/tidehunter/tidehunter_exp_idle_01.vcd",
 			"SoundSet": "Hero_Tidehunter",
 			"PickSound": "tidehunter_tide_spawn_09",
@@ -6259,7 +6232,7 @@
 			"AttackRange": "150",
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "22",
-			"AttributeStrengthGain": "3.800000",
+			"AttributeStrengthGain": "3.500000",
 			"AttributeBaseIntelligence": "16",
 			"AttributeIntelligenceGain": "1.700000",
 			"AttributeBaseAgility": "15",
@@ -6450,7 +6423,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/witchdoctor/witchdoctor.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_witch_doctor",
 			"IdleExpression": "scenes/witchdoctor/witchdoctor_exp_idle_01.vcd",
 			"SoundSet": "Hero_WitchDoctor",
 			"Enabled": "1",
@@ -6706,7 +6678,6 @@
 		"material": "ice",
 		"json_data": {
 			"Model": "models/heroes/lich/lich.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_lich",
 			"SoundSet": "Hero_Lich",
 			"IdleSoundLoop": "Hero_Lich.IdleLoop",
 			"Enabled": "1",
@@ -6922,7 +6893,7 @@
 		"color": "#6b82d7",
 		"team": "Good",
 		"base_health_regen": 3.0,
-		"base_movement": 285,
+		"base_movement": 290,
 		"turn_rate": 0.6,
 		"base_armor": 1,
 		"attack_range": 150,
@@ -6945,7 +6916,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/rikimaru/rikimaru.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_riki",
 			"IdleExpression": "scenes/riki/riki_exp_idle_01.vcd",
 			"SoundSet": "Hero_Riki",
 			"Enabled": "1",
@@ -6997,7 +6967,7 @@
 			"AttributeBaseAgility": "30",
 			"AttributeAgilityGain": "2.50000",
 			"StatusHealthRegen": "3.0",
-			"MovementSpeed": "285",
+			"MovementSpeed": "290",
 			"MovementTurnRate": "0.600000",
 			"BoundsHullName": "DOTA_HULL_SIZE_HERO",
 			"RenderablePortrait": {
@@ -7197,7 +7167,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/enigma/enigma.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_enigma",
 			"SoundSet": "Hero_Enigma",
 			"IdleSoundLoop": "Hero_Enigma.IdleLoop",
 			"PickSound": "enigma_enig_spawn_01",
@@ -7381,7 +7350,6 @@
 		"material": "motor",
 		"json_data": {
 			"Model": "models/heroes/tinker/tinker.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_tinker",
 			"SoundSet": "Hero_Tinker",
 			"Enabled": "1",
 			"HeroUnlockOrder": "1",
@@ -7567,7 +7535,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/sniper/sniper.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_sniper",
 			"IdleExpression": "scenes/sniper/sniper_exp_idle_01.vcd",
 			"SoundSet": "Hero_Sniper",
 			"Enabled": "1",
@@ -7816,7 +7783,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/necrolyte/necrolyte.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_necrolyte",
 			"IdleExpression": "scenes/necrolyte/necrolyte_exp_idle_01.vcd",
 			"SoundSet": "Hero_Necrolyte",
 			"IdleSoundLoop": "Hero_Necrolyte.IdleLoop",
@@ -8063,7 +8029,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/warlock/warlock.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_warlock",
 			"SoundSet": "Hero_Warlock",
 			"Enabled": "1",
 			"HeroPool1": "1",
@@ -8337,7 +8302,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/beastmaster/beastmaster.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_beastmaster",
 			"IdleExpression": "scenes/beastmaster/beastmaster_exp_idle_01.vcd",
 			"SoundSet": "Hero_Beastmaster",
 			"Enabled": "1",
@@ -8356,7 +8320,6 @@
 			"workshop_guide_name": "Beastmaster",
 			"new_player_enable": "1",
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
-			"AbilityDraftDisabled": "1",
 			"HeroSelectSoundEffect": "Hero_Beastmaster.Pick",
 			"GibType": "default",
 			"AbilityLayout": "5",
@@ -8374,6 +8337,13 @@
 			"Ability15": "special_bonus_hp_500",
 			"Ability16": "special_bonus_unique_beastmaster_4",
 			"Ability17": "special_bonus_unique_beastmaster_3",
+			"AbilityDraftAbilities": {
+				"Ability1": "beastmaster_wild_axes",
+				"Ability2": "beastmaster_call_of_the_wild_boar",
+				"Ability3": "beastmaster_inner_beast",
+				"Ability4": "beastmaster_primal_roar"
+			},
+			"AbilityDraftDisabled": "0",
 			"ArmorPhysical": "-1",
 			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
 			"AttackDamageMin": "41",
@@ -8519,14 +8489,14 @@
 		"base_armor": -1,
 		"attack_range": 550,
 		"attack_projectile_speed": 1500,
-		"attack_damage_min": 23,
-		"attack_damage_max": 31,
+		"attack_damage_min": 20,
+		"attack_damage_max": 28,
 		"attack_rate": 1.5,
 		"attack_point": 0.56,
 		"attr_primary": "intelligence",
 		"attr_strength_base": 18,
 		"attr_strength_gain": 2.3,
-		"attr_intelligence_base": 22,
+		"attr_intelligence_base": 25,
 		"attr_intelligence_gain": 2.9,
 		"attr_agility_base": 22,
 		"attr_agility_gain": 2.2,
@@ -8537,7 +8507,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/queenofpain/queenofpain.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_queenofpain",
 			"SoundSet": "Hero_QueenOfPain",
 			"Enabled": "1",
 			"HeroUnlockOrder": "1",
@@ -8576,8 +8545,8 @@
 			"Ability17": "special_bonus_spell_block_15",
 			"ArmorPhysical": "-1",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
-			"AttackDamageMin": "23",
-			"AttackDamageMax": "31",
+			"AttackDamageMin": "20",
+			"AttackDamageMax": "28",
 			"AttackRate": "1.500000",
 			"AttackAnimationPoint": "0.560000",
 			"AttackAcquisitionRange": "800",
@@ -8587,7 +8556,7 @@
 			"AttributePrimary": "DOTA_ATTRIBUTE_INTELLECT",
 			"AttributeBaseStrength": "18",
 			"AttributeStrengthGain": "2.300000",
-			"AttributeBaseIntelligence": "22",
+			"AttributeBaseIntelligence": "25",
 			"AttributeIntelligenceGain": "2.900000",
 			"AttributeBaseAgility": "22",
 			"AttributeAgilityGain": "2.2",
@@ -8699,7 +8668,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/venomancer/venomancer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_venomancer",
 			"IdleExpression": "scenes/venomancer/venomancer_exp_idle_01.vcd",
 			"SoundSet": "Hero_Venomancer",
 			"IdleSoundLoop": "Hero_Venomancer.IdleLoop",
@@ -8890,7 +8858,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/faceless_void/faceless_void.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_faceless_void",
 			"IdleExpression": "scenes/faceless_void/faceless_void_exp_idle_01.vcd",
 			"SoundSet": "Hero_FacelessVoid",
 			"Enabled": "1",
@@ -9061,7 +9028,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/wraith_king/wraith_king.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_skeletonking",
 			"IdleExpression": "scenes/skeleton_king/skeleton_king_exp_idle_01.vcd",
 			"SoundSet": "Hero_SkeletonKing",
 			"Enabled": "1",
@@ -9302,7 +9268,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_death_prophet_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_death_prophet_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_death_prophet_png.png",
-		"talents": "+40 Damage|+15% Magic Resistance|+1% Max Health Spirit Siphon|+150 Cast Range|+500 Health|-3s Crypt Swarm Cooldown|Exorcism Grants Haste|+8 Exorcism Spirits",
+		"talents": "+40 Damage|+15% Magic Resistance|+1% Max Health Spirit Siphon|+175 Cast Range|+500 Health|-3s Crypt Swarm Cooldown|Exorcism Grants Haste|+8 Exorcism Spirits",
 		"color": "#2cb799",
 		"team": "Bad",
 		"base_movement": 310,
@@ -9328,7 +9294,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/death_prophet/death_prophet.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_death_prophet",
 			"SoundSet": "Hero_DeathProphet",
 			"IdleSoundLoop": "Hero_DeathProphet.IdleLoop",
 			"Enabled": "1",
@@ -9361,7 +9326,7 @@
 			"Ability10": "special_bonus_attack_damage_40",
 			"Ability11": "special_bonus_magic_resistance_15",
 			"Ability12": "special_bonus_unique_death_prophet_3",
-			"Ability13": "special_bonus_cast_range_150",
+			"Ability13": "special_bonus_cast_range_175",
 			"Ability14": "special_bonus_hp_500",
 			"Ability15": "special_bonus_unique_death_prophet_2",
 			"Ability16": "special_bonus_unique_death_prophet_4",
@@ -9584,7 +9549,7 @@
 		"attr_intelligence_base": 15,
 		"attr_intelligence_gain": 1.4,
 		"attr_agility_base": 23,
-		"attr_agility_gain": 3.7,
+		"attr_agility_gain": 3.4,
 		"vision_day": 1800,
 		"vision_night": 800,
 		"magic_resistance": 25,
@@ -9592,7 +9557,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/phantom_assassin/phantom_assassin.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_phantom_assassin",
 			"IdleExpression": "scenes/phantom_assassin/phantom_assassin_exp_idle_01.vcd",
 			"SoundSet": "Hero_PhantomAssassin",
 			"Enabled": "1",
@@ -9647,7 +9611,7 @@
 			"AttributeBaseStrength": "21",
 			"AttributeStrengthGain": "2.20000",
 			"AttributeBaseAgility": "23",
-			"AttributeAgilityGain": "3.70000",
+			"AttributeAgilityGain": "3.40000",
 			"AttributeBaseIntelligence": "15",
 			"AttributeIntelligenceGain": "1.400000",
 			"StatusHealthRegen": "0.25",
@@ -9832,7 +9796,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/pugna/pugna.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_pugna",
 			"IdleExpression": "scenes/pugna/pugna_exp_idle_01.vcd",
 			"SoundSet": "Hero_Pugna",
 			"Enabled": "1",
@@ -10026,7 +9989,7 @@
 		"attr_intelligence_base": 20,
 		"attr_intelligence_gain": 2.0,
 		"attr_agility_base": 23,
-		"attr_agility_gain": 2.6,
+		"attr_agility_gain": 2.8,
 		"vision_day": 1800,
 		"vision_night": 800,
 		"magic_resistance": 25,
@@ -10034,7 +9997,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/lanaya/lanaya.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_templar_assassin",
 			"IdleExpression": "scenes/templar_assassin/templar_assassin_exp_idle_01.vcd",
 			"NameAliases": "ta",
 			"SoundSet": "Hero_TemplarAssassin",
@@ -10090,7 +10052,7 @@
 			"AttributeBaseStrength": "19",
 			"AttributeStrengthGain": "2.400000",
 			"AttributeBaseAgility": "23",
-			"AttributeAgilityGain": "2.600000",
+			"AttributeAgilityGain": "2.800000",
 			"AttributeBaseIntelligence": "20",
 			"AttributeIntelligenceGain": "2.000000",
 			"StatusHealthRegen": "0.25",
@@ -10199,7 +10161,7 @@
 		"attr_intelligence_base": 15,
 		"attr_intelligence_gain": 1.8,
 		"attr_agility_base": 21,
-		"attr_agility_gain": 3.3,
+		"attr_agility_gain": 2.8,
 		"vision_day": 1800,
 		"vision_night": 800,
 		"magic_resistance": 25,
@@ -10207,7 +10169,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/viper/viper.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_viper",
 			"IdleExpression": "scenes/viper/viper_exp_idle_01.vcd",
 			"SoundSet": "Hero_Viper",
 			"Enabled": "1",
@@ -10266,7 +10227,7 @@
 			"AttributeBaseStrength": "21",
 			"AttributeStrengthGain": "2.400000",
 			"AttributeBaseAgility": "21",
-			"AttributeAgilityGain": "3.300000",
+			"AttributeAgilityGain": "2.800000",
 			"AttributeBaseIntelligence": "15",
 			"AttributeIntelligenceGain": "1.800000",
 			"MovementSpeed": "275",
@@ -10444,7 +10405,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/luna/luna.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_luna",
 			"IdleExpression": "scenes/luna/luna_exp_idle_01.vcd",
 			"SoundSet": "Hero_Luna",
 			"Enabled": "1",
@@ -10686,7 +10646,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/dragon_knight/dragon_knight.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_dragon_knight",
 			"SoundSet": "Hero_DragonKnight",
 			"Enabled": "1",
 			"HeroPool1": "1",
@@ -10951,7 +10910,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/dazzle/dazzle.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_dazzle",
 			"IdleExpression": "scenes/dazzle/dazzle_exp_idle_01.vcd",
 			"SoundSet": "Hero_Dazzle",
 			"Enabled": "1",
@@ -11180,7 +11138,6 @@
 		"material": "motor",
 		"json_data": {
 			"Model": "models/heroes/rattletrap/rattletrap.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_rattletrap",
 			"SoundSet": "Hero_Rattletrap",
 			"Enabled": "1",
 			"HeroUnlockOrder": "3",
@@ -11353,7 +11310,6 @@
 		"is_melee": false,
 		"json_data": {
 			"Model": "models/heroes/leshrac/leshrac.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_leshrac",
 			"SoundSet": "Hero_Leshrac",
 			"Enabled": "1",
 			"HeroUnlockOrder": "1",
@@ -11529,7 +11485,6 @@
 		"material": "wood",
 		"json_data": {
 			"Model": "models/heroes/furion/furion.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_furion",
 			"IdleExpression": "scenes/furion/furion_exp_idle_01.vcd",
 			"SoundSet": "Hero_Furion",
 			"Enabled": "1",
@@ -11713,7 +11668,7 @@
 		"attack_point": 0.39,
 		"attr_primary": "strength",
 		"attr_strength_base": 25,
-		"attr_strength_gain": 3.2,
+		"attr_strength_gain": 2.9,
 		"attr_intelligence_base": 15,
 		"attr_intelligence_gain": 1.8,
 		"attr_agility_base": 18,
@@ -11725,7 +11680,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/life_stealer/life_stealer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_life_stealer",
 			"IdleExpression": "scenes/life_stealer/life_stealer_exp_idle_01.vcd",
 			"SoundSet": "Hero_LifeStealer",
 			"Enabled": "1",
@@ -11779,7 +11733,7 @@
 			"AttackRange": "150",
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "25",
-			"AttributeStrengthGain": "3.200000",
+			"AttributeStrengthGain": "2.900000",
 			"AttributeBaseIntelligence": "15",
 			"AttributeIntelligenceGain": "1.8000",
 			"AttributeBaseAgility": "18",
@@ -11906,7 +11860,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/dark_seer/dark_seer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_dark_seer",
 			"IdleExpression": "scenes/dark_seer/dark_seer_exp_idle_01.vcd",
 			"SoundSet": "Hero_DarkSeer",
 			"Enabled": "1",
@@ -12087,7 +12040,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/clinkz/clinkz.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_clinkz",
 			"IdleExpression": "scenes/clinkz/clinkz_exp_idle_01.vcd",
 			"SoundSet": "Hero_Clinkz",
 			"IdleSoundLoop": "Hero_Clinkz.IdleLoop",
@@ -12271,7 +12223,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/omniknight/omniknight.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_omniknight",
 			"IdleExpression": "scenes/omniknight/omniknight_exp_idle_01.vcd",
 			"SoundSet": "Hero_Omniknight",
 			"Enabled": "1",
@@ -12518,7 +12469,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/enchantress/enchantress.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_enchantress",
 			"IdleExpression": "scenes/enchantress/enchantress_exp_idle_01.vcd",
 			"SoundSet": "Hero_Enchantress",
 			"Enabled": "1",
@@ -12689,7 +12639,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/huskar/huskar.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_huskar",
 			"IdleExpression": "scenes/huskar/huskar_exp_idle_01.vcd",
 			"SoundSet": "Hero_Huskar",
 			"Enabled": "1",
@@ -12892,7 +12841,6 @@
 		"json_data": {
 			"Model": "models/heroes/nightstalker/nightstalker.vmdl",
 			"Model1": "models/heroes/nightstalker/nightstalker_night.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_night_stalker",
 			"SoundSet": "Hero_NightStalker",
 			"Enabled": "1",
 			"HeroUnlockOrder": "2",
@@ -13051,7 +12999,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_broodmother_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_broodmother_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_broodmother_png.png",
-		"talents": "+125 Spawn Spiderlings Damage|+200 Health|20% Cooldown Reduction|+15 Agility|+30 Spiders Attack Damage|+50 Attack Speed|+60 Insatiable Hunger Damage/Lifesteal|+450 Spiders Health",
+		"talents": "+125 Spawn Spiderlings Damage|+200 Health|20% Cooldown Reduction|+20 Agility|+30 Spiders Attack Damage|+50 Attack Speed|+60 Insatiable Hunger Damage/Lifesteal|+450 Spiders Health",
 		"color": "#47425e",
 		"team": "Bad",
 		"base_movement": 275,
@@ -13069,7 +13017,7 @@
 		"attr_intelligence_base": 18,
 		"attr_intelligence_gain": 2.0,
 		"attr_agility_base": 15,
-		"attr_agility_gain": 2.5,
+		"attr_agility_gain": 2.8,
 		"vision_day": 1800,
 		"vision_night": 800,
 		"magic_resistance": 25,
@@ -13077,7 +13025,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/broodmother/broodmother.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_broodmother",
 			"IdleExpression": "scenes/broodmother/broodmother_exp_idle_01.vcd",
 			"SoundSet": "Hero_Broodmother",
 			"Enabled": "1",
@@ -13110,7 +13057,7 @@
 			"Ability10": "special_bonus_unique_broodmother_3",
 			"Ability11": "special_bonus_hp_200",
 			"Ability12": "special_bonus_cooldown_reduction_20",
-			"Ability13": "special_bonus_agility_15",
+			"Ability13": "special_bonus_agility_20",
 			"Ability14": "special_bonus_unique_broodmother_4",
 			"Ability15": "special_bonus_attack_speed_50",
 			"Ability16": "special_bonus_unique_broodmother_1",
@@ -13127,7 +13074,7 @@
 			"AttributeBaseStrength": "18",
 			"AttributeStrengthGain": "2.800000",
 			"AttributeBaseAgility": "15",
-			"AttributeAgilityGain": "2.500000",
+			"AttributeAgilityGain": "2.800000",
 			"AttributeBaseIntelligence": "18",
 			"AttributeIntelligenceGain": "2.000000",
 			"MovementSpeed": "275",
@@ -13255,7 +13202,7 @@
 		"attr_intelligence_base": 19,
 		"attr_intelligence_gain": 2.0,
 		"attr_agility_base": 21,
-		"attr_agility_gain": 3.1,
+		"attr_agility_gain": 2.6,
 		"vision_day": 1800,
 		"vision_night": 1000,
 		"magic_resistance": 25,
@@ -13263,7 +13210,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/bounty_hunter/bounty_hunter.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_bounty_hunter",
 			"IdleExpression": "scenes/bounty_hunter/bounty_hunter_exp_idle_01.vcd",
 			"SoundSet": "Hero_BountyHunter",
 			"Enabled": "1",
@@ -13313,7 +13259,7 @@
 			"AttributeBaseStrength": "20",
 			"AttributeStrengthGain": "2.500000",
 			"AttributeBaseAgility": "21",
-			"AttributeAgilityGain": "3.100000",
+			"AttributeAgilityGain": "2.600000",
 			"AttributeBaseIntelligence": "19",
 			"AttributeIntelligenceGain": "2.000000",
 			"MovementSpeed": "315",
@@ -13506,7 +13452,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/weaver/weaver.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_weaver",
 			"SoundSet": "Hero_Weaver",
 			"Enabled": "1",
 			"HeroUnlockOrder": "3",
@@ -13683,7 +13628,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/jakiro/jakiro.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_jakiro",
 			"IdleExpression": "scenes/jakiro/jakiro_exp_idle_01.vcd",
 			"SoundSet": "Hero_Jakiro",
 			"Enabled": "1",
@@ -13911,7 +13855,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/batrider/batrider.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_batrider",
 			"IdleExpression": "scenes/batrider/batrider_exp_idle_01.vcd",
 			"SoundSet": "Hero_Batrider",
 			"Enabled": "1",
@@ -14079,7 +14022,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/chen/chen.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_chen",
 			"SoundSet": "Hero_Chen",
 			"Enabled": "1",
 			"HeroUnlockOrder": "3",
@@ -14114,7 +14056,7 @@
 			"Ability17": "special_bonus_unique_chen_2",
 			"AbilityDraftAbilities": {
 				"Ability1": "chen_penitence",
-				"Ability2": "chen_test_of_faith",
+				"Ability2": "chen_divine_favor",
 				"Ability4": "chen_holy_persuasion",
 				"Ability5": "chen_hand_of_god"
 			},
@@ -14261,7 +14203,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/spectre/spectre.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_spectre",
 			"SoundSet": "Hero_Spectre",
 			"IdleSoundLoop": "Hero_Spectre.IdleLoop",
 			"Enabled": "1",
@@ -14434,7 +14375,7 @@
 		"attr_strength_base": 20,
 		"attr_strength_gain": 1.9,
 		"attr_intelligence_base": 23,
-		"attr_intelligence_gain": 3.0,
+		"attr_intelligence_gain": 3.4,
 		"attr_agility_base": 20,
 		"attr_agility_gain": 2.2,
 		"vision_day": 1800,
@@ -14444,7 +14385,6 @@
 		"material": "ice",
 		"json_data": {
 			"Model": "models/heroes/ancient_apparition/ancient_apparition.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_ancient_apparition",
 			"SoundSet": "Hero_ancient_apparition",
 			"IdleSoundLoop": "Hero_Ancient_Apparition.IdleLoop",
 			"Enabled": "1",
@@ -14501,7 +14441,7 @@
 			"AttributeBaseAgility": "20",
 			"AttributeAgilityGain": "2.200000",
 			"AttributeBaseIntelligence": "23",
-			"AttributeIntelligenceGain": "3.000000",
+			"AttributeIntelligenceGain": "3.400000",
 			"MovementSpeed": "290",
 			"MovementTurnRate": "0.600000",
 			"particle_folder": "particles/units/heroes/hero_ancient_apparition",
@@ -14611,7 +14551,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/doom/doom.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_doom_bringer",
 			"SoundSet": "Hero_DoomBringer",
 			"IdleSoundLoop": "Hero_DoomBringer.IdleLoop",
 			"Enabled": "1",
@@ -14781,7 +14720,7 @@
 		"color": "#8980aa",
 		"team": "Good",
 		"base_health_regen": 0.5,
-		"base_movement": 330,
+		"base_movement": 325,
 		"turn_rate": 0.5,
 		"base_armor": 3,
 		"attack_range": 150,
@@ -14804,7 +14743,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/ursa/ursa.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_ursa",
 			"IdleExpression": "scenes/ursa/ursa_exp_idle_01.vcd",
 			"SoundSet": "Hero_Ursa",
 			"Enabled": "1",
@@ -14860,7 +14798,7 @@
 			"AttributeAgilityGain": "2.400000",
 			"AttributeBaseIntelligence": "16",
 			"AttributeIntelligenceGain": "1.500000",
-			"MovementSpeed": "330",
+			"MovementSpeed": "325",
 			"MovementTurnRate": "0.500000",
 			"StatusHealthRegen": "0.5",
 			"particle_folder": "particles/units/heroes/hero_ursa",
@@ -14955,6 +14893,7 @@
 		"talents": "+600 Night Vision|+5 Armor|+12 Health Regen|+40 Damage|+15% Greater Bash Damage|-7s Bulldoze Cooldown|+25% Greater Bash Chance|+800 Health",
 		"color": "#72c2c2",
 		"team": "Bad",
+		"base_health_regen": 0.75,
 		"base_movement": 285,
 		"turn_rate": 0.5,
 		"base_armor": 2,
@@ -14978,7 +14917,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/spirit_breaker/spirit_breaker.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_spirit_breaker",
 			"IdleExpression": "scenes/spirit_breaker/spirit_breaker_exp_idle_01.vcd",
 			"SoundSet": "Hero_spirit_breaker",
 			"Enabled": "1",
@@ -15029,6 +14967,7 @@
 			"AttributeAgilityGain": "1.700000",
 			"AttributeBaseIntelligence": "14",
 			"AttributeIntelligenceGain": "1.800000",
+			"StatusHealthRegen": "0.75",
 			"MovementSpeed": "285",
 			"MovementTurnRate": "0.500000",
 			"particle_folder": "particles/units/heroes/hero_spirit_breaker",
@@ -15161,7 +15100,6 @@
 		"material": "motor",
 		"json_data": {
 			"Model": "models/heroes/gyro/gyro.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_gyrocopter",
 			"SoundSet": "Hero_Gyrocopter",
 			"IdleSoundLoop": "Hero_Gyrocopter.IdleLoop",
 			"Enabled": "1",
@@ -15353,7 +15291,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/alchemist/alchemist.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_alchemist",
 			"IdleExpression": "scenes/alchemist/alchemist_exp_idle_01.vcd",
 			"SoundSet": "Hero_Alchemist",
 			"Enabled": "1",
@@ -15553,7 +15490,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/invoker/invoker.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_furion",
 			"IdleExpression": "scenes/invoker/invoker_exp_idle_01.vcd",
 			"SoundSet": "Hero_Invoker",
 			"IdleSoundLoop": "Hero_Invoker.IdleLoop",
@@ -15756,7 +15692,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/silencer/silencer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_silencer",
 			"IdleExpression": "scenes/silencer/silencer_exp_idle_01.vcd",
 			"SoundSet": "Hero_Silencer",
 			"Enabled": "1",
@@ -15933,7 +15868,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/obsidian_destroyer/obsidian_destroyer.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_obsidian_destroyer",
 			"IdleExpression": "scenes/outworld_destroyer/outworld_destroyer_exp_idle_01.vcd",
 			"SoundSet": "Hero_ObsidianDestroyer",
 			"IdleSoundLoop": "Hero_ObsidianDestroyer.IdleLoop",
@@ -16096,7 +16030,7 @@
 		"attack_point": 0.55,
 		"attr_primary": "strength",
 		"attr_strength_base": 25,
-		"attr_strength_gain": 3.8,
+		"attr_strength_gain": 3.4,
 		"attr_intelligence_base": 17,
 		"attr_intelligence_gain": 1.4,
 		"attr_agility_base": 16,
@@ -16108,7 +16042,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/lycan/lycan.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_lycan",
 			"SoundSet": "Hero_Lycan",
 			"Enabled": "1",
 			"HeroUnlockOrder": "0",
@@ -16152,7 +16085,7 @@
 			"AttackRange": "150",
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "25",
-			"AttributeStrengthGain": "3.8000",
+			"AttributeStrengthGain": "3.4000",
 			"AttributeBaseAgility": "16",
 			"AttributeAgilityGain": "1.00000",
 			"AttributeBaseIntelligence": "17",
@@ -16309,7 +16242,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/brewmaster/brewmaster.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_brewmaster",
 			"IdleExpression": "scenes/brewmaster/brewmaster_exp_idle_01.vcd",
 			"SoundSet": "Hero_Brewmaster",
 			"Enabled": "1",
@@ -16486,7 +16418,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/shadow_demon/shadow_demon.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_shadow_demon",
 			"IdleExpression": "scenes/shadow_demon/shadow_demon_exp_idle_01.vcd",
 			"SoundSet": "Hero_ShadowDemon",
 			"Enabled": "1",
@@ -16668,7 +16599,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/lone_druid/lone_druid.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_lone_druid",
 			"IdleExpression": "scenes/lone_druid/lone_druid_exp_idle_01.vcd",
 			"SoundSet": "Hero_LoneDruid",
 			"Enabled": "1",
@@ -16705,7 +16635,8 @@
 			"Ability15": "special_bonus_unique_lone_druid_9",
 			"Ability16": "special_bonus_unique_lone_druid_10",
 			"Ability17": "special_bonus_unique_lone_druid_7",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftIgnoreCount": "7",
+			"AbilityDraftDisabled": "0",
 			"ArmorPhysical": "-2",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
 			"AttackDamageMin": "18",
@@ -16867,7 +16798,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/chaos_knight/chaos_knight.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_chaos_knight",
 			"SoundSet": "Hero_ChaosKnight",
 			"Enabled": "1",
 			"HeroUnlockOrder": "3",
@@ -17083,11 +17013,11 @@
 		"attack_point": 0.38,
 		"attr_primary": "agility",
 		"attr_strength_base": 24,
-		"attr_strength_gain": 1.6,
+		"attr_strength_gain": 1.8,
 		"attr_intelligence_base": 20,
 		"attr_intelligence_gain": 1.6,
-		"attr_agility_base": 23,
-		"attr_agility_gain": 1.6,
+		"attr_agility_base": 24,
+		"attr_agility_gain": 1.8,
 		"vision_day": 1800,
 		"vision_night": 800,
 		"magic_resistance": 25,
@@ -17095,7 +17025,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/meepo/meepo.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_chaos_knight",
 			"IdleExpression": "scenes/meepo/meepo_exp_idle_01.vcd",
 			"SoundSet": "Hero_Meepo",
 			"Enabled": "1",
@@ -17112,7 +17041,7 @@
 			"BanSound": "meepo_meepo_anger_12",
 			"CMEnabled": "1",
 			"LastHitChallengeRival": "npc_dota_hero_sand_king",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftDisabled": "0",
 			"ARDMDisabled": "1",
 			"HeroSelectSoundEffect": "Hero_Meepo.Pick",
 			"GibType": "default",
@@ -17130,6 +17059,11 @@
 			"Ability15": "special_bonus_lifesteal_10",
 			"Ability16": "special_bonus_hp_400",
 			"Ability17": "special_bonus_unique_meepo",
+			"AbilityDraftAbilities": {
+				"Ability1": "meepo_earthbind",
+				"Ability2": "meepo_poof",
+				"Ability3": "meepo_ransack"
+			},
 			"ArmorPhysical": "3",
 			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
 			"AttackDamageMin": "20",
@@ -17140,9 +17074,9 @@
 			"AttackRange": "150",
 			"AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
 			"AttributeBaseStrength": "24",
-			"AttributeStrengthGain": "1.600000",
-			"AttributeBaseAgility": "23",
-			"AttributeAgilityGain": "1.600000",
+			"AttributeStrengthGain": "1.800000",
+			"AttributeBaseAgility": "24",
+			"AttributeAgilityGain": "1.800000",
 			"AttributeBaseIntelligence": "20",
 			"AttributeIntelligenceGain": "1.600000",
 			"StatusHealthRegen": "0.25",
@@ -17273,7 +17207,6 @@
 		"material": "wood",
 		"json_data": {
 			"Model": "models/heroes/treant_protector/treant_protector.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_treant",
 			"SoundSet": "Hero_Treant",
 			"Enabled": "1",
 			"Role": "Support,Initiator,Durable,Disabler,Escape",
@@ -17446,7 +17379,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/ogre_magi/ogre_magi.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_chaos_knight",
 			"IdleExpression": "scenes/ogre_magi/ogre_magi_exp_idle_01.vcd",
 			"SoundSet": "Hero_OgreMagi",
 			"Enabled": "1",
@@ -17624,7 +17556,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/undying/undying.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_undying",
 			"IdleExpression": "scenes/undying/undying_exp_idle_01.vcd",
 			"SoundSet": "Hero_Undying",
 			"IdleSoundLoop": "Hero_Undying.IdleLoop",
@@ -17812,7 +17743,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/rubick/rubick.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_rubick",
 			"SoundSet": "Hero_Rubick",
 			"Enabled": "1",
 			"Role": "Support,Disabler,Nuker",
@@ -17848,8 +17778,14 @@
 			"Ability16": "special_bonus_unique_rubick",
 			"Ability17": "special_bonus_unique_rubick_4",
 			"Ability18": "special_bonus_unique_rubick_5",
+			"AbilityDraftDisabled": "0",
+			"AbilityDraftIgnoreCount": "7",
+			"AbilityDraftAbilities": {
+				"Ability1": "rubick_telekinesis",
+				"Ability2": "rubick_fade_bolt",
+				"Ability3": "rubick_arcane_supremacy"
+			},
 			"AbilityTalentStart": "11",
-			"AbilityDraftDisabled": "1",
 			"ArmorPhysical": "-1.000000",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
 			"AttackDamageMin": "22",
@@ -17929,6 +17865,11 @@
 					"SlotName": "ambient_effects",
 					"SlotText": "#LoadoutSlot_Ambient_Effects",
 					"DisplayInLoadout": "0"
+				},
+				"6": {
+					"SlotIndex": "6",
+					"SlotName": "voice",
+					"SlotText": "#LoadoutSlot_Voice"
 				}
 			},
 			"Bot": {
@@ -17985,7 +17926,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/disruptor/disruptor.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_disruptor",
 			"SoundSet": "Hero_Disruptor",
 			"Enabled": "1",
 			"Role": "Support,Disabler,Nuker,Initiator",
@@ -18168,7 +18108,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_nerubian_assassin",
 			"IdleExpression": "scenes/nyx_assassin/nyx_assassin_exp_idle_01.vcd",
 			"SoundSet": "Hero_NyxAssassin",
 			"Enabled": "1",
@@ -18342,7 +18281,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/siren/siren.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_naga_siren",
 			"IdleExpression": "scenes/naga_siren/naga_siren_exp_idle_01.vcd",
 			"SoundSet": "Hero_NagaSiren",
 			"IdleSoundLoop": "Hero_NagaSiren.IdleLoop",
@@ -18520,7 +18458,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_keeper_of_the_light",
 			"IdleExpression": "scenes/keeper_of_the_light/keeper_of_the_light_exp_idle_01.vcd",
 			"SoundSet": "Hero_KeeperOfTheLight",
 			"Enabled": "1",
@@ -18558,8 +18495,9 @@
 			"AbilityDraftIgnoreCount": "9",
 			"AbilityDraftAbilities": {
 				"Ability1": "keeper_of_the_light_illuminate",
-				"Ability2": "keeper_of_the_light_chakra_magic",
-				"Ability3": "keeper_of_the_light_blinding_light"
+				"Ability2": "keeper_of_the_light_blinding_light",
+				"Ability3": "keeper_of_the_light_chakra_magic",
+				"Ability4": "keeper_of_the_light_will_o_wisp"
 			},
 			"ArmorPhysical": "-1.000000",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
@@ -18691,7 +18629,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/wisp/wisp.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_wisp",
 			"SoundSet": "Hero_Wisp",
 			"IdleSoundLoop": "Hero_Wisp.IdleLoop",
 			"Enabled": "1",
@@ -18709,7 +18646,7 @@
 			"NoCombine": "1",
 			"Legs": "0",
 			"LastHitChallengeRival": "npc_dota_hero_zuus",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftDisabled": "0",
 			"HeroSelectSoundEffect": "Hero_Wisp.Pick",
 			"GibType": "ethereal",
 			"GibTintColor": "171 230 255 255",
@@ -18729,7 +18666,7 @@
 			"Ability15": "special_bonus_unique_wisp_5",
 			"Ability16": "special_bonus_unique_wisp_6",
 			"Ability17": "special_bonus_unique_wisp_4",
-			"AbilityDraftIgnoreCount": "7",
+			"AbilityDraftIgnoreCount": "8",
 			"ArmorPhysical": "-2",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
 			"AttackDamageMin": "22",
@@ -18832,7 +18769,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/visage/visage.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_visage",
 			"IdleExpression": "scenes/visage/visage_exp_idle_01.vcd",
 			"SoundSet": "Hero_Visage",
 			"IdleSoundLoop": "Hero_Visage.IdleLoop",
@@ -19010,7 +18946,6 @@
 			"Rolelevels": "2,3,1,1",
 			"Complexity": "1",
 			"Team": "Bad",
-			"Portrait": "vgui/hud/heroportraits/portrait_slark",
 			"ModelScale": "0.900000",
 			"LoadoutScale": "1",
 			"NameAliases": "slark",
@@ -19177,7 +19112,7 @@
 		"attr_strength_base": 15,
 		"attr_strength_gain": 1.3,
 		"attr_intelligence_base": 19,
-		"attr_intelligence_gain": 2.1,
+		"attr_intelligence_gain": 2.6,
 		"attr_agility_base": 22,
 		"attr_agility_gain": 3.9,
 		"vision_day": 1800,
@@ -19196,7 +19131,6 @@
 			"Rolelevels": "3,1,1",
 			"Complexity": "1",
 			"Team": "Bad",
-			"Portrait": "vgui/hud/heroportraits/portrait_medusa",
 			"ModelScale": "0.850000",
 			"NameAliases": "medusa,gorgon",
 			"workshop_guide_name": "Medusa",
@@ -19237,7 +19171,7 @@
 			"AttributeBaseStrength": "15",
 			"AttributeStrengthGain": "1.30000",
 			"AttributeBaseIntelligence": "19",
-			"AttributeIntelligenceGain": "2.1000",
+			"AttributeIntelligenceGain": "2.6000",
 			"AttributeBaseAgility": "22",
 			"AttributeAgilityGain": "3.900000",
 			"VisionDaytimeRange": "1800",
@@ -19340,7 +19274,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_troll_warlord_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_troll_warlord_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_troll_warlord_png.png",
-		"talents": "+10 Agility|+250 Health|+3 Max Fervor Stacks|+90 Whirling Axes Damage|25% Evasion|+50 Damage|-6s Whirling Axes Cooldown|Battle Trance Strong Dispels",
+		"talents": "+10 Agility|+250 Health|+3 Max Fervor Stacks|+90 Whirling Axes Damage|25% Evasion|+40 Damage|-6s Whirling Axes Cooldown|Battle Trance Strong Dispels",
 		"color": "#b53d2c",
 		"team": "Good",
 		"base_health_regen": 0.25,
@@ -19376,7 +19310,6 @@
 			"Rolelevels": "3,2,1,1",
 			"Complexity": "2",
 			"Team": "Good",
-			"Portrait": "vgui/hud/heroportraits/portrait_troll_warlord",
 			"ModelScale": "0.900000",
 			"NameAliases": "troll,jahrakal",
 			"workshop_guide_name": "Troll Warlord",
@@ -19400,7 +19333,7 @@
 			"Ability12": "special_bonus_unique_troll_warlord_2",
 			"Ability13": "special_bonus_unique_troll_warlord_3",
 			"Ability14": "special_bonus_evasion_25",
-			"Ability15": "special_bonus_attack_damage_50",
+			"Ability15": "special_bonus_attack_damage_40",
 			"Ability16": "special_bonus_unique_troll_warlord",
 			"Ability17": "special_bonus_unique_troll_warlord_4",
 			"AbilityDraftAbilities": {
@@ -19555,7 +19488,6 @@
 			"Rolelevels": "3,3,1,1,1",
 			"Complexity": "1",
 			"Team": "Good",
-			"Portrait": "vgui/hud/heroportraits/portrait_centaur",
 			"ModelScale": "0.740000",
 			"LoadoutScale": "0.630000",
 			"SpectatorLoadoutScale": "0.68",
@@ -19752,7 +19684,6 @@
 			"Rolelevels": "3,2,1,1",
 			"Complexity": "2",
 			"Team": "Bad",
-			"Portrait": "vgui/hud/heroportraits/portrait_centaur",
 			"ModelScale": "0.920000",
 			"LoadoutScale": "0.900000",
 			"NameAliases": "magnataur, magnus",
@@ -19914,7 +19845,6 @@
 		"material": "motor",
 		"json_data": {
 			"Model": "models/heroes/shredder/shredder.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_shredder",
 			"IdleExpression": "scenes/shredder/shredder_exp_idle_01.vcd",
 			"SoundSet": "Hero_Shredder",
 			"IdleSoundLoop": "Hero_Shredder.IdleLoop",
@@ -20109,7 +20039,6 @@
 		"material": "goo",
 		"json_data": {
 			"Model": "models/heroes/bristleback/bristleback.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_bristleback",
 			"SoundSet": "Hero_Bristleback",
 			"IdleSoundLoop": "Hero_Bristleback.IdleLoop",
 			"Enabled": "1",
@@ -20356,7 +20285,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/tuskarr/tuskarr.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_tusk",
 			"IdleExpression": "scenes/tusk/tusk_exp_idle_01.vcd",
 			"SoundSet": "Hero_Tusk",
 			"Enabled": "1",
@@ -20395,7 +20323,7 @@
 			"AbilityDraftAbilities": {
 				"Ability1": "tusk_ice_shards",
 				"Ability2": "tusk_snowball",
-				"Ability3": "tusk_frozen_sigil",
+				"Ability3": "tusk_tag_team",
 				"Ability4": "tusk_walrus_punch"
 			},
 			"ArmorPhysical": "-1.000000",
@@ -20558,7 +20486,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/skywrath_mage/skywrath_mage.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_skywrath_mage",
 			"IdleExpression": "scenes/skywrath_mage/skywrath_mage_exp_idle_01.vcd",
 			"NameAliases": "dragonus",
 			"SoundSet": "Hero_SkywrathMage",
@@ -20803,7 +20730,6 @@
 		"material": "ethereal",
 		"json_data": {
 			"Model": "models/heroes/abaddon/abaddon.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_abaddon",
 			"SoundSet": "Hero_Abaddon",
 			"Enabled": "1",
 			"Role": "Support,Carry,Durable",
@@ -20977,7 +20903,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/elder_titan/elder_titan.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_elder_titan",
 			"IdleExpression": "scenes/elder_titan/elder_titan_exp_idle_01.vcd",
 			"SoundSet": "Hero_ElderTitan",
 			"Enabled": "1",
@@ -21158,7 +21083,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/legion_commander/legion_commander.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_legion_commander",
 			"IdleExpression": "scenes/legion_commander/legion_commander_exp_idle_01.vcd",
 			"SoundSet": "Hero_LegionCommander",
 			"Enabled": "1",
@@ -21367,7 +21291,7 @@
 			"IdleSoundLoop": "Hero_Techies.IdleLoop",
 			"HeroSelectSoundEffect": "Hero_Techies.Pick",
 			"GibType": "default",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftDisabled": "0",
 			"Ability1": "techies_land_mines",
 			"Ability2": "techies_stasis_trap",
 			"Ability3": "techies_suicide",
@@ -21382,6 +21306,12 @@
 			"Ability15": "special_bonus_gold_income_25",
 			"Ability16": "special_bonus_attack_damage_251",
 			"Ability17": "special_bonus_unique_techies_4",
+			"AbilityDraftAbilities": {
+				"Ability1": "techies_land_mines",
+				"Ability2": "techies_stasis_trap",
+				"Ability3": "techies_suicide",
+				"Ability4": "techies_remote_mines"
+			},
 			"ArmorPhysical": "5",
 			"MagicalResistance": "25",
 			"AttackCapabilities": "DOTA_UNIT_CAP_RANGED_ATTACK",
@@ -21554,7 +21484,6 @@
 		"material": "fire",
 		"json_data": {
 			"Model": "models/heroes/ember_spirit/ember_spirit.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_ember_spirit",
 			"SoundSet": "Hero_EmberSpirit",
 			"IdleSoundLoop": "Hero_EmberSpirit.IdleLoop",
 			"Enabled": "1",
@@ -21747,7 +21676,6 @@
 		"material": "stone",
 		"json_data": {
 			"Model": "models/heroes/earth_spirit/earth_spirit.vmdl",
-			"Portrait": "vgui/hud/heroportraits/earth_spirit",
 			"IdleExpression": "scenes/earth_spirit/earth_spirit_exp_idle_01.vcd",
 			"SoundSet": "Hero_EarthSpirit",
 			"Enabled": "1",
@@ -21934,7 +21862,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl",
-			"Portrait": "vgui/hud/heroportraits/abyssal_underlord",
 			"IdleExpression": "scenes/abyssal_underlord/abyssal_underlord_exp_idle_01.vcd",
 			"SoundSet": "Hero_AbyssalUnderlord",
 			"PickSound": "abyssal_underlord_abys_spawn_01",
@@ -22110,7 +22037,6 @@
 			"Rolelevels": "3,2,1",
 			"Complexity": "2",
 			"Team": "Bad",
-			"Portrait": "vgui/hud/heroportraits/portrait_terrorblade",
 			"ModelScale": "1.100000",
 			"LoadoutScale": "0.900000",
 			"SpectatorLoadoutScale": "0.92",
@@ -22298,7 +22224,6 @@
 			"Rolelevels": "1,3,2,2,1",
 			"Complexity": "2",
 			"Team": "Good",
-			"Portrait": "vgui/hud/heroportraits/portrait_phoenix",
 			"ModelScale": "0.950000",
 			"NameAliases": "ph",
 			"workshop_guide_name": "Phoenix",
@@ -22465,7 +22390,6 @@
 			"Rolelevels": "3,3,2,1",
 			"Complexity": "3",
 			"Team": "Good",
-			"Portrait": "vgui/hud/heroportraits/portrait_oracle",
 			"IdleExpression": "scenes/oracle/oracle_exp_idle_01.vcd",
 			"ModelScale": "1.000000",
 			"LoadoutScale": "1.000000",
@@ -22870,7 +22794,6 @@
 			"Rolelevels": "3,3,1",
 			"Complexity": "3",
 			"Team": "Bad",
-			"Portrait": "vgui/hud/heroportraits/portrait_arc_warden",
 			"ModelScale": "1.0",
 			"HeroGlowColor": "120 64 148",
 			"PickSound": "arc_warden_arcwar_spawn_01",
@@ -23044,7 +22967,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/monkey_king/monkey_king.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_riki",
 			"IdleExpression": "scenes/monkey_king/monkey_king_exp_idle_01.vcd",
 			"SoundSet": "Hero_MonkeyKing",
 			"PickSound": "monkey_king_monkey_spawn_17",
@@ -23064,7 +22986,7 @@
 			"ModelScale": "0.8100",
 			"LoadoutScale": "0.8100",
 			"workshop_guide_name": "Monkey King",
-			"AbilityDraftDisabled": "1",
+			"AbilityDraftDisabled": "0",
 			"Ability1": "monkey_king_boundless_strike",
 			"Ability2": "monkey_king_tree_dance",
 			"Ability3": "monkey_king_primal_spring",
@@ -23082,6 +23004,12 @@
 			"Ability16": "special_bonus_unique_monkey_king_4",
 			"Ability17": "special_bonus_unique_monkey_king_6",
 			"AbilityDraftIgnoreCount": "8",
+			"AbilityDraftAbilities": {
+				"Ability1": "monkey_king_boundless_strike",
+				"Ability2": "monkey_king_tree_dance",
+				"Ability3": "monkey_king_jingu_mastery",
+				"Ability4": "monkey_king_wukongs_command"
+			},
 			"ArmorPhysical": "-3",
 			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
 			"AttackDamageMin": "29",
@@ -23217,7 +23145,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/dark_willow/dark_willow.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_puck",
 			"IdleExpression": "scenes/sylph/sylph_exp_idle_01.vcd",
 			"SoundSet": "Hero_DarkWillow",
 			"IdleSoundLoop": "Hero_DarkWillow.IdleLoop",
@@ -23404,7 +23331,6 @@
 		"material": "default",
 		"json_data": {
 			"Model": "models/heroes/pangolier/pangolier.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_rattletrap",
 			"IdleExpression": "scenes/pangolin/pangolin_exp_idle_01.vcd",
 			"SoundSet": "Hero_Pangolier",
 			"Enabled": "1",
@@ -23583,7 +23509,6 @@
 		"is_melee": false,
 		"json_data": {
 			"Model": "models/heroes/grimstroke/grimstroke.vmdl",
-			"Portrait": "vgui/hud/heroportraits/portrait_shadow_demon",
 			"IdleExpression": "scenes/grimstroke/grimstroke_exp_idle_01.vcd",
 			"SoundSet": "Hero_Grimstroke",
 			"Enabled": "1",
@@ -23666,7 +23591,11 @@
 				"0": {
 					"SlotIndex": "0",
 					"SlotName": "weapon",
-					"SlotText": "#LoadoutSlot_Weapon"
+					"SlotText": "#LoadoutSlot_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
 				},
 				"1": {
 					"SlotIndex": "4",
@@ -23713,6 +23642,171 @@
 					"SoloDesire": "1",
 					"RequiresBabysit": "0",
 					"ProvidesBabysit": "2",
+					"SurvivalRating": "2",
+					"RequiresFarm": "1",
+					"ProvidesSetup": "2",
+					"RequiresSetup": "0"
+				}
+			}
+		}
+	},
+	{
+		"id": 129,
+		"name": "mars",
+		"full_name": "npc_dota_hero_mars",
+		"media_name": "mars",
+		"localized_name": "Mars",
+		"aliases": "mars",
+		"roles": "Carry|Initiator|Disabler|Durable",
+		"role_levels": "1|2|2|3",
+		"hype": "The warrior deity Mars thrives in the heart of strife, guarded by the bulk of a deadly shield as he skewers enemies with his legendary spear. He revels in facing opponents in an arena ringed with loyal spearmen\u2014who guarantee that no one escapes and that whatever odds he's facing, the god of war can dictate the terms of battle knowing the crowd is forever on his side.",
+		"bio": "Mars, first son of heaven, spent a long existence waging endless war, and saw countless more crusades waged beneath the banner of his old name. Wars of conquest and of vengeance. Just and unjust... Always cruel. So much like his father, Mars indulged his basest impulses--with inclinations much more monstrous than those of Zeus--and he inflicted suffering untold.\n\nBut as the epochs vanished behind him, the selfish ways of his father--the ways of many amongst his godly kin, they who judged <i>him</i> despicable--eventually began to ring hollow. War for its own sake was no longer enough to satisfy his desires. For the first time in his ageless days, the god of war began to question to what ends he swung his glorious spear.\n\nAs the Fates would have it, his solution came easily: he must wage war for a larger purpose, and inspire more than mere savagery and sorrow at the sight of his crest. He must at last lay claim to the mantle of leadership that is his birthright, for the time has come to burn down the pantheon of the old age and build a just new empire atop the ashes of his kin. Only then might he find satisfaction, and make the glory of Mars evident to all.",
+		"image": "/panorama/images/heroes/npc_dota_hero_mars_png.png",
+		"icon": "/panorama/images/heroes/icons/npc_dota_hero_mars_png.png",
+		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_mars_png.png",
+		"talents": "+8 Strength|+20 Movement Speed|+35 Damage|+8 Armor|Spear Of Mars +150 Damage|Spear stun lasts +1.5 seconds|God's Rebuke +80% Crit|Arena Of Blood Grants Team +100 HP Regen",
+		"team": "Good",
+		"base_movement": 310,
+		"turn_rate": 0.8,
+		"base_armor": 0,
+		"attack_range": 250,
+		"attack_projectile_speed": 900,
+		"attack_damage_min": 35,
+		"attack_damage_max": 43,
+		"attack_rate": 1.8,
+		"attack_point": 0.4,
+		"attr_primary": "strength",
+		"attr_strength_base": 23,
+		"attr_strength_gain": 3.6,
+		"attr_intelligence_base": 17,
+		"attr_intelligence_gain": 1.4,
+		"attr_agility_base": 20,
+		"attr_agility_gain": 1.9,
+		"vision_day": 1800,
+		"vision_night": 800,
+		"magic_resistance": 25,
+		"is_melee": true,
+		"material": "default",
+		"json_data": {
+			"Model": "models/heroes/mars/mars.vmdl",
+			"IdleExpression": "scenes/mars/mars_exp_idle_01.vcd",
+			"SoundSet": "Hero_Mars",
+			"Enabled": "1",
+			"Role": "Carry,Initiator,Disabler,Durable",
+			"Rolelevels": "1,2,2,3",
+			"Complexity": "1",
+			"Team": "Good",
+			"HeroID": "129",
+			"ModelScale": "0.900000",
+			"LoadoutScale": "0.8",
+			"NameAliases": "mars",
+			"workshop_guide_name": "Mars",
+			"PickSound": "mars_pick",
+			"BanSound": "mars_ban",
+			"CMEnabled": "0",
+			"LastHitChallengeRival": "npc_dota_hero_centaur",
+			"HeroSelectSoundEffect": "Hero_Mars.Pick",
+			"GibType": "default",
+			"Ability1": "mars_spear",
+			"Ability2": "mars_gods_rebuke",
+			"Ability3": "mars_bulwark",
+			"Ability4": "generic_hidden",
+			"Ability5": "generic_hidden",
+			"Ability6": "mars_arena_of_blood",
+			"Ability10": "special_bonus_strength_8",
+			"Ability11": "special_bonus_movement_speed_20",
+			"Ability12": "special_bonus_attack_damage_35",
+			"Ability13": "special_bonus_armor_8",
+			"Ability14": "special_bonus_unique_mars_spear_bonus_damage",
+			"Ability15": "special_bonus_unique_mars_spear_stun_duration",
+			"Ability16": "special_bonus_unique_mars_gods_rebuke_extra_crit",
+			"Ability17": "special_bonus_unique_mars_arena_of_blood_hp_regen",
+			"ArmorPhysical": "0",
+			"AttackCapabilities": "DOTA_UNIT_CAP_MELEE_ATTACK",
+			"AttackDamageMin": "35",
+			"AttackDamageMax": "43",
+			"AttackRate": "1.800000",
+			"AttackAnimationPoint": "0.40000",
+			"AttackSpeedActivityModifiers": {
+				"fast": "140",
+				"faster": "180",
+				"fastest": "230",
+				"super_fast": "300"
+			},
+			"AttackAcquisitionRange": "600",
+			"AttackRange": "250",
+			"AttackRangeActivityModifiers": {
+				"attack_closest_range": "0",
+				"attack_close_range": "90",
+				"attack_medium_range": "150",
+				"attack_long_range": "250"
+			},
+			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
+			"AttributeBaseStrength": "23",
+			"AttributeStrengthGain": "3.600000",
+			"AttributeBaseAgility": "20",
+			"AttributeAgilityGain": "1.900000",
+			"AttributeBaseIntelligence": "17",
+			"AttributeIntelligenceGain": "1.400000",
+			"MovementSpeed": "310",
+			"MovementTurnRate": "0.800000",
+			"HasAggressiveStance": "1",
+			"GameSoundsFile": "soundevents/game_sounds_heroes/game_sounds_mars.vsndevts",
+			"VoiceFile": "soundevents/voscripts/game_sounds_vo_mars.vsndevts",
+			"RenderablePortrait": {},
+			"ItemSlots": {
+				"0": {
+					"SlotIndex": "0",
+					"SlotName": "head",
+					"SlotText": "#LoadoutSlot_Head_Accessory",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "350"
+				},
+				"1": {
+					"SlotIndex": "1",
+					"SlotName": "armor",
+					"SlotText": "#LoadoutSlot_Armor",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "450"
+				},
+				"2": {
+					"SlotIndex": "2",
+					"SlotName": "legs",
+					"SlotText": "#LoadoutSlot_Legs",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "450"
+				},
+				"3": {
+					"SlotIndex": "3",
+					"SlotName": "weapon",
+					"SlotText": "#LoadoutSlot_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
+				},
+				"4": {
+					"SlotIndex": "4",
+					"SlotName": "offhand_weapon",
+					"SlotText": "#LoadoutSlot_Offhand_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "500",
+					"MaxPolygonsLOD1": "350"
+				}
+			},
+			"Bot": {
+				"HeroType": "DOTA_BOT_TANK | DOTA_BOT_SEMI_CARRY",
+				"LaningInfo": {
+					"SoloDesire": "0",
+					"RequiresBabysit": "1",
+					"ProvidesBabysit": "0",
 					"SurvivalRating": "2",
 					"RequiresFarm": "1",
 					"ProvidesSetup": "2",
