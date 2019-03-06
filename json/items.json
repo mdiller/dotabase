@@ -1440,7 +1440,7 @@
 		"quality": "consumable",
 		"icon": "/panorama/images/items/clarity_png.png",
 		"cost": 50,
-		"description": "# Use: Replenish\nGrants **4.5** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nRange: **250**",
+		"description": "# Use: Replenish\nGrants **4.5** mana regeneration to the target for **50** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
 		"lore": "Clear water that enhances the ability to meditate.",
 		"ability_special": [
 			{
@@ -1499,7 +1499,7 @@
 		"quality": "consumable",
 		"icon": "/panorama/images/items/flask_png.png",
 		"cost": 110,
-		"description": "# Use: Salve\nGrants **50** health regeneration to the target for **8** seconds.\n\nIf the unit is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nRange: **250**",
+		"description": "# Use: Salve\nGrants **50** health regeneration to the target for **8** seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nRange: **250**",
 		"lore": "A magical salve that can quickly mend even the deepest of wounds.",
 		"ability_special": [
 			{
@@ -1620,7 +1620,7 @@
 		"icon": "/panorama/images/items/bottle_png.png",
 		"cost": 650,
 		"cooldown": "0.5",
-		"description": "# Active: Regenerate\nConsumes a charge to restore **125** health and **75** mana over **2.5** seconds. If the hero is attacked by an enemy hero, tower, or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle.",
+		"description": "# Active: Regenerate\nConsumes a charge to restore **125** health and **75** mana over **2.5** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle.",
 		"lore": "An old bottle that survived the ages, the contents placed inside become enchanted.",
 		"ability_special": [
 			{
@@ -2768,7 +2768,7 @@
 		"cost": 2150,
 		"cooldown": "90",
 		"mana_cost": "0",
-		"description": "# Active: Transmute\nKills a non-hero target for **180** gold and **1.85**x experience. \n\n Cannot be used on Ancient Creeps.\n\nRange: **600**",
+		"description": "# Active: Transmute\nKills a non-hero target for **160** gold and **1.85**x experience. \n\n Cannot be used on Ancient Creeps.\n\nRange: **600**",
 		"lore": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
 		"ability_special": [
 			{
@@ -2783,7 +2783,7 @@
 			},
 			{
 				"key": "bonus_gold",
-				"value": "180"
+				"value": "160"
 			},
 			{
 				"key": "transmute_cast_range_tooltip",
@@ -2817,7 +2817,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_gold": "180"
+					"bonus_gold": "160"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -3143,6 +3143,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
 			"ShouldBeInitiallySuggested": "1",
+			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -3224,6 +3225,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "wraith band",
 			"ShouldBeInitiallySuggested": "1",
+			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -3304,6 +3306,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "null talisman",
 			"ShouldBeInitiallySuggested": "1",
+			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -8844,12 +8847,12 @@
 		"name": "item_recipe_ancient_janggo",
 		"localized_name": "Drum of Endurance Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 500,
+		"cost": 600,
 		"ability_special": [],
 		"json_data": {
 			"ID": "184",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "500",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_ancient_janggo",
@@ -8866,7 +8869,7 @@
 		"aliases": "drum of endurance",
 		"quality": "rare",
 		"icon": "/panorama/images/items/ancient_janggo_png.png",
-		"cost": 1525,
+		"cost": 1625,
 		"cooldown": "30",
 		"description": "# Active: Endurance\nGives +**35** attack speed and +**13%** movement speed to nearby allies for **6** seconds. \n\nRadius: **1200**",
 		"lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
@@ -8926,7 +8929,7 @@
 			"AbilityCooldown": "30.0",
 			"AbilityCastRange": "1200",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "1525",
+			"ItemCost": "1625",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "drum of endurance",

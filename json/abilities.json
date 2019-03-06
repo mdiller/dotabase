@@ -1667,6 +1667,22 @@
 			{
 				"key": "aftershock_range",
 				"value": "300"
+			},
+			{
+				"key": "scepter_height",
+				"value": "950"
+			},
+			{
+				"key": "scepter_height_arcbuffer",
+				"value": "100"
+			},
+			{
+				"key": "scepter_acceleration_z",
+				"value": "4000"
+			},
+			{
+				"key": "scepter_acceleration_horizontal",
+				"value": "3000"
 			}
 		],
 		"ability_slot": 2,
@@ -1711,6 +1727,22 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"aftershock_range": "300"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"scepter_height": "950"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"scepter_height_arcbuffer": "100"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"scepter_acceleration_z": "4000"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"scepter_acceleration_horizontal": "3000"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -1982,7 +2014,7 @@
 			},
 			{
 				"key": "healing_ward_movespeed_tooltip",
-				"value": "400"
+				"value": "350"
 			},
 			{
 				"key": "healing_ward_duration_tooltip",
@@ -1992,7 +2024,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/juggernaut_healing_ward_png.png",
 		"localized_name": "Healing Ward",
-		"description": "Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at **400** movement speed after being summoned.  Lasts **25** seconds.",
+		"description": "Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at **350** movement speed after being summoned.  Lasts **25** seconds.",
 		"lore": "Of the rituals learned at the Isle of Masks, tending wounds with a bit of voodoo magic has proven to be quite useful.",
 		"note": "The healing ward can be controlled.\nMultiple healing wards do not stack.",
 		"json_data": {
@@ -2015,7 +2047,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"healing_ward_movespeed_tooltip": "400"
+					"healing_ward_movespeed_tooltip": "350"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -2268,7 +2300,7 @@
 		"localized_name": "Tidebringer",
 		"description": "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.",
 		"lore": "A lost Claddish soul inhabits Kunkka's trusty Tidebringer, empowering it to destroy demons of the Cataract.",
-		"note": "Cleave damage is reduced by armor type but not by armor value.\nCleave damage goes through spell immunity.",
+		"note": "Cleave damage goes through spell immunity.",
 		"json_data": {
 			"ID": "5032",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
@@ -2706,7 +2738,7 @@
 				"talent_name": "special_bonus_unique_lina_2",
 				"key": "fiery_soul_attack_speed_bonus",
 				"value": "40 55 70 85",
-				"talent_value": "65 80 95 110",
+				"talent_value": "70 85 100 115",
 				"header": "ATTACK SPEED BONUS:"
 			},
 			{
@@ -4796,7 +4828,7 @@
 			},
 			{
 				"key": "bonus_agility",
-				"value": "9 18 27 36",
+				"value": "11 22 33 44",
 				"header": "BONUS AGILITY:"
 			},
 			{
@@ -4831,7 +4863,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "9 18 27 36"
+					"bonus_agility": "11 22 33 44"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -5629,7 +5661,7 @@
 		"cast_range": "400",
 		"cast_point": "0.3",
 		"channel_time": "2.75 3.5 4.25 5",
-		"cooldown": "10",
+		"cooldown": "16 14 12 10",
 		"mana_cost": "140 150 160 170",
 		"ability_special": [
 			{
@@ -5666,7 +5698,7 @@
 			"AbilityCastRange": "400",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityChannelTime": "2.75 3.5 4.25 5",
-			"AbilityCooldown": "10",
+			"AbilityCooldown": "16 14 12 10",
 			"AbilityManaCost": "140 150 160 170",
 			"AbilitySpecial": {
 				"01": {
@@ -6475,7 +6507,7 @@
 		"cast_point": "0.5",
 		"cooldown": "8 7 6 5",
 		"damage": "75 150 225 300",
-		"mana_cost": "105 120 140 165",
+		"mana_cost": "85 110 135 160",
 		"ability_special": [
 			{
 				"key": "start_radius",
@@ -6514,7 +6546,7 @@
 			"AbilityCastPoint": "0.5",
 			"AbilityCooldown": "8 7 6 5",
 			"AbilityDamage": "75 150 225 300",
-			"AbilityManaCost": "105 120 140 165",
+			"AbilityManaCost": "85 110 135 160",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -6544,7 +6576,7 @@
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_range": "900",
-		"cast_point": "0.5",
+		"cast_point": "0.4",
 		"cooldown": "15 14 13 12",
 		"duration": "3 4 5 6",
 		"mana_cost": "80 90 100 110",
@@ -6573,7 +6605,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_DeathProphet.Silence",
 			"AbilityCastRange": "900",
-			"AbilityCastPoint": "0.5 0.5 0.5 0.5",
+			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "15 14 13 12",
 			"AbilityDuration": "3.0 4.0 5.0 6.0",
 			"AbilityManaCost": "80 90 100 110",
@@ -7175,13 +7207,11 @@
 			},
 			{
 				"key": "electric_vortex_self_slow",
-				"value": "-50%",
-				"header": "SELF SLOW:"
+				"value": "-50"
 			},
 			{
 				"key": "electric_vortex_self_slow_duration",
-				"value": "3",
-				"header": "SELF SLOW DURATION:"
+				"value": "3"
 			},
 			{
 				"talent_name": "special_bonus_unique_storm_spirit",
@@ -7199,7 +7229,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/storm_spirit_electric_vortex_png.png",
 		"localized_name": "Electric Vortex",
-		"description": "A vortex that pulls an enemy unit to Storm Spirit's location, it also slows the Storm Spirit by 50% for 3 seconds.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "A vortex that pulls an enemy unit to Storm Spirit's location.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "Raijin's thunderous, boisterous energy often draws others into an electrifying situation.",
 		"aghanim": "Electric Vortex affects all enemies within a radius around Storm Spirit.",
 		"json_data": {
@@ -9692,7 +9722,7 @@
 		"dispellable": "yes_strong",
 		"cast_range": "800",
 		"cast_point": "0.15",
-		"cooldown": "18 16 14 12",
+		"cooldown": "16 14 12 10",
 		"damage": "0",
 		"mana_cost": "70 85 100 115",
 		"ability_special": [
@@ -9739,7 +9769,7 @@
 			"AbilitySound": "Hero_Windrunner.ShackleshotCast",
 			"AbilityCastRange": "800",
 			"AbilityCastPoint": "0.15",
-			"AbilityCooldown": "18 16 14 12",
+			"AbilityCooldown": "16 14 12 10",
 			"AbilityDamage": "0 0 0 0",
 			"AbilityManaCost": "70 85 100 115",
 			"AbilitySpecial": {
@@ -9976,7 +10006,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "400",
+				"value": "425",
 				"header": "BONUS ATTACK SPEED:"
 			},
 			{
@@ -10007,7 +10037,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/windrunner_focusfire_png.png",
 		"localized_name": "Focus Fire",
-		"description": "Windranger channels the wind to gain **400** additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.  Lasts **20** seconds.\n\nUpgradable by Aghanim's Scepter.",
+		"description": "Windranger channels the wind to gain **425** additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.  Lasts **20** seconds.\n\nUpgradable by Aghanim's Scepter.",
 		"lore": "Lyralei's ability to bombard opponents with a flurry of arrows is unparalleled - even at the expense of accuracy.",
 		"note": "Can target buildings and Spell Immune units.",
 		"aghanim": "Reduces cooldown, decreases damage reduction, and removes debuffs from item effects.",
@@ -10031,7 +10061,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "400"
+					"bonus_attack_speed": "425"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -10309,7 +10339,7 @@
 					"LinkedSpecialBonus": "special_bonus_unique_lich_4"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
 	},
 	{
@@ -10396,7 +10426,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "750",
 			"AbilityCastPoint": "0.3",
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"AbilityCooldown": "100.0 80.0 60.0",
 			"AbilityManaCost": "200 325 500",
 			"AbilityModifierSupportValue": "0.0",
@@ -11824,13 +11854,13 @@
 			},
 			{
 				"key": "charge_restore_time",
-				"value": "55"
+				"value": "50"
 			}
 		],
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/sniper_shrapnel_png.png",
 		"localized_name": "Shrapnel",
-		"description": "Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every **55** seconds.",
+		"description": "Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every **50** seconds.",
 		"lore": "Kardel's modular rifle also fires incendiary rounds, useful for assaulting entrenched locations.",
 		"note": "Damage is dealt 11 times, immediately at spell effect then every second.\nDoes not damage buildings.\nProvides vision in the targeted area.",
 		"json_data": {
@@ -11880,7 +11910,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"charge_restore_time": "55"
+					"charge_restore_time": "50"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -11893,7 +11923,7 @@
 		"behavior": "passive",
 		"damage_type": "physical",
 		"spell_immunity": "no",
-		"damage": "20 50 80 110",
+		"damage": "30 60 90 120",
 		"ability_special": [
 			{
 				"key": "slow_duration",
@@ -11927,7 +11957,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"AbilityDamage": "20 50 80 110",
+			"AbilityDamage": "30 60 90 120",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -13362,7 +13392,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "320 410 500",
+				"value": "340 430 520",
 				"header": "DAMAGE:"
 			},
 			{
@@ -13372,7 +13402,7 @@
 			},
 			{
 				"key": "damage_scepter",
-				"value": "370 480 590",
+				"value": "390 500 610",
 				"header": "SCEPTER DAMAGE:"
 			},
 			{
@@ -13424,7 +13454,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "320 410 500"
+					"damage": "340 430 520"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -13432,7 +13462,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"damage_scepter": "370 480 590"
+					"damage_scepter": "390 500 610"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -14712,7 +14742,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "2"
+					"duration": "2.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -14853,7 +14883,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "20 40 60 80",
+				"value": "25 50 75 100",
 				"header": "BONUS DAMAGE:"
 			},
 			{
@@ -14890,7 +14920,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "20 40 60 80"
+					"bonus_damage": "25 50 75 100"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -15839,12 +15869,12 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "-25% -30% -35% -40%",
+				"value": "-10% -20% -30% -40%",
 				"header": "MOVE SLOW:"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "-25 -30 -35 -40",
+				"value": "-10 -20 -30 -40",
 				"header": "ATTACK SLOW:"
 			}
 		],
@@ -15879,11 +15909,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "-25 -30 -35 -40"
+					"bonus_movement_speed": "-10 -20 -30 -40"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "-25 -30 -35 -40"
+					"bonus_attack_speed": "-10 -20 -30 -40"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -15899,7 +15929,7 @@
 		"cast_range": "900",
 		"cast_point": "0.2",
 		"cooldown": "5",
-		"mana_cost": "75",
+		"mana_cost": "70 80 90 100",
 		"ability_special": [
 			{
 				"key": "damage",
@@ -15939,7 +15969,7 @@
 			"AbilityCastPoint": "0.2",
 			"AbilityCastRange": "900",
 			"AbilityCooldown": "5.0",
-			"AbilityManaCost": "75",
+			"AbilityManaCost": "70 80 90 100",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -16356,7 +16386,7 @@
 		"ability_special": [
 			{
 				"key": "beams",
-				"value": "5 8 11",
+				"value": "6 9 12",
 				"header": "TOTAL BEAMS:"
 			},
 			{
@@ -16429,7 +16459,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"beams": "5 8 11"
+					"beams": "6 9 12"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -18015,12 +18045,8 @@
 				"value": "550"
 			},
 			{
-				"key": "treant_min_dmg_tooltip",
-				"value": "30"
-			},
-			{
-				"key": "treant_max_dmg_tooltip",
-				"value": "34"
+				"key": "treant_dmg_tooltip",
+				"value": "27 30 33 36"
 			},
 			{
 				"key": "treant_hp_bonus",
@@ -18028,7 +18054,7 @@
 			},
 			{
 				"key": "treant_damage_bonus",
-				"value": "36"
+				"value": "27 30 33 36"
 			},
 			{
 				"key": "treant_large_hp_bonus",
@@ -18036,13 +18062,13 @@
 			},
 			{
 				"key": "treant_large_damage_bonus",
-				"value": "108"
+				"value": "81 90 99 108"
 			}
 		],
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/furion_force_of_nature_png.png",
 		"localized_name": "Nature's Call",
-		"description": "Converts an area of trees into Treants. Treants have **550** health and deal **30**-**34** damage.",
+		"description": "Converts an area of trees into Treants. Treants have **550** health and deal **27**/**30**/**33**/**36** damage.",
 		"lore": "Verodicia bestowed the Prophet with the ability to summon the Treant Guard, a mythical sentient army of the wild.",
 		"note": "Nature's Call can only create as many treants as there are trees in the target area.",
 		"json_data": {
@@ -18073,27 +18099,23 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"treant_min_dmg_tooltip": "30"
+					"treant_dmg_tooltip": "27 30 33 36"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"treant_max_dmg_tooltip": "34"
+					"treant_hp_bonus": "550"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"treant_hp_bonus": "550"
+					"treant_damage_bonus": "27 30 33 36"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"treant_damage_bonus": "36"
+					"treant_large_hp_bonus": "1650"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"treant_large_hp_bonus": "1650"
-				},
-				"10": {
-					"var_type": "FIELD_INTEGER",
-					"treant_large_damage_bonus": "108"
+					"treant_large_damage_bonus": "81 90 99 108"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -19518,8 +19540,8 @@
 			{
 				"talent_name": "special_bonus_unique_enchantress_4",
 				"key": "distance_damage_pct",
-				"value": "16% 20% 24%",
-				"talent_value": "24% 28% 32%",
+				"value": "16% 22% 28%",
+				"talent_value": "24% 30% 36%",
 				"header": "DISTANCE DAMAGE:"
 			},
 			{
@@ -19560,7 +19582,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"distance_damage_pct": "16 20 24",
+					"distance_damage_pct": "16 22 28",
 					"LinkedSpecialBonus": "special_bonus_unique_enchantress_4"
 				},
 				"02": {
@@ -23286,7 +23308,7 @@
 			{
 				"key": "level_req",
 				"value": "4 5 6 6",
-				"header": "LEVEL REQUIREMENT:"
+				"header": "CREEP MAX LEVEL:"
 			},
 			{
 				"talent_name": "special_bonus_unique_chen_4",
@@ -24491,7 +24513,7 @@
 			},
 			{
 				"key": "frostbite_duration",
-				"value": "9 10 11",
+				"value": "10 11 12",
 				"header": "FROSTBITTEN DURATION:"
 			},
 			{
@@ -24562,7 +24584,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"frostbite_duration": "9 10 11"
+					"frostbite_duration": "10 11 12"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -25767,7 +25789,7 @@
 		"ability_special": [
 			{
 				"key": "radius",
-				"value": "400 475 550 625",
+				"value": "475 525 575 625",
 				"header": "RADIUS:"
 			},
 			{
@@ -25809,7 +25831,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "400 475 550 625"
+					"radius": "475 525 575 625"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -36327,12 +36349,17 @@
 			{
 				"key": "tree_radius",
 				"value": "200"
+			},
+			{
+				"key": "tool_attack_slow",
+				"value": "10 20 30 40",
+				"header": "ATTACK SPEED SLOW:"
 			}
 		],
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/magnataur_skewer_png.png",
 		"localized_name": "Skewer",
-		"description": "Magnus rushes forward, goring enemy units on his massive tusk.  Heroes hit on the way will be dragged to the destination, then damaged and slowed.",
+		"description": "Magnus rushes forward, goring enemy units on his massive tusk. Heroes hit on the way will be dragged to the destination, then damaged and affected by slowed movement and attack speed.",
 		"lore": "Magnoceros horns are valuable in direct proportion to their danger to prospective merchants.",
 		"note": "Doesn't affect Spell Immune units.",
 		"json_data": {
@@ -36376,6 +36403,10 @@
 				"07": {
 					"var_type": "FIELD_INTEGER",
 					"tree_radius": "200"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"tool_attack_slow": "10 20 30 40"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -40622,15 +40653,15 @@
 			{
 				"talent_name": "special_bonus_unique_abaddon_2",
 				"key": "target_damage",
-				"value": "100 150 200 250",
-				"talent_value": "175 225 275 325",
+				"value": "120 165 210 255",
+				"talent_value": "195 240 285 330",
 				"header": "DAMAGE/HEAL:"
 			},
 			{
 				"talent_name": "special_bonus_unique_abaddon_2",
 				"key": "heal_amount",
-				"value": "100 150 200 250",
-				"talent_value": "175 225 275 325"
+				"value": "120 165 210 255",
+				"talent_value": "195 240 285 330"
 			},
 			{
 				"key": "missile_speed",
@@ -40663,12 +40694,12 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"target_damage": "100 150 200 250",
+					"target_damage": "120 165 210 255",
 					"LinkedSpecialBonus": "special_bonus_unique_abaddon_2"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"heal_amount": "100 150 200 250",
+					"heal_amount": "120 165 210 255",
 					"LinkedSpecialBonus": "special_bonus_unique_abaddon_2"
 				},
 				"04": {
@@ -41146,7 +41177,7 @@
 			},
 			{
 				"key": "damage_creeps",
-				"value": "6 9 12 15",
+				"value": "3 7 11 15",
 				"header": "BONUS DAMAGE (CREEPS):"
 			},
 			{
@@ -41220,7 +41251,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"damage_creeps": "6 9 12 15",
+					"damage_creeps": "3 7 11 15",
 					"CalculateSpellDamageTooltip": "0"
 				},
 				"09": {
@@ -42049,7 +42080,7 @@
 		"spell_immunity": "no",
 		"cast_range": "500",
 		"cast_point": "1",
-		"cooldown": "10",
+		"cooldown": "8",
 		"mana_cost": "120 180 240",
 		"ability_special": [
 			{
@@ -42129,7 +42160,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "1.0",
-			"AbilityCooldown": "10.0 10.0 10.0",
+			"AbilityCooldown": "8",
 			"AbilityManaCost": "120 180 240",
 			"AbilitySpecial": {
 				"01": {
@@ -45091,7 +45122,8 @@
 					"var_type": "FIELD_INTEGER",
 					"lifetime": "180"
 				}
-			}
+			},
+			"AbilityDraftPreAbility": "techies_focused_detonate"
 		}
 	},
 	{
@@ -47837,7 +47869,7 @@
 		"ability_slot": 5,
 		"icon": "/panorama/images/spellicons/monkey_king_mischief_png.png",
 		"localized_name": "Mischief",
-		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants invulnerability for **0.2** upon transforming.",
+		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for **0.2** upon transforming.",
 		"lore": "Watch out for that tree.",
 		"json_data": {
 			"ID": "5719",
@@ -56231,7 +56263,7 @@
 	{
 		"id": 6251,
 		"name": "generic_hidden",
-		"hero_id": 121,
+		"hero_id": 129,
 		"behavior": "hidden|not_learnable",
 		"ability_special": [],
 		"ability_slot": 5,
@@ -57378,7 +57410,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "25"
+				"value": "30"
 			},
 			{
 				"key": "value2",
@@ -57386,7 +57418,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+25/2% Fiery Soul Per Stack",
+		"localized_name": "+30/2% Fiery Soul Per Stack",
 		"json_data": {
 			"ID": "6313",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -57394,7 +57426,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "25"
+					"value": "30"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -60475,6 +60507,104 @@
 		}
 	},
 	{
+		"id": 6495,
+		"name": "mars_gods_rebuke",
+		"hero_id": 129,
+		"behavior": "point|normal_when_stolen",
+		"damage_type": "physical",
+		"target_team": "enemy",
+		"cast_range": "500",
+		"cast_point": "0.2",
+		"cooldown": "16 14 12 10",
+		"mana_cost": "55 60 65 70",
+		"ability_special": [
+			{
+				"talent_name": "special_bonus_unique_mars_gods_rebuke_extra_crit",
+				"key": "crit_mult",
+				"value": "160% 200% 240% 280%",
+				"talent_value": "240% 280% 320% 360%",
+				"header": "CRITICAL DAMAGE:"
+			},
+			{
+				"key": "angle",
+				"value": "140"
+			},
+			{
+				"key": "radius",
+				"value": "500",
+				"header": "DISTANCE:"
+			},
+			{
+				"key": "knockback_duration",
+				"value": "0.3"
+			},
+			{
+				"key": "knockback_distance",
+				"value": "150"
+			},
+			{
+				"key": "activity_duration",
+				"value": "2"
+			},
+			{
+				"key": "bonus_damage_vs_heroes",
+				"value": "25",
+				"header": "BONUS DAMAGE VS HEROES:"
+			}
+		],
+		"ability_slot": 2,
+		"icon": "/panorama/images/spellicons/mars_gods_rebuke_png.png",
+		"localized_name": "God's Rebuke",
+		"description": "Mars smashes enemies in front of him with his shield, knocking them back and damaging them with a critical hit based on his attack. Bonus damage is added when hitting heroes. Has True Strike.",
+		"lore": "There isn't a warrior alive who can stand unmoved by the sting of Mars' rebuke.",
+		"note": "Attack modifiers have a chance to proc on God's Rebuke attacks.",
+		"json_data": {
+			"ID": "6495",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Mars.Shield.Cast",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"AbilityCastRange": "500",
+			"AbilityCastPoint": "0.2",
+			"AbilityCooldown": "16 14 12 10",
+			"AbilityManaCost": "55 60 65 70",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"crit_mult": "160 200 240 280",
+					"LinkedSpecialBonus": "special_bonus_unique_mars_gods_rebuke_extra_crit"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"angle": "140"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"radius": "500"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"knockback_duration": "0.3"
+				},
+				"07": {
+					"var_type": "FIELD_FLOAT",
+					"knockback_distance": "150"
+				},
+				"08": {
+					"var_type": "FIELD_FLOAT",
+					"activity_duration": "2"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage_vs_heroes": "25"
+				}
+			}
+		}
+	},
+	{
 		"id": 6500,
 		"name": "special_bonus_unique_furion_2",
 		"behavior": "passive",
@@ -61824,6 +61954,330 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "60"
+				}
+			}
+		}
+	},
+	{
+		"id": 6582,
+		"name": "mars_bulwark",
+		"hero_id": 129,
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "physical_damage_reduction",
+				"value": "25% 40% 55% 70%",
+				"header": "FRONT REDUCTION:"
+			},
+			{
+				"key": "forward_angle",
+				"value": "140"
+			},
+			{
+				"key": "physical_damage_reduction_side",
+				"value": "12% 20% 27% 35%",
+				"header": "SIDE REDUCTION:"
+			},
+			{
+				"key": "side_angle",
+				"value": "240"
+			}
+		],
+		"ability_slot": 3,
+		"icon": "/panorama/images/spellicons/mars_bulwark_png.png",
+		"localized_name": "Bulwark",
+		"description": "Mars wields his massive shield to block a portion of each physical attack when hit from the front or sides.",
+		"lore": "Only the very foolish dare to fight fair with the god of war.",
+		"json_data": {
+			"ID": "6582",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"physical_damage_reduction": "25 40 55 70"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"forward_angle": "140"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"physical_damage_reduction_side": "12 20 27 35"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"side_angle": "240"
+				}
+			}
+		}
+	},
+	{
+		"id": 6583,
+		"name": "mars_spear",
+		"hero_id": 129,
+		"behavior": "point|directional",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"target_team": "enemy",
+		"dispellable": "yes",
+		"cast_range": "900 1000 1100 1200",
+		"cast_point": "0.25",
+		"cooldown": "14",
+		"mana_cost": "100",
+		"ability_special": [
+			{
+				"talent_name": "special_bonus_unique_mars_spear_bonus_damage",
+				"key": "damage",
+				"value": "100 175 250 325",
+				"talent_value": "300 375 450 525",
+				"header": "DAMAGE:"
+			},
+			{
+				"key": "spear_speed",
+				"value": "1400"
+			},
+			{
+				"key": "spear_width",
+				"value": "125"
+			},
+			{
+				"key": "spear_vision",
+				"value": "500"
+			},
+			{
+				"key": "spear_range",
+				"value": "900 1000 1100 1200",
+				"header": "RANGE:"
+			},
+			{
+				"key": "activity_duration",
+				"value": "1.7"
+			},
+			{
+				"key": "stun_duration",
+				"value": "1.6 2 2.4 2.8",
+				"header": "STUN DURATION:"
+			},
+			{
+				"key": "knockback_duration",
+				"value": "0.25"
+			},
+			{
+				"key": "knockback_distance",
+				"value": "75"
+			}
+		],
+		"ability_slot": 1,
+		"icon": "/panorama/images/spellicons/mars_spear_png.png",
+		"localized_name": "Spear of Mars",
+		"description": "Mars throws his legendary Spear with deadly precision, damaging each enemy unit it strikes. The first enemy hero it hits is skewered on the spear, pushing it back. If a skewered hero hits a tree, building, or cliff, they will be impaled to it and stunned.",
+		"lore": "The legendary Spear of Mars still glows with the heat of the forge god's fires.",
+		"note": "Spear of Mars can hit invisible units.",
+		"json_data": {
+			"ID": "6583",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Mars.Spear.Cast",
+			"AbilityCastPoint": "0.25",
+			"AbilityCastRange": "900 1000 1100 1200",
+			"AbilityCooldown": "14.0",
+			"AbilityManaCost": "100",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"damage": "100 175 250 325",
+					"LinkedSpecialBonus": "special_bonus_unique_mars_spear_bonus_damage"
+				},
+				"02": {
+					"var_type": "FIELD_FLOAT",
+					"spear_speed": "1400"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"spear_width": "125"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"spear_vision": "500"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"spear_range": "900 1000 1100 1200"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"activity_duration": "1.7"
+				},
+				"07": {
+					"var_type": "FIELD_FLOAT",
+					"stun_duration": "1.6 2.0 2.4 2.8"
+				},
+				"08": {
+					"var_type": "FIELD_FLOAT",
+					"knockback_duration": "0.25"
+				},
+				"09": {
+					"var_type": "FIELD_FLOAT",
+					"knockback_distance": "75"
+				}
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5"
+		}
+	},
+	{
+		"id": 6584,
+		"name": "special_bonus_unique_mars_spear_stun_duration",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "1.5"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Spear stun lasts +1.5 seconds",
+		"json_data": {
+			"ID": "6584",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"value": "1.5"
+				}
+			}
+		}
+	},
+	{
+		"id": 6598,
+		"name": "mars_arena_of_blood",
+		"hero_id": 129,
+		"behavior": "point_target|aoe",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"target_team": "enemy",
+		"cast_range": "400",
+		"cast_point": "0.1",
+		"cooldown": "90 75 60",
+		"mana_cost": "200",
+		"ability_special": [
+			{
+				"key": "duration",
+				"value": "5 6 7",
+				"header": "DURATION:"
+			},
+			{
+				"key": "radius",
+				"value": "550",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "width",
+				"value": "100"
+			},
+			{
+				"key": "spear_damage",
+				"value": "150 200 250",
+				"header": "SPEAR DAMAGE:"
+			},
+			{
+				"key": "formation_time",
+				"value": "0.6",
+				"header": "FORMATION TIME:"
+			},
+			{
+				"key": "spear_distance_from_wall",
+				"value": "160"
+			},
+			{
+				"key": "spear_attack_interval",
+				"value": "1"
+			},
+			{
+				"key": "warrior_count",
+				"value": "14"
+			},
+			{
+				"key": "first_warrior_angle",
+				"value": "0"
+			},
+			{
+				"key": "warrior_fade_min_dist",
+				"value": "350"
+			},
+			{
+				"key": "warrior_fade_max_dist",
+				"value": "450"
+			}
+		],
+		"ability_slot": 6,
+		"icon": "/panorama/images/spellicons/mars_arena_of_blood_png.png",
+		"localized_name": "Arena Of Blood",
+		"description": "After a short formation time, Mars summons an arena lined with the undead warriors of the Ash Legion, who block enemy attacks and movement. Enemy heroes near the inside edge of the arena will be attacked by spears, dealing damage and knocking them back.",
+		"lore": "The long-dead members of the Ash Legion, assembled from the finest warriors to ever test the might of Mars, still revel in the thrill of combat, gladly beholden to the hand that fell them for as long as he so commands.",
+		"json_data": {
+			"ID": "6598",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilitySound": "Hero_Mars.ArenaOfBlood.Start",
+			"AbilityCastRange": "400",
+			"AbilityCastPoint": "0.1",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
+			"AbilityCooldown": "90 75 60",
+			"AbilityManaCost": "200",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"duration": "5 6 7"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"radius": "550"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"width": "100"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"spear_damage": "150 200 250"
+				},
+				"05": {
+					"var_type": "FIELD_FLOAT",
+					"formation_time": "0.6"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"spear_distance_from_wall": "160"
+				},
+				"07": {
+					"var_type": "FIELD_FLOAT",
+					"spear_attack_interval": "1.0"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"warrior_count": "14"
+				},
+				"09": {
+					"var_type": "FIELD_FLOAT",
+					"first_warrior_angle": "0.0"
+				},
+				"10": {
+					"var_type": "FIELD_FLOAT",
+					"warrior_fade_min_dist": "350.0"
+				},
+				"11": {
+					"var_type": "FIELD_FLOAT",
+					"warrior_fade_max_dist": "450.0"
 				}
 			}
 		}
@@ -64060,6 +64514,78 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "12"
+				}
+			}
+		}
+	},
+	{
+		"id": 6756,
+		"name": "special_bonus_unique_mars_gods_rebuke_extra_crit",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "80"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "God's Rebuke +80% Crit",
+		"json_data": {
+			"ID": "6756",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "80"
+				}
+			}
+		}
+	},
+	{
+		"id": 6759,
+		"name": "special_bonus_unique_mars_spear_bonus_damage",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "200"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Spear Of Mars +150 Damage",
+		"json_data": {
+			"ID": "6759",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"value": "200"
+				}
+			}
+		}
+	},
+	{
+		"id": 6766,
+		"name": "special_bonus_unique_mars_arena_of_blood_hp_regen",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "100"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Arena Of Blood Grants Team +100 HP Regen",
+		"json_data": {
+			"ID": "6766",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "100"
 				}
 			}
 		}
@@ -70182,7 +70708,7 @@
 			},
 			{
 				"key": "damage_bonus",
-				"value": "12 24 36 48",
+				"value": "8 16 24 32",
 				"header": "ATTACK DAMAGE:"
 			},
 			{
@@ -70194,7 +70720,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/chen_divine_favor_png.png",
 		"localized_name": "Divine Favor",
-		"description": "Provides increased health regeneration, amplifies all health restore by a percentage, and boosts damage. Provides double bonus damage for non-hero targets.",
+		"description": "Provides increased health regeneration, amplifies all health restore by a percentage, and boosts damage. Provides triple bonus damage for non-hero targets.",
 		"json_data": {
 			"ID": "7306",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -70218,7 +70744,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_bonus": "12 24 36 48"
+					"damage_bonus": "8 16 24 32"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -70248,7 +70774,7 @@
 			},
 			{
 				"key": "slow",
-				"value": "40%",
+				"value": "35%",
 				"header": "SLOW:"
 			}
 		],
@@ -70272,7 +70798,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"slow": "40"
+					"slow": "35"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -71089,7 +71615,7 @@
 					"cast_range_tooltip": "500 525 550 575"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
 		}
 	},
 	{
@@ -71617,6 +72143,30 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "1"
+				}
+			}
+		}
+	},
+	{
+		"id": 7401,
+		"name": "special_bonus_spell_amplify_14",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "14"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "+14% Spell Amplification",
+		"json_data": {
+			"ID": "7401",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "14"
 				}
 			}
 		}
