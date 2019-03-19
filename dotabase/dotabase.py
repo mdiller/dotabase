@@ -135,6 +135,7 @@ class Voice(Base):
 	media_name = Column(String)
 	voice_actor = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	criteria = Column(String)
 
 	hero = relationship("Hero", back_populates="voice")
 	responses = relationship("Response", back_populates="voice")
