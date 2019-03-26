@@ -10108,7 +10108,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/rod_of_atos_png.png",
 		"cost": 2750,
-		"cooldown": "16",
+		"cooldown": "18",
 		"mana_cost": "50",
 		"description": "# Active: Cripple\nRoots the target for **2** seconds.\n\nRange: **1150**",
 		"lore": "Atos, the Lord of Blight, has his essence stored in this deceptively simple wand.",
@@ -10147,8 +10147,8 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"AbilityCooldown": "16",
-			"AbilityCastRange": "1150",
+			"AbilityCooldown": "18",
+			"AbilityCastRange": "1100",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "50",
 			"ItemCost": "2750",
@@ -11519,7 +11519,7 @@
 		"icon": "/panorama/images/items/solar_crest_png.png",
 		"cost": 3875,
 		"cooldown": "7",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **12** armor, **70** attack speed, and **10%** movement speed. When cast on an enemy, removes **12** armor, **70** attack speed, and **10%** movement speed.\n\nRemoves the armor from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **12** armor, **80** attack speed, and **10%** movement speed. When cast on an enemy, removes **12** armor, **80** attack speed, and **10%** movement speed.\n\nRemoves the armor from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"ability_special": [
 			{
@@ -11552,7 +11552,7 @@
 			},
 			{
 				"key": "target_attack_speed",
-				"value": "70"
+				"value": "80"
 			},
 			{
 				"key": "duration",
@@ -11604,7 +11604,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"target_attack_speed": "70"
+					"target_attack_speed": "80"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -11622,12 +11622,12 @@
 		"name": "item_recipe_guardian_greaves",
 		"localized_name": "Guardian Greaves Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1700,
+		"cost": 1800,
 		"ability_special": [],
 		"json_data": {
 			"ID": "230",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1700",
+			"ItemCost": "1800",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_guardian_greaves",
@@ -11643,7 +11643,7 @@
 		"aliases": "guardian greaves",
 		"quality": "rare",
 		"icon": "/panorama/images/items/guardian_greaves_png.png",
-		"cost": 5375,
+		"cost": 5475,
 		"cooldown": "40",
 		"mana_cost": "0",
 		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **4.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **15** armor.\nMovement speed bonuses from multiple pairs of boots do not stack.",
@@ -11717,7 +11717,7 @@
 			"AbilityCooldown": "40",
 			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
-			"ItemCost": "5375",
+			"ItemCost": "5475",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "guardian greaves",
@@ -13109,12 +13109,12 @@
 		"name": "item_recipe_aeon_disk",
 		"localized_name": "Aeon Disk Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1250,
+		"cost": 1100,
 		"ability_special": [],
 		"json_data": {
 			"ID": "255",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1250",
+			"ItemCost": "1100",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_aeon_disk",
@@ -13130,7 +13130,7 @@
 		"aliases": "ad|aeon disk",
 		"quality": "epic",
 		"icon": "/panorama/images/items/aeon_disk_png.png",
-		"cost": 3250,
+		"cost": 3100,
 		"cooldown": "115",
 		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that provides +**75%** Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage.",
 		"ability_special": [
@@ -13163,7 +13163,7 @@
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "115.0",
-			"ItemCost": "3250",
+			"ItemCost": "3100",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "ad;aeon disk",
