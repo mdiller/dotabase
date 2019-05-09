@@ -2249,6 +2249,14 @@
 		"required": true
 	},
 	{
+		"name": "IsJungleAxeLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "jungle_axe_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsAxeTauntComeAndGetIt",
 		"matchkey": "taunt_type",
 		"matchvalue": "come_get_it",
@@ -2266,6 +2274,13 @@
 		"name": "IsAxeTauntComeAtMeBro",
 		"matchkey": "taunt_type",
 		"matchvalue": "come_at_me",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsJungleAxe",
+		"matchkey": "customresponse",
+		"matchvalue": "jungle_axe",
 		"weight": 5.0,
 		"required": true
 	},
@@ -3587,7 +3602,7 @@
 		"name": "IsMegaEchoSlam",
 		"pretty": "IsMegaEchoSlam",
 		"matchkey": "echoslam_count",
-		"matchvalue": ">=5",
+		"matchvalue": ">=3",
 		"weight": 5.0,
 		"required": true
 	},
@@ -3595,7 +3610,7 @@
 		"name": "IsGoodEchoSlam",
 		"pretty": "IsGoodEchoSlam",
 		"matchkey": "echoslam_count",
-		"matchvalue": ">1,<=3",
+		"matchvalue": ">1,<=2",
 		"weight": 5.0,
 		"required": true
 	},
@@ -3628,6 +3643,37 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "earth_shaker_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEarthShakerArcLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "earth_shaker_arc_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEarthCosmos",
+		"matchkey": "customresponse",
+		"matchvalue": "eartharc_cosmos",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTotesIn",
+		"pretty": "IsTotesIn",
+		"matchkey": "enchant_totem_leap_type",
+		"matchvalue": "leaping_in",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTotesOut",
+		"pretty": "IsTotesOut",
+		"matchkey": "enchant_totem_leap_type",
+		"matchvalue": "leaping_out",
 		"weight": 5.0,
 		"required": true
 	},
@@ -10408,6 +10454,14 @@
 		"required": true
 	},
 	{
+		"name": "IsFullStereoBroadcast",
+		"pretty": "IsFullStereoBroadcast",
+		"matchkey": "full_stereo_broadcast",
+		"matchvalue": "1",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsEmoteLaugh",
 		"matchkey": "emote",
 		"matchvalue": "laugh",
@@ -12706,6 +12760,38 @@
 		"pretty": "IsOneVsOne",
 		"matchkey": "announce_gamemode",
 		"matchvalue": "21",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTeamAhead",
+		"pretty": "IsTeamAhead",
+		"matchkey": "game_performance",
+		"matchvalue": "team_balance_ahead",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTeamBehind",
+		"pretty": "IsTeamBehind",
+		"matchkey": "game_performance",
+		"matchvalue": "team_balance_behind",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "HasTeamGottenAhead",
+		"pretty": "HasTeamGottenAhead",
+		"matchkey": "game_performance",
+		"matchvalue": "team_balance_change_ahead",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "HasTeamGottenBehind",
+		"pretty": "HasTeamGottenBehind",
+		"matchkey": "game_performance",
+		"matchvalue": "team_balance_change_behind",
 		"weight": 5.0,
 		"required": true
 	},
@@ -15739,6 +15825,13 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "tiny_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTinyRollingStone",
+		"matchkey": "taunt_type",
+		"matchvalue": "rolling_stone",
 		"weight": 5.0,
 		"required": true
 	},
