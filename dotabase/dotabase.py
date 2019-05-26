@@ -33,7 +33,9 @@ class Hero(Base):
 
 	team = Column(String)
 	base_health_regen = Column(Float)
+	base_mana_regen = Column(Float)
 	base_movement = Column(Integer)
+	base_attack_speed = Column(Integer)
 	turn_rate = Column(Float)
 	base_armor = Column(Integer)
 	attack_range = Column(Integer)
