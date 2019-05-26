@@ -982,7 +982,6 @@
 			"ItemCost": "300",
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"ItemAliases": "ror",
 			"ShouldBeInitiallySuggested": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
@@ -1020,7 +1019,6 @@
 			"ItemShopTags": "regen_mana",
 			"ItemQuality": "component",
 			"ItemAliases": "sage's mask",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"ShouldBeInitiallySuggested": "1",
 			"AbilitySpecial": {
 				"01": {
@@ -1700,7 +1698,7 @@
 		"aliases": "observer ward",
 		"quality": "consumable",
 		"icon": "/panorama/images/items/ward_observer_png.png",
-		"cost": 75,
+		"cost": 50,
 		"cooldown": "1",
 		"description": "# Use: Plant\nPlants an Observer Ward, an invisible watcher that gives ground vision in a **1600** radius to your team. Lasts **6** minutes.\n\nHold Control to give one Observer Ward to an allied hero.\n\nRange: **500**",
 		"lore": "A form of half-sentient plant, often cultivated by apprentice wizards.",
@@ -1736,7 +1734,7 @@
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "1.0",
-			"ItemCost": "75",
+			"ItemCost": "50",
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "observer ward",
@@ -1782,7 +1780,7 @@
 		"aliases": "sentry ward",
 		"quality": "consumable",
 		"icon": "/panorama/images/items/ward_sentry_png.png",
-		"cost": 100,
+		"cost": 75,
 		"cooldown": "1",
 		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **1000** radius.\nLasts **6** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.\n\nRange: **500**",
 		"lore": "A form of plant originally grown in the garden of a fearful king.",
@@ -1822,7 +1820,7 @@
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "1.0",
-			"ItemCost": "100",
+			"ItemCost": "75",
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "sentry ward",
@@ -1830,6 +1828,9 @@
 			"ItemShareability": "ITEM_FULLY_SHAREABLE_STACKING",
 			"ItemPermanent": "0",
 			"ItemInitialCharges": "1",
+			"ItemStockMax": "10",
+			"ItemStockInitial": "4",
+			"ItemStockTime": "70.0",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0",
@@ -2459,7 +2460,6 @@
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
 			"ItemAliases": "roh;ring of health",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"SecretShop": "1",
 			"GlobalShop": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
@@ -2497,7 +2497,6 @@
 			"ItemShopTags": "regen_mana",
 			"ItemQuality": "component",
 			"ItemAliases": "void stone",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"SecretShop": "1",
 			"SideShop": "1",
 			"GlobalShop": "1",
@@ -2957,7 +2956,6 @@
 			"ItemQuality": "common",
 			"ItemAliases": "perseverance",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -3212,7 +3210,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "6",
+				"value": "5",
 				"header": "+",
 				"footer": "Attack Speed"
 			}
@@ -3241,7 +3239,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "6"
+					"bonus_attack_speed": "5"
 				}
 			}
 		}
@@ -3356,7 +3354,7 @@
 		"cost": 2275,
 		"cooldown": "65",
 		"mana_cost": "225",
-		"description": "# Active: Restore\nHeals **275** health and gives +**2** armor to allied units in a **1200** radius.\n\n# Passive: Mekansm Aura\nGrants **4.5** health regeneration to allied units in a **1200** radius.",
+		"description": "# Active: Restore\nHeals **275** health and gives +**2** armor to allied units in a **1200** radius.\n\n# Passive: Mekansm Aura\nGrants **3.5** health regeneration to allied units in a **1200** radius.",
 		"lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
 		"ability_special": [
 			{
@@ -3377,7 +3375,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "4.5"
+				"value": "3.5"
 			},
 			{
 				"key": "heal_amount",
@@ -3425,7 +3423,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "4.5"
+					"aura_health_regen": "3.5"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -3473,12 +3471,12 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/vladmir_png.png",
 		"cost": 1925,
-		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **1.75** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **1200**",
+		"description": "# Passive: Vladmir's Aura\nGrants lifesteal (**15%** for melee heroes, **10%** for ranged), **1.5** mana regeneration, **15%** bonus attack damage, and **4** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"ability_special": [
 			{
 				"key": "mana_regen_aura",
-				"value": "1.75"
+				"value": "1.5"
 			},
 			{
 				"key": "armor_aura",
@@ -3514,7 +3512,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen_aura": "1.75"
+					"mana_regen_aura": "1.5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -3762,7 +3760,7 @@
 		"cost": 3025,
 		"cooldown": "60",
 		"mana_cost": "100",
-		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n# Passive: Insight Aura\nGives allied units **3** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
+		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n# Passive: Insight Aura\nGives allied units **2** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"ability_special": [
 			{
@@ -3787,7 +3785,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "3"
+				"value": "2"
 			},
 			{
 				"key": "magic_resistance_aura",
@@ -3853,7 +3851,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"aura_health_regen": "3"
+					"aura_health_regen": "2"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -7614,7 +7612,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/skadi_png.png",
 		"cost": 5500,
-		"description": "# Passive: Cold Attack\nAttacks lower enemy attack speed by **-45** and movement speed by **-35%**. \n\nLasts **5** seconds when used by melee heroes, and **2.5** seconds when used by ranged.",
+		"description": "# Passive: Cold Attack\nAttacks lower enemy movement and attack speed for **3** seconds. Slows enemy ranged units by **-45%** movement speed and by **-45** attack speed. Slows enemy melee units by **-20%** movement speed and by **-20** attack speed. ",
 		"lore": "Extremely rare artifact, guarded by the azure dragons.",
 		"ability_special": [
 			{
@@ -7636,20 +7634,16 @@
 				"footer": "Mana"
 			},
 			{
-				"key": "cold_movement_speed",
-				"value": "-35"
+				"key": "cold_slow_melee",
+				"value": "-20"
 			},
 			{
-				"key": "cold_attack_speed",
+				"key": "cold_slow_ranged",
 				"value": "-45"
 			},
 			{
-				"key": "cold_duration_melee",
-				"value": "5"
-			},
-			{
-				"key": "cold_duration_ranged",
-				"value": "2.5"
+				"key": "cold_duration",
+				"value": "3"
 			}
 		],
 		"json_data": {
@@ -7676,19 +7670,15 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"cold_movement_speed": "-35"
+					"cold_slow_melee": "-20"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"cold_attack_speed": "-45"
+					"cold_slow_ranged": "-45"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"cold_duration_melee": "5.0"
-				},
-				"07": {
-					"var_type": "FIELD_FLOAT",
-					"cold_duration_ranged": "2.5"
+					"cold_duration": "3.0"
 				}
 			}
 		}
@@ -7770,11 +7760,11 @@
 		"name": "item_recipe_helm_of_the_dominator",
 		"localized_name": "Helm of the Dominator Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
+		"cost": 300,
 		"ability_special": [],
 		"json_data": {
 			"ID": "163",
-			"ItemCost": "0",
+			"ItemCost": "300",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_helm_of_the_dominator",
@@ -7790,7 +7780,7 @@
 		"aliases": "hotd|helm of the dominator",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/helm_of_the_dominator_png.png",
-		"cost": 1875,
+		"cost": 2175,
 		"cooldown": "60",
 		"mana_cost": "0",
 		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**.\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**\n\n# Passive: Dominator Aura\nIncreases nearby allies' attack speed by **20** and health regen by **8.5**.\n\nRadius: **1200**",
@@ -7841,7 +7831,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "60.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "1875",
+			"ItemCost": "2175",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hotd;helm of the dominator",
@@ -8155,7 +8145,7 @@
 		"cost": 1775,
 		"cooldown": "22",
 		"mana_cost": "25",
-		"description": "# Active: Berserk\nGives **110** attack speed and **25** movement speed, but reduces your armor by **8** and silences you.  Lasts **8** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **20%** of attack damage dealt.",
+		"description": "# Active: Berserk\nGives **110** attack speed and **30** movement speed, but reduces your armor by **8** and silences you.  Lasts **8** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **20%** of attack damage dealt.",
 		"lore": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force.",
 		"ability_special": [
 			{
@@ -8180,7 +8170,7 @@
 			},
 			{
 				"key": "berserk_bonus_movement_speed",
-				"value": "25"
+				"value": "30"
 			},
 			{
 				"key": "berserk_armor_reduction",
@@ -8224,7 +8214,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"berserk_bonus_movement_speed": "25"
+					"berserk_bonus_movement_speed": "30"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -8894,7 +8884,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.5",
+				"value": "1.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -8953,7 +8943,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.5"
+					"bonus_mana_regen": "1.25"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -10121,13 +10111,13 @@
 			},
 			{
 				"key": "bonus_strength",
-				"value": "12",
+				"value": "10",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "12",
+				"value": "10",
 				"header": "+",
 				"footer": "Agility"
 			},
@@ -10164,11 +10154,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "12"
+					"bonus_strength": "10"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "12"
+					"bonus_agility": "10"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -10873,7 +10863,7 @@
 		"aliases": "ward",
 		"quality": "common",
 		"icon": "/panorama/images/items/ward_dispenser_png.png",
-		"cost": 175,
+		"cost": 125,
 		"cooldown": "0",
 		"description": "# Use: Plant\nPlant the currently active ward.  Double-Click to switch the currently active ward.\n\nRange: **500**",
 		"lore": "Advancements in stacking efficiency have made wards easier to carry than ever.",
@@ -10933,7 +10923,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
-			"ItemCost": "175",
+			"ItemCost": "125",
 			"ItemQuality": "common",
 			"ItemAliases": "ward",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE_STACKING",
@@ -11646,7 +11636,7 @@
 		"cost": 5475,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **4.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **15** armor.\nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **300** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nProvides nearby allies with **3.5** health regeneration and **2** bonus armor. If an allied hero's health falls below **20%**, they receive **16** health regeneration and **10** armor.\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"ability_special": [
 			{
@@ -11675,7 +11665,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "4.5"
+				"value": "3.5"
 			},
 			{
 				"key": "aura_armor",
@@ -11687,7 +11677,7 @@
 			},
 			{
 				"key": "aura_armor_bonus",
-				"value": "15"
+				"value": "10"
 			},
 			{
 				"key": "aura_bonus_threshold",
@@ -11743,7 +11733,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "4.5"
+					"aura_health_regen": "3.5"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -11755,7 +11745,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"aura_armor_bonus": "15"
+					"aura_armor_bonus": "10"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
@@ -13201,8 +13191,8 @@
 		"quality": "consumable",
 		"icon": "/panorama/images/items/tome_of_knowledge_png.png",
 		"cost": 150,
-		"cooldown": "0",
-		"description": "# Use: Enlighten\nGrants you **700** experience plus **135** per tome consumed by your team.\n\nTomes Used By Team: %customval_team_tomes_used%",
+		"cooldown": "300",
+		"description": "# Use: Enlighten\nGrants you **700** experience plus **135** per tome consumed by your team after the first two.\n\nTomes Used By Team: %customval_team_tomes_used%",
 		"lore": "That which raises beast to man and man to god.",
 		"ability_special": [
 			{
@@ -13218,13 +13208,14 @@
 			"ID": "257",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "0.0",
+			"AbilityCooldown": "300.0",
 			"ItemCost": "150",
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "tome of knowledge",
-			"ItemStackable": "1",
+			"ItemStackable": "0",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
+			"AbilitySharedCooldown": "tome",
 			"ItemPermanent": "0",
 			"ItemInitialCharges": "1",
 			"ItemDisplayCharges": "1",
@@ -13232,6 +13223,7 @@
 			"ItemStockInitial": "0",
 			"ItemStockTime": "600.0",
 			"ItemInitialStockTime": "690.0",
+			"BonusDelayedStockCount": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0",
@@ -13654,7 +13646,7 @@
 		"icon": "/panorama/images/items/spirit_vessel_png.png",
 		"cost": 2975,
 		"cooldown": "7",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **5%** of current health per second, and reduces HP regeneration and healing by **70%**. Deals **25** damage per second. \n\nWhen used on allies, it provides **30** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration and healing by **60%**. Deals **25** damage per second. \n\nWhen used on allies, it provides **30** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950** ",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -13716,11 +13708,11 @@
 			},
 			{
 				"key": "hp_regen_reduction_enemy",
-				"value": "70"
+				"value": "60"
 			},
 			{
 				"key": "enemy_hp_drain",
-				"value": "5"
+				"value": "4"
 			}
 		],
 		"json_data": {
@@ -13792,11 +13784,11 @@
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"hp_regen_reduction_enemy": "70"
+					"hp_regen_reduction_enemy": "60"
 				},
 				"14": {
 					"var_type": "FIELD_FLOAT",
-					"enemy_hp_drain": "5"
+					"enemy_hp_drain": "4"
 				}
 			}
 		}
@@ -13892,6 +13884,44 @@
 					"heal_increase": "25"
 				}
 			}
+		}
+	},
+	{
+		"id": 270,
+		"name": "item_recipe_ultimate_scepter_2",
+		"localized_name": "item_recipe_ultimate_scepter_2",
+		"icon": "/panorama/images/items/recipe.png",
+		"cost": 2000,
+		"ability_special": [],
+		"json_data": {
+			"ID": "270",
+			"ItemCost": "2000",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_ultimate_scepter_2",
+			"ItemRequirements": {
+				"01": "item_ultimate_scepter"
+			}
+		}
+	},
+	{
+		"id": 271,
+		"name": "item_ultimate_scepter_2",
+		"localized_name": "Aghanim's Scepter (Consumable)",
+		"aliases": "ags|ultimate|aghanim's scepter|ags",
+		"quality": "rare",
+		"icon": "/panorama/images/items/ultimate_scepter_2_png.png",
+		"cost": 6200,
+		"description": "# Passive: Ultimate Upgrade\nUpgrades the ultimate, and some abilities, of certain heroes.",
+		"lore": "The scepter of a wizard with demigod-like powers.",
+		"ability_special": [],
+		"json_data": {
+			"ID": "271",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ItemCost": "6200",
+			"ItemShopTags": "int;str;agi;mana_pool;health_pool;hard_to_tag",
+			"ItemQuality": "rare",
+			"ItemAliases": "ags;ultimate;aghanim's scepter;ags"
 		}
 	},
 	{
@@ -14148,7 +14178,6 @@
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
 			"ItemAliases": "rot",
-			"ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
 			"ShouldBeInitiallySuggested": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
