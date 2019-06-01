@@ -6,14 +6,15 @@ from os import path
 
 
 # Get the long description from the README file
-with open(path.join(path.abspath(path.dirname(__file__)), 'README.rst'), encoding='utf-8') as f:
+with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding='utf-8') as f:
 	long_description = f.read()
 
 setup(
 	name='dotabase',
-	version='4.7.3',
+	version='4.7.4',
 	description='Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper',
 	long_description=long_description,
+	long_description_content_type='text/markdown',
 	author='Malcolm Diller',
 	author_email='malcolm@dillerm.io',
 	url='https://github.com/mdiller/dotabase',
