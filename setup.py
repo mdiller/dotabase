@@ -18,9 +18,11 @@ setup(
 	author='Malcolm Diller',
 	author_email='malcolm@dillerm.io',
 	url='https://github.com/mdiller/dotabase',
-	license='MIT',
 	keywords='dota dota2 data sqlite',
 	include_package_data=True,
 	packages=['dotabase'],
 	install_requires=['sqlalchemy'],
+        classifiers=[
+            'License :: OSI Approved :: MIT License'
+        ],
 )
