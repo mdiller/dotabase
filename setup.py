@@ -11,16 +11,18 @@ with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
 
 setup(
 	name='dotabase',
-	version='4.7.5',
+	version='4.8.0',
 	description='Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
 	author='Malcolm Diller',
 	author_email='malcolm@dillerm.io',
 	url='https://github.com/mdiller/dotabase',
-	license='MIT',
 	keywords='dota dota2 data sqlite',
 	include_package_data=True,
 	packages=['dotabase'],
 	install_requires=['sqlalchemy'],
+	classifiers=[
+		'License :: OSI Approved :: MIT License'
+	],
 )
