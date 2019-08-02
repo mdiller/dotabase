@@ -1,7 +1,7 @@
 # Dotabase
 
 [![PyPi](https://img.shields.io/pypi/v/dotabase.svg)](https://pypi.org/project/dotabase/)
-[![Dota Version](https://img.shields.io/badge/dota-version%207.22e-e05d44.svg)](http://www.dota2.com/)
+[![Dota Version](https://img.shields.io/badge/dota-version%207.22f -e05d44.svg)](http://www.dota2.com/)
 
 An sqlite database representing much of the data from dota2's game files, and an sqlalchemy representation to be used with it. This was built using my [dotabase-builder](https://github.com/mdiller/dotabase-builder) project.
 
