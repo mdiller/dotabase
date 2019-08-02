@@ -4785,6 +4785,28 @@
 		"required": true
 	},
 	{
+		"name": "IsKidvoker",
+		"matchkey": "customresponse",
+		"matchvalue": "kid_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsKidvokerLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "kidvoker_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsOldvoker",
+		"matchkey": "customresponse",
+		"matchvalue": "!=kid_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "Isjakiro",
 		"matchkey": "classname",
 		"matchvalue": "npc_dota_hero_jakiro",
@@ -10984,6 +11006,14 @@
 		"pretty": "Eul's Scepter of Divinity",
 		"matchkey": "itemname",
 		"matchvalue": "item_cyclone",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsFaerieFire",
+		"pretty": "Faerie Fire",
+		"matchkey": "itemname",
+		"matchvalue": "item_faerie_fire",
 		"weight": 1.0,
 		"required": true
 	},
