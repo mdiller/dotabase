@@ -4238,7 +4238,7 @@
 		"id": 98,
 		"name": "item_orchid",
 		"localized_name": "Orchid Malevolence",
-		"aliases": "orchid malevolence",
+		"aliases": "orchid malevolence|silence",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orchid_png.png",
 		"cost": 4075,
@@ -4299,7 +4299,7 @@
 			"ItemCost": "4075",
 			"ItemShopTags": "int;attack_speed;damage;regen_mana;damage;hard_to_tag",
 			"ItemQuality": "rare",
-			"ItemAliases": "orchid malevolence",
+			"ItemAliases": "orchid malevolence;silence",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilitySpecial": {
@@ -5469,7 +5469,7 @@
 		"icon": "/panorama/images/items/bloodstone_png.png",
 		"cost": 4900,
 		"cooldown": "250",
-		"description": "# Active: Bloodpact\nConverts **30%** of your max mana to health regeneration over **2** seconds.\n \n# Passive: Mana Battery\nEach charge provides **0.3** HP and MP regen. Nearby kills provide **1** charges. Dying causes you to lose **3** charges. Starts with **14** charges.",
+		"description": "# Active: Bloodpact\nConverts **30%** of your max mana to health regeneration over **2** seconds.\n \n# Passive: Mana Battery\nEach charge provides **0.3** HP and MP regen. Nearby kills provide **1** charges. Dying causes you to lose **3** charges. Starts with **14** charges. Provides **200%** Mana Regeneration.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"ability_special": [
 			{
@@ -5498,8 +5498,7 @@
 			},
 			{
 				"key": "mana_regen_multiplier",
-				"value": "200%",
-				"header": "+Mana Regeneration"
+				"value": "200"
 			},
 			{
 				"key": "regen_per_charge",
@@ -7817,7 +7816,7 @@
 				"value": "700"
 			},
 			{
-				"key": "tooltip_bounty",
+				"key": "bounty_gold",
 				"value": "200"
 			}
 		],
@@ -7867,7 +7866,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_bounty": "200"
+					"bounty_gold": "200"
 				}
 			}
 		}
@@ -8996,7 +8995,7 @@
 		"icon": "/panorama/images/items/medallion_of_courage_png.png",
 		"cost": 1175,
 		"cooldown": "7",
-		"description": "# Active: Valor\nIf cast on an ally, grants them the **7** armor, and removing it from the caster. \n\nIf cast on an enemy, reduces **7** armor on both the enemy and the caster. \n\nCannot target magic immune enemies.\n\nRange: **1000**",
+		"description": "# Active: Valor\nIf cast on an ally, grants them the **7** armor, and removing it from the caster. \n\nIf cast on an enemy, reduces **7** armor on both the enemy and the caster. \n\nCannot target spell immune enemies.\n\nRange: **1000**",
 		"lore": "The bearer has no fear of combat.",
 		"ability_special": [
 			{
@@ -11509,7 +11508,7 @@
 		"icon": "/panorama/images/items/solar_crest_png.png",
 		"cost": 3875,
 		"cooldown": "7",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **12** armor, **80** attack speed, and **10%** movement speed. When cast on an enemy, removes **12** armor, **80** attack speed, and **10%** movement speed.\n\nRemoves the armor from the caster when used. \n\n Cannot target magic immune enemies.\n\nRange: **1000**",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **12** armor, **80** attack speed, and **10%** movement speed. When cast on an enemy, removes **12** armor, **80** attack speed, and **10%** movement speed.\n\nRemoves the armor from the caster when used. \n\n Cannot target spell immune enemies.\n\nRange: **1000**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"ability_special": [
 			{
@@ -13206,7 +13205,7 @@
 		],
 		"json_data": {
 			"ID": "257",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "300.0",
 			"ItemCost": "150",

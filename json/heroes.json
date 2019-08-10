@@ -8321,7 +8321,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_warlock_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_warlock_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_warlock_png.png",
-		"talents": "+4% Fatal Bonds Damage|+150 Cast Range|+60% XP Gain|-7s Shadow Word Cooldown|Summons a Golem on death|300 Shadow Word AoE|+25 Chaotic Offering Golems Armor|Magic Immunity for Chaotic Offering Golems",
+		"talents": "+4% Fatal Bonds Damage|+150 Cast Range|+60% XP Gain|-7s Shadow Word Cooldown|Summons a Golem on death|300 Shadow Word AoE|+25 Chaotic Offering Golems Armor|Spell Immunity for Chaotic Offering Golems",
 		"color": "#f9362f",
 		"team": "Bad",
 		"base_mana_regen": 0.0,
@@ -9889,7 +9889,7 @@
 		"image": "/panorama/images/heroes/npc_dota_hero_phantom_assassin_png.png",
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_phantom_assassin_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_phantom_assassin_png.png",
-		"talents": "+225 Health|+15 Damage|15% Lifesteal|+25% Cleave|-4 Armor Corruption|+25% Blur Evasion|+10% Coup de Grace|Triple Strike Stifling Dagger",
+		"talents": "+225 Health|+15 Damage|15% Lifesteal|+25% Cleave|-4 Armor Corruption|+25% Blur Evasion|+10% Coup de Grace chance|Triple Strike Stifling Dagger",
 		"color": "#68b0ad",
 		"team": "Bad",
 		"base_health_regen": 0.25,
@@ -12532,6 +12532,7 @@
 			"MovementSpeed": "290",
 			"MovementTurnRate": "0.50000",
 			"BoundsHullName": "DOTA_HULL_SIZE_HERO",
+			"HealthBarOffset": "170",
 			"VoiceFile": "soundevents/voscripts/game_sounds_vo_clinkz.vsndevts",
 			"particle_folder": "particles/units/heroes/hero_clinkz",
 			"GameSoundsFile": "soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts",
@@ -12594,11 +12595,24 @@
 				},
 				"6": {
 					"SlotIndex": "6",
-					"SlotName": "taunt",
-					"SlotText": "#LoadoutSlot_Taunt"
+					"SlotName": "summon",
+					"SlotText": "#LoadoutSlot_Clinkz_Army",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "4000",
+					"MaxPolygonsLOD1": "2000",
+					"no_import": "1",
+					"GeneratesUnits": {
+						"0": "npc_dota_clinkz_skeleton_archer"
+					}
 				},
 				"7": {
 					"SlotIndex": "7",
+					"SlotName": "taunt",
+					"SlotText": "#LoadoutSlot_Taunt"
+				},
+				"8": {
+					"SlotIndex": "8",
 					"SlotName": "ambient_effects",
 					"SlotText": "#LoadoutSlot_Ambient_Effects",
 					"DisplayInLoadout": "0"
@@ -23032,6 +23046,7 @@
 			"MovementSpeed": "280",
 			"MovementTurnRate": "1.000000",
 			"BoundsHullName": "DOTA_HULL_SIZE_HERO",
+			"HealthBarOffset": "250",
 			"particle_folder": "particles/units/heroes/hero_phoenix",
 			"GameSoundsFile": "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts",
 			"VoiceFile": "soundevents/voscripts/game_sounds_vo_phoenix.vsndevts",
