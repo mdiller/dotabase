@@ -11,7 +11,7 @@ with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
 
 setup(
 	name='dotabase',
-	version='4.8.3',
+	version='4.8.4',
 	description='Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
