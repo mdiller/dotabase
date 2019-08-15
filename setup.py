@@ -9,9 +9,12 @@ from os import path
 with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
 	long_description = f.read()
 
+with open(path.join(path.dirname(__file__), 'VERSION')) as f:
+	version = f.read().strip()
+
 setup(
 	name='dotabase',
-	version='4.8.5',
+	version=version,
 	description='Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
