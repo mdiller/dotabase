@@ -115,6 +115,7 @@ class Item(Base):
 	icon = Column(String)
 	cost = Column(Integer)
 	cooldown = Column(String)
+	cast_range = Column(String)
 	mana_cost = Column(String)
 	base_level = Column(Integer)
 	description = Column(String)
