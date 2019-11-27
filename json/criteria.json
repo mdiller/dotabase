@@ -8419,7 +8419,7 @@
 	},
 	{
 		"name": "IsRikiInvisibility",
-		"pretty": "Cloak and Dagger",
+		"pretty": "Permanent Invisibility",
 		"matchkey": "abilityname",
 		"matchvalue": "riki_permanent_invisibility",
 		"weight": 5.0,
@@ -9552,6 +9552,70 @@
 		"required": true
 	},
 	{
+		"name": "IsRubickCookie",
+		"pretty": "Firesnap Cookie",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_firesnap_cookie",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickFeedMorty",
+		"pretty": "RubickFeedMorty",
+		"matchkey": "cookie_target",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickFeedAlly",
+		"pretty": "RubickFeedAlly",
+		"matchkey": "cookie_target",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickFeedCreep",
+		"pretty": "RubickFeedCreep",
+		"matchkey": "cookie_target",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickHopNone",
+		"pretty": "RubickHopNone",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickHopHeroes",
+		"pretty": "RubickHopHeroes",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "RubickHopCreeps",
+		"pretty": "RubickHopCreeps",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRubickFireBlob",
+		"pretty": "Mortimer Kisses",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_mortimer_kisses",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "RubickAssassinate",
 		"pretty": "Assassinate",
 		"matchkey": "abilityname",
@@ -9708,6 +9772,30 @@
 		"pretty": "Viper Strike",
 		"matchkey": "abilityname",
 		"matchvalue": "viper_viper_strike",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRubickAstralStep",
+		"pretty": "Astral Step",
+		"matchkey": "abilityname",
+		"matchvalue": "void_spirit_astral_step",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRubickStepStrike",
+		"pretty": "IsRubickStepStrike",
+		"matchkey": "hit_something",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRubickStepStroll",
+		"pretty": "IsRubickStepStroll",
+		"matchkey": "hit_something",
+		"matchvalue": "0",
 		"weight": 5.0,
 		"required": true
 	},
@@ -10875,7 +10963,7 @@
 	},
 	{
 		"name": "IsCourierFlying",
-		"pretty": "IsCourierFlying",
+		"pretty": "Flying Courier",
 		"matchkey": "itemname",
 		"matchvalue": "item_flying_courier",
 		"weight": 1.0,
@@ -10942,6 +11030,14 @@
 		"pretty": "Divine Rapier",
 		"matchkey": "itemname",
 		"matchvalue": "item_rapier",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsDragonLance",
+		"pretty": "Dragon Lance",
+		"matchkey": "itemname",
+		"matchvalue": "item_dragon_lance",
 		"weight": 1.0,
 		"required": true
 	},
@@ -15341,6 +15437,285 @@
 		"required": true
 	},
 	{
+		"name": "Issnapfire",
+		"matchkey": "classname",
+		"matchvalue": "npc_dota_hero_snapfire",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEnemysnapfire",
+		"pretty": "Snapfire",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_hero_snapfire",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAllysnapfire",
+		"pretty": "Snapfire",
+		"matchkey": "nearby_ally",
+		"matchvalue": "npc_dota_hero_snapfire",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapShotty",
+		"pretty": "Scatterblast",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_scatterblast",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapCookie",
+		"pretty": "Firesnap Cookie",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_firesnap_cookie",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFeedMorty",
+		"pretty": "IsFeedMorty",
+		"matchkey": "cookie_target",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFeedAlly",
+		"pretty": "IsFeedAlly",
+		"matchkey": "cookie_target",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFeedCreep",
+		"pretty": "IsFeedCreep",
+		"matchkey": "cookie_target",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHopNone",
+		"pretty": "IsHopNone",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHopHeroes",
+		"pretty": "IsHopHeroes",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsHopCreeps",
+		"pretty": "IsHopCreeps",
+		"matchkey": "cookie_hop_landing",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapShredder",
+		"pretty": "Lil' Shredder",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_lil_shredder",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapFireBlob",
+		"pretty": "Mortimer Kisses",
+		"matchkey": "abilityname",
+		"matchvalue": "snapfire_mortimer_kisses",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono1",
+		"pretty": "IsSnapMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono2",
+		"pretty": "IsSnapMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono3",
+		"pretty": "IsSnapMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono4",
+		"pretty": "IsSnapMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono5",
+		"pretty": "IsSnapMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono6",
+		"pretty": "IsSnapMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono7",
+		"pretty": "IsSnapMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono8",
+		"pretty": "IsSnapMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono9",
+		"pretty": "IsSnapMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono10",
+		"pretty": "IsSnapMono10",
+		"matchkey": "line_count",
+		"matchvalue": "9",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMono11",
+		"pretty": "IsSnapMono11",
+		"matchkey": "line_count",
+		"matchvalue": "10",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup1",
+		"pretty": "IsSnapMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup2",
+		"pretty": "IsSnapMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup3",
+		"pretty": "IsSnapMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup4",
+		"pretty": "IsSnapMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup5",
+		"pretty": "IsSnapMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup6",
+		"pretty": "IsSnapMonoGroup6",
+		"matchkey": "line_group",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoGroup7",
+		"pretty": "IsSnapMonoGroup7",
+		"matchkey": "line_group",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapMonoDone",
+		"pretty": "IsSnapMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=11",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "snapfire_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapDebutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "snapfire_debut_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSnapDebutSpawn2",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "snapfire_debut_spawn2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "Issniper",
 		"matchkey": "classname",
 		"matchvalue": "npc_dota_hero_sniper",
@@ -17565,6 +17940,189 @@
 		"pretty": "IsVisageFamiliar3",
 		"matchkey": "creaturename",
 		"matchvalue": "npc_dota_visage_familiar3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "Isvoid_spirit",
+		"matchkey": "classname",
+		"matchvalue": "npc_dota_hero_void_spirit",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEnemyvoid_spirit",
+		"pretty": "Void Spirit",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_hero_void_spirit",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAllyvoid_spirit",
+		"pretty": "Void Spirit",
+		"matchkey": "nearby_ally",
+		"matchvalue": "npc_dota_hero_void_spirit",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAethRem",
+		"pretty": "Aether Remnant",
+		"matchkey": "abilityname",
+		"matchvalue": "void_spirit_aether_remnant",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDissimilate",
+		"pretty": "Dissimilate",
+		"matchkey": "abilityname",
+		"matchvalue": "void_spirit_dissimilate",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAstralStep",
+		"pretty": "Astral Step",
+		"matchkey": "abilityname",
+		"matchvalue": "void_spirit_astral_step",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPulse",
+		"pretty": "Resonant Pulse",
+		"matchkey": "abilityname",
+		"matchvalue": "void_spirit_resonant_pulse",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsStepStrike",
+		"pretty": "IsStepStrike",
+		"matchkey": "hit_something",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsStepStroll",
+		"pretty": "IsStepStroll",
+		"matchkey": "hit_something",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMono1",
+		"pretty": "IsVoidMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMono2",
+		"pretty": "IsVoidMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMono3",
+		"pretty": "IsVoidMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMono4",
+		"pretty": "IsVoidMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMono5",
+		"pretty": "IsVoidMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup1",
+		"pretty": "IsVoidMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup2",
+		"pretty": "IsVoidMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup3",
+		"pretty": "IsVoidMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup4",
+		"pretty": "IsVoidMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup5",
+		"pretty": "IsVoidMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup6",
+		"pretty": "IsVoidMonoGroup6",
+		"matchkey": "line_group",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoGroup7",
+		"pretty": "IsVoidMonoGroup7",
+		"matchkey": "line_group",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidMonoDone",
+		"pretty": "IsVoidMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsVoidSpiritLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "void_spirit_loadout_spawn",
 		"weight": 5.0,
 		"required": true
 	},
