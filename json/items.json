@@ -2972,6 +2972,7 @@
 		],
 		"json_data": {
 			"ID": "71",
+			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ItemCost": "0",
 			"ItemShopTags": "agi;block",
@@ -8617,6 +8618,7 @@
 			"ItemAliases": "stout shield",
 			"ShouldBeSuggested": "0",
 			"ItemPurchasable": "0",
+			"IsObsolete": "1",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -10228,7 +10230,7 @@
 		"icon": "/panorama/images/items/ring_of_aquila_png.png",
 		"cost": 0,
 		"cast_range": "1200",
-		"description": "# Passive: Aquila Aura\nGrants **0.5** mana regeneration and **2** armor to nearby allies.\n\nRadius: **1200**\n\n# Toggle: Aura\nDeactivate to stop affecting non-hero units.",
+		"description": "# Passive: Aquila Aura\nGrants **1.25** mana regeneration and **2** armor to nearby allies.\n\nRadius: **1200**\n\n# Toggle: Aura\nDeactivate to stop affecting non-hero units.",
 		"lore": "The ring of the fallen Warlord Aquila continues to support armies in battle.",
 		"ability_special": [
 			{
@@ -10265,7 +10267,7 @@
 			},
 			{
 				"key": "aura_mana_regen",
-				"value": "0.5"
+				"value": "1.25"
 			},
 			{
 				"key": "aura_bonus_armor",
@@ -10276,6 +10278,7 @@
 			"ID": "212",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"AbilityCastRange": "1200",
+			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"ItemCost": "0",
 			"ItemShopTags": "",
 			"ItemQuality": "rare",
@@ -10283,7 +10286,6 @@
 			"ItemShareability": "",
 			"ActiveDescriptionLine": "2",
 			"ItemPurchasable": "0",
-			"IsObsolete": "0",
 			"ShouldBeSuggested": "0",
 			"ItemSellable": "0",
 			"UIPickupSound": "Item.PickUpRingShop",
@@ -10316,7 +10318,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"aura_mana_regen": "0.5"
+					"aura_mana_regen": "1.25"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -11789,7 +11791,7 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/iron_talon_png.png",
 		"cost": 301,
-		"cooldown": "20",
+		"cooldown": "25",
 		"cast_range": "350",
 		"mana_cost": "0",
 		"description": "# Active: Chop\nTargets a non-player enemy unit to remove **40%** of its current HP.\n\nIf cast on a tree or ward, instantly destroys it.\n\nUnit Range: **350**\nTree Range: **350**\nWard Range: **450**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged.",
@@ -11833,7 +11835,8 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_PREFER_ENEMIES",
 			"AbilityCastRange": "350",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "20.0",
+			"AbilityCooldown": "25.0",
+			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityManaCost": "0",
 			"ItemCost": "301",
 			"ItemShopTags": "damage",
@@ -13920,7 +13923,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.5",
+				"value": "1",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -13939,7 +13942,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.5"
+					"bonus_mana_regen": "1"
 				}
 			}
 		}
@@ -14038,7 +14041,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_gpm",
-				"value": "75",
+				"value": "60",
 				"header": "+GPM BONUS"
 			},
 			{
@@ -14063,7 +14066,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_gpm": "75"
+					"bonus_gpm": "60"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -14129,7 +14132,7 @@
 	{
 		"id": 292,
 		"name": "item_desolator_2",
-		"localized_name": "Desolator 2",
+		"localized_name": "Stygian Desolator",
 		"icon": "/panorama/images/items/desolator_2_png.png",
 		"cost": 0,
 		"description": "# Passive: Greater Corruption\nYour attacks reduce the target's armor by **-12** for **15** seconds.",
@@ -14178,13 +14181,11 @@
 		"localized_name": "Phoenix Ash",
 		"icon": "/panorama/images/items/phoenix_ash_png.png",
 		"cost": 0,
-		"description": "# Passive: Rebirth\nLethal damage is prevented and instead the wearer is healed to full. Consumes a charge when triggered.",
+		"description": "# Passive: Rebirth\nLethal damage is prevented and instead the wearer is healed to half health and non-ultimate ability cooldowns reset. Gets consumed on trigger.",
 		"ability_special": [
 			{
-				"key": "bonus_all_stats",
-				"value": "30",
-				"header": "+",
-				"footer": "All Attributes"
+				"key": "health_pct",
+				"value": "50"
 			}
 		],
 		"json_data": {
@@ -14199,7 +14200,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "30"
+					"health_pct": "50"
 				}
 			}
 		}
@@ -14214,13 +14215,13 @@
 		"ability_special": [
 			{
 				"key": "cast_range_bonus",
-				"value": "500",
+				"value": "450",
 				"header": "+",
 				"footer": "Cast Range"
 			},
 			{
 				"key": "vision_bonus",
-				"value": "800",
+				"value": "450",
 				"header": "+Vision Bonus"
 			}
 		],
@@ -14234,11 +14235,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"cast_range_bonus": "500"
+					"cast_range_bonus": "450"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"vision_bonus": "800"
+					"vision_bonus": "450"
 				}
 			}
 		}
@@ -14274,17 +14275,17 @@
 		"ability_special": [
 			{
 				"key": "attack_lifesteal",
-				"value": "10%",
+				"value": "14%",
 				"header": "+Lifesteal"
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "10%",
+				"value": "8%",
 				"header": "+Spell Lifesteal"
 			},
 			{
 				"key": "night_vision",
-				"value": "450",
+				"value": "250",
 				"header": "+Night Vision"
 			}
 		],
@@ -14298,15 +14299,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"attack_lifesteal": "10"
+					"attack_lifesteal": "14"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"spell_lifesteal": "10"
+					"spell_lifesteal": "8"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"night_vision": "450"
+					"night_vision": "250"
 				}
 			}
 		}
@@ -14404,12 +14405,12 @@
 		"ability_special": [
 			{
 				"key": "debuff_amp",
-				"value": "35%",
+				"value": "25%",
 				"header": "+Debuff Duration"
 			},
 			{
 				"key": "spell_amp",
-				"value": "10%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Damage"
 			}
@@ -14424,11 +14425,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"debuff_amp": "35"
+					"debuff_amp": "25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"spell_amp": "10"
+					"spell_amp": "15"
 				}
 			}
 		}
@@ -14439,7 +14440,7 @@
 		"localized_name": "Mirror Shield",
 		"icon": "/panorama/images/items/mirror_shield_png.png",
 		"cost": 0,
-		"description": "# Passive: Echo Shield\n**75%** chance to block and reflect most targeted spells back to their caster.\n\nThe wearer will still take damage from the spell.",
+		"description": "# Passive: Echo Shield\nBlock and reflect most targeted spells back to their caster every once every **4** seconds.",
 		"ability_special": [
 			{
 				"key": "reflect_chance",
@@ -14450,6 +14451,10 @@
 				"value": "20",
 				"header": "+",
 				"footer": "All Attributes"
+			},
+			{
+				"key": "block_cooldown",
+				"value": "4"
 			}
 		],
 		"json_data": {
@@ -14467,6 +14472,10 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"all_stats": "20"
+				},
+				"03": {
+					"var_type": "FIELD_FLOAT",
+					"block_cooldown": "4.0"
 				}
 			}
 		}
@@ -14640,7 +14649,7 @@
 		"ability_special": [
 			{
 				"key": "secondary_stats",
-				"value": "14",
+				"value": "13",
 				"header": "+SECONDARY STATS"
 			}
 		],
@@ -14654,7 +14663,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"secondary_stats": "14"
+					"secondary_stats": "13"
 				}
 			}
 		}
@@ -14759,25 +14768,22 @@
 		"localized_name": "Mind Breaker",
 		"icon": "/panorama/images/items/mind_breaker_png.png",
 		"cost": 0,
-		"description": "# Passive: Mana Steal\nGrants +**30** Manabreak on attack, and grants you the stolen mana. Illusions deal +**6** Manabreak.",
+		"cooldown": "20",
+		"description": "# Passive: Silence Strike\nThe next attack silences the hit enemy for **4** seconds.",
 		"ability_special": [
 			{
-				"key": "mana_break",
-				"value": "30"
+				"key": "magic_damage",
+				"value": "25",
+				"header": "MAGIC ATTACK BONUS DAMAGE:"
 			},
 			{
-				"key": "mana_break_illusion",
-				"value": "6"
+				"key": "attack_speed",
+				"value": "25",
+				"header": "ATTACK SPEED:"
 			},
 			{
-				"key": "magic_resist",
-				"value": "15%",
-				"header": "+",
-				"footer": "Magic Resistance"
-			},
-			{
-				"key": "damage_per_burn",
-				"value": "0.5"
+				"key": "duration",
+				"value": "4"
 			}
 		],
 		"json_data": {
@@ -14786,23 +14792,20 @@
 			"ItemCost": "0",
 			"ItemGloballyCombinable": "1",
 			"ItemPurchasable": "0",
+			"AbilityCooldown": "20.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"mana_break": "30"
+					"magic_damage": "25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"mana_break_illusion": "6"
+					"attack_speed": "25"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"magic_resist": "15"
-				},
-				"04": {
 					"var_type": "FIELD_FLOAT",
-					"damage_per_burn": "0.5"
+					"duration": "4"
 				}
 			}
 		}
@@ -14824,6 +14827,12 @@
 				"key": "bonus_vision",
 				"value": "300",
 				"header": "+BONUS VISION"
+			},
+			{
+				"key": "bonus_all_stats",
+				"value": "7",
+				"header": "+",
+				"footer": "All Attributes"
 			}
 		],
 		"json_data": {
@@ -14845,6 +14854,10 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_vision": "300"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_all_stats": "7"
 				}
 			}
 		}
@@ -14855,36 +14868,44 @@
 		"localized_name": "Spell Prism",
 		"icon": "/panorama/images/items/spell_prism_png.png",
 		"cost": 0,
-		"cooldown": "80",
-		"description": "# Active: Duplicate\nCauses the next single targeted non-ultimate spell or item to be also cast onto a different nearby enemy. Prioritizes heroes.",
+		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items by **20%**.",
 		"ability_special": [
 			{
-				"key": "duration",
+				"key": "bonus_cooldown",
 				"value": "20"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "8",
+				"value": "12",
 				"header": "+",
 				"footer": "All Attributes"
+			},
+			{
+				"key": "mana_regen",
+				"value": "4",
+				"header": "+",
+				"footer": "Mana Regeneration"
 			}
 		],
 		"json_data": {
 			"ID": "311",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ItemCost": "0",
 			"ItemGloballyCombinable": "1",
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"AbilityCooldown": "80.0",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_FLOAT",
-					"duration": "20"
+					"var_type": "FIELD_INTEGER",
+					"bonus_cooldown": "20"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "8"
+					"bonus_all_stats": "12"
+				},
+				"03": {
+					"var_type": "FIELD_FLOAT",
+					"mana_regen": "4"
 				}
 			}
 		}
@@ -15197,12 +15218,12 @@
 		"ability_special": [
 			{
 				"key": "max_health",
-				"value": "28%",
+				"value": "1000",
 				"header": "+Max Health Increase"
 			},
 			{
 				"key": "max_mana",
-				"value": "40%",
+				"value": "400",
 				"header": "-Max Mana"
 			}
 		],
@@ -15216,11 +15237,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"max_health": "28"
+					"max_health": "1000"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"max_mana": "40"
+					"max_mana": "400"
 				}
 			}
 		}
@@ -15233,29 +15254,29 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/vambrace_png.png",
 		"cost": 1031,
-		"description": "Also provides one of the following, based on the Vambrace's main attribute:\n Strength: +**12%** Magic Resistance \n Agility: +**12** Attack Speed \n Intelligence: +**8%** Spell Amp",
+		"description": "Also provides one of the following, based on the Vambrace's main attribute:\n Strength: +**10%** Magic Resistance \n Agility: +**10** Attack Speed \n Intelligence: +**6%** Spell Amp",
 		"ability_special": [
 			{
 				"key": "bonus_primary_stat",
-				"value": "14",
+				"value": "12",
 				"header": "+Main Vambrace Attribute"
 			},
 			{
 				"key": "bonus_secondary_stat",
-				"value": "8",
+				"value": "6",
 				"header": "+Other Attributes"
 			},
 			{
 				"key": "bonus_spell_amp",
-				"value": "8"
+				"value": "6"
 			},
 			{
 				"key": "bonus_magic_resistance",
-				"value": "12"
+				"value": "10"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "12"
+				"value": "10"
 			}
 		],
 		"json_data": {
@@ -15271,23 +15292,23 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_primary_stat": "14"
+					"bonus_primary_stat": "12"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_secondary_stat": "8"
+					"bonus_secondary_stat": "6"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_spell_amp": "8"
+					"bonus_spell_amp": "6"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_magic_resistance": "12"
+					"bonus_magic_resistance": "10"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "12"
+					"bonus_attack_speed": "10"
 				}
 			}
 		}
@@ -15299,15 +15320,15 @@
 		"icon": "/panorama/images/items/imp_claw_png.png",
 		"cost": 0,
 		"cooldown": "10",
-		"description": "# Passive: Critical Strike\nEmpowers your next attack, causing it to be a critical strike dealing **160%** damage.",
+		"description": "# Passive: Critical Strike\nEmpowers your next attack, causing it to be a critical strike dealing **130%** damage.",
 		"ability_special": [
 			{
 				"key": "crit_multiplier",
-				"value": "160"
+				"value": "130"
 			},
 			{
 				"key": "bonus_damage",
-				"value": "18",
+				"value": "24",
 				"header": "+",
 				"footer": "Damage"
 			}
@@ -15323,11 +15344,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"crit_multiplier": "160"
+					"crit_multiplier": "130"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "18"
+					"bonus_damage": "24"
 				}
 			}
 		}
@@ -15491,21 +15512,21 @@
 		"localized_name": "Ocean Heart",
 		"icon": "/panorama/images/items/ocean_heart_png.png",
 		"cost": 0,
-		"description": "# Passive: Water Regen\nProvides you with **10** HP regen and **5** mana regen while in the river.",
+		"description": "# Passive: Water Regen\nProvides you with **6** HP regen and **3** mana regen while in the river.",
 		"ability_special": [
 			{
 				"key": "all_stats",
-				"value": "4",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
 			{
 				"key": "water_hp_regen",
-				"value": "10"
+				"value": "6"
 			},
 			{
 				"key": "water_mp_regen",
-				"value": "5"
+				"value": "3"
 			}
 		],
 		"json_data": {
@@ -15518,15 +15539,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"all_stats": "4"
+					"all_stats": "5"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"water_hp_regen": "10"
+					"water_hp_regen": "6"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"water_mp_regen": "5"
+					"water_mp_regen": "3"
 				}
 			}
 		}
@@ -15586,7 +15607,7 @@
 		"localized_name": "Trusty Shovel",
 		"icon": "/panorama/images/items/trusty_shovel_png.png",
 		"cost": 0,
-		"cooldown": "70",
+		"cooldown": "55",
 		"cast_range": "250",
 		"description": "# Active: Dig\nChannel for %abilitychanneltime% second. \nCan find a Bounty Rune, a Flask, a 2 charged TP Scroll bundle, or an enemy Kobold.",
 		"ability_special": [
@@ -15602,7 +15623,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"AbilityCastAnimation": "ACT_DOTA_GENERIC_CHANNEL_1",
 			"AbilityCastRange": "250",
-			"AbilityCooldown": "70.0",
+			"AbilityCooldown": "55.0",
 			"AbilityCastPoint": "0.1",
 			"AbilityChannelTime": "1",
 			"ItemCost": "0",
@@ -15804,7 +15825,7 @@
 			},
 			{
 				"key": "mana_regen",
-				"value": "3",
+				"value": "2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -15832,7 +15853,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"mana_regen": "3"
+					"mana_regen": "2"
 				}
 			}
 		}
@@ -15892,7 +15913,7 @@
 			},
 			{
 				"key": "passive_movement_bonus",
-				"value": "25",
+				"value": "30",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -15924,7 +15945,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"passive_movement_bonus": "25"
+					"passive_movement_bonus": "30"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -15944,14 +15965,14 @@
 	{
 		"id": 363,
 		"name": "item_illusionsts_cape",
-		"localized_name": "Illusionst's Cape",
+		"localized_name": "Illusionist's Cape",
 		"icon": "/panorama/images/items/illusionsts_cape_png.png",
 		"cost": 0,
 		"cooldown": "30",
-		"description": "# Active: Create Illusion\nCreates an image under your control. \n \n# Passive: Illusion Mastery\nIncreases outgoing damage of all illusions by **10%**.",
+		"description": "# Active: Create Illusion\nCreates an image under your control. \n \n# Passive: Illusion Mastery\nIncreases outgoing damage of all units and illusions controlled by the hero by **10%**.",
 		"ability_special": [
 			{
-				"key": "illusions_bonus_damage",
+				"key": "attack_damage_aura",
 				"value": "10"
 			},
 			{
@@ -15989,7 +16010,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"illusions_bonus_damage": "10"
+					"attack_damage_aura": "10"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -16253,7 +16274,7 @@
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "50%",
+				"value": "70",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -16281,7 +16302,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_hp_regen": "50"
+					"bonus_hp_regen": "70"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -16390,8 +16411,8 @@
 		"localized_name": "Book of the Dead",
 		"icon": "/panorama/images/items/demonicon_png.png",
 		"cost": 0,
-		"cooldown": "75",
-		"description": "# Active: Greater Demonic Summoning\nSummon 6 Level 3 Necronomicon Units that last **90** seconds.",
+		"cooldown": "90",
+		"description": "# Active: Greater Demonic Summoning\nSummon 6 Level 3 Necronomicon Units that last **75** seconds.",
 		"ability_special": [
 			{
 				"key": "bonus_strength",
@@ -16407,13 +16428,13 @@
 			},
 			{
 				"key": "summon_duration",
-				"value": "90"
+				"value": "75"
 			}
 		],
 		"json_data": {
 			"ID": "370",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityCooldown": "75.0",
+			"AbilityCooldown": "90.0",
 			"ItemCost": "0",
 			"ItemGloballyCombinable": "1",
 			"ItemPurchasable": "0",
@@ -16429,7 +16450,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"summon_duration": "90"
+					"summon_duration": "75"
 				}
 			}
 		}
@@ -16676,7 +16697,7 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "20",
+				"value": "25",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -16695,7 +16716,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "20"
+					"bonus_movement_speed": "25"
 				}
 			}
 		}
@@ -16849,7 +16870,6 @@
 		"localized_name": "The Leveller",
 		"icon": "/panorama/images/items/the_leveller_png.png",
 		"cost": 0,
-		"description": "Grants bonus attack speed and Cleave for Melee heroes or Splash for Ranged heroes around the target.",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
@@ -16858,27 +16878,9 @@
 				"footer": "Attack Speed"
 			},
 			{
-				"key": "cleave",
-				"value": "50%",
-				"header": "+Cleave/Splash"
-			},
-			{
-				"key": "cleave_starting_width",
-				"value": "150"
-			},
-			{
-				"key": "cleave_ending_width",
-				"value": "400",
-				"header": "CLEAVE AREA:"
-			},
-			{
-				"key": "cleave_distance",
-				"value": "650"
-			},
-			{
-				"key": "splash_radius",
-				"value": "250",
-				"header": "SPLASH AREA:"
+				"key": "demolish",
+				"value": "25%",
+				"header": "BONUS BUILDING DAMAGE:"
 			}
 		],
 		"json_data": {
@@ -16895,23 +16897,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"cleave": "50"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"cleave_starting_width": "150"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"cleave_ending_width": "400"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"cleave_distance": "650"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"splash_radius": "250"
+					"demolish": "25"
 				}
 			}
 		}
@@ -16926,18 +16912,18 @@
 		"ability_special": [
 			{
 				"key": "base_attack_damage",
-				"value": "22%",
+				"value": "16%",
 				"header": "+Base Attack Damage"
 			},
 			{
 				"key": "magic_resistance",
-				"value": "22%",
+				"value": "16%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
 			{
 				"key": "status_resistance",
-				"value": "22%",
+				"value": "16%",
 				"header": "+",
 				"footer": "Status Resistance"
 			}
@@ -16952,15 +16938,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"base_attack_damage": "22"
+					"base_attack_damage": "16"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"magic_resistance": "22"
+					"magic_resistance": "16"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"status_resistance": "22"
+					"status_resistance": "16"
 				}
 			}
 		}
