@@ -44,7 +44,8 @@
 			"ItemKillable": "1",
 			"ItemDisassemblable": "0",
 			"ItemShareability": "ITEM_NOT_SHAREABLE",
-			"ItemDeclaresPurchase": "0"
+			"ItemDeclaresPurchase": "0",
+			"ItemIsNeutralDrop": "0"
 		}
 	},
 	{
@@ -386,7 +387,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "hop_distance",
-				"value": "400",
+				"value": "450",
 				"header": "DISTANCE:"
 			},
 			{
@@ -421,7 +422,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"hop_distance": "400",
+					"hop_distance": "450",
 					"RequiresScepter": "1"
 				},
 				"02": {
@@ -478,7 +479,6 @@
 		"json_data": {
 			"ID": "321",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
-			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_TREE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -620,6 +620,7 @@
 		"name": "lycan_wolf_bite",
 		"hero_id": 77,
 		"behavior": "unit_target|hidden",
+		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "no",
 		"cast_range": "300",
@@ -647,6 +648,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
 			"IsGrantedByScepter": "1",
@@ -723,6 +725,7 @@
 		"hero_id": 83,
 		"behavior": "point",
 		"damage_type": "magical",
+		"spell_immunity": "no",
 		"cast_range": "1500",
 		"cast_point": "0.2",
 		"cooldown": "20 19 18 17",
@@ -776,6 +779,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_TREE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilitySound": "Hero_Treant.NaturesGuise.On",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilityCastRange": "1500",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "20 19 18 17",
@@ -2201,12 +2205,12 @@
 			},
 			{
 				"key": "health_bonus_pct",
-				"value": "16% 19% 22% 25%",
+				"value": "13% 17% 21% 25%",
 				"header": "KILL HEAL PERCENTAGE:"
 			},
 			{
 				"key": "health_bonus_creep_pct",
-				"value": "16 19 22 25"
+				"value": "13 17 21 25"
 			},
 			{
 				"key": "health_bonus_aoe",
@@ -2253,11 +2257,11 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"health_bonus_pct": "16 19 22 25"
+					"health_bonus_pct": "13 17 21 25"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"health_bonus_creep_pct": "16 19 22 25"
+					"health_bonus_creep_pct": "13 17 21 25"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -2550,6 +2554,7 @@
 		"name": "drow_ranger_frost_arrows",
 		"hero_id": 6,
 		"behavior": "unit_target|autocast|attack",
+		"damage_type": "physical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
 		"dispellable": "yes",
@@ -2585,6 +2590,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_DrowRanger.FrostArrows",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityCastRange": "625",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "0.0 0.0 0.0 0.0",
@@ -2751,7 +2757,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/drow_ranger_marksmanship_png.png",
 		"localized_name": "Marksmanship",
-		"description": "Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. Grants Drow and nearby ranged heroes with bonus agility based on your current agility. This ability is disabled if there is an enemy hero within **400** range.",
+		"description": "Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. Grants Drow and nearby ranged heroes with bonus agility based on Drow's current agility. This ability is disabled if there is an enemy hero within **400** range.",
 		"lore": "The Drow Ranger is the epitome of archery prowess.",
 		"note": "Marksmanship procs have true strike.",
 		"aghanim": "Causes Drow Ranger's attacks to splinter on the target, hitting nearby units with normal attacks that deal reduced damage.",
@@ -2937,14 +2943,13 @@
 			},
 			{
 				"key": "bonus_attack_range",
-				"value": "75",
-				"header": "BONUS ATTACK RANGE:"
+				"value": "75"
 			}
 		],
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/earthshaker_enchant_totem_png.png",
 		"localized_name": "Enchant Totem",
-		"description": "Empowers Earthshaker's totem, causing it to deal extra damage on the next attack.",
+		"description": "Empowers Earthshaker's totem, causing it to deal extra damage and have **75** bonus attack range on the next attack.",
 		"lore": "Raigor's gorilla strength can destroy mountains.",
 		"note": "Bonus damage is based on base damage and that given by primary attribute.\nSelf-cast with Scepter will make it behave in the non-Scepter form, without jumping.\nEnchant Totem has True Strike.",
 		"aghanim": "Enchant Totem becomes a **1100** range ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping.",
@@ -3438,7 +3443,7 @@
 			},
 			{
 				"key": "slow_duration",
-				"value": "1.75 2.5 3.25 4",
+				"value": "1 2 3 4",
 				"header": "SLOW DURATION:"
 			},
 			{
@@ -3492,7 +3497,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"slow_duration": "1.75 2.5 3.25 4.0"
+					"slow_duration": "1 2 3 4"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -5111,7 +5116,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/morphling_replicate_png.png",
 		"localized_name": "Morph",
-		"description": "Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability.",
+		"description": "Morphling changes his form to match the targeted enemy, gaining their basic abilities with reduced mana cost. Can be toggled for the duration of the ability.",
 		"lore": "Staring into Morphling produces a reflection that mimics the beholder.",
 		"note": "You can't target yourself with Morph.",
 		"aghanim": "Allows targeting allied heroes. While Morphed, you gain Cast Range increase.",
@@ -5601,11 +5606,11 @@
 			},
 			{
 				"key": "requiem_slow_duration",
-				"value": "0.6"
+				"value": "0.8"
 			},
 			{
 				"key": "requiem_slow_duration_max",
-				"value": "2.2"
+				"value": "2.4"
 			},
 			{
 				"key": "requiem_reduction_radius",
@@ -5647,9 +5652,9 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/nevermore_requiem_png.png",
 		"localized_name": "Requiem of Souls",
-		"description": "Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed reduced for **0.6** seconds for each line hit. Lines of energy are created for every **2** souls captured through Necromastery. \n\n Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
+		"description": "Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed reduced for **0.8** seconds for each line hit. Lines of energy are created for every **2** souls captured through Necromastery. \n\n Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
 		"lore": "The captured souls of those past slain are released to ravage their former allies.",
-		"note": "One line is generated from Shadow Fiend for every **2** souls in his possession, for a maximum of 18 lines (23 lines with Scepter).\nThe movement reductions from Requiem of Souls go through spell immunity.\nFear and movement slow do not apply when if the Requiem was released on death..",
+		"note": "One line is generated from Shadow Fiend for every **2** souls in his possession, for a maximum of 18 lines (23 lines with Scepter).\nThe movement reductions from Requiem of Souls go through spell immunity.\nFear and movement slow do not apply when if the Requiem was released on death.",
 		"aghanim": "Increases Necromastery Max Souls and causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend deals less damage, but heals Shadow Fiend for all the damage it dealt.",
 		"json_data": {
 			"ID": "5064",
@@ -5678,11 +5683,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"requiem_slow_duration": "0.6"
+					"requiem_slow_duration": "0.8"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"requiem_slow_duration_max": "2.2"
+					"requiem_slow_duration_max": "2.4"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -6280,15 +6285,15 @@
 			{
 				"talent_name": "special_bonus_unique_puck_4",
 				"key": "damage",
-				"value": "100 160 220 280",
-				"talent_value": "140 200 260 320",
+				"value": "70 140 210 280",
+				"talent_value": "110 180 250 320",
 				"header": "DAMAGE:"
 			}
 		],
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/puck_waning_rift_png.png",
 		"localized_name": "Waning Rift",
-		"description": "Puck releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+		"description": "Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
 		"lore": "With a mischievous grin, Puck spreads its enchanted powder which disrupts magical flow.",
 		"json_data": {
 			"ID": "5071",
@@ -6313,7 +6318,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "100 160 220 280",
+					"damage": "70 140 210 280",
 					"LinkedSpecialBonus": "special_bonus_unique_puck_4"
 				}
 			},
@@ -6420,7 +6425,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "coil_stun_duration_scepter",
-				"value": "1.5 3 4.5",
+				"value": "1.8 3 4.5",
 				"header": "SCEPTER BREAK STUN DURATION:"
 			}
 		],
@@ -6488,7 +6493,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"coil_stun_duration_scepter": "1.5 3 4.5",
+					"coil_stun_duration_scepter": "1.8 3 4.5",
 					"RequiresScepter": "1"
 				}
 			}
@@ -6584,7 +6589,7 @@
 		"localized_name": "Meat Hook",
 		"description": "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge and dealing damage if it is an enemy.",
 		"lore": "The Butcher's hook is a symbolic nightmare, its curved blade a frightening reminder of his slaughterous intent.",
-		"note": "Interrupts channeling spells of the primary target if it's an enemy.\nMeat Hook hits invisible units.\nMeat Hook can go through trees, cliffs, buildings, ancient units and Roshan.\nMeat Hook can drag friendly units, but they won't be damaged.\nMeat Hook can hit and drag runes to Pudge.",
+		"note": "Interrupts channeling spells of the primary target if it's an enemy.\nMeat Hook hits invisible units.\nMeat Hook can go through trees, cliffs, buildings, ancient units and Roshan.\nMeat Hook can drag friendly units, but they won't be damaged.\nMeat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost.",
 		"json_data": {
 			"ID": "5075",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -6660,7 +6665,7 @@
 		"localized_name": "Rot",
 		"description": "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.",
 		"lore": "A foul odor precedes a toxic, choking gas, emanating from the Butcher's putrid, ever-swelling mass.",
-		"note": "Using Rot doesn't interrupt channeling.\nRot hits invisible units.\nIf Pudge is silenced, he can't deactivate Rot if it's activated.\nPudge can deny himself with this ability.",
+		"note": "Using Rot doesn't interrupt channeling.\nRot hits invisible units.\nIf Pudge is silenced, he can't deactivate Rot if it's activated.",
 		"json_data": {
 			"ID": "5076",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -6769,7 +6774,7 @@
 		"localized_name": "Dismember",
 		"description": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Pudge gets healed for the same amount he damages. Lasts longer on creeps.",
 		"lore": "'When I'm through with these vermin, they'll be fit for a pie!'",
-		"note": "Dismember will disable Spell Immune units, but not damage them. However, Pudge will still get healed.\nIf a unit becomes invisible while Dismembered, it will still be under the effects of Dismember.",
+		"note": "If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember.",
 		"aghanim": "Reduces cooldown and allows targeting an ally to swallow them and heal them for **4%** of their max health per second. The ally can exit whenever they want by issuing a command.",
 		"json_data": {
 			"ID": "5077",
@@ -9413,6 +9418,7 @@
 		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"target_team": "custom",
+		"dispellable": "no",
 		"cast_range": "165",
 		"cast_point": "0.2",
 		"cooldown": "25 20 15 10",
@@ -9425,7 +9431,7 @@
 			},
 			{
 				"key": "bonus_damage_buildings",
-				"value": "50% 80% 110% 140%",
+				"value": "20% 50% 80% 110%",
 				"header": "BONUS BUILDING DAMAGE:"
 			},
 			{
@@ -9463,8 +9469,8 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/tiny_tree_grab_png.png",
 		"localized_name": "Tree Grab",
-		"description": "Grabs a tree to whack enemies on the head. Grants bonus attack range but Tiny is slowed by **25**. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, expending all the charges, to deal your attack to a unit at a distance.",
-		"note": "The cooldown begins when the charges are expended.",
+		"description": "Grabs a tree to whack enemies on the head. Grants bonus attack range but Tiny is slowed by **25**. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.",
+		"note": "The cooldown begins when the tree is thrown.",
 		"aghanim": "Grants new ability: Tree Volley. Tiny throws random trees within range towards the targeted aoe.",
 		"json_data": {
 			"ID": "5108",
@@ -9473,6 +9479,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilitySound": "Hero_Tiny.CraggyExterior.Stun",
 			"LinkedAbility": "tiny_toss_tree",
 			"HasScepterUpgrade": "1",
@@ -9489,7 +9496,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage_buildings": "50 80 110 140",
+					"bonus_damage_buildings": "20 50 80 110",
 					"CalculateSpellDamageTooltip": "0"
 				},
 				"03": {
@@ -10303,8 +10310,8 @@
 			{
 				"talent_name": "special_bonus_unique_tidehunter_4",
 				"key": "damage_reduction",
-				"value": "5 10 20 40",
-				"talent_value": "35 40 50 70",
+				"value": "12 24 36 48",
+				"talent_value": "42 54 66 78",
 				"header": "DAMAGE BLOCK:"
 			},
 			{
@@ -10331,7 +10338,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_reduction": "5 10 20 40",
+					"damage_reduction": "12 24 36 48",
 					"LinkedSpecialBonus": "special_bonus_unique_tidehunter_4",
 					"CalculateSpellDamageTooltip": "0"
 				},
@@ -10578,7 +10585,7 @@
 			},
 			{
 				"key": "bonus_attack_range",
-				"value": "60 90 120 150",
+				"value": "50 75 100 125",
 				"header": "BONUS ATTACK RANGE:"
 			},
 			{
@@ -10588,7 +10595,7 @@
 			},
 			{
 				"key": "illusion_damage_out_pct",
-				"value": "100%",
+				"value": "70% 80% 90% 100%",
 				"header": "ILLUSION DAMAGE DEALT:"
 			},
 			{
@@ -10600,9 +10607,9 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/vengefulspirit_command_aura_png.png",
 		"localized_name": "Vengeance Aura",
-		"description": "Vengeful Spirit's presence increases the attack range and primary attribute of nearby friendly units. Spawns a Vengeance Illusion when you die that lasts until Vengeful Spirit revives.",
+		"description": "Vengeful Spirit's presence increases the ranged attack range and primary attribute of nearby friendly units. Spawns a Strong Illusion when of Vengeful Spirit when she dies that lasts until it is killed or Vengeful Spirit revives.",
 		"lore": "Although they may not share her undying passion for revenge, allies do draw on her fanaticism in combat.",
-		"note": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.",
+		"note": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.\nStrong Illusions are not instantly killed by spells.",
 		"json_data": {
 			"ID": "5123",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
@@ -10617,7 +10624,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_range": "60 90 120 150"
+					"bonus_attack_range": "50 75 100 125"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -10625,7 +10632,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"illusion_damage_out_pct": "100"
+					"illusion_damage_out_pct": "70 80 90 100"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -10809,7 +10816,7 @@
 		"dispellable": "yes",
 		"cast_range": "700",
 		"cast_point": "0.3",
-		"cooldown": "14 12 10 8",
+		"cooldown": "11 10 9 8",
 		"mana_cost": "130 145 160 175",
 		"ability_special": [
 			{
@@ -10860,7 +10867,7 @@
 			"AbilitySound": "Hero_Crystal.CrystalNova",
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "14 12 10 8",
+			"AbilityCooldown": "11 10 9 8",
 			"AbilityManaCost": "130 145 160 175",
 			"AbilitySpecial": {
 				"01": {
@@ -10996,11 +11003,6 @@
 				"header": "MANA REGEN:"
 			},
 			{
-				"key": "magic_resistance",
-				"value": "5% 6% 7% 8%",
-				"header": "MAGIC RESISTANCE:"
-			},
-			{
 				"key": "self_factor",
 				"value": "2",
 				"header": "SELF BONUS FACTOR:"
@@ -11009,9 +11011,8 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/crystal_maiden_brilliance_aura_png.png",
 		"localized_name": "Arcane Aura",
-		"description": "Gives additional mana regeneration and magic resistance to all friendly units on the map. This bonus is increased for Crystal Maiden.",
+		"description": "Gives additional mana regeneration to all friendly units on the map. This bonus is increased for Crystal Maiden.",
 		"lore": "Cold temperatures promote the essence of magic, causing Rylai's presence to allow spell usage in abundance.",
-		"note": "Stacks with other flat mana regeneration bonuses.\nThe flat mana regeneration bonus is not considered for percentage mana regeneration increases.",
 		"json_data": {
 			"ID": "5128",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -11024,12 +11025,8 @@
 					"mana_regen": "0.5 1 1.5 2"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"magic_resistance": "5 6 7 8"
-				},
-				"03": {
 					"var_type": "FIELD_FLOAT",
-					"self_factor": "2"
+					"self_factor": "2.0"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -12466,7 +12463,7 @@
 				"talent_name": "special_bonus_unique_riki_1",
 				"key": "damage_multiplier",
 				"value": "1.4 1.8 2.2",
-				"talent_value": "1.9 2.3 2.7",
+				"talent_value": "2.2 2.6 3",
 				"header": "AGI DAMAGE MULT:"
 			},
 			{
@@ -12516,6 +12513,7 @@
 		"name": "riki_tricks_of_the_trade",
 		"hero_id": 32,
 		"behavior": "point|aoe|channelled|root_disables",
+		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"cast_range": "400",
 		"cast_point": "0.3",
@@ -12537,7 +12535,7 @@
 			},
 			{
 				"key": "damage_pct",
-				"value": "55% 70% 85% 100%",
+				"value": "70% 80% 90% 100%",
 				"header": "ATTACK DAMAGE:"
 			},
 			{
@@ -12572,6 +12570,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"HasScepterUpgrade": "1",
 			"AbilitySound": "Hero_Riki.TricksOfTheTrade.Cast",
 			"AbilityCastRange": "400",
@@ -12593,7 +12592,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_pct": "55 70 85 100"
+					"damage_pct": "70 80 90 100"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -13510,7 +13509,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/sniper_take_aim_png.png",
 		"localized_name": "Take Aim",
-		"description": "Extends the attack range of Sniper's rifle. Can be activated to double the attack range bonus for 1 attack.",
+		"description": "Extends the attack range of Sniper's rifle. Can be activated to double the attack range bonus for 1 attack. Goes on cooldown after the attack is used.",
 		"lore": "Kardel always takes it upon himself to stay as far from harm as he can while still performing his role - taking perfect aim.",
 		"json_data": {
 			"ID": "5156",
@@ -15308,7 +15307,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "6 14 22 30",
+				"value": "6 12 18 24",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -15320,14 +15319,14 @@
 			},
 			{
 				"key": "hp_regen_reduction",
-				"value": "30%",
+				"value": "15% 20% 25% 30%",
 				"header": "HP REGEN REDUCTION:"
 			}
 		],
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/venomancer_poison_sting_png.png",
 		"localized_name": "Poison Sting",
-		"description": "Adds poison damage to Venomancer's normal attacks, slowing movement speed.",
+		"description": "Adds poison damage to Venomancer's normal attacks, slowing movement speed and reducing the target's HP regeneration.",
 		"lore": "The paralytic sting of the creature which caused his transformation now belongs to the Venomancer.",
 		"note": "Poison Sting damage can be lethal.\nDamage from Poison Sting does not interrupt healing from items, nor does it activate the cooldown on Blink Dagger.",
 		"json_data": {
@@ -15344,7 +15343,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "6 14 22 30"
+					"damage": "6 12 18 24"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -15353,7 +15352,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"hp_regen_reduction": "30"
+					"hp_regen_reduction": "15 20 25 30"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -15598,7 +15597,8 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "radius_scepter",
-				"value": "250"
+				"value": "250",
+				"header": "SCEPTER TIMELOCK RADIUS:"
 			}
 		],
 		"ability_slot": 1,
@@ -15701,7 +15701,7 @@
 		"localized_name": "Time Lock",
 		"description": "Adds the chance for an attack to lock an enemy unit in time while attacking it a second time.",
 		"lore": "The strike of the Faceless Void lands with dimension shifting force.",
-		"note": "Stun works on Spell Immune units.\nDoes not stack with Skull Basher.",
+		"note": "Does not stack with Skull Basher.",
 		"json_data": {
 			"ID": "5184",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -17727,7 +17727,6 @@
 		"localized_name": "Viper Strike",
 		"description": "Viper slows the targeted enemy unit's movement and attack speed while also dealing poison damage over time.  The slowing effect reduces over the duration of the poison.",
 		"lore": "Once used to slay his sadistic summoner, the most powerful of Netherdrake infections spreads through the veins of those foolish enough to cross Viper.",
-		"note": "Slow works on spell immune units.",
 		"aghanim": "Decreases mana cost and cooldown, and increases cast range.",
 		"json_data": {
 			"ID": "5221",
@@ -17884,7 +17883,7 @@
 		"localized_name": "Moon Glaives",
 		"description": "Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce.",
 		"lore": "Carefully sharpened, Luna's boomerang-like weapon cuts a wide swath through enemy numbers.",
-		"note": "Moon Glaives do not proc any attack modifier.",
+		"note": "Moon Glaives do not proc any attack modifier except Critical Strikes.",
 		"json_data": {
 			"ID": "5223",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -19892,7 +19891,7 @@
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/life_stealer_rage_png.png",
 		"localized_name": "Rage",
-		"description": "Launch into a maddened rage, becoming Spell Immune, 100% resistant to magic damage, and gaining increased movement speed.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Launch into a maddened rage, becoming Spell Immune, and gaining increased movement speed.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "The madness and brutality of N'aix makes him a vicious and unrelenting foe in combat.",
 		"note": "Upon casting, many buffs and debuffs will be removed.",
 		"json_data": {
@@ -20761,8 +20760,8 @@
 			{
 				"talent_name": "special_bonus_unique_clinkz_6",
 				"key": "health_gain",
-				"value": "200 300 400 500",
-				"talent_value": "550 650 750 850",
+				"value": "250 350 450 550",
+				"talent_value": "600 700 800 900",
 				"header": "HEALTH GAIN:"
 			},
 			{
@@ -20812,7 +20811,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"health_gain": "200 300 400 500",
+					"health_gain": "250 350 450 550",
 					"LinkedSpecialBonus": "special_bonus_unique_clinkz_6"
 				},
 				"03": {
@@ -21193,7 +21192,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/enchantress_enchant_png.png",
 		"localized_name": "Enchant",
-		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control. If cast on a creep already under her control, she refreshes its enchant duration.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs.",
 		"note": "Illusions can be converted.",
 		"json_data": {
@@ -25855,8 +25854,10 @@
 				"header": "RADIUS:"
 			},
 			{
+				"talent_name": "special_bonus_unique_doom_6",
 				"key": "bonus_movement_speed_pct",
 				"value": "12% 13% 14% 15%",
+				"talent_value": "28% 29% 30% 31%",
 				"header": "BONUS MOVE SPEED:"
 			},
 			{
@@ -25894,7 +25895,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed_pct": "12 13 14 15"
+					"bonus_movement_speed_pct": "12 13 14 15",
+					"LinkedSpecialBonus": "special_bonus_unique_doom_6"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -25956,7 +25958,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/doom_bringer_infernal_blade_png.png",
 		"localized_name": "Infernal Blade",
-		"description": "Doom swings his burning sword, igniting the enemy. Stuns for **0.6** seconds and applies a **4** second burn that deals **16**/**20**/**24**/**28** + **1.25%**/**2.5%**/**3.75%**/**5%** of the target's Max HP as damage per second.",
+		"description": "Doom swings his burning sword, igniting the enemy. Stuns for **0.6** seconds and applies a **4** second burn that deals a base damage plus a percentage of the target's Max HP as damage per second.",
 		"lore": "Lucifer shares the fire branding bestowed upon him at the time of his exile.",
 		"note": "Interrupts channeling abilities.",
 		"aghanim": "Increases stun duration, burn duration and applies Break.",
@@ -27022,7 +27024,7 @@
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/ursa_earthshock_png.png",
 		"localized_name": "Earthshock",
-		"description": "Ursa slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for 4 seconds.",
+		"description": "Ursa leaps forward **250** units and slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for **4** seconds.",
 		"lore": "The very steps of a male ursine shake the ground as well as the resolve of opposing warriors.",
 		"json_data": {
 			"ID": "5357",
@@ -27035,7 +27037,7 @@
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0",
 			"AbilityCooldown": "9 8 7 6",
-			"AbilityDuration": "4.0 4.0 4.0 4.0",
+			"AbilityDuration": "4.0",
 			"AbilityDamage": "75 125 175 225",
 			"AbilityManaCost": "75 75 75 75",
 			"AbilitySpecial": {
@@ -28330,10 +28332,9 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/invoker_invoke_png.png",
 		"localized_name": "Invoke",
-		"description": "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use.  Click the help button to see the list of possible spells.",
+		"description": "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use. Invoke cooldown is reduced by **0.3** seconds for each orb level. \n\n Click the help button to see the list of possible spells.",
 		"lore": "So begins a new age of knowledge.",
 		"note": "The arrangement of instances does not matter.\nInvoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells.",
-		"aghanim": "Adds Cataclysm. Adds one level to the stats provided by Quas, Wex, and Exort on all Invoked spells.",
 		"json_data": {
 			"ID": "5375",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -28341,7 +28342,6 @@
 			"MaxLevel": "1",
 			"RequiredLevel": "1",
 			"AbilitySound": "Hero_Invoker.Invoke",
-			"HasScepterUpgrade": "1",
 			"AbilityCooldown": "7",
 			"AbilityManaCost": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
@@ -28647,7 +28647,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/silencer_last_word_png.png",
 		"localized_name": "Last Word",
-		"description": "Enchants a target, causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.",
+		"description": "Enchants a target, providing vision of them and causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.",
 		"lore": "Nortrom ensures that spells uttered by his opponents will be their last.",
 		"note": "Channeling abilities will trigger this effect once the caster finishes its channel.",
 		"aghanim": "Causes Last Word to become an AoE ability.",
@@ -29280,6 +29280,7 @@
 		"description": "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. Deals damage based on the level of Exort, however this damage is spread evenly over all enemies hit.",
 		"lore": "Harlek's Incantation of Incineration.",
 		"note": "Gives vision of the target area before the strike.\nInvoker gains experience with kills made from Sun Strike, even if made from outside of experience range.",
+		"aghanim": "Adds Cataclysm. Launched when Sun Strike is double tapped. Puts it on a **90** second cooldown. Creates 2 visible Sun Strikes within **160**-**200** range of each enemy hero. \n\nAdds one level to the stats provided by Quas, Wex, and Exort on all Invoked spells.",
 		"json_data": {
 			"ID": "5386",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -29289,6 +29290,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Invoker.SunStrike.Charge",
+			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.05",
 			"AbilityCastAnimation": "ACT_INVALID",
@@ -29720,7 +29722,7 @@
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/obsidian_destroyer_arcane_orb_png.png",
 		"localized_name": "Arcane Orb",
-		"description": "Adds extra pure damage to Outworld Devourer's attacks, based on his remaining mana pool. Costs a percentage of his current mana to cast.",
+		"description": "Adds extra pure damage to Outworld Devourer's attacks, based on his remaining mana pool.",
 		"lore": "Harbinger's outworldly knowledge allows it to tap into the ebb and flow of all spiritual energy, infusing it into his being.",
 		"note": "The damage is calculated after the mana cost is spent.",
 		"json_data": {
@@ -29947,6 +29949,7 @@
 		"behavior": "point|aoe",
 		"damage_type": "magical",
 		"spell_immunity": "no",
+		"dispellable": "no",
 		"cast_range": "700",
 		"cast_point": "0.25",
 		"cooldown": "160",
@@ -30006,6 +30009,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_ObsidianDestroyer.SanityEclipse",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityCooldown": "160",
 			"AbilityManaCost": "200 325 450",
 			"AbilitySpecial": {
@@ -31213,7 +31217,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/lone_druid_savage_roar_png.png",
 		"localized_name": "Savage Roar",
-		"description": "Lone Druid roars fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by **20%**.",
+		"description": "Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by **20%**.",
 		"lore": "Sylla studies and masters the arts of the lost Bear Clan, enhancing his attunement with the wild.",
 		"note": "An entangled hero will not be able to move.\nCooldown is shared with Spirit Bear.",
 		"json_data": {
@@ -31931,7 +31935,7 @@
 		"localized_name": "Demonic Purge",
 		"description": "Purges the target enemy unit, removing positive buffs, and slowing the target for the duration.  The unit slowly regains its speed until the end of the duration, upon which damage is dealt.  Units under the effect of Disruption can still be affected by Demonic Purge.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "Once Shadow Demon no longer has any need for his collected cultist, he releases it from its subservience - and its life.",
-		"note": "Demonic Purge will slow Spell Immune units.\nThe slow starts at **100%** decreases over time to **20%**.\nPositive buffs are continously removed from the target for the duration of the Purge.",
+		"note": "The slow starts at **100%** decreases over time to **20%**.\nPositive buffs are continously removed from the target for the duration of the Purge.",
 		"aghanim": "Cooldown is removed, replaced with **3** charges that replenish every **60** seconds. Also causes Demonic Purge to break its target's passive abilities while active.",
 		"json_data": {
 			"ID": "5425",
@@ -32575,83 +32579,64 @@
 	{
 		"id": 5434,
 		"name": "treant_natures_guise",
-		"behavior": "no_target",
-		"damage_type": "magical",
-		"dispellable": "no",
-		"cast_point": "0.6",
-		"cooldown": "10 8 6 4",
-		"mana_cost": "30 40 50 60",
+		"hero_id": 83,
+		"behavior": "passive|not_learnable",
 		"ability_special": [
 			{
 				"key": "radius",
-				"value": "265",
-				"header": "TREE RADIUS:"
+				"value": "150"
 			},
 			{
 				"key": "grace_time",
 				"value": "0.75"
 			},
 			{
-				"key": "movement_speed",
-				"value": "20% 22% 24% 26%",
-				"header": "MOVEMENT SPEED:"
-			},
-			{
-				"talent_name": "special_bonus_unique_treant_4",
-				"key": "bash_duration",
-				"value": "0.4 1 1.6 2.2",
-				"talent_value": "2.4 3 3.6 4.2",
-				"header": "ROOT DURATION:"
-			},
-			{
-				"key": "total_damage",
-				"value": "60 110 160 210",
-				"header": "TOTAL DAMAGE:"
-			},
-			{
-				"key": "tick_count",
+				"key": "cooldown_time",
 				"value": "3"
+			},
+			{
+				"key": "regen_amp",
+				"value": "25%",
+				"header": "SELF HEAL AND REGEN AMP:"
+			},
+			{
+				"key": "movement_bonus",
+				"value": "15%",
+				"header": "MOVEMENT SPEED:"
 			}
 		],
+		"ability_slot": 5,
 		"icon": "/panorama/images/spellicons/treant_natures_guise_png.png",
 		"localized_name": "Nature's Guise",
-		"description": "Turns Treant invisible after a **0.6** second cast time when he is within close radius of a tree. Increases movement speed while invisible, and causes a disarming root when attacking out of invisibility.",
+		"description": "Provides Treant with Tree Walking whenever he hasn't taken damage for **3** seconds. While active, Treant gains movement speed bonus and amplified healing and regeneration on himself.",
 		"lore": "The Protectors don't often come into vision; their natural state being nestled within their leafy brethren.",
-		"note": "Attack out of invisibility cannot miss.\nNature's Guise checks in **0.75** second intervals for nearby trees, removing invisibility if none are found.\nWhile affected by Nature's Guise, Treant can move unobstructed through other trees .\nWhile affected by Nature's Guise, Treant can use items and abilities without breaking invisibility.",
+		"note": "While affected by Nature's Guise, Treant can move unobstructed through other trees .",
 		"json_data": {
 			"ID": "5434",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"FightRecapLevel": "2",
+			"MaxLevel": "1",
 			"AbilitySound": "Hero_Treant.NaturesGuise.On",
-			"AbilityCastPoint": "0.6",
-			"AbilityCooldown": "10 8 6 4",
-			"AbilityManaCost": "30 40 50 60",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "265"
+					"radius": "150"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
 					"grace_time": "0.75"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"movement_speed": "20 22 24 26"
+					"var_type": "FIELD_FLOAT",
+					"cooldown_time": "3"
 				},
 				"04": {
-					"var_type": "FIELD_FLOAT",
-					"bash_duration": "0.4 1.0 1.6 2.2",
-					"LinkedSpecialBonus": "special_bonus_unique_treant_4"
+					"var_type": "FIELD_INTEGER",
+					"regen_amp": "25"
 				},
 				"05": {
-					"var_type": "FIELD_FLOAT",
-					"total_damage": "60 110 160 210"
-				},
-				"06": {
 					"var_type": "FIELD_INTEGER",
-					"tick_count": "3"
+					"movement_bonus": "15"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -32766,7 +32751,6 @@
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "yes",
-		"cast_range": "700",
 		"cast_point": "0.4",
 		"cooldown": "26 22 18 14",
 		"mana_cost": "50",
@@ -32774,18 +32758,18 @@
 			{
 				"talent_name": "special_bonus_unique_treant_8",
 				"key": "total_heal",
-				"value": "60 120 180 240",
-				"talent_value": "120 180 240 300",
+				"value": "60 100 140 180",
+				"talent_value": "120 160 200 240",
 				"header": "TOTAL HEAL:"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "7 10 13 16",
+				"value": "4 6 8 10",
 				"header": "BONUS ARMOR:"
 			},
 			{
 				"key": "duration",
-				"value": "8",
+				"value": "12",
 				"header": "DURATION:"
 			}
 		],
@@ -32802,7 +32786,6 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_Treant.LivingArmor.Cast",
-			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.4",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "26 22 18 14",
@@ -32810,16 +32793,16 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"total_heal": "60 120 180 240",
+					"total_heal": "60 100 140 180",
 					"LinkedSpecialBonus": "special_bonus_unique_treant_8"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "7 10 13 16"
+					"bonus_armor": "4 6 8 10"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "8.0"
+					"duration": "12.0"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -32866,10 +32849,10 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/treant_overgrowth_png.png",
 		"localized_name": "Overgrowth",
-		"description": "Summons an overgrowth of vines and branches around Treant that prevent afflicted enemies from moving, blinking, going invisible, or attacking.",
+		"description": "Summons an overgrowth of vines and branches around Treant that deal damage to afflicted enemies and prevent them from moving, blinking, going invisible, or attacking.",
 		"lore": "Rooftrellen calls the ancestral spirit of nature, releasing its power through all of his kin.",
 		"note": "Works on Spell Immune units, but if units gain spell immunity after the effect starts, they'll break free.",
-		"aghanim": "Adds new ability: Eye in the Forest.\n When Overgrowth is cast, it is also cast around Eye of the Forest.",
+		"aghanim": "Adds new ability: Eye in the Forest.\n When Overgrowth is cast, it is also cast around Eye of the Forest. Causes all trees to respawn much faster.",
 		"json_data": {
 			"ID": "5437",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -33627,7 +33610,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "15 25 35",
+				"value": "25 35 45",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -33677,7 +33660,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "15 25 35"
+					"damage": "25 35 45"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -34172,7 +34155,7 @@
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/disruptor_thunder_strike_png.png",
 		"localized_name": "Thunder Strike",
-		"description": "Repeatedly strikes the targeted unit with lightning.  Each strike damages nearby enemy units in a small radius and applies an extremely short high duration slow.  Provides vision of its target.",
+		"description": "Repeatedly strikes the targeted unit with lightning.  Each strike damages nearby enemy units in a small radius and slows enemy movement and attack speed by **100%** for **0.1** seconds.  Provides vision of its target.",
 		"lore": "Disruptor's charged coils occasionally overload, and a singed armor plate or tuft of fur is the enemy's result.",
 		"json_data": {
 			"ID": "5458",
@@ -36508,7 +36491,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/wisp_overcharge_png.png",
 		"localized_name": "Overcharge",
-		"description": "Io gains bonus attack speed and damage reduction.  If Io is Tethered to an ally, that unit also gains the bonuses.",
+		"description": "Io gains bonus attack speed and HP Regen based on max health.  If Io is Tethered to an ally, that unit also gains the bonuses.",
 		"lore": "Drawing on the energy of matter from all worlds, Io begins the unravelling of time.",
 		"json_data": {
 			"ID": "5487",
@@ -37363,13 +37346,13 @@
 			},
 			{
 				"key": "absorption_tooltip",
-				"value": "60"
+				"value": "70"
 			}
 		],
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/medusa_mana_shield_png.png",
 		"localized_name": "Mana Shield",
-		"description": "Creates a shield that absorbs **60%** of incoming damage in exchange for Medusa's mana.",
+		"description": "Creates a shield that absorbs **70%** of incoming damage in exchange for Medusa's mana.",
 		"lore": "While Medusa was not gifted with eternal life upon birth, her curse bestowed her with impressive defensive powers.",
 		"note": "Absorbs damage before any damage reduction takes place, meaning that armor will not reduce the amount of mana needed to absorb damage.",
 		"json_data": {
@@ -37385,7 +37368,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"absorption_tooltip": "60"
+					"absorption_tooltip": "70"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -37440,7 +37423,7 @@
 			},
 			{
 				"key": "speed_boost",
-				"value": "25%",
+				"value": "35%",
 				"header": "SPEED BOOST:"
 			}
 		],
@@ -37495,7 +37478,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"speed_boost": "25"
+					"speed_boost": "35"
 				}
 			}
 		}
@@ -38462,7 +38445,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/magnataur_empower_png.png",
 		"localized_name": "Empower",
-		"description": "Gives an allied unit bonus damage and cleave on attack. Magnataur receives **2** times the bonus.",
+		"description": "Gives an allied unit bonus damage and cleave on attack. Magnus receives **2** times the bonus.",
 		"lore": "With a deep bellow, Magnus displays his true power.",
 		"note": "The bonus damage is based only on base damage and damage from primary attributes.\nCleave damage goes through spell immunity.\nRanged units cannot Cleave.",
 		"json_data": {
@@ -38580,8 +38563,14 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "skewer_cooldown",
-				"value": "4",
+				"value": "6",
 				"header": "SCEPTER COOLDOWN:"
+			},
+			{
+				"aghs_upgrade": "1",
+				"key": "skewer_manacost",
+				"value": "40",
+				"header": "SCEPTER MANACOST:"
 			}
 		],
 		"ability_slot": 3,
@@ -38590,7 +38579,7 @@
 		"description": "Magnus rushes forward, goring enemy units on his massive tusk. Heroes hit on the way will be dragged to the destination, then damaged and affected by slowed movement and attack speed.",
 		"lore": "Magnoceros horns are valuable in direct proportion to their danger to prospective merchants.",
 		"note": "Doesn't affect Spell Immune units.",
-		"aghanim": "Lowers cooldown and cast point. Removes manacost.",
+		"aghanim": "Lowers cooldown, cast point and manacost.",
 		"json_data": {
 			"ID": "5520",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -38640,7 +38629,12 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"skewer_cooldown": "4",
+					"skewer_cooldown": "6",
+					"RequiresScepter": "1"
+				},
+				"10": {
+					"var_type": "FIELD_INTEGER",
+					"skewer_manacost": "40",
 					"RequiresScepter": "1"
 				}
 			},
@@ -38687,7 +38681,6 @@
 		"localized_name": "Reverse Polarity",
 		"description": "Magnus changes properties of matter, sucking all nearby enemies in front of him and stunning them with a powerful slam and dealing damage.",
 		"lore": "Magnus fights with the fury of the erupting Mt. Joerlak.",
-		"note": "Disable and pull work through spell immunity.",
 		"json_data": {
 			"ID": "5521",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -45842,7 +45835,7 @@
 		"localized_name": "Reflection",
 		"description": "Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes are slowed and attacked by their reflection.",
 		"lore": "In the fractal prison of Foulfell, Terrorblade learned the truth of this old tale: you are your own worst enemy.  Now it is a lesson he teaches others.",
-		"note": "Reflections are untargetable, invulnerable illusions.\nReflections can only attack their source.",
+		"note": "Reflections are untargetable, invulnerable illusions, that will be destroyed if the slow debuff is removed.\nReflections can only attack their source.",
 		"json_data": {
 			"ID": "5619",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -47660,6 +47653,11 @@
 				"value": "800",
 				"talent_value": "1150",
 				"header": "TREE OVERGROWTH RADIUS:"
+			},
+			{
+				"aghs_upgrade": "1",
+				"key": "tree_respawn_seconds",
+				"value": "10"
 			}
 		],
 		"ability_slot": 4,
@@ -47694,6 +47692,11 @@
 					"var_type": "FIELD_INTEGER",
 					"overgrowth_aoe": "800",
 					"LinkedSpecialBonus": "special_bonus_unique_treant_5",
+					"RequiresScepter": "1"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"tree_respawn_seconds": "10",
 					"RequiresScepter": "1"
 				}
 			}
@@ -49902,7 +49905,7 @@
 		],
 		"icon": "/panorama/images/spellicons/lone_druid_savage_roar_bear_png.png",
 		"localized_name": "Savage Roar",
-		"description": "Spirit Bear roars fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by **20%**.",
+		"description": "Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by **20%**.",
 		"note": "An entangled hero will not be able to move.\nCooldown is shared with Lone Druid.",
 		"json_data": {
 			"ID": "5687",
@@ -50478,7 +50481,7 @@
 				"talent_name": "special_bonus_unique_monkey_king_2",
 				"key": "bonus_damage",
 				"value": "60 90 120 150",
-				"talent_value": "135 165 195 225",
+				"talent_value": "160 190 220 250",
 				"header": "BONUS DAMAGE:"
 			},
 			{
@@ -60250,11 +60253,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "0.5"
+				"value": "0.8"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+0.5 Backstab Multiplier",
+		"localized_name": "+0.8 Backstab Multiplier",
 		"json_data": {
 			"ID": "6330",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -60262,7 +60265,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.5"
+					"value": "0.8"
 				}
 			}
 		}
@@ -60865,7 +60868,6 @@
 		"behavior": "point|dont_resume_movement|root_disables",
 		"damage_type": "physical",
 		"spell_immunity": "yes",
-		"dispellable": "no",
 		"cast_range": "1000",
 		"cast_point": "0",
 		"cooldown": "20 16 12 8",
@@ -60933,7 +60935,6 @@
 			"ID": "6344",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
-			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityCastPoint": "0.0",
 			"AbilityCastRange": "1000",
@@ -62470,11 +62471,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "75"
+				"value": "100"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+75 Jingu Mastery Damage",
+		"localized_name": "+100 Jingu Mastery Damage",
 		"json_data": {
 			"ID": "6421",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -62482,7 +62483,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "75"
+					"value": "100"
 				}
 			}
 		}
@@ -62941,7 +62942,7 @@
 		"target_team": "enemy",
 		"cast_point": "0.2",
 		"cooldown": "20 17 14 11",
-		"damage": "120 200 280 360",
+		"damage": "100 180 260 340",
 		"mana_cost": "100 110 120 130",
 		"ability_special": [
 			{
@@ -62986,7 +62987,7 @@
 			"AbilitySound": "Hero_VoidSpirit.Dissimilate.Cast",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "20 17 14 11",
-			"AbilityDamage": "120 200 280 360",
+			"AbilityDamage": "100 180 260 340",
 			"AbilityManaCost": "100 110 120 130",
 			"AbilitySpecial": {
 				"01": {
@@ -63156,7 +63157,9 @@
 		"hero_id": 128,
 		"behavior": "point|aoe|dont_resume_movement|dont_resume_attack",
 		"damage_type": "magical",
+		"spell_immunity": "no",
 		"target_team": "enemy",
+		"dispellable": "yes",
 		"cast_range": "3000",
 		"cast_point": "0.5",
 		"cooldown": "90",
@@ -63251,13 +63254,15 @@
 		"localized_name": "Mortimer Kisses",
 		"description": "Snapfire's friend launches a barrage of firespit globs over **6** seconds. Globs cause impact damage and create pools of firespit, which slow and apply damage over time. Snapfire has a reduced turn rate for the duration and a minimum launch range of **600**. Each glob can be targeted with a right click.",
 		"lore": "Little did Beadie know when she adopted Mortimer, dragon toads--which aren't even toads at all--share more than just a name with their distant draconic cousins.",
-		"note": "Can be cancelled by pressing Stop, Hold Position, or using another ability.",
+		"note": "Can be cancelled by pressing Stop, Hold Position, or using another ability.\nHas a minimum travel time of **0.8** and maximum travel time of **2**.",
 		"json_data": {
 			"ID": "6482",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_Snapfire.MortimerBlob.Launch",
 			"AbilityCastRange": "3000",
 			"AbilityCastPoint": "0.5",
@@ -63351,14 +63356,15 @@
 		"behavior": "unit_target",
 		"damage_type": "magical",
 		"target_team": "friendly",
+		"dispellable": "yes_strong",
 		"cast_range": "700",
 		"cast_point": "0.2",
-		"cooldown": "24 22 20 18",
+		"cooldown": "24 21 18 15",
 		"mana_cost": "100",
 		"ability_special": [
 			{
 				"key": "projectile_speed",
-				"value": "800"
+				"value": "1000"
 			},
 			{
 				"key": "pre_hop_duration",
@@ -63402,7 +63408,7 @@
 			},
 			{
 				"key": "self_cast_delay",
-				"value": "0.4"
+				"value": "0.3"
 			}
 		],
 		"ability_slot": 2,
@@ -63410,23 +63416,25 @@
 		"localized_name": "Firesnap Cookie",
 		"description": "Snapfire feeds a potent cookie to Mortimer or an ally, causing them to hop a short distance. The hopping unit stuns and damages enemies in the landing zone.",
 		"lore": "With the help of a secret mixture that pairs Beadie's baking skills with her passion for black powder, these battle biscuits pack a punch.",
+		"note": "The cookie projectile has a speed of **1000**.",
 		"json_data": {
 			"ID": "6483",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Snapfire.FeedCookie.Cast",
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
-			"AbilityCooldown": "24 22 20 18",
+			"AbilityCooldown": "24 21 18 15",
 			"AbilityManaCost": "100",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"projectile_speed": "800"
+					"projectile_speed": "1000"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -63466,7 +63474,7 @@
 				},
 				"11": {
 					"var_type": "FIELD_FLOAT",
-					"self_cast_delay": "0.4"
+					"self_cast_delay": "0.3"
 				}
 			}
 		}
@@ -63529,11 +63537,11 @@
 		"cast_point": "0",
 		"cooldown": "24 20 16 12",
 		"duration": "8",
-		"mana_cost": "75",
+		"mana_cost": "90",
 		"ability_special": [
 			{
 				"key": "damage",
-				"value": "45 60 75 90",
+				"value": "40 55 70 85",
 				"header": "FIXED DAMAGE PER SHOT:"
 			},
 			{
@@ -63559,7 +63567,7 @@
 			},
 			{
 				"key": "attack_speed_slow_per_stack",
-				"value": "20 25 30 35",
+				"value": "15 20 25 30",
 				"header": "ATTACK SLOW PER STACK:"
 			},
 			{
@@ -63585,11 +63593,11 @@
 			"AbilityCastAnimation": "ACT_DOTA_OVERRIDE_ABILITY_3",
 			"AbilityCooldown": "24 20 16 12",
 			"AbilityDuration": "8",
-			"AbilityManaCost": "75",
+			"AbilityManaCost": "90",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "45 60 75 90"
+					"damage": "40 55 70 85"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -63613,7 +63621,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"attack_speed_slow_per_stack": "20 25 30 35"
+					"attack_speed_slow_per_stack": "15 20 25 30"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -65272,7 +65280,7 @@
 		"ability_special": [
 			{
 				"key": "physical_damage_reduction",
-				"value": "25% 40% 55% 70%",
+				"value": "40% 50% 60% 70%",
 				"header": "FRONT REDUCTION:"
 			},
 			{
@@ -65281,7 +65289,7 @@
 			},
 			{
 				"key": "physical_damage_reduction_side",
-				"value": "12% 20% 27% 35%",
+				"value": "20% 25% 30% 35%",
 				"header": "SIDE REDUCTION:"
 			},
 			{
@@ -65313,7 +65321,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"physical_damage_reduction": "25 40 55 70"
+					"physical_damage_reduction": "40 50 60 70"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -65321,7 +65329,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"physical_damage_reduction_side": "12 20 27 35"
+					"physical_damage_reduction_side": "20 25 30 35"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -65350,7 +65358,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
-		"dispellable": "yes",
+		"dispellable": "yes_strong",
 		"cast_point": "0.25",
 		"cooldown": "14",
 		"mana_cost": "100",
@@ -65410,7 +65418,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "1",
@@ -70190,7 +70198,7 @@
 		"ability_slot": 7,
 		"icon": "/panorama/images/spellicons/tiny_toss_tree_png.png",
 		"localized_name": "Tree Throw",
-		"description": "Consume the remaining Tree Grab charges and throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+		"description": "Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
 		"lore": "Even enemies can share in Tiny's arbor ardor.",
 		"json_data": {
 			"ID": "6937",
@@ -70559,11 +70567,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "2"
+				"value": "0"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+2s Nature's Guise Root",
+		"localized_name": "Nature's Guise Invisibility",
 		"json_data": {
 			"ID": "6956",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -70571,7 +70579,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "2"
+					"value": "0"
 				}
 			}
 		}
@@ -72311,11 +72319,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "14"
+				"value": "10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+14% Manacost/Manaloss Reduction Aura",
+		"localized_name": "+10% Magic Resistance Arcane Aura",
 		"json_data": {
 			"ID": "7042",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -72323,7 +72331,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "14"
+					"value": "10"
 				}
 			}
 		}
@@ -73110,7 +73118,7 @@
 		"id": 7116,
 		"name": "visage_stone_form_self_cast",
 		"hero_id": 92,
-		"behavior": "not_learnable|point|aoe|ignore_channel|ignore_pseudo_queue",
+		"behavior": "not_learnable|point|aoe|ignore_channel|ignore_pseudo_queue|immediate",
 		"spell_immunity": "no",
 		"dispellable": "no",
 		"cast_point": "0",
@@ -73153,7 +73161,7 @@
 		"note": "While Stone Form is not dispellable, the stun can be removed by strong dispells.",
 		"json_data": {
 			"ID": "7116",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "3",
@@ -75138,11 +75146,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "1.5"
+				"value": "1.25"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "1.5s Meld Hit Bash",
+		"localized_name": "1.25s Meld Hit Bash",
 		"json_data": {
 			"ID": "7371",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -75150,7 +75158,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "1.5"
+					"value": "1.25"
 				}
 			}
 		}
@@ -75596,6 +75604,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
+		"dispellable": "yes",
 		"cast_range": "1000",
 		"cast_point": "0",
 		"cooldown": "17 15 13 11",
@@ -75636,7 +75645,7 @@
 			},
 			{
 				"key": "impact_damage",
-				"value": "90 150 210 270",
+				"value": "80 130 180 230",
 				"header": "DAMAGE:"
 			},
 			{
@@ -75670,6 +75679,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_VoidSpirit.AetherRemnant.Cast",
 			"AbilityCastPoint": "0.0",
@@ -75711,7 +75721,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"impact_damage": "90 150 210 270"
+					"impact_damage": "80 130 180 230"
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
@@ -75799,6 +75809,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_VoidSpirit.AstralStep.Start",
+			"AnimationPlaybackRate": "1.5",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "0",
 			"AbilityManaCost": "80 90 100",
@@ -75962,8 +75973,8 @@
 			{
 				"talent_name": "special_bonus_unique_void_spirit_4",
 				"key": "damage",
-				"value": "70 130 190 250",
-				"talent_value": "170 230 290 350",
+				"value": "70 120 170 220",
+				"talent_value": "170 220 270 320",
 				"header": "DAMAGE:"
 			},
 			{
@@ -75973,7 +75984,7 @@
 			},
 			{
 				"key": "base_absorb_amount",
-				"value": "50 100 150 200",
+				"value": "40 80 120 160",
 				"header": "BASE SHIELD ABSORB:"
 			},
 			{
@@ -76016,7 +76027,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "70 130 190 250",
+					"damage": "70 120 170 220",
 					"LinkedSpecialBonus": "special_bonus_unique_void_spirit_4"
 				},
 				"04": {
@@ -76025,7 +76036,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"base_absorb_amount": "50 100 150 200"
+					"base_absorb_amount": "40 80 120 160"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -76122,6 +76133,7 @@
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
 		"localized_name": "Astral Step 200% Crit",
+		"description": "Attacks made with Astral Step deal a critical strike.",
 		"json_data": {
 			"ID": "7714",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -78428,7 +78440,7 @@
 			},
 			{
 				"talent_name": "special_bonus_unique_grimstroke_2",
-				"talent_operation": "SPECIAL_BONUS_MULTIPLY",
+				"talent_operation": "SPECIAL_BONUS_PERCENTAGE_ADD",
 				"key": "damage",
 				"value": "120 180 240 300",
 				"talent_value": "180 270 360 450",
@@ -78436,7 +78448,7 @@
 			},
 			{
 				"talent_name": "special_bonus_unique_grimstroke_2",
-				"talent_operation": "SPECIAL_BONUS_MULTIPLY",
+				"talent_operation": "SPECIAL_BONUS_PERCENTAGE_ADD",
 				"key": "bonus_damage_per_target",
 				"value": "16 24 32 40",
 				"talent_value": "24 36 48 60",
@@ -78499,13 +78511,13 @@
 					"var_type": "FIELD_INTEGER",
 					"damage": "120 180 240 300",
 					"LinkedSpecialBonus": "special_bonus_unique_grimstroke_2",
-					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY"
+					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_damage_per_target": "16 24 32 40",
 					"LinkedSpecialBonus": "special_bonus_unique_grimstroke_2",
-					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY"
+					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -78558,19 +78570,19 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "1.5"
+				"value": "50"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "1.5x Stroke of Fate Damage",
+		"localized_name": "+50% Stroke of Fate Damage",
 		"json_data": {
 			"ID": "8002",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_FLOAT",
-					"value": "1.5"
+					"var_type": "FIELD_INTEGER",
+					"value": "50"
 				}
 			}
 		}
