@@ -4328,8 +4328,8 @@
 					"SlotText": "#LoadoutSlot_Weapon",
 					"TextureWidth": "256",
 					"TextureHeight": "256",
-					"MaxPolygonsLOD0": "500",
-					"MaxPolygonsLOD1": "500"
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1500"
 				},
 				"1": {
 					"SlotIndex": "1",
@@ -4338,8 +4338,8 @@
 					"LoadoutPreviewMode": "hero_model_override",
 					"TextureWidth": "1024",
 					"TextureHeight": "1024",
-					"MaxPolygonsLOD0": "4000",
-					"MaxPolygonsLOD1": "3000",
+					"MaxPolygonsLOD0": "7000",
+					"MaxPolygonsLOD1": "5000",
 					"no_import": "1"
 				},
 				"2": {
@@ -4349,8 +4349,8 @@
 					"LoadoutPreviewMode": "hero_model_override",
 					"TextureWidth": "1024",
 					"TextureHeight": "1024",
-					"MaxPolygonsLOD0": "4000",
-					"MaxPolygonsLOD1": "3000",
+					"MaxPolygonsLOD0": "8000",
+					"MaxPolygonsLOD1": "6000",
 					"no_import": "1"
 				},
 				"3": {
@@ -4358,10 +4358,10 @@
 					"SlotName": "neck",
 					"SlotText": "#LoadoutSlot_Tiny_Body_2",
 					"LoadoutPreviewMode": "hero_model_override",
-					"TextureWidth": "1024",
-					"TextureHeight": "1024",
-					"MaxPolygonsLOD0": "4000",
-					"MaxPolygonsLOD1": "3000",
+					"TextureWidth": "2048",
+					"TextureHeight": "2048",
+					"MaxPolygonsLOD0": "12000",
+					"MaxPolygonsLOD1": "7000",
 					"no_import": "1"
 				},
 				"4": {
@@ -4369,10 +4369,10 @@
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Tiny_Body_3",
 					"LoadoutPreviewMode": "hero_model_override",
-					"TextureWidth": "1024",
-					"TextureHeight": "1024",
-					"MaxPolygonsLOD0": "4000",
-					"MaxPolygonsLOD1": "3000",
+					"TextureWidth": "2048",
+					"TextureHeight": "2048",
+					"MaxPolygonsLOD0": "15000",
+					"MaxPolygonsLOD1": "8000",
 					"no_import": "1"
 				},
 				"6": {
@@ -18004,7 +18004,7 @@
 			"ModelScale": "0.930000",
 			"VersusScale": "0.840000",
 			"LoadoutScale": "0.870000",
-			"MaxModelScaleMultiplier": "1.3",
+			"MaxModelScaleMultiplier": "1.22",
 			"SpectatorLoadoutScale": "0.88",
 			"NameAliases": "om",
 			"PickSound": "ogre_magi_ogmag_spawn_01",
@@ -18042,6 +18042,10 @@
 			"AttackAnimationPoint": "0.300000",
 			"AttackAcquisitionRange": "600",
 			"AttackRange": "150",
+			"AttackSpeedActivityModifiers": {
+				"fast": "150",
+				"faster": "250"
+			},
 			"AttributePrimary": "DOTA_ATTRIBUTE_INTELLECT",
 			"AttributeBaseStrength": "23",
 			"AttributeStrengthGain": "3.500000",
@@ -18116,6 +18120,11 @@
 					"SlotName": "ambient_effects",
 					"SlotText": "#LoadoutSlot_Ambient_Effects",
 					"DisplayInLoadout": "0"
+				},
+				"7": {
+					"SlotIndex": "7",
+					"SlotName": "voice",
+					"SlotText": "#LoadoutSlot_Voice"
 				}
 			},
 			"Bot": {
@@ -24415,7 +24424,8 @@
 		"full_name": "npc_dota_hero_void_spirit",
 		"media_name": "void_spirit",
 		"localized_name": "Void Spirit",
-		"aliases": "void spirit",
+		"real_name": "Inai",
+		"aliases": "void spirit|inai",
 		"roles": "Carry|Escape|Nuker|Disabler",
 		"role_levels": "2|3|2|1",
 		"hype": "Privy to secrets that would shatter a mortal mind, the Void Spirit emerges from his Hidden Temple to stand guard over multiple areas of the battlefield at once. Able to step into and out of the mortal plane at will, he easily outmaneuvers opponents to strike from wherever he desires, calling upon the powers of the aether to shield him in times of need.",
@@ -24424,7 +24434,7 @@
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_void_spirit_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_void_spirit_png.png",
 		"talents": "+3 Mana Regen|+30 Damage|Remnant Provides 600 Truesight|+100 Resonant Pulse Damage|+15% Spell Amplification|-7 Astral Step Charge Restore Time|Astral Step 200% Crit|Dissimilate Stuns for 3s",
-		"color": "#ffffff",
+		"color": "#bf00ff",
 		"team": "Good",
 		"base_mana_regen": 0.6,
 		"base_movement": 305,
@@ -24599,7 +24609,8 @@
 		"full_name": "npc_dota_hero_snapfire",
 		"media_name": "snapfire",
 		"localized_name": "Snapfire",
-		"aliases": "snapfire",
+		"real_name": "Beatrix",
+		"aliases": "snapfire|beatrix",
 		"roles": "Support|Nuker|Disabler|Escape",
 		"role_levels": "1|3|1|1",
 		"hype": "Just as happy to blow your legs off with her trusty scattergun as to fill your belly up with a deliciously-dangerous cookie, Beatrix Snapfire delights in riding into battle with her dragon toad Mortimer, always ready to mow down their enemies with her homemade heavy artillery or finish them off with a steady barrage of Mortimer's firespit globs.",
@@ -24608,7 +24619,7 @@
 		"icon": "/panorama/images/heroes/icons/npc_dota_hero_snapfire_png.png",
 		"portrait": "/panorama/images/heroes/selection/npc_dota_hero_snapfire_png.png",
 		"talents": "+250 Health|+20 Movement Speed|Firesnap Cookie Restores 250 Health|+60 Scatterblast Damage|Lil' Shredder Uses Your Attack Damage|+25% Mortimer Kisses Movement Slow|Scatterblast Applies 3s Disarm|+8 Mortimer Kisses Launched",
-		"color": "#f2c8c6",
+		"color": "#f38047",
 		"team": "Good",
 		"base_mana_regen": 0.0,
 		"base_movement": 300,
