@@ -120,6 +120,8 @@ class Item(Base):
 	base_level = Column(Integer)
 	description = Column(String)
 	lore = Column(String)
+	secret_shop = Column(Boolean)
+	neutral_tier = Column(String)
 	ability_special = Column(String)
 
 	json_data = Column(String)

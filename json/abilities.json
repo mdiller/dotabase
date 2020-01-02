@@ -10614,7 +10614,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/vengefulspirit_command_aura_png.png",
 		"localized_name": "Vengeance Aura",
-		"description": "Vengeful Spirit's presence increases the ranged attack range and primary attribute of nearby friendly units. Spawns a Strong Illusion when of Vengeful Spirit when she dies that lasts until it is killed or Vengeful Spirit revives.",
+		"description": "Vengeful Spirit's presence increases the ranged attack range and primary attribute of nearby friendly units. Spawns a Strong Illusion of Vengeful Spirit when she dies that lasts until it is killed or Vengeful Spirit revives.",
 		"lore": "Although they may not share her undying passion for revenge, allies do draw on her fanaticism in combat.",
 		"note": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.\nStrong Illusions are not instantly killed by spells.",
 		"json_data": {
@@ -20098,7 +20098,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/life_stealer_infest_png.png",
 		"localized_name": "Infest",
-		"description": "Lifestealer infests the body of a target unit, becoming undetectable inside. He can then explode from the host body, dealing damage to nearby enemies. If the infested unit is an enemy creep or a neutral creep, he can take control of the unit's ability to move and attack, and when consumed the creep will heal Lifestealer's health equal to the creep's current health.  Does not work on enemy heroes.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Lifestealer infests the body of a target unit, becoming undetectable, and healing for a portion of his max hitpoints every second while inside. He can then explode from the host body, dealing damage to nearby enemies. If the infested unit is an enemy creep or a neutral creep, he can take control of the unit's ability to move and attack. Does not work on enemy heroes.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "With this infestation, N'aix consumes the life blood of the host, restoring him back to full unholy power.",
 		"note": "If the infested unit dies before Lifestealer consumes it, no health is gained.\nLifestealer gains experience while under the effects of Infest.\nCreeps that are controlled while Infested share Lifestealer's movement speed.\nInfest Level 2 and 3 can be used on Ancient creeps.",
 		"aghanim": "Reduces Infest cooldown, increases cast range, and applies Rage buff to the infested unit.",
@@ -20406,7 +20406,7 @@
 		"id": 5258,
 		"name": "dark_seer_wall_of_replica",
 		"hero_id": 55,
-		"behavior": "point",
+		"behavior": "point|vector_targeting",
 		"damage_type": "magical",
 		"spell_immunity": "yes",
 		"cast_range": "1300",
@@ -20471,7 +20471,7 @@
 		"aghanim": "Increases Wall length.",
 		"json_data": {
 			"ID": "5258",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
@@ -32579,7 +32579,7 @@
 		"id": 5434,
 		"name": "treant_natures_guise",
 		"hero_id": 83,
-		"behavior": "passive|not_learnable",
+		"behavior": "passive|not_learnable|show_in_guides",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -32612,7 +32612,7 @@
 		"note": "While affected by Nature's Guise, Treant can move unobstructed through other trees .",
 		"json_data": {
 			"ID": "5434",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"FightRecapLevel": "2",
 			"MaxLevel": "1",
 			"AbilitySound": "Hero_Treant.NaturesGuise.On",
@@ -36771,7 +36771,6 @@
 		"name": "slark_pounce",
 		"hero_id": 93,
 		"behavior": "no_target|root_disables",
-		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "no",
 		"cooldown": "20 16 12 8",
@@ -36833,7 +36832,6 @@
 		"json_data": {
 			"ID": "5495",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
@@ -60873,7 +60871,7 @@
 		"id": 6344,
 		"name": "pangolier_swashbuckle",
 		"hero_id": 120,
-		"behavior": "point|dont_resume_movement|root_disables",
+		"behavior": "point|dont_resume_movement|root_disables|vector_targeting",
 		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"cast_range": "1000",
@@ -60941,7 +60939,7 @@
 		"note": "Attack modifiers have a chance to proc on Swashbuckle attacks.\nCasting Swashbuckle during Rolling Thunder ends Rolling Thunder.",
 		"json_data": {
 			"ID": "6344",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityCastPoint": "0.0",
@@ -74682,7 +74680,7 @@
 		"id": 7319,
 		"name": "clinkz_burning_army",
 		"hero_id": 56,
-		"behavior": "point",
+		"behavior": "point|vector_targeting",
 		"damage_type": "physical",
 		"cast_range": "1200",
 		"cast_point": "0",
@@ -74726,7 +74724,7 @@
 		"json_data": {
 			"ID": "7319",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Clinkz.DeathPact",
@@ -75608,7 +75606,7 @@
 		"id": 7701,
 		"name": "void_spirit_aether_remnant",
 		"hero_id": 126,
-		"behavior": "point|dont_resume_movement",
+		"behavior": "point|dont_resume_movement|vector_targeting",
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
@@ -75682,7 +75680,7 @@
 		"lore": "Inai exists far beyond the scope of a single point in space and time.",
 		"json_data": {
 			"ID": "7701",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -76247,8 +76245,8 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/seasonal_summon_snowman_png.png",
-		"localized_name": "Summon Snowman",
-		"description": "Summons a jolly snowman.",
+		"localized_name": "Build Snowman",
+		"description": "Construct a jolly snowman.",
 		"lore": "He'll stay friends as long as he can.",
 		"json_data": {
 			"ID": "7806",
@@ -76552,6 +76550,174 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "500"
+				}
+			}
+		}
+	},
+	{
+		"id": 7814,
+		"name": "seasonal_summon_penguin",
+		"behavior": "point|not_learnable|item",
+		"cast_range": "400",
+		"cast_point": "0.3",
+		"cooldown": "30",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "initial_lifetime",
+				"value": "20"
+			},
+			{
+				"key": "initial_speed",
+				"value": "100"
+			},
+			{
+				"key": "speed_step",
+				"value": "1"
+			},
+			{
+				"key": "max_speed",
+				"value": "1000"
+			},
+			{
+				"key": "impaired_duration",
+				"value": "3"
+			},
+			{
+				"key": "bump_delay",
+				"value": "1.5"
+			},
+			{
+				"key": "bump_collision_radius",
+				"value": "120"
+			},
+			{
+				"key": "spawn_offset",
+				"value": "150"
+			},
+			{
+				"key": "run_distance",
+				"value": "200"
+			},
+			{
+				"key": "jump_distance",
+				"value": "150"
+			},
+			{
+				"key": "speed_after_crash",
+				"value": "125"
+			},
+			{
+				"key": "speed_gain_per_hero_bump",
+				"value": "60"
+			},
+			{
+				"key": "speed_step_interval",
+				"value": "0.05"
+			},
+			{
+				"key": "max_gainable_lifetime",
+				"value": "20"
+			},
+			{
+				"key": "lifetime_gain_per_hero_bump",
+				"value": "5"
+			},
+			{
+				"key": "min_speech_repeat_time",
+				"value": "0.5"
+			},
+			{
+				"key": "bump_delay_absolute",
+				"value": "0.25"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Summon Penguin",
+		"description": "Summon a friendly penguin who slides around. Each time a hero bumps the penguin, it gains speed and lasts a bit longer.",
+		"lore": "Nothing gets age-old enemies to set aside their differences quite like a penguin to play with.",
+		"note": "Your team's penguins will pass through enemy heroes that you don't have vision of.",
+		"json_data": {
+			"ID": "7814",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AssociatedConsumable": "17527",
+			"AbilityTextureName": "consumables/seasonal_summon_penguin",
+			"AbilityCastRange": "400",
+			"AbilityCastPoint": "0.3",
+			"AbilityCooldown": "30",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"initial_lifetime": "20.0"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"initial_speed": "100"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"speed_step": "1"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"max_speed": "1000"
+				},
+				"05": {
+					"var_type": "FIELD_FLOAT",
+					"impaired_duration": "3.0"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"bump_delay": "1.5"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"bump_collision_radius": "120"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"spawn_offset": "150"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"run_distance": "200"
+				},
+				"10": {
+					"var_type": "FIELD_INTEGER",
+					"jump_distance": "150"
+				},
+				"11": {
+					"var_type": "FIELD_INTEGER",
+					"speed_after_crash": "125"
+				},
+				"12": {
+					"var_type": "FIELD_INTEGER",
+					"speed_gain_per_hero_bump": "60"
+				},
+				"13": {
+					"var_type": "FIELD_FLOAT",
+					"speed_step_interval": "0.05"
+				},
+				"14": {
+					"var_type": "FIELD_FLOAT",
+					"max_gainable_lifetime": "20.0"
+				},
+				"15": {
+					"var_type": "FIELD_FLOAT",
+					"lifetime_gain_per_hero_bump": "5.0"
+				},
+				"16": {
+					"var_type": "FIELD_FLOAT",
+					"min_speech_repeat_time": "0.5"
+				},
+				"17": {
+					"var_type": "FIELD_FLOAT",
+					"bump_delay_absolute": "0.25"
 				}
 			}
 		}
