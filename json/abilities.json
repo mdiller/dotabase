@@ -516,7 +516,7 @@
 		"id": 322,
 		"name": "pudge_eject",
 		"hero_id": 14,
-		"behavior": "no_target|immediate|hidden",
+		"behavior": "no_target|immediate|hidden|show_in_guides",
 		"spell_immunity": "no",
 		"ability_special": [],
 		"ability_slot": 4,
@@ -525,7 +525,7 @@
 		"description": "Ejects the swallowed allied hero inside of you.",
 		"json_data": {
 			"ID": "322",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -619,7 +619,7 @@
 		"id": 333,
 		"name": "lycan_wolf_bite",
 		"hero_id": 77,
-		"behavior": "unit_target|hidden",
+		"behavior": "unit_target|hidden|show_in_guides",
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "no",
@@ -643,7 +643,7 @@
 		"description": "Lycan bites an ally, granting them Shapeshift properties. Lycan and the bitten target gain **30%** Lifesteal and share %lifesteal% Lifesteal with each other as long as they are within **1200** range of each other.",
 		"json_data": {
 			"ID": "333",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
@@ -929,7 +929,7 @@
 		"cast_point": "0",
 		"channel_time": "1.75",
 		"cooldown": "26 24 22 20",
-		"mana_cost": "50 60 70 80",
+		"mana_cost": "50 70 90 110",
 		"ability_special": [
 			{
 				"key": "arrow_count",
@@ -945,7 +945,7 @@
 			},
 			{
 				"key": "arrow_slow_duration",
-				"value": "1 2 3 4",
+				"value": "1.25 2 2.75 3.5",
 				"header": "ARROW SLOW DURATION:"
 			},
 			{
@@ -981,7 +981,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityChannelTime": "1.75",
 			"AbilityCooldown": "26 24 22 20",
-			"AbilityManaCost": "50 60 70 80",
+			"AbilityManaCost": "50 70 90 110",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -994,7 +994,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"arrow_slow_duration": "1 2 3 4"
+					"arrow_slow_duration": "1.25 2 2.75 3.5"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -9337,7 +9337,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "yes",
 		"target_team": "custom",
-		"cast_range": "1300",
+		"cast_range": "1000 1100 1200 1300",
 		"cast_point": "0",
 		"cooldown": "17 15 13 11",
 		"mana_cost": "90 100 110 120",
@@ -9383,7 +9383,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
-			"AbilityCastRange": "1300",
+			"AbilityCastRange": "1000 1100 1200 1300",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "17 15 13 11",
 			"AbilityManaCost": "90 100 110 120",
@@ -9470,13 +9470,13 @@
 			},
 			{
 				"key": "speed_reduction",
-				"value": "25"
+				"value": "30"
 			}
 		],
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/tiny_tree_grab_png.png",
 		"localized_name": "Tree Grab",
-		"description": "Grabs a tree to whack enemies on the head. Grants bonus attack range but Tiny is slowed by **25**. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.",
+		"description": "Grabs a tree to whack enemies on the head. Grants bonus attack range but Tiny is slowed by **30**. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.",
 		"note": "The cooldown begins when the tree is thrown.",
 		"aghanim": "Grants new ability: Tree Volley. Tiny throws random trees within range towards the targeted aoe.",
 		"json_data": {
@@ -9532,7 +9532,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"speed_reduction": "25"
+					"speed_reduction": "30"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -10517,7 +10517,7 @@
 		"dispellable": "yes_strong",
 		"cast_range": "500",
 		"cast_point": "0.3",
-		"cooldown": "9",
+		"cooldown": "12 11 10 9",
 		"mana_cost": "100 110 120 130",
 		"ability_special": [
 			{
@@ -10554,7 +10554,7 @@
 			"AbilitySound": "Hero_VengefulSpirit.MagicMissile",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "9",
+			"AbilityCooldown": "12 11 10 9",
 			"AbilityManaCost": "100 110 120 130",
 			"AbilitySpecial": {
 				"01": {
@@ -10741,7 +10741,7 @@
 		"spell_immunity": "yes",
 		"target_team": "custom",
 		"cast_range": "700 850 1000",
-		"cast_point": "0.3",
+		"cast_point": "0.4",
 		"cooldown": "0",
 		"mana_cost": "100 150 200",
 		"ability_special": [
@@ -10787,7 +10787,7 @@
 			"AbilitySound": "Hero_VengefulSpirit.NetherSwap",
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "700 850 1000",
-			"AbilityCastPoint": "0.3 0.3 0.3",
+			"AbilityCastPoint": "0.4",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "0.0",
 			"AbilityManaCost": "100 150 200",
@@ -17406,7 +17406,7 @@
 		"cast_point": "0",
 		"cooldown": "0",
 		"damage": "0",
-		"mana_cost": "20",
+		"mana_cost": "25",
 		"ability_special": [
 			{
 				"key": "duration",
@@ -17456,7 +17456,7 @@
 			"AbilityCastPoint": "0",
 			"AbilityCooldown": "0.0",
 			"AbilityDamage": "0 0 0 0",
-			"AbilityManaCost": "20",
+			"AbilityManaCost": "25",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -25838,13 +25838,13 @@
 		"cast_range": "600",
 		"cast_point": "0",
 		"cooldown": "50 45 40 35",
-		"mana_cost": "60 65 70 75",
+		"mana_cost": "60 70 80 90",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_doom_4",
 				"key": "damage_per_second",
-				"value": "20 35 50 65",
-				"talent_value": "40 55 70 85",
+				"value": "15 30 45 60",
+				"talent_value": "35 50 65 80",
 				"header": "DAMAGE:"
 			},
 			{
@@ -25881,11 +25881,11 @@
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCastRange": "600 600 600 600",
 			"AbilityCooldown": "50 45 40 35",
-			"AbilityManaCost": "60 65 70 75",
+			"AbilityManaCost": "60 70 80 90",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_second": "20 35 50 65",
+					"damage_per_second": "15 30 45 60",
 					"LinkedSpecialBonus": "special_bonus_unique_doom_4"
 				},
 				"02": {
@@ -29976,8 +29976,8 @@
 			{
 				"talent_name": "special_bonus_unique_outworld_devourer_4",
 				"key": "damage_multiplier",
-				"value": "0.5",
-				"talent_value": "0.6",
+				"value": "0.4",
+				"talent_value": "0.5",
 				"header": "MANA DIFFERENCE MULTIPLIER:"
 			},
 			{
@@ -30030,7 +30030,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"damage_multiplier": "0.5",
+					"damage_multiplier": "0.4",
 					"LinkedSpecialBonus": "special_bonus_unique_outworld_devourer_4"
 				},
 				"06": {
@@ -32667,7 +32667,7 @@
 			},
 			{
 				"key": "movement_slow",
-				"value": "-26% -34% -42% -50%",
+				"value": "-18% -24% -30% -36%",
 				"header": "MOVEMENT SLOW:"
 			},
 			{
@@ -32720,7 +32720,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movement_slow": "-26 -34 -42 -50"
+					"movement_slow": "-18 -24 -30 -36"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -32817,7 +32817,7 @@
 		"dispellable": "yes",
 		"cast_point": "0.5",
 		"cooldown": "100",
-		"mana_cost": "150 175 200",
+		"mana_cost": "200 250 300",
 		"ability_special": [
 			{
 				"key": "duration",
@@ -32865,7 +32865,7 @@
 			"FightRecapLevel": "2",
 			"HasScepterUpgrade": "1",
 			"AbilityCooldown": "100",
-			"AbilityManaCost": "150 175 200",
+			"AbilityManaCost": "200 250 300",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -34761,7 +34761,7 @@
 		"id": 5466,
 		"name": "ogre_magi_unrefined_fireblast",
 		"hero_id": 84,
-		"behavior": "unit_target",
+		"behavior": "unit_target|hidden|show_in_guides",
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
@@ -34802,7 +34802,7 @@
 		"note": "When Multicast, Unrefined Fireblast hits the same target each time with a **0.6** seconds interval.",
 		"json_data": {
 			"ID": "5466",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -38294,13 +38294,11 @@
 			},
 			{
 				"key": "slow_duration",
-				"value": "2",
-				"header": "SCEPTER SLOW DURATION:"
+				"value": "2"
 			},
 			{
 				"key": "scepter_distance",
-				"value": "2000",
-				"header": "SCEPTER RANGE:"
+				"value": "2000"
 			},
 			{
 				"key": "scepter_speed",
@@ -63168,7 +63166,7 @@
 		"dispellable": "yes",
 		"cast_range": "3000",
 		"cast_point": "0.5",
-		"cooldown": "90",
+		"cooldown": "110",
 		"duration": "6",
 		"mana_cost": "125 150 175",
 		"ability_special": [
@@ -63274,7 +63272,7 @@
 			"AbilityCastPoint": "0.5",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-			"AbilityCooldown": "90",
+			"AbilityCooldown": "110",
 			"AbilityDuration": "6.0",
 			"AbilityManaCost": "125 150 175",
 			"AbilitySpecial": {
@@ -73124,7 +73122,7 @@
 		"id": 7116,
 		"name": "visage_stone_form_self_cast",
 		"hero_id": 92,
-		"behavior": "not_learnable|point|aoe|ignore_channel|ignore_pseudo_queue|immediate",
+		"behavior": "not_learnable|no_target|immediate|ignore_channel|ignore_pseudo_queue",
 		"spell_immunity": "no",
 		"dispellable": "no",
 		"cast_point": "0",
@@ -73163,11 +73161,11 @@
 		"ability_slot": 4,
 		"icon": "/panorama/images/spellicons/visage_stone_form_self_cast_png.png",
 		"localized_name": "Stone Form",
-		"description": "The closest familiar to the target location moves and casts Stone Form at that location.After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After **6** seconds, the Familiar will automatically leave Stone Form.",
+		"description": "After a short delay, the nearest Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After **6** seconds, the Familiar will automatically leave Stone Form.",
 		"note": "While Stone Form is not dispellable, the stun can be removed by strong dispells.",
 		"json_data": {
 			"ID": "7116",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "3",
@@ -74316,7 +74314,7 @@
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/brewmaster_cinder_brew_png.png",
 		"localized_name": "Cinder Brew",
-		"description": "Drenches an area in alcohol, causing enemy units to be move slower and ignited once they take any spell damage. Duration is increased by **3** seconds when ignited.",
+		"description": "Drenches an area in alcohol, causing enemy units to move slower and ignited once they take any spell damage. Duration is increased by **3** seconds when ignited.",
 		"lore": "The Order of the Oyo's solution to all problems - another round!",
 		"json_data": {
 			"ID": "7310",
@@ -77832,7 +77830,7 @@
 		"description": "Allows Templar Assassin to teleport to any Psionic Trap after a brief channel. Does not break meld. Detonates the Psionic Trap on arrival.",
 		"json_data": {
 			"ID": "7853",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_CHANNELLED| DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE ",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
 			"MaxLevel": "3",
 			"FightRecapLevel": "1",
 			"IsGrantedByScepter": "1",
