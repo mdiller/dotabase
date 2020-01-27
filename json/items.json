@@ -392,7 +392,7 @@
 		"cooldown": "4",
 		"cast_range": "350",
 		"mana_cost": "0",
-		"description": "# Active: Chop Tree/Ward\nDestroy a target tree or ward. Chop cast range is increased when targeting wards.\n\nTree Range: **350**\nWard Range: **450**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged.",
+		"description": "# Active: Chop Tree\nDestroy a target tree. \n\nCast Range: **350**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged.",
 		"lore": "The axe of a fallen gnome, it allows you to effectively maneuver the forest.",
 		"secret_shop": false,
 		"ability_special": [
@@ -407,10 +407,6 @@
 			{
 				"key": "quelling_range_tooltip",
 				"value": "350"
-			},
-			{
-				"key": "cast_range_ward",
-				"value": "450"
 			}
 		],
 		"json_data": {
@@ -441,10 +437,6 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"quelling_range_tooltip": "350"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"cast_range_ward": "450"
 				}
 			}
 		}
@@ -1862,17 +1854,13 @@
 		"icon": "/panorama/images/items/tango_png.png",
 		"cost": 90,
 		"cast_range": "165",
-		"description": "# Use: Devour\nConsumes a target tree to gain **7** health regeneration for **16** seconds. Consuming a ward or Ironwood Tree doubles the heal amount.\n\nComes with **3** charges.  Can be used on an allied hero to give them one Tango.\n\nTree Range: **165**\nWard Range: **450**",
+		"description": "# Use: Devour\nConsumes a target tree to gain **7** health regeneration for **16** seconds. Consuming an Ironwood Tree doubles the heal amount.\n\nComes with **3** charges.  Can be used on an allied hero to give them one Tango.\n\nTree Range: **165**",
 		"lore": "Forage to survive on the battlefield.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "health_regen",
 				"value": "7"
-			},
-			{
-				"key": "cast_range_ward",
-				"value": "450"
 			},
 			{
 				"key": "buff_duration",
@@ -1907,14 +1895,10 @@
 					"health_regen": "7.0"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"cast_range_ward": "450"
-				},
-				"03": {
 					"var_type": "FIELD_FLOAT",
 					"buff_duration": "16.0"
 				},
-				"04": {
+				"03": {
 					"var_type": "FIELD_INTEGER",
 					"tooltip_charges": "3"
 				}
@@ -2482,7 +2466,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.75",
+				"value": "2.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2498,7 +2482,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1.75"
+					"bonus_mana_regen": "2.25"
 				}
 			}
 		}
@@ -2941,7 +2925,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2",
+				"value": "2.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2961,7 +2945,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2.0"
+					"bonus_mana_regen": "2.25"
 				}
 			}
 		}
@@ -2995,7 +2979,7 @@
 		"icon": "/panorama/images/items/poor_mans_shield_png.png",
 		"cost": 0,
 		"cooldown": "6",
-		"description": "# Passive: Damage Block\nGives a 100% chance to block **20** damage from incoming attacks on melee heroes, and **10** damage on ranged.\n\nHas a **50%** chance to block damage from creeps.",
+		"description": "# Passive: Damage Block\nGives a 100% chance to block **30** damage from incoming attacks on melee heroes, and **20** damage on ranged.\n\nHas a **50%** chance to block damage from creeps.",
 		"lore": "A busted old shield that seems to block more than it should.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -3008,11 +2992,11 @@
 			},
 			{
 				"key": "damage_block_melee",
-				"value": "20"
+				"value": "30"
 			},
 			{
 				"key": "damage_block_ranged",
-				"value": "10"
+				"value": "20"
 			},
 			{
 				"key": "block_chance",
@@ -3041,11 +3025,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage_block_melee": "20"
+					"damage_block_melee": "30"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_block_ranged": "10"
+					"damage_block_ranged": "20"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -3444,13 +3428,13 @@
 		"icon": "/panorama/images/items/vladmir_png.png",
 		"cost": 2300,
 		"cast_range": "1200",
-		"description": "# Passive: Vladmir's Aura\nGrants **25%** lifesteal, **1.5** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
+		"description": "# Passive: Vladmir's Aura\nGrants **25%** lifesteal, **1.25** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "mana_regen_aura",
-				"value": "1.5"
+				"value": "1.25"
 			},
 			{
 				"key": "armor_aura",
@@ -3484,7 +3468,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen_aura": "1.5"
+					"mana_regen_aura": "1.25"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -4587,7 +4571,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2 2.5 3",
+				"value": "3 3.5 4",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -4669,7 +4653,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2 2.5 3.0"
+					"bonus_mana_regen": "3 3.5 4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -5771,7 +5755,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "22",
+				"value": "28",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -5806,7 +5790,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "22"
+					"bonus_damage": "28"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6157,7 +6141,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "65",
+				"value": "60",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6191,7 +6175,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "65"
+					"bonus_damage": "60"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -6324,13 +6308,13 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/greater_crit_png.png",
 		"cost": 5330,
-		"description": "# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **235%** damage.",
+		"description": "# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **225%** damage.",
 		"lore": "A weapon of incredible power that is difficult for even the strongest of warriors to control.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "80",
+				"value": "88",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6340,7 +6324,7 @@
 			},
 			{
 				"key": "crit_multiplier",
-				"value": "235"
+				"value": "225"
 			},
 			{
 				"key": "tooltip_crit_damage",
@@ -6359,7 +6343,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "80"
+					"bonus_damage": "88"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6367,7 +6351,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"crit_multiplier": "235"
+					"crit_multiplier": "225"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -6515,13 +6499,13 @@
 		"cost": 4350,
 		"cooldown": "4",
 		"cast_range": "350",
-		"description": "# Active: Chop Tree/Ward\nDestroy a target tree or ward.\n\nTree Cast Range: **350**\nWard Cast Range: **450** \n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged. \n\n# Passive: Cleave\nDeals **60%** of attack damage as physical damage in a cone up to **650** around the target. (Melee Only)",
+		"description": "# Active: Chop Tree\nDestroy a target tree.\n\nCast Range: **350**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged. \n\n# Passive: Cleave\nDeals **70%** of attack damage as physical damage in a cone up to **650** around the target. Deals **50%** against creeps. (Melee Only)",
 		"lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "54",
+				"value": "60",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6539,7 +6523,11 @@
 			},
 			{
 				"key": "cleave_damage_percent",
-				"value": "60"
+				"value": "70"
+			},
+			{
+				"key": "cleave_damage_percent_creep",
+				"value": "50"
 			},
 			{
 				"key": "quelling_bonus",
@@ -6560,10 +6548,6 @@
 			{
 				"key": "cleave_distance",
 				"value": "650"
-			},
-			{
-				"key": "cast_range_ward",
-				"value": "450"
 			}
 		],
 		"json_data": {
@@ -6583,7 +6567,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "54"
+					"bonus_damage": "60"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -6595,31 +6579,31 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_damage_percent": "60"
+					"cleave_damage_percent": "70"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"quelling_bonus": "18"
+					"cleave_damage_percent_creep": "50"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"quelling_bonus_ranged": "5"
+					"quelling_bonus": "18"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_starting_width": "150"
+					"quelling_bonus_ranged": "5"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_ending_width": "360"
+					"cleave_starting_width": "150"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"cleave_distance": "650"
+					"cleave_ending_width": "360"
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"cast_range_ward": "450"
+					"cleave_distance": "650"
 				}
 			}
 		}
@@ -6874,13 +6858,13 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/lesser_crit_png.png",
 		"cost": 2130,
-		"description": "# Passive: Critical Strike\nGrants each attack a **20%** chance to deal **175%** damage.",
+		"description": "# Passive: Critical Strike\nGrants each attack a **20%** chance to deal **160%** damage.",
 		"lore": "A blade forged from rare crystals, it seeks weak points in enemy armor.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "38",
+				"value": "45",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6890,7 +6874,7 @@
 			},
 			{
 				"key": "crit_multiplier",
-				"value": "175"
+				"value": "160"
 			},
 			{
 				"key": "tooltip_crit_damage",
@@ -6908,7 +6892,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "38"
+					"bonus_damage": "45"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6916,7 +6900,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"crit_multiplier": "175"
+					"crit_multiplier": "160"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -6960,7 +6944,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "9",
+				"value": "15",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -7024,7 +7008,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "9"
+					"bonus_damage": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -7875,7 +7859,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/maelstrom_png.png",
 		"cost": 2700,
-		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **900** radius, dealing **150** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **900** radius, dealing **140** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7891,7 +7875,7 @@
 			},
 			{
 				"key": "chain_damage",
-				"value": "150"
+				"value": "140"
 			},
 			{
 				"key": "chain_strikes",
@@ -7930,7 +7914,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"chain_damage": "150"
+					"chain_damage": "140"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -7979,7 +7963,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/desolator_png.png",
 		"cost": 3500,
-		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-7** for **15** seconds.",
+		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-7** for **7** seconds.",
 		"lore": "A wicked weapon, used in torturing political criminals.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7995,7 +7979,7 @@
 			},
 			{
 				"key": "corruption_duration",
-				"value": "15"
+				"value": "7"
 			}
 		],
 		"json_data": {
@@ -8019,7 +8003,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"corruption_duration": "15.0"
+					"corruption_duration": "7.0"
 				}
 			}
 		}
@@ -8133,7 +8117,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "10",
+				"value": "15",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -8181,7 +8165,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10"
+					"bonus_damage": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -9295,7 +9279,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2 2.5 3",
+				"value": "3 3.5 4",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9377,7 +9361,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2 2.5 3.0"
+					"bonus_mana_regen": "3 3.5 4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9457,7 +9441,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2 2.5 3",
+				"value": "3 3.5 4",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9537,7 +9521,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "2 2.5 3.0"
+					"bonus_mana_regen": "3 3.5 4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -10710,7 +10694,7 @@
 		"icon": "/panorama/images/items/enchanted_mango_png.png",
 		"cost": 70,
 		"cast_range": "400",
-		"description": "# Use: Eat Mango\nInstantly restores **125** mana.\n\nRange: **400**",
+		"description": "# Use: Eat Mango\nInstantly restores **110** mana.\n\nRange: **400**",
 		"lore": "The bittersweet flavors of Jidi Isle are irresistible to amphibians.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10722,7 +10706,7 @@
 			},
 			{
 				"key": "replenish_amount",
-				"value": "125"
+				"value": "110"
 			}
 		],
 		"json_data": {
@@ -10752,7 +10736,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"replenish_amount": "125"
+					"replenish_amount": "110"
 				}
 			}
 		}
@@ -12009,18 +11993,16 @@
 		"cooldown": "25",
 		"cast_range": "350",
 		"mana_cost": "0",
-		"description": "# Active: Chop\nTargets a non-player enemy unit to remove **50%** of its current HP.\n\nIf cast on a tree or ward, instantly destroys it.\n\nUnit Range: **350**\nTree Range: **350**\nWard Range: **450**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **5** for ranged.",
+		"description": "# Active: Chop\nTargets a non-player enemy unit to remove **50%** of its current HP.\n\nIf cast on a tree, instantly destroys it.\n\nUnit Range: **350**\nTree Range: **350**",
 		"lore": "A simple but effective weapon devised to quell a great Hellbear uprising.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
 			{
-				"key": "damage_bonus",
-				"value": "18"
-			},
-			{
-				"key": "damage_bonus_ranged",
-				"value": "5"
+				"key": "bonus_attack_speed",
+				"value": "15",
+				"header": "+",
+				"footer": "Attack Speed"
 			},
 			{
 				"key": "quelling_range_tooltip",
@@ -12037,7 +12019,8 @@
 			{
 				"key": "bonus_armor",
 				"value": "2",
-				"header": "ARMOR:"
+				"header": "+",
+				"footer": "Armor"
 			},
 			{
 				"key": "alternative_cooldown",
@@ -12064,29 +12047,25 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_bonus": "18"
+					"bonus_attack_speed": "15"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage_bonus_ranged": "5"
+					"quelling_range_tooltip": "350"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"quelling_range_tooltip": "350"
+					"cast_range_ward": "450"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"cast_range_ward": "450"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
 					"creep_damage_pct": "50"
 				},
-				"06": {
+				"05": {
 					"var_type": "FIELD_FLOAT",
 					"bonus_armor": "2"
 				},
-				"07": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"alternative_cooldown": "4"
 				}
@@ -12144,17 +12123,13 @@
 		"cost": 30,
 		"cooldown": "60",
 		"cast_range": "165",
-		"description": "# Use: Devour\nConsumes a target tree to gain **7** health regeneration for **16** seconds. Consuming a ward or Ironwood Tree doubles the heal amount.\n\nTree Range: **165**\nWard Range: **450**",
+		"description": "# Use: Devour\nConsumes a target tree to gain **7** health regeneration for **16** seconds. Consuming an Ironwood Tree doubles the heal amount.\n\nTree Range: **165**",
 		"lore": "Om nom nom.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "health_regen",
 				"value": "7"
-			},
-			{
-				"key": "cast_range_ward",
-				"value": "450"
 			},
 			{
 				"key": "buff_duration",
@@ -12187,10 +12162,6 @@
 					"health_regen": "7.0"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"cast_range_ward": "450"
-				},
-				"03": {
 					"var_type": "FIELD_FLOAT",
 					"buff_duration": "16.0"
 				}
@@ -12534,7 +12505,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "40",
+				"value": "45",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -12592,7 +12563,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "40"
+					"bonus_damage": "45"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -12640,7 +12611,7 @@
 		"cooldown": "15",
 		"cast_range": "900",
 		"mana_cost": "100",
-		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **30%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will have True Strike and **100%** chance to crit for **140%** damage.\n\nRange: **900**\n\n# Passive: Critical Strike\nGrants a **20%** chance for attacks to inflict **175%** damage.",
+		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **30%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will have True Strike and **100%** chance to crit for **130%** damage.\n\nRange: **900**\n\n# Passive: Critical Strike\nGrants a **20%** chance for attacks to inflict **160%** damage.",
 		"lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
 		"secret_shop": false,
 		"ability_special": [
@@ -12658,7 +12629,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "68",
+				"value": "75",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -12674,7 +12645,7 @@
 			},
 			{
 				"key": "crit_multiplier",
-				"value": "175"
+				"value": "160"
 			},
 			{
 				"key": "silence_damage_percent",
@@ -12686,7 +12657,7 @@
 			},
 			{
 				"key": "target_crit_multiplier",
-				"value": "140"
+				"value": "130"
 			},
 			{
 				"key": "tooltip_crit_chance",
@@ -12722,7 +12693,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "68"
+					"bonus_damage": "75"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -12734,7 +12705,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"crit_multiplier": "175"
+					"crit_multiplier": "160"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -12746,7 +12717,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"target_crit_multiplier": "140"
+					"target_crit_multiplier": "130"
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
@@ -14176,7 +14147,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1",
+				"value": "1.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -14195,7 +14166,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_mana_regen": "1"
+					"bonus_mana_regen": "1.25"
 				}
 			}
 		}
@@ -14354,31 +14325,31 @@
 		"localized_name": "Force Boots",
 		"icon": "/panorama/images/items/force_boots_png.png",
 		"cost": 0,
-		"cooldown": "6",
+		"cooldown": "9",
 		"mana_cost": "75",
-		"description": "# Active: Force\nDispels the user and pushes them **800** units in the direction they are facing.\n \n# Passive: Speed Unlock\nCompletely removes the speed limit for the wearer \nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Force\nDispels the user and pushes them **600** units in the direction they are facing.\n \n# Passive: Speed Unlock\nCompletely removes the speed limit for the wearer \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "50%",
+				"value": "40%",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
 			{
 				"key": "push_length",
-				"value": "800"
+				"value": "600"
 			},
 			{
 				"key": "push_duration",
-				"value": "0.65"
+				"value": "0.5"
 			}
 		],
 		"json_data": {
 			"ID": "291",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
-			"AbilityCooldown": "6.0",
+			"AbilityCooldown": "9.0",
 			"AbilityManaCost": "75",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
@@ -14387,15 +14358,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "50"
+					"bonus_movement_speed": "40"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"push_length": "800"
+					"push_length": "600"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"push_duration": "0.65"
+					"push_duration": "0.5"
 				}
 			}
 		}
@@ -14406,23 +14377,23 @@
 		"localized_name": "Stygian Desolator",
 		"icon": "/panorama/images/items/desolator_2_png.png",
 		"cost": 0,
-		"description": "# Passive: Greater Corruption\nYour attacks reduce the target's armor by **-12** for **15** seconds.",
+		"description": "# Passive: Greater Corruption\nYour attacks reduce the target's armor by **-10** for **7** seconds.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "100",
+				"value": "75",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "corruption_armor",
-				"value": "-12"
+				"value": "-10"
 			},
 			{
 				"key": "corruption_duration",
-				"value": "15"
+				"value": "7"
 			}
 		],
 		"json_data": {
@@ -14435,15 +14406,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "100"
+					"bonus_damage": "75"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"corruption_armor": "-12"
+					"corruption_armor": "-10"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"corruption_duration": "15.0"
+					"corruption_duration": "7.0"
 				}
 			}
 		}
@@ -14456,7 +14427,6 @@
 		"cost": 0,
 		"description": "# Passive: Rebirth\nLethal damage is prevented and instead the wearer is healed to half health and non-ultimate ability cooldowns reset. Gets consumed on trigger.",
 		"secret_shop": false,
-		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "health_pct",
@@ -14492,13 +14462,13 @@
 		"ability_special": [
 			{
 				"key": "cast_range_bonus",
-				"value": "450",
+				"value": "350",
 				"header": "+",
 				"footer": "Cast Range"
 			},
 			{
 				"key": "vision_bonus",
-				"value": "450",
+				"value": "350",
 				"header": "+Vision Bonus"
 			}
 		],
@@ -14512,11 +14482,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"cast_range_bonus": "450"
+					"cast_range_bonus": "350"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"vision_bonus": "450"
+					"vision_bonus": "350"
 				}
 			}
 		}
@@ -14560,7 +14530,7 @@
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "8%",
+				"value": "6%",
 				"header": "+Spell Lifesteal"
 			},
 			{
@@ -14583,7 +14553,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"spell_lifesteal": "8"
+					"spell_lifesteal": "6"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -14604,7 +14574,7 @@
 		"ability_special": [
 			{
 				"key": "armor_bonus",
-				"value": "13",
+				"value": "12",
 				"header": "+ARMOR"
 			},
 			{
@@ -14623,7 +14593,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"armor_bonus": "13"
+					"armor_bonus": "12"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -14726,7 +14696,7 @@
 		"localized_name": "Mirror Shield",
 		"icon": "/panorama/images/items/mirror_shield_png.png",
 		"cost": 0,
-		"description": "# Passive: Echo Shield\nBlock and reflect most targeted spells back to their caster every once every **4** seconds.",
+		"description": "# Passive: Echo Shield\nBlock and reflect most targeted spells back to their caster once every **8** seconds.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
@@ -14742,7 +14712,7 @@
 			},
 			{
 				"key": "block_cooldown",
-				"value": "4"
+				"value": "8"
 			}
 		],
 		"json_data": {
@@ -14763,7 +14733,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"block_cooldown": "4.0"
+					"block_cooldown": "8.0"
 				}
 			}
 		}
@@ -14830,7 +14800,6 @@
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1,
 		"secret_shop": false,
-		"neutral_tier": "1",
 		"ability_special": [],
 		"json_data": {
 			"ID": "303",
@@ -14839,10 +14808,7 @@
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"ItemRecipe": "1",
-			"ItemResult": "item_ironwood_tree",
-			"ItemRequirements": {
-				"01": "item_branches;item_branches;item_branches"
-			}
+			"ItemResult": "item_ironwood_tree"
 		}
 	},
 	{
@@ -14855,10 +14821,11 @@
 		"cast_range": "800",
 		"description": "# Use: Plant Tree\nTargets the ground to plant a happy little tree that lasts for **20** seconds.\n\nRange: **800**",
 		"secret_shop": false,
+		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -14879,7 +14846,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "7"
+					"bonus_all_stats": "6"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -15008,7 +14975,7 @@
 		"icon": "/panorama/images/items/repair_kit_png.png",
 		"cost": 0,
 		"cast_range": "600",
-		"description": "# Use: Building Repair\nTargets a building, restoring **40%** of it's health over **30** seconds. Also grants +**10** armor and +**4** Multishot attack during this period.\n\n Range: **600**",
+		"description": "# Use: Building Repair\nTargets a building, restoring **40%** of it's health over **30** seconds. Also grants +**10** armor during this period.\n\n Range: **600**",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -15025,12 +14992,8 @@
 				"value": "10"
 			},
 			{
-				"key": "multishot_count",
-				"value": "4"
-			},
-			{
 				"key": "hp_regen",
-				"value": "13",
+				"value": "17",
 				"header": "+",
 				"footer": "HP Regeneration"
 			}
@@ -15063,11 +15026,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"multishot_count": "4"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"hp_regen": "13"
+					"hp_regen": "17"
 				}
 			}
 		}
@@ -15079,7 +15038,7 @@
 		"icon": "/panorama/images/items/mind_breaker_png.png",
 		"cost": 0,
 		"cooldown": "20",
-		"description": "# Passive: Silence Strike\nThe next attack silences the hit enemy for **2** seconds.",
+		"description": "# Passive: Silence Strike\nThe next attack silences the hit enemy for **1.5** seconds.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -15095,7 +15054,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "2"
+				"value": "1.5"
 			}
 		],
 		"json_data": {
@@ -15117,7 +15076,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "2"
+					"duration": "1.5"
 				}
 			}
 		}
@@ -15277,7 +15236,6 @@
 		"cast_range": "250",
 		"description": "# Use: Consume\nGrants the target the bonuses of every Power Rune for **50** seconds. Each use consumes a charge.",
 		"secret_shop": false,
-		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "duration",
@@ -15312,7 +15270,6 @@
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1,
 		"secret_shop": false,
-		"neutral_tier": "5",
 		"ability_special": [],
 		"json_data": {
 			"ID": "317",
@@ -15320,6 +15277,7 @@
 			"ItemShopTags": "",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
+			"IsObsolete": "1",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"ItemRecipe": "1",
 			"ItemResult": "item_fallen_sky",
@@ -15515,24 +15473,18 @@
 		"name": "item_recipe_vambrace",
 		"localized_name": "Vambrace Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1,
+		"cost": 0,
 		"secret_shop": false,
-		"neutral_tier": "2",
 		"ability_special": [],
 		"json_data": {
 			"ID": "329",
-			"ItemCost": "1",
+			"ItemCost": "0",
 			"ItemShopTags": "",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"ItemRecipe": "1",
-			"ItemResult": "item_vambrace",
-			"ItemRequirements": {
-				"01": "item_bracer;item_bracer",
-				"02": "item_null_talisman;item_null_talisman",
-				"03": "item_wraith_band;item_wraith_band"
-			}
+			"ItemResult": "item_vambrace"
 		}
 	},
 	{
@@ -15582,18 +15534,19 @@
 		"aliases": "bracer",
 		"quality": "common",
 		"icon": "/panorama/images/items/vambrace_png.png",
-		"cost": 1021,
+		"cost": 0,
 		"description": "Also provides one of the following, based on the Vambrace's main attribute:\n Strength: +**10%** Magic Resistance \n Agility: +**10** Attack Speed \n Intelligence: +**6%** Spell Amp",
 		"secret_shop": false,
+		"neutral_tier": "2",
 		"ability_special": [
 			{
 				"key": "bonus_primary_stat",
-				"value": "12",
+				"value": "10",
 				"header": "+Main Vambrace Attribute"
 			},
 			{
 				"key": "bonus_secondary_stat",
-				"value": "6",
+				"value": "5",
 				"header": "+Other Attributes"
 			},
 			{
@@ -15611,8 +15564,8 @@
 		],
 		"json_data": {
 			"ID": "331",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1021",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"ItemCost": "0",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
@@ -15622,11 +15575,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_primary_stat": "12"
+					"bonus_primary_stat": "10"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_secondary_stat": "6"
+					"bonus_secondary_stat": "5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -15707,7 +15660,7 @@
 			},
 			{
 				"key": "bonus_movement_speed",
-				"value": "30",
+				"value": "40",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -15732,7 +15685,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed": "30"
+					"bonus_movement_speed": "40"
 				}
 			}
 		}
@@ -15754,7 +15707,7 @@
 			},
 			{
 				"key": "attack_range",
-				"value": "150",
+				"value": "125",
 				"header": "AURA BONUS ATTACK RANGE:"
 			},
 			{
@@ -15781,7 +15734,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"attack_range": "150"
+					"attack_range": "125"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -15807,7 +15760,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_intelligence",
-				"value": "8",
+				"value": "10",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -15837,7 +15790,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intelligence": "8"
+					"bonus_intelligence": "10"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -15860,7 +15813,7 @@
 		"localized_name": "Ocean Heart",
 		"icon": "/panorama/images/items/ocean_heart_png.png",
 		"cost": 0,
-		"description": "# Passive: Water Regen\nProvides you with **6** HP regen and **3** mana regen while in the river.",
+		"description": "# Passive: Water Regen\nProvides you with **8** HP regen and **4** mana regen while in the river.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
@@ -15872,11 +15825,11 @@
 			},
 			{
 				"key": "water_hp_regen",
-				"value": "6"
+				"value": "8"
 			},
 			{
 				"key": "water_mp_regen",
-				"value": "3"
+				"value": "4"
 			}
 		],
 		"json_data": {
@@ -15893,11 +15846,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"water_hp_regen": "6"
+					"water_hp_regen": "8"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"water_mp_regen": "3"
+					"water_mp_regen": "4"
 				}
 			}
 		}
@@ -15967,7 +15920,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "150",
+				"value": "100",
 				"header": "+",
 				"footer": "Health"
 			}
@@ -15987,7 +15940,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_health": "150"
+					"bonus_health": "100"
 				}
 			}
 		}
@@ -16049,7 +16002,7 @@
 		"localized_name": "Dragon Scale",
 		"icon": "/panorama/images/items/dragon_scale_png.png",
 		"cost": 0,
-		"description": "# Passive: Afterburn\nCauses attacks to burn the enemy, dealing **12** damage per second for **3** seconds. Affects buildings.",
+		"description": "# Passive: Afterburn\nCauses attacks to burn the enemy, dealing **18** damage per second for **3** seconds. Affects buildings.",
 		"secret_shop": false,
 		"neutral_tier": "2",
 		"ability_special": [
@@ -16067,7 +16020,7 @@
 			},
 			{
 				"key": "damage_per_sec",
-				"value": "12"
+				"value": "18"
 			},
 			{
 				"key": "duration",
@@ -16092,7 +16045,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_sec": "12"
+					"damage_per_sec": "18"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -16109,7 +16062,7 @@
 		"cost": 0,
 		"cooldown": "20",
 		"mana_cost": "200",
-		"description": "# Active: Life Essence\nHeal **425** and gain **425** max health for **15** seconds.",
+		"description": "# Active: Life Essence\nIncreases your current and max health by **425** for **15** seconds.",
 		"secret_shop": false,
 		"neutral_tier": "2",
 		"ability_special": [
@@ -16170,8 +16123,8 @@
 		"icon": "/panorama/images/items/clumsy_net_png.png",
 		"cost": 0,
 		"cooldown": "25",
-		"cast_range": "900",
-		"description": "# Active: Ensnare\nEnsnares the target enemy and yourself for **1.75** seconds.\n\n Range: **900**",
+		"cast_range": "650",
+		"description": "# Active: Ensnare\nEnsnares the target enemy and yourself for **1.75** seconds.\n\n Range: **650**",
 		"secret_shop": false,
 		"neutral_tier": "2",
 		"ability_special": [
@@ -16198,7 +16151,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "650",
 			"AbilityCooldown": "25.0",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
@@ -16227,7 +16180,7 @@
 		"icon": "/panorama/images/items/enchanted_quiver_png.png",
 		"cost": 0,
 		"cooldown": "8",
-		"description": "# Passive: Certain Strike\nEmpowers your next attack with **270** bonus magical damage and True Strike. Ranged Attackers have +**400** bonus range for the attack.",
+		"description": "# Passive: Certain Strike\nEmpowers your next attack with **300** bonus magical damage and True Strike. Ranged Attackers have +**400** bonus range for the attack.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -16237,7 +16190,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "270"
+				"value": "300"
 			}
 		],
 		"json_data": {
@@ -16255,7 +16208,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "270"
+					"bonus_damage": "300"
 				}
 			}
 		}
@@ -16430,7 +16383,7 @@
 		"icon": "/panorama/images/items/havoc_hammer_png.png",
 		"cost": 0,
 		"cooldown": "10",
-		"description": "# Active: Havoc\nKnocks back enemies in **300** range around you, slowing them by **50%** for **3** seconds and dealing **175** + **1**x your str as magical damage.",
+		"description": "# Active: Havoc\nKnocks back enemies in **300** range around you, slowing them by **50%** for **3** seconds and dealing **225** + **1**x your str as magical damage.",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
@@ -16472,7 +16425,7 @@
 			},
 			{
 				"key": "nuke_base_dmg",
-				"value": "175"
+				"value": "225"
 			},
 			{
 				"key": "nuke_str_dmg",
@@ -16522,7 +16475,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"nuke_base_dmg": "175"
+					"nuke_base_dmg": "225"
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
@@ -16538,7 +16491,7 @@
 		"icon": "/panorama/images/items/panic_button_png.png",
 		"cost": 0,
 		"cooldown": "75",
-		"description": "# Passive: Rejuvenate \nWhen the wearer's health falls below **15%**, they will receive a hard dispel and be healed for **300** health.",
+		"description": "# Passive: Rejuvenate \nWhen the wearer's health falls below **20%**, they will receive a hard dispel and be healed for **300** health.",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
@@ -16554,7 +16507,7 @@
 			},
 			{
 				"key": "health_threshold",
-				"value": "15"
+				"value": "20"
 			}
 		],
 		"json_data": {
@@ -16576,7 +16529,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"health_threshold": "15"
+					"health_threshold": "20"
 				}
 			}
 		}
@@ -16587,13 +16540,13 @@
 		"localized_name": "Apex",
 		"icon": "/panorama/images/items/apex_png.png",
 		"cost": 0,
-		"description": "Increases your primary attribute by **80%**.",
+		"description": "Increases your primary attribute by **75**.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
-				"key": "primary_stat_percent",
-				"value": "80"
+				"key": "primary_stat",
+				"value": "75"
 			}
 		],
 		"json_data": {
@@ -16606,7 +16559,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"primary_stat_percent": "80"
+					"primary_stat": "75"
 				}
 			}
 		}
@@ -16617,24 +16570,27 @@
 		"localized_name": "Ballista",
 		"icon": "/panorama/images/items/ballista_png.png",
 		"cost": 0,
-		"description": "# Passive: Knockback\nKnocks back enemies with every attack.",
+		"description": "# Passive: Knockback\nKnocks back enemies **50** distance and deals **30** pure damage with every attack.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "attack_range_bonus",
-				"value": "400",
+				"value": "250",
 				"header": "+",
 				"footer": "Attack Range (Ranged Only)"
 			},
 			{
 				"key": "knockback_distance",
-				"value": "50",
-				"header": "KNOCKBACK DISTANCE:"
+				"value": "50"
 			},
 			{
 				"key": "knockback_duration",
 				"value": "0.2"
+			},
+			{
+				"key": "bonus_damage",
+				"value": "30"
 			}
 		],
 		"json_data": {
@@ -16647,7 +16603,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"attack_range_bonus": "400"
+					"attack_range_bonus": "250"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -16656,6 +16612,10 @@
 				"03": {
 					"var_type": "FIELD_FLOAT",
 					"knockback_duration": "0.2"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage": "30"
 				}
 			}
 		}
@@ -16667,7 +16627,7 @@
 		"icon": "/panorama/images/items/woodland_striders_png.png",
 		"cost": 0,
 		"cooldown": "20",
-		"description": "\n# Active: Woodland Stride\nCreate a path of trees behind you for **3** seconds. Trees last up to **60** seconds. \n\n# Passive: Tree Walking\nRemoves movement speed limit and allows free pathing through trees.\n \nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "\n# Active: Woodland Stride\nCreate a path of trees behind you for **3** seconds. Trees last up to **15** seconds. \n\n# Passive: Tree Walking\nRemoves movement speed limit and allows free pathing through trees.\n \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
@@ -16679,7 +16639,7 @@
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "70",
+				"value": "50",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -16689,7 +16649,7 @@
 			},
 			{
 				"key": "tree_duration",
-				"value": "60"
+				"value": "15"
 			}
 		],
 		"json_data": {
@@ -16707,7 +16667,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_hp_regen": "70"
+					"bonus_hp_regen": "50"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -16715,7 +16675,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"tree_duration": "60"
+					"tree_duration": "15"
 				}
 			}
 		}
@@ -16729,39 +16689,39 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "status_resistance",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "hp_regen_amp",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "manacost_reduction",
-				"value": "33"
+				"value": "30"
 			},
 			{
 				"key": "spell_amp",
-				"value": "33"
+				"value": "30"
 			}
 		],
 		"json_data": {
@@ -16774,39 +16734,39 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "33"
+					"bonus_strength": "30"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "33"
+					"bonus_agility": "30"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "33"
+					"bonus_intellect": "30"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"status_resistance": "33"
+					"status_resistance": "30"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "33"
+					"bonus_attack_speed": "30"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_percent_bonus": "33"
+					"movement_speed_percent_bonus": "30"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"hp_regen_amp": "33"
+					"hp_regen_amp": "30"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"manacost_reduction": "33"
+					"manacost_reduction": "30"
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"spell_amp": "33"
+					"spell_amp": "30"
 				}
 			}
 		}
@@ -16818,19 +16778,19 @@
 		"icon": "/panorama/images/items/demonicon_png.png",
 		"cost": 0,
 		"cooldown": "90",
-		"description": "# Active: Greater Demonic Summoning\nSummon 6 Level 3 Necronomicon Units that last **75** seconds.",
+		"description": "# Active: Greater Demonic Summoning\nSummon 2 sets of Level 3 Necronomicon Units that last **75** seconds. Units have 50% more health and damage.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "35",
+				"value": "30",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "35",
+				"value": "30",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -16850,11 +16810,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "35"
+					"bonus_strength": "30"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "35"
+					"bonus_intellect": "30"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -16873,6 +16833,7 @@
 		"cast_range": "1600",
 		"description": "# Active: Fallen Sky\nTransform into a meteor that strikes down at the target area after **.5** seconds in a **315** AoE, stunning enemies for **2** seconds and dealing impact damage. Continues to deal damage every **1** seconds to enemy units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **50** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **90**\n\n Range: **1600**",
 		"secret_shop": false,
+		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_strength",
@@ -16937,6 +16898,10 @@
 			{
 				"key": "impact_damage_units",
 				"value": "150"
+			},
+			{
+				"key": "blink_damage_cooldown",
+				"value": "3"
 			}
 		],
 		"json_data": {
@@ -17004,6 +16969,10 @@
 				"14": {
 					"var_type": "FIELD_INTEGER",
 					"impact_damage_units": "150"
+				},
+				"15": {
+					"var_type": "FIELD_FLOAT",
+					"blink_damage_cooldown": "3.0"
 				}
 			}
 		}
@@ -17014,15 +16983,19 @@
 		"localized_name": "Pirate Hat",
 		"icon": "/panorama/images/items/pirate_hat_png.png",
 		"cost": 0,
-		"description": "# Passive: Kill Bounty\nCreates a bounty rune between you and your victim when you kill an enemy hero.",
+		"description": "# Passive: Kill Bounty\nSteals 300 gold when you kill an enemy hero.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "250",
+				"value": "150",
 				"header": "+",
 				"footer": "Attack Speed"
+			},
+			{
+				"key": "gold_steal",
+				"value": "300"
 			}
 		],
 		"json_data": {
@@ -17035,7 +17008,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "250"
+					"bonus_attack_speed": "150"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"gold_steal": "300"
 				}
 			}
 		}
@@ -17068,14 +17045,15 @@
 		"localized_name": "Ex Machina",
 		"icon": "/panorama/images/items/ex_machina_png.png",
 		"cost": 0,
-		"cooldown": "30",
+		"cooldown": "45",
+		"mana_cost": "100",
 		"description": "# Active: Reset Item Cooldowns\nReset the cooldown on all items (except Refresher Orb).",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "25",
+				"value": "20",
 				"header": "+",
 				"footer": "Armor"
 			}
@@ -17083,7 +17061,8 @@
 		"json_data": {
 			"ID": "374",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityCooldown": "30.0",
+			"AbilityCooldown": "45.0",
+			"AbilityManaCost": "100",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
@@ -17091,7 +17070,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "25"
+					"bonus_armor": "20"
 				}
 			}
 		}
@@ -17245,12 +17224,12 @@
 			},
 			{
 				"key": "slow_melee",
-				"value": "30%",
+				"value": "20%",
 				"header": "SLOW (MELEE):"
 			},
 			{
 				"key": "slow_range",
-				"value": "15%",
+				"value": "10%",
 				"header": "SLOW (RANGE):"
 			},
 			{
@@ -17273,11 +17252,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"slow_melee": "30"
+					"slow_melee": "20"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"slow_range": "15"
+					"slow_range": "10"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
