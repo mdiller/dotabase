@@ -2951,26 +2951,6 @@
 		}
 	},
 	{
-		"id": 70,
-		"name": "item_recipe_poor_mans_shield",
-		"localized_name": "item_recipe_poor_mans_shield",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "70",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"IsObsolete": "1",
-			"ItemRecipe": "1",
-			"ItemResult": "item_poor_mans_shield",
-			"ItemPurchasable": "0",
-			"ItemRequirements": {}
-		}
-	},
-	{
 		"id": 71,
 		"name": "item_poor_mans_shield",
 		"localized_name": "Poor Man's Shield",
@@ -8729,58 +8709,6 @@
 		}
 	},
 	{
-		"id": 182,
-		"name": "item_stout_shield",
-		"localized_name": "Stout Shield",
-		"aliases": "stout shield",
-		"quality": "component",
-		"icon": "/panorama/images/items/stout_shield_png.png",
-		"cost": 100,
-		"description": "# Passive: Damage Block\nGrants a **50%** chance to block **20** damage from incoming attacks on melee heroes, and **8** damage on ranged.",
-		"lore": "One man's wine barrel bottom is another man's shield.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "damage_block_melee",
-				"value": "20"
-			},
-			{
-				"key": "damage_block_ranged",
-				"value": "8"
-			},
-			{
-				"key": "block_chance",
-				"value": "50"
-			}
-		],
-		"json_data": {
-			"ID": "182",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"Model": "models/props_gameplay/stout_shield.vmdl",
-			"ItemCost": "100",
-			"ItemShopTags": "block",
-			"ItemQuality": "component",
-			"ItemAliases": "stout shield",
-			"ShouldBeSuggested": "0",
-			"ItemPurchasable": "0",
-			"IsObsolete": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"damage_block_melee": "20"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"damage_block_ranged": "8"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"block_chance": "50"
-				}
-			}
-		}
-	},
-	{
 		"id": 183,
 		"name": "item_recipe_invis_sword",
 		"localized_name": "item_recipe_invis_sword",
@@ -10375,25 +10303,6 @@
 		}
 	},
 	{
-		"id": 211,
-		"name": "item_recipe_ring_of_aquila",
-		"localized_name": "item_recipe_ring_of_aquila",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "211",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemPurchasable": "0",
-			"IsObsolete": "1",
-			"ItemRecipe": "1",
-			"ItemResult": "item_ring_of_aquila",
-			"ItemRequirements": {}
-		}
-	},
-	{
 		"id": 212,
 		"name": "item_ring_of_aquila",
 		"localized_name": "Ring of Aquila",
@@ -11957,28 +11866,6 @@
 					"var_type": "FIELD_INTEGER",
 					"hp_restore": "85"
 				}
-			}
-		}
-	},
-	{
-		"id": 238,
-		"name": "item_recipe_iron_talon",
-		"localized_name": "Iron Talon Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "238",
-			"Model": "models/props_gameplay/recipe.mdl",
-			"ItemCost": "1",
-			"ItemShopTags": "",
-			"ItemPurchasable": "0",
-			"IsObsolete": "1",
-			"ItemRecipe": "1",
-			"ItemResult": "item_iron_talon",
-			"ItemRequirements": {
-				"01": "item_quelling_blade;item_ring_of_protection"
 			}
 		}
 	},
@@ -13946,29 +13833,28 @@
 	},
 	{
 		"id": 275,
-		"name": "item_trident",
-		"localized_name": "Trident",
-		"icon": "/panorama/images/items/trident_png.png",
-		"description": "Combines Sange, Yasha and Kaya together.",
+		"name": "item_recipe_trident",
+		"localized_name": "Trident Recipe",
+		"icon": "/panorama/images/items/recipe_trident_png.png",
+		"cost": 1,
 		"secret_shop": false,
+		"neutral_tier": "5",
 		"ability_special": [],
 		"json_data": {
 			"ID": "275",
-			"IsObsolete": "1",
-			"ItemPurchasable": "0"
-		}
-	},
-	{
-		"id": 276,
-		"name": "item_combo_breaker",
-		"localized_name": "item_combo_breaker",
-		"icon": "/panorama/images/items/combo_breaker_png.png",
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "276",
-			"IsObsolete": "1",
-			"ItemPurchasable": "0"
+			"ItemCost": "1",
+			"ItemShopTags": "",
+			"ItemIsNeutralDrop": "1",
+			"ItemPurchasable": "0",
+			"Model": "models/props_gameplay/neutral_box.vmdl",
+			"ItemRecipe": "1",
+			"ItemResult": "item_trident",
+			"ItemRequirements": {
+				"01": "item_kaya;item_sange;item_yasha;",
+				"02": "item_kaya_and_sange;item_yasha;",
+				"03": "item_sange_and_yasha;item_kaya;",
+				"04": "item_yasha_and_kaya;item_sange;"
+			}
 		}
 	},
 	{
@@ -15260,29 +15146,6 @@
 					"var_type": "FIELD_FLOAT",
 					"duration": "50"
 				}
-			}
-		}
-	},
-	{
-		"id": 317,
-		"name": "item_recipe_fallen_sky",
-		"localized_name": "Recipe: Fallen Sky",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "317",
-			"ItemCost": "1",
-			"ItemShopTags": "",
-			"ItemIsNeutralDrop": "1",
-			"ItemPurchasable": "0",
-			"IsObsolete": "1",
-			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"ItemRecipe": "1",
-			"ItemResult": "item_fallen_sky",
-			"ItemRequirements": {
-				"01": "item_blink;item_meteor_hammer;"
 			}
 		}
 	},
@@ -17352,307 +17215,6 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"status_resistance": "16"
-				}
-			}
-		}
-	},
-	{
-		"id": 1021,
-		"name": "item_river_painter",
-		"localized_name": "River Vial: Chrome",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to transform the water into liquid chrome for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1021",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17022",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1022,
-		"name": "item_river_painter2",
-		"localized_name": "River Vial: Dry",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter2_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to dry up the water for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect . Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1022",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17023",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1023,
-		"name": "item_river_painter3",
-		"localized_name": "River Vial: Slime",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter3_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to transform the water into a green slime for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1023",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17024",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1024,
-		"name": "item_river_painter4",
-		"localized_name": "River Vial: Oil",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter4_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to make the water oily for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1024",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17025",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1025,
-		"name": "item_river_painter5",
-		"localized_name": "River Vial: Electrified",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter5_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to make the water electric for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1025",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17026",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1026,
-		"name": "item_river_painter6",
-		"localized_name": "River Vial: Potion",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter6_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to transform the water into a purple bubbling potion for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1026",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17027",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
-				}
-			}
-		}
-	},
-	{
-		"id": 1027,
-		"name": "item_river_painter7",
-		"localized_name": "River Vial: Blood",
-		"aliases": "paint",
-		"quality": "component",
-		"icon": "/panorama/images/items/river_painter7_png.png",
-		"cost": 0,
-		"cooldown": "0",
-		"cast_range": "200",
-		"description": "Pour this serum into the river to transform the water into blood for **900** seconds. Using this item on the river will permanently consume one charge from your Armory supply upon expiration of the effect. Charges do not get consumed if the effect is replaced by a stronger vial before expiration. Vials can only be used if at least one charge remains in your Armory. Charges will only be used by successfully enchanting the river, and will not be consumed if the item is sold, dropped, or destroyed during a game. You can only cast a vial on the river if there's not a stronger vial already in effect.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "paint_duration",
-				"value": "900"
-			}
-		],
-		"json_data": {
-			"ID": "1027",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-			"IsObsolete": "1",
-			"AbilityCastRange": "200",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "0.0",
-			"ItemCost": "0",
-			"ItemQuality": "component",
-			"ItemAliases": "paint",
-			"ItemStockMax": "1",
-			"ItemStockInitial": "1",
-			"ItemStackable": "1",
-			"ItemStockTime": "900.0",
-			"AssociatedConsumable": "17047",
-			"EventID": "14",
-			"PlayerSpecificCooldown": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"paint_duration": "900.0"
 				}
 			}
 		}
