@@ -2958,7 +2958,6 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/poor_mans_shield_png.png",
 		"cost": 0,
-		"cooldown": "6",
 		"description": "# Passive: Damage Block\nGives a 100% chance to block **30** damage from incoming attacks on melee heroes, and **20** damage on ranged.\n\nHas a **50%** chance to block damage from creeps.",
 		"lore": "A busted old shield that seems to block more than it should.",
 		"secret_shop": false,
@@ -2997,7 +2996,6 @@
 			"ItemAliases": "pms;poor man's shield",
 			"ItemPurchasable": "0",
 			"ItemIsNeutralDrop": "1",
-			"AbilityCooldown": "6.0",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -3072,7 +3070,7 @@
 			},
 			{
 				"key": "bonus_magic_resistance",
-				"value": "5%",
+				"value": "4%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			}
@@ -3101,7 +3099,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_magic_resistance": "5"
+					"bonus_magic_resistance": "4"
 				}
 			}
 		}
@@ -7362,7 +7360,7 @@
 		"cooldown": "35",
 		"cast_range": "800",
 		"mana_cost": "50",
-		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **200** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\nRange: **800**\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **900** radius, dealing **170** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **200** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\nRange: **800**\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **170** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7424,7 +7422,7 @@
 			},
 			{
 				"key": "chain_radius",
-				"value": "900"
+				"value": "650"
 			},
 			{
 				"key": "chain_delay",
@@ -7507,7 +7505,7 @@
 				},
 				"14": {
 					"var_type": "FIELD_INTEGER",
-					"chain_radius": "900"
+					"chain_radius": "650"
 				},
 				"15": {
 					"var_type": "FIELD_FLOAT",
@@ -7839,7 +7837,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/maelstrom_png.png",
 		"cost": 2700,
-		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **900** radius, dealing **140** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **140** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7863,7 +7861,7 @@
 			},
 			{
 				"key": "chain_radius",
-				"value": "900"
+				"value": "650"
 			},
 			{
 				"key": "chain_delay",
@@ -7902,7 +7900,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"chain_radius": "900"
+					"chain_radius": "650"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -7943,19 +7941,19 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/desolator_png.png",
 		"cost": 3500,
-		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-7** for **7** seconds.",
+		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **7** seconds.",
 		"lore": "A wicked weapon, used in torturing political criminals.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "50",
+				"value": "60",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "corruption_armor",
-				"value": "-7"
+				"value": "-6"
 			},
 			{
 				"key": "corruption_duration",
@@ -7975,11 +7973,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "50"
+					"bonus_damage": "60"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"corruption_armor": "-7"
+					"corruption_armor": "-6"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -8205,7 +8203,7 @@
 		"cooldown": "15",
 		"cast_range": "600",
 		"mana_cost": "0",
-		"description": "# Active: Inhibit\nTargets an enemy, slowing it for **4** seconds.\n\nRange: **600**\n\n# Passive: Manabreak\nEach attack burns **50** mana from the target, and deals **0.8** physical damage per burned mana. \n\nBurns **16** mana per attack from melee illusions and **8** mana per attack from ranged illusions.",
+		"description": "# Active: Inhibit\nTargets an enemy, slowing it for **4** seconds.\n\nRange: **600**\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **0.8** physical damage per burned mana. \n\nBurns **16** mana per attack from melee illusions and **8** mana per attack from ranged illusions.",
 		"lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
 		"secret_shop": false,
 		"ability_special": [
@@ -8223,7 +8221,7 @@
 			},
 			{
 				"key": "feedback_mana_burn",
-				"value": "50"
+				"value": "40"
 			},
 			{
 				"key": "feedback_mana_burn_illusion_melee",
@@ -8282,7 +8280,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"feedback_mana_burn": "50"
+					"feedback_mana_burn": "40"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",

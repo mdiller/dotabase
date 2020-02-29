@@ -745,7 +745,8 @@
 			},
 			{
 				"key": "vines_duration",
-				"value": "12"
+				"value": "12",
+				"header": "VINE DURATION:"
 			},
 			{
 				"key": "creation_interval",
@@ -1253,6 +1254,148 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "60"
+				}
+			}
+		}
+	},
+	{
+		"id": 393,
+		"name": "roshan_halloween_levels",
+		"behavior": "hidden|passive",
+		"ability_special": [
+			{
+				"key": "bonus_movement",
+				"value": "8"
+			},
+			{
+				"key": "bonus_damage",
+				"value": "200"
+			},
+			{
+				"key": "bonus_armor",
+				"value": "1"
+			},
+			{
+				"key": "bonus_health_regen",
+				"value": "5"
+			},
+			{
+				"key": "bonus_magic_resist",
+				"value": "5"
+			}
+		],
+		"icon": "/panorama/images/spellicons/roshan_halloween_levels_png.png",
+		"localized_name": "roshan_halloween_levels",
+		"json_data": {
+			"ID": "393",
+			"MaxLevel": "1",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_movement": "8"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage": "200"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_armor": "1"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_health_regen": "5"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_magic_resist": "5"
+				}
+			}
+		}
+	},
+	{
+		"id": 394,
+		"name": "roshan_halloween_summon",
+		"behavior": "no_target",
+		"damage_type": "magical",
+		"cast_range": "0",
+		"cast_point": "1",
+		"cooldown": "30",
+		"mana_cost": "0",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Summon Roshlings",
+		"description": "Roshan calls a group of Roshlings to aid him.",
+		"json_data": {
+			"ID": "394",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"MaxLevel": "1",
+			"AbilityTextureName": "roshan_spell_block",
+			"AbilityCastRange": "0",
+			"AbilityCastPoint": "1.0",
+			"AbilityCooldown": "30.0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {}
+		}
+	},
+	{
+		"id": 395,
+		"name": "roshan_halloween_fireball",
+		"behavior": "aoe",
+		"damage_type": "magical",
+		"cast_range": "1200",
+		"cast_point": "3",
+		"cooldown": "25",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "area_of_effect",
+				"value": "1200"
+			},
+			{
+				"key": "projectile_speed",
+				"value": "400"
+			},
+			{
+				"key": "radius",
+				"value": "300"
+			},
+			{
+				"key": "damage_percent",
+				"value": "50"
+			}
+		],
+		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
+		"localized_name": "Fireball ",
+		"description": "Roshan launches a number of slow moving fireballs at all nearby enemies.",
+		"json_data": {
+			"ID": "395",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"MaxLevel": "1",
+			"AbilityTextureName": "jakiro_liquid_fire",
+			"AbilityCastRange": "1200",
+			"AbilityCastPoint": "3.0",
+			"AbilityCooldown": "25.0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"area_of_effect": "1200"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"projectile_speed": "400"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"radius": "300 300 300 300"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"damage_percent": "50 50 50 50"
 				}
 			}
 		}
@@ -1772,7 +1915,7 @@
 		"ability_slot": 1,
 		"icon": "/panorama/images/spellicons/antimage_mana_break_png.png",
 		"localized_name": "Mana Break",
-		"description": "Burns an opponent's mana on each attack.  Mana Break deals **50%** of the mana burned as damage to the target.",
+		"description": "Burns an opponent's mana on each attack.  Mana Break deals **50%** of the mana burned as damage to the target. Mana Break has **50%** effect if caused by illusions.",
 		"lore": "A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner.",
 		"json_data": {
 			"ID": "5003",
@@ -1943,7 +2086,7 @@
 		"localized_name": "Mana Void",
 		"description": "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.",
 		"lore": "After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts.",
-		"note": "The stun passes through spell immunity.\nDamage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.",
+		"note": "Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.",
 		"aghanim": "Increases stun duration. Mana Void kills cause the enemy's highest cooldown ability to take longer to cool down upon respawning.",
 		"json_data": {
 			"ID": "5006",
@@ -2420,7 +2563,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/bane_enfeeble_png.png",
 		"localized_name": "Enfeeble",
-		"description": "Applies Enfeeble targets that you cast an ability on, lowering the unit's magic and status resistances.",
+		"description": "Bane's abilities enfeeble his targets, lowering the affected unit's magic and status resistances.",
 		"json_data": {
 			"ID": "5012",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -2818,7 +2961,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/bloodseeker_thirst_png.png",
 		"localized_name": "Thirst",
-		"description": "Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed and attack speed whenever an enemy hero's health falls below **75%**, with the bonuses increasing as their health falls further. If an enemy hero's health falls below **25%**, he will also gain vision and True Sight of that hero. Bonuses stack per hero.",
+		"description": "Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed and attack speed whenever an enemy hero's health falls below **75%**, with the bonuses increasing as their health falls further. If an enemy hero's health falls below **25%**, he will also gain vision and True Sight of that hero. Bonuses stack per hero. Unlocks max movement speed for Bloodseeker.",
 		"lore": "Strygwyr becomes frenzied when blood is spilled.",
 		"note": "Not triggered by Illusions.\nMax movement speed and attack speed bonuses occur when an enemy's health is at or below **25%**.\nEffects linger for **4** seconds if a target dies.",
 		"json_data": {
@@ -6698,7 +6841,7 @@
 			},
 			{
 				"key": "max_distance",
-				"value": "350",
+				"value": "275",
 				"header": "MAX DISTANCE:"
 			}
 		],
@@ -6735,7 +6878,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"max_distance": "350"
+					"max_distance": "275"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -6760,7 +6903,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/puck_phase_shift_png.png",
 		"localized_name": "Phase Shift",
-		"description": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm. Releases an attack on every unit within your attack range before going into the other dimension. ",
+		"description": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
 		"lore": "With a quip and flash, Puck returns to the alien dimension from whence it came.",
 		"note": "Puck retains collision size while under the effects of Phase Shift.\nIssuing any action will cancel Phase Shift.\nPuck is invulnerable during Phase Shift.",
 		"json_data": {
@@ -9752,7 +9895,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "yes",
 		"target_team": "custom",
-		"cast_range": "1000 1100 1200 1300",
+		"cast_range": "850 1000 1150 1300",
 		"cast_point": "0",
 		"cooldown": "17 15 13 11",
 		"mana_cost": "90 100 110 120",
@@ -9800,7 +9943,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
-			"AbilityCastRange": "1000 1100 1200 1300",
+			"AbilityCastRange": "850 1000 1150 1300",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "17 15 13 11",
 			"AbilityManaCost": "90 100 110 120",
@@ -9964,7 +10107,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "10 18 26",
+				"value": "10 16 22",
 				"header": "BONUS ARMOR:"
 			},
 			{
@@ -9993,7 +10136,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "10 18 26"
+					"bonus_armor": "10 16 22"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -10281,6 +10424,7 @@
 		"cast_range": "0",
 		"cast_point": "0",
 		"cooldown": "17",
+		"mana_cost": "25",
 		"ability_special": [
 			{
 				"key": "bonus_speed",
@@ -10335,6 +10479,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
+			"AbilityManaCost": "25",
 			"AbilityCooldown": "17",
 			"AbilitySpecial": {
 				"01": {
@@ -10495,8 +10640,8 @@
 			{
 				"talent_name": "special_bonus_unique_slardar_2",
 				"key": "bonus_damage",
-				"value": "60 115 170 225",
-				"talent_value": "135 190 245 300",
+				"value": "50 100 150 200",
+				"talent_value": "125 175 225 275",
 				"header": "BONUS DAMAGE:"
 			},
 			{
@@ -10526,7 +10671,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "60 115 170 225",
+					"bonus_damage": "50 100 150 200",
 					"LinkedSpecialBonus": "special_bonus_unique_slardar_2"
 				},
 				"02": {
@@ -10556,7 +10701,7 @@
 		"ability_special": [
 			{
 				"key": "armor_reduction",
-				"value": "-10 -15 -20",
+				"value": "-8 -13 -18",
 				"header": "ARMOR REDUCTION:"
 			},
 			{
@@ -10590,7 +10735,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"armor_reduction": "-10 -15 -20"
+					"armor_reduction": "-8 -13 -18"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -11340,8 +11485,10 @@
 				"header": "HERO DURATION:"
 			},
 			{
+				"talent_name": "special_bonus_unique_crystal_maiden_1",
 				"key": "creep_duration",
 				"value": "10",
+				"talent_value": "11.5",
 				"header": "CREEP DURATION:"
 			},
 			{
@@ -11387,7 +11534,8 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"creep_duration": "10.0"
+					"creep_duration": "10.0",
+					"LinkedSpecialBonus": "special_bonus_unique_crystal_maiden_1"
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
@@ -15522,7 +15670,6 @@
 		"localized_name": "Primal Roar",
 		"description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain **40%** movement speed for 3 seconds.",
 		"lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies.",
-		"note": "The stun will hit Spell Immune units. The damage will not.",
 		"json_data": {
 			"ID": "5177",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -19553,7 +19700,7 @@
 		"localized_name": "Hookshot",
 		"description": "Fires a grappling device rapidly at the target location.  If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage.  Any enemies Clockwerk collides with along the way are damaged and stunned.",
 		"lore": "A somewhat unwieldy device, the Hookshot sends the otherwise clunky Clockwerk armor flying through the air.",
-		"note": "Hookshot will latch and take Clockwerk to allies, but not damage or disable them.\nHookshot's pull and stun pierce spell immunity. The damage does not.",
+		"note": "Hookshot will latch and take Clockwerk to allies, but not damage or disable them.",
 		"aghanim": "Grants new ability: Overclocking. Resets Clockwerk's ability cooldowns and grants him bonus movement and attack speed for a duration. Clockwerk becomes stunned after the duration runs out.",
 		"json_data": {
 			"ID": "5240",
@@ -20616,7 +20763,7 @@
 		"localized_name": "Vacuum",
 		"description": "Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.",
 		"lore": "Ish'Kafel modifies the center of gravity to a place of his choosing.",
-		"note": "This ability interrupts channeling.\nPulls units over **0.3**/**0.4**/**0.5**/**0.6** seconds before dealing damage.\nDoesn't pull invulnerable units.\nTrees near the center of the vacuum will be destroyed.",
+		"note": "This ability interrupts channeling.\nPulls units over **0.3**/**0.4**/**0.5**/**0.6** seconds before dealing damage.\nTrees near the center of the vacuum will be destroyed.",
 		"aghanim": "Reduces cooldown.",
 		"json_data": {
 			"ID": "5255",
@@ -21570,23 +21717,25 @@
 				"header": "CREEP ENCHANT DURATION:"
 			},
 			{
-				"key": "slow_movement_speed",
-				"value": "-55%",
-				"header": "HERO MOVE SLOW:"
-			},
-			{
 				"key": "enchant_health",
-				"value": "200 400 800 1200"
+				"value": "200 400 800 1200",
+				"header": "CREEP MAX HEALTH BONUS:"
 			},
 			{
 				"key": "enchant_damage",
-				"value": "10 30 50 70"
+				"value": "10 30 50 70",
+				"header": "CREEP ATTACK DAMAGE BONUS:"
+			},
+			{
+				"key": "slow_movement_speed",
+				"value": "-55%",
+				"header": "HERO MOVE SLOW:"
 			}
 		],
 		"ability_slot": 2,
 		"icon": "/panorama/images/spellicons/enchantress_enchant_png.png",
 		"localized_name": "Enchant",
-		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control, increasing it's attack damage and max health.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs.",
 		"note": "Illusions can be converted.",
 		"json_data": {
@@ -21609,15 +21758,15 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"slow_movement_speed": "-55"
+					"enchant_health": "200 400 800 1200"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"enchant_health": "200 400 800 1200"
+					"enchant_damage": "10 30 50 70"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"enchant_damage": "10 30 50 70"
+					"slow_movement_speed": "-55"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -21710,7 +21859,7 @@
 		"cast_point": "0",
 		"cooldown": "6 4 2 0",
 		"duration": "1.5",
-		"mana_cost": "40 45 50 55",
+		"mana_cost": "65",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_enchantress_4",
@@ -21744,7 +21893,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "6 4 2 0",
 			"AbilityDuration": "1.5 1.5 1.5",
-			"AbilityManaCost": "40 45 50 55",
+			"AbilityManaCost": "65",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -24880,7 +25029,7 @@
 		"localized_name": "Sticky Napalm",
 		"description": "Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to **10** stacks.  The extra damage is halved against creeps.",
 		"lore": "It's not uncommon to hear the Rider cackle while he increases the flammability of his opponents.",
-		"note": "All damage from Batrider gets amplified, except for Radiance, Orb of Venom, Urn of Shadows, and Spirit Vessel.",
+		"note": "All damage from Batrider gets amplified, except for Radiance, Orb of Venom, Urn of Shadows, and Spirit Vessel.\nSticky napalm does not require turning to cast.",
 		"json_data": {
 			"ID": "5320",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -24948,8 +25097,8 @@
 			{
 				"talent_name": "special_bonus_unique_batrider_3",
 				"key": "damage_duration",
-				"value": "4 5 6 7",
-				"talent_value": "7 8 9 10",
+				"value": "2 4 6 8",
+				"talent_value": "5 7 9 11",
 				"header": "BURN DURATION:"
 			},
 			{
@@ -25016,7 +25165,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"damage_duration": "4 5 6 7",
+					"damage_duration": "2 4 6 8",
 					"CalculateSpellDamageTooltip": "0",
 					"LinkedSpecialBonus": "special_bonus_unique_batrider_3"
 				},
@@ -25107,7 +25256,7 @@
 		"ability_slot": 3,
 		"icon": "/panorama/images/spellicons/batrider_firefly_png.png",
 		"localized_name": "Firefly",
-		"description": "Batrider takes to the skies, laying down a trail of flames from the air.  The fire damages any enemies it touches, and destroys trees below Batrider.",
+		"description": "Batrider takes to the skies, laying down a trail of flames from the air.  The fire damages any enemies it touches, and destroys trees below Batrider. Batrider has bonus day/night vision while Firefly is active.",
 		"lore": "When an enemy escapes into the Yama Raskav Jungle, most would cut through the brush to find the fugitive.  Batrider just chooses to destroy the jungle along with his foes.",
 		"note": "During this the Batrider can fly above units, trees and impassable terrain.\nIf duration ends when above impassable terrain, the Batrider can get stuck.\nThe trail persists through Batrider's death.",
 		"json_data": {
@@ -25202,7 +25351,7 @@
 		"localized_name": "Flaming Lasso",
 		"description": "Lassoes an enemy and drags them in Batrider's wake.  Victims cannot be dragged over impassable terrain. Dragged units cannot move, attack, or use abilities.  Teleporting or blinking will break the lasso.",
 		"lore": "Few dare to ask to ride on the bat, as Batrider gives them free of charge.",
-		"note": "Killing the target or the Batrider will break the lasso before its expiration.\nIf Batrider moves more than 400 units in 0.05 seconds the lasso breaks.\nDisable works on Spell Immune units, damage does not.\nBatrider cannot attack while using Flaming Lasso.",
+		"note": "Killing the target or the Batrider will break the lasso before its expiration.\nIf Batrider moves more than 400 units in 0.05 seconds the lasso breaks.\nBatrider cannot attack while using Flaming Lasso.",
 		"aghanim": "Flaming Lasso grabs both its target, as well as the target's nearest allied hero within range. The secondary target is tethered to the first.",
 		"json_data": {
 			"ID": "5323",
@@ -32433,7 +32582,7 @@
 		"localized_name": "Chaos Bolt",
 		"description": "Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.",
 		"lore": "Even Chaos Knight cannot predict this manifest of unholy energy.",
-		"note": "The stun duration and damage values dealt are inversely related.",
+		"note": "The stun duration and damage values dealt are inversely related.\nNearby illusions will mimic the cast animation.",
 		"json_data": {
 			"ID": "5426",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -32655,16 +32804,15 @@
 			},
 			{
 				"key": "magic_resistance",
-				"value": "25%",
-				"header": "ILLUSION MAGIC RESISTANCE:"
+				"value": "25"
 			}
 		],
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/chaos_knight_phantasm_png.png",
 		"localized_name": "Phantasm",
-		"description": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms deal **40%**/**70%**/**100%** damage, but take **325%** damage.\nDISPEL TYPE: Basic Dispel",
+		"description": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are strong illusions that deal **40%**/**70%**/**100%** damage, have **25%** magic resistance, but take **325%** damage.\nDISPEL TYPE: Basic Dispel",
 		"lore": "Drawing on his battles fought across many worlds and many times, phantasms of the Chaos Knight rise up to quell all who oppose him.",
-		"note": "Removes most negative buffs from Chaos Knight.\nChaos Knight is invulnerable for **0.5** seconds when casting, allowing him to dodge stuns and damage.",
+		"note": "Removes most negative buffs from Chaos Knight.\nChaos Knight is invulnerable for **0.5** seconds when casting, allowing him to dodge stuns and damage.\nStrong Illusions are not instantly killed by spells.",
 		"aghanim": "Creates an illusion of allied heroes. Creates an additional illusion for Chaos Knight as well.",
 		"json_data": {
 			"ID": "5429",
@@ -34813,8 +34961,8 @@
 			{
 				"talent_name": "special_bonus_unique_nyx_4",
 				"key": "duration",
-				"value": "1.6 2 2.4 2.8",
-				"talent_value": "1.9000000000000001 2.3 2.6999999999999997 3.0999999999999996",
+				"value": "1.4 1.8 2.2 2.6",
+				"talent_value": "1.7 2.1 2.5 2.9",
 				"header": "STUN DURATION:"
 			},
 			{
@@ -34864,7 +35012,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "1.6 2.0 2.4 2.8",
+					"duration": "1.4 1.8 2.2 2.6",
 					"LinkedSpecialBonus": "special_bonus_unique_nyx_4"
 				},
 				"03": {
@@ -36853,7 +37001,7 @@
 			},
 			{
 				"key": "hp_regen",
-				"value": "0.55% 0.7% 0.85% 1%",
+				"value": "0.5% 0.6% 0.7% 0.8%",
 				"header": "MAX HEALTH REGEN:"
 			},
 			{
@@ -36882,7 +37030,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"hp_regen": "0.55 0.7 0.85 1.0"
+					"hp_regen": "0.5 0.6 0.7 0.8"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -39329,7 +39477,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "1 1.1 1.2 1.3",
+				"value": "0.9 1 1.1 1.2",
 				"header": "BONUS ARMOR:"
 			},
 			{
@@ -39362,7 +39510,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_armor": "1 1.1 1.2 1.3"
+					"bonus_armor": "0.9 1 1.1 1.2"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -43371,7 +43519,7 @@
 		"localized_name": "Borrowed Time",
 		"description": "When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below **400**.\n\nDISPEL TYPE: Strong Dispel",
 		"lore": "The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding.  What should hurt, instead heals; and what should kill gives strength anew.",
-		"note": "Borrowed Time can be manually activated while Abaddon is disabled, but not while silenced.  The passive activation can still occur while silenced.",
+		"note": "Borrowed Time can be manually activated while Abaddon is disabled, but not while silenced.  The passive activation can still occur while silenced.\nAphotic Shield does not block any damage to Abaddon when Borrowed Time is active, allowing him to heal.",
 		"aghanim": "Increases duration. While Borrowed Time is active, anytime an ally takes more than **525** damage while within **1600** range of Abaddon, an individual Mist Coil will automatically fire towards that ally.",
 		"json_data": {
 			"ID": "5588",
@@ -49084,6 +49232,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_HIDDEN",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityCastAnimation": "ACT_DOTA_GENERIC_CHANNEL_1",
+			"MaxLevel": "1",
 			"AbilityCastRange": "300"
 		}
 	},
@@ -61217,7 +61366,7 @@
 		"id": 6344,
 		"name": "pangolier_swashbuckle",
 		"hero_id": 120,
-		"behavior": "point|dont_resume_movement|vector_targeting",
+		"behavior": "point|dont_resume_movement|root_disables|vector_targeting",
 		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"cast_range": "1000",
@@ -61275,7 +61424,7 @@
 		"note": "Attack modifiers have a chance to proc on Swashbuckle attacks.\nCasting Swashbuckle during Rolling Thunder ends Rolling Thunder.",
 		"json_data": {
 			"ID": "6344",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityCastPoint": "0.0",
@@ -63521,7 +63670,7 @@
 			},
 			{
 				"key": "damage_per_impact",
-				"value": "200 300 400",
+				"value": "160 240 320",
 				"header": "DAMAGE PER GLOB:"
 			},
 			{
@@ -63624,7 +63773,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_impact": "200 300 400"
+					"damage_per_impact": "160 240 320"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -63736,7 +63885,7 @@
 			},
 			{
 				"key": "impact_stun_duration",
-				"value": "1.6 1.9 2.2 2.5",
+				"value": "1.6 1.8 2 2.2",
 				"header": "IMPACT STUN DURATION:"
 			},
 			{
@@ -63803,7 +63952,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"impact_stun_duration": "1.6 1.9 2.2 2.5"
+					"impact_stun_duration": "1.6 1.8 2.0 2.2"
 				},
 				"11": {
 					"var_type": "FIELD_FLOAT",
@@ -75036,7 +75185,8 @@
 			},
 			{
 				"key": "damage_percent",
-				"value": "28"
+				"value": "28%",
+				"header": "DAMAGE:"
 			},
 			{
 				"key": "spawn_interval",
@@ -75047,7 +75197,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/clinkz_burning_army_png.png",
 		"localized_name": "Burning Army",
-		"description": "Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons use your current Searing Arrows ability and attack only heroes. Base damage is %base_damage_percent% of your hero's base damage. Attack range is equal to your hero's attack range. ",
+		"description": "Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons deal a percentage of Clinkz' damage, use his current Searing Arrows ability and attack only heroes. Attack range is equal to your Clinkz's attack range.",
 		"json_data": {
 			"ID": "7319",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -76323,6 +76473,7 @@
 		"hero_id": 126,
 		"behavior": "point|ignore_backswing|root_disables",
 		"spell_immunity": "yes",
+		"target_team": "enemy",
 		"cast_point": "0.2",
 		"cooldown": "0",
 		"mana_cost": "100",
@@ -76378,6 +76529,8 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_VoidSpirit.AstralStep.Start",
 			"AnimationPlaybackRate": "1.5",
@@ -76456,11 +76609,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "1"
+				"value": "400"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "Resonant Pulse Disjoints Projectiles",
+		"localized_name": "+400 Astral Step Range",
 		"json_data": {
 			"ID": "7707",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -76468,7 +76621,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "1"
+					"value": "400"
 				}
 			}
 		}
@@ -80506,148 +80659,6 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"projectile_count": "20"
-				}
-			}
-		}
-	},
-	{
-		"id": 10000,
-		"name": "roshan_halloween_levels",
-		"behavior": "hidden|passive",
-		"ability_special": [
-			{
-				"key": "bonus_movement",
-				"value": "8"
-			},
-			{
-				"key": "bonus_damage",
-				"value": "200"
-			},
-			{
-				"key": "bonus_armor",
-				"value": "1"
-			},
-			{
-				"key": "bonus_health_regen",
-				"value": "5"
-			},
-			{
-				"key": "bonus_magic_resist",
-				"value": "5"
-			}
-		],
-		"icon": "/panorama/images/spellicons/roshan_halloween_levels_png.png",
-		"localized_name": "roshan_halloween_levels",
-		"json_data": {
-			"ID": "10000",
-			"MaxLevel": "1",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_movement": "8"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "200"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "1"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_health_regen": "5"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_magic_resist": "5"
-				}
-			}
-		}
-	},
-	{
-		"id": 10001,
-		"name": "roshan_halloween_summon",
-		"behavior": "no_target",
-		"damage_type": "magical",
-		"cast_range": "0",
-		"cast_point": "1",
-		"cooldown": "30",
-		"mana_cost": "0",
-		"ability_special": [],
-		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "Summon Roshlings",
-		"description": "Roshan calls a group of Roshlings to aid him.",
-		"json_data": {
-			"ID": "10001",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-			"MaxLevel": "1",
-			"AbilityTextureName": "roshan_spell_block",
-			"AbilityCastRange": "0",
-			"AbilityCastPoint": "1.0",
-			"AbilityCooldown": "30.0",
-			"AbilityManaCost": "0",
-			"AbilitySpecial": {}
-		}
-	},
-	{
-		"id": 10002,
-		"name": "roshan_halloween_fireball",
-		"behavior": "aoe",
-		"damage_type": "magical",
-		"cast_range": "1200",
-		"cast_point": "3",
-		"cooldown": "25",
-		"mana_cost": "0",
-		"ability_special": [
-			{
-				"key": "area_of_effect",
-				"value": "1200"
-			},
-			{
-				"key": "projectile_speed",
-				"value": "400"
-			},
-			{
-				"key": "radius",
-				"value": "300"
-			},
-			{
-				"key": "damage_percent",
-				"value": "50"
-			}
-		],
-		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "Fireball ",
-		"description": "Roshan launches a number of slow moving fireballs at all nearby enemies.",
-		"json_data": {
-			"ID": "10002",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-			"MaxLevel": "1",
-			"AbilityTextureName": "jakiro_liquid_fire",
-			"AbilityCastRange": "1200",
-			"AbilityCastPoint": "3.0",
-			"AbilityCooldown": "25.0",
-			"AbilityManaCost": "0",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"area_of_effect": "1200"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"projectile_speed": "400"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"radius": "300 300 300 300"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"damage_percent": "50 50 50 50"
 				}
 			}
 		}

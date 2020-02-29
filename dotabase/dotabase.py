@@ -30,6 +30,7 @@ class Hero(Base):
 	portrait = Column(String)
 	talents = Column(String)
 	color = Column(String)
+	legs = Column(Integer)
 
 	team = Column(String)
 	base_health_regen = Column(Float)
