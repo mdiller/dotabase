@@ -1845,7 +1845,7 @@
 		],
 		"ability_slot": 4,
 		"icon": "/panorama/images/spellicons/juggernaut_swift_slash_png.png",
-		"localized_name": "Swift Slash",
+		"localized_name": "Swiftslash",
 		"description": "Performs a quick Omnislash.",
 		"json_data": {
 			"ID": "419",
@@ -2009,7 +2009,7 @@
 		"json_data": {
 			"ID": "425",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
-			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_TREE",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -2975,7 +2975,7 @@
 			},
 			{
 				"key": "health_bonus_creep_pct",
-				"value": "13 17 21 25"
+				"value": "10 15 20 25"
 			},
 			{
 				"key": "health_bonus_aoe",
@@ -3026,7 +3026,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"health_bonus_creep_pct": "13 17 21 25"
+					"health_bonus_creep_pct": "10 15 20 25"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -4128,6 +4128,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "2",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "juggernaut_swift_slash",
 			"AbilityCastRange": "350",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -7531,6 +7532,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "2",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "pudge_eject",
 			"AbilityCastRange": "160",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -7594,8 +7596,7 @@
 					"scepter_cooldown": "11",
 					"RequiresScepter": "1"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "pudge_eject"
+			}
 		}
 	},
 	{
@@ -10598,8 +10599,9 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "2",
-			"HasScepterUpgrade": "1",
 			"AbilitySound": "Hero_Zuus.GodsWrath",
+			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "zuus_cloud",
 			"AbilityCastPoint": "0.4 0.4 0.4 0.4",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
 			"AbilityCooldown": "90.0",
@@ -10621,8 +10623,7 @@
 					"var_type": "FIELD_INTEGER",
 					"damage": "250 350 450"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "zuus_cloud"
+			}
 		}
 	},
 	{
@@ -13198,7 +13199,7 @@
 				"talent_name": "special_bonus_unique_riki_1",
 				"key": "damage_multiplier",
 				"value": "1.4 1.8 2.2",
-				"talent_value": "2.2 2.6 3",
+				"talent_value": "1.9 2.3 2.7",
 				"header": "AGI DAMAGE MULT:"
 			},
 			{
@@ -13624,7 +13625,7 @@
 			},
 			{
 				"key": "near_damage",
-				"value": "50 100 150"
+				"value": "100 150 200"
 			},
 			{
 				"key": "tick_rate",
@@ -13693,7 +13694,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"near_damage": "50 100 150"
+					"near_damage": "100 150 200"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -17415,6 +17416,8 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_TemplarAssassin.Trap",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftPreAbility": "templar_assassin_trap",
+			"AbilityDraftUltScepterAbility": "templar_assassin_trap_teleport",
 			"AbilityCastRange": "2000",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
@@ -17451,9 +17454,7 @@
 					"var_type": "FIELD_FLOAT",
 					"trap_max_charge_duration": "4"
 				}
-			},
-			"AbilityDraftPreAbility": "templar_assassin_trap",
-			"AbilityDraftUltScepterAbility": "templar_assassin_trap_teleport"
+			}
 		}
 	},
 	{
@@ -19899,6 +19900,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Rattletrap.Hookshot.Fire",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "rattletrap_overclocking",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCastRange": "2000 2500 3000",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -19930,8 +19932,7 @@
 					"cooldown_scepter": "12.0 12.0 12.0",
 					"RequiresScepter": "1"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "rattletrap_overclocking"
+			}
 		}
 	},
 	{
@@ -21883,6 +21884,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "enchantress_bunny_hop",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -21894,8 +21896,7 @@
 					"slow_duration": "4"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
-			"AbilityDraftUltScepterAbility": "enchantress_bunny_hop"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
 		}
 	},
 	{
@@ -22435,7 +22436,7 @@
 		"cast_range": "525",
 		"cast_point": "0.3",
 		"cooldown": "11 10 9 8",
-		"damage": "90 160 255 335",
+		"damage": "80 160 240 320",
 		"mana_cost": "80 90 100 110",
 		"ability_special": [
 			{
@@ -22493,7 +22494,7 @@
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "11 10 9 8",
 			"AbilityManaCost": "80 90 100 110",
-			"AbilityDamage": "90 160 255 335",
+			"AbilityDamage": "80 160 240 320",
 			"AbilityModifierSupportValue": "0.5",
 			"AbilitySpecial": {
 				"01": {
@@ -22506,11 +22507,11 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movespeed_slow": "-50 -50 -50 -50"
+					"movespeed_slow": "-50"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"attackspeed_slow": "-50 -50 -50 -50"
+					"attackspeed_slow": "-50"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -22602,7 +22603,7 @@
 				"talent_name": "special_bonus_unique_night_stalker_2",
 				"key": "bonus_attack_speed_night",
 				"value": "20 40 60 80",
-				"talent_value": "130 150 170 190",
+				"talent_value": "120 140 160 180",
 				"header": "ATTACK SPEED:"
 			}
 		],
@@ -23097,7 +23098,7 @@
 				"talent_name": "special_bonus_unique_bounty_hunter_2",
 				"key": "bonus_damage",
 				"value": "150 225 300 375",
-				"talent_value": "225 300 375 450",
+				"talent_value": "215 290 365 440",
 				"header": "DAMAGE:"
 			},
 			{
@@ -23198,7 +23199,7 @@
 				"talent_name": "special_bonus_unique_bounty_hunter",
 				"key": "gold_steal",
 				"value": "12 20 28 36",
-				"talent_value": "102 110 118 126",
+				"talent_value": "77 85 93 101",
 				"header": "GOLD STEAL:"
 			}
 		],
@@ -23544,8 +23545,8 @@
 			{
 				"talent_name": "special_bonus_unique_weaver_2",
 				"key": "speed",
-				"value": "220 240 260 280",
-				"talent_value": "420 440 460 480",
+				"value": "200 220 240 260",
+				"talent_value": "400 420 440 460",
 				"header": "MOVEMENT BONUS:"
 			},
 			{
@@ -23588,7 +23589,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"speed": "220 240 260 280",
+					"speed": "200 220 240 260",
 					"LinkedSpecialBonus": "special_bonus_unique_weaver_2"
 				},
 				"03": {
@@ -26437,6 +26438,8 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Spectre.Haunt",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftPreAbility": "spectre_reality",
+			"AbilityDraftUltScepterAbility": "spectre_haunt_single",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
 			"AbilityCooldown": "180 150 120",
@@ -26467,9 +26470,7 @@
 					"var_type": "FIELD_FLOAT",
 					"attack_delay": "1.0 1.0 1.0"
 				}
-			},
-			"AbilityDraftPreAbility": "spectre_reality",
-			"AbilityDraftUltScepterAbility": "spectre_haunt_single"
+			}
 		}
 	},
 	{
@@ -27801,7 +27802,7 @@
 		"dispellable": "yes",
 		"cast_range": "0",
 		"cast_point": "0.3",
-		"cooldown": "16 13 10 7",
+		"cooldown": "15 13 11 9",
 		"duration": "20",
 		"mana_cost": "55 60 65 70",
 		"ability_special": [
@@ -27833,7 +27834,7 @@
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "16 13 10 7",
+			"AbilityCooldown": "15 13 11 9",
 			"AbilityDuration": "20",
 			"AbilityManaCost": "55 60 65 70",
 			"AbilitySpecial": {
@@ -27873,8 +27874,8 @@
 			{
 				"talent_name": "special_bonus_unique_ursa",
 				"key": "damage_per_stack",
-				"value": "10 20 30 40",
-				"talent_value": "26 36 46 56",
+				"value": "9 18 27 36",
+				"talent_value": "25 34 43 52",
 				"header": "DAMAGE PER ATTACK:"
 			}
 		],
@@ -27901,7 +27902,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_stack": "10 20 30 40",
+					"damage_per_stack": "9 18 27 36",
 					"LinkedSpecialBonus": "special_bonus_unique_ursa"
 				}
 			},
@@ -28351,7 +28352,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/gyrocopter_call_down_png.png",
 		"localized_name": "Call Down",
-		"description": "Call down an aerial missile strike on enemy units in a target area. After **2** seconds, two missiles arrive in succession, with **2** seconds between them, the first dealing major damage and minor slow for **2** seconds; the second dealing minor damage and major slow for **4** seconds.",
+		"description": "Call down an aerial missile strike on enemy units in a target area. After **2** seconds, two missiles arrive in succession, with **2** seconds between them.",
 		"lore": "'Bombs Away!'",
 		"note": "The visual indicator is visible to allies only.",
 		"json_data": {
@@ -30827,7 +30828,7 @@
 				"talent_name": "special_bonus_unique_lycan_2",
 				"key": "tooltip_wolf_count",
 				"value": "2",
-				"talent_value": "5",
+				"talent_value": "4",
 				"header": "WOLF COUNT:"
 			}
 		],
@@ -31009,14 +31010,14 @@
 		"hero_id": 77,
 		"behavior": "no_target",
 		"dispellable": "no",
-		"cooldown": "120 105 90",
-		"mana_cost": "110 95 80",
+		"cooldown": "110 95 80",
+		"mana_cost": "100",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_lycan_1",
 				"key": "duration",
 				"value": "22",
-				"talent_value": "30",
+				"talent_value": "28",
 				"header": "DURATION:"
 			},
 			{
@@ -31063,8 +31064,9 @@
 			"AbilitySound": "Hero_Lycan.Shapeshift.Cast",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"HasScepterUpgrade": "1",
-			"AbilityCooldown": "120 105 90",
-			"AbilityManaCost": "110 95 80",
+			"AbilityDraftUltScepterAbility": "lycan_wolf_bite",
+			"AbilityCooldown": "110 95 80",
+			"AbilityManaCost": "100",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -31092,8 +31094,7 @@
 					"var_type": "FIELD_INTEGER",
 					"crit_multiplier": "150 175 200"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "lycan_wolf_bite"
+			}
 		}
 	},
 	{
@@ -33608,6 +33609,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
 			"FightRecapLevel": "2",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "treant_eyes_in_the_forest",
 			"AbilityCooldown": "100",
 			"AbilityManaCost": "200 250 300",
 			"AbilitySpecial": {
@@ -33630,8 +33632,7 @@
 					"damage": "75",
 					"LinkedSpecialBonus": "special_bonus_unique_treant_11"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "treant_eyes_in_the_forest"
+			}
 		}
 	},
 	{
@@ -35438,8 +35439,9 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_NyxAssassin.Vendetta",
-			"HasScepterUpgrade": "1",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
+			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "nyx_assassin_burrow",
 			"AbilityCooldown": "90.0 70.0 50.0",
 			"AbilityManaCost": "140 200 260",
 			"AbilitySpecial": {
@@ -35475,8 +35477,7 @@
 					"var_type": "FIELD_FLOAT",
 					"break_duration": "4.0"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "nyx_assassin_burrow"
+			}
 		}
 	},
 	{
@@ -36743,6 +36744,11 @@
 			{
 				"key": "radius",
 				"value": "1200"
+			},
+			{
+				"key": "max_damage_reduction",
+				"value": "80%",
+				"header": "MAX DAMAGE REDUCTION:"
 			}
 		],
 		"ability_slot": 3,
@@ -36775,6 +36781,10 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "1200"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"max_damage_reduction": "80"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -39799,8 +39809,9 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
-			"HasScepterUpgrade": "1",
 			"AbilitySound": "Hero_Shredder.Chakram.Cast",
+			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "shredder_chakram_2",
 			"AbilityCastRange": "1200 1200 1200",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -39847,8 +39858,7 @@
 					"var_type": "FIELD_INTEGER",
 					"slow_health_percentage": "5"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "shredder_chakram_2"
+			}
 		}
 	},
 	{
@@ -42392,6 +42402,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Tusk.WalrusPunch.Target",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "tusk_walrus_kick",
 			"AbilityCastPoint": "0",
 			"AbilityCastRange": "150",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -42420,8 +42431,7 @@
 					"var_type": "FIELD_INTEGER",
 					"push_length": "1000"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "tusk_walrus_kick"
+			}
 		}
 	},
 	{
@@ -45027,6 +45037,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftPreAbility": "techies_focused_detonate",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "1.0",
 			"AbilityCooldown": "8",
@@ -45083,8 +45094,7 @@
 					"var_type": "FIELD_FLOAT",
 					"detonate_delay": "0.25"
 				}
-			},
-			"AbilityDraftPreAbility": "techies_focused_detonate"
+			}
 		}
 	},
 	{
@@ -45436,6 +45446,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Hero_EmberSpirit.FireRemnant.Cast",
+			"AbilityDraftPreAbility": "ember_spirit_activate_fire_remnant",
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "1500",
 			"AbilityCastPoint": "0.0",
@@ -45487,8 +45498,7 @@
 					"scepter_mana_cost": "25",
 					"RequiresScepter": "1"
 				}
-			},
-			"AbilityDraftPreAbility": "ember_spirit_activate_fire_remnant"
+			}
 		}
 	},
 	{
@@ -48087,8 +48097,7 @@
 					"var_type": "FIELD_INTEGER",
 					"lifetime": "180"
 				}
-			},
-			"AbilityDraftPreAbility": "techies_focused_detonate"
+			}
 		}
 	},
 	{
@@ -54312,11 +54321,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "90"
+				"value": "65"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+90 Jinada Gold Steal",
+		"localized_name": "+65 Jinada Gold Steal",
 		"json_data": {
 			"ID": "6018",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -54324,7 +54333,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "90"
+					"value": "65"
 				}
 			}
 		}
@@ -56807,11 +56816,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "8"
+				"value": "6"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+8s Shapeshift Duration",
+		"localized_name": "+6s Shapeshift Duration",
 		"json_data": {
 			"ID": "6134",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -56819,7 +56828,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "8"
+					"value": "6"
 				}
 			}
 		}
@@ -56951,11 +56960,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "3"
+				"value": "2"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+3 Wolves Summoned",
+		"localized_name": "+2 Wolves Summoned",
 		"json_data": {
 			"ID": "6140",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -56963,7 +56972,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "3"
+					"value": "2"
 				}
 			}
 		}
@@ -60963,11 +60972,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "0.8"
+				"value": "0.5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+0.8 Backstab Multiplier",
+		"localized_name": "+0.5 Backstab Multiplier",
 		"json_data": {
 			"ID": "6330",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -60975,7 +60984,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.8"
+					"value": "0.5"
 				}
 			}
 		}
@@ -61941,11 +61950,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "75"
+				"value": "65"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+75 Shuriken Toss Damage",
+		"localized_name": "+65 Shuriken Toss Damage",
 		"json_data": {
 			"ID": "6358",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -61953,7 +61962,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "75"
+					"value": "65"
 				}
 			}
 		}
@@ -63670,7 +63679,6 @@
 		"localized_name": "Dissimilate",
 		"description": "Void Spirit temporarily fades into the aether, creating a number of portals through which he can reassemble himself. Upon exiting a portal, he damages all enemies in the area.",
 		"lore": "Inai much prefers to observe our plane free from the confines of corporeal form.",
-		"aghanim": "Causes Dissimilate to silence and gain two charges.",
 		"json_data": {
 			"ID": "6470",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -63959,6 +63967,8 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_Snapfire.MortimerBlob.Launch",
+			"AbilityDraftUltScepterAbility": "snapfire_gobble_up",
+			"AbilityDraftUltScepterPreAbility": "snapfire_spit_creep",
 			"AbilityCastRange": "3000",
 			"AbilityCastPoint": "0.5",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -64669,8 +64679,9 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
-			"HasScepterUpgrade": "1",
 			"FightRecapLevel": "1",
+			"HasScepterUpgrade": "1",
+			"AbilityDraftUltScepterAbility": "grimstroke_scepter",
 			"AbilityCastAnimation": "ACT_DOTA_GS_SOUL_CHAIN",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCooldown": "100 75 50",
@@ -64703,8 +64714,7 @@
 					"var_type": "FIELD_FLOAT",
 					"creep_duration_pct": "50.0"
 				}
-			},
-			"AbilityDraftUltScepterAbility": "grimstroke_scepter"
+			}
 		}
 	},
 	{
@@ -68503,11 +68513,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "110"
+				"value": "100"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+110 Hunter In The Night Attack Speed",
+		"localized_name": "+100 Hunter In The Night Attack Speed",
 		"json_data": {
 			"ID": "6704",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -68515,7 +68525,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "110"
+					"value": "100"
 				}
 			}
 		}
@@ -77202,6 +77212,7 @@
 		"localized_name": "Resonant Pulse",
 		"description": "Void Spirit wraps himself in a protective shield that absorbs physical damage and emits a single damaging pulse around him. The shield gains increased damage absorption for each enemy hero the pulse hits.",
 		"lore": "Inai never hesitates to shroud himself in the essence of his true self when forced to interact with the mortal plane.",
+		"aghanim": "Causes Resonant Pulse to silence and gain two charges.",
 		"json_data": {
 			"ID": "7710",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -78815,7 +78826,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "tooltip_cooldown",
-				"value": "70",
+				"value": "35",
 				"header": "COOLDOWN:"
 			}
 		],
@@ -78836,6 +78847,7 @@
 			"AbilitySound": "Hero_Spectre.Haunt",
 			"HasScepterUpgrade": "1",
 			"IsGrantedByScepter": "1",
+			"AbilityDraftPreAbility": "spectre_reality",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
 			"AbilityCooldown": "35",
@@ -78874,11 +78886,10 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"tooltip_cooldown": "70",
+					"tooltip_cooldown": "35",
 					"RequiresScepter": "1"
 				}
-			},
-			"AbilityDraftPreAbility": "spectre_reality"
+			}
 		}
 	},
 	{
@@ -79050,6 +79061,7 @@
 			"FightRecapLevel": "1",
 			"IsGrantedByScepter": "1",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftPreAbility": "templar_assassin_trap",
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
 			"AbilityChannelTime": "1.0",
@@ -79096,8 +79108,7 @@
 					"tooltip_cooldown": "30",
 					"RequiresScepter": "1"
 				}
-			},
-			"AbilityDraftPreAbility": "templar_assassin_trap"
+			}
 		}
 	},
 	{
@@ -80516,6 +80527,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"LinkedAbility": "dark_willow_bedlam",
+			"AbilityDraftPreAbility": "dark_willow_bedlam",
 			"AbilityCastRange": "1500",
 			"AbilityCastPoint": "1.0",
 			"AbilityCooldown": "100 90 80",
@@ -80543,8 +80555,7 @@
 					"var_type": "FIELD_FLOAT",
 					"starting_height": "300"
 				}
-			},
-			"AbilityDraftPreAbility": "dark_willow_bedlam"
+			}
 		}
 	},
 	{
