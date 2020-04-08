@@ -974,7 +974,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "2",
+				"value": "1.75",
 				"header": "+",
 				"footer": "HP Regeneration"
 			}
@@ -993,7 +993,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "2"
+					"bonus_health_regen": "1.75"
 				}
 			}
 		}
@@ -1554,7 +1554,7 @@
 		"aliases": "dust of appearance",
 		"quality": "consumable",
 		"icon": "/panorama/images/items/dust_png.png",
-		"cost": 90,
+		"cost": 80,
 		"cooldown": "30",
 		"cast_range": "1050",
 		"mana_cost": "0",
@@ -1584,7 +1584,7 @@
 			"AbilityCastRange": "1050",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityManaCost": "0",
-			"ItemCost": "90",
+			"ItemCost": "80",
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "dust of appearance",
@@ -3297,7 +3297,7 @@
 		"cooldown": "65",
 		"cast_range": "1200",
 		"mana_cost": "225",
-		"description": "# Active: Restore\nHeals **275** health to allied units in a **1200** radius.\n\n# Passive: Mekansm Aura\nGrants **2.5** health regeneration to allied units in a **1200** radius.",
+		"description": "# Active: Restore\nHeals **275** health to allied units in a **1200** radius.\n\n# Passive: Mekansm Aura\nGrants **2** health regeneration to allied units in a **1200** radius.",
 		"lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3319,7 +3319,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "2.5"
+				"value": "2"
 			},
 			{
 				"key": "heal_amount",
@@ -3359,7 +3359,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "2.5"
+					"aura_health_regen": "2.0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -3377,13 +3377,13 @@
 		"name": "item_recipe_vladmir",
 		"localized_name": "Vladmir's Offering Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 450,
+		"cost": 550,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "80",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "450",
+			"ItemCost": "550",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_vladmir",
@@ -3399,7 +3399,7 @@
 		"aliases": "vladmir's offering|vlads",
 		"quality": "rare",
 		"icon": "/panorama/images/items/vladmir_png.png",
-		"cost": 2100,
+		"cost": 2200,
 		"cast_range": "1200",
 		"description": "# Passive: Vladmir's Aura\nGrants **25%** lifesteal, **1.5** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
@@ -3432,7 +3432,7 @@
 			"ID": "81",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCastRange": "1200",
-			"ItemCost": "2100",
+			"ItemCost": "2200",
 			"ItemShopTags": "lifesteal;damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
@@ -3614,13 +3614,13 @@
 		"name": "item_recipe_pipe",
 		"localized_name": "Pipe of Insight Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 800,
+		"cost": 1000,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "89",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "800",
+			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_pipe",
@@ -3636,11 +3636,11 @@
 		"aliases": "pipe of insight",
 		"quality": "rare",
 		"icon": "/panorama/images/items/pipe_png.png",
-		"cost": 2775,
+		"cost": 2975,
 		"cooldown": "60",
 		"cast_range": "1200",
 		"mana_cost": "100",
-		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
+		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n# Passive: Insight Aura\nGives allied units **2** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3666,7 +3666,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "2.5"
+				"value": "2"
 			},
 			{
 				"key": "magic_resistance_aura",
@@ -3704,7 +3704,7 @@
 			"AbilityCooldown": "60.0",
 			"AbilityManaCost": "100",
 			"AbilityCastRange": "1200",
-			"ItemCost": "2775",
+			"ItemCost": "2975",
 			"ItemShopTags": "regen_health;boost_magic_resist",
 			"ItemQuality": "rare",
 			"ItemAliases": "pipe of insight",
@@ -3730,7 +3730,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "2.5"
+					"aura_health_regen": "2.0"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -3931,7 +3931,7 @@
 		"icon": "/panorama/images/items/headdress_png.png",
 		"cost": 375,
 		"cast_range": "1200",
-		"description": "# Passive: Regeneration Aura\nGrants **2.5** health regeneration to allies.\n\nRadius: **1200**",
+		"description": "# Passive: Regeneration Aura\nGrants **2** health regeneration to allies.\n\nRadius: **1200**",
 		"lore": "Creates a soothing aura that restores allies in battle.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3941,7 +3941,7 @@
 			},
 			{
 				"key": "aura_health_regen",
-				"value": "2.5"
+				"value": "2"
 			},
 			{
 				"key": "aura_radius",
@@ -3963,7 +3963,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "2.5"
+					"aura_health_regen": "2.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -4538,7 +4538,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "10 15 20",
+				"value": "6 12 18",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -4622,7 +4622,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "10 15 20"
+					"bonus_strength": "6 12 18"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -7714,7 +7714,7 @@
 		"cooldown": "60",
 		"cast_range": "700",
 		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**.\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**\n\n# Passive: Dominator Aura\nIncreases nearby allied hero and player units base damage by **20%**  and health regen by **5**. Has a **50%**  bigger effect on player units.\n\nRadius: **1200**",
+		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**.\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**\n\n# Passive: Dominator Aura\nIncreases nearby allied hero and player units base damage by **20%**  and health regen by **4.25**. Has a **50%**  bigger effect on player units.\n\nRadius: **1200**",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7730,7 +7730,7 @@
 			},
 			{
 				"key": "hp_regen_aura",
-				"value": "5"
+				"value": "4.25"
 			},
 			{
 				"key": "creep_bonus",
@@ -7779,7 +7779,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"hp_regen_aura": "5"
+					"hp_regen_aura": "4.25"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8491,7 +8491,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "2.5",
+				"value": "2.25",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -8529,7 +8529,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "2.5"
+					"bonus_health_regen": "2.25"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -9194,7 +9194,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "10 15 20",
+				"value": "6 12 18",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -9278,7 +9278,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "10 15 20"
+					"bonus_strength": "6 12 18"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -9356,7 +9356,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "10 15 20",
+				"value": "6 12 18",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -9438,7 +9438,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "10 15 20"
+					"bonus_strength": "6 12 18"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -13939,7 +13939,7 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "4.5",
+				"value": "4",
 				"header": "+",
 				"footer": "HP Regeneration"
 			}
@@ -13962,7 +13962,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "4.5"
+					"bonus_health_regen": "4"
 				}
 			}
 		}
@@ -14738,13 +14738,13 @@
 		"icon": "/panorama/images/items/royal_jelly_png.png",
 		"cost": 0,
 		"cast_range": "250",
-		"description": "# Use: Consume\nGrants a target allied unit a permanent buff that provides +**2.5** Health Regen and +**1.25** Mana Regen.\n\nDoes not stack on the same unit.",
+		"description": "# Use: Consume\nGrants a target allied unit a permanent buff that provides +**2.25** Health Regen and +**1.25** Mana Regen.\n\nDoes not stack on the same unit.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "health_regen",
-				"value": "2.5"
+				"value": "2.25"
 			},
 			{
 				"key": "mana_regen",
@@ -14768,7 +14768,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"health_regen": "2.5"
+					"health_regen": "2.25"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -15767,7 +15767,7 @@
 		"cost": 0,
 		"cooldown": "55",
 		"cast_range": "250",
-		"description": "# Active: Dig\nChannel for %abilitychanneltime% second. \nCan find a Bounty Rune, a Flask, a 2 charged TP Scroll bundle, or an enemy Kobold.",
+		"description": "# Active: Dig\nChannel for %abilitychanneltime% second. \nCan find a Bounty Rune, a Flask, a TP Scroll, or an enemy Kobold.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
