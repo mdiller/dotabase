@@ -1929,11 +1929,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "250"
+				"value": "200"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+250 Will-O-Wisp AOE",
+		"localized_name": "+200 Will-O-Wisp AOE",
 		"json_data": {
 			"ID": "422",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -1941,7 +1941,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "250"
+					"value": "200"
 				}
 			}
 		}
@@ -6538,7 +6538,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_PhantomLancer.SpiritLance.Throw",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
-			"AbilityCooldown": "7.0 7.0 7.0 7.0",
+			"AbilityCooldown": "7",
 			"AbilityManaCost": "110 120 130 140",
 			"AbilityCastRange": "525 600 675 750",
 			"AbilitySpecial": {
@@ -8445,7 +8445,7 @@
 			},
 			{
 				"key": "skeleton_duration",
-				"value": "90",
+				"value": "60",
 				"header": "SKELETON DURATION:"
 			},
 			{
@@ -8490,7 +8490,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"skeleton_duration": "90"
+					"skeleton_duration": "60"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8733,7 +8733,7 @@
 			"AbilityCastRange": "900",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "15 14 13 12",
-			"AbilityDuration": "3.0 4.0 5.0 6.0",
+			"AbilityDuration": "3 4 5 6",
 			"AbilityManaCost": "80 90 100 110",
 			"AbilitySpecial": {
 				"01": {
@@ -8906,7 +8906,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "scepter_spirit_bonus_damage",
-				"value": "75%",
+				"value": "50%",
 				"header": "SPIRIT BONUS DAMAGE:"
 			},
 			{
@@ -8996,7 +8996,7 @@
 				},
 				"14": {
 					"var_type": "FIELD_INTEGER",
-					"scepter_spirit_bonus_damage": "75",
+					"scepter_spirit_bonus_damage": "50",
 					"RequiresScepter": "1",
 					"CalculateSpellDamageTooltip": "0"
 				},
@@ -12650,7 +12650,7 @@
 		"ability_slot": 6,
 		"icon": "/panorama/images/spellicons/lich_chain_frost_png.png",
 		"localized_name": "Chain Frost",
-		"description": "Releases an orb of frost that bounces between nearby enemy units up to **10** times, slowing and damaging each time it hits. Each bounce increases the damage for the subsequent bounces. \n\nUpgradable by Aghanim's Scepter.",
+		"description": "Releases an orb of frost that bounces between nearby enemy units up to **10** times, slowing and damaging each time it hits. Each bounce increases the damage for the subsequent bounces.",
 		"lore": "Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him.",
 		"note": "Chain Frost cannot be disjointed.\nChain Frost has a movement speed of **850**.\nChain Frost doesn't bounce to Zombies.",
 		"json_data": {
@@ -15264,7 +15264,7 @@
 				"talent_name": "special_bonus_unique_beastmaster_2",
 				"key": "boar_damage_tooltip",
 				"value": "14 26 38 50",
-				"talent_value": "49 61 73 85"
+				"talent_value": "44 56 68 80"
 			},
 			{
 				"key": "boar_moveslow_tooltip",
@@ -22220,7 +22220,7 @@
 				"talent_name": "special_bonus_unique_huskar_2",
 				"key": "burn_damage",
 				"value": "5 10 15 20",
-				"talent_value": "15 20 25 30",
+				"talent_value": "13 18 23 28",
 				"header": "BURN DAMAGE:"
 			}
 		],
@@ -22266,7 +22266,7 @@
 		"ability_special": [
 			{
 				"key": "maximum_attack_speed",
-				"value": "140 200 260 320",
+				"value": "130 190 250 310",
 				"header": "MAX ATTACK SPEED:"
 			},
 			{
@@ -22292,7 +22292,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"maximum_attack_speed": "140 200 260 320"
+					"maximum_attack_speed": "130 190 250 310"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -30888,7 +30888,7 @@
 		"name": "lycan_howl",
 		"hero_id": 77,
 		"behavior": "no_target|ignore_backswing",
-		"spell_immunity": "yes",
+		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_point": "0.3",
 		"cooldown": "24 22 20 18",
@@ -30924,7 +30924,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"AbilitySound": "Hero_Lycan.Howl",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "24 22 20 18",
 			"AbilityManaCost": "50",
@@ -31010,7 +31010,7 @@
 		"hero_id": 77,
 		"behavior": "no_target",
 		"dispellable": "no",
-		"cooldown": "110 95 80",
+		"cooldown": "125 110 95",
 		"mana_cost": "100",
 		"ability_special": [
 			{
@@ -31065,7 +31065,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"HasScepterUpgrade": "1",
 			"AbilityDraftUltScepterAbility": "lycan_wolf_bite",
-			"AbilityCooldown": "110 95 80",
+			"AbilityCooldown": "125 110 95",
 			"AbilityManaCost": "100",
 			"AbilitySpecial": {
 				"01": {
@@ -33288,7 +33288,7 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"DisplayAdditionalHeroes": "1",
 			"LevelsBetweenUpgrades": "7",
-			"RequiredLevel": "3",
+			"RequiredLevel": "4",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"HasScepterUpgrade": "1",
 			"AbilitySpecial": {
@@ -36118,7 +36118,7 @@
 			},
 			{
 				"key": "cooldown_reduction",
-				"value": "4 5 6 7",
+				"value": "3 4 5 6",
 				"header": "COOLDOWN REDUCTION:"
 			},
 			{
@@ -36159,7 +36159,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"cooldown_reduction": "4 5 6 7"
+					"cooldown_reduction": "3 4 5 6"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -38815,7 +38815,7 @@
 			},
 			{
 				"key": "damage_gain_pct",
-				"value": "6% 8% 10% 12%",
+				"value": "4% 6% 8% 10%",
 				"header": "ATTACK DAMAGE PER CHARGE:"
 			},
 			{
@@ -38856,7 +38856,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"damage_gain_pct": "6 8 10 12"
+					"damage_gain_pct": "4 6 8 10"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -47039,8 +47039,8 @@
 			{
 				"talent_name": "special_bonus_unique_phoenix_3",
 				"key": "damage_per_second",
-				"value": "20 40 60 80",
-				"talent_value": "60 80 100 120",
+				"value": "15 35 55 75",
+				"talent_value": "50 70 90 110",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -47098,7 +47098,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_second": "20 40 60 80",
+					"damage_per_second": "15 35 55 75",
 					"LinkedSpecialBonus": "special_bonus_unique_phoenix_3"
 				},
 				"08": {
@@ -47434,8 +47434,8 @@
 			{
 				"talent_name": "special_bonus_unique_phoenix_3",
 				"key": "damage_per_second",
-				"value": "20 40 60 80",
-				"talent_value": "60 80 100 120",
+				"value": "15 35 55 75",
+				"talent_value": "50 70 90 110",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -47491,7 +47491,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_second": "20 40 60 80",
+					"damage_per_second": "15 35 55 75",
 					"LinkedSpecialBonus": "special_bonus_unique_phoenix_3"
 				},
 				"08": {
@@ -50436,7 +50436,7 @@
 		"cast_range": "500",
 		"cast_point": "0.1",
 		"cooldown": "0",
-		"mana_cost": "70",
+		"mana_cost": "80",
 		"ability_special": [
 			{
 				"key": "damage",
@@ -50487,7 +50487,7 @@
 			"AbilityCooldown": "0",
 			"AbilityCharges": "1 2 3 4",
 			"AbilityChargeRestoreTime": "45 40 35 30",
-			"AbilityManaCost": "70",
+			"AbilityManaCost": "80",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -62430,11 +62430,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "10"
+				"value": "8"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+10 Burning Spears DPS",
+		"localized_name": "+8 Burning Spears DPS",
 		"json_data": {
 			"ID": "6380",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -62442,7 +62442,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "10"
+					"value": "8"
 				}
 			}
 		}
@@ -62814,11 +62814,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "40"
+				"value": "35"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+40 Fire Spirits DPS",
+		"localized_name": "+35 Fire Spirits DPS",
 		"json_data": {
 			"ID": "6401",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -62826,7 +62826,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "40"
+					"value": "35"
 				}
 			}
 		}
@@ -64103,7 +64103,7 @@
 			},
 			{
 				"key": "impact_damage",
-				"value": "90 160 230 300",
+				"value": "70 140 210 280",
 				"header": "IMPACT DAMAGE:"
 			},
 			{
@@ -64171,7 +64171,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"impact_damage": "90 160 230 300"
+					"impact_damage": "70 140 210 280"
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
@@ -65277,11 +65277,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "35"
+				"value": "30"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
-		"localized_name": "+35 Boar Damage",
+		"localized_name": "+30 Boar Damage",
 		"json_data": {
 			"ID": "6517",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
@@ -65289,7 +65289,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "35"
+					"value": "30"
 				}
 			}
 		}
@@ -74668,7 +74668,7 @@
 				"talent_name": "special_bonus_unique_beastmaster_2",
 				"key": "boar_damage_tooltip",
 				"value": "16 32 48 64",
-				"talent_value": "51 67 83 99",
+				"talent_value": "46 62 78 94",
 				"header": "BOAR ATTACK DAMAGE:"
 			},
 			{
@@ -74744,7 +74744,7 @@
 				"talent_name": "special_bonus_unique_beastmaster_2",
 				"key": "hawk_speed_tooltip",
 				"value": "300 340 380 420",
-				"talent_value": "335 375 415 455",
+				"talent_value": "330 370 410 450",
 				"header": "HAWK SPEED:"
 			},
 			{
@@ -75486,7 +75486,7 @@
 				"talent_name": "special_bonus_unique_keeper_of_the_light_6",
 				"key": "radius",
 				"value": "725",
-				"talent_value": "975",
+				"talent_value": "925",
 				"header": "RADIUS:"
 			},
 			{
