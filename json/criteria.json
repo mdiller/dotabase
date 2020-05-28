@@ -15252,6 +15252,22 @@
 		"required": true
 	},
 	{
+		"name": "IsTimberStrider",
+		"pretty": "Woodland Striders",
+		"matchkey": "abilityname",
+		"matchvalue": "item_woodland_striders",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTimberPlanting",
+		"pretty": "Ironwood Tree",
+		"matchkey": "abilityname",
+		"matchvalue": "item_ironwood_tree",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "Issilencer",
 		"matchkey": "classname",
 		"matchvalue": "npc_dota_hero_silencer",
@@ -15386,6 +15402,204 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "wraith_king_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWKskelLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "skeleton_king_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWKskelDebutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "skeleton_king_debut_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWKskelLArcanaToast",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "skeleton_king_arcana_toast",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWKskel",
+		"matchkey": "customresponse",
+		"matchvalue": "wraith_arc_skel",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotWKskel",
+		"matchkey": "customresponse",
+		"matchvalue": "!=wraith_arc_skel",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMortalStrike",
+		"pretty": "Mortal Strike",
+		"matchkey": "abilityname",
+		"matchvalue": "skeleton_king_mortal_strike",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsCrewSmall",
+		"pretty": "IsCrewSmall",
+		"matchkey": "mortal_strike_stack_count",
+		"matchvalue": "<5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsCrewThree",
+		"pretty": "IsCrewThree",
+		"matchkey": "mortal_strike_stack_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsCrewLarge",
+		"pretty": "IsCrewLarge",
+		"matchkey": "mortal_strike_stack_count",
+		"matchvalue": ">=8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsCapture",
+		"pretty": "ability_capture",
+		"matchkey": "abilityname",
+		"matchvalue": "ability_capture",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsOutpost",
+		"pretty": "IsOutpost",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_watch_tower",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono1",
+		"pretty": "IsSkelMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono2",
+		"pretty": "IsSkelMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono3",
+		"pretty": "IsSkelMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono4",
+		"pretty": "IsSkelMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono5",
+		"pretty": "IsSkelMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono6",
+		"pretty": "IsSkelMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono7",
+		"pretty": "IsSkelMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMono8",
+		"pretty": "IsSkelMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoGroup1",
+		"pretty": "IsSkelMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoGroup2",
+		"pretty": "IsSkelMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoGroup3",
+		"pretty": "IsSkelMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoGroup4",
+		"pretty": "IsSkelMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoGroup5",
+		"pretty": "IsSkelMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSkelMonoDone",
+		"pretty": "IsSkelMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=2",
 		"weight": 5.0,
 		"required": true
 	},

@@ -8764,22 +8764,10 @@
 		"secret_shop": false,
 		"ability_special": [
 			{
-				"key": "bonus_int",
+				"key": "bonus_all_stats",
 				"value": "4",
 				"header": "+",
-				"footer": "Intelligence"
-			},
-			{
-				"key": "bonus_str",
-				"value": "4",
-				"header": "+",
-				"footer": "Strength"
-			},
-			{
-				"key": "bonus_agi",
-				"value": "4",
-				"header": "+",
-				"footer": "Agility"
+				"footer": "All Attributes"
 			},
 			{
 				"key": "bonus_mana_regen",
@@ -8832,41 +8820,33 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_int": "4"
+					"bonus_all_stats": "4"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_str": "4"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_agi": "4"
-				},
-				"04": {
 					"var_type": "FIELD_FLOAT",
 					"bonus_mana_regen": "0"
 				},
-				"05": {
+				"03": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_movement_speed": "20"
 				},
-				"06": {
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"attack_speed_aura": "20"
 				},
-				"07": {
+				"05": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_attack_speed_pct": "35"
 				},
-				"08": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_movement_speed_pct": "12"
 				},
-				"09": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"duration": "6"
 				},
-				"10": {
+				"08": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "1200"
 				}
@@ -14488,6 +14468,7 @@
 		"id": 299,
 		"name": "item_greater_faerie_fire",
 		"localized_name": "Greater Faerie Fire",
+		"quality": "consumable",
 		"icon": "/panorama/images/items/greater_faerie_fire_png.png",
 		"cost": 0,
 		"cooldown": "10",
@@ -14513,6 +14494,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemInitialCharges": "3",
 			"ItemPermanent": "0",
@@ -14741,6 +14723,7 @@
 		"id": 305,
 		"name": "item_royal_jelly",
 		"localized_name": "Royal Jelly",
+		"quality": "consumable",
 		"icon": "/panorama/images/items/royal_jelly_png.png",
 		"cost": 0,
 		"cast_range": "0",
@@ -14765,6 +14748,7 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemInitialCharges": "2",
 			"ItemPermanent": "0",
@@ -14854,6 +14838,7 @@
 		"id": 308,
 		"name": "item_repair_kit",
 		"localized_name": "Repair Kit",
+		"quality": "consumable",
 		"icon": "/panorama/images/items/repair_kit_png.png",
 		"cost": 0,
 		"cast_range": "600",
@@ -14887,6 +14872,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemInitialCharges": "3",
 			"ItemPermanent": "0",
@@ -15298,6 +15284,7 @@
 		"id": 328,
 		"name": "item_mango_tree",
 		"localized_name": "Mango Tree",
+		"quality": "consumable",
 		"icon": "/panorama/images/items/mango_tree_png.png",
 		"cast_range": "200",
 		"description": "# Use: Plant a Mango Tree\nTargets the ground to plant a mango tree that provides unlimited mango power. The tree generates Enchanted Mangoes every **60** seconds, and provides unobstructed vision in the area \n\nRange: **200**",
@@ -15314,6 +15301,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
 			"AbilityCastRange": "200",
 			"ItemIsNeutralDrop": "1",
+			"ItemQuality": "consumable",
 			"ItemPurchasable": "0",
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
