@@ -589,11 +589,13 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "325"
+					"value": "325",
+					"ad_linked_ability": "earth_spirit_rolling_boulder"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"value2": "650"
+					"value2": "650",
+					"ad_linked_ability": "earth_spirit_rolling_boulder"
 				}
 			}
 		}
@@ -37573,6 +37575,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_KeeperOfTheLight.Illuminate.Discharge",
+			"AbilityDraftPreAbility": "keeper_of_the_light_spirit_form_illuminate",
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "1800",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
@@ -47659,6 +47662,8 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_EarthSpirit.Magnetize.Cast",
+			"AbilityDraftPreAbility": "earth_spirit_stone_caller",
+			"AbilityDraftUltScepterAbility": "earth_spirit_petrify",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastRange": "350",
@@ -60005,7 +60010,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "120"
+					"value": "120",
+					"ad_linked_ability": "earth_spirit_rolling_boulder"
 				}
 			}
 		}
@@ -69203,7 +69209,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.6"
+					"value": "0.6",
+					"ad_linked_ability": "earth_spirit_rolling_boulder"
 				}
 			}
 		}
@@ -83791,7 +83798,7 @@
 		"id": 8020,
 		"name": "seasonal_ti10_disco_ball",
 		"behavior": "point|not_learnable|item|ignore_backswing",
-		"cast_range": "400",
+		"cast_range": "600",
 		"cast_point": "0.1",
 		"cooldown": "30",
 		"damage": "0",
@@ -83807,7 +83814,7 @@
 			},
 			{
 				"key": "idle_lifetime",
-				"value": "5"
+				"value": "0.25"
 			}
 		],
 		"icon": "/panorama/images/spellicons/wisp_empty1_png.png",
@@ -83815,11 +83822,11 @@
 		"json_data": {
 			"ID": "8020",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
-			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17549",
 			"AbilityTextureName": "consumables/seasonal_ti10_disco_ball",
-			"AbilityCastRange": "400",
+			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "30",
 			"AbilityDamage": "0",
@@ -83834,8 +83841,8 @@
 					"duration": "30"
 				},
 				"03": {
-					"var_type": "FIELD_INTEGER",
-					"idle_lifetime": "5"
+					"var_type": "FIELD_FLOAT",
+					"idle_lifetime": "0.25"
 				}
 			}
 		}
