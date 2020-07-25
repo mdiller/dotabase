@@ -34,7 +34,7 @@ Note that the package was built using python 3.5 and sqlalchemy 1.1
 In the `json` directory, I've auto-generated a bunch of json files that give you an idea of what is inside the database. These are also useful for seeing the difference between builds.
 
 ## Builder
-The database is built using my custom [dotabase-builder](https://github.com/mdiller/dotabase-builder "Dotabase Builder"). Check it out for more information of how this project is being constructed. Note that the database is constructed and then dumped to an sql creation script for saving to source control. You can reconstruct it with `sqlite dotabase.db ".read dotabase.db.sql"`
+The database is built using my custom [dotabase-builder](https://github.com/mdiller/dotabase-builder "Dotabase Builder"). Check it out for more information of how this project is being constructed. Note that the database is constructed and then dumped to an sql creation script for saving to source control. You can reconstruct it with `sqlite3 dotabase.db ".read dotabase.db.sql"`
 
 ## Extracted VPK Files
 The files extracted from dota's vpk are all of the ones of the following types:
