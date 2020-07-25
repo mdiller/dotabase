@@ -271,8 +271,8 @@
 		"voice_id": 13456,
 		"text": "At this point you really should just address me as Emperor.",
 		"text_simple": " at this point you really should just address me as emperor ",
-		"criteria": "Spawn Isskeleton_king IsWKskel",
-		"pretty_criteria": "Spawning"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Taunting"
 	},
 	{
 		"name": "skel_arc_spawn_12",
@@ -359,8 +359,8 @@
 		"voice_id": 13456,
 		"text": "Kneel before your king... and I might spare your head!",
 		"text_simple": " kneel before your king and i might spare your head ",
-		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn",
-		"pretty_criteria": "Spawning|Spawning in the loadout"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Spawning in the loadout|Taunting"
 	},
 	{
 		"name": "skel_arc_intro_03",
@@ -370,8 +370,8 @@
 		"voice_id": 13456,
 		"text": "Kneel, peasants. I. Said. KNEEL.",
 		"text_simple": " kneel peasants i said kneel ",
-		"criteria": "Spawn Isskeleton_king IsWKskel",
-		"pretty_criteria": "Spawning"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Taunting"
 	},
 	{
 		"name": "skel_arc_intro_04",
@@ -392,8 +392,8 @@
 		"voice_id": 13456,
 		"text": "Submit to the empire of bone!",
 		"text_simple": " submit to the empire of bone ",
-		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn",
-		"pretty_criteria": "Spawning|Spawning in the loadout"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Spawning in the loadout|Taunting"
 	},
 	{
 		"name": "skel_arc_intro_06",
@@ -414,8 +414,8 @@
 		"voice_id": 13456,
 		"text": "Who dares approach my throne?",
 		"text_simple": " who dares approach my throne ",
-		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn",
-		"pretty_criteria": "Spawning|Spawning in the loadout"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Spawning in the loadout|Taunting"
 	},
 	{
 		"name": "skel_arc_intro_08",
@@ -458,8 +458,8 @@
 		"voice_id": 13456,
 		"text": "Bow before me. Or prepare to meet your fate.",
 		"text_simple": " bow before me or prepare to meet your fate ",
-		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn",
-		"pretty_criteria": "Spawning|Spawning in the loadout"
+		"criteria": "Spawn Isskeleton_king IsWKskel|Custom Isskeleton_king IsWKskelLoadoutSpawn|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Spawning|Spawning in the loadout|Taunting"
 	},
 	{
 		"name": "skel_arc_intro_12",
@@ -546,8 +546,8 @@
 		"voice_id": 13456,
 		"text": "Who are we going to kill today?",
 		"text_simple": " who are we going to kill today ",
-		"criteria": "Custom Isskeleton_king IsWKskel IsGameStart",
-		"pretty_criteria": "As the game starts"
+		"criteria": "Custom Isskeleton_king IsWKskel IsGameStart|Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "As the game starts|Taunting"
 	},
 	{
 		"name": "skel_arc_graveyard_07",
@@ -1142,6 +1142,39 @@
 		"text_simple": " all out war ",
 		"criteria": "Move Isskeleton_king IsWKskel",
 		"pretty_criteria": "Moving"
+	},
+	{
+		"name": "skel_arc_swipe_06",
+		"fullname": "skeleton_king_skel_arc_swipe_06",
+		"mp3": "/sounds/vo/skeleton_king/skel_arc_swipe_06.mp3",
+		"hero_id": 42,
+		"voice_id": 13456,
+		"text": "I'd gladly hit something.",
+		"text_simple": " id gladly hit something ",
+		"criteria": "Custom Isskeleton_king IsWKskelLArcanaToast Chance_20%|Taunt Isskeleton_king IsWKskel IsArcThrone Chance_3%",
+		"pretty_criteria": "Spawning in the loadout (20% chance)|Taunting (3% chance)"
+	},
+	{
+		"name": "skel_arc_swipe_07",
+		"fullname": "skeleton_king_skel_arc_swipe_07",
+		"mp3": "/sounds/vo/skeleton_king/skel_arc_swipe_07.mp3",
+		"hero_id": 42,
+		"voice_id": 13456,
+		"text": "Is the war already over?",
+		"text_simple": " is the war already over ",
+		"criteria": "Custom Isskeleton_king IsWKskelLArcanaToast Chance_20%|Taunt Isskeleton_king IsWKskel IsArcThrone Chance_3%",
+		"pretty_criteria": "Spawning in the loadout (20% chance)|Taunting (3% chance)"
+	},
+	{
+		"name": "skel_arc_skull_01",
+		"fullname": "skeleton_king_skel_arc_skull_01",
+		"mp3": "/sounds/vo/skeleton_king/skel_arc_skull_01.mp3",
+		"hero_id": 42,
+		"voice_id": 13456,
+		"text": "I'm feeling strangely introspective...",
+		"text_simple": " im feeling strangely introspective ",
+		"criteria": "Taunt Isskeleton_king IsWKskel IsArcThrone",
+		"pretty_criteria": "Taunting"
 	},
 	{
 		"name": "skel_arc_attack_01",
