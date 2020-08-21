@@ -89,6 +89,8 @@ class Ability(Base):
 	mana_cost = Column(String)
 	ability_special = Column(String)
 
+	linked_abilities = Column(String)
+	talent_slot = Column(Integer)
 	ability_slot = Column(Integer)
 	icon = Column(String)
 
