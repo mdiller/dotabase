@@ -1353,6 +1353,7 @@
 				"value": "15"
 			}
 		],
+		"recipe": "item_magic_stick|item_branches|item_branches|item_recipe_magic_wand",
 		"json_data": {
 			"ID": "36",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -2095,6 +2096,7 @@
 				"header": "TOWN PORTAL SCROLL COOLDOWN:"
 			}
 		],
+		"recipe": "item_boots|item_recipe_travel_boots",
 		"json_data": {
 			"ID": "48",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -2128,26 +2130,6 @@
 					"var_type": "FIELD_INTEGER",
 					"tp_cooldown": "40"
 				}
-			}
-		}
-	},
-	{
-		"id": 49,
-		"name": "item_recipe_phase_boots",
-		"localized_name": "item_recipe_phase_boots",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "49",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_phase_boots",
-			"ItemRequirements": {
-				"01": "item_boots;item_chainmail;item_blades_of_attack"
 			}
 		}
 	},
@@ -2215,6 +2197,7 @@
 				"footer": "Armor"
 			}
 		],
+		"recipe": "item_boots|item_chainmail|item_blades_of_attack",
 		"json_data": {
 			"ID": "50",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -2661,28 +2644,6 @@
 		}
 	},
 	{
-		"id": 62,
-		"name": "item_recipe_power_treads",
-		"localized_name": "item_recipe_power_treads",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "62",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_power_treads",
-			"ItemRequirements": {
-				"01": "item_boots;item_gloves;item_belt_of_strength",
-				"04": "item_boots;item_gloves;item_robe",
-				"06": "item_boots;item_gloves;item_boots_of_elves"
-			}
-		}
-	},
-	{
 		"id": 63,
 		"name": "item_power_treads",
 		"localized_name": "Power Treads",
@@ -2717,6 +2678,7 @@
 				"value": "0"
 			}
 		],
+		"recipe": "item_boots|item_gloves|item_belt_of_strength",
 		"json_data": {
 			"ID": "63",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -2798,6 +2760,7 @@
 				"value": "160"
 			}
 		],
+		"recipe": "item_gloves|item_recipe_hand_of_midas",
 		"json_data": {
 			"ID": "65",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -2827,26 +2790,6 @@
 					"var_type": "FIELD_INTEGER",
 					"bonus_gold": "160"
 				}
-			}
-		}
-	},
-	{
-		"id": 66,
-		"name": "item_recipe_oblivion_staff",
-		"localized_name": "item_recipe_oblivion_staff",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "66",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_oblivion_staff",
-			"ItemRequirements": {
-				"01": "item_quarterstaff;item_sobi_mask;item_robe"
 			}
 		}
 	},
@@ -2886,6 +2829,7 @@
 				"footer": "Mana Regeneration"
 			}
 		],
+		"recipe": "item_quarterstaff|item_sobi_mask|item_robe",
 		"json_data": {
 			"ID": "67",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -2914,26 +2858,6 @@
 		}
 	},
 	{
-		"id": 68,
-		"name": "item_recipe_pers",
-		"localized_name": "item_recipe_pers",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "68",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_pers",
-			"ItemRequirements": {
-				"01": "item_ring_of_health;item_void_stone"
-			}
-		}
-	},
-	{
 		"id": 69,
 		"name": "item_pers",
 		"localized_name": "Perseverance",
@@ -2957,6 +2881,7 @@
 				"footer": "Mana Regeneration"
 			}
 		],
+		"recipe": "item_ring_of_health|item_void_stone",
 		"json_data": {
 			"ID": "69",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3108,6 +3033,7 @@
 				"footer": "HP Regeneration"
 			}
 		],
+		"recipe": "item_circlet|item_gauntlets|item_recipe_bracer",
 		"json_data": {
 			"ID": "73",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3202,6 +3128,7 @@
 				"footer": "Armor"
 			}
 		],
+		"recipe": "item_circlet|item_slippers|item_recipe_wraith_band",
 		"json_data": {
 			"ID": "75",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3295,6 +3222,7 @@
 				"footer": "Mana Regeneration"
 			}
 		],
+		"recipe": "item_circlet|item_mantle|item_recipe_null_talisman",
 		"json_data": {
 			"ID": "77",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3390,6 +3318,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_headdress|item_buckler|item_recipe_mekansm",
 		"json_data": {
 			"ID": "79",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -3482,6 +3411,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_ring_of_basilius|item_lifesteal|item_blades_of_attack|item_recipe_vladmir",
 		"json_data": {
 			"ID": "81",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3559,6 +3489,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_ring_of_protection|item_recipe_buckler",
 		"json_data": {
 			"ID": "86",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3631,6 +3562,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_sobi_mask|item_recipe_ring_of_basilius",
 		"json_data": {
 			"ID": "88",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3747,6 +3679,7 @@
 				"value": "400"
 			}
 		],
+		"recipe": "item_hood_of_defiance|item_headdress|item_recipe_pipe",
 		"json_data": {
 			"ID": "90",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -3890,6 +3823,7 @@
 				"value": "8"
 			}
 		],
+		"recipe": "item_sobi_mask|item_circlet|item_ring_of_protection|item_recipe_urn_of_shadows",
 		"json_data": {
 			"ID": "92",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -3998,6 +3932,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_ring_of_regen|item_recipe_headdress",
 		"json_data": {
 			"ID": "94",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -4019,26 +3954,6 @@
 					"var_type": "FIELD_INTEGER",
 					"aura_radius": "1200"
 				}
-			}
-		}
-	},
-	{
-		"id": 95,
-		"name": "item_recipe_sheepstick",
-		"localized_name": "item_recipe_sheepstick",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "95",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_sheepstick",
-			"ItemRequirements": {
-				"01": "item_mystic_staff;item_ultimate_orb;item_void_stone"
 			}
 		}
 	},
@@ -4090,6 +4005,7 @@
 				"value": "140"
 			}
 		],
+		"recipe": "item_mystic_staff|item_ultimate_orb|item_void_stone",
 		"json_data": {
 			"ID": "96",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -4203,6 +4119,7 @@
 				"value": "5"
 			}
 		],
+		"recipe": "item_oblivion_staff|item_oblivion_staff|item_recipe_orchid",
 		"json_data": {
 			"ID": "98",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -4311,6 +4228,7 @@
 				"value": "50"
 			}
 		],
+		"recipe": "item_staff_of_wizardry|item_void_stone|item_wind_lace|item_recipe_cyclone",
 		"json_data": {
 			"ID": "100",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -4408,6 +4326,7 @@
 				"value": "850"
 			}
 		],
+		"recipe": "item_staff_of_wizardry|item_ring_of_regen|item_recipe_force_staff",
 		"json_data": {
 			"ID": "102",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -4500,6 +4419,7 @@
 				"value": "120 140 160 180 200"
 			}
 		],
+		"recipe": "item_belt_of_strength|item_boots_of_elves|item_robe|item_recipe_dagon",
 		"json_data": {
 			"ID": "104",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -4641,6 +4561,7 @@
 				"value": "5 7 9"
 			}
 		],
+		"recipe": "item_sobi_mask|item_sobi_mask|item_belt_of_strength|item_recipe_necronomicon",
 		"json_data": {
 			"ID": "106",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -4724,25 +4645,6 @@
 		}
 	},
 	{
-		"id": 107,
-		"name": "item_recipe_ultimate_scepter",
-		"localized_name": "item_recipe_ultimate_scepter",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "107",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_ultimate_scepter",
-			"ItemRequirements": {
-				"01": "item_point_booster;item_staff_of_wizardry;item_ogre_axe;item_blade_of_alacrity"
-			}
-		}
-	},
-	{
 		"id": 108,
 		"name": "item_ultimate_scepter",
 		"localized_name": "Aghanim's Scepter",
@@ -4774,6 +4676,7 @@
 				"footer": "Mana"
 			}
 		],
+		"recipe": "item_point_booster|item_staff_of_wizardry|item_ogre_axe|item_blade_of_alacrity",
 		"json_data": {
 			"ID": "108",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -4851,6 +4754,7 @@
 				"footer": "Mana Regeneration"
 			}
 		],
+		"recipe": "item_pers|item_pers|item_recipe_refresher",
 		"json_data": {
 			"ID": "110",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -4937,6 +4841,7 @@
 				"value": "-5"
 			}
 		],
+		"recipe": "item_platemail|item_hyperstone|item_buckler|item_recipe_assault",
 		"json_data": {
 			"ID": "112",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -5038,6 +4943,7 @@
 				"value": "7"
 			}
 		],
+		"recipe": "item_ring_of_tarrasque|item_vitality_booster|item_reaver|item_recipe_heart",
 		"json_data": {
 			"ID": "114",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -5134,6 +5040,7 @@
 				"value": "30"
 			}
 		],
+		"recipe": "item_ogre_axe|item_mithril_hammer|item_recipe_black_king_bar",
 		"json_data": {
 			"ID": "116",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -5306,6 +5213,7 @@
 				"value": "25"
 			}
 		],
+		"recipe": "item_platemail|item_mystic_staff|item_recipe_shivas_guard",
 		"json_data": {
 			"ID": "119",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -5361,26 +5269,6 @@
 					"var_type": "FIELD_INTEGER",
 					"hp_regen_degen_aura": "25"
 				}
-			}
-		}
-	},
-	{
-		"id": 120,
-		"name": "item_recipe_bloodstone",
-		"localized_name": "Bloodstone Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "120",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_bloodstone",
-			"ItemRequirements": {
-				"01": "item_kaya;item_soul_booster"
 			}
 		}
 	},
@@ -5469,6 +5357,7 @@
 				"value": "2"
 			}
 		],
+		"recipe": "item_kaya|item_soul_booster",
 		"json_data": {
 			"ID": "121",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -5605,6 +5494,7 @@
 				"value": "12"
 			}
 		],
+		"recipe": "item_ultimate_orb|item_pers|item_recipe_sphere",
 		"json_data": {
 			"ID": "123",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -5637,26 +5527,6 @@
 					"var_type": "FIELD_FLOAT",
 					"block_cooldown": "12.0"
 				}
-			}
-		}
-	},
-	{
-		"id": 124,
-		"name": "item_recipe_vanguard",
-		"localized_name": "item_recipe_vanguard",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "124",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_vanguard",
-			"ItemRequirements": {
-				"01": "item_ring_of_health;item_vitality_booster"
 			}
 		}
 	},
@@ -5697,6 +5567,7 @@
 				"value": "50"
 			}
 		],
+		"recipe": "item_ring_of_health|item_vitality_booster",
 		"json_data": {
 			"ID": "125",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -5798,6 +5669,7 @@
 				"value": "80"
 			}
 		],
+		"recipe": "item_broadsword|item_chainmail|item_recipe_blade_mail",
 		"json_data": {
 			"ID": "127",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -5842,25 +5714,6 @@
 		}
 	},
 	{
-		"id": 128,
-		"name": "item_recipe_soul_booster",
-		"localized_name": "item_recipe_soul_booster",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "128",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_soul_booster",
-			"ItemRequirements": {
-				"01": "item_vitality_booster;item_energy_booster;item_point_booster"
-			}
-		}
-	},
-	{
 		"id": 129,
 		"name": "item_soul_booster",
 		"localized_name": "Soul Booster",
@@ -5890,6 +5743,7 @@
 				"footer": "Magic Resistance"
 			}
 		],
+		"recipe": "item_vitality_booster|item_energy_booster|item_point_booster",
 		"json_data": {
 			"ID": "129",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -5971,6 +5825,7 @@
 				"value": "12"
 			}
 		],
+		"recipe": "item_ring_of_health|item_cloak|item_ring_of_regen|item_recipe_hood_of_defiance",
 		"json_data": {
 			"ID": "131",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -6007,25 +5862,6 @@
 		}
 	},
 	{
-		"id": 132,
-		"name": "item_recipe_rapier",
-		"localized_name": "item_recipe_rapier",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "132",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_rapier",
-			"ItemRequirements": {
-				"01": "item_relic;item_demon_edge"
-			}
-		}
-	},
-	{
 		"id": 133,
 		"name": "item_rapier",
 		"localized_name": "Divine Rapier",
@@ -6044,6 +5880,7 @@
 				"footer": "Damage"
 			}
 		],
+		"recipe": "item_relic|item_demon_edge",
 		"json_data": {
 			"ID": "133",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -6121,6 +5958,7 @@
 				"value": "100"
 			}
 		],
+		"recipe": "item_demon_edge|item_javelin|item_blitz_knuckles|item_recipe_monkey_king_bar",
 		"json_data": {
 			"ID": "135",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -6206,6 +6044,7 @@
 				"value": "700"
 			}
 		],
+		"recipe": "item_relic|item_recipe_radiance",
 		"json_data": {
 			"ID": "137",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
@@ -6237,25 +6076,6 @@
 					"var_type": "FIELD_INTEGER",
 					"aura_radius": "700"
 				}
-			}
-		}
-	},
-	{
-		"id": 138,
-		"name": "item_recipe_butterfly",
-		"localized_name": "item_recipe_butterfly",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "138",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_butterfly",
-			"ItemRequirements": {
-				"01": "item_eagle;item_talisman_of_evasion;item_quarterstaff"
 			}
 		}
 	},
@@ -6295,6 +6115,7 @@
 				"footer": "Damage"
 			}
 		],
+		"recipe": "item_eagle|item_talisman_of_evasion|item_quarterstaff",
 		"json_data": {
 			"ID": "139",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -6371,6 +6192,7 @@
 				"value": "225"
 			}
 		],
+		"recipe": "item_lesser_crit|item_demon_edge|item_recipe_greater_crit",
 		"json_data": {
 			"ID": "141",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -6462,6 +6284,7 @@
 				"value": "100"
 			}
 		],
+		"recipe": "item_mithril_hammer|item_belt_of_strength|item_recipe_basher",
 		"json_data": {
 			"ID": "143",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -6503,25 +6326,6 @@
 					"var_type": "FIELD_INTEGER",
 					"bonus_chance_damage": "100"
 				}
-			}
-		}
-	},
-	{
-		"id": 144,
-		"name": "item_recipe_bfury",
-		"localized_name": "Battle Fury Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "144",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_bfury",
-			"ItemRequirements": {
-				"01": "item_broadsword;item_claymore;item_pers;item_quelling_blade"
 			}
 		}
 	},
@@ -6586,6 +6390,7 @@
 				"value": "650"
 			}
 		],
+		"recipe": "item_broadsword|item_claymore|item_pers|item_quelling_blade",
 		"json_data": {
 			"ID": "145",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -6770,6 +6575,7 @@
 				"value": "15"
 			}
 		],
+		"recipe": "item_yasha|item_ultimate_orb|item_recipe_manta",
 		"json_data": {
 			"ID": "147",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -6917,6 +6723,7 @@
 				"value": "60"
 			}
 		],
+		"recipe": "item_broadsword|item_blades_of_attack|item_recipe_lesser_crit",
 		"json_data": {
 			"ID": "149",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -7031,6 +6838,7 @@
 				"value": "0.036f"
 			}
 		],
+		"recipe": "item_helm_of_iron_will|item_gloves|item_blades_of_attack|item_recipe_armlet",
 		"json_data": {
 			"ID": "151",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -7132,6 +6940,7 @@
 				"value": "175"
 			}
 		],
+		"recipe": "item_shadow_amulet|item_blitz_knuckles|item_broadsword",
 		"json_data": {
 			"ID": "152",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -7170,25 +6979,6 @@
 					"var_type": "FIELD_INTEGER",
 					"windwalk_bonus_damage": "175"
 				}
-			}
-		}
-	},
-	{
-		"id": 153,
-		"name": "item_recipe_sange_and_yasha",
-		"localized_name": "item_recipe_sange_and_yasha",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "153",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_sange_and_yasha",
-			"ItemRequirements": {
-				"01": "item_yasha;item_sange"
 			}
 		}
 	},
@@ -7238,6 +7028,7 @@
 				"header": "+Self HP Regen and Lifesteal Amp"
 			}
 		],
+		"recipe": "item_yasha|item_sange",
 		"json_data": {
 			"ID": "154",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -7343,6 +7134,7 @@
 				"header": "+Status Resistance"
 			}
 		],
+		"recipe": "item_lifesteal|item_claymore|item_reaver|item_recipe_satanic",
 		"json_data": {
 			"ID": "156",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -7491,6 +7283,7 @@
 				"value": "0.2"
 			}
 		],
+		"recipe": "item_maelstrom|item_hyperstone|item_recipe_mjollnir",
 		"json_data": {
 			"ID": "158",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -7576,25 +7369,6 @@
 		}
 	},
 	{
-		"id": 159,
-		"name": "item_recipe_skadi",
-		"localized_name": "item_recipe_skadi",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "159",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_skadi",
-			"ItemRequirements": {
-				"01": "item_ultimate_orb;item_ultimate_orb;item_point_booster"
-			}
-		}
-	},
-	{
 		"id": 160,
 		"name": "item_skadi",
 		"localized_name": "Eye of Skadi",
@@ -7641,6 +7415,7 @@
 				"value": "40"
 			}
 		],
+		"recipe": "item_ultimate_orb|item_ultimate_orb|item_point_booster",
 		"json_data": {
 			"ID": "160",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -7730,6 +7505,7 @@
 				"header": "+Self HP Regen and Lifesteal Amp"
 			}
 		],
+		"recipe": "item_ogre_axe|item_belt_of_strength|item_recipe_sange",
 		"json_data": {
 			"ID": "162",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -7831,6 +7607,7 @@
 				"value": "4"
 			}
 		],
+		"recipe": "item_helm_of_iron_will|item_crown|item_recipe_helm_of_the_dominator",
 		"json_data": {
 			"ID": "164",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -7887,26 +7664,6 @@
 		}
 	},
 	{
-		"id": 165,
-		"name": "item_recipe_maelstrom",
-		"localized_name": "Maelstrom Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "165",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_maelstrom",
-			"ItemRequirements": {
-				"01": "item_mithril_hammer;item_javelin"
-			}
-		}
-	},
-	{
 		"id": 166,
 		"name": "item_maelstrom",
 		"localized_name": "Maelstrom",
@@ -7949,6 +7706,7 @@
 				"value": "0.2"
 			}
 		],
+		"recipe": "item_mithril_hammer|item_javelin",
 		"json_data": {
 			"ID": "166",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -7991,26 +7749,6 @@
 		}
 	},
 	{
-		"id": 167,
-		"name": "item_recipe_desolator",
-		"localized_name": "item_recipe_desolator",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "167",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_desolator",
-			"ItemRequirements": {
-				"01": "item_mithril_hammer;item_mithril_hammer;item_blight_stone"
-			}
-		}
-	},
-	{
 		"id": 168,
 		"name": "item_desolator",
 		"localized_name": "Desolator",
@@ -8037,6 +7775,7 @@
 				"value": "7"
 			}
 		],
+		"recipe": "item_mithril_hammer|item_mithril_hammer|item_blight_stone",
 		"json_data": {
 			"ID": "168",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -8112,6 +7851,7 @@
 				"footer": "Movement Speed"
 			}
 		],
+		"recipe": "item_blade_of_alacrity|item_boots_of_elves|item_recipe_yasha",
 		"json_data": {
 			"ID": "170",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -8133,26 +7873,6 @@
 					"var_type": "FIELD_INTEGER",
 					"movement_speed_percent_bonus": "8"
 				}
-			}
-		}
-	},
-	{
-		"id": 171,
-		"name": "item_recipe_mask_of_madness",
-		"localized_name": "Mask of Madness Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "171",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_mask_of_madness",
-			"ItemRequirements": {
-				"01": "item_lifesteal;item_quarterstaff"
 			}
 		}
 	},
@@ -8203,6 +7923,7 @@
 				"value": "6"
 			}
 		],
+		"recipe": "item_lifesteal|item_quarterstaff",
 		"json_data": {
 			"ID": "172",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -8325,6 +8046,7 @@
 				"value": "0.8"
 			}
 		],
+		"recipe": "item_blade_of_alacrity|item_blade_of_alacrity|item_robe|item_recipe_diffusal_blade",
 		"json_data": {
 			"ID": "174",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -8383,25 +8105,6 @@
 					"var_type": "FIELD_FLOAT",
 					"damage_per_burn": "0.8"
 				}
-			}
-		}
-	},
-	{
-		"id": 175,
-		"name": "item_recipe_ethereal_blade",
-		"localized_name": "item_recipe_ethereal_blade",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "175",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_ethereal_blade",
-			"ItemRequirements": {
-				"01": "item_eagle;item_ghost"
 			}
 		}
 	},
@@ -8467,6 +8170,7 @@
 				"value": "1275"
 			}
 		],
+		"recipe": "item_eagle|item_ghost",
 		"json_data": {
 			"ID": "176",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -8590,6 +8294,7 @@
 				"value": "10"
 			}
 		],
+		"recipe": "item_ring_of_protection|item_gauntlets|item_gauntlets|item_recipe_soul_ring",
 		"json_data": {
 			"ID": "178",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
@@ -8629,25 +8334,6 @@
 		}
 	},
 	{
-		"id": 179,
-		"name": "item_recipe_arcane_boots",
-		"localized_name": "item_recipe_arcane_boots",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "179",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_arcane_boots",
-			"ItemRequirements": {
-				"01": "item_boots;item_energy_booster"
-			}
-		}
-	},
-	{
 		"id": 180,
 		"name": "item_arcane_boots",
 		"localized_name": "Arcane Boots",
@@ -8683,6 +8369,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_boots|item_energy_booster",
 		"json_data": {
 			"ID": "180",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -8784,25 +8471,6 @@
 		}
 	},
 	{
-		"id": 183,
-		"name": "item_recipe_invis_sword",
-		"localized_name": "item_recipe_invis_sword",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "183",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_invis_sword",
-			"ItemRequirements": {
-				"01": "item_shadow_amulet;item_blitz_knuckles;item_broadsword"
-			}
-		}
-	},
-	{
 		"id": 184,
 		"name": "item_recipe_ancient_janggo",
 		"localized_name": "Drum of Endurance Recipe",
@@ -8872,6 +8540,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_crown|item_sobi_mask|item_wind_lace|item_recipe_ancient_janggo",
 		"json_data": {
 			"ID": "185",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -8922,26 +8591,6 @@
 		}
 	},
 	{
-		"id": 186,
-		"name": "item_recipe_medallion_of_courage",
-		"localized_name": "item_recipe_medallion_of_courage",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "186",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_medallion_of_courage",
-			"ItemRequirements": {
-				"01": "item_chainmail;item_sobi_mask;item_blight_stone"
-			}
-		}
-	},
-	{
 		"id": 187,
 		"name": "item_medallion_of_courage",
 		"localized_name": "Medallion of Courage",
@@ -8976,6 +8625,7 @@
 				"value": "7"
 			}
 		],
+		"recipe": "item_chainmail|item_sobi_mask|item_blight_stone",
 		"json_data": {
 			"ID": "187",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9149,6 +8799,7 @@
 				"value": "16"
 			}
 		],
+		"recipe": "item_ring_of_basilius|item_crown|item_recipe_veil_of_discord",
 		"json_data": {
 			"ID": "190",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT",
@@ -9188,48 +8839,6 @@
 					"var_type": "FIELD_FLOAT",
 					"resist_debuff_duration": "16.0"
 				}
-			}
-		}
-	},
-	{
-		"id": 191,
-		"name": "item_recipe_necronomicon_2",
-		"localized_name": "item_recipe_necronomicon_2",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"base_level": 2,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "191",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemBaseLevel": "2",
-			"ItemRecipe": "1",
-			"ItemResult": "item_necronomicon_2",
-			"ItemRequirements": {
-				"01": "item_necronomicon;item_recipe_necronomicon"
-			}
-		}
-	},
-	{
-		"id": 192,
-		"name": "item_recipe_necronomicon_3",
-		"localized_name": "item_recipe_necronomicon_3",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"base_level": 3,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "192",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemBaseLevel": "3",
-			"ItemRecipe": "1",
-			"ItemResult": "item_necronomicon_3",
-			"ItemRequirements": {
-				"01": "item_necronomicon_2;item_recipe_necronomicon"
 			}
 		}
 	},
@@ -9313,6 +8922,7 @@
 				"value": "5 7 9"
 			}
 		],
+		"recipe": "item_necronomicon|item_recipe_necronomicon",
 		"json_data": {
 			"ID": "193",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -9475,6 +9085,7 @@
 				"value": "5 7 9"
 			}
 		],
+		"recipe": "item_necronomicon_2|item_recipe_necronomicon",
 		"json_data": {
 			"ID": "194",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -9556,86 +9167,6 @@
 		}
 	},
 	{
-		"id": 197,
-		"name": "item_recipe_dagon_2",
-		"localized_name": "item_recipe_dagon_2",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "197",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_dagon_2",
-			"ItemRequirements": {
-				"02": "item_dagon;item_recipe_dagon"
-			}
-		}
-	},
-	{
-		"id": 198,
-		"name": "item_recipe_dagon_3",
-		"localized_name": "item_recipe_dagon_3",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "198",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_dagon_3",
-			"ItemRequirements": {
-				"02": "item_dagon_2;item_recipe_dagon"
-			}
-		}
-	},
-	{
-		"id": 199,
-		"name": "item_recipe_dagon_4",
-		"localized_name": "item_recipe_dagon_4",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "199",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_dagon_4",
-			"ItemRequirements": {
-				"02": "item_dagon_3;item_recipe_dagon"
-			}
-		}
-	},
-	{
-		"id": 200,
-		"name": "item_recipe_dagon_5",
-		"localized_name": "item_recipe_dagon_5",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "200",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_dagon_5",
-			"ItemRequirements": {
-				"02": "item_dagon_4;item_recipe_dagon"
-			}
-		}
-	},
-	{
 		"id": 201,
 		"name": "item_dagon_2",
 		"localized_name": "Dagon",
@@ -9670,6 +9201,7 @@
 				"value": "120 140 160 180 200"
 			}
 		],
+		"recipe": "item_dagon|item_recipe_dagon",
 		"json_data": {
 			"ID": "201",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9746,6 +9278,7 @@
 				"value": "120 140 160 180 200"
 			}
 		],
+		"recipe": "item_dagon_2|item_recipe_dagon",
 		"json_data": {
 			"ID": "202",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9822,6 +9355,7 @@
 				"value": "120 140 160 180 200"
 			}
 		],
+		"recipe": "item_dagon_3|item_recipe_dagon",
 		"json_data": {
 			"ID": "203",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9898,6 +9432,7 @@
 				"value": "120 140 160 180 200"
 			}
 		],
+		"recipe": "item_dagon_4|item_recipe_dagon",
 		"json_data": {
 			"ID": "204",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9994,6 +9529,7 @@
 				"value": "2"
 			}
 		],
+		"recipe": "item_staff_of_wizardry|item_crown|item_crown|item_recipe_rod_of_atos",
 		"json_data": {
 			"ID": "206",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -10126,6 +9662,7 @@
 				"value": "2"
 			}
 		],
+		"recipe": "item_basher|item_vanguard|item_recipe_abyssal_blade",
 		"json_data": {
 			"ID": "208",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -10201,25 +9738,6 @@
 		}
 	},
 	{
-		"id": 209,
-		"name": "item_recipe_heavens_halberd",
-		"localized_name": "item_recipe_heavens_halberd",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "209",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_heavens_halberd",
-			"ItemRequirements": {
-				"01": "item_sange;item_talisman_of_evasion"
-			}
-		}
-	},
-	{
 		"id": 210,
 		"name": "item_heavens_halberd",
 		"localized_name": "Heaven's Halberd",
@@ -10265,6 +9783,7 @@
 				"header": "+Self HP Regen and Lifesteal Amp"
 			}
 		],
+		"recipe": "item_sange|item_talisman_of_evasion",
 		"json_data": {
 			"ID": "210",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -10420,25 +9939,6 @@
 		}
 	},
 	{
-		"id": 213,
-		"name": "item_recipe_tranquil_boots",
-		"localized_name": "Tranquil Boots Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "213",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_tranquil_boots",
-			"ItemRequirements": {
-				"01": "item_boots;item_wind_lace;item_ring_of_regen"
-			}
-		}
-	},
-	{
 		"id": 214,
 		"name": "item_tranquil_boots",
 		"localized_name": "Tranquil Boots",
@@ -10497,6 +9997,7 @@
 				"value": "45"
 			}
 		],
+		"recipe": "item_boots|item_wind_lace|item_ring_of_regen",
 		"json_data": {
 			"ID": "214",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -10649,30 +10150,6 @@
 		}
 	},
 	{
-		"id": 217,
-		"name": "item_recipe_ward_dispenser",
-		"localized_name": "item_recipe_ward_dispenser",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "217",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemPurchasable": "0",
-			"ItemResult": "item_ward_dispenser",
-			"ItemRequirements": {
-				"01": "item_ward_sentry;item_ward_observer",
-				"02": "item_ward_sentry;item_ward_dispenser",
-				"03": "item_ward_dispenser;item_ward_observer",
-				"04": "item_ward_dispenser;item_ward_dispenser"
-			}
-		}
-	},
-	{
 		"id": 218,
 		"name": "item_ward_dispenser",
 		"localized_name": "Observer and Sentry Wards",
@@ -10731,6 +10208,7 @@
 				"header": "SENTRY DURATION (MINUTES):"
 			}
 		],
+		"recipe": "item_ward_sentry|item_ward_observer",
 		"json_data": {
 			"ID": "218",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE",
@@ -10791,26 +10269,6 @@
 		}
 	},
 	{
-		"id": 219,
-		"name": "item_recipe_travel_boots_2",
-		"localized_name": "item_recipe_travel_boots_2",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "219",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_travel_boots_2",
-			"ItemRequirements": {
-				"01": "item_travel_boots;item_recipe_travel_boots"
-			}
-		}
-	},
-	{
 		"id": 220,
 		"name": "item_travel_boots_2",
 		"localized_name": "Boots of Travel 2",
@@ -10843,6 +10301,7 @@
 				"header": "TOWN PORTAL SCROLL COOLDOWN:"
 			}
 		],
+		"recipe": "item_travel_boots|item_recipe_travel_boots",
 		"json_data": {
 			"ID": "220",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -10874,26 +10333,6 @@
 					"var_type": "FIELD_INTEGER",
 					"tp_cooldown": "30"
 				}
-			}
-		}
-	},
-	{
-		"id": 221,
-		"name": "item_recipe_lotus_orb",
-		"localized_name": "item_recipe_lotus_orb",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "221",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_lotus_orb",
-			"ItemRequirements": {
-				"01": "item_pers;item_platemail;item_energy_booster"
 			}
 		}
 	},
@@ -10990,6 +10429,7 @@
 				"value": "150"
 			}
 		],
+		"recipe": "item_pers|item_crown|item_recipe_meteor_hammer",
 		"json_data": {
 			"ID": "223",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
@@ -11062,26 +10502,6 @@
 		}
 	},
 	{
-		"id": 224,
-		"name": "item_recipe_nullifier",
-		"localized_name": "Nullifier Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "224",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_nullifier",
-			"ItemRequirements": {
-				"01": "item_relic;item_helm_of_iron_will"
-			}
-		}
-	},
-	{
 		"id": 225,
 		"name": "item_nullifier",
 		"localized_name": "Nullifier",
@@ -11130,6 +10550,7 @@
 				"value": "0.5"
 			}
 		],
+		"recipe": "item_relic|item_helm_of_iron_will",
 		"json_data": {
 			"ID": "225",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -11221,6 +10642,7 @@
 				"value": "6"
 			}
 		],
+		"recipe": "item_pers|item_platemail|item_energy_booster",
 		"json_data": {
 			"ID": "226",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -11351,6 +10773,7 @@
 				"value": "7"
 			}
 		],
+		"recipe": "item_medallion_of_courage|item_ultimate_orb|item_wind_lace|item_recipe_solar_crest",
 		"json_data": {
 			"ID": "229",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -11490,6 +10913,7 @@
 				"value": "1200"
 			}
 		],
+		"recipe": "item_mekansm|item_arcane_boots|item_recipe_guardian_greaves",
 		"json_data": {
 			"ID": "231",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -11585,6 +11009,7 @@
 				"value": "250"
 			}
 		],
+		"recipe": "item_energy_booster|item_void_stone|item_recipe_aether_lens",
 		"json_data": {
 			"ID": "232",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -11627,26 +11052,6 @@
 			"ItemResult": "item_aether_lens",
 			"ItemRequirements": {
 				"01": "item_energy_booster;item_void_stone"
-			}
-		}
-	},
-	{
-		"id": 234,
-		"name": "item_recipe_dragon_lance",
-		"localized_name": "item_recipe_dragon_lance",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "234",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_dragon_lance",
-			"ItemRequirements": {
-				"01": "item_ogre_axe;item_boots_of_elves;item_boots_of_elves"
 			}
 		}
 	},
@@ -11701,6 +11106,7 @@
 				"value": "7"
 			}
 		],
+		"recipe": "item_voodoo_mask|item_soul_booster|item_recipe_octarine_core",
 		"json_data": {
 			"ID": "235",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -11776,6 +11182,7 @@
 				"value": "140"
 			}
 		],
+		"recipe": "item_ogre_axe|item_boots_of_elves|item_boots_of_elves",
 		"json_data": {
 			"ID": "236",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -12111,6 +11518,7 @@
 				"value": "40"
 			}
 		],
+		"recipe": "item_vanguard|item_helm_of_iron_will|item_recipe_crimson_guard",
 		"json_data": {
 			"ID": "242",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -12255,26 +11663,6 @@
 		}
 	},
 	{
-		"id": 246,
-		"name": "item_recipe_moon_shard",
-		"localized_name": "item_recipe_moon_shard",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "246",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_moon_shard",
-			"ItemRequirements": {
-				"01": "item_hyperstone;item_hyperstone"
-			}
-		}
-	},
-	{
 		"id": 247,
 		"name": "item_moon_shard",
 		"localized_name": "Moon Shard",
@@ -12305,6 +11693,7 @@
 				"value": "200"
 			}
 		],
+		"recipe": "item_hyperstone|item_hyperstone",
 		"json_data": {
 			"ID": "247",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
@@ -12435,6 +11824,7 @@
 				"value": "5"
 			}
 		],
+		"recipe": "item_invis_sword|item_echo_sabre|item_recipe_silver_edge",
 		"json_data": {
 			"ID": "249",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -12564,6 +11954,7 @@
 				"value": "100"
 			}
 		],
+		"recipe": "item_orchid|item_hyperstone|item_recipe_bloodthorn",
 		"json_data": {
 			"ID": "250",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -12615,26 +12006,6 @@
 					"var_type": "FIELD_FLOAT",
 					"tooltip_crit_chance": "100"
 				}
-			}
-		}
-	},
-	{
-		"id": 251,
-		"name": "item_recipe_echo_sabre",
-		"localized_name": "item_recipe_echo_sabre",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "251",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_echo_sabre",
-			"ItemRequirements": {
-				"01": "item_ogre_axe;item_oblivion_staff"
 			}
 		}
 	},
@@ -12695,6 +12066,7 @@
 				"value": "0.8"
 			}
 		],
+		"recipe": "item_ogre_axe|item_oblivion_staff",
 		"json_data": {
 			"ID": "252",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -12747,25 +12119,6 @@
 		}
 	},
 	{
-		"id": 253,
-		"name": "item_recipe_glimmer_cape",
-		"localized_name": "item_recipe_glimmer_cape",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "253",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_glimmer_cape",
-			"ItemRequirements": {
-				"01": "item_shadow_amulet;item_cloak;item_gloves"
-			}
-		}
-	},
-	{
 		"id": 254,
 		"name": "item_glimmer_cape",
 		"localized_name": "Glimmer Cape",
@@ -12809,6 +12162,7 @@
 				"value": "180"
 			}
 		],
+		"recipe": "item_shadow_amulet|item_cloak|item_gloves",
 		"json_data": {
 			"ID": "254",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
@@ -12909,6 +12263,7 @@
 				"value": "2.5"
 			}
 		],
+		"recipe": "item_vitality_booster|item_energy_booster|item_recipe_aeon_disk",
 		"json_data": {
 			"ID": "256",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -13050,6 +12405,7 @@
 				"header": "+Spell Lifesteal Amplification"
 			}
 		],
+		"recipe": "item_staff_of_wizardry|item_robe|item_recipe_kaya",
 		"json_data": {
 			"ID": "259",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -13231,6 +12587,7 @@
 				"value": "100"
 			}
 		],
+		"recipe": "item_force_staff|item_dragon_lance|item_recipe_hurricane_pike",
 		"json_data": {
 			"ID": "263",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -13474,6 +12831,7 @@
 				"value": "4"
 			}
 		],
+		"recipe": "item_urn_of_shadows|item_vitality_booster|item_recipe_spirit_vessel",
 		"json_data": {
 			"ID": "267",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -13619,6 +12977,7 @@
 				"value": "15"
 			}
 		],
+		"recipe": "item_ring_of_tarrasque|item_energy_booster|item_magic_wand|item_recipe_holy_locket",
 		"json_data": {
 			"ID": "269",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -13702,6 +13061,7 @@
 		"lore": "The scepter of a wizard with demigod-like powers.",
 		"secret_shop": false,
 		"ability_special": [],
+		"recipe": "item_ultimate_scepter|item_recipe_ultimate_scepter_2",
 		"json_data": {
 			"ID": "271",
 			"Model": "models/props_gameplay/aghanim_scepter.vmdl",
@@ -13710,25 +13070,6 @@
 			"ItemShopTags": "int;str;agi;mana_pool;health_pool;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "ags;ultimate;aghanim's scepter;ags"
-		}
-	},
-	{
-		"id": 272,
-		"name": "item_recipe_kaya_and_sange",
-		"localized_name": "Kaya and Sange Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "272",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_kaya_and_sange",
-			"ItemRequirements": {
-				"01": "item_sange;item_kaya"
-			}
 		}
 	},
 	{
@@ -13779,6 +13120,7 @@
 				"header": "+Spell Lifesteal Amplification"
 			}
 		],
+		"recipe": "item_sange|item_kaya",
 		"json_data": {
 			"ID": "273",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -13818,25 +13160,6 @@
 					"var_type": "FIELD_INTEGER",
 					"spell_lifesteal_amp": "30"
 				}
-			}
-		}
-	},
-	{
-		"id": 274,
-		"name": "item_recipe_yasha_and_kaya",
-		"localized_name": "Yasha and Kaya Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 0,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "274",
-			"ItemCost": "0",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_yasha_and_kaya",
-			"ItemRequirements": {
-				"01": "item_kaya;item_yasha"
 			}
 		}
 	},
@@ -13916,6 +13239,7 @@
 				"header": "+Spell Lifesteal Amplification"
 			}
 		],
+		"recipe": "item_kaya|item_yasha",
 		"json_data": {
 			"ID": "277",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -16582,52 +15906,70 @@
 	},
 	{
 		"id": 369,
-		"name": "item_trident1",
-		"localized_name": "item_trident1",
+		"name": "item_trident",
+		"localized_name": "Trident",
+		"icon": "/panorama/images/items/trident_png.png",
 		"cost": 0,
+		"description": "Combines Sange, Yasha and Kaya together.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "30"
+				"value": "30",
+				"header": "+",
+				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "30"
+				"value": "30",
+				"header": "+",
+				"footer": "Agility"
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "30"
+				"value": "30",
+				"header": "+",
+				"footer": "Intelligence"
 			},
 			{
 				"key": "status_resistance",
-				"value": "30"
+				"value": "30%",
+				"header": "+Status Resistance"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "30"
+				"value": "30",
+				"header": "+",
+				"footer": "Attack Speed"
 			},
 			{
 				"key": "movement_speed_percent_bonus",
-				"value": "10"
+				"value": "10%",
+				"header": "+",
+				"footer": "Movement Speed"
 			},
 			{
 				"key": "hp_regen_amp",
-				"value": "30"
+				"value": "30%",
+				"header": "+Self HP Regen and Lifesteal Amp"
 			},
 			{
 				"key": "mana_regen_multiplier",
-				"value": "30"
+				"value": "30%",
+				"header": "+Mana Regen Amplification"
 			},
 			{
 				"key": "spell_amp",
-				"value": "30"
+				"value": "30%",
+				"header": "+Spell Amplification"
 			},
 			{
 				"key": "spell_lifesteal_amp",
-				"value": "30"
+				"value": "30%",
+				"header": "+Spell Lifesteal Amplification"
 			}
 		],
+		"recipe": "item_kaya|item_sange|item_yasha|item_recipe_trident",
 		"json_data": {
 			"ID": "369",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",

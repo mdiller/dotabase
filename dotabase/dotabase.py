@@ -126,6 +126,7 @@ class Item(Base):
 	secret_shop = Column(Boolean)
 	neutral_tier = Column(String)
 	ability_special = Column(String)
+	recipe = Column(String)
 
 	json_data = Column(String)
 
