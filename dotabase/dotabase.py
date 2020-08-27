@@ -87,6 +87,7 @@ class Ability(Base):
 	duration = Column(String)
 	damage = Column(String)
 	mana_cost = Column(String)
+	charges = Column(String)
 	ability_special = Column(String)
 
 	linked_abilities = Column(String)
@@ -99,6 +100,7 @@ class Ability(Base):
 	lore = Column(String)
 	note = Column(String)
 	aghanim = Column(String)
+	aghanim_grants = Column(Boolean)
 
 	json_data = Column(String)
 
