@@ -7572,7 +7572,7 @@
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1500**. Also provides the unit with +**25** base attack damage, +**12** health regen and +**4** mana regen\n\nDominated units with a max health of greater than **1500** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**",
+		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **425** and max health to a minimum of **1000**. Also provides the unit with +**25** base attack damage, +**12** health regen, +**4** mana regen and +**4** armor. \n\nDominated units with a max health of greater than **1000** retain their original max health.  Dominated unit's bounty is set to **200** gold.\n\nRange: **700**",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7596,7 +7596,7 @@
 			},
 			{
 				"key": "health_min",
-				"value": "1500"
+				"value": "1000"
 			},
 			{
 				"key": "speed_base",
@@ -7616,6 +7616,10 @@
 			},
 			{
 				"key": "creep_bonus_mp_regen",
+				"value": "4"
+			},
+			{
+				"key": "creep_bonus_armor",
 				"value": "4"
 			}
 		],
@@ -7650,7 +7654,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"health_min": "1500"
+					"health_min": "1000"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -7671,6 +7675,10 @@
 				"09": {
 					"var_type": "FIELD_INTEGER",
 					"creep_bonus_mp_regen": "4"
+				},
+				"10": {
+					"var_type": "FIELD_INTEGER",
+					"creep_bonus_armor": "4"
 				}
 			}
 		}
@@ -8252,13 +8260,13 @@
 		"name": "item_recipe_soul_ring",
 		"localized_name": "Soul Ring Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 350,
+		"cost": 275,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "177",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "350",
+			"ItemCost": "275",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_soul_ring",
@@ -8274,7 +8282,7 @@
 		"aliases": "soul ring",
 		"quality": "common",
 		"icon": "/panorama/images/items/soul_ring_png.png",
-		"cost": 815,
+		"cost": 740,
 		"cooldown": "25",
 		"mana_cost": "0",
 		"description": "# Active: Sacrifice\nConsume **170** health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
@@ -8312,7 +8320,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityCooldown": "25.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "815",
+			"ItemCost": "740",
 			"ItemShopTags": "regen_health;boost_mana",
 			"ItemQuality": "common",
 			"ItemAliases": "soul ring",
@@ -8525,7 +8533,7 @@
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "6",
+				"value": "4",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -8577,7 +8585,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "6"
+					"bonus_all_stats": "4"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -9750,13 +9758,32 @@
 		}
 	},
 	{
+		"id": 209,
+		"name": "item_recipe_heavens_halberd",
+		"localized_name": "item_recipe_heavens_halberd",
+		"icon": "/panorama/images/items/recipe.png",
+		"cost": 400,
+		"secret_shop": false,
+		"ability_special": [],
+		"json_data": {
+			"ID": "209",
+			"ItemCost": "400",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_heavens_halberd",
+			"ItemRequirements": {
+				"01": "item_sange;item_talisman_of_evasion"
+			}
+		}
+	},
+	{
 		"id": 210,
 		"name": "item_heavens_halberd",
 		"localized_name": "Heaven's Halberd",
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/heavens_halberd_png.png",
-		"cost": 3450,
+		"cost": 3850,
 		"cooldown": "18",
 		"cast_range": "600",
 		"mana_cost": "100",
@@ -9797,7 +9824,7 @@
 				"footer": "Self HP Regen and Lifesteal Amp"
 			}
 		],
-		"recipe": "item_sange|item_talisman_of_evasion",
+		"recipe": "item_sange|item_talisman_of_evasion|item_recipe_heavens_halberd",
 		"json_data": {
 			"ID": "210",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -9808,7 +9835,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "100",
-			"ItemCost": "3450",
+			"ItemCost": "3850",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
