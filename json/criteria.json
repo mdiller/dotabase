@@ -11598,6 +11598,14 @@
 		"required": true
 	},
 	{
+		"name": "IsTargetTower",
+		"pretty": "IsTargetTower",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_tower",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsFullStereoBroadcast",
 		"pretty": "IsFullStereoBroadcast",
 		"matchkey": "full_stereo_broadcast",
@@ -12057,6 +12065,14 @@
 		"pretty": "Shadow Blade",
 		"matchkey": "itemname",
 		"matchvalue": "item_invis_sword",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsJavelin",
+		"pretty": "Javelin",
+		"matchkey": "itemname",
+		"matchvalue": "item_javelin",
 		"weight": 1.0,
 		"required": true
 	},
@@ -19485,6 +19501,196 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "windrunner_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindArcLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "windarc_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindArc",
+		"matchkey": "customresponse",
+		"matchvalue": "wind_eth_arc",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotWindArc",
+		"matchkey": "customresponse",
+		"matchvalue": "!=wind_eth_arc",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono1",
+		"pretty": "IsWindMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono2",
+		"pretty": "IsWindMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono3",
+		"pretty": "IsWindMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono4",
+		"pretty": "IsWindMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono5",
+		"pretty": "IsWindMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono6",
+		"pretty": "IsWindMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono7",
+		"pretty": "IsWindMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono8",
+		"pretty": "IsWindMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono9",
+		"pretty": "IsWindMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono10",
+		"pretty": "IsWindMono10",
+		"matchkey": "line_count",
+		"matchvalue": "9",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMono11",
+		"pretty": "IsWindMono11",
+		"matchkey": "line_count",
+		"matchvalue": "10",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoDone",
+		"pretty": "IsWindMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup1",
+		"pretty": "IsWindMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup2",
+		"pretty": "IsWindMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup3",
+		"pretty": "IsWindMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup4",
+		"pretty": "IsWindMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup5",
+		"pretty": "IsWindMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup6",
+		"pretty": "IsWindMonoGroup6",
+		"matchkey": "line_group",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup7",
+		"pretty": "IsWindMonoGroup7",
+		"matchkey": "line_group",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup8",
+		"pretty": "IsWindMonoGroup8",
+		"matchkey": "line_group",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsWindMonoGroup9",
+		"pretty": "IsWindMonoGroup9",
+		"matchkey": "line_group",
+		"matchvalue": "8",
 		"weight": 5.0,
 		"required": true
 	},
