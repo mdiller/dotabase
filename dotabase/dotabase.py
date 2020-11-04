@@ -28,7 +28,6 @@ class Hero(Base):
 	image = Column(String)
 	icon = Column(String)
 	portrait = Column(String)
-	talents = Column(String)
 	color = Column(String)
 	legs = Column(Integer)
 
@@ -58,8 +57,9 @@ class Hero(Base):
 	is_melee = Column(Boolean)
 	material = Column(String)
 
+	abilities = relationship("Ability", order_by="Ability.slot", back_populates="hero")
+	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
-	abilities = relationship("Ability", back_populates="hero")
 	voice = relationship("Voice", uselist=False, back_populates="hero")
 
 	json_data = Column(String)
@@ -72,7 +72,7 @@ class Ability(Base):
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
-	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
 
 	behavior = Column(String)
 	damage_type = Column(String)
@@ -90,9 +90,7 @@ class Ability(Base):
 	charges = Column(String)
 	ability_special = Column(String)
 
-	linked_abilities = Column(String)
-	talent_slot = Column(Integer)
-	ability_slot = Column(Integer)
+	slot = Column(Integer)
 	icon = Column(String)
 
 	localized_name = Column(String)
@@ -105,9 +103,40 @@ class Ability(Base):
 	json_data = Column(String)
 
 	hero = relationship("Hero", back_populates="abilities")
+	talent_links = relationship("Talent", back_populates="ability")
+
+	@property
+	def is_talent(self):
+		return len(self.talent_links) > 0
 
 	def __repr__(self):
 		return "Ability: %s" % (self.localized_name)
+
+class Talent(Base):
+	__tablename__ = 'talents'
+
+	hero_id = Column(Integer, ForeignKey("heroes.id"), primary_key=True, nullable=True)
+	ability_id = Column(Integer, ForeignKey("abilities.id"), primary_key=True)
+	slot = Column(Integer)
+	linked_abilities = Column(String)
+
+	ability = relationship("Ability", back_populates="talent_links")
+
+	@property
+	def localized_name(self):
+		return self.ability.localized_name
+
+	@property
+	def level(self):
+		return ((self.slot // 2) * 5) + 10
+
+	@property
+	def is_right_side(self):
+		return (self.slot % 2) == 0
+
+	def __repr__(self):
+		return "Talent: %s" % (self.localized_name)
+
 
 class Item(Base):
 	__tablename__ = 'items'
