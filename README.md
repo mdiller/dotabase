@@ -2,8 +2,12 @@
 <h1 align="center">Dotabase</h1>
 
 <p align="center">
-[![PyPi](https://img.shields.io/pypi/v/dotabase.svg?style=for-the-badge&logo=pypi)](https://pypi.org/project/dotabase/)
-[![Dota Version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mdiller/dotabase/master/DOTA_VERSION)](http://www.dota2.com/)
+	<a href="https://pypi.org/project/dotabase/">
+		<img alt="PyPi" src="https://img.shields.io/pypi/v/dotabase.svg?style=for-the-badge&logo=pypi">
+	</a>
+	<a href="https://www.dota2.com/patches/">
+		<img alt="Dota Version" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mdiller/dotabase/master/DOTA_VERSION">
+	</a>
 </p>
 
 An sqlite database representing much of the data from dota2's game files, and an sqlalchemy representation to be used with it. This was built using my [dotabase-builder](https://github.com/mdiller/dotabase-builder) project. Note that I've removed the database from this repository as binary files are not git-friendly, and have replaced it with an sql file dump of the database.
