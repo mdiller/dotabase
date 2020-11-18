@@ -1,4 +1,3 @@
-# Dotabase
 <h1 align="center">Dotabase</h1>
 
 <p align="center">
