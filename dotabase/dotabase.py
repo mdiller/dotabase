@@ -97,13 +97,23 @@ class Ability(Base):
 	description = Column(String)
 	lore = Column(String)
 	note = Column(String)
-	aghanim = Column(String)
-	aghanim_grants = Column(Boolean)
+	scepter_description = Column(String)
+	scepter_grants = Column(Boolean)
+	shard_description = Column(String)
+	shard_grants = Column(Boolean)
 
 	json_data = Column(String)
 
 	hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
+
+	@property
+	def aghanim(self):
+		return self.scepter_description
+
+	@property
+	def aghanim_grants(self):
+		return self.scepter_grants
 
 	@property
 	def is_talent(self):
