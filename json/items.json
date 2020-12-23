@@ -9595,6 +9595,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"AbilitySharedCooldown": "atos",
 			"AbilityCooldown": "18",
 			"AbilityCastRange": "1100",
 			"AbilityCastPoint": "0.0",
@@ -13019,6 +13020,7 @@
 			"ShouldBeInitiallySuggested": "1",
 			"AbilityCooldown": "13.0",
 			"AbilitySharedCooldown": "magicwand",
+			"ActiveDescriptionLine1": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -17227,7 +17229,7 @@
 		"localized_name": "Cloak of Flames",
 		"icon": "/panorama/images/items/cloak_of_flames_png.png",
 		"cost": 0,
-		"description": "# Passive\nBurns enemy units for **45** damage per second.\n\nRadius: **400**",
+		"description": "# Passive\nBurns enemy units for **45** damage per second. Illusions deal **30** damage per second.\n\nRadius: **400**",
 		"lore": "A very fine cloak that plays host to an overly-protective living flame.",
 		"secret_shop": false,
 		"neutral_tier": "3",
@@ -17251,6 +17253,10 @@
 			{
 				"key": "radius",
 				"value": "400"
+			},
+			{
+				"key": "damage_illusions",
+				"value": "30"
 			}
 		],
 		"json_data": {
@@ -17276,6 +17282,10 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "400"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"damage_illusions": "30"
 				}
 			}
 		}
@@ -17796,7 +17806,6 @@
 		"json_data": {
 			"ID": "596",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"ItemCost": "1100",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
@@ -18334,7 +18343,8 @@
 			"ItemStockTime": "1",
 			"ItemStockInitial": "0",
 			"ItemStockMax": "1",
-			"ItemInitialStockTime": "1290.0"
+			"ItemInitialStockTime": "1290.0",
+			"ItemInitialStockTimeTurbo": "645.0"
 		}
 	},
 	{
@@ -18819,7 +18829,7 @@
 		"cost": 0,
 		"cooldown": "30",
 		"cast_range": "800",
-		"description": "# Active: Pyschic Push\nPushes the target enemy unit away from you **400** distance.",
+		"description": "# Active: Psychic Push\nPushes the target enemy unit away from you **400** distance.",
 		"lore": "A failed experiment in finer telekinetic control, still fit for other ends.",
 		"secret_shop": false,
 		"neutral_tier": "3",
@@ -19641,6 +19651,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"AbilitySharedCooldown": "atos",
 			"AbilityCooldown": "18",
 			"AbilityCastRange": "1100",
 			"AbilityCastPoint": "0.0",
