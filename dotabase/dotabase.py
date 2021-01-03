@@ -97,10 +97,12 @@ class Ability(Base):
 	description = Column(String)
 	lore = Column(String)
 	note = Column(String)
-	scepter_description = Column(String)
 	scepter_grants = Column(Boolean)
-	shard_description = Column(String)
+	scepter_upgrades = Column(Boolean)
+	scepter_description = Column(String)
 	shard_grants = Column(Boolean)
+	shard_upgrades = Column(Boolean)
+	shard_description = Column(String)
 
 	json_data = Column(String)
 
