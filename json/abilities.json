@@ -1230,11 +1230,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "6"
+				"value": "4"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-6 Tricks of the Trade Cooldown",
+		"localized_name": "-4 Tricks of the Trade Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -1246,7 +1246,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "6",
+					"value": "4",
 					"ad_linked_ability": "riki_tricks_of_the_trade"
 				}
 			}
@@ -9526,7 +9526,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+0.1s Mana Void Damage Multiplier",
+		"localized_name": "+0.1 Mana Void Damage Multiplier",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -12931,7 +12931,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Reduces Fissure cooldown by 2 seconds and allows Earthshaker to walk on it. When he casts any ability, an Aftershock is released along its path.",
+		"shard_description": "Reduces Fissure cooldown by 2 seconds and allows Earthshaker to walk on it. When he casts any ability, an Aftershock is released along its path that stuns for half the duration.",
 		"json_data": {
 			"ID": "5023",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -15267,7 +15267,7 @@
 		"dispellable": "no",
 		"cast_range": "700 850 1000",
 		"cast_point": "0.25",
-		"cooldown": "160 100 40",
+		"cooldown": "140 100 60",
 		"mana_cost": "50",
 		"ability_special": [
 			{
@@ -15285,8 +15285,13 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "scepter_cast_range_bonus",
-				"value": "600",
+				"value": "300",
 				"header": "SCEPTER BONUS CAST RANGE:"
+			},
+			{
+				"aghs_upgrade": "1",
+				"key": "scepter_cooldown_reduction",
+				"value": "20"
 			}
 		],
 		"slot": 6,
@@ -15313,7 +15318,7 @@
 			"AbilityCastRange": "700 850 1000",
 			"AbilityCastPoint": "0.25",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
-			"AbilityCooldown": "160 100 40",
+			"AbilityCooldown": "140 100 60",
 			"AbilityManaCost": "50",
 			"AbilitySpecial": {
 				"01": {
@@ -15327,7 +15332,12 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"scepter_cast_range_bonus": "600",
+					"scepter_cast_range_bonus": "300",
+					"RequiresScepter": "1"
+				},
+				"04": {
+					"var_type": "FIELD_INTEGER",
+					"scepter_cooldown_reduction": "20",
 					"RequiresScepter": "1"
 				}
 			}
@@ -16528,8 +16538,8 @@
 			{
 				"talent_name": "special_bonus_unique_puck_4",
 				"key": "damage",
-				"value": "70 140 210 280",
-				"talent_value": "110 180 250 320",
+				"value": "70 130 190 250",
+				"talent_value": "110 170 230 290",
 				"header": "DAMAGE:"
 			},
 			{
@@ -16574,7 +16584,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "70 140 210 280",
+					"damage": "70 130 190 250",
 					"LinkedSpecialBonus": "special_bonus_unique_puck_4"
 				},
 				"04": {
@@ -16690,7 +16700,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "coil_stun_duration_scepter",
-				"value": "2 3.25 4.5",
+				"value": "2 3 4",
 				"header": "SCEPTER BREAK STUN DURATION:"
 			}
 		],
@@ -16762,7 +16772,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"coil_stun_duration_scepter": "2 3.25 4.5",
+					"coil_stun_duration_scepter": "2 3 4",
 					"RequiresScepter": "1"
 				}
 			}
@@ -16967,7 +16977,7 @@
 		"note": "Using Rot doesn't interrupt channeling.\nRot hits invisible units.\nIf Pudge is silenced, he can't deactivate Rot if it's activated.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Increases Rot radius by **200** and damage by **80**.\n\nReduces heath regen on affected enemies by 25%.",
+		"scepter_description": "Increases Rot radius by **200** and damage by **80**.\n\nReduces health regen on affected enemies by 25%.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -17358,7 +17368,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Shackles creates 4 Serpent Wards attacking the target. Increases Shackles cast range by 150. Lasts 7 seconds.",
+		"shard_description": "Shackles creates 4 Serpent Wards attacking the target. Increases Shackles cast range by 125. Lasts 7 seconds.",
 		"json_data": {
 			"ID": "5080",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
@@ -17850,7 +17860,7 @@
 		"dispellable": "yes_strong",
 		"cast_range": "525",
 		"cast_point": "0.35",
-		"cooldown": "14 12 10 8",
+		"cooldown": "17 14 11 8",
 		"damage": "70 80 90 100",
 		"mana_cost": "95 110 125 140",
 		"ability_special": [
@@ -17905,7 +17915,7 @@
 			"AbilitySound": "Hero_SkeletonKing.Hellfire_Blast",
 			"AbilityCastRange": "525",
 			"AbilityCastPoint": "0.35 0.35 0.35 0.35",
-			"AbilityCooldown": "14 12 10 8",
+			"AbilityCooldown": "17 14 11 8",
 			"AbilityDamage": "70 80 90 100",
 			"AbilityManaCost": "95 110 125 140",
 			"AbilityModifierSupportValue": "0.5",
@@ -19368,11 +19378,6 @@
 				"header": "RADIUS:"
 			},
 			{
-				"key": "AbilityDuration",
-				"value": "20 25 30 35",
-				"header": "DURATION:"
-			},
-			{
 				"talent_name": "special_bonus_unique_sand_king_2",
 				"key": "sand_storm_damage",
 				"value": "20 45 70 95",
@@ -19417,15 +19422,11 @@
 					"sand_storm_radius": "425 500 575 650"
 				},
 				"03": {
-					"var_type": "FIELD_FLOAT",
-					"AbilityDuration": "20 25 30 35"
-				},
-				"04": {
 					"var_type": "FIELD_INTEGER",
 					"sand_storm_damage": "20 45 70 95",
 					"LinkedSpecialBonus": "special_bonus_unique_sand_king_2"
 				},
-				"05": {
+				"04": {
 					"var_type": "FIELD_FLOAT",
 					"fade_delay": "0.7"
 				}
@@ -23111,14 +23112,12 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "scepter_duration",
-				"value": "3",
-				"header": "SCEPTER DURATION:"
+				"value": "2"
 			},
 			{
 				"aghs_upgrade": "1",
 				"key": "scepter_attacks",
-				"value": "6",
-				"header": "SCEPTER ATTACKS:"
+				"value": "4"
 			},
 			{
 				"aghs_upgrade": "1",
@@ -23135,7 +23134,7 @@
 		"note": "Moving while phased out will cancel the ability.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Increases duration, attacks, cast range and allows you to target an allied hero, hiding inside them for the duration.",
+		"scepter_description": "Increases cast range and allows you to target an allied hero, hiding inside them for the duration.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -23170,12 +23169,12 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"scepter_duration": "3",
+					"scepter_duration": "2",
 					"RequiresScepter": "1"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"scepter_attacks": "6",
+					"scepter_attacks": "4",
 					"RequiresScepter": "1"
 				},
 				"06": {
@@ -30416,7 +30415,7 @@
 		"description": "Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies are slowed.",
 		"lore": "The Tormented Soul's mastery of the elements is evident in the massive storms that strike down armies before him.",
 		"scepter_grants": false,
-		"scepter_upgrades": true,
+		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -30429,7 +30428,6 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Leshrac.Lightning_Storm",
-			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "4",
@@ -30683,11 +30681,11 @@
 			},
 			{
 				"key": "treant_hp_bonus",
-				"value": "440"
+				"value": "550"
 			},
 			{
 				"key": "treant_damage_bonus",
-				"value": "24 28 32 36"
+				"value": "22 26 30 34"
 			},
 			{
 				"aghs_upgrade": "1",
@@ -30746,11 +30744,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"treant_hp_bonus": "440"
+					"treant_hp_bonus": "550"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"treant_damage_bonus": "24 28 32 36"
+					"treant_damage_bonus": "22 26 30 34"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -36080,7 +36078,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "40 60 80",
+				"value": "20 40 60",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -36143,7 +36141,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"damage": "40 60 80"
+					"damage": "20 40 60"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -41318,14 +41316,14 @@
 		"target_team": "enemy",
 		"dispellable": "no",
 		"cast_range": "450",
-		"cooldown": "4 3 2 0",
+		"cooldown": "6 4 2 0",
 		"mana_cost": "0",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_outworld_devourer",
 				"key": "mana_pool_damage_pct",
 				"value": "16%",
-				"talent_value": "18.5%",
+				"talent_value": "18%",
 				"header": "MANA POOL TO DAMAGE:"
 			},
 			{
@@ -41355,7 +41353,7 @@
 			"AbilitySound": "Hero_ObsidianDestroyer.ArcaneOrb",
 			"AbilityCastRange": "450",
 			"AbilityManaCost": "0",
-			"AbilityCooldown": "4 3 2 0",
+			"AbilityCooldown": "6 4 2 0",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -41382,7 +41380,7 @@
 		"cast_range": "650",
 		"cast_point": "0.25",
 		"cooldown": "24 20 16 12",
-		"mana_cost": "120",
+		"mana_cost": "150",
 		"ability_special": [
 			{
 				"key": "prison_duration",
@@ -41449,7 +41447,7 @@
 			"AbilityCooldown": "24 20 16 12",
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.25 0.25 0.25 0.25",
-			"AbilityManaCost": "120",
+			"AbilityManaCost": "150",
 			"AbilityModifierSupportValue": "0.5",
 			"AbilitySpecial": {
 				"01": {
@@ -41663,7 +41661,7 @@
 			},
 			{
 				"key": "wolf_duration",
-				"value": "55",
+				"value": "50",
 				"header": "DURATION:"
 			},
 			{
@@ -41723,7 +41721,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"wolf_duration": "55.0 55.0 55.0 55.0"
+					"wolf_duration": "50"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -46542,7 +46540,7 @@
 		"damage_type": "pure",
 		"spell_immunity": "yes",
 		"dispellable": "no",
-		"cooldown": "90 70 50",
+		"cooldown": "90 75 60",
 		"mana_cost": "180 240 300",
 		"ability_special": [
 			{
@@ -46584,7 +46582,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/nyx_assassin_vendetta_png.png",
 		"localized_name": "Vendetta",
-		"description": "Allows Nyx Assassin to become invisible and gain a speed bonus.  If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack. Applies a break status on the enemy for **4** seconds.",
+		"description": "Allows Nyx Assassin to become invisible and gain a speed bonus.  If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack. ",
 		"lore": "The scarab kills for the glory of his queen.",
 		"note": "Has a **0** second fadetime.\nIf a spell is used to break the invisibility, or the invisibility expires, the bonus damage is lost.\nWhile the invisibility cannot be dispelled, the Break can be.",
 		"scepter_grants": false,
@@ -46604,7 +46602,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"HasShardUpgrade": "1",
 			"AbilityDraftUltScepterAbility": "nyx_assassin_burrow",
-			"AbilityCooldown": "90 70 50",
+			"AbilityCooldown": "90 75 60",
 			"AbilityManaCost": "180 240 300",
 			"AbilitySpecial": {
 				"01": {
@@ -47453,7 +47451,7 @@
 		"id": 5475,
 		"name": "keeper_of_the_light_recall",
 		"hero_id": 90,
-		"behavior": "point|channelled|unit_target|no_target|dont_resume_attack|hidden|show_in_guides",
+		"behavior": "point|channelled|unit_target|no_target|dont_resume_attack|hidden|show_in_guides|not_learnable",
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "yes",
@@ -47464,7 +47462,7 @@
 		"ability_special": [
 			{
 				"key": "teleport_delay",
-				"value": "3",
+				"value": "5 4 3",
 				"header": "TELEPORT DELAY:"
 			}
 		],
@@ -47480,13 +47478,13 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "5475",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"MaxLevel": "1",
+			"MaxLevel": "3",
 			"AbilitySound": "Hero_KeeperOfTheLight.Recall.Cast",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -47496,7 +47494,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"teleport_delay": "3.0"
+					"teleport_delay": "5 4 3"
 				}
 			}
 		}
@@ -56705,7 +56703,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Increases Blast Off! cast range by 600 and applies a 1.5 second stun to enemies to enemies in 200 AoE.",
+		"shard_description": "Increases Blast Off! cast range by 600 and applies a 1.5 second stun to enemies in 200 AoE.",
 		"json_data": {
 			"ID": "5601",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
@@ -57799,7 +57797,7 @@
 		"ability_special": [
 			{
 				"key": "duration",
-				"value": "120",
+				"value": "60",
 				"header": "DURATION:"
 			}
 		],
@@ -57832,7 +57830,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "120.0"
+					"duration": "60.0"
 				}
 			}
 		}
@@ -72890,11 +72888,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "2.5"
+				"value": "2"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+2.5% Arcane Orb Damage",
+		"localized_name": "+2% Arcane Orb Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -72906,7 +72904,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "2.5",
+					"value": "2",
 					"ad_linked_ability": "obsidian_destroyer_arcane_orb"
 				}
 			}
@@ -78029,6 +78027,10 @@
 			{
 				"key": "damage_radius",
 				"value": "275"
+			},
+			{
+				"key": "shard_bonus_damage",
+				"value": "125"
 			}
 		],
 		"slot": 2,
@@ -78040,7 +78042,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Adds a partial outer ring to Dissimilate. Increases damage by 125.",
+		"shard_description": "Adds a partial outer ring to Dissimilate. Increases damage by **125**.",
 		"json_data": {
 			"ID": "6470",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -78079,6 +78081,10 @@
 				"06": {
 					"var_type": "FIELD_INTEGER",
 					"damage_radius": "275"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"shard_bonus_damage": "125"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -95346,16 +95352,16 @@
 	},
 	{
 		"id": 7828,
-		"name": "ad_special_bonus_gold_150_l",
+		"name": "ad_special_bonus_gold_lvl10_l",
 		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "150"
+				"value": "250"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+150 Gold",
+		"localized_name": "+250 Gold",
 		"description": "Associated ability not drafted, have some gold!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -95368,23 +95374,23 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "150"
+					"value": "250"
 				}
 			}
 		}
 	},
 	{
 		"id": 7829,
-		"name": "ad_special_bonus_gold_250_l",
+		"name": "ad_special_bonus_gold_lvl15_l",
 		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "250"
+				"value": "500"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+250 Gold",
+		"localized_name": "+500 Gold",
 		"description": "Associated ability not drafted, have some gold!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -95397,43 +95403,14 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "250"
-				}
-			}
-		}
-	},
-	{
-		"id": 7830,
-		"name": "ad_special_bonus_gold_500_l",
-		"behavior": "passive",
-		"ability_special": [
-			{
-				"key": "value",
-				"value": "500"
-			}
-		],
-		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+500 Gold",
-		"description": "Associated ability not drafted, have some gold!",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"json_data": {
-			"ID": "7830",
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
 					"value": "500"
 				}
 			}
 		}
 	},
 	{
-		"id": 7831,
-		"name": "ad_special_bonus_gold_750_l",
+		"id": 7830,
+		"name": "ad_special_bonus_gold_lvl20_l",
 		"behavior": "passive",
 		"ability_special": [
 			{
@@ -95449,7 +95426,7 @@
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
-			"ID": "7831",
+			"ID": "7830",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
@@ -95461,37 +95438,37 @@
 		}
 	},
 	{
-		"id": 7832,
-		"name": "ad_special_bonus_gold_150_r",
+		"id": 7831,
+		"name": "ad_special_bonus_gold_lvl25_l",
 		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "150"
+				"value": "1250"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+150 Gold",
+		"localized_name": "+1250 Gold",
 		"description": "Associated ability not drafted, have some gold!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
-			"ID": "7832",
+			"ID": "7831",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "150"
+					"value": "1250"
 				}
 			}
 		}
 	},
 	{
-		"id": 7833,
-		"name": "ad_special_bonus_gold_250_r",
+		"id": 7832,
+		"name": "ad_special_bonus_gold_lvl10_r",
 		"behavior": "passive",
 		"ability_special": [
 			{
@@ -95507,7 +95484,7 @@
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
-			"ID": "7833",
+			"ID": "7832",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
@@ -95519,8 +95496,8 @@
 		}
 	},
 	{
-		"id": 7834,
-		"name": "ad_special_bonus_gold_500_r",
+		"id": 7833,
+		"name": "ad_special_bonus_gold_lvl15_r",
 		"behavior": "passive",
 		"ability_special": [
 			{
@@ -95536,7 +95513,7 @@
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
-			"ID": "7834",
+			"ID": "7833",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
@@ -95548,8 +95525,8 @@
 		}
 	},
 	{
-		"id": 7835,
-		"name": "ad_special_bonus_gold_750_r",
+		"id": 7834,
+		"name": "ad_special_bonus_gold_lvl20_r",
 		"behavior": "passive",
 		"ability_special": [
 			{
@@ -95565,13 +95542,42 @@
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
-			"ID": "7835",
+			"ID": "7834",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "750"
+				}
+			}
+		}
+	},
+	{
+		"id": 7835,
+		"name": "ad_special_bonus_gold_lvl25_r",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "1250"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+1250 Gold",
+		"description": "Associated ability not drafted, have some gold!",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "7835",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "1250"
 				}
 			}
 		}
@@ -99999,6 +100005,14 @@
 				"key": "evasion",
 				"value": "8% 16% 24% 32%",
 				"header": "EVASION:"
+			},
+			{
+				"key": "decoy_stun_duration",
+				"value": "1"
+			},
+			{
+				"key": "decoy_detonate_radius",
+				"value": "250"
 			}
 		],
 		"slot": 3,
@@ -100019,6 +100033,7 @@
 			"AbilityCharges": "2",
 			"AbilityChargeRestoreTime": "30 25 20 15",
 			"AbilityManaCost": "35",
+			"HasShardUpgrade": "0",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -100035,6 +100050,14 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"evasion": "8 16 24 32"
+				},
+				"05": {
+					"var_type": "FIELD_FLOAT",
+					"decoy_stun_duration": "1.0"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"decoy_detonate_radius": "250"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
