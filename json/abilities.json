@@ -5349,7 +5349,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+90 Frost Blast AoE Damage",
+		"localized_name": "+90 Frost Blast Radius and Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -5923,7 +5923,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-1.5s Fortune's End Max Channel Time",
+		"localized_name": "Instant Fortune's End",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -6149,7 +6149,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/riki_poison_dart_png.png",
 		"localized_name": "Sleeping Dart",
-		"description": "Fires a dart at the target enemy, putting them to sleep for **3** seconds. At the end of the duration, the target wakes up and takes **150** damage and is slowed by **30%** for **4** seconds.",
+		"description": "Fires a dart at the target enemy, putting them to sleep for **3** seconds or if they take 200 damage. At the end of the duration, the target wakes up and takes **150** damage, and is slowed by **30%** for **4** seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -6333,7 +6333,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/jakiro_liquid_ice_png.png",
 		"localized_name": "Liquid Frost",
-		"description": "Applies a frost debuff that slows enemy movement speed by **30%** and causes them to lose **20** plus **2.5%** of their max health per second for **4** seconds.",
+		"description": "Stuns enemies for %stun_duration% seconds and applies a frost debuff that slows enemy movement speed by **30%** and take **20** plus **2.5%** of their max health per second as damage for **4** seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -7445,7 +7445,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/kunkka_tidal_wave_png.png",
 		"localized_name": "Tidal Wave",
-		"description": "Releases a Tidal Wave that spawns behind Kunkka. Deals **225** damage and drags enemies along it for **600** distance.",
+		"description": "Releases a Tidal Wave that spawns behind Kunkka. Deals **225** damage and drags enemies along it for **600** distance. Enemies cannot attack while being dragged.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -8318,7 +8318,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/broodmother_silken_bola_png.png",
 		"localized_name": "Silken Bola",
-		"description": "Consumes a Spin Web charge and roots the target enemy for **2.5** seconds and deals 75 damage per second.",
+		"description": "Slows the target enemy, causes them to miss and deals impact damage. Units that attack the target deal bonus magic damage.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -8703,7 +8703,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/ogre_magi_smash_png.png",
 		"localized_name": "Fire Shield",
-		"description": "Creates a shield around the target ally, absorbing 70% of the damage of next **3** attacks. Launches fireballs at the attacker, dealing **125** damage.\n\nLasts **25** seconds.",
+		"description": "Creates a shield around the target ally, absorbing 85% of the damage of next **3** attacks. Launches fireballs at the attacker, dealing **125** damage.\n\nLasts **25** seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -8961,7 +8961,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/shredder_flamethrower_png.png",
 		"localized_name": "Flamethrower",
-		"description": "Releases a **275** width flame that extends **400** range in the direction Timbersaw is facing. Applies a debuff that deals **90** damage per second and slows by 30%. Lasts **7** seconds. Debuff lingers for 3 seconds.",
+		"description": "Releases a **275** width flame that extends **400** range in the direction Timbersaw is facing. Applies a debuff that deals **90** damage per second and slows by 30%. Affects buildings for 40% damage. Lasts **7** seconds. Debuff lingers for 3 seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -9278,7 +9278,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/dragon_knight_fireball_png.png",
 		"localized_name": "Fireball",
-		"description": "Provided to Elder Dragon Form. Ignites a **450** AoE area for **10** seconds, dealing **80** damage per second to enemies in it.",
+		"description": "Ignites a **450** AoE area for **10** seconds, dealing **80** damage per second to enemies in it. Has reduced cast range when melee.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -9341,7 +9341,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/necrolyte_death_seeker_png.png",
 		"localized_name": "Death Seeker",
-		"description": "Spawns a fast moving large Death Pulse towards the target enemy or ally, dealing 50% more damage/heal and causing it to spread a normal Death Pulse towards nearby enemies and allies.",
+		"description": "Spawns a fast moving large Death Pulse towards the target enemy or ally, causing the target to become ethereal for 2.5 seconds. Reduces enemy magic resistance by 25%. Spreads towards nearby enemies and allies after impact.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -9410,7 +9410,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/phantom_assassin_fan_of_knives_png.png",
 		"localized_name": "Fan of Knives",
-		"description": "Phantom Assassin releases sharp blades around her in a 550 AoE, dealing 12% of a victim's max health on impact and applying break for 3 seconds.",
+		"description": "Phantom Assassin releases sharp blades around her in a 550 AoE, dealing 16% of a victim's max health on impact and applying break for 3 seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -9826,7 +9826,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-50% Purifying Flames Allied Damage",
+		"localized_name": "+50% Purifying Flames Enemy Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -10069,7 +10069,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/dark_seer_normal_punch_png.png",
 		"localized_name": "Normal Punch",
-		"description": "Grants Normal Punch. Passive cooldown attack. Causes Dark Seer's next attack on a hero to knock an illusion out of the victim and stun them for up to 2.25 seconds, 350 distance and 250 damage based on how far Dark Seer has moved in the past 3 seconds. Max power is reached after 1500 distance moved. Illusions lasts for 5 seconds. Cooldown: 14",
+		"description": "Grants Normal Punch. Passive cooldown attack. Causes Dark Seer's next attack on a hero to knock an illusion out of the victim and stun them for up to 2.25 seconds, 350 distance and 250 damage based on how far Dark Seer has moved in the past 3 seconds. Max power is reached after 900 distance moved. Illusions lasts for 5 seconds. Cooldown: 14",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -10305,7 +10305,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/sniper_concussive_grenade_png.png",
 		"localized_name": "Concussive Grenade",
-		"description": "Grants Concussive Grenade. Deals 125 damage, knocking enemies back 425 distance, slowing them by 50% and disarming them for 3 seconds. Radius: 375",
+		"description": "Grants Concussive Grenade. Deals 125 damage, knocking enemies back 425 distance, slowing them by 50% and disarming them for 3 seconds. Radius: 375. Knocks you back 450 units on cast.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -10575,7 +10575,7 @@
 		],
 		"icon": "/panorama/images/spellicons/beastmaster_hawk_dive_png.png",
 		"localized_name": "Dive Bomb",
-		"description": "Channels for **1** second, revealing itself, and then flies towards the target enemy, dealing **175** damage and stunning them for **1** second, killing the hawk.",
+		"description": "Reveals itself for **1**, and then flies towards the target enemy, dealing **175** damage and stunning them for **1** second, killing the hawk.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -11600,7 +11600,7 @@
 		"lore": "Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Berserker's Call applies Battle Hunger to affected units. Battle Hunger also reduces enemy armor by 7 and grants Axe 7 armor per affected target. \n\nReduces Berserker's Call cooldown by 2.",
+		"scepter_description": "Berserker's Call applies Battle Hunger to affected units. Battle Hunger also reduces enemy armor by 7 and grants Axe 7 armor per affected target. \n\nReduces Berserker's Call cooldown by 3.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -11781,7 +11781,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 35.",
+		"shard_description": "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 35 and proc chance by 10%.",
 		"json_data": {
 			"ID": "5009",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -11948,7 +11948,6 @@
 		"lore": "Atropos finds no greater pleasure than to harvest the fear he creates.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Decreases cooldown and makes Brain Sap pierce Spell Immunity.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -12103,7 +12102,6 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Fiend's Grip now creates an uncontrollable illusion that is also channeling Fiend's Grip on the target. Illusion takes 750% incoming damage and immediately dies if they are interrupted.",
 		"json_data": {
 			"ID": "5013",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -12544,7 +12542,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/bloodseeker_rupture_png.png",
 		"localized_name": "Rupture",
-		"description": "Causes an enemy unit's skin to rupture. If the unit moves, it takes damage based on the distance moved.  The damage is dealt through spell immunity.",
+		"description": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.  The damage is dealt through spell immunity.",
 		"lore": "When the Bloodseeker hunts you, injuries become fatalities.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
@@ -12640,7 +12638,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Frost Arrows now apply a Hypothermia stack to enemy heroes, reducing their regeneration by 10% per stack. Increases damage by 5 per stack. Lasts 7 seconds. If an enemy hero dies with Hypothermia stacks, they burst and deal 60 magic damage per stack and 25% slow for 2 seconds to enemies within 650 radius. Max Stacks: 7",
+		"shard_description": "Frost Arrows now apply a Hypothermia stack to enemy heroes, reducing their regeneration by 10% per stack. Increases damage by 5 per stack. Lasts 7 seconds. If an enemy hero dies with Hypothermia stacks, they burst and deal 60 magic damage per stack and 40% slow for 2 seconds to enemies within 650 radius. Max Stacks: 7",
 		"json_data": {
 			"ID": "5019",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
@@ -13032,7 +13030,7 @@
 		"note": "Bonus damage is based on base damage and that given by primary attribute.\nSelf-cast with Scepter will make it behave in the non-Scepter form, without jumping.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Enchant Totem becomes a **1100** range ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping.",
+		"scepter_description": "Enchant Totem becomes a **1100** range ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping. Grants Enchant Totem a 40% cleave hit.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -14192,7 +14190,7 @@
 		"scepter_description": "Changes Laguna Blade's damage type to Pure, and allows it to slice through spell immunity.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Increases Laguna Blade's cast range by 150 and causes it to go the full cast length and hit all units along the way. Can be ground targeted.",
+		"shard_description": "Increases Laguna Blade's cast range by 250 and causes it to go the full cast length and hit all units along the way. Can be ground targeted.",
 		"json_data": {
 			"ID": "5043",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -14424,7 +14422,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Mana Drain grants true sight over the enemy and reduces their attack speed by 120.",
+		"shard_description": "Causes Mana Drain to affect up to three enemies. You become Spell Immune while channeling.",
 		"json_data": {
 			"ID": "5046",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -15060,7 +15058,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Adaptive Strike to have +1 Multishot and removes the 3 second shared cooldown between the two different abilities. Prioritizes heroes.",
+		"shard_description": "Causes Adaptive Strike to have +1 Multishot and increases the stun duration by 1 second. Multishot prioritizes heroes.",
 		"json_data": {
 			"ID": "5053",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -15697,14 +15695,13 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/nevermore_necromastery_png.png",
 		"localized_name": "Necromastery",
-		"description": "Shadow Fiend steals the soul from units he kills, gaining bonus damage. On death, he releases half of them from bondage.",
+		"description": "Shadow Fiend steals the soul from units he kills, gaining bonus damage. On death, he releases 40% of them from bondage.",
 		"lore": "Harvested souls swirl in and out of the Abysm, empowering the Shadow Fiend to increase the size of his collection.",
 		"note": "Denies and neutral creeps also provide bonus damage through Necromastery.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Necromastery provides 0.75% Spell Amp per soul.",
 		"json_data": {
 			"ID": "5062",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -16010,7 +16007,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Spirit Lance bounces once on an enemy within 900 radius, prioritizing heroes. Increases Spirit Lance illusion damage by +30% and cast range by 200.",
+		"shard_description": "Spirit Lance bounces once on an enemy within 900 radius, prioritizing heroes. Increases Spirit Lance illusion damage by +50% and cast range by 200.",
 		"json_data": {
 			"ID": "5065",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -17742,7 +17739,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Storm Surge to have an 18% chance when attacked, and always when targeted with a spell, to release forked lightning that strikes the target and up to 2 other enemies. Deals 120 Damage and slows them by 50% for 1.5 seconds.",
+		"shard_description": "Causes Storm Surge to have an 18% chance when attacked, and always when targeted with a spell, to release forked lightning that strikes the target and up to 2 other enemies. Deals 150 Damage and slows them by 50% for 1.5 seconds.",
 		"json_data": {
 			"ID": "5084",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -18656,7 +18653,7 @@
 		"scepter_description": "Increases cast range and transports Sven along the storm hammer.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Storm Hammer now applies a dispel on enemies.",
+		"shard_description": "Storm Hammer now applies a dispel on enemies and reduces cooldown by 4 seconds.",
 		"json_data": {
 			"ID": "5094",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -19568,7 +19565,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Every 700 units moved causes an Epicenter Pulse around Sand King in 400 AoE.",
+		"shard_description": "Every 700 units moved causes an Epicenter Pulse around Sand King in 475 AoE.",
 		"json_data": {
 			"ID": "5105",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -20204,7 +20201,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Static Field can be cast to perform a Heavenly Jump, shocking the closest visible enemy (prioritizing heroes) within 2000 range, dealing Static Field damage to them and reducing their movement speed by 100% for 2.5 seconds. If Zeus was moving forward, he will jump towards that direction. Cooldown: 14. Manacost: 100.",
+		"shard_description": "Static Field can be cast to perform a Heavenly Jump, shocking the closest visible enemy (prioritizing heroes) within 2000 range, dealing Static Field damage to them and reducing their movement speed by 100% for 2.5 seconds. If Zeus was moving forward, he will jump towards that direction. Cooldown: 11. Manacost: 100.",
 		"json_data": {
 			"ID": "5112",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -20365,7 +20362,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/slardar_sprint_png.png",
 		"localized_name": "Guardian Sprint",
-		"description": "Slardar slithers ahead, moving significantly faster and passing through units. Slardar has unlocked max speed and grants movement speed while in the river.",
+		"description": "Slardar slithers ahead, moving significantly faster and passing through units. Slardar gains movement speed bonus while in the river.",
 		"lore": "As Slardar has made the transition from the Deeps, it has been necessary to use his powerful tail for sprinting instead of swimming.",
 		"note": "Activating this skill doesn't interrupt channeling abilities.",
 		"scepter_grants": false,
@@ -20563,7 +20560,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/slardar_bash_png.png",
 		"localized_name": "Bash of the Deep",
-		"description": "After **3** attacks, your next attack will bash the target.",
+		"description": "After **3** attacks, your next attack will bash the target. Deals double damage against creeps.",
 		"lore": "Thieves of the wealth of the Deep Ones meet the brutality of the Slithereen Guard in melee combat.",
 		"note": "Does not stack with Skull Basher.",
 		"scepter_grants": false,
@@ -20631,7 +20628,6 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Corrosive Haze to be applied for 5 seconds to units hit with Slithereen Crush.",
 		"json_data": {
 			"ID": "5117",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -21116,7 +21112,7 @@
 		"note": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.\nStrong Illusions are not instantly killed by spells.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes 100% damage and can cast all of her spells. Illusion has 30% movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her.",
+		"scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes 100% damage and can cast all of her spells. Illusion has 25% movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -21197,7 +21193,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Wave of Terror steals 25% of enemy hero base damage and grants it to Vengeful Spirit for the debuff duration.",
+		"shard_description": "Wave of Terror steals 20% of enemy hero base damage and base armor, granting it to Vengeful Spirit for the debuff duration.",
 		"json_data": {
 			"ID": "5124",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
@@ -21449,7 +21445,6 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Frostbite can be cast on yourself, reducing incoming damage by 70% for the duration. She is unable to move or attack during that time. Allows casting Frostbite while channeling as long as the target is in range.\n\nReduces cooldown by 1 second.",
 		"json_data": {
 			"ID": "5127",
 			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
@@ -21844,7 +21839,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Powershot now becomes global, but only hits heroes beyond its default range (max 1 hero). Impacted heroes will be killed if they are under 13% after taking the impact damage (scales based on Powershot channel).",
+		"shard_description": "Powershot now becomes global, but only hits heroes beyond its default range (max 1 hero). Impacted heroes will be killed if they are under 13% after taking the impact damage. Lowers cooldown by 1.5 seconds.",
 		"json_data": {
 			"ID": "5131",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
@@ -21963,7 +21958,7 @@
 		"note": "Activating Windrun will evade incoming projectiles.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Grants **2** charges to Windrun, increases movement speed, and removes movement speed limit.",
+		"scepter_description": "Grants **2** charges to Windrun and grants haste movement speed. Passively provides 30% Evasion.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -23107,7 +23102,7 @@
 			{
 				"key": "damage_pct",
 				"value": "70% 80% 90% 100%",
-				"header": "ATTACK DAMAGE:"
+				"header": "ATTACK DAMAGE REDUCTION:"
 			},
 			{
 				"aghs_upgrade": "1",
@@ -23648,7 +23643,7 @@
 		"lore": "Boush perfected this rock cutting laser in his subterranean laboratory, never considering its combat utility.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Upgrades Tinker's Laser into a Shrink Ray, granting +400 cast range and reducing the enemy hero's size and current health by 20% (stacking). The laser bounces once on the farthest target up to 700 range from the primary one, prioritizing heroes.",
+		"scepter_description": "Upgrades Tinker's Laser into a Shrink Ray, granting +400 cast range and reducing the enemy hero's size and current health by 15% (stacking). The laser bounces once on the farthest target up to 700 range from the primary one, prioritizing heroes.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -24129,7 +24124,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/sniper_take_aim_png.png",
 		"localized_name": "Take Aim",
-		"description": "Extends the attack range of Sniper's rifle. Can be activated to double the attack range bonus for 1 attack. Goes on cooldown after the attack is used.",
+		"description": "Extends the attack range of Sniper's rifle. Can be activated to provided True Strike and +30% Headshot chance for 4 seconds. Slows you by 30% for the duration.",
 		"lore": "Kardel always takes it upon himself to stay as far from harm as he can while still performing his role - taking perfect aim.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -24709,7 +24704,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Shadow Word grants 20% movement speed bonus to allies and slows enemies by 20%.",
+		"shard_description": "Turns Shadow Word into a 450 AoE Spell. Grants 10% movement speed bonus to allies and slows enemies by 10%. ",
 		"json_data": {
 			"ID": "5163",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -24761,8 +24756,7 @@
 			},
 			{
 				"key": "slow_rate_duration",
-				"value": "12.5 6.5 4.5 3.5",
-				"header": "MAX SLOW CHANNEL DURATION:"
+				"value": "12.5 6.5 4.5 3.5"
 			},
 			{
 				"key": "duration",
@@ -25135,7 +25129,7 @@
 		"note": "This ability destroys trees.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Wild Axes to have no cooldown and can be used again once they come back.",
+		"scepter_description": "Causes Wild Axes to have no cooldown and can be used again once they come back. Increases damage by 40.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -25575,7 +25569,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals 150 damage in a 300 AoE and silences for 1.5 seconds.",
+		"shard_description": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals 175 damage in a 300 AoE and silences for 1.75 seconds.",
 		"json_data": {
 			"ID": "5174",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -26353,7 +26347,7 @@
 		"scepter_description": "Applies a Time Lock proc to all units at the landing destination.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Grants Reverse Time Walk and increases Time Walk cast range by 200.",
+		"shard_description": "Grants Reverse Time Walk and increases Time Walk cast range by 400.",
 		"json_data": {
 			"ID": "5182",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
@@ -26876,7 +26870,7 @@
 		"scepter_description": "Removes cooldown and increases damage.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "For every 1.75 seconds of channel, another secondary Life Drain is created targeting another random enemy hero.",
+		"shard_description": "For every 1.5 seconds of channel, another secondary Life Drain is created targeting another random enemy hero.",
 		"json_data": {
 			"ID": "5189",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -27497,7 +27491,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Psionic Traps to silence enemies for up to 3 seconds based on how long the trap has been charged. Increases max trap count by 4.",
+		"shard_description": "Causes Psionic Traps to silence enemies for up to 3.5 seconds based on how long the trap has been charged. Increases max trap count by 4 and vision by 125.",
 		"json_data": {
 			"ID": "5197",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -28355,7 +28349,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Poison Attack to lower armor by 1.5 per stack and increases max stacks by 3.",
+		"shard_description": "Causes Poison Attack to lower armor by 1 per stack and allows it to affect buildings for 40% poison damage. Increases max stacks by 3.",
 		"json_data": {
 			"ID": "5218",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
@@ -28755,7 +28749,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows Lucent beam to be ground targeted with a 325 target search radius. Also increases stun duration to 1.2 second and grants Luna +30% bonus movement speed for 3 seconds.",
+		"shard_description": "Allows Lucent beam to be ground targeted with a 325 target search radius. Also releases attacks on up to two random targets within 500 range of the Lucent Beam. Reduces mancost by 50.",
 		"json_data": {
 			"ID": "5222",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -29700,7 +29694,7 @@
 		"note": "Prioritizes allied heroes over creeps.\nIf enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Shadow Wave to dispel allies. Increases heal by +60 and damage by +80.",
+		"scepter_description": "Causes Shadow Wave to dispel allies. Increases heal by +100 and damage by +100.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -30238,7 +30232,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Split Earth to repeat in the same location two additional times, with a 5 second delay between each one. Each time the radius increases by 75. Split Earth echo location is visible to both teams.",
+		"shard_description": "Causes Split Earth to repeat in the same location three additional times, with a 5 second delay between each one. Each time the radius increases by 75. Split Earth echo location is visible to both teams.",
 		"json_data": {
 			"ID": "5241",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -30817,7 +30811,7 @@
 		"note": "Wrath of Nature will not hit units out of vision.\nCan be cast through the minimap; the nearest valid target will be selected.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Lowers cooldown from 85 to 60. Entangles all enemies it hits. Duration scales from 1.6 up to 3.4 seconds at max bounce.",
+		"scepter_description": "Lowers cooldown from 85 to 60. Entangles all enemies it hits. Duration scales from 2 up to 3.8 seconds at max bounce.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -30942,7 +30936,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/life_stealer_feast_png.png",
 		"localized_name": "Feast",
-		"description": "Lifestealer's attacks heal himself for a percentage of his target's max health.",
+		"description": "Lifestealer's attacks deal damage and provide heal for a percentage of his target's max health.",
 		"lore": "After escaping from his cell in Devarque, N'aix subsisted on flesh and bones of those unfortunate to cross his path.",
 		"note": "Does not affect Roshan.\nAffects Spell Immune units.\nThe heal is independent of the damage.\nStacks additively with other sources of Lifesteal.",
 		"scepter_grants": false,
@@ -31002,7 +30996,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/life_stealer_open_wounds_png.png",
 		"localized_name": "Open Wounds",
-		"description": "Lifestealer rends an enemy unit, slowing the victim's movement speed and allowing all allies to regain health for a percentage of the damage they deal to that unit. All damage dealt will steal life, including damage from spells. The victim recovers movement speed over the duration.",
+		"description": "Lifestealer rends an enemy unit, slowing the victim's movement speed and allowing all allies to regain health for a percentage of the damage they deal to that unit. All damage dealt will steal life, including damage from spells. The victim recovers movement speed over the duration. Deals 2% of the target's max health per attack on the target from real heroes.",
 		"lore": "Fresh wounds and the scent of blood often draw out the scavengers to finish the job.",
 		"note": "Open Wounds slows over 8 different steps: 50% / 50% / 40% / 30% / 20% / 10% / 10% / 10%, with the slow decreasing one step per second.\nStacks additively with other sources of Lifesteal.",
 		"scepter_grants": false,
@@ -31120,7 +31114,7 @@
 		"note": "If the infested unit dies before Lifestealer consumes it, no health is gained.\nLifestealer gains experience while under the effects of Infest.\nCreeps that are controlled while Infested share Lifestealer's movement speed.\nInfest Level 2 and 3 can be used on Ancient creeps.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Allows Infesting enemy heroes for 4 seconds, attacking their insides once every 1.25 seconds and doubling Lifestealer's regen rate. Increases cast range to 500 and reduces cooldown to 25 seconds.",
+		"scepter_description": "Allows Infesting enemy heroes for 5 seconds, attacking their insides once every 1.25 seconds and doubling Lifestealer's regen rate. Increases cast range to 500 and reduces cooldown to 20 seconds.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -31341,7 +31335,7 @@
 		"note": "Deals small amounts of damage in **0.1** second intervals.\nDoesn't damage the target it is cast on.\nIf cast on a unit that already has Ion Shell, the new Shell replaces the old one.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Ion Shell to have 2 Charges, increases duration by 20 seconds and provides +350 Health.",
+		"scepter_description": "Causes Ion Shell to have 2 Charges, increases duration by 20 seconds and provides +300 Health.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -32962,7 +32956,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "During night time, Night Stalker can cast Hunter in the Night. Consumes a lesser creature, instantly killing it and restoring 25% of Night Stalker's maximum HP and mana. Can only be cast on non-player units. Cooldown: 20",
+		"shard_description": "Night Stalker can cast Hunter in the Night. Consumes a creep, instantly killing it and restoring 35% of Night Stalker's maximum HP and and 25% of maximum mana. Cannot target ancients during the daytime. Cooldown: 20",
 		"json_data": {
 			"ID": "5277",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -33754,7 +33748,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allies now gain 50% of Track speed boost. Provides 600 vision around the target for Bounty Hunter's team.",
+		"shard_description": "Allows Track to be ground targeted, creating a Bear Trap. After 3 seconds, the trap becomes invisible and active. Walking over the trap applies Track. Traps have 400 vision. Max Traps: 8. Ground targeting with Track has bonus 1200 range.",
 		"json_data": {
 			"ID": "5288",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -33955,8 +33949,7 @@
 				"talent_name": "special_bonus_unique_weaver_2",
 				"key": "speed",
 				"value": "200 230 260 290",
-				"talent_value": "360 390 420 450",
-				"header": "MOVEMENT BONUS:"
+				"talent_value": "360 390 420 450"
 			},
 			{
 				"key": "radius",
@@ -33977,7 +33970,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/weaver_shukuchi_png.png",
 		"localized_name": "Shukuchi",
-		"description": "Weaver shifts out of visibility, gaining bonus movement speed and the ability to ignore the movement speed limit --doing harm to any enemies it passes through.",
+		"description": "Weaver shifts out of visibility, gaining max movement speed --doing harm to any enemies it passes through.",
 		"lore": "As the Weavers worked in the fabric of creation, small wormholes allowed them to slip through time to better work their craft.",
 		"note": "Can only damage the same unit once per cast.",
 		"scepter_grants": false,
@@ -34703,10 +34696,10 @@
 		"localized_name": "Macropyre",
 		"description": "Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.",
 		"lore": "Ice and fire combine to rip the battlefield to shreds with extreme temperatures.",
-		"note": "Macropyre destroys trees in its path.\nUnits hit by Macropyre will continue to be affected after they leave the area for **2** additional seconds.",
+		"note": "Units hit by Macropyre will continue to be affected after they leave the area for **2** additional seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Increases Macropyre distance by +400 range, duration by +20 seconds and damage by 25/35/45 DPS.",
+		"scepter_description": "Increases Macropyre distance by +400 range, duration by +20 seconds and causes it to become Pure damage and pierce Spell Immunity.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -36968,7 +36961,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Can activate Dispersion to spawn a Haunt Illusion to attack the most recent hero that damaged Spectre in the last 5s. Illusion lasts 5 seconds. Cooldown: 25",
+		"shard_description": "Can cast Dispersion on a hero that damaged you in the last 8 seconds.  Illusion lasts 5 seconds. Cooldown: 25",
 		"json_data": {
 			"ID": "5336",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -37132,8 +37125,7 @@
 			},
 			{
 				"key": "regen",
-				"value": "1 5 9 13",
-				"header": "HEALTH REGEN:"
+				"value": "1 5 9 13"
 			},
 			{
 				"key": "creep_level",
@@ -37148,7 +37140,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/doom_bringer_devour_png.png",
 		"localized_name": "Devour",
-		"description": "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed. If autocast is deactivated, Doom will not acquire the creep's abilities. Provides bonus health regeneration for the duration of the spell. Duration is equal to the cooldown.",
+		"description": "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed. If autocast is deactivated, Doom will not acquire the creep's abilities. Duration is equal to the cooldown.",
 		"lore": "Lucifer's appetite and greed are never sated.",
 		"note": "Gives Doom the original bounty of the creep, along with the bonus gold.\nIf you devour a creep without abilities, you'll keep the abilities you had previously.",
 		"scepter_grants": false,
@@ -37401,7 +37393,7 @@
 		"note": "Units afflicted by Doom can be denied when their HP drops below 25%.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Doom applies Break and reduces cooldown.",
+		"scepter_description": "Doom applies Break and increases duration by 6 seconds.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -37713,7 +37705,7 @@
 		"lore": "The Ancient Apparition's eternal knowledge brings a frigid enchantment to his attacks.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Removes cooldown.",
+		"scepter_description": "Removes cooldown and reduces manacost by half.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -38584,7 +38576,6 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Every 6th Fury Swipes on a single target causes Ursa to get Enraged for 1 seconds.",
 		"json_data": {
 			"ID": "5359",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -40013,7 +40004,7 @@
 		"localized_name": "Arcane Curse",
 		"description": "Curses the target area, causing enemy heroes to take damage and slowing their movement speed. Anytime affected enemies cast a spell, the duration is increased.",
 		"lore": "Nortrom's lack of incantations is less of a problem for him than it is for his adversaries.",
-		"note": "If an enemy hero affected by Arcane Curse is silenced, Arcane Curse will pause damage, slow and duration.\nAffects creeps.",
+		"note": "If an enemy hero affected by Arcane Curse is silenced, Arcane Curse will pause the duration.\nAffects creeps.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -41430,7 +41421,7 @@
 		"note": "Imprisoned units can still be hit by Sanity's Eclipse.\nMax mana steal does not increase Outworld Destroyer's current mana values or directly reduce the victim's mana values.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Grants charges to Astral Imprisonment and increases cast range by **150**.",
+		"scepter_description": "Grants charges to Astral Imprisonment, increases damage by 140 and applies the damage in an area.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -42898,7 +42889,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Savage Roar now empowers allies in 700 AoE with +20% Movement Speed and +60 Attack Speed for 5 seconds.",
+		"shard_description": "Savage Roar now empowers allies in 700 AoE with +20% Movement Speed and +60 Attack Speed for 5 seconds. Applies a basic dispel. Replicates between Lone Druid and Spirit Bear regardless of castability on the other.",
 		"json_data": {
 			"ID": "5414",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -43789,7 +43780,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Chaos Bolt creates a Phantasm illusion attacking the target for the duration of the stun. Increases cast range by 300.",
+		"shard_description": "Chaos Bolt creates a Phantasm illusion attacking the target for 6 seconds. Increases cast range by 300.",
 		"json_data": {
 			"ID": "5426",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -44398,7 +44389,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Nature's Guise to root enemies upon attacking. Roots them for 1 second and deals a total of 200 damage. Lasts an extra second when attacking near a tree. Increases movement speed bonus by 15%.",
+		"shard_description": "Causes you to become invisible with Nature's Guise and root enemies upon attacking. Roots them for 1 second and deals a total of 200 damage. Lasts an extra second when attacking near a tree. Increases movement speed bonus by 15%.",
 		"json_data": {
 			"ID": "5434",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -45552,7 +45543,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows you to target yourself or allies with Telekinesis. Throw range is 60% longer and cooldown is reduced by 30% when targeting allies. Throw delay reduced to 0.5 seconds.",
+		"shard_description": "Allows you to target yourself or allies with Telekinesis. Throw range is 85% longer and cooldown is reduced by 30% when targeting allies. Throw delay reduced to 0.5 seconds.",
 		"json_data": {
 			"ID": "5448",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -46019,7 +46010,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows Thunder Strike to be cast on allies, follows the ally and deals damage around them. Each strike gives a short 1 second buff that provides +50% Movement Speed and +75 Attack Speed. Increases radius by 260 when used on allies.",
+		"shard_description": "Allows Thunder Strike to be cast on allies, follows the ally and deals damage around them. Each strike gives a short 1.25 second buff that provides +50% Movement Speed and +75 Attack Speed. Increases radius to 650.",
 		"json_data": {
 			"ID": "5458",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -46872,7 +46863,7 @@
 		"lore": "The only way to escape the onslaught of a Slithereen is to never oppose one in the first place.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Allows Ensnare to target Spell Immune or sleeping units. Reduces the Ensnare cooldown by 5 seconds and increases cast range by 400.",
+		"scepter_description": "Allows Ensnare to target Spell Immune or sleeping units. Reduces the Ensnare cooldown by 6 seconds and increases cast range by 400.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -46960,7 +46951,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Adds active to Rip Tide, releasing stronger Rip Tide that slows enemies by 40% for 4 seconds. Applies around each illusion, but can be only hit by one instance. Increases the base armor reduction by 2.",
+		"shard_description": "Adds 20% slow and increases the base armor reduction by 4.",
 		"json_data": {
 			"ID": "5469",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -47412,7 +47403,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/keeper_of_the_light_spirit_form_png.png",
 		"localized_name": "Spirit Form",
-		"description": "Ezalor temporarily turns his body luminescent, gaining bonus movement speed, cast range, allows Illuminate to be channeled by a separate spirit, and grants the Recall and Blinding Light abilities.",
+		"description": "Ezalor temporarily turns his body luminescent, gaining bonus movement speed, cast range, grants the Blinding Light ability, and allows Illuminate to be channeled by a separate spirit and heal allies during the day.",
 		"lore": "In a flash of light, Ezalor reveals his true nature.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -48028,7 +48019,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Grants Visage the ability to cast Stone Form. Restores up to 25% of your health. Cooldown: 60. Manacost: 200.",
+		"shard_description": "Grants Visage the ability to cast Stone Form. Restores up to 35% of your health. Cooldown: 60. Manacost: 125.",
 		"json_data": {
 			"ID": "5482",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -48300,7 +48291,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Ending Tether stuns enemies touching it for 1.75 seconds and deals 150 damage. Increases movement speed bonus by 10%.",
+		"shard_description": "Tether stuns enemies touching it for 1.75 seconds and deals 150 damage. Does not affect the same unit more than once every 7 seconds. Increases movement speed bonus by 10%.",
 		"json_data": {
 			"ID": "5485",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -49451,7 +49442,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/medusa_mana_shield_png.png",
 		"localized_name": "Mana Shield",
-		"description": "Creates a shield that absorbs **70%** of incoming damage in exchange for Medusa's mana.",
+		"description": "Creates a shield that absorbs **70%** of incoming damage in exchange for Medusa's mana. Provides bonus mana capacity.",
 		"lore": "While Medusa was not gifted with eternal life upon birth, her curse bestowed her with impressive defensive powers.",
 		"note": "Absorbs damage before any damage reduction takes place, meaning that armor will not reduce the amount of mana needed to absorb damage.",
 		"scepter_grants": false,
@@ -50211,7 +50202,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Double Edge to increase Centaur's strength by 15% per hero hit for 12 seconds. Duration refreshes per stack. Max 5 Stacks. Slows enemies by 15% for 2 seconds.",
+		"shard_description": "Causes Double Edge to increase Centaur's strength by 15% per hero hit for 15 seconds. Duration refreshes per stack. Max 5 Stacks. Slows enemies by 25% for 2 seconds.",
 		"json_data": {
 			"ID": "5515",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -50372,7 +50363,7 @@
 		"lore": "The great belt of Omexe, which labels Bradwarden as the greatest warrior of his kind, incites his fellow gladiators to follow him into barbarous combat.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Heroes affected by Stampede take reduced damage, and are able to run through obstructions, including trees and up cliffs.",
+		"scepter_description": "Heroes affected by Stampede take reduced damage, and are able to run through obstructions, including trees and up cliffs. Increases duration by 1 second.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -53947,7 +53938,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/tusk_frozen_sigil_png.png",
 		"localized_name": "Frozen Sigil",
-		"description": "Summons a flying Sigil that slows enemy attack by -35 and movement speed by -35% for enemies within 650 radius. Lasts 25 seconds. Cooldown: 30",
+		"description": "Summons a flying Sigil that slows movement speed by -40% for enemies within 650 radius. Lasts 25 seconds. Cooldown: 30",
 		"lore": "The chill of home!",
 		"note": "If no order is given, the Sigil will follow Tusk.\nThe Sigil has unobstructed movement, has a 310 movement speed, requires 3/3/4/4 hero attacks to destroy and 12/12/16/16 creep attacks to destroy, provides 400/400 vision, and gives a 90/100/110/120 gold bounty.\nHeroes deal 1 damage to the sigil, while non-hero units deal 0.25 damage.",
 		"scepter_grants": false,
@@ -55181,8 +55172,8 @@
 			{
 				"talent_name": "special_bonus_unique_abaddon_2",
 				"key": "self_damage",
-				"value": "75 100 125 150",
-				"talent_value": "125 150 175 200",
+				"value": "75% 100% 125% 150%",
+				"talent_value": "125% 150% 175% 200%",
 				"header": "SELF DAMAGE:"
 			},
 			{
@@ -55374,7 +55365,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Mist Coil and Aphotic Shield to apply a Curse of Avernus stack on enemies. Increase base slow by 10%.",
+		"shard_description": "Causes Mist Coil and Aphotic Shield to apply a Curse of Avernus stack on enemies. Increase base slow by 10%. Lowers Cooldown for Mist Coil and Aphotic Shield by 1 second.",
 		"json_data": {
 			"ID": "5587",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -56381,7 +56372,7 @@
 		"note": "Duels will end if the units are pushed 2000 units apart.\nWinning a Duel automatically casts Press the Attack on yourself.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Increases Duel duration, makes Legion Commander Spell Immune in Duel, and makes Legion Commander and her opponent only take damage from each other.",
+		"scepter_description": "Increases Duel duration, and makes Legion Commander and her opponent only take 50% damage from other sources. Reduces cooldown by 20 seconds.",
 		"shard_grants": false,
 		"shard_upgrades": true,
 		"shard_description": "While Dueling, immediately and every 2 seconds, an Overwhelming Odds is cast centered on a random enemy unit within 900 radius. Does not center on the same target twice. Prioritizes heroes.",
@@ -56703,7 +56694,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Increases Blast Off! cast range by 600 and applies a 1.5 second stun to enemies in 200 AoE.",
+		"shard_description": "Increases Blast Off! cast range by 300 and applies a 1.75 second stun to affected enemies.",
 		"json_data": {
 			"ID": "5601",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
@@ -57251,7 +57242,7 @@
 		"scepter_description": "Increases cast range, initial remnant speed, and maximum charges. Activate Fire Remnant costs less mana.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Fire Remnants deal 45 damage per second in a 600 AoE around them. If Ember Spirit dies or kills an enemy hero within 400 range, a Fire Remnant appears nearby.",
+		"shard_description": "Fire Remnants deal 45 damage per second in a 600 AoE around them. If an enemy hero dies within 400 range of Ember Spirit, a Fire Remnant charge will be replenished.",
 		"json_data": {
 			"ID": "5606",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
@@ -57810,7 +57801,7 @@
 		"scepter_upgrades": true,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Stone Remnant to provide 400 ground vision. Increases charge count by 4.",
+		"shard_description": "Causes Stone Remnant to provide 375 ground vision. Increases charge count by 4.",
 		"json_data": {
 			"ID": "5611",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -58031,7 +58022,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Firestorm can be self-targeted. When used that way, the Firestorm follows Underlord around. Also causes Firestorm to heal him for 15% of the damage values. Reduces cast point by half.",
+		"shard_description": "Firestorm can be self-targeted. When used that way, the Firestorm follows Underlord around. Increases the wave count by 3. Reduces cast point by half.",
 		"json_data": {
 			"ID": "5613",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -58303,7 +58294,7 @@
 		"note": "Double-click to teleport to your team's base fountain.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Dark Rift can be cast on allied heroes. Reduces cast delay by 1 second and cooldown by 50 seconds.",
+		"scepter_description": "Dark Rift has two charges and can be cast on allied heroes. Reduces cast delay by 1 second.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -59888,7 +59879,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes False Promise to have a 0.3-second fade delay invisibility.",
+		"shard_description": "Causes False Promise to have a 0.15-second fade delay invisibility.",
 		"json_data": {
 			"ID": "5640",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -60713,7 +60704,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "When Cold Embrace ends, a Splinter Blast goes off at that location, hitting enemies within 1200 range. Increases Splinter Blast damage by 80.",
+		"shard_description": "When Cold Embrace ends, a Splinter Blast goes off at that location, hitting enemies within 1200 range. Reduces cooldown by 5 seconds.",
 		"json_data": {
 			"ID": "5653",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -62159,7 +62150,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Magnetic Field now pushes enemies out of the area at cast time, and provides allies in it with +20% Magic Resistance.",
+		"shard_description": "Magnetic Field now pushes enemies out of the area at cast time, and provides allies in it with +40% Magic Resistance. Slows enemies inside by 20%.",
 		"json_data": {
 			"ID": "5678",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -62568,7 +62559,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Essence Flux becomes 1.5 second channel ability. Swaps Outworld Destroyer's current Life and Mana totals. Only transfers 75% of the respective values. Cooldown: 45",
+		"shard_description": "Essence Flux becomes castable ability with 0.75 cast time. Swaps Outworld Destroyer's current Life and Mana totals. Cooldown: 45",
 		"json_data": {
 			"ID": "5684",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -62655,7 +62646,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Drains 0.75 armor per second and gives it to Death Prophet. Armor gain/loss lasts for 14 seconds.",
+		"shard_description": "Increases Spirit Siphon charges by 1 and causes enemies to be feared for 2 seconds if they are siphoned for 4 seconds consecutively.",
 		"json_data": {
 			"ID": "5685",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -62931,7 +62922,7 @@
 		],
 		"icon": "/panorama/images/spellicons/black_dragon_fireball_png.png",
 		"localized_name": "Fireball",
-		"description": "The Black Dragon hurls a fire blast on the ground, igniting the area in a **300** radius for **10** seconds. Enemies caught in the fire will take **85** damage per second.",
+		"description": "Hurls a fire blast on the ground, igniting the area in a **300** radius for **10** seconds. Enemies caught in the fire will take **85** damage per second.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -63037,7 +63028,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/faceless_void_time_dilation_png.png",
 		"localized_name": "Time Dilation",
-		"description": "Faceless Void traps all nearby enemies in a time dilation field for **8**/**10**/**12**/**14** seconds, extending their cooldowns and slowing their movement and attack speed by **10%** for each cooldown extended.",
+		"description": "Faceless Void traps all nearby enemies in a time dilation field for **8**/**10**/**12**/**14** seconds, extending their cooldowns and slowing their movement and attack speed by **10%** for each cooldown extended. Deals damage per second for each cooldown.",
 		"lore": "For those facing off against Darkterror, each moment seems to stretch into eternity.",
 		"note": "Does not affect item cooldowns.",
 		"scepter_grants": false,
@@ -68879,7 +68870,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "1.8x Dragon Blood HP Regen/Armor",
+		"localized_name": "+1.8 Dragon Blood HP Regen/Armor",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -75383,7 +75374,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Cursed Crown creates four brambles around the target after the counter ends. Triggers even upon dispel. Reduces cooldown by 3 seconds.",
+		"shard_description": "Cursed Crown creates four brambles around the target after the counter ends. Triggers even upon dispel. Reduces cooldown by 3 seconds and stun delay by 1 second.",
 		"json_data": {
 			"ID": "6342",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -76588,7 +76579,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+25 Dual Breath Burn Damage",
+		"localized_name": "25x Dual Breath Damage and Range",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -78185,7 +78176,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Scatterblast to knock units back in the point blank range for 250 units, dealing 125 extra damage and stunning for 1.5 seconds.",
+		"shard_description": "Causes Scatterblast to knock units back in the point blank range for 250 units, dealing 125 extra damage and stunning for 2 seconds.",
 		"json_data": {
 			"ID": "6480",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
@@ -80946,7 +80937,7 @@
 		"lore": "Only the very foolish dare to fight fair with the god of war.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Creates invulnerable soldiers around Mars' front while Bulwark is toggled on. Soldiers move alongside Mars, dealing his full damage +75 and applying procs. Attacks slow enemies by 20% for 1 second. An enemy can only be attacked by one soldier at a time.",
+		"scepter_description": "Creates invulnerable soldiers around Mars' front while Bulwark is toggled on. Soldiers move alongside Mars, dealing his full damage +75 and applying procs. Attacks slow enemies by 30% for 1 second. An enemy can only be attacked by one soldier at a time.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -84605,7 +84596,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+6 Skeletons Spawned",
+		"localized_name": "+6 Minimum Skeletons Spawned",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -87048,7 +87039,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+8 Reactive Armor Stacks",
+		"localized_name": "+8 Reactive Armor Stacks and Duration",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -91050,7 +91041,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Hawks become controllable and gain Dive Bomb. Channels for 1 second, revealing itself, and then flies towards the target enemy, dealing 175 damage and stunning them for 1 second, killing the hawk. Cast Range: 500.",
+		"shard_description": "Reduces Hawk cooldown by 15 seconds. Hawks gains Dive Bomb. Channels for 1 second, revealing itself, and then flies towards the target enemy, dealing 250 damage and stunning them for 2 seconds, killing the hawk. Cast Range: 1200.",
 		"json_data": {
 			"ID": "7231",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -91130,7 +91121,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Inner Fire to reduce healing and regeneration by 50% and applies a 40% movement speed slow. Lowers cooldown by 3 seconds.",
+		"shard_description": "Causes Inner Fire to reduce healing and regeneration by 50% and applies a 40% movement speed slow. Lowers cooldown by 3 seconds. Can be cast while disabled.",
 		"json_data": {
 			"ID": "7300",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -91361,7 +91352,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows Divine Favor to be cast on allies, teleporting them back home after **6** seconds. Cannot target Spell Immune Allies. Cast Range: 500",
+		"shard_description": "Allows Divine Favor to be cast on allies, teleporting them back home after **6** seconds. Cannot target Spell Immune Allies. Cast Range: 600",
 		"json_data": {
 			"ID": "7306",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -99169,7 +99160,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/lich_ice_spire_png.png",
 		"localized_name": "Ice Spire",
-		"description": "Creates an icicle at the target spot for **15** seconds, slowing enemies within **600** range by **-20%**. Has 600 health.\n\nChain Frost can bounce to the Icicle if there are no other enemies in range.\n\nCan cast Frost Shield on it.",
+		"description": "Creates an icicle at the target spot for **15** seconds, slowing enemies within **600** range by **-20%**. Has 800 health.\n\nChain Frost can bounce to the Icicle if there are no other enemies in range.\n\nCan cast Frost Shield on it.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -99365,7 +99356,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/hoodwink_sharpshooter_png.png",
 		"localized_name": "Sharpshooter",
-		"description": "Hoodwink charges up and fires a deadly bolt from her crossbow, dealing heavy damage, slow, and Break to an enemy Hero.  The damage and debuff duration scale up to max after **3** seconds, and the bolt is fired automatically after **5** seconds.\nHoodwink is knocked backwards for a distance of **350** from the force of the shot.",
+		"description": "Hoodwink charges up and fires a deadly bolt from her crossbow, dealing heavy damage and slow to an enemy Hero.  The damage and debuff duration scale up to max after **3** seconds, and the bolt is fired automatically after **5** seconds.\nHoodwink is knocked backwards for a distance of **350** from the force of the shot.",
 		"lore": "While her first arbalest was a chance discovery, Hoodwink now takes great care in carving and caring for her own -- of course with some necessary components pilfered or otherwise cleverly procured.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -99740,8 +99731,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "20 40 60 80",
-				"header": "BONUS DAMAGE:"
+				"value": "20 40 60 80"
 			},
 			{
 				"key": "projectile_speed",
@@ -99774,7 +99764,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/hoodwink_acorn_shot_png.png",
 		"localized_name": "Acorn Shot",
-		"description": "Fires Hoodwink's attack with an acorn at the target unit.  The acorn bounces to nearby targets, slowing them and dealing bonus damage.\nIf point targeted, a tree is created at the target position and the acorn will bounce to nearby targets.",
+		"description": "Fires Hoodwink's attack with an acorn at the target unit.  The acorn bounces to nearby targets, slowing them and dealing a percentage of Hoodwink's attack with bonus damage.\nIf point targeted, a tree is created at the target position and the acorn will bounce to nearby targets.  The ability may be placed on auto-cast to force this behavior.",
 		"lore": "Though she'll make do with almost anything, Oak and Ironwood acorns make the most effective projectiles -- and the bulk of Hoodwink's stash.",
 		"note": "The same target can be hit more than once.\nBounces will seek units in the fog of war in a 525 radius, but not invisible units.\nThe planted tree lasts for 20 seconds.\nAcorn Shot benefits from attack range bonuses.",
 		"scepter_grants": false,
