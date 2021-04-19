@@ -6314,7 +6314,7 @@
 		"cost": 4600,
 		"cooldown": "30",
 		"mana_cost": "125",
-		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take %tooltip_damage_incoming_melee_total_pct% damage \n\nCooldown increased by %tooltip_ranged_cooldown_increase% seconds on ranged heroes.\n\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
 		"lore": "An axe made of reflective materials that causes confusion amongst enemy ranks.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7680,7 +7680,9 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "10"
+				"value": "10",
+				"header": "+",
+				"footer": "Damage"
 			},
 			{
 				"key": "bonus_attack_speed",
@@ -17971,7 +17973,7 @@
 	},
 	{
 		"id": 633,
-		"name": "item_recipe_helm_of_the_dominator_2",
+		"name": "item_recipe_helm_of_the_overlord",
 		"localized_name": "Helm of the Overlord Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1600,
@@ -17982,7 +17984,7 @@
 			"ItemCost": "1600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
-			"ItemResult": "item_helm_of_the_dominator_2",
+			"ItemResult": "item_helm_of_the_overlord",
 			"ItemRequirements": {
 				"01": "item_helm_of_the_dominator;item_ultimate_orb"
 			}
@@ -17990,11 +17992,10 @@
 	},
 	{
 		"id": 635,
-		"name": "item_helm_of_the_dominator_2",
+		"name": "item_helm_of_the_overlord",
 		"localized_name": "Helm of the Overlord",
 		"aliases": "hotd|helm of the dominator",
 		"quality": "artifact",
-		"icon": "/panorama/images/items/helm_of_the_dominator_2_png.png",
 		"cost": 6000,
 		"cooldown": "45",
 		"cast_range": "700",
@@ -18058,7 +18059,7 @@
 				"value": "2"
 			}
 		],
-		"recipe": "item_helm_of_the_dominator|item_ultimate_orb|item_recipe_helm_of_the_dominator_2",
+		"recipe": "item_helm_of_the_dominator|item_ultimate_orb|item_recipe_helm_of_the_overlord",
 		"json_data": {
 			"ID": "635",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
