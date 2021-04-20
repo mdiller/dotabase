@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date
+from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime
 from sqlalchemy.orm import sessionmaker, relationship
 import os
 
@@ -260,6 +260,14 @@ class LoadingScreen(Base):
 	hero_ids = Column(String)
 	category = Column(String)
 
+class Patch(Base):
+	__tablename__ = 'patches'
+
+	number = Column(String, primary_key=True)
+	timestamp = Column(DateTime)
+	dota_url = Column(String)
+	custom_url = Column(String)
+	wiki_url = Column(String)
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
