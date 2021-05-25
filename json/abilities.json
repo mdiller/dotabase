@@ -14576,7 +14576,7 @@
 		"spell_immunity": "yes",
 		"dispellable": "no",
 		"cast_point": "0.4",
-		"cooldown": "16 14 12 10",
+		"cooldown": "17 15 13 11",
 		"damage": "0",
 		"mana_cost": "80 90 100 110",
 		"ability_special": [
@@ -14619,7 +14619,7 @@
 			"AbilityCastPoint": "0.4",
 			"AbilityCastAnimation": "ACT_DOTA_OVERRIDE_ABILITY_1",
 			"AbilityCastGestureSlot": "DEFAULT",
-			"AbilityCooldown": "16 14 12 10",
+			"AbilityCooldown": "17 15 13 11",
 			"AbilityDamage": "0 0 0 0",
 			"AbilityManaCost": "80 90 100 110",
 			"AbilitySpecial": {
@@ -14786,7 +14786,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 35 and proc chance by 10%.",
+		"shard_description": "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 35 and proc chance by 5%.",
 		"json_data": {
 			"ID": "5009",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -21003,7 +21003,7 @@
 		"target_team": "friendly",
 		"cast_point": "0.1",
 		"cooldown": "50",
-		"mana_cost": "65 70 75 80",
+		"mana_cost": "70 80 90 100",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_wraith_king_2",
@@ -21057,7 +21057,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "50",
-			"AbilityManaCost": "65 70 75 80",
+			"AbilityManaCost": "70 80 90 100",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -21099,7 +21099,7 @@
 		"hero_id": 42,
 		"behavior": "passive",
 		"target_team": "enemy",
-		"cooldown": "4",
+		"cooldown": "5.5 5 4.5 4",
 		"ability_special": [
 			{
 				"key": "crit_mult",
@@ -21123,7 +21123,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilitySound": "Hero_SkeletonKing.CriticalStrike",
-			"AbilityCooldown": "4",
+			"AbilityCooldown": "5.5 5 4.5 4",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -27800,13 +27800,13 @@
 			{
 				"talent_name": "special_bonus_unique_warlock_7",
 				"key": "damage",
-				"value": "15 25 35 45",
-				"talent_value": "40 50 60 70",
+				"value": "18 27 36 45",
+				"talent_value": "43 52 61 70",
 				"header": "HEAL/DAMAGE:"
 			},
 			{
 				"key": "duration",
-				"value": "12",
+				"value": "10",
 				"header": "DURATION:"
 			},
 			{
@@ -27843,12 +27843,12 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "15 25 35 45",
+					"damage": "18 27 36 45",
 					"LinkedSpecialBonus": "special_bonus_unique_warlock_7"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "12.0"
+					"duration": "10.0"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -36326,6 +36326,13 @@
 				"key": "count_scepter",
 				"value": "6 10 14 18",
 				"header": "SCEPTER MAX WEBS:"
+			},
+			{
+				"talent_name": "special_bonus_unique_broodmother_5",
+				"talent_operation": "SPECIAL_BONUS_SUBTRACT",
+				"key": "AbilityChargeRestoreTime",
+				"value": "",
+				"talent_value": "-15"
 			}
 		],
 		"slot": 2,
@@ -36382,6 +36389,12 @@
 					"var_type": "FIELD_INTEGER",
 					"count_scepter": "6 10 14 18",
 					"RequiresScepter": "1"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"AbilityChargeRestoreTime": "",
+					"LinkedSpecialBonus": "special_bonus_unique_broodmother_5",
+					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -36461,8 +36474,8 @@
 			{
 				"talent_name": "special_bonus_unique_broodmother_1",
 				"key": "lifesteal_pct",
-				"value": "70% 80% 90% 100%",
-				"talent_value": "120% 130% 140% 150%",
+				"value": "40% 60% 80% 100%",
+				"talent_value": "90% 110% 130% 150%",
 				"header": "LIFESTEAL:"
 			},
 			{
@@ -36498,7 +36511,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"lifesteal_pct": "70 80 90 100",
+					"lifesteal_pct": "40 60 80 100",
 					"LinkedSpecialBonus": "special_bonus_unique_broodmother_1"
 				},
 				"03": {
@@ -40759,8 +40772,8 @@
 			{
 				"talent_name": "special_bonus_unique_ancient_apparition_4",
 				"key": "spell_resist_pct",
-				"value": "-15% -20% -25% -30%",
-				"talent_value": "-21% -26% -31% -36%",
+				"value": "-12% -16% -20% -24%",
+				"talent_value": "-18% -22% -26% -30%",
 				"header": "INCREASED MAGIC DAMAGE:"
 			},
 			{
@@ -40814,7 +40827,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"spell_resist_pct": "-15 -20 -25 -30",
+					"spell_resist_pct": "-12 -16 -20 -24",
 					"LinkedSpecialBonus": "special_bonus_unique_ancient_apparition_4"
 				},
 				"05": {
@@ -40915,7 +40928,7 @@
 		"cast_range": "0",
 		"cast_point": "0.01",
 		"cooldown": "40",
-		"damage": "250 350 450",
+		"damage": "250 325 400",
 		"mana_cost": "175",
 		"ability_special": [
 			{
@@ -40984,7 +40997,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "40.0",
 			"AbilityManaCost": "175",
-			"AbilityDamage": "250 350 450",
+			"AbilityDamage": "250 325 400",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -43054,7 +43067,7 @@
 			},
 			{
 				"key": "freeze_cooldown",
-				"value": "0.77 0.74 0.71 0.69 0.66 0.63 0.60 0.57",
+				"value": "0.83 0.80 0.77 0.74 0.71 0.68 0.65 0.62",
 				"header": "FREEZE COOLDOWN (QUAS):"
 			},
 			{
@@ -43108,7 +43121,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"freeze_cooldown": "0.77 0.74 0.71 0.69 0.66 0.63 0.60 0.57",
+					"freeze_cooldown": "0.83 0.80 0.77 0.74 0.71 0.68 0.65 0.62",
 					"levelkey": "quaslevel"
 				},
 				"04": {
@@ -43775,8 +43788,8 @@
 			{
 				"talent_name": "special_bonus_unique_invoker_5",
 				"key": "bonus_damage",
-				"value": "10 25 40 55 70 85 100 115",
-				"talent_value": "45 60 75 90 105 120 135 150",
+				"value": "10 22 34 46 58 70 82 94",
+				"talent_value": "45 57 69 81 93 105 117 129",
 				"header": "BONUS DAMAGE (EXORT):"
 			},
 			{
@@ -43818,7 +43831,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "10 25 40 55 70 85 100 115",
+					"bonus_damage": "10 22 34 46 58 70 82 94",
 					"levelkey": "exortlevel",
 					"LinkedSpecialBonus": "special_bonus_unique_invoker_5"
 				},
@@ -52523,7 +52536,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "stone_form_scepter_base",
-				"value": "1.5",
+				"value": "1.3",
 				"header": "SCEPTER BASE DURATION:"
 			},
 			{
@@ -52609,7 +52622,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_FLOAT",
-					"stone_form_scepter_base": "1.5",
+					"stone_form_scepter_base": "1.3",
 					"RequiresScepter": "1"
 				},
 				"10": {
@@ -53536,7 +53549,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "yes_enemies_no",
 		"dispellable": "no",
-		"cooldown": "90",
+		"cooldown": "100",
 		"mana_cost": "150 200 250",
 		"ability_special": [
 			{
@@ -53597,7 +53610,7 @@
 			"AbilitySound": "Hero_Centaur.Stampede",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"HasScepterUpgrade": "1",
-			"AbilityCooldown": "90",
+			"AbilityCooldown": "100",
 			"AbilityManaCost": "150 200 250",
 			"AbilityModifierSupportValue": "0.2",
 			"AbilitySpecial": {
@@ -55734,7 +55747,7 @@
 		"dispellable": "yes",
 		"cast_range": "600",
 		"cast_point": "0.3",
-		"cooldown": "1.5",
+		"cooldown": "1.75",
 		"mana_cost": "12 16 20 24",
 		"ability_special": [
 			{
@@ -55782,7 +55795,7 @@
 			{
 				"aghs_upgrade": "1",
 				"key": "radius_scepter",
-				"value": "950",
+				"value": "900",
 				"header": "SCEPTER RADIUS:"
 			},
 			{
@@ -55815,7 +55828,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.3",
-			"AbilityCooldown": "1.5 1.5 1.5 1.5",
+			"AbilityCooldown": "1.75",
 			"AbilityManaCost": "12 16 20 24",
 			"AbilitySpecial": {
 				"01": {
@@ -55854,7 +55867,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"radius_scepter": "950",
+					"radius_scepter": "900",
 					"RequiresScepter": "1"
 				},
 				"10": {
@@ -78683,7 +78696,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Cursed Crown creates four brambles around the target after the counter ends. Triggers even upon dispel. Reduces cooldown by 3 seconds and stun delay by 1 second.",
+		"shard_description": "Cursed Crown creates four brambles around the target after the counter ends. Triggers even upon dispel. Reduces cooldown by 2 seconds and stun delay by 1 second.",
 		"json_data": {
 			"ID": "6342",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -79397,11 +79410,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "18"
+				"value": "15"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+18 Spiders Attack Damage",
+		"localized_name": "+15 Spiders Attack Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -79413,7 +79426,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "18",
+					"value": "15",
 					"ad_linked_ability": "broodmother_spawn_spiderlings"
 				}
 			}
@@ -81802,7 +81815,7 @@
 			},
 			{
 				"key": "impact_stun_duration",
-				"value": "1.6 1.8 2 2.2",
+				"value": "1.3 1.6 1.9 2.2",
 				"header": "IMPACT STUN DURATION:"
 			},
 			{
@@ -81873,7 +81886,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"impact_stun_duration": "1.6 1.8 2.0 2.2"
+					"impact_stun_duration": "1.3 1.6 1.9 2.2"
 				},
 				"11": {
 					"var_type": "FIELD_FLOAT",
@@ -82217,7 +82230,7 @@
 			},
 			{
 				"key": "armor_reduction_per_attack",
-				"value": "1",
+				"value": "0.75",
 				"header": "ARMOR LOSS PER STACK:"
 			},
 			{
@@ -82274,8 +82287,8 @@
 					"base_attack_time": "1.0"
 				},
 				"07": {
-					"var_type": "FIELD_INTEGER",
-					"armor_reduction_per_attack": "1"
+					"var_type": "FIELD_FLOAT",
+					"armor_reduction_per_attack": "0.75"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -96118,11 +96131,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "3"
+				"value": "1.5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-3s Mystic Snake Cooldown",
+		"localized_name": "-1.5s Mystic Snake Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -96133,8 +96146,8 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "3",
+					"var_type": "FIELD_FLOAT",
+					"value": "1.5",
 					"ad_linked_ability": "medusa_mystic_snake"
 				}
 			}
@@ -100409,11 +100422,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "8"
+				"value": "7"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-8s Bramble Maze CD",
+		"localized_name": "-7s Bramble Maze CD",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -100425,7 +100438,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "8",
+					"value": "7",
 					"ad_linked_ability": "dark_willow_bramble_maze"
 				}
 			}
@@ -103380,6 +103393,35 @@
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "1"
+		}
+	},
+	{
+		"id": 8033,
+		"name": "special_bonus_unique_broodmother_5",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "15"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-15s Spin Web Recharge Time",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "8033",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_INTEGER",
+					"value": "15",
+					"ad_linked_ability": "broodmother_spin_web"
+				}
+			}
 		}
 	},
 	{
