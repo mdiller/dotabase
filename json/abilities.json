@@ -9360,7 +9360,7 @@
 					"burn_interval": "0.5"
 				}
 			},
-			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5"
 		}
 	},
 	{
@@ -35078,7 +35078,7 @@
 			},
 			{
 				"key": "status_resistance",
-				"value": "50",
+				"value": "50%",
 				"header": "STATUS RESISTANCE:"
 			},
 			{
@@ -43781,8 +43781,8 @@
 			{
 				"talent_name": "special_bonus_unique_invoker_5",
 				"key": "bonus_attack_speed",
-				"value": "10 25 40 55 70 85 100 115",
-				"talent_value": "45 60 75 90 105 120 135 150",
+				"value": "10 22 34 46 58 70 82 94",
+				"talent_value": "45 57 69 81 93 105 117 129",
 				"header": "BONUS ATTACK SPEED (WEX):"
 			},
 			{
@@ -43825,7 +43825,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "10 25 40 55 70 85 100 115",
+					"bonus_attack_speed": "10 22 34 46 58 70 82 94",
 					"levelkey": "wexlevel",
 					"LinkedSpecialBonus": "special_bonus_unique_invoker_5"
 				},
@@ -51886,6 +51886,10 @@
 				"key": "radius",
 				"value": "1200",
 				"header": "RADIUS:"
+			},
+			{
+				"key": "allow_multiple",
+				"value": "0"
 			}
 		],
 		"icon": "/panorama/images/spellicons/forest_troll_high_priest_mana_aura_png.png",
@@ -51907,6 +51911,10 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"radius": "1200"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"allow_multiple": "0"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -102719,7 +102727,7 @@
 		"id": 8021,
 		"name": "seasonal_ti10_disco_ball_channel",
 		"behavior": "unit_target|channelled|hidden",
-		"cast_range": "9000",
+		"cast_range": "600",
 		"cast_point": "0.1",
 		"channel_time": "30",
 		"cooldown": "0",
@@ -102742,7 +102750,7 @@
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AbilityTextureName": "consumables/seasonal_ti10_disco_ball_channel",
-			"AbilityCastRange": "9000",
+			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "0",
 			"AbilityChannelTime": "30.0",
@@ -103420,6 +103428,131 @@
 					"var_type": "FIELD_INTEGER",
 					"value": "15",
 					"ad_linked_ability": "broodmother_spin_web"
+				}
+			}
+		}
+	},
+	{
+		"id": 8034,
+		"name": "plus_high_five",
+		"behavior": "no_target|immediate|not_learnable",
+		"cast_point": "0",
+		"cooldown": "60",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "think_interval",
+				"value": "0.2"
+			},
+			{
+				"key": "acknowledge_range",
+				"value": "900"
+			},
+			{
+				"key": "request_duration",
+				"value": "10"
+			},
+			{
+				"key": "high_five_speed",
+				"value": "700"
+			},
+			{
+				"key": "acknowledged_cooldown",
+				"value": "1"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "plus_high_five",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "8034",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "60",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"think_interval": "0.2"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"acknowledge_range": "900"
+				},
+				"03": {
+					"var_type": "FIELD_FLOAT",
+					"request_duration": "10.0"
+				},
+				"04": {
+					"var_type": "FIELD_FLOAT",
+					"high_five_speed": "700.0"
+				},
+				"05": {
+					"var_type": "FIELD_FLOAT",
+					"acknowledged_cooldown": "1.0"
+				}
+			}
+		}
+	},
+	{
+		"id": 8035,
+		"name": "plus_guild_banner",
+		"behavior": "point|not_learnable|ignore_backswing",
+		"cast_range": "400",
+		"cast_point": "0.1",
+		"cooldown": "60",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "size",
+				"value": "0.7"
+			},
+			{
+				"key": "max_simultaneous",
+				"value": "1"
+			},
+			{
+				"key": "lifetime",
+				"value": "60"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "plus_guild_banner",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "8035",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"EventID": "25",
+			"AbilityCastRange": "400",
+			"AbilityCastPoint": "0.1",
+			"AbilityCooldown": "60",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilitySpecial": {
+				"01": {
+					"var_type": "FIELD_FLOAT",
+					"size": "0.7"
+				},
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"max_simultaneous": "1"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"lifetime": "60"
 				}
 			}
 		}
