@@ -4204,10 +4204,64 @@
 		"required": true
 	},
 	{
+		"name": "IsDavionDH",
+		"matchkey": "customresponse",
+		"matchvalue": "davion_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsInDragonForm",
 		"pretty": "while in dragon form",
 		"matchkey": "dragonform",
 		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotPersona",
+		"matchkey": "customresponse",
+		"matchvalue": "!=davion_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDavionTeleport",
+		"pretty": "Town Portal Scroll",
+		"matchkey": "abilityname",
+		"matchvalue": "item_tpscroll",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFireBreath",
+		"pretty": "Breathe Fire",
+		"matchkey": "abilityname",
+		"matchvalue": "dragon_knight_breathe_fire",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDragonTail",
+		"pretty": "Dragon Tail",
+		"matchkey": "abilityname",
+		"matchvalue": "dragon_knight_dragon_tail",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDragonsBlood",
+		"pretty": "Dragon Blood",
+		"matchkey": "abilityname",
+		"matchvalue": "dragon_knight_dragon_blood",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDragonShift",
+		"pretty": "Elder Dragon Form",
+		"matchkey": "abilityname",
+		"matchvalue": "dragon_knight_elder_dragon_form",
 		"weight": 5.0,
 		"required": true
 	},
@@ -4239,6 +4293,14 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "dk_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDKPersonaLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "dk_persona_loadout_spawn",
 		"weight": 5.0,
 		"required": true
 	},
@@ -5828,9 +5890,23 @@
 		"required": true
 	},
 	{
-		"name": "IsOldvoker",
+		"name": "IsOldvoke",
 		"matchkey": "customresponse",
 		"matchvalue": "!=kid_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotHappy",
+		"matchkey": "customresponse",
+		"matchvalue": "!=happy_kidvoker",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsKidvokerHappy",
+		"matchkey": "customresponse",
+		"matchvalue": "happy_kidvoker",
 		"weight": 5.0,
 		"required": true
 	},
@@ -12152,6 +12228,14 @@
 		"required": true
 	},
 	{
+		"name": "IsPowerupWater",
+		"pretty": "IsPowerupWater",
+		"matchkey": "poweruptype",
+		"matchvalue": "DOTA_RUNE_WATER",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "IsPrimaryAttributeStrength",
 		"pretty": "IsPrimaryAttributeStrength",
 		"matchkey": "primaryattribute",
@@ -13275,6 +13359,102 @@
 		"pretty": "Yasha and Kaya",
 		"matchkey": "itemname",
 		"matchvalue": "item_yasha_and_kaya",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsFluffyHat",
+		"pretty": "Fluffy Hat",
+		"matchkey": "itemname",
+		"matchvalue": "item_fluffy_hat",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsFalconBlade",
+		"pretty": "Falcon Blade",
+		"matchkey": "itemname",
+		"matchvalue": "item_falcon_blade",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsOrbOfCorrosion",
+		"pretty": "Orb of Corrosion",
+		"matchkey": "itemname",
+		"matchvalue": "item_orb_of_corrosion",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsWitchBlade",
+		"pretty": "Witch Blade",
+		"matchkey": "itemname",
+		"matchvalue": "item_witch_blade",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsMageSlayer",
+		"pretty": "Mage Slayer",
+		"matchkey": "itemname",
+		"matchvalue": "item_mage_slayer",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsEternalShroud",
+		"pretty": "Eternal Shroud",
+		"matchkey": "itemname",
+		"matchvalue": "item_eternal_shroud",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsHelmOfOverlord",
+		"pretty": "Helm of the Overlord",
+		"matchkey": "itemname",
+		"matchvalue": "item_helm_of_the_overlord",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsOverwhelmingBlink",
+		"pretty": "Overwhelming Blink",
+		"matchkey": "itemname",
+		"matchvalue": "item_overwhelming_blink",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsSwiftBlink",
+		"pretty": "Swift Blink",
+		"matchkey": "itemname",
+		"matchvalue": "item_swift_blink",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsArcaneBlink",
+		"pretty": "Arcane Blink",
+		"matchkey": "itemname",
+		"matchvalue": "item_arcane_blink",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsWindWaker",
+		"pretty": "Wind Waker",
+		"matchkey": "itemname",
+		"matchvalue": "item_wind_waker",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "IsAghShard",
+		"pretty": "Aghanim's Shard",
+		"matchkey": "itemname",
+		"matchvalue": "item_aghanims_shard",
 		"weight": 1.0,
 		"required": true
 	},
@@ -17679,6 +17859,43 @@
 		"required": true
 	},
 	{
+		"name": "IsSpecArcana",
+		"matchkey": "customresponse",
+		"matchvalue": "spec_arc_low",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFocused",
+		"pretty": "IsFocused",
+		"matchkey": "spectre_voice",
+		"matchvalue": "focused",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsScattered",
+		"pretty": "IsScattered",
+		"matchkey": "spectre_voice",
+		"matchvalue": "scattered",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotArcana",
+		"matchkey": "customresponse",
+		"matchvalue": "!=spec_arc_low",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotCompendium",
+		"matchkey": "customresponse",
+		"matchvalue": "!=compendium2014",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsSpectreSpecDagger",
 		"pretty": "Spectral Dagger",
 		"matchkey": "abilityname",
@@ -17730,6 +17947,94 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "spectre_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreArcLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "spectre_arc_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono1",
+		"pretty": "IsSpectreMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono2",
+		"pretty": "IsSpectreMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono3",
+		"pretty": "IsSpectreMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono4",
+		"pretty": "IsSpectreMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono5",
+		"pretty": "IsSpectreMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono6",
+		"pretty": "IsSpectreMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMono7",
+		"pretty": "IsSpectreMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMonoGroup1",
+		"pretty": "IsSpectreMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMonoGroup2",
+		"pretty": "IsSpectreMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsSpectreMonoDone",
+		"pretty": "IsSpectreMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=7",
 		"weight": 5.0,
 		"required": true
 	},
@@ -20751,6 +21056,14 @@
 		"required": true
 	},
 	{
+		"name": "GrandmasterTier",
+		"pretty": "grandmaster",
+		"matchkey": "badge_tier",
+		"matchvalue": "grandmaster",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "PlatinumTier",
 		"pretty": "platinum",
 		"matchkey": "badge_tier",
@@ -20767,14 +21080,6 @@
 		"required": true
 	},
 	{
-		"name": "BronzeTier",
-		"pretty": "bronze",
-		"matchkey": "badge_tier",
-		"matchvalue": "bronze",
-		"weight": 1.0,
-		"required": true
-	},
-	{
 		"name": "GoldTier",
 		"pretty": "gold",
 		"matchkey": "badge_tier",
@@ -20783,18 +21088,18 @@
 		"required": true
 	},
 	{
-		"name": "MasterTier",
-		"pretty": "master",
+		"name": "BronzeTier",
+		"pretty": "bronze",
 		"matchkey": "badge_tier",
-		"matchvalue": "master",
+		"matchvalue": "bronze",
 		"weight": 1.0,
 		"required": true
 	},
 	{
-		"name": "GrandmasterTier",
-		"pretty": "grandmaster",
+		"name": "MasterTier",
+		"pretty": "master",
 		"matchkey": "badge_tier",
-		"matchvalue": "grandmaster",
+		"matchvalue": "master",
 		"weight": 1.0,
 		"required": true
 	},
