@@ -196,7 +196,7 @@
 		"aliases": "helm of iron will",
 		"quality": "component",
 		"icon": "/panorama/images/items/helm_of_iron_will_png.png",
-		"cost": 950,
+		"cost": 975,
 		"lore": "The helmet of a legendary warrior who fell in battle.",
 		"secret_shop": false,
 		"ability_special": [
@@ -216,7 +216,7 @@
 		"json_data": {
 			"ID": "6",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "950",
+			"ItemCost": "975",
 			"ItemShopTags": "armor;regen_health",
 			"ItemQuality": "component",
 			"ItemAliases": "helm of iron will",
@@ -1632,7 +1632,7 @@
 		"cost": 675,
 		"cooldown": "0.5",
 		"cast_range": "350",
-		"description": "# Active: Regenerate\nConsumes a charge to restore **110** health and **60** mana over **2.7** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 2 minutes.\n\nUsing a stored rune fully refills the Bottle.",
+		"description": "# Active: Regenerate\nConsumes a charge to restore **110** health and **60** mana over **2.7** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.\n\nRange: **350**\n\n# Passive:  Store Rune\nRunes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 90 seconds.\n\nUsing a stored rune fully refills the Bottle.",
 		"lore": "An old bottle that survived the ages, the contents placed inside become enchanted.",
 		"secret_shop": false,
 		"ability_special": [
@@ -1663,6 +1663,10 @@
 			{
 				"key": "break_on_hero_damage",
 				"value": "1"
+			},
+			{
+				"key": "rune_expire_time",
+				"value": "90"
 			}
 		],
 		"json_data": {
@@ -1716,6 +1720,10 @@
 				"07": {
 					"var_type": "FIELD_INTEGER",
 					"break_on_hero_damage": "1"
+				},
+				"08": {
+					"var_type": "FIELD_FLOAT",
+					"rune_expire_time": "90.0"
 				}
 			}
 		}
@@ -3127,7 +3135,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "1.5",
+				"value": "2",
 				"header": "+",
 				"footer": "Armor"
 			}
@@ -3161,7 +3169,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_armor": "1.5"
+					"bonus_armor": "2"
 				}
 			}
 		}
@@ -3363,13 +3371,13 @@
 		"name": "item_recipe_vladmir",
 		"localized_name": "Vladmir's Offering Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 500,
+		"cost": 400,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "80",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "500",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_vladmir",
@@ -3385,7 +3393,7 @@
 		"aliases": "vladmir's offering|vlads",
 		"quality": "rare",
 		"icon": "/panorama/images/items/vladmir_png.png",
-		"cost": 2700,
+		"cost": 2600,
 		"cast_range": "1200",
 		"description": "# Passive: Vladmir's Aura\nGrants **15%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
@@ -3417,7 +3425,7 @@
 			"ID": "81",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCastRange": "1200",
-			"ItemCost": "2700",
+			"ItemCost": "2600",
 			"ItemShopTags": "damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
@@ -4742,13 +4750,13 @@
 		"name": "item_recipe_heart",
 		"localized_name": "Heart of Tarrasque Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1300,
+		"cost": 1200,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "113",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1300",
+			"ItemCost": "1200",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_heart",
@@ -4764,7 +4772,7 @@
 		"aliases": "hot|heart of tarrasque",
 		"quality": "epic",
 		"icon": "/panorama/images/items/heart_png.png",
-		"cost": 5100,
+		"cost": 5000,
 		"lore": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
 		"secret_shop": false,
 		"ability_special": [
@@ -4791,7 +4799,7 @@
 		"json_data": {
 			"ID": "114",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "5100",
+			"ItemCost": "5000",
 			"ItemShopTags": "str;regen_health;health_pool",
 			"ItemQuality": "epic",
 			"ItemAliases": "hot;heart of tarrasque",
@@ -5317,7 +5325,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "14",
+				"value": "16",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -5357,7 +5365,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "14"
+					"bonus_all_stats": "16"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -6065,13 +6073,13 @@
 		"name": "item_recipe_basher",
 		"localized_name": "Skull Basher Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 900,
+		"cost": 825,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "142",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "900",
+			"ItemCost": "825",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_basher",
@@ -6087,7 +6095,7 @@
 		"aliases": "skull basher",
 		"quality": "epic",
 		"icon": "/panorama/images/items/basher_png.png",
-		"cost": 2950,
+		"cost": 2875,
 		"cooldown": "2.3",
 		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus physical damage.  Bash chance for ranged heroes is **10%**.",
 		"lore": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
@@ -6133,7 +6141,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityCooldown": "2.3",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
-			"ItemCost": "2950",
+			"ItemCost": "2875",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "skull basher",
@@ -6181,13 +6189,13 @@
 		"cost": 4130,
 		"cooldown": "4",
 		"cast_range": "350",
-		"description": "# Active: Chop Tree\nDestroy a target tree.\n\nCast Range: **350**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **18** for melee heroes, and **6** for ranged. \n\n# Passive: Cleave\nDeals **70%** of attack damage as physical damage in a cone up to **650** around the target. Deals **40%** against creeps. (Melee Only)",
+		"description": "# Active: Chop Tree\nDestroy a target tree.\n\nCast Range: **350**\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **15** for melee heroes, and **6** for ranged. \n\n# Passive: Cleave\nDeals **70%** of attack damage as physical damage in a cone up to **650** around the target. Deals **40%** against creeps. (Melee Only)",
 		"lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "55",
+				"value": "60",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6213,7 +6221,7 @@
 			},
 			{
 				"key": "quelling_bonus",
-				"value": "18"
+				"value": "15"
 			},
 			{
 				"key": "quelling_bonus_ranged",
@@ -6250,7 +6258,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "55"
+					"bonus_damage": "60"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -6270,7 +6278,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"quelling_bonus": "18"
+					"quelling_bonus": "15"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -6581,7 +6589,7 @@
 		"aliases": "armlet of mordiggian",
 		"quality": "epic",
 		"icon": "/panorama/images/items/armlet_png.png",
-		"cost": 2475,
+		"cost": 2500,
 		"cooldown": "0",
 		"description": "# Toggle: Unholy Strength\nWhen active, Unholy Strength grants +**35** damage, +**25** strength and +**4** armor, but drains **40** health per second.\n\n You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated.",
 		"lore": "Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.",
@@ -6641,7 +6649,7 @@
 			"ID": "151",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCooldown": "0.0",
-			"ItemCost": "2475",
+			"ItemCost": "2500",
 			"ItemShopTags": "damage;attack_speed;armor;regen_health;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "armlet of mordiggian",
@@ -6707,7 +6715,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "25",
+				"value": "20",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6751,7 +6759,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "25"
+					"bonus_damage": "20"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -6884,7 +6892,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "55",
+				"value": "45",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6925,7 +6933,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "55"
+					"bonus_damage": "45"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -6989,7 +6997,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "65",
+				"value": "70",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -7074,7 +7082,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "65"
+					"bonus_attack_speed": "70"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -7325,7 +7333,7 @@
 		"aliases": "hotd|helm of the dominator",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/helm_of_the_dominator_png.png",
-		"cost": 2375,
+		"cost": 2400,
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
@@ -7402,7 +7410,7 @@
 			"MaxUpgradeLevel": "2",
 			"ItemBaseLevel": "1",
 			"AbilityManaCost": "0",
-			"ItemCost": "2375",
+			"ItemCost": "2400",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hotd;helm of the dominator",
@@ -9183,7 +9191,7 @@
 		"aliases": "abyssal blade",
 		"quality": "epic",
 		"icon": "/panorama/images/items/abyssal_blade_png.png",
-		"cost": 6325,
+		"cost": 6250,
 		"cooldown": "35",
 		"cast_range": "150",
 		"mana_cost": "75",
@@ -9265,7 +9273,7 @@
 			"AbilityCastRange": "150",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "75",
-			"ItemCost": "6325",
+			"ItemCost": "6250",
 			"ItemShopTags": "damage;str;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "abyssal blade",
@@ -9791,7 +9799,7 @@
 			},
 			{
 				"key": "lifetime_sentry",
-				"value": "480"
+				"value": "420"
 			},
 			{
 				"key": "creation_delay",
@@ -9853,7 +9861,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"lifetime_sentry": "480"
+					"lifetime_sentry": "420"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -10118,7 +10126,7 @@
 		"aliases": "nlf|nullifier",
 		"quality": "epic",
 		"icon": "/panorama/images/items/nullifier_png.png",
-		"cost": 4700,
+		"cost": 4725,
 		"cooldown": "11",
 		"cast_range": "900",
 		"mana_cost": "75",
@@ -10171,7 +10179,7 @@
 			"AbilityCooldown": "11.0",
 			"AbilityCastRange": "900",
 			"AbilityManaCost": "75",
-			"ItemCost": "4700",
+			"ItemCost": "4725",
 			"ItemQuality": "epic",
 			"ItemAliases": "nlf;nullifier",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -10419,13 +10427,13 @@
 		"name": "item_recipe_guardian_greaves",
 		"localized_name": "Guardian Greaves Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1600,
+		"cost": 1500,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "230",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1600",
+			"ItemCost": "1500",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_guardian_greaves",
@@ -10441,7 +10449,7 @@
 		"aliases": "guardian greaves",
 		"quality": "rare",
 		"icon": "/panorama/images/items/guardian_greaves_png.png",
-		"cost": 5200,
+		"cost": 5100,
 		"cooldown": "40",
 		"cast_range": "1200",
 		"mana_cost": "0",
@@ -10512,7 +10520,7 @@
 			"AbilityCooldown": "40",
 			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
-			"ItemCost": "5200",
+			"ItemCost": "5100",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "guardian greaves",
@@ -10984,6 +10992,10 @@
 			{
 				"key": "buff_duration",
 				"value": "16"
+			},
+			{
+				"key": "duration_to_use",
+				"value": "40"
 			}
 		],
 		"json_data": {
@@ -11013,6 +11025,10 @@
 				"02": {
 					"var_type": "FIELD_FLOAT",
 					"buff_duration": "16.0"
+				},
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"duration_to_use": "40"
 				}
 			}
 		}
@@ -11023,7 +11039,7 @@
 		"localized_name": "Crimson Guard",
 		"quality": "epic",
 		"icon": "/panorama/images/items/crimson_guard_png.png",
-		"cost": 3650,
+		"cost": 3600,
 		"cooldown": "40",
 		"cast_range": "1200",
 		"description": "# Active: Guard\nFor **12** seconds, grant nearby allied heroes and buildings a **100%** chance to block **70** damage from each incoming attack.\n\nUnits may only be affected by Guard once every **40** seconds.\n\nRadius: **1200**\n\n# Passive: Damage Block\nGrants a **60%** chance to block **70** damage from incoming attacks on melee heroes, and **35** damage on ranged.",
@@ -11092,7 +11108,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "40.0",
 			"AbilityCastRange": "1200",
-			"ItemCost": "3650",
+			"ItemCost": "3600",
 			"ItemShopTags": "armor;boost_armor;regen_health;block;health_pool",
 			"ItemQuality": "epic",
 			"ItemAlertable": "1",
@@ -11155,13 +11171,13 @@
 		"name": "item_recipe_crimson_guard",
 		"localized_name": "Crimson Guard Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 875,
+		"cost": 800,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "243",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "875",
+			"ItemCost": "800",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_crimson_guard",
@@ -11326,13 +11342,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "60",
+				"value": "52",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "40",
+				"value": "35",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -11398,11 +11414,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "60"
+					"bonus_damage": "52"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "40"
+					"bonus_attack_speed": "35"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -11570,7 +11586,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/echo_sabre_png.png",
 		"cost": 2500,
-		"cooldown": "5",
+		"cooldown": "6",
 		"mana_cost": "0",
 		"description": "# Passive: Echo Strike\nCauses melee attacks to attack twice in quick succession. The double attacks apply a **100%** movement slow for **0.8** seconds on each strike.",
 		"lore": "A deceptively swift blade imbued with resonant magic.",
@@ -11626,7 +11642,7 @@
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "5.0",
+			"AbilityCooldown": "6.0",
 			"AbilitySharedCooldown": "echo_sabre",
 			"AbilityManaCost": "0",
 			"ItemCost": "2500",
@@ -12088,13 +12104,13 @@
 		"name": "item_recipe_hurricane_pike",
 		"localized_name": "Hurricane Pike Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 450,
+		"cost": 350,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "262",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "450",
+			"ItemCost": "350",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_hurricane_pike",
@@ -12110,7 +12126,7 @@
 		"aliases": "fs|force staff",
 		"quality": "epic",
 		"icon": "/panorama/images/items/hurricane_pike_png.png",
-		"cost": 4550,
+		"cost": 4450,
 		"cooldown": "23",
 		"cast_range": "550",
 		"mana_cost": "100",
@@ -12183,7 +12199,7 @@
 			"AbilityCooldown": "23.0",
 			"AbilitySharedCooldown": "force",
 			"AbilityManaCost": "100",
-			"ItemCost": "4550",
+			"ItemCost": "4450",
 			"ItemShopTags": "int;damage;attack_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "fs;force staff",
@@ -12518,7 +12534,7 @@
 		"cost": 2400,
 		"cooldown": "13",
 		"cast_range": "500",
-		"description": "# Active: Energy Charge\nTarget an allied unit to instantly restore **15** health and mana per charge stored. \n\nMax **20** charges. Automatically gains a charge every **10** seconds and whenever a visible enemy within **1200** range uses an ability.\n\n\n# Passive: Holy Blessing\nAmplifies heals you provide by **35%**.\n\n\n# Passive: Regeneration Aura\nGrants **3** health regeneration to allies.\n\nRadius: **1200**",
+		"description": "# Active: Energy Charge\nTarget an allied unit to instantly restore **15** health and mana per charge stored. \n\nMax **20** charges. Automatically gains a charge every **10** seconds and whenever a visible enemy within **1200** range uses an ability.\n\n\n# Passive: Holy Blessing\nAmplifies heals you provide by **30%**.\n\n\n# Passive: Regeneration Aura\nGrants **3** health regeneration to allies.\n\nRadius: **1200**",
 		"lore": "A prized relic long thought lost forever in a failed crusade.",
 		"secret_shop": false,
 		"ability_special": [
@@ -12544,7 +12560,7 @@
 			},
 			{
 				"key": "heal_increase",
-				"value": "35"
+				"value": "30"
 			},
 			{
 				"key": "max_charges",
@@ -12607,7 +12623,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"heal_increase": "35"
+					"heal_increase": "30"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -13428,7 +13444,8 @@
 			{
 				"key": "armor_bonus",
 				"value": "12",
-				"header": "$armor"
+				"header": "+",
+				"footer": "Armor"
 			},
 			{
 				"key": "attack_speed",
@@ -13574,7 +13591,7 @@
 			},
 			{
 				"key": "all_stats",
-				"value": "16",
+				"value": "10",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -13597,7 +13614,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"all_stats": "16"
+					"all_stats": "10"
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
@@ -14322,7 +14339,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_INTEGER",
+					"var_type": "FIELD_FLOAT",
 					"seconds": "60"
 				}
 			}
@@ -14825,19 +14842,19 @@
 		"ability_special": [
 			{
 				"key": "bonus_magic_resistance",
-				"value": "25%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
 			{
 				"key": "bonus_spell_amp",
-				"value": "8%",
+				"value": "6%",
 				"header": "+",
 				"footer": "Spell Damage"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "3",
+				"value": "2",
 				"header": "-",
 				"footer": "Armor"
 			}
@@ -14852,15 +14869,15 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_magic_resistance": "25"
+					"bonus_magic_resistance": "20"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_spell_amp": "8"
+					"bonus_spell_amp": "6"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "3"
+					"bonus_armor": "2"
 				}
 			}
 		}
@@ -15734,7 +15751,7 @@
 		"cost": 4751,
 		"cooldown": "15",
 		"cast_range": "1200",
-		"description": "# Active: Fallen Sky\nTransform into a meteor that strikes down at the target area after **.5** seconds in a **315** AoE, stunning enemies for **2** seconds and dealing impact damage. Continues to deal damage every **1** seconds to enemy units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **50** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **90**\n\n Range: **1200**",
+		"description": "# Active: Fallen Sky\nTransform into a meteor that strikes down at the target area after **1** seconds in a **315** AoE, stunning enemies for **2** seconds and dealing impact damage. Continues to deal damage every **1** seconds to enemy units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **50** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **90**\n\n Range: **1200**",
 		"lore": "One of the few surviving creations of the acolytes of the Wyrmforge.",
 		"secret_shop": false,
 		"neutral_tier": "5",
@@ -15785,7 +15802,7 @@
 			},
 			{
 				"key": "land_time",
-				"value": ".5"
+				"value": "1"
 			},
 			{
 				"key": "impact_radius",
@@ -15856,7 +15873,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"land_time": ".5"
+					"land_time": "1"
 				},
 				"11": {
 					"var_type": "FIELD_INTEGER",
@@ -15958,7 +15975,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "25",
+				"value": "20",
 				"header": "+",
 				"footer": "Armor"
 			}
@@ -15975,7 +15992,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "25"
+					"bonus_armor": "20"
 				}
 			}
 		}
@@ -16400,7 +16417,7 @@
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "12",
+				"value": "14",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -16445,7 +16462,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "12"
+					"bonus_intellect": "14"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -17362,7 +17379,7 @@
 		"aliases": "fb|falcon blade",
 		"quality": "rare",
 		"icon": "/panorama/images/items/falcon_blade_png.png",
-		"cost": 1100,
+		"cost": 1125,
 		"lore": "An enchanted blade that long ago raised a hopeless urchin from pauper to king.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17389,7 +17406,7 @@
 		"json_data": {
 			"ID": "596",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1100",
+			"ItemCost": "1125",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "fb;falcon blade",
@@ -17438,7 +17455,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/mage_slayer_png.png",
 		"cost": 2400,
-		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, causing them to do **35%** less spell damage for **4** seconds.",
+		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, causing them to do **35%** less spell damage for **6** seconds.",
 		"lore": "Forged by a secret order in The Third Age of Praxa'cia to fell the False King.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17450,7 +17467,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "15",
+				"value": "20",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -17472,7 +17489,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "4"
+				"value": "6"
 			},
 			{
 				"key": "bonus_intellect",
@@ -17500,7 +17517,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "15"
+					"bonus_attack_speed": "20"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -17516,7 +17533,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "4"
+					"duration": "6"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
@@ -17530,13 +17547,13 @@
 		"name": "item_recipe_falcon_blade",
 		"localized_name": "Falcon Blade Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 225,
+		"cost": 250,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "599",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "225",
+			"ItemCost": "250",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_falcon_blade",
@@ -17556,7 +17573,7 @@
 		"cooldown": "15",
 		"cast_range": "0",
 		"mana_cost": "0",
-		"description": "# Active: Overwhelming Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, all enemies in a **800** AoE have **50%** movement speed slow and **50** attack speed slow for **6** seconds, and take damage equal to 200 + **100%** of your strength. \n\nOverwhelming Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
+		"description": "# Active: Overwhelming Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, all enemies in a **800** AoE have **50%** movement speed slow and **50** attack speed slow for **6** seconds, and take damage equal to 100 + **150%** of your strength. \n\nOverwhelming Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "A horrifying dagger forged in the chaos maw and nigh untouchable by mortal hands.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17596,7 +17613,7 @@
 			},
 			{
 				"key": "damage_pct",
-				"value": "100"
+				"value": "150"
 			}
 		],
 		"recipe": "item_blink|item_reaver|item_recipe_overwhelming_blink",
@@ -17649,7 +17666,7 @@
 				},
 				"09": {
 					"var_type": "FIELD_INTEGER",
-					"damage_pct": "100"
+					"damage_pct": "150"
 				}
 			}
 		}
@@ -17665,7 +17682,7 @@
 		"cooldown": "15",
 		"cast_range": "0",
 		"mana_cost": "0",
-		"description": "# Active: Swift Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, you gain **40%** phased movement speed, +**50** Attack Speed, and +**50** Attack Damage for **6** seconds. \n\nSwift Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
+		"description": "# Active: Swift Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, you gain **40%** phased movement speed, +**45** Attack Speed, and +**45** Attack Damage for **6** seconds. \n\nSwift Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "A cunning blade able to anticipate and enable its bearer's movements.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17693,11 +17710,11 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "50"
+				"value": "45"
 			},
 			{
 				"key": "bonus_attack_damage",
-				"value": "50"
+				"value": "45"
 			},
 			{
 				"key": "duration",
@@ -17742,11 +17759,11 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed": "50"
+					"bonus_attack_speed": "45"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_damage": "50"
+					"bonus_attack_damage": "45"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -18061,12 +18078,12 @@
 		"name": "item_recipe_helm_of_the_overlord",
 		"localized_name": "Helm of the Overlord Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1225,
+		"cost": 1325,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "633",
-			"ItemCost": "1225",
+			"ItemCost": "1325",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_helm_of_the_overlord",
@@ -18082,7 +18099,7 @@
 		"aliases": "hoto|helm of the overlord",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/helm_of_the_overlord_png.png",
-		"cost": 6300,
+		"cost": 6325,
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
@@ -18176,7 +18193,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "45",
 			"AbilityManaCost": "0",
-			"ItemCost": "6300",
+			"ItemCost": "6325",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hoto;helm of the overlord",
@@ -19059,7 +19076,6 @@
 		"id": 725,
 		"name": "item_aghanims_shard_roshan",
 		"localized_name": "Aghanim's Shard - Roshan",
-		"aliases": "ags|shard|aghanim's shard|aghs",
 		"quality": "rare",
 		"icon": "/panorama/images/items/aghanims_shard_roshan_png.png",
 		"cost": 1400,
@@ -19071,26 +19087,20 @@
 			"ID": "725",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"ItemCost": "1400",
-			"ItemShopTags": "int;str;agi;mana_pool;health_pool;hard_to_tag",
+			"ItemShopTags": "",
 			"ItemQuality": "rare",
-			"ItemAliases": "ags;shard;aghanim's shard;aghs",
+			"ItemAliases": "",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"ItemKillable": "1",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
-			"ItemPermanent": "0",
-			"ItemStockTime": "1",
-			"ItemStockInitial": "0",
-			"ItemStockMax": "1",
-			"ItemInitialStockTime": "1290.0",
-			"ItemInitialStockTimeTurbo": "645.0"
+			"ItemPermanent": "0"
 		}
 	},
 	{
 		"id": 727,
 		"name": "item_ultimate_scepter_roshan",
 		"localized_name": "Aghanim's Blessing - Roshan",
-		"aliases": "ags|ultimate|aghanim's scepter|ags",
 		"quality": "rare",
 		"icon": "/panorama/images/items/ultimate_scepter_roshan_png.png",
 		"cost": 5800,
@@ -19103,9 +19113,9 @@
 			"Model": "models/props_gameplay/aghanim_scepter.vmdl",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"ItemCost": "5800",
-			"ItemShopTags": "int;str;agi;mana_pool;health_pool;hard_to_tag",
+			"ItemShopTags": "",
 			"ItemQuality": "rare",
-			"ItemAliases": "ags;ultimate;aghanim's scepter;ags",
+			"ItemAliases": "",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"ItemKillable": "1",
@@ -19381,14 +19391,14 @@
 		"localized_name": "Brigand's Blade",
 		"icon": "/panorama/images/items/misericorde_png.png",
 		"cost": 0,
-		"description": "# Passive: Dark Mercy\nYour attacks deal **7** more damage to enemies for each **10%** HP they are missing.",
+		"description": "# Passive: Dark Mercy\nYour attacks deal **8** more damage to enemies for each **10%** HP they are missing.",
 		"lore": "An infamous assassin's blade stolen and smuggled out of White Spire after its owner's mysterious demise.",
 		"secret_shop": false,
 		"neutral_tier": "2",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "7"
+				"value": "8"
 			},
 			{
 				"key": "missing_hp",
@@ -19417,7 +19427,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "7"
+					"bonus_damage": "8"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -19652,7 +19662,7 @@
 		"cooldown": "20",
 		"cast_range": "900",
 		"mana_cost": "25",
-		"description": "# Active: Shadow Brand\nThrows a Mark towards an enemy within **900** range dealing your attack damage, and applying a debuff that deals **20** damage every second and provides vision of the unit for **7** seconds.",
+		"description": "# Active: Shadow Brand\nThrows a Mark towards an enemy within **900** range applying a debuff that deals **35** damage every second and provides vision of the unit for **7** seconds.",
 		"lore": "Those marked for death by the fae shine brightly to all manner of creatures in the shadow realm.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -19665,7 +19675,7 @@
 			},
 			{
 				"key": "dps",
-				"value": "20"
+				"value": "35"
 			},
 			{
 				"key": "duration",
@@ -19674,6 +19684,7 @@
 		],
 		"json_data": {
 			"ID": "835",
+			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
@@ -19692,7 +19703,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"dps": "20"
+					"dps": "35"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
@@ -19795,7 +19806,7 @@
 		"cost": 0,
 		"cooldown": "25",
 		"mana_cost": "50",
-		"description": "# Active: Pig, Out!\nTurns your hero into a critter and gives them +10% Movement Speed.",
+		"description": "# Active: Pig, Out!\nTurns your hero into a critter for **4** seconds and gives them +10% Movement Speed.",
 		"lore": "A makeshift charm misplaced by a peace-loving, addlebrained enchanter.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -19894,7 +19905,7 @@
 		"localized_name": "Tumbler's Toy",
 		"icon": "/panorama/images/items/pogo_stick_png.png",
 		"cost": 0,
-		"cooldown": "30",
+		"cooldown": "20",
 		"description": "# Active: Vault\nPropels your hero forward **300** units. Tumbler's Toy gets disabled for 3 seconds if its owner receives damage from a player source.",
 		"lore": "An antique plaything found in the ruins of an Ozenja circus bazaar.",
 		"secret_shop": false,
@@ -19921,11 +19932,11 @@
 		],
 		"json_data": {
 			"ID": "840",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
-			"AbilityCooldown": "30.0",
+			"AbilityCooldown": "20.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilitySpecial": {
 				"01": {
