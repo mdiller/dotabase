@@ -4266,6 +4266,22 @@
 		"required": true
 	},
 	{
+		"name": "IsTargetDKPer",
+		"pretty": "IsTargetDKPer",
+		"matchkey": "persona_target",
+		"matchvalue": "davion_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTargetDKDef",
+		"pretty": "IsTargetDKDef",
+		"matchkey": "persona_target",
+		"matchvalue": "!=davion_persona",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "DKTutIntro",
 		"pretty": "DKTutIntro",
 		"matchkey": "tutorialline",
@@ -4352,9 +4368,199 @@
 		"required": true
 	},
 	{
+		"name": "IsDrowRangerMultishot",
+		"pretty": "Multishot",
+		"matchkey": "abilityname",
+		"matchvalue": "drow_ranger_multishot",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowRangerTeleport",
+		"pretty": "Town Portal Scroll",
+		"matchkey": "abilityname",
+		"matchvalue": "item_tpscroll",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsDrowTauntKeepAnEarOut",
 		"matchkey": "taunt_type",
 		"matchvalue": "whats_that",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotMad",
+		"matchkey": "customresponse",
+		"matchvalue": "!=drow_arcana",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMad",
+		"matchkey": "customresponse",
+		"matchvalue": "drow_arcana",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMadLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "drow_arcana_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMadLoadoutSpawnAlt",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "drow_arcana_loadout_spawn_alt",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRevenge",
+		"pretty": "IsRevenge",
+		"matchkey": "revengekill",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRevengeDeath",
+		"pretty": "IsRevengeDeath",
+		"matchkey": "revengedeath",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsRevengeFail",
+		"pretty": "IsRevengeFail",
+		"matchkey": "failed_revenge",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono1",
+		"pretty": "IsDrowMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono2",
+		"pretty": "IsDrowMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono3",
+		"pretty": "IsDrowMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono4",
+		"pretty": "IsDrowMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono5",
+		"pretty": "IsDrowMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono6",
+		"pretty": "IsDrowMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono7",
+		"pretty": "IsDrowMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono8",
+		"pretty": "IsDrowMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMono9",
+		"pretty": "IsDrowMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoGroup1",
+		"pretty": "IsDrowMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoGroup2",
+		"pretty": "IsDrowMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoGroup3",
+		"pretty": "IsDrowMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoGroup4",
+		"pretty": "IsDrowMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoGroup5",
+		"pretty": "IsDrowMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsDrowMonoDone",
+		"pretty": "IsDrowMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=5",
 		"weight": 5.0,
 		"required": true
 	},
@@ -7538,6 +7744,14 @@
 		"required": true
 	},
 	{
+		"name": "IsMiranaLeap",
+		"pretty": "Leap",
+		"matchkey": "abilityname",
+		"matchvalue": "mirana_leap",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsMiranaMoonshadow",
 		"pretty": "Moonlight Shadow",
 		"matchkey": "abilityname",
@@ -7590,6 +7804,172 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "mirana_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaTeleport",
+		"pretty": "Town Portal Scroll",
+		"matchkey": "abilityname",
+		"matchvalue": "item_tpscroll",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMirNFX",
+		"matchkey": "customresponse",
+		"matchvalue": "mir_nfx_per",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMirNFXLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "mirana_persona_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsNotNFX",
+		"matchkey": "customresponse",
+		"matchvalue": "!=mir_nfx_per",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTargetMirPer",
+		"pretty": "IsTargetMirPer",
+		"matchkey": "persona_target",
+		"matchvalue": "mir_nfx_per",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTargetMirDef",
+		"pretty": "IsTargetMirDef",
+		"matchkey": "persona_target",
+		"matchvalue": "!=mir_nfx_per",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono1",
+		"pretty": "IsMiranaMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono2",
+		"pretty": "IsMiranaMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono3",
+		"pretty": "IsMiranaMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono4",
+		"pretty": "IsMiranaMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono5",
+		"pretty": "IsMiranaMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono6",
+		"pretty": "IsMiranaMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono7",
+		"pretty": "IsMiranaMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono8",
+		"pretty": "IsMiranaMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMono9",
+		"pretty": "IsMiranaMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoGroup1",
+		"pretty": "IsMiranaMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoGroup2",
+		"pretty": "IsMiranaMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoGroup3",
+		"pretty": "IsMiranaMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoGroup4",
+		"pretty": "IsMiranaMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoGroup5",
+		"pretty": "IsMiranaMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsMiranaMonoDone",
+		"pretty": "IsMiranaMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=5",
 		"weight": 5.0,
 		"required": true
 	},
@@ -21223,34 +21603,10 @@
 		"required": true
 	},
 	{
-		"name": "PlatinumTier",
-		"pretty": "platinum",
+		"name": "GoldTier",
+		"pretty": "gold",
 		"matchkey": "badge_tier",
-		"matchvalue": "platinum",
-		"weight": 1.0,
-		"required": true
-	},
-	{
-		"name": "GrandmasterTier",
-		"pretty": "grandmaster",
-		"matchkey": "badge_tier",
-		"matchvalue": "grandmaster",
-		"weight": 1.0,
-		"required": true
-	},
-	{
-		"name": "BronzeTier",
-		"pretty": "bronze",
-		"matchkey": "badge_tier",
-		"matchvalue": "bronze",
-		"weight": 1.0,
-		"required": true
-	},
-	{
-		"name": "MasterTier",
-		"pretty": "master",
-		"matchkey": "badge_tier",
-		"matchvalue": "master",
+		"matchvalue": "gold",
 		"weight": 1.0,
 		"required": true
 	},
@@ -21263,10 +21619,34 @@
 		"required": true
 	},
 	{
-		"name": "GoldTier",
-		"pretty": "gold",
+		"name": "GrandmasterTier",
+		"pretty": "grandmaster",
 		"matchkey": "badge_tier",
-		"matchvalue": "gold",
+		"matchvalue": "grandmaster",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "MasterTier",
+		"pretty": "master",
+		"matchkey": "badge_tier",
+		"matchvalue": "master",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "PlatinumTier",
+		"pretty": "platinum",
+		"matchkey": "badge_tier",
+		"matchvalue": "platinum",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "BronzeTier",
+		"pretty": "bronze",
+		"matchkey": "badge_tier",
+		"matchvalue": "bronze",
 		"weight": 1.0,
 		"required": true
 	},
