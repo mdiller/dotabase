@@ -1083,6 +1083,10 @@
 			{
 				"key": "arrow_angle",
 				"value": "50"
+			},
+			{
+				"key": "bypass_block",
+				"value": "1"
 			}
 		],
 		"slot": 3,
@@ -1140,6 +1144,10 @@
 				"08": {
 					"var_type": "FIELD_INTEGER",
 					"arrow_angle": "50"
+				},
+				"09": {
+					"var_type": "FIELD_INTEGER",
+					"bypass_block": "1"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CHANNEL_ABILITY_3"
@@ -17885,7 +17893,7 @@
 		"localized_name": "Healing Ward",
 		"description": "Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at **325** movement speed after being summoned.  Lasts **25** seconds.",
 		"lore": "Of the rituals learned at the Isle of Masks, tending wounds with a bit of voodoo magic has proven to be quite useful.",
-		"note": "The healing ward can be controlled.\nMultiple healing wards do not stack.",
+		"note": "The Healing Ward can be controlled.\nMultiple Healing Wards do not stack.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -18084,6 +18092,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Ability.Torrent",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftScepterAbility": "kunkka_torrent_storm",
 			"AbilityCastRange": "1300",
 			"AbilityCastPoint": "0.4",
 			"AbilityCooldown": "16 14 12 10",
@@ -19961,7 +19970,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/nevermore_shadowraze1_png.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
+		"description": "Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
 		"note": "Stack duration refreshes on stack gain.",
 		"scepter_grants": false,
@@ -20058,7 +20067,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/nevermore_shadowraze2_png.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the ground a short distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
+		"description": "Shadow Fiend razes the ground a short distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
 		"note": "Stack duration refreshes on stack gain.",
 		"scepter_grants": false,
@@ -20155,7 +20164,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/nevermore_shadowraze3_png.png",
 		"localized_name": "Shadowraze",
-		"description": "Shadow Fiend razes the ground a longer distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.",
+		"description": "Shadow Fiend razes the ground a longer distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack.",
 		"lore": "Nevermore's trademark for harvesting souls.",
 		"note": "Stack duration refreshes on stack gain.",
 		"scepter_grants": false,
@@ -20707,7 +20716,7 @@
 		"localized_name": "Doppelganger",
 		"description": "Phantom Lancer briefly vanishes from the battlefield. After **1** second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes **500%** bonus damage and deals **-80%** less damage.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "Dread Magus Vorn's death imbued the Phantom Lancer with the ability to bend and fracture all spectrums of light.",
-		"note": "This ability can be used to dodge projectiles, and dispell debuffs.\nTrees near a reappearing unit will be destroyed.\nPhantom Lancer and his allies can see which illusion is the 100% damage illusion.",
+		"note": "This ability can be used to dodge projectiles, and dispel debuffs.\nTrees near a reappearing unit will be destroyed.\nPhantom Lancer and his allies can see which illusion is the 100% damage illusion.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -22263,7 +22272,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/razor_static_link_png.png",
 		"localized_name": "Static Link",
-		"description": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows razor to attack while moving with the link active.",
+		"description": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.",
 		"lore": "Razor's polarity channels electricity into his being, draining the power of his opposition.",
 		"note": "The link is broken when either unit dies or the distance between them becomes **250** units greater than Static Link's cast range.\nCan target Spell Immune units.",
 		"scepter_grants": false,
@@ -24517,6 +24526,7 @@
 			"LinkedAbility": "tiny_toss_tree",
 			"HasScepterUpgrade": "1",
 			"HasShardUpgrade": "1",
+			"AbilityDraftScepterAbility": "tiny_tree_channel",
 			"AbilityCastRange": "165",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "19 16 13 10",
@@ -27257,7 +27267,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/witch_doctor_paralyzing_cask_png.png",
 		"localized_name": "Paralyzing Cask",
-		"description": "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits. Each bounce deals more damage than the previous one",
+		"description": "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits. Each bounce deals more damage than the previous one.",
 		"lore": "The Witch Doctor recycles the bones of fallen friends and foes, using the powder as part of his arsenal of charms and alchemy.",
 		"note": "Targets can be hit multiple times, as long as another unit is struck in between the bounces.",
 		"scepter_grants": false,
@@ -27359,7 +27369,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/witch_doctor_voodoo_restoration_png.png",
 		"localized_name": "Voodoo Restoration",
-		"description": "Witch Doctor focuses his magic to heal nearby allied units, costing Witch Doctor mana every second Voodoo restoration is active.",
+		"description": "Witch Doctor focuses his magic to heal nearby allied units, costing Witch Doctor mana every second Voodoo Restoration is active.",
 		"lore": "Zharvakko's hocus pocus is not limited only to hexxing his opponents and is quite adept at curing ailments.",
 		"note": "Healing is done in **0.33** second intervals.\nCan heal Spell Immune units.",
 		"scepter_grants": false,
@@ -27536,7 +27546,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/witch_doctor_death_ward_png.png",
 		"localized_name": "Death Ward",
-		"description": "CHANNELED - Summons a deadly ward to attack enemy heroes within it's attack range. Lasts a maximum of **8** seconds.",
+		"description": "CHANNELED - Summons a deadly ward to attack enemy heroes within its attack range. Lasts a maximum of **8** seconds.",
 		"lore": "Witch Doctor performs a ritualistic dance, one that haunts the dreams of those who live to recount it.",
 		"note": "The Death Ward is invulnerable, and is only destroyed if Witch Doctor is interrupted or its duration expires.\nThe Death Ward can be controlled, and made to attack a specific target.\nDeath Ward attacks once every 0.22 seconds.",
 		"scepter_grants": false,
@@ -28452,7 +28462,7 @@
 		"cast_range": "2500",
 		"cast_point": "0",
 		"cooldown": "18",
-		"mana_cost": "95 105 110 125",
+		"mana_cost": "95 105 115 125",
 		"ability_special": [
 			{
 				"key": "damage",
@@ -28505,7 +28515,7 @@
 			"AbilityCastPoint": "0 0 0 0",
 			"AbilityCastRange": "2500",
 			"AbilityCooldown": "18",
-			"AbilityManaCost": "95 105 110 125",
+			"AbilityManaCost": "95 105 115 125",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -29089,7 +29099,7 @@
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
-		"shard_upgrades": false,
+		"shard_upgrades": true,
 		"json_data": {
 			"ID": "5158",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -29097,6 +29107,8 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Necrolyte.DeathPulse",
+			"AbilityDraftShardAbility": "necrolyte_death_seeker",
+			"HasShardUpgrade": "1",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCooldown": "8 7 6 5",
@@ -31086,7 +31098,7 @@
 			{
 				"key": "speed",
 				"value": "500",
-				"header": "TRAVEL SPEED"
+				"header": "TRAVEL SPEED:"
 			},
 			{
 				"key": "base_damage",
@@ -36474,7 +36486,7 @@
 		"localized_name": "Wall of Replica",
 		"description": "Raises a wall of warping light that slows and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
 		"lore": "The Dark Seer, while unable to return to his natural realm, can channel part of the prismatic wall with powerful strength of mind, sowing confusion amongst enemy ranks.",
-		"note": "Doesn't create illusions from other illusions.\nThere cannot be more than one illusion per player per wall.\nWall of replica will not slow spell-immune enemies.",
+		"note": "Doesn't create illusions from other illusions.\nThere cannot be more than one illusion per player per wall.\nWall of Replica will not slow spell-immune enemies.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -37189,7 +37201,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/enchantress_enchant_png.png",
 		"localized_name": "Enchant",
-		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control, increasing it's attack damage and max health.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Enchantress charms an enemy. If the enemy is a hero, they are slowed. If the enemy is a creep, she brings it under her control, increasing its attack damage and max health.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs.",
 		"note": "Illusions can be converted.",
 		"scepter_grants": false,
@@ -37999,7 +38011,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/night_stalker_darkness_png.png",
 		"localized_name": "Dark Ascension",
-		"description": "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. Nightstalker gains flight and bonus damage during this time. Has unobstructed vision.",
+		"description": "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. Night Stalker gains flight and bonus damage during this time. Has unobstructed vision.",
 		"lore": "It is a humbling sight to see when the mightiest of warriors become afraid of the dark.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -38181,7 +38193,7 @@
 		"icon": "/panorama/images/spellicons/broodmother_spin_web_png.png",
 		"localized_name": "Spin Web",
 		"description": "Spins a large web that grants Broodmother a passive movement speed increase, and boosts regeneration while in its vicinity, as well as giving free movement. Spin Web charges restore every **30** seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears. The movement bonus is proportional to the unit's HP",
-		"lore": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of forboding.",
+		"lore": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of foreboding.",
 		"note": "Also affects Spiderling and Spiderites.\nGrants full movement speed bonus at 100% HP, 0% movement speed bonus at 1HP",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -38688,7 +38700,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Shadow Walk now grants you 35% damage reduction while invisible. Attacking out of invisibility stuns the target for 1 second. Lowers cooldown by 5 seconds.",
+		"shard_description": "Shadow Walk grants you 35% damage reduction while invisible. Attacking out of invisibility stuns the target for 1 second. Lowers cooldown by 5 seconds.",
 		"json_data": {
 			"ID": "5287",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -49584,7 +49596,7 @@
 		"localized_name": "Nature's Guise",
 		"description": "Provides Treant with Tree Walking whenever he hasn't taken damage for **3** seconds. While active, Treant gains movement speed bonus and amplified healing and regeneration on himself.",
 		"lore": "The Protectors don't often come into vision; their natural state being nestled within their leafy brethren.",
-		"note": "While affected by Nature's Guise, Treant can move unobstructed through other trees .",
+		"note": "While affected by Nature's Guise, Treant can move unobstructed through other trees.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -54607,7 +54619,7 @@
 		"scepter_upgrades": true,
 		"scepter_description": "Causes Mystic Snake to turn enemies hit into stone. Stone duration increases with each bounce of the Mystic Snake.",
 		"shard_grants": false,
-		"shard_upgrades": false,
+		"shard_upgrades": true,
 		"json_data": {
 			"ID": "5505",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -54617,6 +54629,8 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Medusa.MysticSnake.Cast",
+			"AbilityDraftShardAbility": "medusa_cold_blooded",
+			"HasShardUpgrade": "1",
 			"HasScepterUpgrade": "1",
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.2",
@@ -57971,7 +57985,7 @@
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
-		"shard_upgrades": false,
+		"shard_upgrades": true,
 		"json_data": {
 			"ID": "5549",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
@@ -57980,6 +57994,8 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Bristleback.QuillSpray",
+			"AbilityDraftShardAbility": "bristleback_hairball",
+			"HasShardUpgrade": "1",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
@@ -60401,7 +60417,7 @@
 		"note": "Mystic Flare only affects Heroes; it does not damage illusions or creep heroes.\nSpell immune enemies do not count toward the damage distribution.\nMystic Flare will damage enemy creeps if no enemy heroes are present.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "When Skywrath Mage casts Mystic Flare, another Mystic Flare will be created on the position of a different random target enemy within **700** range. Heroes will take priority",
+		"scepter_description": "When Skywrath Mage casts Mystic Flare, another Mystic Flare will be created on the position of a different random target enemy within **700** range. Heroes will take priority.",
 		"shard_grants": false,
 		"shard_upgrades": true,
 		"json_data": {
@@ -63282,7 +63298,7 @@
 			{
 				"key": "wave_interval",
 				"value": "1",
-				"header": "WAVE INTERVAL"
+				"header": "WAVE INTERVAL:"
 			},
 			{
 				"talent_name": "special_bonus_unique_underlord_4",
@@ -63906,6 +63922,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilitySound": "Hero_Terrorblade.Metamorphosis",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftScepterAbility": "terrorblade_terror_wave",
 			"AbilityCastPoint": "0.",
 			"AbilityCooldown": "155.0",
 			"AbilityManaCost": "100",
@@ -65550,7 +65567,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/earth_spirit_petrify_png.png",
 		"localized_name": "Enchant Remnant",
-		"description": "Earth Spirit temporarily enchants a hero, granting them the properties of a Stone Remnant. After a short duration the remnant shatters, releasing the hero and damaging nearby enemies. \n\nCan be cast on Earth Remnants. Has a 5 second cooldown when used that way.",
+		"description": "Earth Spirit temporarily enchants a hero, granting them the properties of a Stone Remnant. After a short duration the remnant shatters, releasing the hero and damaging nearby enemies. \n\nCan be cast on Stone Remnants. Has a 5 second cooldown when used that way.",
 		"lore": "Kaolin uses the elemental power of the Earth to temporarily petrify living beings, so that they might be conscripted into his stone funerary army.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -65633,7 +65650,7 @@
 		"localized_name": "Eyes In The Forest",
 		"description": "Treant Protector enchants a tree, which grants him unobstructed vision in that location. If Overgrowth is cast, units within a radius of an enchanted tree will be entangled and damaged. Passively causes all trees to respawn much faster.",
 		"lore": "One can never be too certain who, or what, might need protecting.",
-		"note": "Being entangled by Overgrowth through enchanted trees from Eyes of the Forest does damage.\nIf the enemy has True Sight, they will be able to see which trees are enchanted.",
+		"note": "Being entangled by Overgrowth through enchanted trees from Eyes in the Forest does damage.\nIf the enemy has True Sight, they will be able to see which trees are enchanted.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
 		"scepter_description": "Adds new ability: Eyes In The Forest.",
@@ -68503,7 +68520,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/monkey_king_mischief_png.png",
 		"localized_name": "Mischief",
-		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for **0.2** upon transforming.",
+		"description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for **0.2** seconds upon transforming.",
 		"lore": "Watch out for that tree.",
 		"note": "If transformed into a courier, Monkey King matches the movement speed of the courier.",
 		"scepter_grants": false,
@@ -69024,6 +69041,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_MonkeyKing.FurArmy",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftPreAbility": "monkey_king_mischief",
 			"AbilityCastPoint": "1.2",
 			"AbilityCastRange": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
@@ -69135,12 +69153,12 @@
 			},
 			{
 				"key": "armor_reduction_pct",
-				"value": "41% 59% 73% 89%",
+				"value": "40% 60% 80% 100%",
 				"header": "BASE ARMOR REDUCTION:"
 			},
 			{
 				"key": "magic_resistance_pct",
-				"value": "41% 59% 73% 89%",
+				"value": "40% 60% 80% 100%",
 				"header": "BASE RESIST REDUCTION:"
 			}
 		],
@@ -69167,11 +69185,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"armor_reduction_pct": "41 59 73 89"
+					"armor_reduction_pct": "40 60 80 100"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"magic_resistance_pct": "41 59 73 89"
+					"magic_resistance_pct": "40 60 80 100"
 				}
 			}
 		}
@@ -95759,7 +95777,7 @@
 		"icon": "/panorama/images/spellicons/visage_stone_form_self_cast_png.png",
 		"localized_name": "Stone Form",
 		"description": "After a short delay, the nearest Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After **6** seconds, the Familiar will automatically leave Stone Form.",
-		"note": "While Stone Form is not dispellable, the stun can be removed by strong dispells.",
+		"note": "While Stone Form is not dispellable, the stun can be removed by strong dispels.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -96540,6 +96558,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilitySound": "Hero_Beastmaster.Call.Hawk",
+			"AbilityDraftPreAbility": "beastmaster_call_of_the_wild_boar",
 			"HasShardUpgrade": "1",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.3",
@@ -103366,7 +103385,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Dawnbreaker gains magic immunity during Star Breaker.",
+		"shard_description": "Dawnbreaker gains magic immunity during Starbreaker.",
 		"json_data": {
 			"ID": "7902",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CAN_SELF_CAST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
@@ -106596,13 +106615,13 @@
 			{
 				"talent_name": "special_bonus_unique_marci_grapple_stun_duration",
 				"key": "stun_duration",
-				"value": "1.2 1.5 1.8 2.1",
-				"talent_value": "1.95 2.25 2.55 2.85",
+				"value": "0.9 1.3 1.7 2.1",
+				"talent_value": "1.4 1.8 2.2 2.6",
 				"header": "STUN DURATION:"
 			},
 			{
 				"key": "impact_damage",
-				"value": "70 140 210 280",
+				"value": "70 120 170 220",
 				"header": "IMPACT DAMAGE:"
 			}
 		],
@@ -106657,12 +106676,12 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"stun_duration": "1.2 1.5 1.8 2.1",
+					"stun_duration": "0.9 1.3 1.7 2.1",
 					"LinkedSpecialBonus": "special_bonus_unique_marci_grapple_stun_duration"
 				},
 				"08": {
 					"var_type": "FIELD_INTEGER",
-					"impact_damage": "70 140 210 280"
+					"impact_damage": "70 120 170 220"
 				}
 			}
 		}
@@ -106675,12 +106694,12 @@
 		"damage_type": "magical",
 		"dispellable": "no",
 		"cast_point": "0.2",
-		"cooldown": "90 75 60",
+		"cooldown": "110 90 70",
 		"mana_cost": "100 125 150",
 		"ability_special": [
 			{
 				"key": "duration",
-				"value": "18",
+				"value": "16",
 				"header": "DURATION:"
 			},
 			{
@@ -106694,7 +106713,7 @@
 			},
 			{
 				"key": "time_between_flurries",
-				"value": "1.5"
+				"value": "1.75"
 			},
 			{
 				"key": "pulse_radius",
@@ -106707,7 +106726,7 @@
 			},
 			{
 				"key": "pulse_damage",
-				"value": "80 150 220",
+				"value": "60 130 200",
 				"header": "PULSE DAMAGE:"
 			},
 			{
@@ -106736,7 +106755,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/marci_unleash_png.png",
 		"localized_name": "Unleash",
-		"description": "Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes. The last strike in every Fury combo creates a damaging pulse around the target that slows movement and attack speed for **2**s. In between Fury combos, Marci is unable to attack for **1.5**s.\n\nMarci receives a basic dispel when Unleash is cast and gains **15%** movement speed.",
+		"description": "Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes. The last strike in every Fury combo creates a damaging pulse around the target that slows movement and attack speed for **2**s. In between Fury combos, Marci is unable to attack for **1.75**s.\n\nMarci receives a basic dispel when Unleash is cast and gains **15%** movement speed.",
 		"lore": "Though some have sought to understand its origins, Marci rebuffs all attempts to divine the source of her power.",
 		"note": "Once a Fury combo is started, each attack must be delivered within 1s or the Fury combo expires.",
 		"scepter_grants": false,
@@ -106752,12 +106771,12 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Marci.Unleash.Cast",
 			"AbilityCastPoint": "0.2",
-			"AbilityCooldown": "90 75 60",
+			"AbilityCooldown": "110 90 70",
 			"AbilityManaCost": "100 125 150",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "18"
+					"duration": "16"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -106769,7 +106788,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"time_between_flurries": "1.5"
+					"time_between_flurries": "1.75"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -106781,7 +106800,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"pulse_damage": "80 150 220"
+					"pulse_damage": "60 130 200"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -106876,7 +106895,7 @@
 				"talent_name": "special_bonus_unique_marci_guardian_lifesteal",
 				"key": "lifesteal_pct",
 				"value": "35% 40% 45% 50%",
-				"talent_value": "85% 90% 95% 100%",
+				"talent_value": "60% 65% 70% 75%",
 				"header": "LIFESTEAL:"
 			},
 			{
@@ -106951,9 +106970,9 @@
 		"spell_immunity": "no",
 		"target_team": "both",
 		"dispellable": "yes",
-		"cast_range": "850",
+		"cast_range": "800",
 		"cast_point": "0.1",
-		"cooldown": "15 13 11 9",
+		"cooldown": "17 15 13 11",
 		"mana_cost": "70 80 90 100",
 		"ability_special": [
 			{
@@ -106967,9 +106986,9 @@
 			{
 				"talent_name": "special_bonus_unique_marci_lunge_range",
 				"key": "max_jump_distance",
-				"value": "850",
-				"talent_value": "1100",
-				"header": "MAX JUMP RANGE:"
+				"value": "800",
+				"talent_value": "1000",
+				"header": "CAST / JUMP RANGE:"
 			},
 			{
 				"key": "landing_radius",
@@ -107031,6 +107050,10 @@
 			{
 				"key": "impact_position_offset",
 				"value": "64"
+			},
+			{
+				"key": "target_abort_distance",
+				"value": "700"
 			}
 		],
 		"slot": 2,
@@ -107054,9 +107077,9 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Marci.Rebound.Cast",
 			"AbilityCastPoint": "0.1",
-			"AbilityCastRange": "850",
+			"AbilityCastRange": "800",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
-			"AbilityCooldown": "15 13 11 9",
+			"AbilityCooldown": "17 15 13 11",
 			"AbilityManaCost": "70 80 90 100",
 			"AbilitySpecial": {
 				"01": {
@@ -107069,7 +107092,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"max_jump_distance": "850",
+					"max_jump_distance": "800",
 					"LinkedSpecialBonus": "special_bonus_unique_marci_lunge_range"
 				},
 				"04": {
@@ -107128,6 +107151,10 @@
 				"17": {
 					"var_type": "FIELD_INTEGER",
 					"impact_position_offset": "64"
+				},
+				"18": {
+					"var_type": "FIELD_INTEGER",
+					"target_abort_distance": "700"
 				}
 			}
 		}
@@ -107197,11 +107224,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "0.75"
+				"value": "0.5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+0.75s Dispose Stun Duration",
+		"localized_name": "+0.5s Dispose Stun Duration",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107213,7 +107240,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.75",
+					"value": "0.5",
 					"ad_linked_ability": "marci_grapple"
 				}
 			}
@@ -107226,11 +107253,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "1.75"
+				"value": "1.5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "1.75s Sidekick Spell Immunity",
+		"localized_name": "1.5s Sidekick Spell Immunity",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107242,7 +107269,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "1.75",
+					"value": "1.5",
 					"ad_linked_ability": "marci_guardian"
 				}
 			}
@@ -107313,11 +107340,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "50"
+				"value": "25"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+50% Sidekick Lifesteal",
+		"localized_name": "+25% Sidekick Lifesteal",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107329,7 +107356,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "50",
+					"value": "25",
 					"ad_linked_ability": "marci_guardian"
 				}
 			}
@@ -107342,11 +107369,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "250"
+				"value": "200"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+250 Rebound Cast/Jump Range",
+		"localized_name": "+200 Rebound Cast/Jump Range",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107358,7 +107385,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "250",
+					"value": "200",
 					"ad_linked_ability": "marci_companion_run"
 				}
 			}
@@ -107428,6 +107455,10 @@
 			{
 				"key": "starting_height",
 				"value": "300"
+			},
+			{
+				"key": "telegraph_to_enemies",
+				"value": "0"
 			}
 		],
 		"slot": 6,
@@ -107476,6 +107507,10 @@
 				"05": {
 					"var_type": "FIELD_FLOAT",
 					"starting_height": "300"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"telegraph_to_enemies": "0"
 				}
 			}
 		}
@@ -107731,7 +107766,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_FLOAT",
+					"var_type": "FIELD_INTEGER",
 					"value": "400",
 					"ad_linked_ability": "pangolier_swashbuckle"
 				}
