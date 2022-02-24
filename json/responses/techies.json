@@ -1501,8 +1501,8 @@
 		"voice_id": 105,
 		"text": "Trap is set! Oh ho ho oh boy!",
 		"text_simple": " trap is set oh ho ho oh boy ",
-		"criteria": "Custom Istechies IsTechiesLoadoutSpawn|CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Spawning in the loadout|Casting Stasis Trap (75% chance)"
+		"criteria": "Custom Istechies IsTechiesLoadoutSpawn|CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Spawning in the loadout|Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_settrap_02",
@@ -1512,8 +1512,7 @@
 		"voice_id": 105,
 		"text": "I wonder what we'll catch!",
 		"text_simple": " i wonder what well catch ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"pretty_criteria": "Unused"
 	},
 	{
 		"name": "tech_settrap_03",
@@ -1523,8 +1522,8 @@
 		"voice_id": 105,
 		"text": "Clever!",
 		"text_simple": " clever ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_settrap_04",
@@ -1534,8 +1533,8 @@
 		"voice_id": 105,
 		"text": "Sneaky.",
 		"text_simple": " sneaky ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_settrap_06",
@@ -1545,8 +1544,8 @@
 		"voice_id": 105,
 		"text": "Mhahaha, eh he he!",
 		"text_simple": " mhahaha eh he he ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_settrap_07",
@@ -1556,8 +1555,8 @@
 		"voice_id": 105,
 		"text": "Sneaky!",
 		"text_simple": " sneaky ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_settrap_08",
@@ -1567,8 +1566,8 @@
 		"voice_id": 105,
 		"text": "Fun! Huhuhu!",
 		"text_simple": " fun huhuhu ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%|HeroChatWheel BronzeTier",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)|A bronze hero chat wheel was used"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%|HeroChatWheel BronzeTier",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)|A bronze hero chat wheel was used"
 	},
 	{
 		"name": "tech_settrap_09",
@@ -1578,8 +1577,8 @@
 		"voice_id": 105,
 		"text": "Ah, hm hm hm hm hm hm!",
 		"text_simple": " ah hm hm hm hm hm hm ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_settrap_10",
@@ -1589,8 +1588,8 @@
 		"voice_id": 105,
 		"text": "Nnhaahahaha shh! Khskhs!",
 		"text_simple": " nnhaahahaha shh khskhs ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_settrap_11",
@@ -1600,8 +1599,8 @@
 		"voice_id": 105,
 		"text": "Te he he he! He he, ha ha!",
 		"text_simple": " te he he he he he ha ha ",
-		"criteria": "CastExecute Istechies IsTechiesStasisTrap Chance_75%",
-		"pretty_criteria": "Casting Stasis Trap (75% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Casting Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_trapgoesoff_01",
@@ -1621,7 +1620,8 @@
 		"voice_id": 105,
 		"text": "There she goes!",
 		"text_simple": " there she goes ",
-		"pretty_criteria": "Unused"
+		"criteria": "Kill Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Killing a hero with Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_trapgoesoff_03",
@@ -1631,7 +1631,8 @@
 		"voice_id": 105,
 		"text": "Gotcha!",
 		"text_simple": " gotcha ",
-		"pretty_criteria": "Unused"
+		"criteria": "Kill Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Killing a hero with Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_trapgoesoff_06",
@@ -1651,7 +1652,8 @@
 		"voice_id": 105,
 		"text": "The traps work! Told you!",
 		"text_simple": " the traps work told you ",
-		"pretty_criteria": "Unused"
+		"criteria": "Kill Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Killing a hero with Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_trapgoesoff_09",
@@ -1661,7 +1663,8 @@
 		"voice_id": 105,
 		"text": "There she goes!",
 		"text_simple": " there she goes ",
-		"pretty_criteria": "Unused"
+		"criteria": "Kill Istechies IsTechiesZap Chance_75%",
+		"pretty_criteria": "Killing a hero with Reactive Tazer (75% chance)"
 	},
 	{
 		"name": "tech_trapgoesoff_10",
@@ -1671,8 +1674,8 @@
 		"voice_id": 105,
 		"text": "Gotcha!",
 		"text_simple": " gotcha ",
-		"criteria": "HeroChatWheel GoldTier",
-		"pretty_criteria": "A gold hero chat wheel was used"
+		"criteria": "Kill Istechies IsTechiesZap Chance_75%|HeroChatWheel GoldTier",
+		"pretty_criteria": "Killing a hero with Reactive Tazer (75% chance)|A gold hero chat wheel was used"
 	},
 	{
 		"name": "tech_suicidesquad_01",
@@ -1812,8 +1815,8 @@
 		"voice_id": 105,
 		"text": "Bomb has been planted.",
 		"text_simple": " bomb has been planted ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLowRMine01|HeroChatWheel GrandmasterTier",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLowRMine01|A grandmaster hero chat wheel was used"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLowRMine01|HeroChatWheel GrandmasterTier",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLowRMine01|A grandmaster hero chat wheel was used"
 	},
 	{
 		"name": "tech_remotemines_02",
@@ -1823,8 +1826,8 @@
 		"voice_id": 105,
 		"text": "Aw, just look at it. Nice.",
 		"text_simple": " aw just look at it nice ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_03",
@@ -1834,8 +1837,8 @@
 		"voice_id": 105,
 		"text": "Here goes nothing.",
 		"text_simple": " here goes nothing ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_04",
@@ -1845,8 +1848,8 @@
 		"voice_id": 105,
 		"text": "Hope this works.",
 		"text_simple": " hope this works ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_05",
@@ -1856,8 +1859,8 @@
 		"voice_id": 105,
 		"text": "Oh boy!",
 		"text_simple": " oh boy ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_07",
@@ -1867,8 +1870,8 @@
 		"voice_id": 105,
 		"text": "And done.",
 		"text_simple": " and done ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_08",
@@ -1878,8 +1881,8 @@
 		"voice_id": 105,
 		"text": "There we go. Yeyuyu.",
 		"text_simple": " there we go yeyuyu ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_09",
@@ -1889,8 +1892,8 @@
 		"voice_id": 105,
 		"text": "There's a good little mine.",
 		"text_simple": " theres a good little mine ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_10",
@@ -1900,8 +1903,8 @@
 		"voice_id": 105,
 		"text": "Here goes nothing.",
 		"text_simple": " here goes nothing ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_11",
@@ -1911,8 +1914,8 @@
 		"voice_id": 105,
 		"text": "Hope this works.",
 		"text_simple": " hope this works ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_13",
@@ -1922,8 +1925,8 @@
 		"voice_id": 105,
 		"text": "There we are.",
 		"text_simple": " there we are ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_14",
@@ -1933,8 +1936,8 @@
 		"voice_id": 105,
 		"text": "And just so.",
 		"text_simple": " and just so ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_15",
@@ -1944,8 +1947,8 @@
 		"voice_id": 105,
 		"text": "Isn't that nice.",
 		"text_simple": " isnt that nice ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_16",
@@ -1955,8 +1958,8 @@
 		"voice_id": 105,
 		"text": "Isn't that nice. Yes you are.",
 		"text_simple": " isnt that nice yes you are ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_17",
@@ -1966,8 +1969,8 @@
 		"voice_id": 105,
 		"text": "And plant you right there.",
 		"text_simple": " and plant you right there ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_18",
@@ -1977,8 +1980,8 @@
 		"voice_id": 105,
 		"text": "And planting over there.",
 		"text_simple": " and planting over there ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_19",
@@ -1988,8 +1991,8 @@
 		"voice_id": 105,
 		"text": "And a planting over here. Mm mm mm.",
 		"text_simple": " and a planting over here mm mm mm ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_20",
@@ -1999,8 +2002,8 @@
 		"voice_id": 105,
 		"text": "Very nice.",
 		"text_simple": " very nice ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_21",
@@ -2010,8 +2013,8 @@
 		"voice_id": 105,
 		"text": "Uhsersadadadan there.",
 		"text_simple": " uhsersadadadan there ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_22",
@@ -2021,8 +2024,8 @@
 		"voice_id": 105,
 		"text": "Anodotonusonurdedum there.",
 		"text_simple": " anodotonusonurdedum there ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_23",
@@ -2032,8 +2035,8 @@
 		"voice_id": 105,
 		"text": "Annodododotododo there.",
 		"text_simple": " annodododotododo there ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_25",
@@ -2043,8 +2046,8 @@
 		"voice_id": 105,
 		"text": "Beautiful.",
 		"text_simple": " beautiful ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_26",
@@ -2054,8 +2057,8 @@
 		"voice_id": 105,
 		"text": "Just beautiful.",
 		"text_simple": " just beautiful ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_27",
@@ -2065,8 +2068,8 @@
 		"voice_id": 105,
 		"text": "So beautiful.",
 		"text_simple": " so beautiful ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesStickyBomb IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Sticky Bomb IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_remotemines_28",
@@ -2076,8 +2079,8 @@
 		"voice_id": 105,
 		"text": "There's a good little mine.",
 		"text_simple": " theres a good little mine ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_29",
@@ -2087,8 +2090,8 @@
 		"voice_id": 105,
 		"text": "Who's a good little mine.",
 		"text_simple": " whos a good little mine ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoHigh",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoHigh"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoHigh",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoHigh"
 	},
 	{
 		"name": "tech_remotemines_30",
@@ -2098,8 +2101,8 @@
 		"voice_id": 105,
 		"text": "Yes you're a good little mine. Yes you are.",
 		"text_simple": " yes youre a good little mine yes you are ",
-		"criteria": "CastExecute Istechies IsTechiesRemoteMineSet IsTechSpeakDuoLow",
-		"pretty_criteria": "Casting Remote Mines IsTechSpeakDuoLow"
+		"criteria": "CastExecute Istechies IsTechiesSetMine IsTechSpeakDuoLow",
+		"pretty_criteria": "Casting Proximity Mines IsTechSpeakDuoLow"
 	},
 	{
 		"name": "tech_focuseddetonate_01",
@@ -2109,8 +2112,8 @@
 		"voice_id": 105,
 		"text": "Boom! Ah ha ha ha!",
 		"text_simple": " boom ah ha ha ha ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_02",
@@ -2120,8 +2123,8 @@
 		"voice_id": 105,
 		"text": "Button!",
 		"text_simple": " button ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_5%",
+		"pretty_criteria": "Casting Reactive Tazer (5% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_04",
@@ -2131,8 +2134,8 @@
 		"voice_id": 105,
 		"text": "Yes!",
 		"text_simple": " yes ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_05",
@@ -2142,8 +2145,8 @@
 		"voice_id": 105,
 		"text": "It worked!",
 		"text_simple": " it worked ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_06",
@@ -2153,8 +2156,8 @@
 		"voice_id": 105,
 		"text": "Loud noises!",
 		"text_simple": " loud noises ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_5%",
-		"pretty_criteria": "Killing a hero with Remote Mines (5% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_5%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (5% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_07",
@@ -2164,8 +2167,8 @@
 		"voice_id": 105,
 		"text": "Wow!",
 		"text_simple": " wow ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_08",
@@ -2175,8 +2178,8 @@
 		"voice_id": 105,
 		"text": "Explosions!",
 		"text_simple": " explosions ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_11",
@@ -2186,8 +2189,8 @@
 		"voice_id": 105,
 		"text": "So beautiful!",
 		"text_simple": " so beautiful ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_13",
@@ -2197,8 +2200,8 @@
 		"voice_id": 105,
 		"text": "Boom! Ah he he he he!",
 		"text_simple": " boom ah he he he he ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_14",
@@ -2219,8 +2222,8 @@
 		"voice_id": 105,
 		"text": "Ye-he-hes!",
 		"text_simple": " yehehes ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_16",
@@ -2230,8 +2233,8 @@
 		"voice_id": 105,
 		"text": "It worked!",
 		"text_simple": " it worked ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_17",
@@ -2241,8 +2244,8 @@
 		"voice_id": 105,
 		"text": "Ye-he-ha-ha-ha-hes!",
 		"text_simple": " yehehahahahes ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_18",
@@ -2252,8 +2255,8 @@
 		"voice_id": 105,
 		"text": "Explosions!",
 		"text_simple": " explosions ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_5%",
-		"pretty_criteria": "Killing a hero with Remote Mines (5% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_5%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (5% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_19",
@@ -2263,8 +2266,8 @@
 		"voice_id": 105,
 		"text": "Ah! I can't believe it worked!",
 		"text_simple": " ah i cant believe it worked ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_21",
@@ -2274,8 +2277,8 @@
 		"voice_id": 105,
 		"text": "Eureka!",
 		"text_simple": " eureka ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_focuseddetonate_22",
@@ -2285,8 +2288,8 @@
 		"voice_id": 105,
 		"text": "Wow!",
 		"text_simple": " wow ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_failure_02",
@@ -2821,8 +2824,8 @@
 		"voice_id": 105,
 		"text": "To peace! To pieces!",
 		"text_simple": " to peace to pieces ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_detonatekill_02",
@@ -2832,8 +2835,8 @@
 		"voice_id": 105,
 		"text": "Where'd he go? Everywhere!",
 		"text_simple": " whered he go everywhere ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%|HeroChatWheel GoldTier",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)|A gold hero chat wheel was used"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%|HeroChatWheel GoldTier",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)|A gold hero chat wheel was used"
 	},
 	{
 		"name": "tech_detonatekill_03",
@@ -2843,8 +2846,8 @@
 		"voice_id": 105,
 		"text": "And that is why I wake up in the morning!",
 		"text_simple": " and that is why i wake up in the morning ",
-		"criteria": "Kill Istechies IsTechiesRemoteMineSet Chance_15%",
-		"pretty_criteria": "Killing a hero with Remote Mines (15% chance)"
+		"criteria": "Kill Istechies IsTechiesSetMine Chance_15%",
+		"pretty_criteria": "Killing a hero with Proximity Mines (15% chance)"
 	},
 	{
 		"name": "tech_rival_02",
@@ -5191,8 +5194,8 @@
 		"voice_id": 105,
 		"text": "Ah.",
 		"text_simple": " ah ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_02",
@@ -5202,8 +5205,8 @@
 		"voice_id": 105,
 		"text": "Oh.",
 		"text_simple": " oh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_03",
@@ -5213,8 +5216,8 @@
 		"voice_id": 105,
 		"text": "Oh.",
 		"text_simple": " oh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_04",
@@ -5224,8 +5227,8 @@
 		"voice_id": 105,
 		"text": "Yuh.",
 		"text_simple": " yuh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_05",
@@ -5235,8 +5238,8 @@
 		"voice_id": 105,
 		"text": "Ow!",
 		"text_simple": " ow ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_06",
@@ -5246,8 +5249,8 @@
 		"voice_id": 105,
 		"text": "Ooh.",
 		"text_simple": " ooh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_07",
@@ -5257,8 +5260,8 @@
 		"voice_id": 105,
 		"text": "Ow.",
 		"text_simple": " ow ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_08",
@@ -5268,8 +5271,8 @@
 		"voice_id": 105,
 		"text": "Oph.",
 		"text_simple": " oph ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_09",
@@ -5279,8 +5282,8 @@
 		"voice_id": 105,
 		"text": "Ah!",
 		"text_simple": " ah ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_10",
@@ -5290,8 +5293,8 @@
 		"voice_id": 105,
 		"text": "Eeh.",
 		"text_simple": " eeh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_11",
@@ -5301,8 +5304,8 @@
 		"voice_id": 105,
 		"text": "Kohw.",
 		"text_simple": " kohw ",
-		"criteria": "Pain Istechies IsTechSpeakTrioLow",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioLow"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioLow",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioLow"
 	},
 	{
 		"name": "tech_pain_12",
@@ -5312,8 +5315,8 @@
 		"voice_id": 105,
 		"text": "Uh!",
 		"text_simple": " uh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_13",
@@ -5323,8 +5326,8 @@
 		"voice_id": 105,
 		"text": "Ooh!",
 		"text_simple": " ooh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_14",
@@ -5334,8 +5337,8 @@
 		"voice_id": 105,
 		"text": "Ah!",
 		"text_simple": " ah ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_15",
@@ -5345,8 +5348,8 @@
 		"voice_id": 105,
 		"text": "Ouch!",
 		"text_simple": " ouch ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_16",
@@ -5356,8 +5359,8 @@
 		"voice_id": 105,
 		"text": "Owth!",
 		"text_simple": " owth ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_17",
@@ -5367,8 +5370,8 @@
 		"voice_id": 105,
 		"text": "Ow!",
 		"text_simple": " ow ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_18",
@@ -5378,8 +5381,8 @@
 		"voice_id": 105,
 		"text": "Uh!",
 		"text_simple": " uh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_19",
@@ -5389,8 +5392,8 @@
 		"voice_id": 105,
 		"text": "Ugh!",
 		"text_simple": " ugh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_20",
@@ -5400,8 +5403,8 @@
 		"voice_id": 105,
 		"text": "Mph!",
 		"text_simple": " mph ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_21",
@@ -5411,8 +5414,8 @@
 		"voice_id": 105,
 		"text": "Gluh!",
 		"text_simple": " gluh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_22",
@@ -5422,8 +5425,8 @@
 		"voice_id": 105,
 		"text": "Eugh!",
 		"text_simple": " eugh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_23",
@@ -5433,8 +5436,8 @@
 		"voice_id": 105,
 		"text": "Bluh!",
 		"text_simple": " bluh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioHigh",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioHigh"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioHigh",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioHigh"
 	},
 	{
 		"name": "tech_pain_24",
@@ -5454,8 +5457,8 @@
 		"voice_id": 105,
 		"text": "Ow.",
 		"text_simple": " ow ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_26",
@@ -5465,8 +5468,8 @@
 		"voice_id": 105,
 		"text": "Mm.",
 		"text_simple": " mm ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_27",
@@ -5476,8 +5479,8 @@
 		"voice_id": 105,
 		"text": "Uh.",
 		"text_simple": " uh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_28",
@@ -5487,8 +5490,8 @@
 		"voice_id": 105,
 		"text": "Dah.",
 		"text_simple": " dah ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_29",
@@ -5498,8 +5501,8 @@
 		"voice_id": 105,
 		"text": "Don't like it.",
 		"text_simple": " dont like it ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_30",
@@ -5509,8 +5512,8 @@
 		"voice_id": 105,
 		"text": "Ooch.",
 		"text_simple": " ooch ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_31",
@@ -5520,8 +5523,8 @@
 		"voice_id": 105,
 		"text": "Ow.",
 		"text_simple": " ow ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_32",
@@ -5531,8 +5534,8 @@
 		"voice_id": 105,
 		"text": "Oof.",
 		"text_simple": " oof ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_33",
@@ -5542,8 +5545,8 @@
 		"voice_id": 105,
 		"text": "Mm.",
 		"text_simple": " mm ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_34",
@@ -5553,8 +5556,8 @@
 		"voice_id": 105,
 		"text": "Uh.",
 		"text_simple": " uh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_35",
@@ -5564,8 +5567,8 @@
 		"voice_id": 105,
 		"text": "Quit it.",
 		"text_simple": " quit it ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_36",
@@ -5575,8 +5578,8 @@
 		"voice_id": 105,
 		"text": "No.",
 		"text_simple": " no ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_37",
@@ -5586,8 +5589,8 @@
 		"voice_id": 105,
 		"text": "Stop.",
 		"text_simple": " stop ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_38",
@@ -5597,8 +5600,8 @@
 		"voice_id": 105,
 		"text": "Quit it.",
 		"text_simple": " quit it ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_39",
@@ -5608,8 +5611,8 @@
 		"voice_id": 105,
 		"text": "Hey.",
 		"text_simple": " hey ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_40",
@@ -5619,8 +5622,8 @@
 		"voice_id": 105,
 		"text": "Don't do that.",
 		"text_simple": " dont do that ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_41",
@@ -5630,8 +5633,8 @@
 		"voice_id": 105,
 		"text": "Hey now.",
 		"text_simple": " hey now ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_42",
@@ -5641,8 +5644,8 @@
 		"voice_id": 105,
 		"text": "Aw.",
 		"text_simple": " aw ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_pain_43",
@@ -5652,8 +5655,8 @@
 		"voice_id": 105,
 		"text": "Uh.",
 		"text_simple": " uh ",
-		"criteria": "Pain Istechies IsTechSpeakTrioBarrel",
-		"pretty_criteria": "Taking damage IsTechSpeakTrioBarrel"
+		"criteria": "CastExecute Istechies IsTechiesZap Chance_1%|Pain Istechies IsTechSpeakTrioBarrel",
+		"pretty_criteria": "Casting Reactive Tazer (1% chance)|Taking damage IsTechSpeakTrioBarrel"
 	},
 	{
 		"name": "tech_anger_01",

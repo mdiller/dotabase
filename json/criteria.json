@@ -9230,6 +9230,77 @@
 		"required": true
 	},
 	{
+		"name": "Isprimal_beast",
+		"matchkey": "classname",
+		"matchvalue": "npc_dota_hero_primal_beast",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsEnemyprimal_beast",
+		"pretty": "Primal Beast",
+		"matchkey": "targetclassname",
+		"matchvalue": "npc_dota_hero_primal_beast",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAllyprimal_beast",
+		"pretty": "Primal Beast",
+		"matchkey": "nearby_ally",
+		"matchvalue": "npc_dota_hero_primal_beast",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsFrenzy",
+		"pretty": "IsFrenzy",
+		"matchkey": "abilityname",
+		"matchvalue": "primal_beast_onslaught_point",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsCharge",
+		"pretty": "IsCharge",
+		"matchkey": "abilityname",
+		"matchvalue": "primal_beast_onslaught_point_release",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsStomp",
+		"pretty": "IsStomp",
+		"matchkey": "abilityname",
+		"matchvalue": "primalbeast_heavysteps",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAngry",
+		"pretty": "IsAngry",
+		"matchkey": "abilityname",
+		"matchvalue": "primal_beast_inhibition",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPummel",
+		"pretty": "IsPummel",
+		"matchkey": "abilityname",
+		"matchvalue": "primalbeast_pummel",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPrimalLoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "primal_beast_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "Ispuck",
 		"matchkey": "classname",
 		"matchvalue": "npc_dota_hero_puck",
@@ -18781,6 +18852,22 @@
 		"required": true
 	},
 	{
+		"name": "IsTechiesStickyBomb",
+		"pretty": "Sticky Bomb",
+		"matchkey": "abilityname",
+		"matchvalue": "techies_sticky_bomb",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsTechiesZap",
+		"pretty": "Reactive Tazer",
+		"matchkey": "abilityname",
+		"matchvalue": "techies_reactive_tazer",
+		"weight": 5.0,
+		"required": true
+	},
+	{
 		"name": "IsTechiesStasisTrap",
 		"pretty": "Stasis Trap",
 		"matchkey": "abilityname",
@@ -21603,26 +21690,10 @@
 		"required": true
 	},
 	{
-		"name": "SilverTier",
-		"pretty": "silver",
+		"name": "PlatinumTier",
+		"pretty": "platinum",
 		"matchkey": "badge_tier",
-		"matchvalue": "silver",
-		"weight": 1.0,
-		"required": true
-	},
-	{
-		"name": "GoldTier",
-		"pretty": "gold",
-		"matchkey": "badge_tier",
-		"matchvalue": "gold",
-		"weight": 1.0,
-		"required": true
-	},
-	{
-		"name": "GrandmasterTier",
-		"pretty": "grandmaster",
-		"matchkey": "badge_tier",
-		"matchvalue": "grandmaster",
+		"matchvalue": "platinum",
 		"weight": 1.0,
 		"required": true
 	},
@@ -21635,6 +21706,22 @@
 		"required": true
 	},
 	{
+		"name": "GoldTier",
+		"pretty": "gold",
+		"matchkey": "badge_tier",
+		"matchvalue": "gold",
+		"weight": 1.0,
+		"required": true
+	},
+	{
+		"name": "SilverTier",
+		"pretty": "silver",
+		"matchkey": "badge_tier",
+		"matchvalue": "silver",
+		"weight": 1.0,
+		"required": true
+	},
+	{
 		"name": "MasterTier",
 		"pretty": "master",
 		"matchkey": "badge_tier",
@@ -21643,10 +21730,10 @@
 		"required": true
 	},
 	{
-		"name": "PlatinumTier",
-		"pretty": "platinum",
+		"name": "GrandmasterTier",
+		"pretty": "grandmaster",
 		"matchkey": "badge_tier",
-		"matchvalue": "platinum",
+		"matchvalue": "grandmaster",
 		"weight": 1.0,
 		"required": true
 	},
