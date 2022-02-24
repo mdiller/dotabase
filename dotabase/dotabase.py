@@ -163,6 +163,7 @@ class Item(Base):
 	cooldown = Column(String)
 	cast_range = Column(String)
 	mana_cost = Column(String)
+	duration = Column(String)
 	base_level = Column(Integer)
 	description = Column(String)
 	lore = Column(String)
