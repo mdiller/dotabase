@@ -5676,33 +5676,13 @@
 		}
 	},
 	{
-		"id": 136,
-		"name": "item_recipe_radiance",
-		"localized_name": "Radiance Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1350,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "136",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1350",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_radiance",
-			"ItemRequirements": {
-				"01": "item_relic"
-			}
-		}
-	},
-	{
 		"id": 137,
 		"name": "item_radiance",
 		"localized_name": "Radiance",
 		"aliases": "radiance",
 		"quality": "epic",
 		"icon": "/panorama/images/items/radiance_png.png",
-		"cost": 5100,
+		"cost": 5050,
 		"cast_range": "700",
 		"description": "# Toggle: Burn\nWhen active, scorches enemies for **60** magical damage per second and causes them to miss **10%** of their attacks. Illusions deal **35** magical damage per second.\n\nRadius: **700**",
 		"lore": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.",
@@ -5741,18 +5721,18 @@
 				"value": "700"
 			}
 		],
-		"recipe": "item_relic|item_recipe_radiance",
+		"recipe": "item_relic|item_talisman_of_evasion",
 		"json_data": {
 			"ID": "137",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"AbilityCastRange": "700",
-			"ItemCost": "5100",
+			"ItemCost": "5050",
 			"ItemShopTags": "damage",
 			"ItemQuality": "epic",
 			"ItemAliases": "radiance",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
-			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_NEVER",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
 				"bonus_damage": "60",
 				"aura_damage": "60",
@@ -7694,7 +7674,7 @@
 	{
 		"id": 175,
 		"name": "item_recipe_ethereal_blade",
-		"localized_name": "item_recipe_ethereal_blade",
+		"localized_name": "Ethereal Blade Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1100,
 		"secret_shop": false,
@@ -11150,12 +11130,18 @@
 				"footer": "Mana Regeneration"
 			},
 			{
-				"key": "silence_damage_percent",
-				"value": "30"
+				"key": "bonus_magic_resist",
+				"value": "20",
+				"header": "+",
+				"footer": "Magic Resistance"
 			},
 			{
 				"key": "silence_duration",
 				"value": "5"
+			},
+			{
+				"key": "silence_damage_percent",
+				"value": "30"
 			},
 			{
 				"key": "target_crit_multiplier",
@@ -11166,18 +11152,12 @@
 				"value": "100"
 			},
 			{
-				"key": "bonus_magic_resist",
-				"value": "20",
-				"header": "+",
-				"footer": "Magic Resistance"
+				"key": "duration",
+				"value": "6"
 			},
 			{
 				"key": "spell_amp_debuff",
 				"value": "35"
-			},
-			{
-				"key": "duration",
-				"value": "6"
 			}
 		],
 		"recipe": "item_orchid|item_mage_slayer|item_recipe_bloodthorn",
@@ -11204,13 +11184,13 @@
 				"bonus_attack_speed": "60",
 				"bonus_damage": "50",
 				"bonus_mana_regen": "5",
-				"silence_damage_percent": "30",
+				"bonus_magic_resist": "20",
 				"silence_duration": "5",
+				"silence_damage_percent": "30",
 				"target_crit_multiplier": "130",
 				"tooltip_crit_chance": "100",
-				"bonus_magic_resist": "20",
-				"spell_amp_debuff": "35",
-				"duration": "6"
+				"duration": "6",
+				"spell_amp_debuff": "35"
 			}
 		}
 	},
@@ -18684,27 +18664,6 @@
 		}
 	},
 	{
-		"id": 833,
-		"name": "item_recipe_tenderizer",
-		"localized_name": "Bruiser's Maul Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 425,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "833",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "425",
-			"ItemShopTags": "",
-			"ItemPurchasable": "0",
-			"ItemRecipe": "1",
-			"ItemResult": "item_tenderizer",
-			"ItemRequirements": {
-				"01": "item_basher;item_eagle"
-			}
-		}
-	},
-	{
 		"id": 834,
 		"name": "item_black_powder_bag",
 		"localized_name": "Blast Rig",
@@ -19086,137 +19045,6 @@
 		}
 	},
 	{
-		"id": 904,
-		"name": "item_voidwalker_scythe",
-		"localized_name": "Voidwalker Scythe",
-		"aliases": "void|scythe",
-		"quality": "rare",
-		"icon": "/panorama/images/items/voidwalker_scythe_png.png",
-		"cost": 3900,
-		"description": "# Passive: Swift Strike\nEvery **4** attacks, deal **300** with your next attack. That attack can't be evaded.\n\n# Passive: Void Shift\nEvery **4** attacks received, become untargettable for **1** seconds.",
-		"lore": "Lore lore lorem ipsum.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "bonus_agility",
-				"value": "40",
-				"header": "+",
-				"footer": "Agility"
-			},
-			{
-				"key": "attacks",
-				"value": "4"
-			},
-			{
-				"key": "bonus_damage",
-				"value": "300"
-			},
-			{
-				"key": "buff_duration",
-				"value": "1"
-			}
-		],
-		"recipe": "item_eagle|item_javelin",
-		"json_data": {
-			"ID": "904",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "3900",
-			"ItemShopTags": "hard_to_tag",
-			"ItemQuality": "rare",
-			"ItemAliases": "void;scythe",
-			"ItemPurchasable": "0",
-			"AbilityValues": {
-				"bonus_agility": "40",
-				"attacks": "4",
-				"bonus_damage": "300",
-				"buff_duration": "1"
-			}
-		}
-	},
-	{
-		"id": 906,
-		"name": "item_tenderizer",
-		"localized_name": "Bruiser's Maul",
-		"aliases": "superbasher",
-		"quality": "rare",
-		"icon": "/panorama/images/items/tenderizer_png.png",
-		"cost": 6100,
-		"cooldown": "2.3",
-		"description": "# Passive: Bash\nGrants melee heroes a **25%** chance on hit to stun the target for **1.5** seconds and deal **100** bonus physical damage.  Bash chance for ranged heroes is **10%**.\n\n# Passive: Tenderize\nEvery Attack on an enemy will reduce their total attack speed by **5%** per hit. Lasts **3** seconds.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "bonus_agility",
-				"value": "35",
-				"header": "+",
-				"footer": "Agility"
-			},
-			{
-				"key": "bonus_strength",
-				"value": "15",
-				"header": "+",
-				"footer": "Strength"
-			},
-			{
-				"key": "bonus_damage",
-				"value": "30",
-				"header": "+",
-				"footer": "Damage"
-			},
-			{
-				"key": "bash_chance_melee",
-				"value": "25"
-			},
-			{
-				"key": "bash_chance_ranged",
-				"value": "10"
-			},
-			{
-				"key": "bash_duration",
-				"value": "1.5"
-			},
-			{
-				"key": "bash_cooldown",
-				"value": "2.3"
-			},
-			{
-				"key": "bonus_chance_damage",
-				"value": "100"
-			},
-			{
-				"key": "weaken_per_hit",
-				"value": "5"
-			},
-			{
-				"key": "weaken_duration",
-				"value": "3"
-			}
-		],
-		"recipe": "item_basher|item_eagle|item_recipe_tenderizer",
-		"json_data": {
-			"ID": "906",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "6100",
-			"ItemShopTags": "hard_to_tag",
-			"ItemQuality": "rare",
-			"ItemAliases": "superbasher",
-			"AbilityCooldown": "2.3",
-			"ItemPurchasable": "0",
-			"AbilityValues": {
-				"bonus_agility": "35",
-				"bonus_strength": "15",
-				"bonus_damage": "30",
-				"bash_chance_melee": "25",
-				"bash_chance_ranged": "10",
-				"bash_duration": "1.5",
-				"bash_cooldown": "2.3",
-				"bonus_chance_damage": "100",
-				"weaken_per_hit": "5",
-				"weaken_duration": "3"
-			}
-		}
-	},
-	{
 		"id": 907,
 		"name": "item_recipe_wraith_pact",
 		"localized_name": "Wraith Pact Recipe",
@@ -19446,78 +19274,9 @@
 		}
 	},
 	{
-		"id": 929,
-		"name": "item_eagle_eye",
-		"localized_name": "Eagle Eye",
-		"aliases": "eagle eye",
-		"quality": "component",
-		"icon": "/panorama/images/items/eagle_eye_png.png",
-		"cost": 3700,
-		"cooldown": "30",
-		"cast_range": "1500",
-		"description": "# Active: Predator's Gaze\nReveal a target **300** area of the map within **1500** distance for **6** seconds.\n\n# Passive: True Sight\nGrants the ability to see invisible units and wards to any allied vision within **900** range of its carrier. \n\n# Passive: Everlasting\nCannot be dropped. On Death it dissassembles and the gem drops on the floor.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "bonus_agi",
-				"value": "35",
-				"header": "+",
-				"footer": "Agility"
-			},
-			{
-				"key": "radius",
-				"value": "900"
-			},
-			{
-				"key": "active_radius",
-				"value": "300"
-			},
-			{
-				"key": "duration",
-				"value": "6"
-			}
-		],
-		"recipe": "item_eagle|item_gem",
-		"json_data": {
-			"ID": "929",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
-			"AbilityCastRange": "1500",
-			"Model": "models/props_gameplay/gem01.vmdl",
-			"Effect": "particles/generic_gameplay/dropped_gem.vpcf",
-			"AbilityCooldown": "30",
-			"ItemPurchasable": "0",
-			"ItemCost": "3700",
-			"ItemShopTags": "see_invis",
-			"ItemQuality": "component",
-			"ItemAliases": "eagle eye",
-			"ItemSellable": "0",
-			"ItemInitiallySellable": "0",
-			"ItemShareability": "ITEM_FULLY_SHAREABLE",
-			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ItemStockMax": "1",
-			"ItemStockTime": "600.0",
-			"ItemSupport": "1",
-			"ItemKillable": "0",
-			"ItemContributesToNetWorthWhenDropped": "0",
-			"AllowedInBackpack": "0",
-			"IsTempestDoubleClonable": "0",
-			"ItemDroppable": "0",
-			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
-			"UIPickupSound": "Item.PickUpGemShop",
-			"UIDropSound": "Item.DropGemShop",
-			"WorldDropSound": "Item.DropGemWorld",
-			"AbilityValues": {
-				"bonus_agi": "35",
-				"radius": "900",
-				"active_radius": "300",
-				"duration": "6"
-			}
-		}
-	},
-	{
 		"id": 930,
 		"name": "item_recipe_boots_of_bearing",
-		"localized_name": "item_recipe_boots_of_bearing",
+		"localized_name": "Boots of Bearing Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1500,
 		"secret_shop": false,
@@ -19634,122 +19393,6 @@
 				"bonus_health_regen": "15",
 				"recharge_time": "180",
 				"bonus_ms_duration": "2"
-			}
-		}
-	},
-	{
-		"id": 964,
-		"name": "item_diffusal_blade_2",
-		"localized_name": "Diffusal Blade",
-		"aliases": "diffusal blade 2",
-		"quality": "artifact",
-		"icon": "/panorama/images/items/diffusal_blade_2_png.png",
-		"cost": 5500,
-		"cooldown": "15",
-		"cast_range": "600",
-		"mana_cost": "0",
-		"description": "# Active: Purge\nTargets an enemy, removing buffs from the target and slowing it for **4** seconds.\n\nRange: **600**\n\n# Passive: Manabreak\nEach attack burns **50** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **16** mana per attack from melee illusions and **10** mana per attack from ranged illusions. \n\nDispel Type: **Basic Dispel**",
-		"lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
-		"secret_shop": false,
-		"ability_special": [
-			{
-				"key": "bonus_agility",
-				"value": "45",
-				"header": "+",
-				"footer": "Agility"
-			},
-			{
-				"key": "bonus_intellect",
-				"value": "15",
-				"header": "+",
-				"footer": "Intelligence"
-			},
-			{
-				"key": "feedback_mana_burn",
-				"value": "50"
-			},
-			{
-				"key": "feedback_mana_burn_illusion_melee",
-				"value": "16"
-			},
-			{
-				"key": "feedback_mana_burn_illusion_ranged",
-				"value": "10"
-			},
-			{
-				"key": "purge_rate",
-				"value": "5"
-			},
-			{
-				"key": "purge_root_duration",
-				"value": "3.0"
-			},
-			{
-				"key": "purge_slow_duration",
-				"value": "4.0"
-			},
-			{
-				"key": "damage_per_burn",
-				"value": "1"
-			},
-			{
-				"key": "purge",
-				"value": "1"
-			}
-		],
-		"recipe": "item_diffusal_blade|item_eagle|item_recipe_diffusal_blade_2",
-		"json_data": {
-			"ID": "964",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
-			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
-			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
-			"FightRecapLevel": "1",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"AbilityCastRange": "600",
-			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "15.0",
-			"AbilitySharedCooldown": "diffusal",
-			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"AbilityManaCost": "0",
-			"ItemCost": "5500",
-			"ItemShopTags": "agi;int;unique;hard_to_tag",
-			"ItemQuality": "artifact",
-			"ItemPurchasable": "0",
-			"ItemAliases": "diffusal blade 2",
-			"ItemPermanent": "1",
-			"ShouldBeSuggested": "1",
-			"AbilityValues": {
-				"bonus_agility": "45",
-				"bonus_intellect": "15",
-				"feedback_mana_burn": "50",
-				"feedback_mana_burn_illusion_melee": "16",
-				"feedback_mana_burn_illusion_ranged": "10",
-				"purge_rate": "5",
-				"purge_root_duration": "3.0",
-				"purge_slow_duration": "4.0",
-				"damage_per_burn": "1",
-				"purge": "1"
-			}
-		}
-	},
-	{
-		"id": 965,
-		"name": "item_recipe_diffusal_blade_2",
-		"localized_name": "item_recipe_diffusal_blade_2",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 200,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "965",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "200",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemPurchasable": "0",
-			"ItemResult": "item_diffusal_blade_2",
-			"ItemRequirements": {
-				"01": "item_diffusal_blade;item_eagle"
 			}
 		}
 	},
