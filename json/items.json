@@ -4036,13 +4036,33 @@
 		}
 	},
 	{
+		"id": 97,
+		"name": "item_recipe_orchid",
+		"localized_name": "Orchid Malevolence Recipe",
+		"icon": "/panorama/images/items/recipe.png",
+		"cost": 300,
+		"secret_shop": false,
+		"ability_special": [],
+		"json_data": {
+			"ID": "97",
+			"Model": "models/props_gameplay/recipe.vmdl",
+			"ItemCost": "300",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_orchid",
+			"ItemRequirements": {
+				"01": "item_blitz_knuckles;item_claymore;item_void_stone"
+			}
+		}
+	},
+	{
 		"id": 98,
 		"name": "item_orchid",
 		"localized_name": "Orchid Malevolence",
 		"aliases": "orchid malevolence|silence",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orchid_png.png",
-		"cost": 3175,
+		"cost": 3475,
 		"cooldown": "18",
 		"cast_range": "900",
 		"mana_cost": "100",
@@ -4077,7 +4097,7 @@
 				"value": "5"
 			}
 		],
-		"recipe": "item_blitz_knuckles|item_claymore|item_void_stone",
+		"recipe": "item_blitz_knuckles|item_claymore|item_void_stone|item_recipe_orchid",
 		"json_data": {
 			"ID": "98",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -4090,7 +4110,7 @@
 			"AbilityCooldown": "18.0",
 			"AbilitySharedCooldown": "orchid",
 			"AbilityManaCost": "100",
-			"ItemCost": "3175",
+			"ItemCost": "3475",
 			"ItemShopTags": "attack_speed;damage;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "orchid malevolence;silence",
@@ -5112,7 +5132,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "bs;bloodstone",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"AllowedInBackpack": "0",
+			"AllowedInBackpack": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_health": "550",
@@ -8058,7 +8078,7 @@
 		"cost": 1700,
 		"cooldown": "30",
 		"cast_range": "1200",
-		"description": "# Active: Endurance\nConsumes a charge and gives +**45** attack speedand +**13%** movement speed to nearby allies for **6** seconds. \n\nComes with **8** charges.\n\nRadius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
+		"description": "# Active: Endurance\nConsumes a charge and gives +**45** attack speed and +**13%** movement speed to nearby allies for **6** seconds. \n\nComes with **8** charges.\n\nRadius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
 		"secret_shop": false,
 		"ability_special": [
@@ -11097,7 +11117,7 @@
 		"aliases": "orchid malevolence",
 		"quality": "epic",
 		"icon": "/panorama/images/items/bloodthorn_png.png",
-		"cost": 6500,
+		"cost": 6800,
 		"cooldown": "15",
 		"cast_range": "900",
 		"mana_cost": "100",
@@ -11173,7 +11193,7 @@
 			"AbilityCooldown": "15.0",
 			"AbilitySharedCooldown": "orchid",
 			"AbilityManaCost": "100",
-			"ItemCost": "6500",
+			"ItemCost": "6800",
 			"ItemShopTags": "int;attack_speed;damage;regen_mana;damage;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "orchid malevolence",
@@ -19303,7 +19323,7 @@
 		"cost": 4125,
 		"cooldown": "30",
 		"cast_range": "1200",
-		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%** Movement Speed to nearby allies for **6** seconds For the first 2 seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
+		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%** Movement Speed to nearby allies for **6** seconds For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19361,7 +19381,7 @@
 			},
 			{
 				"key": "bonus_ms_duration",
-				"value": "2"
+				"value": "1.5"
 			}
 		],
 		"recipe": "item_tranquil_boots|item_ancient_janggo|item_recipe_boots_of_bearing",
@@ -19392,7 +19412,7 @@
 				"bonus_movement_speed": "65",
 				"bonus_health_regen": "15",
 				"recharge_time": "180",
-				"bonus_ms_duration": "2"
+				"bonus_ms_duration": "1.5"
 			}
 		}
 	},
