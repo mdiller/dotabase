@@ -8,7 +8,7 @@
 		"icon": "/panorama/images/items/blink_png.png",
 		"cost": 2250,
 		"cooldown": "15",
-		"cast_range": "0",
+		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Blink\nTeleport to a target point up to **1200** units away. \n\nBlink Dagger cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "The fabled dagger used by the fastest assassin ever to walk the lands.",
@@ -29,8 +29,9 @@
 		],
 		"json_data": {
 			"ID": "1",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityCastRange": "0",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
+			"AbilityCastRange": "1200",
+			"AbilityOvershootCastRange": "960",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "0",
@@ -937,13 +938,15 @@
 		"quality": "component",
 		"icon": "/panorama/images/items/lifesteal_png.png",
 		"cost": 900,
-		"description": "# Passive: Lifesteal\nHeals the attacker for **15%** of attack damage dealt.",
+		"description": "# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt.",
 		"lore": "A mask that drains the energy of those caught in its gaze.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "lifesteal_percent",
-				"value": "15"
+				"value": "15%",
+				"header": "+",
+				"footer": "Lifesteal"
 			}
 		],
 		"json_data": {
@@ -1830,10 +1833,6 @@
 			{
 				"key": "duration_minutes_tooltip",
 				"value": "7"
-			},
-			{
-				"key": "activation_delay",
-				"value": "0"
 			}
 		],
 		"json_data": {
@@ -1867,8 +1866,7 @@
 				"vision_range": "0",
 				"true_sight_range": "900",
 				"health": "200",
-				"duration_minutes_tooltip": "7",
-				"activation_delay": "0"
+				"duration_minutes_tooltip": "7"
 			}
 		}
 	},
@@ -2995,37 +2993,38 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/bracer_png.png",
 		"cost": 505,
+		"base_level": 1,
 		"description": "Doubles its bonuses after minute **25**.",
 		"lore": "The bracer is a common choice to toughen up defenses and increase longevity.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "5",
+				"value": "5 10",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Agility"
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_damage",
-				"value": "3",
+				"value": "3 6",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "1",
+				"value": "1 2",
 				"header": "+",
 				"footer": "HP Regeneration"
 			},
@@ -3038,6 +3037,9 @@
 		"json_data": {
 			"ID": "73",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"MaxUpgradeLevel": "2",
+			"ItemBaseLevel": "1",
+			"ItemLevelByGameTime": "25",
 			"ItemCost": "505",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
@@ -3045,11 +3047,11 @@
 			"ShouldBeInitiallySuggested": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_strength": "5",
-				"bonus_agility": "2",
-				"bonus_intellect": "2",
-				"bonus_damage": "3",
-				"bonus_health_regen": "1",
+				"bonus_strength": "5 10",
+				"bonus_agility": "2 4",
+				"bonus_intellect": "2 4",
+				"bonus_damage": "3 6",
+				"bonus_health_regen": "1 2",
 				"clock_time": "25"
 			}
 		}
@@ -3081,37 +3083,38 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/wraith_band_png.png",
 		"cost": 505,
+		"base_level": 1,
 		"description": "Doubles its bonuses after minute **25**.",
 		"lore": "A circlet with faint whispers echoing about it.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_agility",
-				"value": "5",
+				"value": "5 10",
 				"header": "+",
 				"footer": "Agility"
 			},
 			{
 				"key": "bonus_strength",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "5",
+				"value": "5 10",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -3124,6 +3127,9 @@
 		"json_data": {
 			"ID": "75",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"MaxUpgradeLevel": "2",
+			"ItemBaseLevel": "1",
+			"ItemLevelByGameTime": "25",
 			"ItemCost": "505",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
@@ -3131,11 +3137,11 @@
 			"ShouldBeInitiallySuggested": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_agility": "5",
-				"bonus_strength": "2",
-				"bonus_intellect": "2",
-				"bonus_attack_speed": "5",
-				"bonus_armor": "2",
+				"bonus_agility": "5 10",
+				"bonus_strength": "2 4",
+				"bonus_intellect": "2 4",
+				"bonus_attack_speed": "5 10",
+				"bonus_armor": "2 4",
 				"clock_time": "25"
 			}
 		}
@@ -3167,37 +3173,38 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/null_talisman_png.png",
 		"cost": 505,
+		"base_level": 1,
 		"description": "Doubles its bonuses after minute **25**.",
 		"lore": "A small gemstone attached to several chains.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "5",
+				"value": "5 10",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_strength",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "2",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Agility"
 			},
 			{
 				"key": "bonus_mana_reduction",
-				"value": "4%",
+				"value": "4% 8%",
 				"header": "+",
 				"footer": "Manacost Reduction"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.6",
+				"value": "0.6 1.2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -3210,6 +3217,9 @@
 		"json_data": {
 			"ID": "77",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"MaxUpgradeLevel": "2",
+			"ItemBaseLevel": "1",
+			"ItemLevelByGameTime": "25",
 			"ItemCost": "505",
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
@@ -3217,11 +3227,11 @@
 			"ShouldBeInitiallySuggested": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_intellect": "5",
-				"bonus_strength": "2",
-				"bonus_agility": "2",
-				"bonus_mana_reduction": "4",
-				"bonus_mana_regen": "0.6",
+				"bonus_intellect": "5 10",
+				"bonus_strength": "2 4",
+				"bonus_agility": "2 4",
+				"bonus_mana_reduction": "4 8",
+				"bonus_mana_regen": "0.6 1.2",
 				"clock_time": "25"
 			}
 		}
@@ -5094,16 +5104,10 @@
 				"footer": "Mana"
 			},
 			{
-				"key": "hero_lifesteal",
+				"key": "spell_lifesteal",
 				"value": "25%",
 				"header": "+",
-				"footer": "Spell Lifesteal (Hero)"
-			},
-			{
-				"key": "creep_lifesteal",
-				"value": "5%",
-				"header": "+",
-				"footer": "Spell Lifesteal (Creep)"
+				"footer": "Spell Lifesteal"
 			},
 			{
 				"key": "buff_duration",
@@ -5137,8 +5141,7 @@
 			"AbilityValues": {
 				"bonus_health": "550",
 				"bonus_mana": "550",
-				"hero_lifesteal": "25",
-				"creep_lifesteal": "5",
+				"spell_lifesteal": "25",
 				"buff_duration": "6",
 				"lifesteal_multiplier": "2",
 				"hp_cost": "10"
@@ -6701,7 +6704,7 @@
 		"icon": "/panorama/images/items/satanic_png.png",
 		"cost": 5050,
 		"cooldown": "30",
-		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **200%** for **6** seconds. \n\nDispel Type: **Basic Dispel** \n\n# Passive: Lifesteal\nHeals the attacker for **25%** of attack damage dealt.",
+		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **200%** for **6** seconds. \n\nDispel Type: **Basic Dispel** \n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt.",
 		"lore": "Immense power at the cost of your soul.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6719,7 +6722,9 @@
 			},
 			{
 				"key": "lifesteal_percent",
-				"value": "25"
+				"value": "25%",
+				"header": "+",
+				"footer": "Lifesteal"
 			},
 			{
 				"key": "unholy_lifesteal_percent",
@@ -7360,7 +7365,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/desolator_png.png",
 		"cost": 3500,
-		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **7** seconds.\n\n# Passive: Soul Stealer\nDesolator gains +**2** damage per hero kill and +**1** damage per assist while equipped up to a maximum of **25**.",
+		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **7** seconds.\n\n# Passive: Soul Stealer\nDesolator gains +**2** damage every time an enemy hero dies while affected by Corruption, to a maximum of **25**.",
 		"lore": "A wicked weapon, used in torturing political criminals.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7496,7 +7501,7 @@
 		"cost": 1775,
 		"cooldown": "16",
 		"mana_cost": "25",
-		"description": "# Active: Berserk\nGives **110** attack speed and **30** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for **20%** of attack damage dealt.",
+		"description": "# Active: Berserk\nGives **110** attack speed and **30** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt.",
 		"lore": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7514,7 +7519,9 @@
 			},
 			{
 				"key": "lifesteal_percent",
-				"value": "20"
+				"value": "20%",
+				"header": "+",
+				"footer": "Lifesteal"
 			},
 			{
 				"key": "berserk_bonus_attack_speed",
@@ -9568,10 +9575,6 @@
 				"key": "sentry_duration_minutes_tooltip",
 				"value": "8",
 				"header": "SENTRY DURATION (MINUTES):"
-			},
-			{
-				"key": "activation_delay",
-				"value": "0"
 			}
 		],
 		"recipe": "item_ward_sentry|item_ward_observer",
@@ -9600,8 +9603,7 @@
 				"observer_vision_range_tooltip": "1600",
 				"observer_duration_minutes_tooltip": "6",
 				"true_sight_range": "900",
-				"sentry_duration_minutes_tooltip": "8",
-				"activation_delay": "0"
+				"sentry_duration_minutes_tooltip": "8"
 			}
 		}
 	},
@@ -10266,7 +10268,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/aether_lens_png.png",
 		"cost": 2275,
-		"description": "# Passive: Aethereal Focus\nIncreases targeted spell and item cast range by **225**.",
+		"description": "# Passive: Aethereal Focus\nIncreases targeted spell and item cast range.",
 		"lore": "Polished with the incantation of his final breath, the gift of a dying mage to his sickly son.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10284,7 +10286,9 @@
 			},
 			{
 				"key": "cast_range_bonus",
-				"value": "225"
+				"value": "225",
+				"header": "+",
+				"footer": "Cast Range"
 			}
 		],
 		"recipe": "item_energy_booster|item_void_stone|item_recipe_aether_lens",
@@ -10341,13 +10345,15 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/octarine_core_png.png",
 		"cost": 5275,
-		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items by **25%**.",
+		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items.",
 		"lore": "At the core of spellcraft are spectrums only the very gifted can sense.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_cooldown",
-				"value": "25"
+				"value": "25%",
+				"header": "+",
+				"footer": "Cooldown Reduction"
 			},
 			{
 				"key": "cast_range_bonus",
@@ -10417,7 +10423,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/dragon_lance_png.png",
 		"cost": 1900,
-		"description": "# Passive: Dragon's Reach\nIncreases attack range of ranged heroes by **140**.",
+		"description": "# Passive: Dragon's Reach\nIncreases attack range of ranged heroes.",
 		"lore": "The forward charge of the wyvern host grants no quarter.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10435,7 +10441,9 @@
 			},
 			{
 				"key": "base_attack_range",
-				"value": "140"
+				"value": "140",
+				"header": "+",
+				"footer": "Attack Range (Ranged Only)"
 			}
 		],
 		"recipe": "item_ogre_axe|item_boots_of_elves|item_boots_of_elves",
@@ -10896,7 +10904,7 @@
 		"quality": "consumable",
 		"icon": "/panorama/images/items/moon_shard_png.png",
 		"cost": 4000,
-		"description": "# Use: Consume\nConsume the Moon Shard to permanently gain **60** attack speed and **200** bonus night vision. Max 1 use.\n\n# Passive: Shade Sight\nGrants **400** bonus night vision.",
+		"description": "# Use: Consume\nConsume the Moon Shard to permanently gain **60** attack speed and **200** bonus night vision. Max 1 use.\n\n# Passive: Shade Sight\nGrants bonus night vision.",
 		"lore": "Said to be a tear from the lunar goddess Selemene.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10908,7 +10916,9 @@
 			},
 			{
 				"key": "bonus_night_vision",
-				"value": "400"
+				"value": "400",
+				"header": "+",
+				"footer": "Bonus Night Vision"
 			},
 			{
 				"key": "consumed_bonus",
@@ -11754,7 +11764,7 @@
 		"cooldown": "20",
 		"cast_range": "650",
 		"mana_cost": "100",
-		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **6** seconds, allows you to make **5** attacks against the target without range restrictions and with +**100** attack speed.\n\nWorks like Force Staff when used on self or allies.\n\nAllied Range: **650**\nEnemy Range: **450**\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes by **150**.",
+		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **6** seconds, allows you to make **5** attacks against the target without range restrictions and with +**100** attack speed.\n\nWorks like Force Staff when used on self or allies.\n\nAllied Range: **650**\nEnemy Range: **450**\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes.",
 		"lore": "A legendary pike once held as royal sigil of the ancient wyvern riders.",
 		"secret_shop": false,
 		"ability_special": [
@@ -11784,7 +11794,9 @@
 			},
 			{
 				"key": "base_attack_range",
-				"value": "150"
+				"value": "150",
+				"header": "+",
+				"footer": "Attack Range (Ranged Only)"
 			},
 			{
 				"key": "push_length",
@@ -12554,14 +12566,16 @@
 		"localized_name": "Quickening Charm",
 		"icon": "/panorama/images/items/quickening_charm_png.png",
 		"cost": 0,
-		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items by **10%**",
+		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items.",
 		"lore": "An evergreen amulet of druidic origins.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
 			{
 				"key": "bonus_cooldown",
-				"value": "10"
+				"value": "10%",
+				"header": "+",
+				"footer": "Cooldown Reduction"
 			},
 			{
 				"key": "bonus_health_regen",
@@ -12809,7 +12823,7 @@
 				"key": "vision_bonus",
 				"value": "350",
 				"header": "+",
-				"footer": "Vision Bonus"
+				"footer": "Bonus Vision"
 			},
 			{
 				"key": "mana_regen",
@@ -13526,14 +13540,16 @@
 		"localized_name": "Spell Prism",
 		"icon": "/panorama/images/items/spell_prism_png.png",
 		"cost": 0,
-		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items by **12%**.",
+		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items.",
 		"lore": "Even the slightest flaw in the components of a spell prism can result in the death of its user.",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
 			{
 				"key": "bonus_cooldown",
-				"value": "12"
+				"value": "12%",
+				"header": "+",
+				"footer": "Cooldown Reduction"
 			},
 			{
 				"key": "bonus_all_stats",
@@ -15647,17 +15663,15 @@
 		"quality": "component",
 		"icon": "/panorama/images/items/voodoo_mask_png.png",
 		"cost": 700,
-		"description": "# Passive: Spell Lifesteal\n**10%** of spell damage dealt to enemy heroes is returned to the caster as health, regardless of spell damage type.  \n\nLifesteal reduced to **2%** against creeps.",
+		"description": "# Passive: Spell Lifesteal\nSpell damage dealt to enemy heroes is returned to the caster as health, regardless of spell damage type.  \n\nLifesteal reduced against creeps.",
 		"lore": "A mask tuned to sip the arcane bindings that pass between caster and foe.",
 		"secret_shop": false,
 		"ability_special": [
 			{
-				"key": "hero_lifesteal",
-				"value": "10"
-			},
-			{
-				"key": "creep_lifesteal",
-				"value": "2"
+				"key": "spell_lifesteal",
+				"value": "10%",
+				"header": "+",
+				"footer": "Spell Lifesteal"
 			}
 		],
 		"json_data": {
@@ -15671,11 +15685,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"hero_lifesteal": "10"
-				},
-				"02": {
-					"var_type": "FIELD_FLOAT",
-					"creep_lifesteal": "2"
+					"spell_lifesteal": "10"
 				}
 			}
 		}
@@ -16878,7 +16888,7 @@
 		"icon": "/panorama/images/items/overwhelming_blink_png.png",
 		"cost": 6800,
 		"cooldown": "15",
-		"cast_range": "0",
+		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Overwhelming Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, all enemies in a **800** AoE have **50%** movement speed slow and **50** attack speed slow for **6** seconds, and take damage equal to 100 + **150%** of your strength. \n\nOverwhelming Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "A horrifying dagger forged in the chaos maw and nigh untouchable by mortal hands.",
@@ -16926,8 +16936,9 @@
 		"recipe": "item_blink|item_reaver|item_recipe_overwhelming_blink",
 		"json_data": {
 			"ID": "600",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityCastRange": "0",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
+			"AbilityCastRange": "1200",
+			"AbilityOvershootCastRange": "960",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "0",
@@ -16987,7 +16998,7 @@
 		"icon": "/panorama/images/items/swift_blink_png.png",
 		"cost": 6800,
 		"cooldown": "15",
-		"cast_range": "0",
+		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Swift Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, you gain **40%** phased movement speed and +**35** Agility for **6** seconds. \n\nSwift Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "A cunning blade able to anticipate and enable its bearer's movements.",
@@ -17027,8 +17038,9 @@
 		"recipe": "item_blink|item_eagle|item_recipe_swift_blink",
 		"json_data": {
 			"ID": "603",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityCastRange": "0",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
+			"AbilityCastRange": "1200",
+			"AbilityOvershootCastRange": "960",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "0",
@@ -17059,7 +17071,7 @@
 		"icon": "/panorama/images/items/arcane_blink_png.png",
 		"cost": 6800,
 		"cooldown": "15",
-		"cast_range": "0",
+		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Arcane Blink\nTeleport to a target point up to **1200** units away.\n\nAfter teleportation, you gain **25%** Mana Cost Reduction, **20%** Debuff Amplification and **50%** Cast Point reduction for **6** seconds. \n\nArcane Blink cannot be used for **3** seconds after taking damage from an enemy hero or Roshan.",
 		"lore": "A revitalizing tool to help bear the weight of arcane expenditure.",
@@ -17103,8 +17115,9 @@
 		"recipe": "item_blink|item_mystic_staff|item_recipe_arcane_blink",
 		"json_data": {
 			"ID": "604",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityCastRange": "0",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
+			"AbilityCastRange": "1200",
+			"AbilityOvershootCastRange": "960",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "0",
@@ -18224,16 +18237,10 @@
 				"value": "12"
 			},
 			{
-				"key": "hero_lifesteal",
+				"key": "spell_lifesteal",
 				"value": "20%",
 				"header": "+",
-				"footer": "Spell Lifesteal (Heroes)"
-			},
-			{
-				"key": "creep_lifesteal",
-				"value": "4%",
-				"header": "+",
-				"footer": "Spell Lifesteal (Creeps)"
+				"footer": "Spell Lifesteal"
 			}
 		],
 		"recipe": "item_voodoo_mask|item_hood_of_defiance|item_recipe_eternal_shroud",
@@ -18267,11 +18274,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"hero_lifesteal": "20"
-				},
-				"06": {
-					"var_type": "FIELD_FLOAT",
-					"creep_lifesteal": "4"
+					"spell_lifesteal": "20"
 				}
 			}
 		}

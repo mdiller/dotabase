@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import sessionmaker, relationship, session
 import os
 
 # The absolute path to the dotabase Python package
@@ -272,7 +272,7 @@ class Patch(Base):
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
-def dotabase_session():
+def dotabase_session() -> session.Session:
 	engine = create_engine('sqlite:///' + dotabase_db)
 	Base.metadata.create_all(engine)
 	Session = sessionmaker(bind=engine)
