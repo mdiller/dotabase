@@ -7357,7 +7357,6 @@
 	{
 		"id": 602,
 		"name": "beastmaster_mark_of_the_beast",
-		"hero_id": 38,
 		"behavior": "unit_target|hidden|show_in_guides|ignore_backswing",
 		"damage_type": "magical",
 		"spell_immunity": "no",
@@ -7379,7 +7378,6 @@
 				"value": "160"
 			}
 		],
-		"slot": 5,
 		"icon": "/panorama/images/spellicons/beastmaster_mark_of_the_beast_png.png",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -30702,18 +30700,14 @@
 				"key": "miss_rate",
 				"value": "30% 45% 60% 75%",
 				"header": "MISS RATE:"
-			},
-			{
-				"key": "dodge_chance",
-				"value": "25 50 75 100"
 			}
 		],
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/riki_smoke_screen_png.png",
 		"localized_name": "Smoke Screen",
-		"description": "Throws down a smoke bomb, silencing enemies, and causing them to miss attacks. Allies within the cloud have a chance to dodge projectiles aimed at them.",
+		"description": "Throws down a smoke bomb, silencing enemies, and causing them to miss attacks.",
 		"lore": "Since his escape during the night of his betrayal, Riki has valued the use of a simple smoke screen to confuse his opponents.",
-		"note": "Can be cast during Tricks of the Trade.\nDoesn't prevent the use of active items.\nCan only dodge projectiles that follow the hero as opposed as non-targeted projectiles like Mirana's Arrow.",
+		"note": "Can be cast during Tricks of the Trade.\nDoesn't prevent the use of active items.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -30735,8 +30729,7 @@
 					"LinkedSpecialBonus": "special_bonus_unique_riki_7"
 				},
 				"duration": "6",
-				"miss_rate": "30 45 60 75",
-				"dodge_chance": "25 50 75 100"
+				"miss_rate": "30 45 60 75"
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
 		}
@@ -35595,14 +35588,16 @@
 		"mana_cost": "0",
 		"ability_special": [
 			{
-				"talent_name": "special_bonus_unique_templar_assassin_6",
-				"key": "max_traps",
-				"value": "5 8 11",
-				"talent_value": "8 11 14"
+				"key": "trap_radius",
+				"value": "400"
 			},
 			{
-				"key": "trap_fade_time",
-				"value": "2"
+				"key": "trap_duration",
+				"value": "5"
+			},
+			{
+				"key": "trap_bonus_damage",
+				"value": "250 300 350"
 			},
 			{
 				"key": "movement_speed_min",
@@ -35611,17 +35606,6 @@
 			{
 				"key": "movement_speed_max",
 				"value": "60"
-			},
-			{
-				"key": "trap_duration_tooltip",
-				"value": "5"
-			},
-			{
-				"damagetype": "DAMAGE_TYPE_MAGICAL",
-				"talent_name": "special_bonus_unique_templar_assassin_3",
-				"key": "trap_bonus_damage",
-				"value": "250 300 350",
-				"talent_value": "360 410 460"
 			},
 			{
 				"key": "trap_max_charge_duration",
@@ -35670,51 +35654,44 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"max_traps": "5 8 11",
-					"LinkedSpecialBonus": "special_bonus_unique_templar_assassin_6"
+					"trap_radius": "400"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"trap_fade_time": "2.0 2.0 2.0"
+					"trap_duration": "5.0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_min": "30"
+					"trap_bonus_damage": "250 300 350"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"movement_speed_max": "60"
+					"movement_speed_min": "30"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"trap_duration_tooltip": "5"
+					"movement_speed_max": "60"
 				},
 				"06": {
-					"var_type": "FIELD_INTEGER",
-					"trap_bonus_damage": "250 300 350",
-					"LinkedSpecialBonus": "special_bonus_unique_templar_assassin_3",
-					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
-				},
-				"07": {
 					"var_type": "FIELD_FLOAT",
 					"trap_max_charge_duration": "4"
 				},
-				"08": {
+				"07": {
 					"var_type": "FIELD_FLOAT",
 					"shard_min_silence_duration": "1.5",
 					"RequiresShard": "1"
 				},
-				"09": {
+				"08": {
 					"var_type": "FIELD_FLOAT",
 					"shard_max_silence_duration": "3.5",
 					"RequiresShard": "1"
 				},
-				"10": {
+				"09": {
 					"var_type": "FIELD_INTEGER",
 					"shard_bonus_max_traps": "4",
 					"RequiresShard": "1"
 				},
-				"11": {
+				"10": {
 					"var_type": "FIELD_INTEGER",
 					"shard_bonus_vision": "125",
 					"RequiresShard": "1"
@@ -48157,8 +48134,8 @@
 			},
 			{
 				"key": "move_speed_per_instance",
-				"value": "0.8% 1.6% 2.4% 3.2% 4% 4.8% 5.6%",
-				"header": "fMOVE SPEED PER INSTANCE:"
+				"value": "0.8 1.6 2.4 3.2 4 4.8 5.6",
+				"header": "MOVE SPEED PER INSTANCE:"
 			}
 		],
 		"slot": 2,
@@ -78940,7 +78917,7 @@
 				"key": "hp_regen",
 				"value": "10",
 				"header": "+",
-				"footer": "HP Regeneration"
+				"footer": "Health Regeneration"
 			},
 			{
 				"key": "radius",
