@@ -3338,13 +3338,13 @@
 		"name": "item_recipe_vladmir",
 		"localized_name": "Vladmir's Offering Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 400,
+		"cost": 250,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "80",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "400",
+			"ItemCost": "250",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_vladmir",
@@ -3360,7 +3360,7 @@
 		"aliases": "vladmir's offering|vlads",
 		"quality": "rare",
 		"icon": "/panorama/images/items/vladmir_png.png",
-		"cost": 2600,
+		"cost": 2450,
 		"cast_range": "1200",
 		"description": "# Passive: Vladmir's Aura\nGrants **15%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
@@ -3392,7 +3392,7 @@
 			"ID": "81",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCastRange": "1200",
-			"ItemCost": "2600",
+			"ItemCost": "2450",
 			"ItemShopTags": "damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
@@ -3735,13 +3735,13 @@
 		"name": "item_recipe_urn_of_shadows",
 		"localized_name": "Urn of Shadows Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 335,
+		"cost": 375,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "91",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "335",
+			"ItemCost": "375",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_urn_of_shadows",
@@ -3757,7 +3757,7 @@
 		"aliases": "urn of shadows",
 		"quality": "rare",
 		"icon": "/panorama/images/items/urn_of_shadows_png.png",
-		"cost": 840,
+		"cost": 880,
 		"cooldown": "7",
 		"cast_range": "950",
 		"description": "# Active: Soul Release\nProvides **30** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge.\n\nCast Range: **950**",
@@ -3824,7 +3824,7 @@
 			"ItemStackable": "0",
 			"ItemPermanent": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_NEVER",
-			"ItemCost": "840",
+			"ItemCost": "880",
 			"ItemShopTags": "regen_mana;str;boost_health",
 			"ItemQuality": "rare",
 			"ItemAliases": "urn of shadows",
@@ -6716,7 +6716,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "45",
+				"value": "38",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -6736,7 +6736,7 @@
 			},
 			{
 				"key": "unholy_duration",
-				"value": "6"
+				"value": "6.0"
 			}
 		],
 		"recipe": "item_lifesteal|item_claymore|item_reaver",
@@ -6752,31 +6752,13 @@
 			"ItemAliases": "satanic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "25"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "45"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"lifesteal_percent": "25"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"unholy_lifesteal_percent": "175"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"unholy_lifesteal_total_tooltip": "200"
-				},
-				"07": {
-					"var_type": "FIELD_FLOAT",
-					"unholy_duration": "6.0"
-				}
+			"AbilityValues": {
+				"bonus_strength": "25",
+				"bonus_damage": "38",
+				"lifesteal_percent": "25",
+				"unholy_lifesteal_percent": "175",
+				"unholy_lifesteal_total_tooltip": "200",
+				"unholy_duration": "6.0"
 			}
 		}
 	},
@@ -6977,7 +6959,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/skadi_png.png",
 		"cost": 5300,
-		"description": "# Passive: Cold Attack\nAttacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by **40%** for **3** seconds. Slows enemy ranged units by **-50%** movement speed and by **-50** attack speed. Slows enemy melee units by **-25%** movement speed and by **-25** attack speed. ",
+		"description": "# Passive: Cold Attack\nAttacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by **40%** for **3** seconds. Slows enemy ranged units by **-40%** movement speed and by **-60** attack speed. Slows enemy melee units by **-20%** movement speed and by **-30** attack speed. ",
 		"lore": "Extremely rare artifact, guarded by the azure dragons.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7001,11 +6983,19 @@
 			},
 			{
 				"key": "cold_slow_melee",
-				"value": "-25"
+				"value": "-20"
+			},
+			{
+				"key": "cold_attack_slow_melee",
+				"value": "-30"
 			},
 			{
 				"key": "cold_slow_ranged",
-				"value": "-50"
+				"value": "-40"
+			},
+			{
+				"key": "cold_attack_slow_ranged",
+				"value": "-60"
 			},
 			{
 				"key": "cold_duration",
@@ -7030,8 +7020,10 @@
 				"bonus_all_stats": "22",
 				"bonus_health": "220",
 				"bonus_mana": "220",
-				"cold_slow_melee": "-25",
-				"cold_slow_ranged": "-50",
+				"cold_slow_melee": "-20",
+				"cold_attack_slow_melee": "-30",
+				"cold_slow_ranged": "-40",
+				"cold_attack_slow_ranged": "-60",
 				"cold_duration": "3.0",
 				"heal_reduction": "40"
 			}
@@ -7365,7 +7357,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/desolator_png.png",
 		"cost": 3500,
-		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **7** seconds.\n\n# Passive: Soul Stealer\nDesolator gains +**2** damage every time an enemy hero dies while affected by Corruption, to a maximum of **25**.",
+		"description": "# Passive: Corruption\nYour attacks reduce the target's armor by **-6** for **7** seconds.\n\n# Passive: Soul Stealer\nDesolator gains +**2** damage every time an enemy hero dies while affected by Corruption, to a maximum of **20**.",
 		"lore": "A wicked weapon, used in torturing political criminals.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7393,7 +7385,7 @@
 			},
 			{
 				"key": "max_damage",
-				"value": "25"
+				"value": "20"
 			}
 		],
 		"recipe": "item_mithril_hammer|item_mithril_hammer|item_blight_stone",
@@ -7413,7 +7405,7 @@
 				"corruption_duration": "7.0",
 				"bonus_damage_per_kill": "2",
 				"bonus_damage_per_assist": "1",
-				"max_damage": "25"
+				"max_damage": "20"
 			}
 		}
 	},
@@ -11949,13 +11941,13 @@
 		"name": "item_recipe_spirit_vessel",
 		"localized_name": "Spirit Vessel Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1000,
+		"cost": 1100,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "266",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1000",
+			"ItemCost": "1100",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_spirit_vessel",
@@ -11971,7 +11963,7 @@
 		"aliases": "sv|spirit vessel",
 		"quality": "rare",
 		"icon": "/panorama/images/items/spirit_vessel_png.png",
-		"cost": 2840,
+		"cost": 2980,
 		"cooldown": "7",
 		"cast_range": "950",
 		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration, healing, lifesteal and spell lifesteal by **45%**. Deals **35** damage per second. \n\nWhen used on allies, it provides **40** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950**",
@@ -12048,7 +12040,7 @@
 			"ItemStackable": "0",
 			"ItemPermanent": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_NEVER",
-			"ItemCost": "2840",
+			"ItemCost": "2980",
 			"ItemQuality": "rare",
 			"ItemAliases": "sv;spirit vessel",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -13612,7 +13604,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilitySpecial": {
 				"01": {
-					"var_type": "FIELD_INTEGER",
+					"var_type": "FIELD_FLOAT",
 					"knockback_distance": "250"
 				},
 				"02": {
@@ -14910,7 +14902,7 @@
 					"attack_range_bonus": "250"
 				},
 				"02": {
-					"var_type": "FIELD_INTEGER",
+					"var_type": "FIELD_FLOAT",
 					"knockback_distance": "50"
 				},
 				"03": {
@@ -17367,11 +17359,11 @@
 		"aliases": "hoto|helm of the overlord",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/helm_of_the_overlord_png.png",
-		"cost": 6325,
+		"cost": 6175,
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **400** and max health to a minimum of **1800**. Also provides the unit with +**80** base attack damage, +**12** health regen, +**4** mana regen and +**8** armor. \n\nDominated units with a max health of greater than **1800** retain their original max health.  Dominated unit's bounty is set to **250** gold.\n\nRange: **700**\n\n# Passive: Vladmir's Aura\nGrants **15%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies.",
+		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **400** and max health to a minimum of **1800**. Also provides the unit with +**80** base attack damage, +**12** health regen, +**4** mana regen and +**8** armor. \n\nDominated units with a max health of greater than **1800** retain their original max health.  Dominated unit's bounty is set to **250** gold.\n\nRange: **700**\n\n# Passive: Vladmir's Aura\nGrants **18%** lifesteal, **18%** bonus damage, **2** mana regeneration, and **3** armor to nearby allies.",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17435,11 +17427,11 @@
 			},
 			{
 				"key": "mana_regen_aura",
-				"value": "1.75"
+				"value": "2"
 			},
 			{
 				"key": "lifesteal_aura",
-				"value": "15"
+				"value": "18"
 			},
 			{
 				"key": "damage_aura",
@@ -17461,7 +17453,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "45",
 			"AbilityManaCost": "0",
-			"ItemCost": "6325",
+			"ItemCost": "6175",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hoto;helm of the overlord",
@@ -17521,11 +17513,11 @@
 				},
 				"14": {
 					"var_type": "FIELD_FLOAT",
-					"mana_regen_aura": "1.75"
+					"mana_regen_aura": "2"
 				},
 				"15": {
 					"var_type": "FIELD_INTEGER",
-					"lifesteal_aura": "15"
+					"lifesteal_aura": "18"
 				},
 				"16": {
 					"var_type": "FIELD_INTEGER",
@@ -19094,12 +19086,12 @@
 		"aliases": "pact|wp",
 		"quality": "rare",
 		"icon": "/panorama/images/items/wraith_pact_png.png",
-		"cost": 4200,
+		"cost": 4050,
 		"cooldown": "60",
 		"cast_range": "350",
 		"mana_cost": "100",
 		"duration": "25",
-		"description": "# Active: Wraith's Reprisal\nSummons a movable totem in your location for **25** seconds that reduces all damage of enemies within **900** radius by **25%** and deals **25** damage per second.\n\n Totem can be destroyed in 5 hits. Creeps deal half damage to the totem.\n\n# Passive: Vladmir's Aura\nGrants **15%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **900**",
+		"description": "# Active: Wraith's Reprisal\nSummons a movable totem in your location for **25** seconds that reduces all damage of enemies within **900** radius by **30%** and deals **30** damage per second.\n\n Totem can be destroyed in 5 hits. Creeps deal half damage to the totem.\n\n# Passive: Vladmir's Aura\nGrants **18%** lifesteal, **18%** bonus damage, **2** mana regeneration, and **3** armor to nearby allies. \n\nRadius: **1200**",
 		"lore": "A sentient amulet whose animus shakes the courage of even the strongest foes.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19121,11 +19113,11 @@
 			},
 			{
 				"key": "mana_regen_aura",
-				"value": "1.75"
+				"value": "2.0"
 			},
 			{
 				"key": "lifesteal_aura",
-				"value": "15"
+				"value": "18"
 			},
 			{
 				"key": "damage_aura",
@@ -19133,15 +19125,19 @@
 			},
 			{
 				"key": "aura_radius",
+				"value": "1200"
+			},
+			{
+				"key": "pact_aura_radius",
 				"value": "900"
 			},
 			{
 				"key": "damage_penalty_aura",
-				"value": "25"
+				"value": "30"
 			},
 			{
 				"key": "aura_dps",
-				"value": "25"
+				"value": "30"
 			}
 		],
 		"recipe": "item_vladmir|item_point_booster|item_recipe_wraith_pact",
@@ -19157,7 +19153,7 @@
 			"AbilityCooldown": "60",
 			"AbilityDuration": "25",
 			"AbilityManaCost": "100",
-			"ItemCost": "4200",
+			"ItemCost": "4050",
 			"ItemShopTags": "damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "pact;wp",
@@ -19167,12 +19163,13 @@
 				"bonus_health": "250",
 				"bonus_mana": "250",
 				"armor_aura": "3.0",
-				"mana_regen_aura": "1.75",
-				"lifesteal_aura": "15",
+				"mana_regen_aura": "2.0",
+				"lifesteal_aura": "18",
 				"damage_aura": "18",
-				"aura_radius": "900",
-				"damage_penalty_aura": "25",
-				"aura_dps": "25"
+				"aura_radius": "1200",
+				"pact_aura_radius": "900",
+				"damage_penalty_aura": "30",
+				"aura_dps": "30"
 			}
 		}
 	},
@@ -19326,7 +19323,7 @@
 		"cost": 4125,
 		"cooldown": "30",
 		"cast_range": "1200",
-		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%** Movement Speed to nearby allies for **6** seconds For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
+		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%**. Movement Speed to nearby allies for **6** seconds For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
 		"secret_shop": false,
 		"ability_special": [
