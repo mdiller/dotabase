@@ -9477,6 +9477,10 @@
 			{
 				"key": "projectile_speed",
 				"value": "1000"
+			},
+			{
+				"key": "max_damage_initial",
+				"value": "-1"
 			}
 		],
 		"slot": 4,
@@ -9525,6 +9529,10 @@
 				"06": {
 					"var_type": "FIELD_INTEGER",
 					"projectile_speed": "1000"
+				},
+				"07": {
+					"var_type": "FIELD_FLOAT",
+					"max_damage_initial": "-1"
 				}
 			}
 		}
@@ -18765,7 +18773,7 @@
 			{
 				"key": "fiend_grip_mana_drain",
 				"value": "5%",
-				"header": "MANA DRAIN:"
+				"header": "MANA DRAIN PER SECOND:"
 			},
 			{
 				"key": "AbilityChannelTime",
@@ -19162,7 +19170,7 @@
 		"localized_name": "Thirst",
 		"description": "Bloodseeker is invigorated by the wounds of his enemies, restoring some life when he kills a unit. Restores for half values when denying, or if an ally kills a nearby enemy hero. Also gains bonus movement speed when an enemy hero's health falls below **80%**, with the bonuses increasing as their health falls further. If an enemy hero's health falls below **25%**, he will also gain vision and True Sight of that hero. Bonuses stack per hero. Unlocks max movement speed for Bloodseeker.",
 		"lore": "Strygwyr becomes frenzied when blood is spilled.",
-		"note": "Not triggered by Illusions.\nMax movement speed and attack speed bonuses occur when an enemy's health is at or below **25%**.\nEffects linger for **4** seconds if a target dies.",
+		"note": "Not triggered by Illusions.\nMax movement speed bonus occurs when an enemy's health is at or below **25%**.\nEffects linger for **4** seconds if a target dies.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -22365,6 +22373,10 @@
 		"mana_cost": "75 80 85 90",
 		"ability_special": [
 			{
+				"key": "AbilityCooldown",
+				"value": "10"
+			},
+			{
 				"key": "shadowraze_damage",
 				"value": "90 160 230 300",
 				"talent_name": "special_bonus_unique_nevermore_2",
@@ -22417,9 +22429,9 @@
 			"AbilityCastAnimation": "ACT_DOTA_RAZE_1",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastPoint": "0.55",
-			"AbilityCooldown": "10",
 			"AbilityManaCost": "75 80 85 90",
 			"AbilityValues": {
+				"AbilityCooldown": "10",
 				"shadowraze_damage": {
 					"value": "90 160 230 300",
 					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
@@ -22450,6 +22462,10 @@
 		"cooldown": "10",
 		"mana_cost": "75 80 85 90",
 		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "10"
+			},
 			{
 				"key": "shadowraze_damage",
 				"value": "90 160 230 300",
@@ -22503,9 +22519,9 @@
 			"AbilityCastAnimation": "ACT_DOTA_RAZE_2",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastPoint": "0.55",
-			"AbilityCooldown": "10",
 			"AbilityManaCost": "75 80 85 90",
 			"AbilityValues": {
+				"AbilityCooldown": "10",
 				"shadowraze_damage": {
 					"value": "90 160 230 300",
 					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
@@ -22536,6 +22552,10 @@
 		"cooldown": "10",
 		"mana_cost": "75 80 85 90",
 		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "10"
+			},
 			{
 				"key": "shadowraze_damage",
 				"value": "90 160 230 300",
@@ -22589,9 +22609,9 @@
 			"AbilityCastAnimation": "ACT_DOTA_RAZE_3",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastPoint": "0.55",
-			"AbilityCooldown": "10",
 			"AbilityManaCost": "75 80 85 90",
 			"AbilityValues": {
+				"AbilityCooldown": "10",
 				"shadowraze_damage": {
 					"value": "90 160 230 300",
 					"LinkedSpecialBonus": "special_bonus_unique_nevermore_2"
@@ -26319,7 +26339,7 @@
 			{
 				"shard_upgrade": "1",
 				"key": "shard_attack_speed_bonus",
-				"value": "15",
+				"value": "40",
 				"header": "ATTACK SPEED BONUS:"
 			}
 		],
@@ -26389,7 +26409,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_INTEGER",
-					"shard_attack_speed_bonus": "15",
+					"shard_attack_speed_bonus": "40",
 					"RequiresShard": "1"
 				}
 			},
@@ -26413,7 +26433,7 @@
 			},
 			{
 				"key": "ball_lightning_initial_mana_base",
-				"value": "15"
+				"value": "25"
 			},
 			{
 				"key": "ball_lightning_move_speed",
@@ -26427,11 +26447,11 @@
 			},
 			{
 				"key": "ball_lightning_travel_cost_base",
-				"value": "15"
+				"value": "10"
 			},
 			{
 				"key": "ball_lightning_travel_cost_percent",
-				"value": "0.7%",
+				"value": "0.65%",
 				"header": "MANA DRAIN PER 100 UNITS:"
 			},
 			{
@@ -26450,7 +26470,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/storm_spirit_ball_lightning_png.png",
 		"localized_name": "Ball Lightning",
-		"description": "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The activation mana cost is **15**+**7.5%** of his total mana pool, and the cost per 100 units traveled is **15**+**0.7%** of his total mana pool.  Damage is expressed in damage per 100 units traveled.",
+		"description": "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The activation mana cost is **25**+**7.5%** of his total mana pool, and the cost per 100 units traveled is **10**+**0.65%** of his total mana pool.  Damage is expressed in damage per 100 units traveled.",
 		"lore": "The Storm is coming in.",
 		"note": "Abilities and items can be used while traveling.\nThis ability will destroy trees.\nStorm Spirit is invulnerable during Ball Lightning.",
 		"scepter_grants": false,
@@ -26475,7 +26495,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"ball_lightning_initial_mana_base": "15"
+					"ball_lightning_initial_mana_base": "25"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -26487,11 +26507,11 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"ball_lightning_travel_cost_base": "15"
+					"ball_lightning_travel_cost_base": "10"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
-					"ball_lightning_travel_cost_percent": "0.7"
+					"ball_lightning_travel_cost_percent": "0.65"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -26544,7 +26564,7 @@
 				"scepter_upgrade": "1",
 				"key": "cast_range_scepter",
 				"value": "1300",
-				"header": "SCEPTER RANGE:"
+				"header": "CAST RANGE:"
 			},
 			{
 				"scepter_upgrade": "1",
@@ -37261,7 +37281,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/rattletrap_battery_assault_png.png",
 		"localized_name": "Battery Assault",
-		"description": "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun. Deals double damage to creeps",
+		"description": "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun. Deals double damage to creeps.",
 		"lore": "Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver.",
 		"note": "Deals damage every **0.7** seconds.\nRemains active if Clockwerk is disabled.",
 		"scepter_grants": false,
@@ -43271,7 +43291,7 @@
 		"localized_name": "Sticky Napalm",
 		"description": "Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to **10** stacks.",
 		"lore": "It's not uncommon to hear the Rider cackle while he increases the flammability of his opponents.",
-		"note": "All damage from Batrider gets amplified, except for Radiance, Orb of Venom, Urn of Shadows, and Spirit Vessel.\nSticky napalm does not require turning to cast.\nSticky napalm deals **50%** damage to creeps.",
+		"note": "All damage from Batrider gets amplified, except for Radiance, Orb of Venom, Urn of Shadows, and Spirit Vessel.\nSticky Napalm does not require turning to cast.\nSticky Napalm deals **50%** damage to creeps.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -47044,13 +47064,13 @@
 				"key": "scepter_bonus_damage",
 				"value": "20",
 				"scepter_upgrade": "1",
-				"header": "BONUS DAMAGE:"
+				"header": "BONUS DAMAGE PER SCEPTER:"
 			},
 			{
 				"key": "scepter_spell_amp",
 				"value": "5%",
 				"scepter_upgrade": "1",
-				"header": "SPELL AMP:"
+				"header": "SPELL AMP PER SCEPTER:"
 			}
 		],
 		"slot": 6,
@@ -48209,7 +48229,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes **3** extra Chaos Meteors to land alongside the primary cast at slight angles. Reduces cooldown by **40** seconds.",
+		"shard_description": "Causes **2** extra Chaos Meteors to land alongside the primary cast at slight angles. Reduces cooldown by **15** seconds.",
 		"json_data": {
 			"ID": "5385",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -49701,7 +49721,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/brewmaster_drunken_brawler_png.png",
 		"localized_name": "Drunken Brawler",
-		"description": "Brewmaster can switch stances based on the elements he controls gaining passive bonuses that improve against enemies affected by Cinder Brew.\nEarth Brawler - Grants **1**/**3**/**5**/**7** armor and **5**/**10**/**15**/**20%** Magic Resistance. Bonuses are **3**x when Brewed Up.\nStorm Brawler - Grants **15**/**20**/**25**/**30%** evasion and **5**/**7**/**9**/**11%** Bonus Move Speed. Bonuses are **3**x when Brewed Up\nFire Brawler Grants **24%** chance to crit for **145**/**160**/**175**/**190%** of your attack damage. Chance is **3**x when Brewed Up.",
+		"description": "Brewmaster can switch stances based on the elements he controls gaining passive bonuses that improve against enemies when Brewed Up.\nEarth Brawler - Grants **1**/**3**/**5**/**7** armor and **5**/**10**/**15**/**20%** Magic Resistance. Bonuses are **3**x when Brewed Up.\nStorm Brawler - Grants **15**/**20**/**25**/**30%** evasion and **5**/**7**/**9**/**11%** Bonus Move Speed. Bonuses are **3**x when Brewed Up.\nFire Brawler - Grants **24%** chance to crit for **145**/**160**/**175**/**190%** of your attack damage. Chance is **3**x when Brewed Up.",
 		"lore": "When Mangix won his title as the Brewmaster of the Order of Oyo, he also claimed his place in the mastery of inebriation.",
 		"note": "Stacks diminishingly with other sources of Evasion.",
 		"scepter_grants": false,
@@ -56097,6 +56117,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"LinkedAbility": "wisp_tether_break",
 			"AbilityCastPoint": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "12",
@@ -56435,7 +56456,7 @@
 		"json_data": {
 			"ID": "5489",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"MaxLevel": "1",
+			"LinkedAbility": "wisp_tether",
 			"AbilityCastPoint": "0 0 0 0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "1.0 1.0 1.0 1.0"
@@ -76040,7 +76061,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+%value% Waveform Range",
+		"localized_name": "+250 Waveform Range",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -83703,7 +83724,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "2s Ice Vortex Cooldown",
+		"localized_name": "-2s Ice Vortex Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -97284,7 +97305,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "%value% Waveform Charges",
+		"localized_name": "2 Waveform Charges",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -108254,7 +108275,8 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "plus_high_five",
+		"localized_name": "High Five",
+		"description": "Throw your hand (or handy appendage) in the air!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -108316,7 +108338,8 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "plus_guild_banner",
+		"localized_name": "Guild Banner",
+		"description": "Plant your guild's banner to mark this battleground for you all!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
