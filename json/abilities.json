@@ -12915,10 +12915,6 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "275"
-			},
-			{
 				"key": "bonus_max_damage",
 				"value": "250"
 			}
@@ -12933,13 +12929,7 @@
 			"ID": "788",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "275",
-					"ad_linked_abilities": "disruptor_glimpse"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -19286,7 +19276,8 @@
 		"name": "shadow_demon_disseminate",
 		"hero_id": 79,
 		"behavior": "unit_target",
-		"target_team": "both|",
+		"spell_immunity": "no",
+		"target_team": "both",
 		"cast_range": "700 800 900 1000",
 		"cast_point": "0.3",
 		"cooldown": "30 26 22 18",
@@ -19318,9 +19309,9 @@
 		"json_data": {
 			"ID": "1001",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
-			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH | ",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
-			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Hero_ShadowDemon.Soul_Catcher",
 			"AbilityCooldown": "30 26 22 18",
 			"AbilityCastRange": "700 800 900 1000",
@@ -19577,7 +19568,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/naga_siren_reel_in_png.png",
 		"localized_name": "Reel In",
-		"description": "Naga Siren channels for up to %AbilityChannelTime% seconds, pulling all ensnared units in a **1400** range towards her at a speed of **150**.",
+		"description": "Naga Siren channels for up to **5** seconds, pulling all units affected by Naga's Ensnare in a **1400** range towards her at a speed of **150**.",
 		"lore": "Even the youngest Slithereen are well schooled in trawling for prey with nothing but their wits and nets.",
 		"scepter_grants": true,
 		"scepter_upgrades": false,
@@ -24446,7 +24437,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Lina's abilities deal %shard_bonus_spell_damage% more damage for each Fiery Soul Charge.",
+		"shard_description": "Lina's abilities deal **15** more damage for each Fiery Soul Charge.",
 		"json_data": {
 			"ID": "5042",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -24562,7 +24553,8 @@
 			},
 			{
 				"key": "damage",
-				"value": "80 140 200 260"
+				"value": "80 140 200 260",
+				"header": "DAMAGE:"
 			},
 			{
 				"key": "width",
@@ -40193,7 +40185,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Poison Touch to hex affected targets for %shard_hex_duration% seconds.",
+		"shard_description": "Causes Poison Touch to hex affected targets for **2** seconds.",
 		"json_data": {
 			"ID": "5233",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -57979,7 +57971,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Song of the Siren heals allies by %shard_heal_pct% of their Max HP per second for its duration.",
+		"shard_description": "Song of the Siren heals allies by **5%** of their Max HP per second for its duration.",
 		"json_data": {
 			"ID": "5470",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
@@ -59565,7 +59557,6 @@
 		"json_data": {
 			"ID": "5489",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"MaxLevel": "1",
 			"AbilityCastPoint": "0 0 0 0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "1.0 1.0 1.0 1.0"
@@ -92475,10 +92466,6 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "12"
-			},
-			{
 				"key": "bonus_AbilityCooldown",
 				"value": "12"
 			}
@@ -92493,13 +92480,7 @@
 			"ID": "6630",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "12",
-					"ad_linked_abilities": "disruptor_glimpse"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
