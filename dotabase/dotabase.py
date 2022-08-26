@@ -1,8 +1,6 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime
-from sqlalchemy.orm import sessionmaker, relationship
-import sqlalchemy.orm.session as sqlsession
+from sqlalchemy.orm import relationship, Session, declarative_base
 import os
 
 # The absolute path to the dotabase Python package
@@ -172,6 +170,7 @@ class Item(Base):
 	neutral_tier = Column(String)
 	ability_special = Column(String)
 	recipe = Column(String)
+	shop_tags = Column(String)
 
 	json_data = Column(String)
 
@@ -271,10 +270,10 @@ class Patch(Base):
 	custom_url = Column(String)
 	wiki_url = Column(String)
 
+
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
-def dotabase_session() -> sqlsession.Session:
+def dotabase_session() -> Session:
 	engine = create_engine('sqlite:///' + dotabase_db)
 	Base.metadata.create_all(engine)
-	Session = sessionmaker(bind=engine)
-	return Session()
+	return Session(engine)

@@ -33,7 +33,9 @@ session = dotabase_session()
 for hero in session.query(Hero):
 	print(hero)
 ```
-Note that the package was built using python 3.5 and sqlalchemy 1.1
+If you use MyPy, you should be able to get typing hints and your editor should recognize that the "hero" variable above is an instance of the "Hero" class.
+
+Note that the package was built using python 3.9 and sqlalchemy 1.4
 
 ## JSON files
 
