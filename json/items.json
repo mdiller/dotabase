@@ -3082,7 +3082,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "3 6",
+				"value": "2 4",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -3115,7 +3115,7 @@
 				"bonus_strength": "5 10",
 				"bonus_agility": "2 4",
 				"bonus_intellect": "2 4",
-				"bonus_damage": "3 6",
+				"bonus_damage": "2 4",
 				"bonus_health_regen": "0.75 1.5",
 				"clock_time": "25"
 			}
@@ -3173,7 +3173,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "5 10",
+				"value": "6 12",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -3206,7 +3206,7 @@
 				"bonus_agility": "5 10",
 				"bonus_strength": "2 4",
 				"bonus_intellect": "2 4",
-				"bonus_attack_speed": "5 10",
+				"bonus_attack_speed": "6 12",
 				"bonus_armor": "2 4",
 				"clock_time": "25"
 			}
@@ -3806,8 +3806,8 @@
 		"icon": "/panorama/images/items/urn_of_shadows_png.png",
 		"cost": 880,
 		"cooldown": "7",
-		"cast_range": "950",
-		"description": "# Active: Soul Release\nProvides **30** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge.\n\nCast Range: **950**",
+		"cast_range": "750",
+		"description": "# Active: Soul Release\nProvides **30** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge.\n\nCast Range: **750**",
 		"lore": "Contains the ashes of powerful demons.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3863,7 +3863,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"AbilityCastRange": "950",
+			"AbilityCastRange": "750",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "7.0",
 			"AbilitySharedCooldown": "urn",
@@ -7856,13 +7856,13 @@
 		"name": "item_recipe_soul_ring",
 		"localized_name": "Soul Ring Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 245,
+		"cost": 400,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "177",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "245",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_soul_ring",
@@ -7878,7 +7878,7 @@
 		"aliases": "soul ring",
 		"quality": "common",
 		"icon": "/panorama/images/items/soul_ring_png.png",
-		"cost": 700,
+		"cost": 855,
 		"cooldown": "25",
 		"mana_cost": "0",
 		"description": "# Active: Sacrifice\nConsume **170** health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
@@ -7917,7 +7917,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityCooldown": "25.0",
 			"AbilityManaCost": "0",
-			"ItemCost": "700",
+			"ItemCost": "855",
 			"ItemShopTags": "regen_health;boost_mana",
 			"ItemQuality": "common",
 			"ItemAliases": "soul ring",
@@ -12006,8 +12006,8 @@
 		"icon": "/panorama/images/items/spirit_vessel_png.png",
 		"cost": 2980,
 		"cooldown": "7",
-		"cast_range": "950",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration, healing, lifesteal and spell lifesteal by **45%**. Deals **35** damage per second. \n\nWhen used on allies, it provides **40** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **950**",
+		"cast_range": "750",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration, healing, lifesteal and spell lifesteal by **45%**. Deals **35** damage per second. \n\nWhen used on allies, it provides **40** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge.\n\nCast Range: **750**",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -12073,7 +12073,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
-			"AbilityCastRange": "950",
+			"AbilityCastRange": "750",
 			"AbilityCooldown": "7.0",
 			"AbilitySharedCooldown": "urn",
 			"ItemRequiresCharges": "1",
@@ -19753,7 +19753,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "5",
+				"value": "3",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -19778,7 +19778,7 @@
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_all_stats": "5",
+				"bonus_all_stats": "3",
 				"mana_regen": "0.5",
 				"stack_limit": "5",
 				"stack_duration": "10"
@@ -19834,7 +19834,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "12",
+				"value": "10",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -19882,7 +19882,7 @@
 			"AbilityCooldown": "40.0",
 			"AbilityManaCost": "75",
 			"AbilityValues": {
-				"bonus_strength": "12",
+				"bonus_strength": "10",
 				"leap_distance": "400",
 				"leap_speed": "800.0",
 				"leap_acceleration": "1250.0",
@@ -20390,7 +20390,7 @@
 		"ability_special": [
 			{
 				"key": "all_stats",
-				"value": "8",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -20414,7 +20414,7 @@
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"all_stats": "8",
+				"all_stats": "5",
 				"bonus_damage": "10",
 				"count": "2"
 			}
