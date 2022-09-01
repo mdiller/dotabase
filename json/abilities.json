@@ -15442,7 +15442,7 @@
 		],
 		"icon": "/panorama/images/spellicons/ogre_bruiser_ogre_smash_png.png",
 		"localized_name": "Ogre Smash!",
-		"description": "Ogre slowly charges a big attack stunning for **3** seconds and dealing **200** + **8%** of their current HP damage to all units in front of him.",
+		"description": "Ogre slowly charges a big attack stunning for **3** seconds and dealing **200** + **8%** of their current HP as damage to all units in front of him.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -16392,7 +16392,7 @@
 		],
 		"icon": "/panorama/images/spellicons/creep_piercing_png.png",
 		"localized_name": "Piercing",
-		"description": "Piercing Units Deal Bonus Damage to non-hero, non-heavy units and reduced damage to heroes and heavy units",
+		"description": "Piercing Units Deal Bonus Damage to non-hero, non-heavy units and reduced damage to heroes and heavy units.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -16421,7 +16421,7 @@
 		],
 		"icon": "/panorama/images/spellicons/creep_irresolute_png.png",
 		"localized_name": "Runty",
-		"description": "Runty Units Deal reduced damage to hero units",
+		"description": "Runty Units Deal reduced damage to hero units.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -18478,7 +18478,7 @@
 			}
 		],
 		"slot": 4,
-		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"icon": "/panorama/images/spellicons/venomancer_latent_poison_png.png",
 		"localized_name": "Latent Toxicity",
 		"description": "Applies a weak poison that minorly slows and deals damage to its target. If this poison is dispelled in any way, the target will receive a large amount of damage and be stunned.",
 		"lore": "As Venomancer's own origins corroborate, some of Jidi's most horrifying dangers become apparent only with time.",
@@ -21182,7 +21182,7 @@
 	{
 		"id": 4000,
 		"name": "seasonal_ti10_high_five",
-		"behavior": "no_target|immediate|not_learnable",
+		"behavior": "no_target|immediate|not_learnable|ignore_silence",
 		"cast_point": "0",
 		"cooldown": "60",
 		"damage": "0",
@@ -21217,7 +21217,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "4000",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0.0",
@@ -23312,7 +23312,7 @@
 				"key": "scepter_cleave_distance",
 				"value": "650",
 				"scepter_upgrade": "1",
-				"header": "CLEAVE DISTANCE"
+				"header": "CLEAVE DISTANCE:"
 			},
 			{
 				"key": "bonus_attack_range",
@@ -42121,7 +42121,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Surged units leave behind a **150** radius trail that lasts **7**s, slows enemies around it by **-50%** and deals **35** damage every **0.5**s. Can be put on autocast to disable the trail.",
+		"shard_description": "Surged units leave behind a **150** radius trail that lasts **7**s, slows enemies around it by **-50%** and deals **35** damage per second in **0.5**s intervals. Can be put on autocast to disable the trail.",
 		"json_data": {
 			"ID": "5257",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
@@ -49841,8 +49841,7 @@
 			"AbilityDuration": "10",
 			"AbilityValues": {
 				"radius": {
-					"value": "1000",
-					"special_bonus_unique_gyrocopter_4": "+300"
+					"value": "1000"
 				},
 				"max_attacks": {
 					"value": "3 4 5 6",
@@ -52677,8 +52676,7 @@
 				"bonus_night_vision": "1000",
 				"transformation_time": "1.1",
 				"crit_chance": {
-					"value": "40",
-					"special_bonus_unique_lycan_5": "+30"
+					"value": "40"
 				},
 				"crit_multiplier": "160 190 220",
 				"health_bonus": "200 300 400"
@@ -73526,7 +73524,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "1.2 1.6 2 2.4",
+				"value": "1.1 1.6 2.1 2.6",
 				"header": "DURATION:"
 			},
 			{
@@ -73561,7 +73559,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"duration": "1.2 1.6 2.0 2.4"
+					"duration": "1.1 1.6 2.1 2.6"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -88714,10 +88712,8 @@
 				"value": "400"
 			},
 			{
-				"talent_name": "special_bonus_unique_snapfire_2",
 				"key": "debuff_duration",
 				"value": "1",
-				"talent_value": "2",
 				"header": "SLOW DURATION:"
 			},
 			{
@@ -88804,8 +88800,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_FLOAT",
-					"debuff_duration": "1.0",
-					"LinkedSpecialBonus": "special_bonus_unique_snapfire_2"
+					"debuff_duration": "1.0"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -89343,10 +89338,6 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "1"
-			},
-			{
 				"key": "bonus_buffed_attacks",
 				"value": "2"
 			}
@@ -89361,13 +89352,7 @@
 			"ID": "6487",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_FLOAT",
-					"value": "1",
-					"ad_linked_abilities": "snapfire_scatterblast"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -92904,16 +92889,8 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "300"
-			},
-			{
 				"key": "bonus_bonus_movement_speed",
 				"value": "30"
-			},
-			{
-				"key": "bonus_radius",
-				"value": "300"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
@@ -92926,13 +92903,7 @@
 			"ID": "6653",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "300",
-					"ad_linked_abilities": "gyrocopter_flak_cannon"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -93588,10 +93559,6 @@
 			{
 				"key": "bonus_total_attack_damage_reduction",
 				"value": "1"
-			},
-			{
-				"key": "bonus_crit_chance",
-				"value": "30"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
@@ -105000,7 +104967,6 @@
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17527",
-			"AbilityTextureName": "consumables/seasonal_summon_penguin",
 			"AbilityCastRange": "400",
 			"AbilityCastPoint": "0.3",
 			"AbilityCooldown": "30",
@@ -105686,7 +105652,6 @@
 			"AbilityCastAnimation": "ACT_DOTA_GENERIC_CHANNEL_1",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17494",
-			"AbilityTextureName": "consumables/seasonal_ti9_shovel",
 			"AbilityCastRange": "250",
 			"AbilityCastPoint": "0.1",
 			"AbilityChannelTime": "1",
@@ -105755,7 +105720,6 @@
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17505",
-			"AbilityTextureName": "consumables/seasonal_ti9_monkey",
 			"AbilityCastRange": "400",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "45",
@@ -108444,7 +108408,7 @@
 			{
 				"talent_name": "special_bonus_unique_dawnbreaker_celestial_blade",
 				"key": "hammer_damage",
-				"value": "60 90 120 150",
+				"value": "50 80 110 140",
 				"header": "HAMMER DAMAGE:"
 			},
 			{
@@ -108525,7 +108489,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"hammer_damage": "60 90 120 150",
+					"hammer_damage": "50 80 110 140",
 					"LinkedSpecialBonus": "special_bonus_unique_dawnbreaker_celestial_blade"
 				},
 				"02": {
@@ -109054,7 +109018,7 @@
 	{
 		"id": 7968,
 		"name": "high_five",
-		"behavior": "no_target|immediate|not_learnable|ignore_channel",
+		"behavior": "no_target|immediate|not_learnable|ignore_channel|ignore_silence",
 		"cast_point": "0",
 		"cooldown": "60",
 		"damage": "0",
@@ -109090,7 +109054,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "7968",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0.0",
@@ -109978,7 +109942,6 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17549",
-			"AbilityTextureName": "consumables/seasonal_ti10_disco_ball",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "30",
@@ -110026,7 +109989,6 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_HIDDEN",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
-			"AbilityTextureName": "consumables/seasonal_ti10_disco_ball_channel",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "0",
@@ -110101,7 +110063,6 @@
 			"AbilityCooldown": "20",
 			"AbilityDamage": "0",
 			"AbilityManaCost": "0",
-			"AbilityTextureName": "consumables/seasonal_ti10_soccer_ball",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -110181,7 +110142,6 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_NONE",
 			"MaxLevel": "1",
 			"AssociatedConsumable": "17551",
-			"AbilityTextureName": "consumables/seasonal_ti10_soccer_ball",
 			"AbilityCastRange": "900",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "60",
@@ -110240,7 +110200,6 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_NONE",
 			"MaxLevel": "1",
-			"AbilityTextureName": "consumables/seasonal_ti10_hot_potato_throw_existing_potato",
 			"AbilityCastRange": "900",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "0",
@@ -110260,7 +110219,7 @@
 	{
 		"id": 8025,
 		"name": "seasonal_diretide2020_high_five",
-		"behavior": "no_target|immediate|not_learnable",
+		"behavior": "no_target|immediate|not_learnable|ignore_silence",
 		"cast_point": "0",
 		"cooldown": "60",
 		"damage": "0",
@@ -110294,7 +110253,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "8025",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0.0",
@@ -110702,7 +110661,7 @@
 	{
 		"id": 8034,
 		"name": "plus_high_five",
-		"behavior": "no_target|immediate|not_learnable|ignore_channel",
+		"behavior": "no_target|immediate|not_learnable|ignore_channel|ignore_silence",
 		"cast_point": "0",
 		"cooldown": "60",
 		"damage": "0",
@@ -110738,7 +110697,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "8034",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0.0",
@@ -111328,7 +111287,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "both",
-		"dispellable": "yes_strong",
+		"dispellable": "yes",
 		"cast_range": "175",
 		"cast_point": "0.2",
 		"cooldown": "16 14 12 10",
@@ -111391,7 +111350,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Marci.Grapple.Cast",
 			"AbilityCastPoint": "0.2",
@@ -111691,7 +111650,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "friendly",
-		"dispellable": "yes",
+		"dispellable": "yes_strong",
 		"cast_range": "800",
 		"cast_point": "0.1",
 		"cooldown": "17 15 13 11",
@@ -111805,7 +111764,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Marci.Rebound.Cast",
 			"HasShardUpgrade": "1",
@@ -113150,6 +113109,252 @@
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
+		}
+	},
+	{
+		"id": 9709,
+		"name": "seasonal_ti11_balloon",
+		"behavior": "point|channelled|not_learnable|ignore_backswing|item",
+		"cast_range": "800",
+		"cast_point": "0.2",
+		"channel_time": "2",
+		"cooldown": "6",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "speed",
+				"value": "1500"
+			},
+			{
+				"key": "min_distance_before_bounce",
+				"value": "200"
+			},
+			{
+				"key": "drag",
+				"value": "7"
+			},
+			{
+				"key": "duration",
+				"value": "30"
+			},
+			{
+				"key": "max_height",
+				"value": "300"
+			},
+			{
+				"key": "max_vertical_move_time",
+				"value": "0.5"
+			},
+			{
+				"key": "bounce_turn_angle",
+				"value": "45.0"
+			},
+			{
+				"key": "bounce_turn_angle_tree",
+				"value": "30.0"
+			},
+			{
+				"key": "bounce_delay",
+				"value": "0.6"
+			},
+			{
+				"key": "max_bounces",
+				"value": "2"
+			},
+			{
+				"key": "model_scale_per_stack",
+				"value": "4"
+			},
+			{
+				"key": "power_growth_exponent",
+				"value": "4"
+			},
+			{
+				"key": "max_usable_charges",
+				"value": "25"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "seasonal_ti11_balloon",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "9709",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ITEM",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AbilityCastRange": "800",
+			"AbilityCastPoint": "0.2",
+			"AbilityCooldown": "6",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilityChannelTime": "2.0",
+			"AssociatedConsumable": "23681",
+			"AbilityValues": {
+				"speed": "1500",
+				"min_distance_before_bounce": "200",
+				"drag": "7",
+				"duration": "30",
+				"max_height": "300",
+				"max_vertical_move_time": "0.5",
+				"bounce_turn_angle": "45.0",
+				"bounce_turn_angle_tree": "30.0",
+				"bounce_delay": "0.6",
+				"max_bounces": "2",
+				"model_scale_per_stack": "4",
+				"power_growth_exponent": "4",
+				"max_usable_charges": "25"
+			}
+		}
+	},
+	{
+		"id": 9710,
+		"name": "seasonal_ti11_bubble_gun",
+		"behavior": "no_target|toggle|ignore_channel|not_learnable|item",
+		"cast_point": "0",
+		"cooldown": "0",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "think_interval",
+				"value": "1.0"
+			},
+			{
+				"key": "max_charges",
+				"value": "10"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "seasonal_ti11_bubble_gun",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "9710",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "0",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AssociatedConsumable": "23784",
+			"AbilityValues": {
+				"think_interval": "1.0",
+				"max_charges": "10"
+			}
+		}
+	},
+	{
+		"id": 9711,
+		"name": "seasonal_ti11_duel",
+		"behavior": "unit_target|ignore_backswing|not_learnable|item",
+		"target_team": "both",
+		"cast_point": "0",
+		"cooldown": "120",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "model_scale",
+				"value": "1.8"
+			},
+			{
+				"key": "projectile_speed",
+				"value": "1000"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "seasonal_ti11_duel",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "9711",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"MaxLevel": "1",
+			"AbilityCastPoint": "0.0",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel1": "1",
+			"AssociatedConsumable": "23574",
+			"AbilityCastPoint1": "0.0",
+			"AbilityCooldown": "120",
+			"AbilityDamage1": "0",
+			"AbilityManaCost1": "0",
+			"AbilityValues": {
+				"model_scale": "1.8",
+				"projectile_speed": "1000"
+			}
+		}
+	},
+	{
+		"id": 9712,
+		"name": "seasonal_ti11_conga_line",
+		"behavior": "no_target|toggle|ignore_channel|not_learnable|item",
+		"cast_point": "0",
+		"cooldown": "0",
+		"damage": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "dance_interval",
+				"value": "2.6"
+			},
+			{
+				"key": "gesture_duration",
+				"value": "1.0"
+			},
+			{
+				"key": "catch_up_distance",
+				"value": "200"
+			},
+			{
+				"key": "slow_duration",
+				"value": "1.0"
+			},
+			{
+				"key": "slow_amount",
+				"value": "20"
+			},
+			{
+				"key": "max_duration",
+				"value": "60"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "seasonal_ti11_conga_line",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "9712",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "0",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AssociatedConsumable": "23572",
+			"AbilityValues": {
+				"dance_interval": "2.6",
+				"gesture_duration": "1.0",
+				"catch_up_distance": "200",
+				"slow_duration": "1.0",
+				"slow_amount": "20",
+				"max_duration": "60"
+			}
 		}
 	},
 	{
