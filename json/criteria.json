@@ -9335,10 +9335,9 @@
 		"required": true
 	},
 	{
-		"name": "IsPhantomAssassinDagger",
-		"pretty": "Stifling Dagger",
-		"matchkey": "abilityname",
-		"matchvalue": "phantom_assassin_stifling_dagger",
+		"name": "IsNotAsanPA",
+		"matchkey": "customresponse",
+		"matchvalue": "!=pa_asan_vo",
 		"weight": 5.0,
 		"required": true
 	},
@@ -9346,6 +9345,13 @@
 		"name": "IsPAEconParadox",
 		"matchkey": "customresponse",
 		"matchvalue": "paradox",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanPA",
+		"matchkey": "customresponse",
+		"matchvalue": "pa_asan_vo",
 		"weight": 5.0,
 		"required": true
 	},
@@ -9362,6 +9368,198 @@
 		"pretty": "Spawning in the loadout",
 		"matchkey": "special_spawn",
 		"matchvalue": "phantom_assassin_arcana_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanPALoadoutSpawn",
+		"pretty": "Spawning in the loadout",
+		"matchkey": "special_spawn",
+		"matchvalue": "phantom_assassin_persona_loadout_spawn",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPhantomAssassinDagger",
+		"pretty": "Stifling Dagger",
+		"matchkey": "abilityname",
+		"matchvalue": "phantom_assassin_stifling_dagger",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPhantomStrike",
+		"pretty": "Phantom Strike",
+		"matchkey": "abilityname",
+		"matchvalue": "phantom_assassin_phantom_strike",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPhantomBlur",
+		"pretty": "Blur",
+		"matchkey": "abilityname",
+		"matchvalue": "phantom_assassin_blur",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsPhantomFan",
+		"pretty": "Fan of Knives",
+		"matchkey": "abilityname",
+		"matchvalue": "phantom_assassin_fan_of_knives",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanTeleport",
+		"pretty": "Town Portal Scroll",
+		"matchkey": "abilityname",
+		"matchvalue": "item_tpscroll",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono1",
+		"pretty": "IsAsanMono1",
+		"matchkey": "line_count",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono2",
+		"pretty": "IsAsanMono2",
+		"matchkey": "line_count",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono3",
+		"pretty": "IsAsanMono3",
+		"matchkey": "line_count",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono4",
+		"pretty": "IsAsanMono4",
+		"matchkey": "line_count",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono5",
+		"pretty": "IsAsanMono5",
+		"matchkey": "line_count",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono6",
+		"pretty": "IsAsanMono6",
+		"matchkey": "line_count",
+		"matchvalue": "5",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono7",
+		"pretty": "IsAsanMono7",
+		"matchkey": "line_count",
+		"matchvalue": "6",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono8",
+		"pretty": "IsAsanMono8",
+		"matchkey": "line_count",
+		"matchvalue": "7",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono9",
+		"pretty": "IsAsanMono9",
+		"matchkey": "line_count",
+		"matchvalue": "8",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono10",
+		"pretty": "IsAsanMono10",
+		"matchkey": "line_count",
+		"matchvalue": "9",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono11",
+		"pretty": "IsAsanMono11",
+		"matchkey": "line_count",
+		"matchvalue": "10",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMono12",
+		"pretty": "IsAsanMono12",
+		"matchkey": "line_count",
+		"matchvalue": "11",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoGroup1",
+		"pretty": "IsAsanMonoGroup1",
+		"matchkey": "line_group",
+		"matchvalue": "0",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoGroup2",
+		"pretty": "IsAsanMonoGroup2",
+		"matchkey": "line_group",
+		"matchvalue": "1",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoGroup3",
+		"pretty": "IsAsanMonoGroup3",
+		"matchkey": "line_group",
+		"matchvalue": "2",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoGroup4",
+		"pretty": "IsAsanMonoGroup4",
+		"matchkey": "line_group",
+		"matchvalue": "3",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoGroup5",
+		"pretty": "IsAsanMonoGroup5",
+		"matchkey": "line_group",
+		"matchvalue": "4",
+		"weight": 5.0,
+		"required": true
+	},
+	{
+		"name": "IsAsanMonoDone",
+		"pretty": "IsAsanMonoDone",
+		"matchkey": "line_count",
+		"matchvalue": ">=9",
 		"weight": 5.0,
 		"required": true
 	},

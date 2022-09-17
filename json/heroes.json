@@ -9233,8 +9233,8 @@
 					"SlotIndex": "0",
 					"SlotName": "weapon",
 					"SlotText": "#LoadoutSlot_Weapon",
-					"TextureWidth": "256",
-					"TextureHeight": "256",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
 					"MaxPolygonsLOD0": "2000",
 					"MaxPolygonsLOD1": "800"
 				},
@@ -9242,7 +9242,7 @@
 					"SlotIndex": "1",
 					"SlotName": "head",
 					"SlotText": "#LoadoutSlot_Head_Accessory",
-					"TextureWidth": "256",
+					"TextureWidth": "512",
 					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "3000",
 					"MaxPolygonsLOD1": "1200"
@@ -9260,7 +9260,7 @@
 					"SlotIndex": "3",
 					"SlotName": "back",
 					"SlotText": "#LoadoutSlot_Back",
-					"TextureWidth": "256",
+					"TextureWidth": "512",
 					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "2000",
 					"MaxPolygonsLOD1": "800"
@@ -9282,7 +9282,7 @@
 					"SlotIndex": "5",
 					"SlotName": "offhand_weapon",
 					"SlotText": "#LoadoutSlot_Warlock_Lantern",
-					"TextureWidth": "256",
+					"TextureWidth": "512",
 					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "2000",
 					"MaxPolygonsLOD1": "800"
@@ -9291,7 +9291,7 @@
 					"SlotIndex": "6",
 					"SlotName": "shoulder",
 					"SlotText": "#LoadoutSlot_Shoulder",
-					"TextureWidth": "256",
+					"TextureWidth": "512",
 					"TextureHeight": "256",
 					"MaxPolygonsLOD0": "2500",
 					"MaxPolygonsLOD1": "1000"
@@ -10030,6 +10030,12 @@
 					"SlotIndex": "9",
 					"SlotName": "ability_effects_2",
 					"SlotText": "venomancer_poison_sting",
+					"DisplayInLoadout": "0"
+				},
+				"10": {
+					"SlotIndex": "10",
+					"SlotName": "ability_effects_4",
+					"SlotText": "venomancer_poison_nova",
 					"DisplayInLoadout": "0"
 				}
 			},
@@ -10924,9 +10930,9 @@
 			"StatusHealthRegen": "0.75",
 			"AttackAnimationPoint": "0.300000",
 			"AttackSpeedActivityModifiers": {
-				"fast": "249",
-				"faster": "350",
-				"fastest": "450"
+				"fast": "170",
+				"faster": "275",
+				"fastest": "350"
 			},
 			"AttackAcquisitionRange": "600",
 			"AttackRange": "150",
@@ -10942,6 +10948,22 @@
 			"RenderablePortrait": {
 				"Particles": {
 					"particles/units/heroes/hero_phantom_assassin/phantom_assassin_loadout.vpcf": "loadout"
+				}
+			},
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_phantom_assassin_persona1",
+					"Model": "models/heroes/phantom_assassin_persona/phantom_assassin_persona.vmdl"
+				}
+			},
+			"animation_transitions": {
+				"ACT_DOTA_IDLE": {
+					"regular": "0.9",
+					"aggressive": "0.9"
+				},
+				"ACT_DOTA_RUN": {
+					"regular": "1",
+					"aggressive": "1"
 				}
 			},
 			"ItemSlots": {
@@ -11006,6 +11028,53 @@
 					"SlotName": "ability_effects_3",
 					"SlotText": "phantom_assassin_blur",
 					"DisplayInLoadout": "0"
+				},
+				"8": {
+					"SlotIndex": "8",
+					"SlotName": "head_persona_1",
+					"SlotText": "#LoadoutSlot_Head_Phantom_Assassin_Persona",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
+				},
+				"9": {
+					"SlotIndex": "9",
+					"SlotName": "armor_persona_1",
+					"SlotText": "#LoadoutSlot_Armor_Phantom_Assassin_Persona",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
+				},
+				"10": {
+					"SlotIndex": "10",
+					"SlotName": "legs_persona_1",
+					"SlotText": "#LoadoutSlot_Legs_Phantom_Assassin_Persona",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
+				},
+				"11": {
+					"SlotIndex": "11",
+					"SlotName": "weapon_persona_1",
+					"SlotText": "#LoadoutSlot_Weapon_Phantom_Assassin_Persona",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "1000",
+					"MaxPolygonsLOD1": "500"
+				},
+				"12": {
+					"SlotIndex": "12",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"DisplayInLoadout": "1"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"BoundsHullName": "DOTA_HULL_SIZE_HERO",
@@ -14298,6 +14367,12 @@
 					"SlotIndex": "8",
 					"SlotName": "ability_effects_3",
 					"SlotText": "enchantress_natures_attendants",
+					"DisplayInLoadout": "0"
+				},
+				"9": {
+					"SlotIndex": "9",
+					"SlotName": "ability_effects_4",
+					"SlotText": "enchantress_untouchable",
 					"DisplayInLoadout": "0"
 				}
 			},
@@ -19472,6 +19547,12 @@
 					"SlotName": "ability_effects_2",
 					"SlotText": "meepo_poof",
 					"DisplayInLoadout": "0"
+				},
+				"9": {
+					"SlotIndex": "9",
+					"SlotName": "ability_effects_1",
+					"SlotText": "meepo_earthbind",
+					"DisplayInLoadout": "0"
 				}
 			},
 			"Bot": {
@@ -22216,6 +22297,12 @@
 					"SlotName": "ability_effects_2",
 					"SlotText": "centaur_double_edge",
 					"DisplayInLoadout": "0"
+				},
+				"12": {
+					"SlotIndex": "11",
+					"SlotName": "ability_effects_4",
+					"SlotText": "centaur_stampede",
+					"DisplayInLoadout": "0"
 				}
 			}
 		}
@@ -22810,6 +22897,18 @@
 					"SlotIndex": "9",
 					"SlotName": "ability_effects_2",
 					"SlotText": "bristleback_quill_spray",
+					"DisplayInLoadout": "0"
+				},
+				"10": {
+					"SlotIndex": "10",
+					"SlotName": "ability_effects_4",
+					"SlotText": "bristleback_warpath",
+					"DisplayInLoadout": "0"
+				},
+				"11": {
+					"SlotIndex": "11",
+					"SlotName": "ability_effects_3",
+					"SlotText": "bristleback_bristleback",
 					"DisplayInLoadout": "0"
 				}
 			},
@@ -26871,6 +26970,12 @@
 					"SlotIndex": "6",
 					"SlotName": "ability_effects_3",
 					"SlotText": "hoodwink_scurry",
+					"DisplayInLoadout": "0"
+				},
+				"7": {
+					"SlotIndex": "7",
+					"SlotName": "ability_effects_4",
+					"SlotText": "hoodwink_sharpshooter",
 					"DisplayInLoadout": "0"
 				}
 			}
