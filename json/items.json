@@ -4595,7 +4595,7 @@
 		"cost": 5000,
 		"cooldown": "180",
 		"mana_cost": "350",
-		"description": "# Active: Reset Cooldowns\nResets the cooldowns of all your items and abilities.",
+		"description": "# Active: Reset Cooldowns\nResets the cooldowns of all your items and abilities. Shares a cooldown with Refresher Shard. This item's cooldown only progresses in your hero's main inventory.",
 		"lore": "A powerful artifact created for wizards.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5149,7 +5149,7 @@
 		"cost": 4400,
 		"cooldown": "30",
 		"mana_cost": "0",
-		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x and also converts the same percentage of damage dealt to mana. Lasts **6** seconds. Costs **10%** of your current HP to activate",
+		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x and also converts the same percentage of damage dealt to mana. Lasts **6** seconds.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5181,7 +5181,7 @@
 			},
 			{
 				"key": "hp_cost",
-				"value": "10"
+				"value": "0"
 			}
 		],
 		"recipe": "item_voodoo_mask|item_soul_booster|item_recipe_bloodstone",
@@ -5207,7 +5207,7 @@
 				"spell_lifesteal": "30",
 				"buff_duration": "6",
 				"lifesteal_multiplier": "2.5",
-				"hp_cost": "10"
+				"hp_cost": "0"
 			}
 		}
 	},
@@ -7944,7 +7944,6 @@
 		"icon": "/panorama/images/items/arcane_boots_png.png",
 		"cost": 1300,
 		"cooldown": "55",
-		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Replenish Mana\nRestores **175** mana to all nearby allies.\n\nRadius: **1200**\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Magi equipped with these boots are valued in battle.",
@@ -7977,7 +7976,6 @@
 			"ID": "180",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "55.0",
-			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
 			"ItemCost": "1300",
 			"ItemShopTags": "move_speed;boost_mana;mana_pool",
@@ -10169,7 +10167,6 @@
 		"icon": "/panorama/images/items/guardian_greaves_png.png",
 		"cost": 5050,
 		"cooldown": "40",
-		"cast_range": "1200",
 		"mana_cost": "0",
 		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration and **3** armor to allied units. If an allied hero's health falls below **20%**, this is increased to **18.5** health regeneration and **10** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
@@ -10241,7 +10238,6 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "40",
-			"AbilityCastRange": "1200",
 			"AbilityManaCost": "0",
 			"ItemCost": "5050",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
@@ -11703,9 +11699,9 @@
 		"quality": "consumable",
 		"icon": "/panorama/images/items/refresher_shard_png.png",
 		"cost": 1000,
-		"cooldown": "200",
+		"cooldown": "180",
 		"mana_cost": "200",
-		"description": "# Use: Reset Cooldowns\nResets the cooldowns of all your items and abilities.",
+		"description": "# Use: Reset Cooldowns\nResets the cooldowns of all your items and abilities. Shares a cooldown with Refresher Orb. This item's cooldown only progresses in your hero's main inventory.",
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
@@ -11714,7 +11710,7 @@
 			"FightRecapLevel": "2",
 			"Model": "models/props_gameplay/refresher_shard.vmdl",
 			"Effect": "particles/generic_gameplay/dropped_refresher_shard.vpcf",
-			"AbilityCooldown": "200.0",
+			"AbilityCooldown": "180.0",
 			"AbilityManaCost": "200",
 			"ItemCost": "1000",
 			"ItemShopTags": "",
@@ -19344,7 +19340,6 @@
 		"icon": "/panorama/images/items/boots_of_bearing_png.png",
 		"cost": 4125,
 		"cooldown": "30",
-		"cast_range": "1200",
 		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%**. Movement Speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
 		"secret_shop": false,
@@ -19414,7 +19409,6 @@
 			"ItemPermanent": "1",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "30.0",
-			"AbilityCastRange": "1200",
 			"ItemCost": "4125",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
@@ -20050,7 +20044,7 @@
 			},
 			{
 				"key": "mana_reduction_pct",
-				"value": "20%",
+				"value": "15%",
 				"header": "-",
 				"footer": "Max Mana"
 			}
@@ -20064,7 +20058,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"cast_range_bonus": "125",
-				"mana_reduction_pct": "20"
+				"mana_reduction_pct": "15"
 			}
 		}
 	},
@@ -20434,7 +20428,7 @@
 		"ability_special": [
 			{
 				"key": "aspd",
-				"value": "10",
+				"value": "15",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -20460,7 +20454,7 @@
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"aspd": "10",
+				"aspd": "15",
 				"bonus_damage": "40",
 				"duration": "8",
 				"health_sacrifice": "100"
