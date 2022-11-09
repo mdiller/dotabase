@@ -1082,7 +1082,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/drow_ranger_multishot_png.png",
 		"localized_name": "Multishot",
-		"description": "Channeling. Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying longer duration Frost Arrows. Lasts up to **1.75** seconds.",
+		"description": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying longer duration Frost Arrows. Lasts up to **1.75** seconds.",
 		"lore": "In the ranger's youth, learning to fire multiple arrows at once was considered a distracting frivolity. In the war of the Ancients, such technique has become strange necessity.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -1282,7 +1282,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "1",
-					"ad_linked_abilities": "puck_phase_shift"
+					"ad_linked_abilities": "puck_dream_coil"
 				}
 			}
 		}
@@ -2070,7 +2070,8 @@
 		"ability_special": [
 			{
 				"key": "duration",
-				"value": "0.8"
+				"value": "0.8",
+				"header": "DURATION:"
 			}
 		],
 		"slot": 4,
@@ -5883,7 +5884,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/meepo_petrify_png.png",
 		"localized_name": "Dig",
-		"description": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for **4**s. Restores **50%** of his max health over that duration. Can\u2019t be cast while rooted.",
+		"description": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for **4**s. Restores **50%** of his max health over that duration.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
 		"scepter_description": "Adds new ability: Dig.",
@@ -6180,11 +6181,13 @@
 			},
 			{
 				"key": "radius",
-				"value": "300"
+				"value": "300",
+				"header": "RADIUS:"
 			},
 			{
 				"key": "stun_duration",
-				"value": "0.4"
+				"value": "0.4",
+				"header": "STUN DURATION:"
 			},
 			{
 				"key": "tick_rate",
@@ -6194,7 +6197,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/jakiro_liquid_ice_png.png",
 		"localized_name": "Liquid Frost",
-		"description": "Jakiro adds a frost effect to his attack, stunning enemies. Enemies hit are slowed and receive a percent their max health per second plus a base amount as damage every **1** second for **4** seconds.",
+		"description": "Jakiro adds a frost effect to his attack, stunning enemies. Enemies hit are slowed for **4** seconds and are damaged for a percent of their max health plus a base amount every **1** second for **4** seconds.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -8150,7 +8153,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/broodmother_silken_bola_png.png",
 		"localized_name": "Silken Bola",
-		"description": "Slows the target enemy, causes them to miss and deals impact damage. Units that attack the target deal bonus magic damage.",
+		"description": "Deals impact damage, then slows the target and causes them to miss some attacks. Units that attack the target deal bonus magic damage.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -8353,7 +8356,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/alchemist_berserk_potion_png.png",
 		"localized_name": "Berserk Potion",
-		"description": "Alchemist throws a potion at an ally, applying a basic dispel and giving them attack speed, movement speed and HP regen.",
+		"description": "Alchemist throws a potion at an ally, applying a basic dispel and giving them attack speed, movement speed and HP regen.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -8617,7 +8620,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/ogre_magi_smash_png.png",
 		"localized_name": "Fire Shield",
-		"description": "Creates a shield around the target ally, absorbing a percentage of the damage of next **3** attacks from enemy heroes. When damage is absorbed, a fireball is launched at the attacker.",
+		"description": "Creates a shield around the target ally, absorbing a percentage of the damage of next **3** attacks from enemy heroes. When damage is absorbed, a fireball is launched at the attacker. Can be cast on towers.",
 		"note": "When multicast, nearby allies will be selected randomly in an **1000** area of effect to receive Fire Shield.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -8990,7 +8993,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/windrunner_gale_force_png.png",
 		"localized_name": "Gale Force",
-		"description": "Summons a strong wind that pushes all enemies in the target area towards the target direction. Vector Targeted.",
+		"description": "Vector Targeted. Summons a strong wind that pushes all enemies in the target area towards the target direction.",
 		"lore": "At last Lyralei has learned to call upon the might of her true birthright.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -10036,7 +10039,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/dark_seer_normal_punch_png.png",
 		"localized_name": "Normal Punch",
-		"description": "Passive cooldown attack. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past **3** seconds. Max power is reached after **900** distance moved.",
+		"description": "Passive ability. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past **3** seconds. Max power is reached after **900** distance moved.",
 		"scepter_grants": true,
 		"scepter_upgrades": false,
 		"scepter_description": "Adds new ability: Normal Punch.",
@@ -10433,7 +10436,7 @@
 			},
 			{
 				"key": "berserk_bonus_movement_speed",
-				"value": "50%",
+				"value": "50",
 				"header": "BONUS MOVEMENT SPEED:"
 			},
 			{
@@ -10443,7 +10446,8 @@
 			},
 			{
 				"key": "duration",
-				"value": "7"
+				"value": "7",
+				"header": "DURATION:"
 			},
 			{
 				"key": "health_cost_pct",
@@ -10454,7 +10458,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/terrorblade_demon_zeal_png.png",
 		"localized_name": "Demon Zeal",
-		"description": "Costs part of Terrorblade's current HP to cast, dispelling Terrorblade and providing bonus movement and attack speed.  The bonuses are stronger out of Metamorphosis.",
+		"description": "Costs part of Terrorblade's current HP to cast, dispelling Terrorblade and providing bonus movement and attack speed.  The bonuses are stronger out of Metamorphosis.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -14240,7 +14244,7 @@
 			"ID": "848",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "luna_lunar_blessing"
+			"ad_linked_abilities": "luna_lucent_beam && luna_moon_glaive"
 		}
 	},
 	{
@@ -15004,7 +15008,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/broodmother_sticky_snare_png.png",
 		"localized_name": "Spinner's Snare",
-		"description": "Broodmother may create up to **5** invisible web lines touching any existing web. Enemy Heroes that cross the web line will spring the trap, becoming rooted, revealed in fog, and take damage over time.  Multiple Heroes can trip on the same line until it's destroyed after being initially triggered.  Broodmother's team is alerted via the minimap when an enemy has triggered the snare.",
+		"description": "Vector Targeted. Broodmother may create up to **5** invisible web lines touching any existing web. Enemy Heroes that cross the web line will spring the trap, becoming rooted, revealed in fog, and take damage over time.  Multiple Heroes can trip on the same line until it's destroyed after being initially triggered.  Broodmother's team is alerted via the minimap when an enemy has triggered the snare.",
 		"lore": "The slightest tremor of her web is all Arachnia needs to find her prey.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -15322,7 +15326,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "200",
-					"ad_linked_abilities": "legion_commander_duel"
+					"ad_linked_abilities": "legion_commander_moment_of_courage"
 				}
 			}
 		}
@@ -16847,7 +16851,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "1",
-					"ad_linked_abilities": "furion_force_of_nature"
+					"ad_linked_abilities": "furion_sprout"
 				}
 			}
 		}
@@ -17321,7 +17325,7 @@
 		"json_data": {
 			"ID": "942",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityType": "DOTA_ABILITY_TYPE_BASIC",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Brewmaster.PrimalSplit.Spawn",
@@ -19133,7 +19137,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/primal_beast_pulverize_png.png",
 		"localized_name": "Pulverize",
-		"description": "Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Lasts **2.3** seconds.",
+		"description": "CHANNELED - Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Lasts **2.3** seconds.",
 		"lore": "Though none are certain whether his utterances have true meaning, most concede the Beast's powerful grip and tendency to smash his enemies into naught but pulp and pieces communicates his intent well enough.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -21347,7 +21351,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/tinker_keen_teleport_png.png",
 		"localized_name": "Keen Conveyance",
-		"description": "After channeling for **4.5**/**4**/**3.5**s teleport to a target friendly structure. Level 2 allows teleporting to friendly units and Level 3 to friendly heroes.",
+		"description": "CHANNELED - After channeling for **4.5**/**4**/**3.5**s teleport to a target friendly structure. Level 2 allows teleporting to friendly units and Level 3 to friendly heroes.",
 		"lore": "As Boush likes to say, 'There is nothing the arcane can accomplish that the curious mind cannot reproduce given time. And proper funding, of course.'",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -21862,7 +21866,10 @@
 					"value": "-11 -19 -27 -35",
 					"special_bonus_unique_axe_6": "-12"
 				},
-				"damage_per_second": "10 15 20 25",
+				"damage_per_second": {
+					"value": "10 15 20 25",
+					"CalculateSpellDamageTooltip": "1"
+				},
 				"armor_multiplier": {
 					"value": "1",
 					"special_bonus_unique_axe": "x2"
@@ -22174,7 +22181,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/bane_enfeeble_png.png",
 		"localized_name": "Enfeeble",
-		"description": "Lowers the enemy's total attack damage, cast range, and regeneration.",
+		"description": "Lowers the enemy's total attack damage, cast range, and heal/regeneration.",
 		"lore": "Each tendril of fear that Atropos weaves increases the vulnerability of his victims to arcane and unknown arts.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -23807,7 +23814,8 @@
 			},
 			{
 				"key": "AbilityCastRange",
-				"value": "350"
+				"value": "350",
+				"header": "CAST RANGE:"
 			},
 			{
 				"key": "dispel",
@@ -24527,6 +24535,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Ability.LagunaBladeImpact",
+			"AbilityDraftUltScepterAbility": "lina_flame_cloak",
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.45 0.45 0.45",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -26252,7 +26261,7 @@
 		"behavior": "passive|aura",
 		"spell_immunity": "yes",
 		"target_team": "enemy",
-		"cast_range": "900",
+		"cast_range": "1200",
 		"cooldown": "10",
 		"ability_special": [
 			{
@@ -26284,7 +26293,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"OnCastbar": "0",
-			"AbilityCastRange": "900",
+			"AbilityCastRange": "1200",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
 			"AbilityCooldown": "10",
 			"AbilitySpecial": {
@@ -26391,7 +26400,7 @@
 		"localized_name": "Requiem of Souls",
 		"description": "Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed and magic resistance reduced for **0.9** seconds for each line hit up to a maximum of **2.7**. Lines of energy are created for every soul captured through Necromastery. \n\n Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
 		"lore": "The captured souls of those past slain are released to ravage their former allies.",
-		"note": "One line is generated from Shadow Fiend for every **1** souls in his possession.\nFear and movement slow do not apply when if the Requiem was released on death.",
+		"note": "One line is generated from Shadow Fiend for every **1** soul in his possession.\nFear and movement slow do not apply if the Requiem was released on death.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Reduces cooldown and causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend deals less damage, but heals Shadow Fiend for all the damage it dealt.",
@@ -28253,7 +28262,7 @@
 				"shard_upgrade": "1",
 				"key": "shard_pct_chance",
 				"value": "18%",
-				"header": "ON ATTACKED CHANCE:"
+				"header": "CHANCE TO STRIKE:"
 			},
 			{
 				"shard_upgrade": "1",
@@ -28589,7 +28598,7 @@
 		"localized_name": "Vampiric Spirit",
 		"description": "Restore health based on the damage Wraith King deals when attacking enemy units. Can be cast to summon skeletons with Vampiric Spirit. For every two kills Wraith King or any unit he controls accrue on enemy units, Vampiric Aura adds a skeleton charge. Skeletons respawn once when killed. ",
 		"lore": "Wraith King's blade drains his enemy's essence to feed his aura.",
-		"note": "Stacks additively with other sources of Lifesteal.",
+		"note": "Summoned skeletons will automatically attack any unit targeted by Wraithfire Blast.\nStacks additively with other sources of Lifesteal.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -28645,7 +28654,6 @@
 		"localized_name": "Mortal Strike",
 		"description": "Wraith King passively deals bonus damage on an attack with a cooldown. ",
 		"lore": "One blow to crush a foe.",
-		"note": "Summoned skeletons will automatically attack any unit targeted by Wraithfire Blast.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -29315,7 +29323,6 @@
 		"localized_name": "Great Cleave",
 		"description": "Sven strikes with great force, cleaving all nearby enemy units with his attack.",
 		"lore": "The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors.",
-		"note": "The cleave damages a circular area in front of Sven.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -30186,10 +30193,6 @@
 		"mana_cost": "150 225 300",
 		"ability_special": [
 			{
-				"key": "epicenter_radius",
-				"value": "500 525 550 575 600 625 650 675 700 725 750 775 800 825"
-			},
-			{
 				"key": "epicenter_pulses",
 				"value": "6 8 10",
 				"talent_name": "special_bonus_unique_sand_king",
@@ -30200,6 +30203,16 @@
 				"key": "epicenter_damage",
 				"value": "110 120 130",
 				"header": "DAMAGE PER PULSE:"
+			},
+			{
+				"key": "epicenter_radius_base",
+				"value": "500",
+				"header": "BASE RADIUS:"
+			},
+			{
+				"key": "epicenter_radius_increment",
+				"value": "25",
+				"header": "INCREMENTAL RADIUS:"
 			},
 			{
 				"key": "epicenter_slow",
@@ -30235,7 +30248,7 @@
 		"localized_name": "Epicenter",
 		"description": "After a cast point of **2** seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.",
 		"lore": "Many an explorer was lost to the quicksands of the Scintillant Waste.",
-		"note": "The pulses are centered on Sand King, not where he first casted the spell.\nThe pulses have gradually inreasing radius, ranging from 500 to 725.",
+		"note": "The pulses are centered on Sand King, not where he first casted the spell.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -30259,15 +30272,18 @@
 			"AbilityManaCost": "150 225 300",
 			"AbilityModifierSupportValue": "0.2",
 			"AbilityValues": {
-				"epicenter_radius": {
-					"value": "500 525 550 575 600 625 650 675 700 725 750 775 800 825",
-					"special_bonus_unique_sand_king_5": "+100"
-				},
 				"epicenter_pulses": {
 					"value": "6 8 10",
 					"LinkedSpecialBonus": "special_bonus_unique_sand_king"
 				},
 				"epicenter_damage": "110 120 130",
+				"epicenter_radius_base": {
+					"value": "500",
+					"special_bonus_unique_sand_king_5": "+100"
+				},
+				"epicenter_radius_increment": {
+					"value": "25"
+				},
 				"epicenter_slow": {
 					"value": "-30"
 				},
@@ -31636,6 +31652,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Ability.Ravage",
+			"AbilityDraftUltShardAbility": "tidehunter_arm_of_the_deep",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -31929,7 +31946,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/vengefulspirit_nether_swap_png.png",
 		"localized_name": "Nether Swap",
-		"description": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take **50** damage, Allied swapped units receive less damage for a short duration.",
+		"description": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take **50** damage. Allied swapped units receive less damage for a short duration.",
 		"lore": "Martyrdom is a small price to pay for vengeance.",
 		"note": "Works on Spell Immune units.\nTrees near Vengeful Spirit and the target will be destroyed when the spell is cast.\nChanneling spells are interrupted by Nether Swap.",
 		"scepter_grants": false,
@@ -32543,7 +32560,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/windrunner_powershot_png.png",
 		"localized_name": "Powershot",
-		"description": "Windranger charges her bow for up to **1** second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages enemies along its path. For each enemy that Powershot hits, its damage is reduced.",
+		"description": "CHANNELED - Windranger charges her bow for up to **1** second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages enemies along its path. For each enemy that Powershot hits, its damage is reduced.",
 		"lore": "During her early years of training, Lyralei learned to fire powerful arrows that cleaved even trees to reach their targets.",
 		"note": "Powershot will destroy trees in its area of effect.",
 		"scepter_grants": false,
@@ -32796,7 +32813,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/lich_frost_nova_png.png",
 		"localized_name": "Frost Blast",
-		"description": "Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for **4** seconds.  The primary target receives both base and area damage and extra attack speed slow.",
+		"description": "Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for **4** seconds.  The primary target receives both base and area damage.",
 		"lore": "Frost-mage Ethreain has not forgotten even the simplest of ice manipulation.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -33022,6 +33039,11 @@
 				"header": "DAMAGE EACH BOUNCE:"
 			},
 			{
+				"key": "bonus_jump_damage",
+				"value": "15 20 25",
+				"header": "INCREMENTAL DAMAGE:"
+			},
+			{
 				"key": "jumps",
 				"value": "10",
 				"header": "BOUNCES:"
@@ -33053,11 +33075,6 @@
 			{
 				"key": "vision_radius",
 				"value": "800"
-			},
-			{
-				"key": "bonus_jump_damage",
-				"value": "15 20 25",
-				"header": "INCREMENTAL DAMAGE:"
 			},
 			{
 				"key": "initial_projectile_speed",
@@ -33101,6 +33118,7 @@
 					"value": "250 400 550",
 					"special_bonus_unique_lich_7": "+100"
 				},
+				"bonus_jump_damage": "15 20 25",
 				"jumps": "10 10 10",
 				"jump_range": "600",
 				"slow_movement_speed": "-65",
@@ -33108,7 +33126,6 @@
 				"slow_duration": "2.5",
 				"projectile_speed": "850",
 				"vision_radius": "800",
-				"bonus_jump_damage": "15 20 25",
 				"initial_projectile_speed": "1050",
 				"has_unlimited_jumps": {
 					"special_bonus_unique_lich_5": "+1"
@@ -33738,7 +33755,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/riki_tricks_of_the_trade_png.png",
 		"localized_name": "Tricks of the Trade",
-		"description": "Riki phases out of the world while striking random enemy units from behind in an area around him.",
+		"description": "CHANNELED - Riki phases out of the world while striking random enemy units from behind in an area around him.",
 		"lore": "The Stealth Assassin is not afraid to fight dirty, and specializes in attacking his opponents from behind.",
 		"note": "Moving while phased out will cancel the ability.",
 		"scepter_grants": false,
@@ -33936,7 +33953,7 @@
 		"localized_name": "Demonic Conversion",
 		"description": "Transforms a creep into three fragments of Enigma himself.  These eidolons are all under Enigma's control, and repeated successful attacks cause them to multiply.  When this happens, the eidolons have their health restored.",
 		"lore": "Enigma is capable of drawing aspects of himself from other dimensions - the result is a trio of dark eidolons that hunt the corporeal plane.",
-		"note": "Converted enemy units will give gold bounty and experience.\nConverted allied units will be denied.",
+		"note": "Converted enemy units will give gold bounty and experience.\nConverted allied units will be denied.\nCannot be used on Ancient creeps or neutral creeps that are greater than level 4.\nCannot be used on allied Flagbearer creeps.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -34138,7 +34155,7 @@
 		"lore": "The ground trembles as Enigma channels his ultimate vortex of destruction, a singularity with the power to end worlds.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Black Hole deals additional damage equivalent to **3.5%** of the unit's Max Health per second and does a non-interrupting pull towards it in a **1200** AoE. Pulls at a rate of **175**",
+		"scepter_description": "Black Hole deals additional damage equivalent to **3.5%** of the unit's Max Health per second and does a non-interrupting pull towards it in a **1200** AoE. Pulls at a rate of **175**.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -34557,7 +34574,7 @@
 		"localized_name": "Rearm",
 		"description": "CHANNELED - Resets the cooldown on most of Tinker's items and abilities.",
 		"lore": "A new battery here, another set of rockets there, Boush continually improves on existing technology.",
-		"note": "Rearm works on all items except Aeon Disk, Arcane Boots, Black King Bar, Hand of Midas, Helm of the Dominator, Linken's Sphere, Meteor Hammer, Pipe of Insight, Tome of Knowledge, Refresher Orb, and any neutral items.",
+		"note": "Rearm works on all items except Aeon Disk, Arcane Boots, Black King Bar, Hand of Midas, Helm of the Dominator, Helm of the Overlord, Linken's Sphere, Meteor Hammer, Pipe of Insight, Refresher Orb, Revenant's Brooch (passive ability), and all neutral items.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -34594,8 +34611,10 @@
 		"charges": "3",
 		"ability_special": [
 			{
+				"talent_name": "special_bonus_unique_sniper_5",
 				"key": "slow_movement_speed",
 				"value": "-12% -18% -24% -30%",
+				"talent_value": "-26% -32% -38% -44%",
 				"header": "MOVEMENT SLOW:"
 			},
 			{
@@ -34658,7 +34677,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"slow_movement_speed": "-12 -18 -24 -30"
+					"slow_movement_speed": "-12 -18 -24 -30",
+					"LinkedSpecialBonus": "special_bonus_unique_sniper_5"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -34726,7 +34746,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/sniper_headshot_png.png",
 		"localized_name": "Headshot",
-		"description": "Sniper increases his accuracy, giving him a chance to deal extra damage and knock back his enemies. Headshots  briefly slow enemy movement and attack speed slowed by **-100%**.",
+		"description": "Sniper increases his accuracy, giving him a chance to deal extra damage and knock back his enemies. Headshots briefly slow enemy movement and attack speed by **-100%**.",
 		"lore": "Taking potshots at steepstalkers in his childhood has been thoroughly refined into perfect leads on enemy combatants.",
 		"note": "Works on allied creeps.",
 		"scepter_grants": false,
@@ -34890,7 +34910,7 @@
 		"localized_name": "Assassinate",
 		"description": "Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that deals damage at long range and mini-stuns the target.",
 		"lore": "In order to fulfill the prophecy and return to his home town, Kardel must make another shot as perfect as the one on the day of his ancient test.",
-		"note": "Crosshair effect is only visible to allies.\nInvisibility doesn't disjoint the projectile.\nInterrupts channeling spells, including on Spell Immune units.",
+		"note": "Crosshair effect is only visible to allies.\nInvisibility doesn't disjoint the projectile.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Causes Assassinate to fire quicker and stun the enemy target.",
@@ -35506,7 +35526,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/warlock_upheaval_png.png",
 		"localized_name": "Upheaval",
-		"description": "CHANNELED - A powerful slowing and damaging current that grows stronger as it's channelled. Lasts up to **10**/**12**/**14**/**16** seconds. Enemies are slowed for **3** seconds after leaving the area or the spell ends.",
+		"description": "CHANNELED - A powerful slowing and damaging current that grows stronger as it's channeled. Lasts up to **10**/**12**/**14**/**16** seconds. Enemies are slowed for **3** seconds after leaving the area or the spell ends.",
 		"lore": "Demnok manipulates space-time, impairing entire armies.",
 		"note": "The slow increase is based on length of the channel, not the duration an enemy was standing in the area.",
 		"scepter_grants": false,
@@ -36442,6 +36462,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Beastmaster.Primal_Roar",
+			"AbilityDraftUltScepterAbility": "beastmaster_drums_of_slom",
 			"AbilityCastPoint": "0.5 0.5 0.5",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityManaCost": "150 175 200",
@@ -36800,6 +36821,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Venomancer.PoisonNova",
+			"AbilityDraftUltShardAbility": "venomancer_latent_poison",
 			"HasScepterUpgrade": "1",
 			"AbilityCastPoint": "0.0 0.0 0.0",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -37723,8 +37745,9 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/phantom_assassin_blur_png.png",
 		"localized_name": "Blur",
-		"description": "Phantom Assassin focuses inward, increasing her ability to evade enemy attacks. Can be activated to blur her body, causing her to be impossible to see until near enemy heroes.\n\nStacks diminishingly with other sources of Evasion.",
+		"description": "Phantom Assassin focuses inward, increasing her ability to evade enemy attacks. Can be activated to blur her body, causing her to be impossible to see until near enemy heroes, towers, or outposts.\n\nStacks diminishingly with other sources of Evasion.",
 		"lore": "Meditation allows a Veiled Sister to carefully anticipate her opponents in combat.",
+		"note": "Attacking Roshan with a regular attack will dispel Blur.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Causes Blur to have instant cast time and applies a dispel. Any time Phantom Assassin gets a hero kill, her abilities are refreshed. Reduces cooldown and increases Vanish Buffer.",
@@ -37931,7 +37954,7 @@
 		"localized_name": "Meld",
 		"description": "Templar Assassin conceals herself, becoming invisible as long as she remains still.  If Meld's invisibility is broken by attacking an enemy, Lanaya will deal bonus damage to the enemy and reduce their armor for **12** seconds.",
 		"lore": "Lanaya is as elusive as her covenant with the Hidden Temple.",
-		"note": "Meld is broken by any action other than staying in position.\nMeld's armor reduction does not work against towers.",
+		"note": "Meld is broken by any action other than staying in position or channeling Psionic Projection.\nMeld's armor reduction does not work against towers.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -39354,6 +39377,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "2",
 			"AbilitySound": "hero_viper.viperStrike",
+			"AbilityDraftUltScepterAbility": "viper_nose_dive",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.3 0.3 0.3",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -39676,7 +39700,7 @@
 		"note": "Eclipse doesn't work if Luna doesn't have any points in Lucent Beam.\nBeams will stop if Luna is killed.\nWill not hit invisible units.\nThere is a **0.6** seconds gap between beams, **0.3** seconds with scepter.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Also increases total beams and duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
+		"scepter_description": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Also increases total beams, reduces duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -41545,6 +41569,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Furion.WrathOfNature_Cast",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftUltShardAbility": "furion_curse_of_the_forest",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"AbilityCastRange": "0",
@@ -42170,7 +42195,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/dark_seer_surge_png.png",
 		"localized_name": "Surge",
-		"description": "Charges a target friendly unit with power, giving it a brief burst of movement speed and removes unit collisions. Allows the unit to reach maximum movement speed and cannot be slowed.",
+		"description": "Charges a target friendly unit with power, giving it a brief burst of phased movement speed. Allows the unit to reach maximum movement speed and cannot be slowed.",
 		"lore": "Ish'Kafel once used his speed of mind to navigate the maze between the walls.",
 		"note": "Units with Surge cannot be slowed unless the Surge effect is removed.",
 		"scepter_grants": false,
@@ -42285,7 +42310,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/dark_seer_wall_of_replica_png.png",
 		"localized_name": "Wall of Replica",
-		"description": "Raises a wall of warping light that slows and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
+		"description": "Vector Targeted. Raises a wall of warping light that slows and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
 		"lore": "The Dark Seer, while unable to return to his natural realm, can channel part of the prismatic wall with powerful strength of mind, sowing confusion amongst enemy ranks.",
 		"note": "Doesn't create illusions from other illusions.\nThere cannot be more than one illusion per player per wall.\nWall of Replica will not slow spell-immune enemies.",
 		"scepter_grants": false,
@@ -42299,7 +42324,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Dark_Seer.Wall_of_Replica_Start",
-			"AbilityDraftUltShardAbility": "dark_seer_normal_punch",
+			"AbilityDraftUltScepterAbility": "dark_seer_normal_punch",
 			"AbilityCastRange": "1300",
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
@@ -42388,7 +42413,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/clinkz_strafe_png.png",
 		"localized_name": "Burning Barrage",
-		"description": "Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.",
+		"description": "CHANNELED - Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.",
 		"lore": "It's hard to say whether the blur around the Bone Fletcher is from his flaming heart or his speed with the quiver.",
 		"note": "Bonus Attack Range increases the length of Burning Barrage.",
 		"scepter_grants": false,
@@ -42997,6 +43022,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Hero_Enchantress.EnchantCreep",
+			"AbilityDraftShardAbility": "enchantress_little_friends",
 			"AbilityCastRange": "500 550 600 650",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "28 24 20 16",
@@ -44449,7 +44475,7 @@
 			{
 				"key": "AbilityCooldown",
 				"value": "18 17 16 15",
-				"shard_value": "0.5 33.5 31.5 29.5",
+				"shard_value": "0.5 0.5 0.5 0.5",
 				"shard_bonus": "175165155145"
 			},
 			{
@@ -44504,7 +44530,7 @@
 				},
 				"AbilityCooldown": {
 					"value": "18 17 16 15",
-					"special_bonus_shard": "-17.5 16.5 15.5 14.5"
+					"special_bonus_shard": "-17.5 -16.5 -15.5 -14.5"
 				},
 				"AbilityChargeRestoreTime": {
 					"value": "15 14 13 12",
@@ -45449,7 +45475,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/jakiro_liquid_fire_png.png",
 		"localized_name": "Liquid Fire",
-		"description": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks. Deals 75% damage to buildings.",
+		"description": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.",
 		"lore": "The left maw of Jakiro opens, laying waste to any in its path.",
 		"note": "Works on both units and buildings.",
 		"scepter_grants": false,
@@ -46248,7 +46274,7 @@
 		],
 		"icon": "/panorama/images/spellicons/satyr_trickster_purge_png.png",
 		"localized_name": "Purge",
-		"description": "The Satyr Banisher knows every trick in the book, allowing him to remove debuffs from allies or buffs from enemies. His trickery also slows the enemy's movement.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "The Satyr Banisher knows every trick in the book, allowing him to dispel debuffs from allies or buffs from enemies. His trickery also slows the enemy's movement.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -47299,13 +47325,13 @@
 		"localized_name": "Holy Persuasion",
 		"description": "Chen takes control of an enemy or neutral creep. If the persuaded creep's base health is naturally below the health minimum, its base health will be raised to the health minimum. Converted creeps will have increased movement speed and bonus damage. \n\nCan be cast on converted creeps to teleport them to Chen. If cast on Chen, all units controlled by Chen will be teleported to him. Taking damage will dispel the buff.",
 		"lore": "Although they may not be knights, Chen incorporates beasts into the Fold in the same way he himself was converted.",
-		"note": "Persuading a new creep above max unit count causes the oldest persuaded creep to die.\nCan target Ancient Creeps when Chen has Aghanim's Shard.\nThe health of creeps already under Chen's control does not update to the new level upon leveling Holy Persuasion further.\nFully restores the creep's mana upon converting.",
+		"note": "Persuading a new creep above max unit count causes the oldest persuaded creep to die.\nCan target Ancient creeps when Chen has Aghanim's Shard.\nThe health of creeps already under Chen's control does not update to the new level upon leveling Holy Persuasion further.\nFully restores the creep's mana upon converting.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Grants persuaded creeps Martyrdom ability. Sacrifice the life of this unit to heal any ally with the current level of Hand of God.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows Holy Persuasion to target Ancient Creeps. Can control up to 1/2/3 Ancient Creeps based on Hand of God's level.",
+		"shard_description": "Allows Holy Persuasion to target Ancient creeps. Can control up to 1/2/3 Ancient creeps based on Hand of God's level.",
 		"json_data": {
 			"ID": "5330",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -47381,7 +47407,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/chen_hand_of_god_png.png",
 		"localized_name": "Hand of God",
-		"description": "Heals all allied heroes on the map as well as all units under Chen's control. A large heal is applied at first and a slow heal over time is applied for **8** afterwards.",
+		"description": "Heals all allied heroes on the map as well as all units under Chen's control. A large heal is applied at first and a slow heal over time is applied for **8** seconds afterwards.",
 		"lore": "Using the mental link with his thralls, Chen calls down restoration and well-being to those who share his fanaticism.",
 		"note": "Can heal invulnerable and hidden/banished allies.",
 		"scepter_grants": false,
@@ -49258,6 +49284,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Spirit_Breaker.NetherStrike.Begin",
+			"AbilityDraftUltShardAbility": "spirit_breaker_planar_pocket",
 			"AbilityCastPoint": "1.0",
 			"AbilityCastRange": "700",
 			"AbilityCastRangeBuffer": "500",
@@ -50356,7 +50383,7 @@
 			"ID": "5368",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
-			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_SELF",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
@@ -50508,7 +50535,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/invoker_quas_png.png",
 		"localized_name": "Quas",
-		"description": "Allows manipulation of ice elements. Passively grants +2 Strength per level. Each Quas instance provides increased health regeneration.\n",
+		"description": "Allows manipulation of ice elements. Passively grants +2 Strength per level. Each Quas instance provides increased health regeneration.",
 		"note": "Invoker can only have 3 of any instance.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -50854,7 +50881,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/silencer_curse_of_the_silent_png.png",
 		"localized_name": "Arcane Curse",
-		"description": "Curses the target area, dealing damage and causing enemy heroes to take damage over time and slowing their movement speed. Silenced enemies take **1.5**x slow and damage. Anytime affected enemies cast a spell, the duration is increased. The cooldown is paused as long as the target is silenced.",
+		"description": "Curses the target area, dealing damage and causing enemy heroes to take damage over time and slowing their movement speed. Silenced enemies take **1.5**x slow and damage. Anytime affected enemies cast a spell, the duration is increased. The duration is paused as long as the target is silenced.",
 		"lore": "Nortrom's lack of incantations is less of a problem for him than it is for his adversaries.",
 		"note": "Affects creeps.",
 		"scepter_grants": false,
@@ -50959,9 +50986,9 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/silencer_glaives_of_wisdom_png.png",
 		"localized_name": "Glaives of Wisdom",
-		"description": "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Silencer temporarily steals his target's Intelligence with each hit. If Silencer kills an affected enemy hero, he permanently steals **2** Intelligence.",
+		"description": "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Silencer temporarily steals his target's Intelligence with each hit. If Silencer kills an enemy hero, he permanently steals **2** Intelligence.",
 		"lore": "Although lacking in traditional incantations, Nortrom's pedigree of the Aeol Drias gives him uncanny wisdom, which he applies to physical combat.",
-		"note": "To permanently steal Intelligence, Silencer doesn't need to land the killing blow, as long as the enemy hero is killed within **925** range of Silencer while having the Glaives of Wisdom debuff.",
+		"note": "To permanently steal Intelligence, Silencer doesn't need to land the killing blow, as long as the enemy hero is killed within **925** range of Silencer.\nThe enemy does not need to have the Glaives of Wisdom debuff for Silencer to permanently steal Intelligence.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -52599,7 +52626,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/lycan_howl_png.png",
 		"localized_name": "Howl",
-		"description": "Strikes fear into enemies, reducing armor and attack damage to all enemies within **2000** range of Lycan and his wolves. At night Howl is global.",
+		"description": "Strikes fear into enemies, reducing armor and attack damage of all enemies within **2000** range of Lycan and his wolves. At night Howl is global.",
 		"lore": "Blood-curdling wolf cries signal to opponents that Banehallow is among them.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -53023,7 +53050,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/brewmaster_drunken_brawler_png.png",
 		"localized_name": "Drunken Brawler",
-		"description": "Brewmaster can switch stances based on the elements he controls gaining passive bonuses that improve against enemies when Brewed Up.\nEarth Brawler - Grants **1**/**3**/**5**/**7** armor and **5**/**10**/**15**/**20%** Magic Resistance. Bonuses are **3**x when Brewed Up.\nStorm Brawler - Grants **15**/**20**/**25**/**30%** evasion and **5**/**7**/**9**/**11%** Bonus Move Speed. Bonuses are **3**x when Brewed Up.\nFire Brawler - Grants **24%** chance to crit for **145**/**160**/**175**/**190%** of your attack damage. Chance is **3**x when Brewed Up.",
+		"description": "Brewmaster can switch stances based on the elements he controls, gaining passive bonuses that improve against enemies when Brewed Up.\nEarth Brawler - Grants **1**/**3**/**5**/**7** armor and **5**/**10**/**15**/**20%** Magic Resistance. Bonuses are **3**x when Brewed Up.\nStorm Brawler - Grants **15**/**20**/**25**/**30%** evasion and **5**/**7**/**9**/**11%** Bonus Move Speed. Bonuses are **3**x when Brewed Up.\nFire Brawler - Grants **24%** chance to critical strike for **145**/**160**/**175**/**190%** of your attack damage. Chance is **3**x when Brewed Up.",
 		"lore": "When Mangix won his title as the Brewmaster of the Order of Oyo, he also claimed his place in the mastery of inebriation.",
 		"note": "Stacks diminishingly with other sources of Evasion.",
 		"scepter_grants": false,
@@ -53039,6 +53066,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
 			"AbilityCastGestureSlot": "DEFAULT",
 			"HasShardUpgrade": "1",
+			"AbilityDraftScepterAbility": "brewmaster_primal_companion",
 			"AbilityCooldown": "0",
 			"AbilityManaCost": "0",
 			"AbilityValues": {
@@ -53272,7 +53300,7 @@
 		],
 		"icon": "/panorama/images/spellicons/brewmaster_storm_dispel_magic_png.png",
 		"localized_name": "Dispel Magic",
-		"description": "Damages summoned units in an area and purges most buffs or debuffs.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Damages summoned units in an area and dispels most buffs or debuffs.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -53692,7 +53720,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Applies a basic dispel and grants allies in an area around the caster bonus movement and attack speed. Replicates between Lone Druid and Spirit Bear regardless of castability on the other.",
+		"shard_description": "Applies a basic dispel and grants allies in an area around the caster bonus movement and attack speed. Replicates between Lone Druid and Spirit Bear regardless of castability on the other.\n\nDISPEL TYPE: Basic Dispel",
 		"json_data": {
 			"ID": "5414",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -54337,8 +54365,8 @@
 				"talent_name": "special_bonus_unique_shadow_demon_4",
 				"talent_operation": "SPECIAL_BONUS_PERCENTAGE_ADD",
 				"key": "stack_damage",
-				"value": "24 32 48 60",
-				"talent_value": "27.599999999999998 36.8 55.199999999999996 69",
+				"value": "24 36 48 60",
+				"talent_value": "27.599999999999998 41.4 55.199999999999996 69",
 				"header": "STACK DAMAGE:"
 			},
 			{
@@ -54397,7 +54425,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"stack_damage": "24 32 48 60",
+					"stack_damage": "24 36 48 60",
 					"LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
 					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
 				},
@@ -54812,7 +54840,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/chaos_knight_chaos_strike_png.png",
 		"localized_name": "Chaos Strike",
-		"description": "Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength, in addition to a lifesteal for percentage of the damage. Deals **1.5**x damage to creeps.",
+		"description": "Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength with bonus lifesteal. Deals **1.5**x damage to creeps.",
 		"lore": "Chaos Knight's unwieldy power bludgeons those who stand before him, crushing the thickest of armors.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -55230,7 +55258,7 @@
 				"key": "movement_slow",
 				"value": "-60%",
 				"shard_upgrade": "1",
-				"header": "MOVEMENT SLOW"
+				"header": "MOVEMENT SLOW:"
 			}
 		],
 		"slot": 6,
@@ -56143,7 +56171,7 @@
 		"localized_name": "Soul Rip",
 		"description": "Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy. Soul Rip can also be used to heal Tombstone.",
 		"lore": "Even allies feel despair in Undying's presence.",
-		"note": "Can heal Tombstone, but can't heal or damage other buildings.\nDoes not rip from invisible units.",
+		"note": "Can heal Tombstone, but can't heal or damage other buildings.\nDoes not rip from invisible units, invulnerable units, units in the fog of war, or spell immune enemies.\nDoes rip from spell immune allies, including zombies.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -56220,7 +56248,7 @@
 			{
 				"key": "health_threshold_pct_tooltip",
 				"value": "40%",
-				"header": "DEATHLUST PCT HEALTH THRESHOLD:"
+				"header": "DEATHLUST HEALTH THRESHOLD:"
 			},
 			{
 				"key": "zombie_interval",
@@ -57070,7 +57098,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes each strike gives a short **1.5** second buff to all allies within radius that provides +**25%** Movement Speed and +**50** Attack Speed. Increases radius to **450**.",
+		"shard_description": "Causes each strike to grant a short **1.5** second buff to all allies within radius that provides +**25%** Movement Speed and +**50** Attack Speed. Increases radius to **450**.",
 		"json_data": {
 			"ID": "5458",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
@@ -57957,6 +57985,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_NagaSiren.Ensnare.Cast",
 			"HasScepterUpgrade": "1",
+			"AbilityDraftScepterAbility": "naga_siren_reel_in",
 			"AbilityCastPoint": "0.3",
 			"AbilityManaCost": "70 80 90 100",
 			"AbilityValues": {
@@ -58207,7 +58236,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/keeper_of_the_light_illuminate_png.png",
 		"localized_name": "Illuminate",
-		"description": "Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+		"description": "CHANNELED - Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
 		"lore": "Ezalor's hidden light reveals itself in marvelous fashion.",
 		"note": "Gives increasing vision over the channeling time.",
 		"scepter_grants": false,
@@ -58824,7 +58853,7 @@
 		"localized_name": "Grave Chill",
 		"description": "Visage drains the movement and attack speed of the targeted unit, gaining it for itself and nearby familiars.",
 		"lore": "The warmth of the sun is never felt in the dark cold of the Narrow Maze.",
-		"note": "The two buffs can be removed separately by purge.\nThe speed gained is independent of the speed lost on the target.\nFamiliars within **900** range of Visage will also receive bonuses from Grave Chill.",
+		"note": "The two buffs can be removed separately by dispels.\nThe speed gained is independent of the speed lost on the target.\nFamiliars within **900** range of Visage will also receive bonuses from Grave Chill.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -59313,7 +59342,7 @@
 			},
 			{
 				"key": "tether_heal_amp",
-				"value": "0.60% 0.80% 1% 1.20%",
+				"value": "60% 80% 100% 120%",
 				"header": "HP/MANA TRANSFER:"
 			},
 			{
@@ -59338,7 +59367,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/wisp_tether_png.png",
 		"localized_name": "Tether",
-		"description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a larger portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether.",
+		"description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether.",
 		"lore": "The benevolent touch of Io brings strength from between the planes.",
 		"note": "If you try to tether a unit that is 700 distance or further away from Io, he will latch on and pull himself closer to the tethered unit (to a distance of 300).\nThe tethered unit will heal faster and will heal even if Io is at full health.\nIo's movement speed matches the tethered unit's.",
 		"scepter_grants": false,
@@ -59366,7 +59395,7 @@
 				},
 				"latch_distance": "700 700 700 700",
 				"latch_speed": "1000 1000 1000 1000",
-				"tether_heal_amp": "0.60 0.80 1.00 1.20",
+				"tether_heal_amp": "60 80 100 120",
 				"self_bonus": "0",
 				"slow": {
 					"value": "15 25 35 45",
@@ -59645,9 +59674,9 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/wisp_relocate_png.png",
 		"localized_name": "Relocate",
-		"description": "Teleports Io and any tethered ally to any location. After the spell expires Io and any tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+		"description": "Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
 		"lore": "Io is the embodiment of the mystery of the universe.",
-		"note": "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.\nIf Io is disabled during the cast delay, Relocate is cancelled.\nIf an allied hero is Tethered, that hero will teleported along with you. You can break the tether at any time to prevent that hero from teleporting with you.",
+		"note": "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.\nIf Io is disabled during the cast delay, Relocate is cancelled.\nIf an allied hero is Tethered, that hero will teleport along with you. You can break the tether at any time to prevent that hero from teleporting with you.\nOnly heroes, creep heroes, and illusions can be relocated.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -59987,7 +60016,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/slark_pounce_png.png",
 		"localized_name": "Pounce",
-		"description": "Slark leaps forward, grabbing the first hero he connects with and applying Essence Shift Stacks.  That unit is leashed, and can only move a limited distance away from Slark's landing position. ",
+		"description": "Slark leaps forward, leashing the first hero he connects with and applying Essence Shift Stacks.  That unit can only move a limited distance away from Slark's landing position. ",
 		"lore": "Time in the Dark Reef made Slark a dangerous assassin; aggressive and fearless.",
 		"note": "On cast, Slark leaps forward at a speed of **933.33**, stopping when he latches onto an enemy hero or has traveled **700** distance.\nSpell Immune units cannot be leashed.\nTrees will be destroyed around Slark's landing location.",
 		"scepter_grants": false,
@@ -60817,7 +60846,7 @@
 		"note": "Does not affect Roshan.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Whirling Axes (Ranged) to dispel enemies. Reduces cooldown and mana cost.",
+		"scepter_description": "Causes Whirling Axes (Ranged) to dispel enemies. Reduces cooldown and mana cost.\n\nDISPEL TYPE: Basic Dispel",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -60938,7 +60967,7 @@
 		"note": "Does not affect Roshan.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Whirling Axes (Melee) to dispel Troll Warlord. Reduces cooldown and mana cost.",
+		"scepter_description": "Causes Whirling Axes (Melee) to dispel Troll Warlord. Reduces cooldown and mana cost.\n\nDISPEL TYPE: Basic Dispel",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -61072,9 +61101,9 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/troll_warlord_battle_trance_png.png",
 		"localized_name": "Battle Trance",
-		"description": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within **900** range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel.",
+		"description": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within **900** range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "An adrenaline rush of pure hatred quickens your blades.",
-		"note": "Troll can still use his abilities while affected by Battle Trance, but not items or other commands.\nTroll can still be killed with Axe's Culling Blade.",
+		"note": "Troll can still use his abilities while affected by Battle Trance, but not items or other commands.\nTroll can still be killed with Axe's Culling Blade.\nTroll is granted vision over the target.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -61405,6 +61434,7 @@
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Centaur.Stampede",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"AbilityDraftUltScepterAbility": "centaur_mount",
 			"AbilityManaCost": "150 200 250",
 			"AbilityModifierSupportValue": "0.2",
 			"AbilityValues": {
@@ -66564,7 +66594,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/elder_titan_echo_stomp_png.png",
 		"localized_name": "Echo Stomp",
-		"description": "Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations.  The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage.",
+		"description": "CHANNELED - Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations.  The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage.",
 		"lore": "The force of creation still echoes in the stomp of the Titan.",
 		"note": "If a unit is hit by Astral Spirit and Elder Titan, they will take both instances of damage.",
 		"scepter_grants": false,
@@ -67281,7 +67311,7 @@
 				"value": "25%",
 				"talent_name": "special_bonus_unique_legion_commander_3",
 				"talent_value": "35%",
-				"header": "COUNTERATTACK CHANCE:"
+				"header": "CHANCE TO COUNTERATTACK:"
 			},
 			{
 				"key": "buff_duration",
@@ -67499,7 +67529,7 @@
 		"localized_name": "Proximity Mines",
 		"description": "Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active **500** AoE of the mine. Mines detonate if an enemy is standing within the active AoE for **1** seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within **150** radius and decreases up to **50%** on the edge. Deals **30%** damage to buildings.",
 		"lore": "The bane of Toterin!",
-		"note": "Cannot be placed within **350** AoE of another Proximity Mine.\nProximity Mines do not block neutral creep camps from spawning.\nMines last until they explode or are destroyed.\nMines are triggered by invisible units.\nMines will not be triggered by some flying units.\nGrants 30 gold if destroyed by an enemy hero.\nMines damage and debuff pierce spell immunity.",
+		"note": "Cannot be placed within **350** AoE of another Proximity Mine.\nProximity Mines do not block neutral creep camps from spawning.\nMines last until they explode or are destroyed.\nMines are triggered by invisible units.\nMines will not be triggered by some flying units.\nGrants 30 gold if destroyed by an enemy hero.\nSpell immune units will reveal mines, but not trigger detonation.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"shard_grants": false,
@@ -69214,7 +69244,6 @@
 		"spell_immunity": "yes",
 		"target_team": "enemy",
 		"dispellable": "no",
-		"cast_range": "900",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -69260,7 +69289,6 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
-			"AbilityCastRange": "900",
 			"AbilityValues": {
 				"radius": "900",
 				"damage_reduction_pct": {
@@ -70585,7 +70613,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/oracle_fortunes_end_png.png",
 		"localized_name": "Fortune's End",
-		"description": "CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and purges enemies of buffs in an area around the target. If target is an ally it will only purge debuffs. The root duration is equal to the time spent channeling.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and dispels enemies of buffs in an area around the target. If target is an ally it will only dispel debuffs. The root duration is equal to the time spent channeling.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "The astral orb crackles with power while raw energy lances out, temporarily disrupting an enemy's connection to their own body.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -72690,7 +72718,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/tusk_walrus_kick_png.png",
 		"localized_name": "Walrus Kick",
-		"description": "Kicks the closest enemy unit in a targeted direction, stunning, damaging, and slowing them. Also deals damage to all heroes within **250** radius of its landing area. Cooldown is reduced by **50%** if kicking a creep.",
+		"description": "Vector Targeted. Kicks the closest enemy unit in the drawn direction, stunning, damaging, and slowing them. Also deals damage to all heroes within **250** radius of its landing area. Cooldown is reduced by **50%** if kicking a creep.",
 		"lore": "Tusk may have made his name with his fists, but the wise enemy is wary of any and all limbs.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -74441,7 +74469,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/monkey_king_primal_spring_png.png",
 		"localized_name": "Primal Spring",
-		"description": "Monkey King springs out from his tree perch, damaging and slowing enemies in the area where he lands. Damage and slow amounts are in proportion to channel duration.",
+		"description": "CHANNELED - Monkey King springs out from his tree perch, damaging and slowing enemies in the area where he lands. Damage and slow amounts are in proportion to channel duration.",
 		"lore": "Leaping from the safety of cover into the midst of his enemies, Sun Wukong attacks without mercy.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -78703,7 +78731,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "40% Poison Touch Slow",
+		"localized_name": "+40% Poison Touch Slow",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -80902,7 +80930,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "Reality Rift Pierces Spell Immune",
+		"localized_name": "Reality Rift Pierces Spell Immunity",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -84178,7 +84206,7 @@
 			"ID": "6258",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "broodmother_spawn_spiderlings"
+			"ad_linked_abilities": "broodmother_silken_bola"
 		}
 	},
 	{
@@ -85523,7 +85551,8 @@
 			},
 			{
 				"key": "cloud_radius",
-				"value": "450"
+				"value": "450",
+				"header": "RADIUS:"
 			},
 			{
 				"key": "hits_to_kill_tooltip",
@@ -86905,7 +86934,7 @@
 			"ID": "6362",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "broodmother_spin_web"
+			"ad_linked_abilities": "broodmother_silken_bola"
 		}
 	},
 	{
@@ -87292,7 +87321,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-65 Untouchable Slow",
+		"localized_name": "+-65 Untouchable Attack Slow",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -87942,7 +87971,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-0.1s Eye of the Storm Strike Interval",
+		"localized_name": "--0.1s Eye of the Storm Strike Interval",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -88608,7 +88637,7 @@
 		"lore": "Only in the midst of his enemies does the Pangolier truly thrive.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Shield Crash to cast a 2-attack Swashbuckle in every 90 degrees around your hero.",
+		"scepter_description": "Causes Shield Crash to cast a 2-attack Swashbuckle every 90 degrees around your hero.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -89444,7 +89473,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/snapfire_spit_creep_png.png",
 		"localized_name": "Spit Out",
-		"description": "Mortimer spits out the unit that's in his mouth, causing impact damage and stun in a large area. The glob leaves a pool of firespit that slows and applies damage over time.",
+		"description": "Mortimer spits out the unit that's in his mouth, causing impact damage and stun in a large area. The glob leaves a pool of firespit that slows and applies damage over time. Spit Out has a no minimum launch range.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
 		"scepter_description": "Adds new ability: Spit Out.",
@@ -89510,7 +89539,8 @@
 			"ID": "6487",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
+			"BaseClass": "special_bonus_base",
+			"ad_linked_abilities": "snapfire_lil_shredder"
 		}
 	},
 	{
@@ -89567,7 +89597,7 @@
 		"localized_name": "Lil' Shredder",
 		"description": "Snapfire heats up her mounted turret to rapidly fire **6** fixed-damage attacks. Each attack reduces the enemy's armor. Provides bonus attack range for the duration.",
 		"lore": "Beadie constantly tinkers with a design she first dreamed up plotting an exodus from her old gang.",
-		"note": "Sets **1** base attack rate for the duration.\nAttack modifiers have a chance to proc on Lil' Shredder attacks.",
+		"note": "Sets base attack time to **1**s for the duration.\nAttack modifiers have a chance to proc on Lil' Shredder attacks.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -90732,7 +90762,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "5% Ice Vortex Slow/Resistance",
+		"localized_name": "+5% Ice Vortex Slow/Increased Magic Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -93730,7 +93760,7 @@
 			"ID": "6685",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "lycan_shapeshift"
+			"ad_linked_abilities": "lycan_howl"
 		}
 	},
 	{
@@ -94077,7 +94107,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-7 Rip Tide Armor",
+		"localized_name": "--7 Rip Tide Armor",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -94396,7 +94426,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-60 Earth Splitter Cooldown",
+		"localized_name": "-60s Earth Splitter Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -95810,7 +95840,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "4",
-					"ad_linked_abilities": "riki_blink_strike"
+					"ad_linked_abilities": "riki_smoke_screen"
 				}
 			}
 		}
@@ -95907,7 +95937,7 @@
 				"value": "20"
 			},
 			{
-				"key": "bonus_epicenter_radius",
+				"key": "bonus_epicenter_radius_base",
 				"value": "100"
 			},
 			{
@@ -95916,7 +95946,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+100 Epicenter Radius",
+		"localized_name": "+100 Epicenter Base Radius",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -96227,7 +96257,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-12% Ancient Seal Magic Resistance Reduction",
+		"localized_name": "+-12% Ancient Seal Increased Magic Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -98218,7 +98248,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-2 Wave of Terror Armor",
+		"localized_name": "--2 Wave of Terror Armor",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -98345,7 +98375,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "2",
-					"ad_linked_abilities": "venomancer_venomous_gale"
+					"ad_linked_abilities": "venomancer_poison_nova"
 				}
 			}
 		}
@@ -99088,7 +99118,7 @@
 				"01": {
 					"var_type": "FIELD_INTEGER",
 					"value": "80",
-					"ad_linked_abilities": "omniknight_purification"
+					"ad_linked_abilities": "omniknight_hammer_of_purity"
 				}
 			}
 		}
@@ -101797,7 +101827,6 @@
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "no",
-		"cast_range": "600",
 		"cast_point": "0.2",
 		"ability_special": [
 			{
@@ -101843,7 +101872,6 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Chen.TestOfFaith.Target",
 			"AbilityCastPoint": "0.2",
-			"AbilityCastRange": "600",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -102338,6 +102366,7 @@
 		"localized_name": "Will-O-Wisp",
 		"description": "Summons Ignis Fatuus at the targeted area. Alternates on and off, drawing enemies closer with its mesmerising flicker.",
 		"lore": "Though he would not claim to 'know' them, Ezalor holds an uncanny influence over many powerful creatures always willing to come to his aid.",
+		"note": "Ignus Fatuus applies a non-interrupting pull towards it on all enemies within the radius.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
 		"scepter_description": "Adds new ability: Will-O-Wisp.",
@@ -102493,7 +102522,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/clinkz_burning_army_png.png",
 		"localized_name": "Burning Army",
-		"description": "Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons deal a percentage of Clinkz' damage, use his current Searing Arrows ability and attack only heroes. Attack range is equal to Clinkz's attack range.",
+		"description": "Vector Targeted. Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons deal a percentage of Clinkz' damage, use his current Searing Arrows ability and attack only heroes. Attack range is equal to Clinkz's attack range.",
 		"lore": "Existing on the brink of life and death, Clinkz has learned to temporarily bridge the gap between the two.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -102622,7 +102651,8 @@
 			},
 			{
 				"key": "radius",
-				"value": "350"
+				"value": "350",
+				"header": "RADIUS:"
 			}
 		],
 		"slot": 3,
@@ -103089,7 +103119,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-0.1 Spirit Bear Attack Time",
+		"localized_name": "--0.1 Spirit Bear Base Attack Time",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -103364,7 +103394,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-14% Shrapnel Slow",
+		"localized_name": "+-14% Shrapnel Slow",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -104535,7 +104565,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "Beast dispells himself when activating Uproar",
+		"localized_name": "Beast dispels himself when activating Uproar",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107150,7 +107180,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/tiny_tree_channel_png.png",
 		"localized_name": "Tree Volley",
-		"description": "Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack damage to enemies in that area with each tree thrown.",
+		"description": "CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack damage to enemies in that area with each tree thrown.",
 		"lore": "Sticks thrown from stones are like to shatter many bones.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -107252,7 +107282,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/spectre_haunt_single_png.png",
 		"localized_name": "Shadow Step",
-		"description": "Allows Spectre to perform a single target unit Haunt. Casts a Spectral Dagger on the target.",
+		"description": "Allows Spectre to perform a single target Haunt on a visible enemy. Casts a Spectral Dagger on the target.",
 		"lore": "With great focus of will, Mercurial can sometimes limit the extent of her division.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -107463,7 +107493,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/templar_assassin_trap_teleport_png.png",
 		"localized_name": "Psionic Projection",
-		"description": "Allows Templar Assassin to teleport to any Psionic Trap after channeling for **1.5** seconds, detonating it upon arrival. Channeling Psionic Projection does not break Meld.",
+		"description": "CHANNELED - Allows Templar Assassin to teleport to any Psionic Trap after channeling for **1.5** seconds, detonating it upon arrival. Channeling Psionic Projection does not break Meld.",
 		"lore": "In reward for her service, Lanaya has been granted access to secrets that unlock new techniques for her psionic gifts.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -108489,7 +108519,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/dawnbreaker_solar_guardian_png.png",
 		"localized_name": "Solar Guardian",
-		"description": "Dawnbreaker creates a pulsing effect at a location within **350** units of an allied hero anywhere on the map, damaging enemies and healing allies with each pulse. After a short duration, she flies to the target location, dealing additional damage and stunning enemies upon landing. Once channeled, Dawnbreaker cannot stop the ability.",
+		"description": "CHANNELED - Dawnbreaker creates a pulsing effect at a location within **350** units of an allied hero anywhere on the map, damaging enemies and healing allies with each pulse. After a short duration, she flies to the target location, dealing additional damage and stunning enemies upon landing. Once channeled, Dawnbreaker cannot stop the ability.",
 		"lore": "Only in defense of an ally will Valora relent to call upon the last reserves of her old powers that still allow cosmic flight.",
 		"note": "Pulse interval is **0.5**s.\nTotal duration flight duration is **1.7** seconds of channel time + **0.8** of flight time.\nCannot be cast without the Hammer.\nHealing does not affect Dawnbreaker herself.",
 		"scepter_grants": false,
@@ -109035,7 +109065,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+50% Luminosity Crit",
+		"localized_name": "+50% Luminosity Critical Strike Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -109864,7 +109894,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Ink Swell to deal **40%** more damage and heal the target for **40%** of the damage Ink Swell deals. Upon expiration, the target will receive a strong dispell.",
+		"shard_description": "Causes Ink Swell to deal **40%** more damage and heal the target for **40%** of the damage Ink Swell deals. Upon expiration, the target will receive a strong dispel.\n\nDISPEL TYPE: Strong Dispel",
 		"json_data": {
 			"ID": "8007",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
@@ -111574,7 +111604,8 @@
 			},
 			{
 				"key": "flurry_bonus_attack_speed",
-				"value": "700 975 1325"
+				"value": "700 975 1325",
+				"header": "BONUS ATTACK SPEED:"
 			},
 			{
 				"key": "time_between_flurries",
@@ -111637,10 +111668,10 @@
 		"localized_name": "Unleash",
 		"description": "Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes that slow movement and attack speed of the target for **2**s. The last strike in every Fury combo creates a damaging pulse around the target. In between Fury combos, Marci is unable to attack for **1.5**s.\n\nMarci gains **15%** movement speed when Unleash is cast.",
 		"lore": "Though some have sought to understand its origins, Marci rebuffs all attempts to divine the source of her power.",
-		"note": "Once a Fury combo is started, each attack must be delivered within 1s or the Fury combo expires.",
+		"note": "Once a Fury combo is started, each attack must be delivered within 1s or the Fury combo expires.\nRemoves attack speed limit.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Reduces Unleash cooldown by **20** seconds and causes Unleash to apply a basic dispel on Marci. While Unleash is Active, all of Marci's abilities unleash pulses when cast.",
+		"scepter_description": "Reduces Unleash cooldown by **20** seconds and causes Unleash to apply a basic dispel on Marci. While Unleash is Active, all of Marci's abilities unleash pulses when cast.\n\nDISPEL TYPE: Basic Dispel",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -111705,7 +111736,7 @@
 		],
 		"icon": "/panorama/images/spellicons/necronomicon_archer_purge_png.png",
 		"localized_name": "Purge",
-		"description": "Removes positive buffs from enemies and slow their movement speed.\n\nDISPEL TYPE: Basic Dispel",
+		"description": "Dispels positive buffs from enemies and slows their movement speed.\n\nDISPEL TYPE: Basic Dispel",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -112623,7 +112654,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-3s Swashbuckle Cooldown",
+		"localized_name": "--3s Swashbuckle Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
