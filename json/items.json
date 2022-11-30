@@ -3652,7 +3652,7 @@
 		"cooldown": "60",
 		"cast_range": "1200",
 		"mana_cost": "100",
-		"description": "# Active: Barrier\nGives a shield that blocks **400** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **15%** magic resistance.\n\nRadius: **1200**",
+		"description": "# Active: Barrier\nGives a shield that blocks **450** magic damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **15%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3670,7 +3670,7 @@
 			},
 			{
 				"key": "barrier_debuff_duration",
-				"value": "50"
+				"value": "50.0"
 			},
 			{
 				"key": "tooltip_resist",
@@ -3690,11 +3690,11 @@
 			},
 			{
 				"key": "barrier_block",
-				"value": "400"
+				"value": "450"
 			},
 			{
 				"key": "barrier_duration",
-				"value": "12"
+				"value": "12.0"
 			},
 			{
 				"key": "barrier_radius",
@@ -3706,7 +3706,7 @@
 			},
 			{
 				"key": "barrier_block_creep",
-				"value": "400"
+				"value": "450"
 			}
 		],
 		"recipe": "item_hood_of_defiance|item_headdress|item_recipe_pipe",
@@ -3725,55 +3725,19 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemAlertable": "1",
 			"ShouldBeSuggested": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_FLOAT",
-					"health_regen": "8.5"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"magic_resistance": "30"
-				},
-				"03": {
-					"var_type": "FIELD_FLOAT",
-					"barrier_debuff_duration": "50.0"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"tooltip_resist": "30"
-				},
-				"05": {
-					"var_type": "FIELD_FLOAT",
-					"aura_health_regen": "2.5"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"magic_resistance_aura": "15"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"aura_radius": "1200"
-				},
-				"08": {
-					"var_type": "FIELD_INTEGER",
-					"barrier_block": "400"
-				},
-				"09": {
-					"var_type": "FIELD_INTEGER",
-					"barrier_duration": "12.0"
-				},
-				"10": {
-					"var_type": "FIELD_INTEGER",
-					"barrier_radius": "1200"
-				},
-				"11": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "0"
-				},
-				"12": {
-					"var_type": "FIELD_INTEGER",
-					"barrier_block_creep": "400"
-				}
+			"AbilityValues": {
+				"health_regen": "8.5",
+				"magic_resistance": "30",
+				"barrier_debuff_duration": "50.0",
+				"tooltip_resist": "30",
+				"aura_health_regen": "2.5",
+				"magic_resistance_aura": "15",
+				"aura_radius": "1200",
+				"barrier_block": "450",
+				"barrier_duration": "12.0",
+				"barrier_radius": "1200",
+				"bonus_all_stats": "0",
+				"barrier_block_creep": "450"
 			}
 		}
 	},
@@ -5155,13 +5119,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "550",
+				"value": "500",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
 				"key": "bonus_mana",
-				"value": "550",
+				"value": "500",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -5202,8 +5166,8 @@
 			"AllowedInBackpack": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_health": "550",
-				"bonus_mana": "550",
+				"bonus_health": "500",
+				"bonus_mana": "500",
 				"spell_lifesteal": "30",
 				"buff_duration": "6",
 				"lifesteal_multiplier": "2.5",
@@ -5407,7 +5371,7 @@
 		"cost": 2100,
 		"cooldown": "25",
 		"mana_cost": "25",
-		"description": "# Active: Damage Return\nFor **5.5** seconds, the damage returned from all sources is increased by **80%**.\n\n\n# Passive: Damage Return\nEverytime you are attacked, you return **20** damage plus **20%** of the attack damage dealt to you.",
+		"description": "# Active: Damage Return\nFor **5.5** seconds, the damage returned from all sources is increased by **85%**.\n\n\n# Passive: Damage Return\nEverytime you are attacked, you return **20** damage plus **20%** of the attack damage dealt to you.",
 		"lore": "A razor-sharp coat of mail, it is the choice of selfless martyrs in combat.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5441,14 +5405,14 @@
 			},
 			{
 				"key": "active_reflection_pct",
-				"value": "80"
+				"value": "85"
 			}
 		],
 		"recipe": "item_broadsword|item_chainmail|item_recipe_blade_mail",
 		"shop_tags": "damage|armor|int|hard_to_tag",
 		"json_data": {
 			"ID": "127",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCooldown": "25.0",
 			"AbilityManaCost": "25",
 			"ItemCost": "2100",
@@ -5484,7 +5448,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"active_reflection_pct": "80"
+					"active_reflection_pct": "85"
 				}
 			}
 		}
@@ -8059,13 +8023,13 @@
 		"name": "item_recipe_ancient_janggo",
 		"localized_name": "Drum of Endurance Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 550,
+		"cost": 500,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "184",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "550",
+			"ItemCost": "500",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_ancient_janggo",
@@ -8081,7 +8045,7 @@
 		"aliases": "drum of endurance",
 		"quality": "rare",
 		"icon": "/panorama/images/items/ancient_janggo_png.png",
-		"cost": 1700,
+		"cost": 1650,
 		"cooldown": "30",
 		"description": "# Active: Endurance\nConsumes a charge and gives +**45** attack speed and +**13%** movement speed to nearby allies for **6** seconds. \n\nComes with **8** charges.\n\nRadius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
@@ -8132,7 +8096,7 @@
 			"ItemPermanent": "1",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "30.0",
-			"ItemCost": "1700",
+			"ItemCost": "1650",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "drum of endurance",
@@ -8140,39 +8104,15 @@
 			"ItemDisplayCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"aura_movement_speed": "20"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_str": "7"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_int": "7"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_attack_speed_pct": "45"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_movement_speed_pct": "13"
-				},
-				"06": {
-					"var_type": "FIELD_INTEGER",
-					"duration": "6"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"radius": "1200"
-				},
-				"08": {
-					"var_type": "FIELD_INTEGER",
-					"charges_tooltip": "8"
-				}
+			"AbilityValues": {
+				"aura_movement_speed": "20",
+				"bonus_str": "7",
+				"bonus_int": "7",
+				"bonus_attack_speed_pct": "45",
+				"bonus_movement_speed_pct": "13",
+				"duration": "6",
+				"radius": "1200",
+				"charges_tooltip": "8"
 			}
 		}
 	},
@@ -8363,7 +8303,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "4",
+				"value": "5",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -8407,7 +8347,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "4"
+					"bonus_all_stats": "5"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -10121,13 +10061,13 @@
 		"name": "item_recipe_guardian_greaves",
 		"localized_name": "Guardian Greaves Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1550,
+		"cost": 1450,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "230",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1550",
+			"ItemCost": "1450",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_guardian_greaves",
@@ -10143,10 +10083,10 @@
 		"aliases": "guardian greaves",
 		"quality": "rare",
 		"icon": "/panorama/images/items/guardian_greaves_png.png",
-		"cost": 5050,
+		"cost": 4950,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration and **3** armor to allied units. If an allied hero's health falls below **20%**, this is increased to **18.5** health regeneration and **10** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration and **3** armor to allied units. If an allied hero's health falls below **25%**, this is increased to **18.5** health regeneration and **10** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10186,7 +10126,7 @@
 			},
 			{
 				"key": "aura_bonus_threshold",
-				"value": "20"
+				"value": "25"
 			},
 			{
 				"key": "aura_radius",
@@ -10217,7 +10157,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "40",
 			"AbilityManaCost": "0",
-			"ItemCost": "5050",
+			"ItemCost": "4950",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "guardian greaves",
@@ -10232,7 +10172,7 @@
 				"aura_armor": "3",
 				"aura_health_regen_bonus": "18.5",
 				"aura_armor_bonus": "10",
-				"aura_bonus_threshold": "20",
+				"aura_bonus_threshold": "25",
 				"aura_radius": "1200",
 				"replenish_health": "350",
 				"replenish_mana": "200",
@@ -10740,7 +10680,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "6",
+				"value": "8",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -10798,7 +10738,7 @@
 			"AbilityValues": {
 				"bonus_health": "250",
 				"bonus_health_regen": "12",
-				"bonus_armor": "6",
+				"bonus_armor": "8",
 				"block_damage_melee": "75",
 				"block_damage_ranged": "50",
 				"block_chance": "60",
@@ -19049,7 +18989,7 @@
 		"cast_range": "350",
 		"mana_cost": "100",
 		"duration": "25",
-		"description": "# Active: Wraith's Reprisal\nSummons a movable totem in your location for **25** seconds that reduces all damage of enemies within **900** radius by **30%** and deals **30** damage per second.\n\n Totem can be destroyed in 4 hits. Creeps deal half damage to the totem.\n\n\n# Passive: Vladmir's Aura\nGrants **24%** lifesteal, **18%** bonus damage, **2** mana regeneration, and **3** armor to nearby allies. Lifesteal from creeps is reduced by **50%**.\n\nRadius: **1200**",
+		"description": "# Active: Wraith's Reprisal\nSummons a movable totem in your location for **25** seconds that reduces all physical damage of enemies within **900** radius by **30%** and deals **30** damage per second.\n\n Totem can be destroyed in 4 hits. Creeps deal half damage to the totem.\n\n\n# Passive: Vladmir's Aura\nGrants **24%** lifesteal, **18%** bonus damage, **2** mana regeneration, and **3** armor to nearby allies. Lifesteal from creeps is reduced by **50%**.\n\nRadius: **1200**",
 		"lore": "A sentient amulet whose animus shakes the courage of even the strongest foes.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19285,7 +19225,7 @@
 		"aliases": "marching boots",
 		"quality": "rare",
 		"icon": "/panorama/images/items/boots_of_bearing_png.png",
-		"cost": 4125,
+		"cost": 4075,
 		"cooldown": "30",
 		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%**. Movement Speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
@@ -19356,7 +19296,7 @@
 			"ItemPermanent": "1",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "30.0",
-			"ItemCost": "4125",
+			"ItemCost": "4075",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "marching boots",
