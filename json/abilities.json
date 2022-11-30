@@ -502,7 +502,7 @@
 		"name": "rattletrap_overclocking",
 		"hero_id": 51,
 		"behavior": "no_target|immediate|hidden|show_in_guides",
-		"spell_immunity": "no",
+		"spell_immunity": "yes_enemies_no",
 		"dispellable": "no",
 		"cooldown": "50",
 		"mana_cost": "90",
@@ -572,7 +572,7 @@
 		"json_data": {
 			"ID": "321",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -1024,9 +1024,9 @@
 		"id": 343,
 		"name": "drow_ranger_multishot",
 		"hero_id": 6,
-		"behavior": "point|directional",
+		"behavior": "point|directional|channelled",
 		"damage_type": "physical",
-		"spell_immunity": "no",
+		"spell_immunity": "yes",
 		"target_team": "enemy",
 		"cast_point": "0",
 		"channel_time": "1.75",
@@ -1084,17 +1084,18 @@
 		"localized_name": "Multishot",
 		"description": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying longer duration Frost Arrows. Lasts up to **1.75** seconds.",
 		"lore": "In the ranger's youth, learning to fire multiple arrows at once was considered a distracting frivolity. In the war of the Ancients, such technique has become strange necessity.",
+		"note": "Arrow base damage pierces magic immunity.\nFrost Arrows' damage and slow do not pierce magic immunity.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "343",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
 			"AbilityCastPoint": "0.0",
 			"AbilityChannelTime": "1.75",
@@ -1398,11 +1399,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "60"
+				"value": "70"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+60 Scatterblast Damage",
+		"localized_name": "+70 Scatterblast Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -1414,7 +1415,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "60",
+					"value": "70",
 					"ad_linked_abilities": "snapfire_scatterblast"
 				}
 			}
@@ -1580,11 +1581,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
-				"value": "2"
+				"value": "3"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-2s Hex Cooldown",
+		"localized_name": "-3s Hex Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -3538,11 +3539,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "140"
+				"value": "155"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+140 Shackles Total Damage",
+		"localized_name": "+155 Shackles Total Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -3554,7 +3555,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "140",
+					"value": "155",
 					"ad_linked_abilities": "shadow_shaman_shackles"
 				}
 			}
@@ -4541,7 +4542,8 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+25 Movespeed Beastmaster Controlled",
+		"localized_name": "+25 Movespeed Aura to Beastmaster and his units",
+		"description": "The Movespeed Aura is global, persists through death, and affects Beastmaster and all units under his control.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -6957,11 +6959,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
-				"value": "60"
+				"value": "40"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-60s Sonic Wave Cooldown",
+		"localized_name": "-40s Sonic Wave Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -7358,7 +7360,8 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+250 Health Beastmaster Controlled",
+		"localized_name": "+250 Max Health Aura to Beastmaster and his units",
+		"description": "The Max Health Aura is global, persists through death, and affects Beastmaster and all units under his control.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -7427,11 +7430,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "12"
+				"value": "10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+12 Soul Rip Damage/Heal",
+		"localized_name": "+10 Soul Rip Damage/Heal",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -7443,7 +7446,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "12",
+					"value": "10",
 					"ad_linked_abilities": "undying_soul_rip"
 				}
 			}
@@ -8256,7 +8259,8 @@
 			},
 			{
 				"key": "targets",
-				"value": "1"
+				"value": "1",
+				"header": "TARGETS:"
 			},
 			{
 				"key": "AbilityCooldown",
@@ -8884,7 +8888,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "7",
+				"value": "8",
 				"header": "DURATION:"
 			},
 			{
@@ -8944,7 +8948,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"duration": "7"
+					"duration": "8"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -10980,16 +10984,12 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "2"
-			},
-			{
 				"key": "bonus_bonus_magic_resistance",
-				"value": "12"
+				"value": "15"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+12% Corrosive Skin Magic Resistance",
+		"localized_name": "+15% Corrosive Skin Magic Resistance",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -10998,13 +10998,7 @@
 			"ID": "717",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_FLOAT",
-					"value": "2",
-					"ad_linked_abilities": "viper_corrosive_skin"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -11514,11 +11508,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "250"
+				"value": "200"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+250 Static Storm AoE",
+		"localized_name": "+200 Static Storm Radius",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -11530,7 +11524,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "250",
+					"value": "200",
 					"ad_linked_abilities": "disruptor_static_storm"
 				}
 			}
@@ -13659,7 +13653,7 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "0.4"
+				"value": "0.3"
 			},
 			{
 				"key": "value2",
@@ -13667,7 +13661,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+0.4s Requiem Fear per line",
+		"localized_name": "+0.3s Requiem Fear per line",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -13679,7 +13673,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.4",
+					"value": "0.3",
 					"ad_linked_abilities": "nevermore_requiem"
 				},
 				"02": {
@@ -14875,10 +14869,14 @@
 			{
 				"key": "bonus_slow",
 				"value": "10"
+			},
+			{
+				"key": "bonus_attack_slow",
+				"value": "10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+10% Shadow Walk Slow",
+		"localized_name": "+10/10% Shadow Walk Attack/Move Slow",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -14999,7 +14997,7 @@
 			},
 			{
 				"key": "root_duration",
-				"value": "4",
+				"value": "3",
 				"header": "ROOT DURATION:"
 			},
 			{
@@ -15047,7 +15045,7 @@
 			"AbilityManaCost": "100",
 			"AbilityValues": {
 				"formation_delay": "2.0",
-				"root_duration": "4.0",
+				"root_duration": "3.0",
 				"damage_per_second": {
 					"value": "100",
 					"CalculateSpellDamageTooltip": "1"
@@ -15213,7 +15211,7 @@
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_range": "1000",
-		"cast_point": "0.2",
+		"cast_point": "0.1",
 		"cooldown": "12 10 8 6",
 		"mana_cost": "100 115 130 145",
 		"ability_special": [
@@ -15286,7 +15284,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"AbilityCastRange": "1000",
-			"AbilityCastPoint": "0.2",
+			"AbilityCastPoint": "0.1",
 			"AbilityCooldown": "12 10 8 6",
 			"AbilityManaCost": "100 115 130 145",
 			"AbilityModifierSupportValue": "0.25",
@@ -15319,10 +15317,6 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "200"
-			},
-			{
 				"key": "bonus_hp_leech_percent",
 				"value": "50"
 			}
@@ -15337,13 +15331,7 @@
 			"ID": "880",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "200",
-					"ad_linked_abilities": "legion_commander_moment_of_courage"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -15405,15 +15393,15 @@
 		"ability_special": [
 			{
 				"key": "bonus_physical_damage_reduction",
-				"value": "10"
+				"value": "12"
 			},
 			{
 				"key": "bonus_physical_damage_reduction_side",
-				"value": "5"
+				"value": "6"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+10%/+5% Bulwark Front/Side damage reduction",
+		"localized_name": "+12%/+6% Bulwark Front/Side damage reduction",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -16853,6 +16841,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Sprout Leashes",
+		"description": "Pierces Magic Immunity",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -17376,7 +17365,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/brewmaster_fire_phase_png.png",
-		"localized_name": "Permanent Phase.",
+		"localized_name": "Permanent Phase",
 		"description": "Provides the Brewling with phased movement and bonus Status Resistance.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -18059,11 +18048,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_tempest_double_cooldown_reduction",
-				"value": "50"
+				"value": "40"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+50% Tempest Double Cooldown Reduction",
+		"localized_name": "+40% Tempest Double Cooldown Reduction",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -18335,7 +18324,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "yes",
-		"cast_range": "300",
+		"cast_range": "375",
 		"cast_point": "0.1",
 		"cooldown": "20",
 		"mana_cost": "75",
@@ -18389,7 +18378,7 @@
 			"IsGrantedByScepter": "1",
 			"MaxLevel": "1",
 			"AbilityCastPoint": "0.1",
-			"AbilityCastRange": "300",
+			"AbilityCastRange": "375",
 			"AbilityCooldown": "20.0",
 			"AbilityManaCost": "75",
 			"AbilityValues": {
@@ -18718,7 +18707,7 @@
 			},
 			{
 				"key": "knockback_damage",
-				"value": "110 200 290 380",
+				"value": "95 190 285 380",
 				"header": "DAMAGE:"
 			},
 			{
@@ -18778,7 +18767,7 @@
 				"max_distance": "2000",
 				"knockback_distance": "200",
 				"knockback_damage": {
-					"value": "110 200 290 380",
+					"value": "95 190 285 380",
 					"special_bonus_unique_primal_beast_onslaught_damage": "+90"
 				},
 				"knockback_duration": "0.2",
@@ -19219,7 +19208,7 @@
 		"ability_special": [
 			{
 				"key": "duration",
-				"value": "6",
+				"value": "7",
 				"header": "DURATION:"
 			},
 			{
@@ -19268,7 +19257,7 @@
 			"AbilityCooldown": "18",
 			"AbilityManaCost": "80",
 			"AbilityValues": {
-				"duration": "6",
+				"duration": "7",
 				"damage_per_tree": "15",
 				"slow_per_tree": "7",
 				"radius": "250",
@@ -19332,13 +19321,13 @@
 			},
 			{
 				"key": "radius",
-				"value": "600"
+				"value": "675"
 			}
 		],
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/shadow_demon_disseminate_png.png",
 		"localized_name": "Disseminate",
-		"description": "Whenever the target takes damage, all enemies, including the target itself if it is an enemy, within **600** range of the target also receive a portion of that damage. Can target enemy and allied units. Effect is paused if the target is hidden by Disruption.",
+		"description": "Whenever the target takes damage, all enemies, including the target itself if it is an enemy, within **675** range of the target also receive a portion of that damage. Can target enemy and allied units. Effect is paused if the target is hidden by Disruption.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -19360,7 +19349,7 @@
 					"value": "20 25 30 35",
 					"special_bonus_unique_shadow_demon_disseminate_damage": "+10"
 				},
-				"radius": "600"
+				"radius": "675"
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
@@ -19372,11 +19361,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "1"
+				"value": "1.5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+1 Damage per Greevil's Greed stack",
+		"localized_name": "+1.5 Damage per Greevil's Greed stack",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -19696,11 +19685,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_movement_speed",
-				"value": "15"
+				"value": "20"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+15% Battle Trance Movement Speed",
+		"localized_name": "+20% Battle Trance Movement Speed",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -19862,11 +19851,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_bonus_reflected_spell_damage",
-				"value": "20.0"
+				"value": "25.0"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+20% Soulbind Spell Damage",
+		"localized_name": "+25% Soulbind Spell Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -20078,6 +20067,10 @@
 		"ability_special": [
 			{
 				"key": "bonus_hp_bonus",
+				"value": "130"
+			},
+			{
+				"key": "bonus_tooltip_spiderling_hp",
 				"value": "130"
 			}
 		],
@@ -21160,6 +21153,10 @@
 				"key": "radius",
 				"value": "700",
 				"header": "RADIUS:"
+			},
+			{
+				"key": "bonus_gold",
+				"value": "10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/flagbearer_creep_aura_effect_png.png",
@@ -21175,7 +21172,8 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityValues": {
 				"bonus_health_regen": "3",
-				"radius": "700"
+				"radius": "700",
+				"bonus_gold": "10"
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
@@ -21220,6 +21218,31 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 1089,
+		"name": "special_bonus_magic_resistance_14",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "value",
+				"value": "14"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+14% Magic Resistance",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "1089",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityValues": {
+				"value": "14"
+			}
 		}
 	},
 	{
@@ -21906,7 +21929,7 @@
 				},
 				"speed_bonus": {
 					"value": "0",
-					"special_bonus_unique_axe_8": "+10"
+					"special_bonus_unique_axe_8": "+12"
 				}
 			}
 		}
@@ -22438,7 +22461,7 @@
 		"name": "bloodseeker_bloodrage",
 		"hero_id": 4,
 		"behavior": "unit_target|immediate",
-		"spell_immunity": "no",
+		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "yes",
 		"cast_range": "800",
@@ -22493,7 +22516,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "hero_bloodseeker.bloodRage",
@@ -22773,7 +22796,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/bloodseeker_rupture_png.png",
 		"localized_name": "Rupture",
-		"description": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.  The damage is dealt through spell immunity.",
+		"description": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.",
 		"lore": "When the Bloodseeker hunts you, injuries become fatalities.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -22846,8 +22869,10 @@
 				"header": "MOVEMENT SLOW:"
 			},
 			{
+				"talent_name": "special_bonus_unique_drow_ranger_2",
 				"key": "damage",
 				"value": "6 12 18 24",
+				"talent_value": "21 27 33 39",
 				"header": "BONUS DAMAGE:"
 			},
 			{
@@ -22875,6 +22900,7 @@
 				"header": "BURST RADIUS:"
 			},
 			{
+				"damagetype": "DAMAGE_TYPE_MAGICAL",
 				"shard_upgrade": "1",
 				"key": "shard_burst_damage_per_stack",
 				"value": "60",
@@ -22933,7 +22959,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "6 12 18 24"
+					"damage": "6 12 18 24",
+					"LinkedSpecialBonus": "special_bonus_unique_drow_ranger_2"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -22958,7 +22985,8 @@
 				"061": {
 					"var_type": "FIELD_INTEGER",
 					"shard_burst_damage_per_stack": "60",
-					"RequiresShard": "1"
+					"RequiresShard": "1",
+					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -23380,7 +23408,7 @@
 		"localized_name": "Enchant Totem",
 		"description": "Empowers Earthshaker's totem, causing it to deal extra damage and have **75** bonus attack range on the next attack.",
 		"lore": "Raigor's gorilla strength can destroy mountains.",
-		"note": "Bonus damage is based on base damage and that given by primary attribute.\nSelf-cast with Scepter will make it behave in the non-Scepter form, without jumping.",
+		"note": "Bonus damage is based on base damage and that given by primary attribute.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Enchant Totem becomes a ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping. Grants Enchant Totem a cleaving attack.",
@@ -24215,12 +24243,12 @@
 			},
 			{
 				"key": "ghostship_width",
-				"value": "425",
+				"value": "450",
 				"header": "WIDTH:"
 			},
 			{
 				"key": "movespeed_bonus",
-				"value": "12%",
+				"value": "15%",
 				"header": "RUM BONUS SPEED:"
 			},
 			{
@@ -24276,8 +24304,8 @@
 			"AbilityValues": {
 				"tooltip_delay": "3.1",
 				"ghostship_distance": "2000",
-				"ghostship_width": "425 425 425",
-				"movespeed_bonus": "12",
+				"ghostship_width": "450",
+				"movespeed_bonus": "15",
 				"buff_duration": "10",
 				"stun_duration": "1.4 1.4 1.4",
 				"ghostship_speed": "650",
@@ -24607,7 +24635,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "80 140 200 260",
+				"value": "95 150 205 260",
 				"header": "DAMAGE:"
 			},
 			{
@@ -24658,7 +24686,7 @@
 			"AbilityValues": {
 				"AbilityCooldown": "12",
 				"damage": {
-					"value": "80 140 200 260",
+					"value": "95 150 205 260",
 					"special_bonus_unique_lion_3": "+65"
 				},
 				"width": "125",
@@ -24725,7 +24753,7 @@
 			"AbilityValues": {
 				"AbilityCooldown": {
 					"value": "24 20 16 12",
-					"special_bonus_unique_lion_5": "-2"
+					"special_bonus_unique_lion_5": "-3"
 				},
 				"duration": "2.5 3 3.5 4",
 				"movespeed": "120"
@@ -25390,6 +25418,10 @@
 				"key": "AbilityCastRange",
 				"value": "700 800 900 1000",
 				"header": "CAST RANGE:"
+			},
+			{
+				"key": "AbilityCooldown",
+				"value": "21 18 15 12"
 			}
 		],
 		"slot": 1,
@@ -25410,7 +25442,6 @@
 			"AbilitySound": "Hero_Morphling.Waveform",
 			"AbilityCastPoint": "0.25",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
-			"AbilityCooldown": "20 17 14 11",
 			"AbilityDamage": "75 150 225 300",
 			"AbilityManaCost": "130",
 			"AbilityValues": {
@@ -25423,6 +25454,10 @@
 				"AbilityCastRange": {
 					"value": "700 800 900 1000",
 					"special_bonus_unique_morphling_1": "+250"
+				},
+				"AbilityCooldown": {
+					"value": "21 18 15 12",
+					"special_bonus_unique_morphling_waveform_cooldown": "-40%"
 				}
 			}
 		}
@@ -25604,7 +25639,10 @@
 					"special_bonus_shard": "+6"
 				},
 				"morph_rate_tooltip": "5 10 15 20",
-				"mana_cost": "5 10 15 20",
+				"mana_cost": {
+					"value": "5 10 15 20",
+					"special_bonus_unique_morphling_morph_no_manacost": "-100%"
+				},
 				"castable_while_stunned": {
 					"value": "0",
 					"special_bonus_shard": "+1"
@@ -25677,7 +25715,10 @@
 					"special_bonus_shard": "+6"
 				},
 				"morph_rate_tooltip": "5 10 15 20",
-				"mana_cost": "5 10 15 20",
+				"mana_cost": {
+					"value": "5 10 15 20",
+					"special_bonus_unique_morphling_morph_no_manacost": "-100%"
+				},
 				"castable_while_stunned": {
 					"value": "0",
 					"special_bonus_shard": "+1"
@@ -25731,7 +25772,7 @@
 			},
 			{
 				"key": "scepter_cooldown_reduction",
-				"value": "20",
+				"value": "0",
 				"scepter_upgrade": "1"
 			}
 		],
@@ -25743,7 +25784,7 @@
 		"note": "You can't target yourself with Morph.\nMorph won't copy Shard/Scepter abilities unless Morphling owns the respective item.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Morphling steals stats from the replicated hero. If the replicated hero's primary attribute is Strength it will also steal Status Resistance, if it's Agility, it will steal Attack Speed and if it's Intelligence, it will steal Spell Amplification. Additionally reduces Morph Cooldown by **20** seconds.",
+		"scepter_description": "Morphling steals stats from the replicated hero. If the replicated hero's primary attribute is Strength it will also steal Status Resistance, if it's Agility, it will steal Attack Speed and if it's Intelligence, it will steal Spell Amplification.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -25783,7 +25824,7 @@
 					"RequiresScepter": "1"
 				},
 				"scepter_cooldown_reduction": {
-					"value": "20",
+					"value": "0",
 					"RequiresScepter": "1"
 				}
 			}
@@ -26382,7 +26423,7 @@
 				"key": "requiem_slow_duration",
 				"value": "0.9",
 				"talent_name": "special_bonus_unique_nevermore_6",
-				"talent_value": "1.3",
+				"talent_value": "1.2",
 				"header": "FEAR DURATION PER SOUL HIT:"
 			},
 			{
@@ -26934,7 +26975,7 @@
 		"behavior": "point",
 		"damage_type": "magical",
 		"spell_immunity": "no",
-		"cast_range": "3000",
+		"cast_range": "1950",
 		"cast_point": "0.1",
 		"cooldown": "12 11 10 9",
 		"mana_cost": "110 120 130 140",
@@ -26988,7 +27029,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Puck.Illusory_Orb",
 			"AbilityCastPoint": "0.1 0.1 0.1 0.1",
-			"AbilityCastRange": "3000",
+			"AbilityCastRange": "1950",
 			"AbilityManaCost": "110 120 130 140",
 			"AbilityValues": {
 				"radius": "225",
@@ -27226,7 +27267,7 @@
 			},
 			{
 				"key": "coil_initial_damage",
-				"value": "125 200 275",
+				"value": "150 230 310",
 				"header": "INITIAL DAMAGE:"
 			},
 			{
@@ -27274,7 +27315,7 @@
 				"coil_break_radius": "600",
 				"stun_duration": "0.5",
 				"coil_initial_damage": {
-					"value": "125 200 275",
+					"value": "150 230 310",
 					"special_bonus_unique_puck_coil_damage": "+150"
 				},
 				"coil_stun_duration": {
@@ -27295,7 +27336,7 @@
 		"hero_id": 14,
 		"behavior": "no_target|ignore_channel|immediate|ignore_backswing",
 		"dispellable": "no",
-		"cooldown": "20 18 16 14",
+		"cooldown": "20 19 18 17",
 		"mana_cost": "35 50 65 80",
 		"ability_special": [
 			{
@@ -27331,7 +27372,7 @@
 			"ID": "5074",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
-			"AbilityCooldown": "20 18 16 14",
+			"AbilityCooldown": "20 19 18 17",
 			"AbilityManaCost": "35 50 65 80",
 			"AbilityValues": {
 				"damage_block": {
@@ -27714,7 +27755,7 @@
 		"cast_range": "600",
 		"cast_point": "0.3",
 		"cooldown": "14 12 10 8",
-		"mana_cost": "100 120 140 160",
+		"mana_cost": "100 115 130 145",
 		"ability_special": [
 			{
 				"key": "start_radius",
@@ -27765,7 +27806,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "14 12 10 8",
-			"AbilityManaCost": "100 120 140 160",
+			"AbilityManaCost": "100 115 130 145",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -27875,7 +27916,7 @@
 				"talent_name": "special_bonus_unique_shadow_shaman_6",
 				"key": "total_damage",
 				"value": "60 130 200 270",
-				"talent_value": "200 270 340 410",
+				"talent_value": "215 285 355 425",
 				"header": "TOTAL DAMAGE/HEAL:"
 			},
 			{
@@ -28310,7 +28351,7 @@
 				"damagetype": "DAMAGE_TYPE_MAGICAL",
 				"shard_upgrade": "1",
 				"key": "shard_damage",
-				"value": "150",
+				"value": "175",
 				"header": "DAMAGE:"
 			},
 			{
@@ -28364,7 +28405,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"shard_damage": "150",
+					"shard_damage": "175",
 					"RequiresShard": "1",
 					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL",
 					"CalculateSpellDamageTooltip": "1"
@@ -28497,7 +28538,7 @@
 		"ability_special": [
 			{
 				"key": "blast_speed",
-				"value": "1000"
+				"value": "1200"
 			},
 			{
 				"talent_name": "special_bonus_unique_wraith_king_11",
@@ -28524,12 +28565,22 @@
 				"value": "20 40 60 80",
 				"talent_value": "60 80 100 120",
 				"header": "DAMAGE PER SECOND:"
+			},
+			{
+				"key": "bonus_move_speed",
+				"value": "25",
+				"header": "SKELETON MOVEMENT SPEED BONUS:"
+			},
+			{
+				"key": "bonus_attack_speed",
+				"value": "25",
+				"header": "SKELETON ATTACK SPEED BONUS:"
 			}
 		],
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/skeleton_king_hellfire_blast_png.png",
 		"localized_name": "Wraithfire Blast",
-		"description": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target.",
+		"description": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target. Summoned skeletons around the target will receive bonus movement and attack speed for the duration of the debuff.",
 		"lore": "Ostarion calls on his damned lineage, laying waste to his opponents.",
 		"note": "If Wraith King has summoned skeletons, casting Wraithfire Blast on a target will order all of the skeletons to attack that target.",
 		"scepter_grants": false,
@@ -28555,7 +28606,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"blast_speed": "1000"
+					"blast_speed": "1200"
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
@@ -28575,6 +28626,14 @@
 					"var_type": "FIELD_INTEGER",
 					"blast_dot_damage": "20 40 60 80",
 					"LinkedSpecialBonus": "special_bonus_unique_wraith_king_3"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_move_speed": "25"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_attack_speed": "25"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -28864,7 +28923,7 @@
 		"cast_range": "600",
 		"cast_point": "0.2",
 		"cooldown": "9 8 7 6",
-		"damage": "75 150 225 300",
+		"damage": "85 160 235 310",
 		"mana_cost": "80 90 100 110",
 		"ability_special": [
 			{
@@ -28907,7 +28966,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.2",
 			"AbilityCooldown": "9 8 7 6",
-			"AbilityDamage": "75 150 225 300",
+			"AbilityDamage": "85 160 235 310",
 			"AbilityManaCost": "80 90 100 110",
 			"AbilitySpecial": {
 				"01": {
@@ -29430,7 +29489,7 @@
 			{
 				"shard_upgrade": "1",
 				"key": "shard_passive_armor",
-				"value": "7",
+				"value": "6",
 				"header": "PASSIVE BONUS ARMOR:"
 			},
 			{
@@ -29484,7 +29543,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"shard_passive_armor": "7",
+					"shard_passive_armor": "6",
 					"RequiresShard": "1"
 				},
 				"07": {
@@ -30161,7 +30220,7 @@
 			},
 			{
 				"key": "caustic_finale_duration",
-				"value": "5"
+				"value": "6"
 			},
 			{
 				"talent_name": "special_bonus_unique_sand_king_6",
@@ -30204,7 +30263,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"caustic_finale_duration": "5"
+					"caustic_finale_duration": "6"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -30361,7 +30420,7 @@
 		"ability_special": [
 			{
 				"key": "radius",
-				"value": "325 350 375 400",
+				"value": "325 340 355 370",
 				"header": "RADIUS:"
 			},
 			{
@@ -30419,7 +30478,7 @@
 			"AbilityCooldown": "26 22 18 14",
 			"AbilityManaCost": "120 120 120 120",
 			"AbilityValues": {
-				"radius": "325 350 375 400",
+				"radius": "325 340 355 370",
 				"tick_interval": "0.3",
 				"total_duration": "1.4",
 				"tick_count": "5",
@@ -30823,6 +30882,13 @@
 			{
 				"key": "spread_aoe",
 				"value": "325"
+			},
+			{
+				"talent_name": "special_bonus_unique_zeus_3",
+				"key": "ministun_duration",
+				"value": "0.3",
+				"talent_value": "0.7",
+				"header": "MINISTUN DURATION:"
 			}
 		],
 		"slot": 2,
@@ -30870,6 +30936,11 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"spread_aoe": "325"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"ministun_duration": "0.3",
+					"LinkedSpecialBonus": "special_bonus_unique_zeus_3"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -31982,13 +32053,14 @@
 			},
 			{
 				"key": "damage",
-				"value": "50"
+				"value": "50",
+				"header": "DAMAGE:"
 			}
 		],
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/vengefulspirit_nether_swap_png.png",
 		"localized_name": "Nether Swap",
-		"description": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take **50** damage. Allied swapped units receive less damage for a short duration.",
+		"description": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take damage. Allied swapped units receive less damage for a short duration.",
 		"lore": "Martyrdom is a small price to pay for vengeance.",
 		"note": "Works on Spell Immune units.\nTrees near Vengeful Spirit and the target will be destroyed when the spell is cast.\nChanneling spells are interrupted by Nether Swap.",
 		"scepter_grants": false,
@@ -32243,16 +32315,26 @@
 		"ability_special": [
 			{
 				"key": "base_mana_regen",
-				"value": "0.6 0.9 1.2 1.5",
+				"value": "0.4 0.6 0.8 1",
 				"header": "MANA REGEN:"
 			},
 			{
+				"key": "proximity_mana_regen_tooltip",
+				"value": "1.2 1.8 2.4 3",
+				"header": "CLOSE MANA REGEN:"
+			},
+			{
+				"key": "self_mana_regen_tooltip",
+				"value": "2.4 3.6 4.8 6",
+				"header": "SELF MANA REGEN:"
+			},
+			{
 				"key": "self_factor",
-				"value": "4"
+				"value": "6"
 			},
 			{
 				"key": "proximity_bonus_factor",
-				"value": "2"
+				"value": "3"
 			},
 			{
 				"key": "proximity_bonus_radius",
@@ -32262,7 +32344,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/crystal_maiden_brilliance_aura_png.png",
 		"localized_name": "Arcane Aura",
-		"description": "Gives additional mana regeneration to all friendly units on the map. Allies within a **1200** radius of Crystal Maiden receive **2**x the mana regeneration. Crystal Maiden herself receives **4**x the bonus.",
+		"description": "Gives additional mana regeneration to all friendly units on the map. Allies within a **1200** radius of Crystal Maiden receive **3**x the mana regeneration. Crystal Maiden herself receives **6**x the bonus.",
 		"lore": "Cold temperatures promote the essence of magic, causing Rylai's presence to allow spell usage in abundance.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -32275,11 +32357,19 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"AbilityValues": {
 				"base_mana_regen": {
-					"value": "0.6 0.9 1.2 1.5",
+					"value": "0.4 0.6 0.8 1.0",
 					"special_bonus_unique_crystal_maiden_4": "+0.5"
 				},
-				"self_factor": "4",
-				"proximity_bonus_factor": "2",
+				"proximity_mana_regen_tooltip": {
+					"value": "1.2 1.8 2.4 3.0",
+					"special_bonus_unique_crystal_maiden_4": "+1.5"
+				},
+				"self_mana_regen_tooltip": {
+					"value": "2.4 3.6 4.8 6.0",
+					"special_bonus_unique_crystal_maiden_4": "+3.0"
+				},
+				"self_factor": "6",
+				"proximity_bonus_factor": "3",
 				"proximity_bonus_radius": "1200"
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
@@ -32730,7 +32820,7 @@
 				},
 				"radius": {
 					"value": "325",
-					"special_bonus_unique_windranger": "+200"
+					"special_bonus_unique_windranger": "+225"
 				},
 				"scepter_movespeed_bonus_pct": {
 					"RequiresScepter": "1",
@@ -34008,6 +34098,11 @@
 				"key": "eidolon_magic_resist_tooltip",
 				"value": "30% 40% 50% 60%",
 				"header": "EIDOLON MAGIC RESISTANCE:"
+			},
+			{
+				"key": "eidolon_attack_range_tooltip",
+				"value": "425 450 475 500",
+				"header": "EIDOLON ATTACK RANGE:"
 			}
 		],
 		"slot": 2,
@@ -34063,6 +34158,10 @@
 				"07": {
 					"var_type": "FIELD_INTEGER",
 					"eidolon_magic_resist_tooltip": "30 40 50 60"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"eidolon_attack_range_tooltip": "425 450 475 500"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -34669,7 +34768,7 @@
 		"cast_range": "1800",
 		"cast_point": "0.3",
 		"cooldown": "35",
-		"mana_cost": "50",
+		"mana_cost": "75",
 		"charges": "3",
 		"ability_special": [
 			{
@@ -34681,7 +34780,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "450",
+				"value": "400",
 				"header": "RADIUS:"
 			},
 			{
@@ -34734,7 +34833,7 @@
 			"AbilityCooldown": "0",
 			"AbilityCharges": "3",
 			"AbilityChargeRestoreTime": "35",
-			"AbilityManaCost": "50",
+			"AbilityManaCost": "75",
 			"AbilityModifierSupportValue": "0.25",
 			"AbilitySpecial": {
 				"01": {
@@ -34744,7 +34843,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "450"
+					"radius": "400"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -35233,7 +35332,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "-40%",
+				"value": "-25%",
 				"header": "INCREASED MAGIC DAMAGE:"
 			},
 			{
@@ -35273,7 +35372,7 @@
 					"special_bonus_unique_necrophos_3": "+24"
 				},
 				"slow_aoe": "750",
-				"bonus_damage": "-40",
+				"bonus_damage": "-25",
 				"AbilityCooldown": {
 					"value": "28 24 20 16",
 					"special_bonus_scepter": "-6"
@@ -35578,7 +35677,7 @@
 			},
 			{
 				"key": "max_damage",
-				"value": "30 50 70 90",
+				"value": "35 60 85 110",
 				"header": "MAX DAMAGE:"
 			},
 			{
@@ -35619,7 +35718,7 @@
 				"max_slow": "55 70 85 100",
 				"aspd_per_second": "10",
 				"damage_per_second": "10",
-				"max_damage": "30 50 70 90",
+				"max_damage": "35 60 85 110",
 				"damage_tick_interval": {
 					"value": "1",
 					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
@@ -35665,8 +35764,7 @@
 			},
 			{
 				"key": "golem_armor",
-				"value": "6 9 12",
-				"header": "GOLEM ARMOR:"
+				"value": "8 12 14"
 			},
 			{
 				"key": "golem_movement_speed",
@@ -35716,6 +35814,11 @@
 			{
 				"key": "bonus_armor",
 				"value": "0"
+			},
+			{
+				"key": "tooltip_golem_armor",
+				"value": "8 12 14",
+				"header": "GOLEM ARMOR:"
 			}
 		],
 		"slot": 6,
@@ -35750,7 +35853,7 @@
 				"aoe": "600",
 				"golem_hp": "1400 2300 3200",
 				"golem_dmg": "100 150 200",
-				"golem_armor": "6 9 12",
+				"golem_armor": "8 12 14",
 				"golem_movement_speed": "320 340 360",
 				"golem_health_regen": "25 50 75",
 				"golem_gold_bounty": "100 150 200",
@@ -35777,6 +35880,10 @@
 				},
 				"bonus_armor": {
 					"value": "0",
+					"special_bonus_unique_warlock_2": "+20"
+				},
+				"tooltip_golem_armor": {
+					"value": "8 12 14",
 					"special_bonus_unique_warlock_2": "+20"
 				}
 			}
@@ -36162,8 +36269,8 @@
 			{
 				"key": "aoe_radius",
 				"value": "0",
-				"scepter_value": "375",
-				"scepter_bonus": "375"
+				"scepter_value": "400",
+				"scepter_bonus": "400"
 			},
 			{
 				"key": "duration",
@@ -36179,7 +36286,7 @@
 		"note": "The affected unit slowly regains its original movement speed every second during the duration.\nUnits afflicted by Shadow Strike can be denied by their allies when their HP drops below 25% of their maximum health.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Shadow Strike has increased initial damage and is applied to all enemies in a **375** area around the target. When Shadow Strike ends or is re-applied to an enemy Hero, the target emits a Scream of Pain, hitting any nearby enemies.",
+		"scepter_description": "Causes Shadow Strike to become a **400** AoE Spell, and have increased initial damage. When Shadow Strike ends or is re-applied to an enemy Hero, the target emits a Scream of Pain, hitting any nearby enemies.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -36216,7 +36323,7 @@
 				},
 				"aoe_radius": {
 					"value": "0",
-					"special_bonus_scepter": "+375"
+					"special_bonus_scepter": "+400"
 				},
 				"duration": "15"
 			},
@@ -36359,7 +36466,7 @@
 		"spell_immunity": "yes",
 		"cast_range": "700",
 		"cast_point": "0.452",
-		"cooldown": "125",
+		"cooldown": "110 100 90",
 		"mana_cost": "250 400 550",
 		"ability_special": [
 			{
@@ -36395,7 +36502,7 @@
 			},
 			{
 				"key": "AbilityCooldown",
-				"value": "125"
+				"value": "110 100 90"
 			}
 		],
 		"slot": 6,
@@ -36432,8 +36539,8 @@
 				"knockback_distance": "350",
 				"knockback_duration": "1.4",
 				"AbilityCooldown": {
-					"value": "125",
-					"special_bonus_unique_queen_of_pain_3": "-60"
+					"value": "110 100 90",
+					"special_bonus_unique_queen_of_pain_3": "-40"
 				}
 			}
 		}
@@ -36766,7 +36873,7 @@
 			},
 			{
 				"key": "ward_hp",
-				"value": "150 400 650 900"
+				"value": "240 460 680 900"
 			},
 			{
 				"key": "ward_damage",
@@ -36812,7 +36919,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"ward_hp": "150 400 650 900"
+					"ward_hp": "240 460 680 900"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -37207,7 +37314,7 @@
 		"behavior": "aoe|point|ignore_backswing",
 		"damage_type": "magical",
 		"spell_immunity": "no",
-		"cast_range": "500",
+		"cast_range": "600",
 		"cast_point": "0.2",
 		"cooldown": "5",
 		"mana_cost": "85 105 125 145",
@@ -37251,7 +37358,7 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Pugna.NetherBlast",
-			"AbilityCastRange": "500",
+			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.2 0.2 0.2 0.2",
 			"AbilityCooldown": "5",
 			"AbilityManaCost": "85 105 125 145",
@@ -37717,7 +37824,7 @@
 		"cast_range": "1000",
 		"cast_point": "0.25",
 		"cooldown": "11 9 7 5",
-		"mana_cost": "35 45 55 65",
+		"mana_cost": "35 40 45 50",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
@@ -37759,7 +37866,7 @@
 			"AbilitySound": "Hero_PhantomAssassin.Strike.Start",
 			"AbilityCastPoint": "0.25",
 			"AbilityCooldown": "11 9 7 5",
-			"AbilityManaCost": "35 45 55 65",
+			"AbilityManaCost": "35 40 45 50",
 			"AbilityValues": {
 				"bonus_attack_speed": {
 					"value": "80 110 140 170",
@@ -38179,7 +38286,7 @@
 			},
 			{
 				"key": "trap_max_charge_duration",
-				"value": "4"
+				"value": "3.5"
 			},
 			{
 				"shard_upgrade": "1",
@@ -38209,7 +38316,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/templar_assassin_psionic_trap_png.png",
 		"localized_name": "Psionic Trap",
-		"description": "Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of **30%** in the area. Traps charge up to slow **60%** after **4** seconds. Deals bonus damage when fully charged.",
+		"description": "Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of **30%** in the area. Traps charge up to slow **60%** after **3.5** seconds. Deals bonus damage when fully charged.",
 		"lore": "Calling upon the reach of the Hidden Temple, none escape the eye of the Templar.",
 		"note": "Traps last indefinitely.\nThey have invisibility that fades in over **2** seconds, spell immunity, and 100 HP.\nTraps have 400/400 vision range and don't prevent neutral camps from spawning.",
 		"scepter_grants": false,
@@ -38262,7 +38369,7 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"trap_max_charge_duration": "4"
+					"trap_max_charge_duration": "3.5"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -39210,7 +39317,7 @@
 		"cast_range": "900",
 		"cast_point": "0.2",
 		"cooldown": "14",
-		"mana_cost": "85",
+		"mana_cost": "70",
 		"ability_special": [
 			{
 				"talent_name": "special_bonus_unique_viper_3",
@@ -39263,7 +39370,7 @@
 			"AbilityCastPoint": "0.2",
 			"AbilityCastRange": "900",
 			"AbilityCooldown": "14.0",
-			"AbilityManaCost": "85",
+			"AbilityManaCost": "70",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
@@ -39365,11 +39472,11 @@
 				"bonus_attack_speed": "8 16 24 32",
 				"bonus_magic_resistance": {
 					"value": "10 15 20 25",
-					"special_bonus_unique_viper_6": "+12"
+					"special_bonus_unique_viper_6": "+15"
 				},
 				"damage": {
 					"value": "8 16 24 32",
-					"special_bonus_unique_viper_1": "+13"
+					"special_bonus_unique_viper_1": "+18"
 				},
 				"max_range_tooltip": "1400",
 				"effect_multiplier_distance": {
@@ -40068,7 +40175,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "yes_enemies_no",
 		"dispellable": "no",
-		"cooldown": "115 110 105 100",
+		"cooldown": "105",
 		"mana_cost": "50",
 		"ability_special": [
 			{
@@ -40082,8 +40189,10 @@
 				"header": "BONUS MOVE SPEED:"
 			},
 			{
+				"talent_name": "special_bonus_unique_dragon_knight_7",
 				"key": "bonus_attack_range",
 				"value": "350",
+				"talent_value": "525",
 				"header": "BONUS ATTACK RANGE:"
 			},
 			{
@@ -40160,7 +40269,7 @@
 			"HasScepterUpgrade": "1",
 			"AbilityDraftUltShardAbility": "dragon_knight_fireball",
 			"AbilityCastAnimation": "ACT_INVALID",
-			"AbilityCooldown": "115 110 105 100",
+			"AbilityCooldown": "105",
 			"AbilityManaCost": "50 50 50",
 			"AbilityModifierSupportValue": "0.35",
 			"AbilitySpecial": {
@@ -40174,7 +40283,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_attack_range": "350 350 350 350"
+					"bonus_attack_range": "350 350 350 350",
+					"LinkedSpecialBonus": "special_bonus_unique_dragon_knight_7"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -40283,7 +40393,7 @@
 		"cast_range": "500 600 700 800",
 		"cast_point": "0.3",
 		"cooldown": "27 23 19 15",
-		"mana_cost": "110 120 130 140",
+		"mana_cost": "125 130 135 140",
 		"ability_special": [
 			{
 				"key": "start_radius",
@@ -40318,7 +40428,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "4 5 6 7",
+				"value": "5 6 7 8",
 				"header": "DURATION:"
 			},
 			{
@@ -40366,7 +40476,7 @@
 			"AbilityCastRange": "500 600 700 800",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "27 23 19 15",
-			"AbilityManaCost": "110 120 130 140",
+			"AbilityManaCost": "125 130 135 140",
 			"AbilityModifierSupportValue": "0.35",
 			"AbilityValues": {
 				"start_radius": "200 200 200 200",
@@ -40382,7 +40492,7 @@
 					"special_bonus_unique_dazzle_1": "-40"
 				},
 				"projectile_speed": "1300",
-				"duration": "4 5 6 7",
+				"duration": "5 6 7 8",
 				"bonus_damage": "0",
 				"bonus_slow": "-2 -2.5 -3 -3.5",
 				"hex_duration": {
@@ -41013,7 +41123,7 @@
 			{
 				"shard_upgrade": "1",
 				"key": "shard_radius_increase",
-				"value": "75"
+				"value": "60"
 			},
 			{
 				"shard_upgrade": "1",
@@ -41036,7 +41146,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Split Earth to repeat in the same location **3** additional times, with a **5** second delay between each one. Each time the radius increases by **75**. Split Earth echo location is visible to both teams.",
+		"shard_description": "Causes Split Earth to repeat in the same location **3** additional times, with a **5** second delay between each one. Each time the radius increases by **60**. Split Earth echo location is visible to both teams.",
 		"json_data": {
 			"ID": "5241",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -41070,7 +41180,7 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"shard_radius_increase": "75",
+					"shard_radius_increase": "60",
 					"RequiresShard": "1"
 				},
 				"05": {
@@ -41140,7 +41250,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Leshrac.Diabolic_Edict",
 			"AbilityCastPoint": "0.5",
-			"AbilityCooldown": "22 22 22 22",
+			"AbilityCooldown": "22",
 			"AbilityManaCost": "95 120 135 155",
 			"AbilityDamage": "7 14 21 28",
 			"AbilityDuration": "10",
@@ -41312,8 +41422,8 @@
 			{
 				"talent_name": "special_bonus_unique_leshrac_3",
 				"key": "damage",
-				"value": "100 150 200",
-				"talent_value": "140 190 240",
+				"value": "90 140 190",
+				"talent_value": "130 180 230",
 				"header": "DAMAGE:"
 			}
 		],
@@ -41353,7 +41463,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "100 150 200",
+					"damage": "90 140 190",
 					"LinkedSpecialBonus": "special_bonus_unique_leshrac_3"
 				}
 			}
@@ -41423,7 +41533,7 @@
 		"dispellable": "no",
 		"cast_range": "0",
 		"cast_point": "3",
-		"cooldown": "65 50 35 20",
+		"cooldown": "62 48 34 20",
 		"mana_cost": "50",
 		"ability_special": [],
 		"slot": 2,
@@ -41443,7 +41553,7 @@
 			"AbilitySound": "Hero_Furion.Teleport_Grow",
 			"AbilityCastRange": "0",
 			"AbilityCastPoint": "3 3 3 3",
-			"AbilityCooldown": "65 50 35 20",
+			"AbilityCooldown": "62 48 34 20",
 			"AbilityManaCost": "50 50 50 50",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
 			"AbilitySpecial": {}
@@ -43175,7 +43285,7 @@
 		"localized_name": "Nature's Attendants",
 		"description": "A cloud of wisps heals Enchantress and any friendly units nearby. Lasts **9**/**10**/**11**/**12** seconds.",
 		"lore": "Whimsical spirits of the woods possess a healing power that is quite subtle, but gains strength in numbers.",
-		"note": "Units with full HP will not be selected for the heal.\nCan heal units with spell immunity.",
+		"note": "Units with full HP will not be selected for the heal.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -43554,8 +43664,10 @@
 				"header": "MOVEMENT SLOW:"
 			},
 			{
-				"key": "slow_durtion_tooltip",
+				"talent_name": "special_bonus_unique_huskar_4",
+				"key": "slow_duration_tooltip",
 				"value": "3 4 5",
+				"talent_value": "5 6 7",
 				"header": "SLOW DURATION:"
 			},
 			{
@@ -43633,7 +43745,8 @@
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
-					"slow_durtion_tooltip": "3 4 5"
+					"slow_duration_tooltip": "3 4 5",
+					"LinkedSpecialBonus": "special_bonus_unique_huskar_4"
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
@@ -43991,6 +44104,11 @@
 			{
 				"key": "projectile_speed",
 				"value": "1200"
+			},
+			{
+				"key": "tooltip_spiderling_hp",
+				"value": "320",
+				"header": "SPIDERLINGS HP:"
 			}
 		],
 		"slot": 6,
@@ -44033,7 +44151,11 @@
 					"special_bonus_unique_broodmother_7": "+130"
 				},
 				"count": "4 5 6",
-				"projectile_speed": "1200"
+				"projectile_speed": "1200",
+				"tooltip_spiderling_hp": {
+					"value": "320",
+					"special_bonus_unique_broodmother_7": "+130"
+				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
 		}
@@ -44175,6 +44297,7 @@
 		"name": "broodmother_insatiable_hunger",
 		"hero_id": 61,
 		"behavior": "no_target",
+		"damage_type": "physical",
 		"dispellable": "no",
 		"cast_point": "0.2",
 		"cooldown": "40 35 30 25",
@@ -44227,6 +44350,7 @@
 		"json_data": {
 			"ID": "5282",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "2",
 			"HasShardUpgrade": "1",
@@ -44524,7 +44648,7 @@
 		"name": "bounty_hunter_wind_walk",
 		"hero_id": 62,
 		"behavior": "no_target|immediate|ignore_channel",
-		"spell_immunity": "yes",
+		"spell_immunity": "yes_enemies_no",
 		"target_team": "friendly",
 		"dispellable": "no",
 		"cast_range": "650",
@@ -44547,6 +44671,11 @@
 				"key": "slow",
 				"value": "16% 24% 32% 40%",
 				"header": "MOVEMENT SLOW:"
+			},
+			{
+				"key": "attack_slow",
+				"value": "16 24 32 40",
+				"header": "ATTACK SLOW:"
 			},
 			{
 				"key": "slow_duration",
@@ -44583,7 +44712,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/bounty_hunter_wind_walk_png.png",
 		"localized_name": "Shadow Walk",
-		"description": "Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability.  If he breaks the invisibility with an attack, that attack will slow the target's movement speed.",
+		"description": "Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability.  If he breaks the invisibility with an attack, that attack will slow the target's movement and attack speed.",
 		"lore": "The court jesters present during King Goff's assassination can recount no other image than a dancing shadow.",
 		"note": "Will not break most channeling of spells upon activation.",
 		"scepter_grants": false,
@@ -44594,7 +44723,7 @@
 		"json_data": {
 			"ID": "5287",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
@@ -44607,6 +44736,10 @@
 				"duration": "20.0 25.0 30.0 35.0",
 				"fade_time": "1.0 0.75 0.5 0.25",
 				"slow": {
+					"value": "16 24 32 40",
+					"special_bonus_unique_bounty_hunter_5": "+10"
+				},
+				"attack_slow": {
 					"value": "16 24 32 40",
 					"special_bonus_unique_bounty_hunter_5": "+10"
 				},
@@ -48160,8 +48293,8 @@
 			{
 				"talent_name": "special_bonus_unique_doom_4",
 				"key": "damage_per_second",
-				"value": "18 32 46 60",
-				"talent_value": "38 52 66 80",
+				"value": "20 35 50 65",
+				"talent_value": "40 55 70 85",
 				"header": "DAMAGE:"
 			},
 			{
@@ -48211,7 +48344,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_second": "18 32 46 60",
+					"damage_per_second": "20 35 50 65",
 					"LinkedSpecialBonus": "special_bonus_unique_doom_4"
 				},
 				"02": {
@@ -48382,7 +48515,7 @@
 			},
 			{
 				"key": "AbilityCooldown",
-				"value": "145 145 145"
+				"value": "145"
 			},
 			{
 				"key": "does_break",
@@ -48433,7 +48566,7 @@
 				},
 				"deniable_pct": "25 25 25",
 				"AbilityCooldown": {
-					"value": "145 145 145",
+					"value": "145",
 					"special_bonus_unique_doom_10": "-35"
 				},
 				"does_break": {
@@ -50053,7 +50186,7 @@
 				},
 				"max_attacks": {
 					"value": "3 4 5 6",
-					"special_bonus_unique_gyrocopter_2": "+2"
+					"special_bonus_unique_gyrocopter_2": "+3"
 				},
 				"projectile_speed": "800",
 				"bonus_damage": {
@@ -50209,7 +50342,7 @@
 		"cast_range": "900",
 		"cast_point": "0.2",
 		"cooldown": "22",
-		"mana_cost": "130 140 150 160",
+		"mana_cost": "130",
 		"ability_special": [
 			{
 				"key": "radius",
@@ -50257,7 +50390,7 @@
 			"AbilityCastPoint": "0.2",
 			"AbilityCastRange": "900",
 			"AbilityCooldown": "22.0",
-			"AbilityManaCost": "130 140 150 160",
+			"AbilityManaCost": "130",
 			"AbilityValues": {
 				"radius": "475 525 575 625",
 				"duration": "16",
@@ -50480,7 +50613,7 @@
 			},
 			{
 				"key": "bounty_multiplier",
-				"value": "1.5 2 2.5 3",
+				"value": "1.8 2.2 2.6 3",
 				"header": "BOUNTY RUNE MULTIPLIER:"
 			},
 			{
@@ -50510,10 +50643,10 @@
 				"bonus_gold": "3",
 				"bonus_bonus_gold": "3",
 				"bonus_gold_cap": "15 18 21 24",
-				"bounty_multiplier": "1.5 2.0 2.5 3.0",
+				"bounty_multiplier": "1.8 2.2 2.6 3.0",
 				"damage": {
 					"value": "0",
-					"special_bonus_unique_alchemist_7": "+1"
+					"special_bonus_unique_alchemist_7": "+1.5"
 				}
 			},
 			"AbilityCastAnimation1": "ACT_DOTA_CAST_ABILITY_3"
@@ -50968,7 +51101,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "425",
+				"value": "340 360 380 400",
 				"header": "RADIUS:"
 			},
 			{
@@ -51026,7 +51159,7 @@
 					"special_bonus_unique_silencer": "+12"
 				},
 				"application_damage": "40 60 80 100",
-				"radius": "425",
+				"radius": "340 360 380 400",
 				"duration": "6",
 				"penalty_duration": "2",
 				"movespeed": "-10 -15 -20 -25",
@@ -51580,6 +51713,7 @@
 		"name": "invoker_alacrity",
 		"hero_id": 74,
 		"behavior": "unit_target|hidden|not_learnable|dont_resume_attack|ignore_backswing|show_in_guides",
+		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "yes",
@@ -51621,6 +51755,7 @@
 			"AbilitySound": "Hero_Invoker.Alacrity",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCastRange": "650",
@@ -53234,6 +53369,35 @@
 				"scepter_upgrade": "1",
 				"key": "max_charges",
 				"value": "2"
+			},
+			{
+				"talent_name": "special_bonus_unique_brewmaster",
+				"key": "tooltip_earth_brewling_hp",
+				"value": "1400 2300 3200",
+				"talent_value": "2600 3500 4400",
+				"header": "EARTH BREWLING HP:"
+			},
+			{
+				"talent_name": "special_bonus_unique_brewmaster",
+				"key": "tooltip_storm_brewling_hp",
+				"value": "1000 1500 2000",
+				"talent_value": "2200 2700 3200",
+				"header": "STORM BREWLING HP:"
+			},
+			{
+				"talent_name": "special_bonus_unique_brewmaster",
+				"key": "tooltip_fire_brewling_hp",
+				"value": "1300 1450 1600",
+				"talent_value": "2500 2650 2800",
+				"header": "FIRE BREWLING HP:"
+			},
+			{
+				"talent_name": "special_bonus_unique_brewmaster",
+				"shard_upgrade": "1",
+				"key": "shard_tooltip_void_brewling_hp",
+				"value": "1200 1500 1800",
+				"talent_value": "2400 2700 3000",
+				"header": "HP:"
 			}
 		],
 		"slot": 6,
@@ -53278,6 +53442,27 @@
 					"var_type": "FIELD_INTEGER",
 					"max_charges": "2",
 					"RequiresScepter": "1"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"tooltip_earth_brewling_hp": "1400 2300 3200",
+					"LinkedSpecialBonus": "special_bonus_unique_brewmaster"
+				},
+				"06": {
+					"var_type": "FIELD_INTEGER",
+					"tooltip_storm_brewling_hp": "1000 1500 2000",
+					"LinkedSpecialBonus": "special_bonus_unique_brewmaster"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"tooltip_fire_brewling_hp": "1300 1450 1600",
+					"LinkedSpecialBonus": "special_bonus_unique_brewmaster"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"shard_tooltip_void_brewling_hp": "1200 1500 1800",
+					"LinkedSpecialBonus": "special_bonus_unique_brewmaster",
+					"RequiresShard": "1"
 				}
 			}
 		}
@@ -54735,14 +54920,14 @@
 				"talent_name": "special_bonus_unique_chaos_knight_3",
 				"key": "stun_min",
 				"value": "1.25 1.5 1.75 2",
-				"talent_value": "1.75 2 2.25 2.5",
+				"talent_value": "2 2.25 2.5 2.75",
 				"header": "MINIMUM STUN:"
 			},
 			{
 				"talent_name": "special_bonus_unique_chaos_knight_3",
 				"key": "stun_max",
 				"value": "2.2 2.8 3.4 4",
-				"talent_value": "2.7 3.3 3.9 4.5",
+				"talent_value": "2.95 3.55 4.15 4.75",
 				"header": "MAXIMUM STUN:"
 			},
 			{
@@ -54936,7 +55121,7 @@
 			},
 			{
 				"key": "crit_min",
-				"value": "120%",
+				"value": "125%",
 				"header": "CRITICAL MIN:"
 			},
 			{
@@ -54975,7 +55160,7 @@
 					"value": "33.33",
 					"LinkedSpecialBonus": "special_bonus_unique_chaos_knight_5"
 				},
-				"crit_min": "120",
+				"crit_min": "125",
 				"crit_max": "140 175 210 245",
 				"lifesteal": {
 					"value": "20 30 40 50",
@@ -55051,7 +55236,7 @@
 		"note": "Removes most negative buffs from Chaos Knight.\nChaos Knight is invulnerable for **0.5** seconds when casting, allowing him to dodge stuns and damage.\nStrong Illusions are not instantly killed by spells.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Creates an illusion of allied heroes. Creates an additional illusion for Chaos Knight as well.",
+		"scepter_description": "Creates an illusion of allied heroes globally. Creates an additional illusion for Chaos Knight as well.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -55568,8 +55753,8 @@
 		"spell_immunity": "no",
 		"target_team": "enemy",
 		"dispellable": "yes",
-		"cast_range": "400",
-		"cast_point": "0.4",
+		"cast_range": "400 450 500 550",
+		"cast_point": "0.3",
 		"cooldown": "18 16 14 12",
 		"mana_cost": "80 90 100 110",
 		"ability_special": [
@@ -55580,8 +55765,8 @@
 			{
 				"talent_name": "special_bonus_unique_treant_2",
 				"key": "leech_damage",
-				"value": "16 32 48 64",
-				"talent_value": "56 72 88 104",
+				"value": "20 35 50 65",
+				"talent_value": "60 75 90 105",
 				"header": "DAMAGE/HEAL PER SECOND:"
 			},
 			{
@@ -55625,8 +55810,8 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_Treant.LeechSeed.Cast",
-			"AbilityCastPoint": "0.4",
-			"AbilityCastRange": "400",
+			"AbilityCastPoint": "0.3",
+			"AbilityCastRange": "400 450 500 550",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "18 16 14 12",
 			"AbilityManaCost": "80 90 100 110",
@@ -55637,7 +55822,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"leech_damage": "16 32 48 64",
+					"leech_damage": "20 35 50 65",
 					"LinkedSpecialBonus": "special_bonus_unique_treant_2"
 				},
 				"03": {
@@ -55757,7 +55942,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "75",
+				"value": "85",
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
@@ -55800,7 +55985,7 @@
 					"LinkedSpecialBonus": "special_bonus_unique_treant_5"
 				},
 				"damage": {
-					"value": "75",
+					"value": "85",
 					"CalculateSpellDamageTooltip": "1"
 				},
 				"purgable": {
@@ -56268,7 +56453,7 @@
 				"talent_name": "special_bonus_unique_undying_6",
 				"key": "damage_per_unit",
 				"value": "15 25 35 45",
-				"talent_value": "27 37 47 57",
+				"talent_value": "25 35 45 55",
 				"header": "DAMAGE/HEAL PER UNIT:"
 			},
 			{
@@ -57299,7 +57484,7 @@
 		"cast_range": "600 1000 1400 1800",
 		"cast_point": "0.05",
 		"cooldown": "24 22 20 18",
-		"mana_cost": "55 70 85 100",
+		"mana_cost": "70 85 100 115",
 		"ability_special": [
 			{
 				"key": "backtrack_time",
@@ -57355,7 +57540,7 @@
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Disruptor.Glimpse.Target",
 			"AbilityCastPoint": "0.05 0.05 0.05 0.05",
-			"AbilityManaCost": "55 70 85 100",
+			"AbilityManaCost": "70 85 100 115",
 			"AbilityCastRange": "600 1000 1400 1800",
 			"AbilityValues": {
 				"backtrack_time": "4.0 4.0 4.0 4.0",
@@ -57465,8 +57650,10 @@
 		"mana_cost": "125 175 225",
 		"ability_special": [
 			{
+				"talent_name": "special_bonus_unique_disruptor_8",
 				"key": "radius",
 				"value": "500",
+				"talent_value": "700",
 				"header": "RADIUS:"
 			},
 			{
@@ -57519,7 +57706,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"radius": "500"
+					"radius": "500",
+					"LinkedSpecialBonus": "special_bonus_unique_disruptor_8"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -57707,7 +57895,7 @@
 			},
 			{
 				"key": "stun_duration",
-				"value": "0.6 1.2 1.8 2.4",
+				"value": "0.5 1 1.5 2",
 				"header": "STUN DURATION:"
 			},
 			{
@@ -57742,7 +57930,7 @@
 					"special_bonus_unique_nyx_carapace_reflect_duration": "+0.5"
 				},
 				"stun_duration": {
-					"value": "0.6 1.2 1.8 2.4",
+					"value": "0.5 1.0 1.5 2.0",
 					"special_bonus_unique_nyx_6": "+0.6"
 				},
 				"damage_reflect_pct": "100"
@@ -59185,7 +59373,7 @@
 			{
 				"shard_upgrade": "1",
 				"key": "shard_cooldown",
-				"value": "60",
+				"value": "65",
 				"header": "COOLDOWN:"
 			},
 			{
@@ -59244,7 +59432,7 @@
 				},
 				"08": {
 					"var_type": "FIELD_FLOAT",
-					"shard_cooldown": "60",
+					"shard_cooldown": "65",
 					"RequiresShard": "1"
 				},
 				"09": {
@@ -59282,33 +59470,34 @@
 				"header": "FAMILIAR SPEED:"
 			},
 			{
+				"talent_name": "special_bonus_unique_visage_7",
 				"key": "familiar_attack_damage",
 				"value": "25 50 75",
+				"talent_value": "31 56 81",
 				"header": "FAMILIAR ATTACK DAMAGE:"
 			},
 			{
 				"talent_name": "special_bonus_unique_visage_6",
-				"scepter_upgrade": "1",
-				"key": "tooltip_scepter_total_familiars",
-				"value": "3",
-				"talent_value": "4"
+				"key": "tooltip_familiar_count",
+				"value": "2",
+				"talent_value": "3",
+				"header": "FAMILIAR COUNT:"
 			}
 		],
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/visage_summon_familiars_png.png",
 		"localized_name": "Summon Familiars",
-		"description": "Conjures two blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.",
+		"description": "Conjures blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.",
 		"lore": "Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain.",
 		"note": "Casting Summon Familiars will replace any existing Familiars.\nFamiliars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill.",
 		"scepter_grants": false,
-		"scepter_upgrades": true,
+		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "5483",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
-			"HasScepterUpgrade": "1",
 			"AbilityDraftUltScepterAbility": "visage_silent_as_the_grave",
 			"AbilitySound": "Hero_Visage.SummonFamiliars.Cast",
 			"AbilityCastPoint": "0 0 0",
@@ -59331,13 +59520,13 @@
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"familiar_attack_damage": "25 50 75"
+					"familiar_attack_damage": "25 50 75",
+					"LinkedSpecialBonus": "special_bonus_unique_visage_7"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"tooltip_scepter_total_familiars": "3",
-					"LinkedSpecialBonus": "special_bonus_unique_visage_6",
-					"RequiresScepter": "1"
+					"tooltip_familiar_count": "2",
+					"LinkedSpecialBonus": "special_bonus_unique_visage_6"
 				}
 			}
 		}
@@ -59490,7 +59679,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/wisp_tether_png.png",
 		"localized_name": "Tether",
-		"description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether.",
+		"description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether. Tether briefly slows enemies touching it.",
 		"lore": "The benevolent touch of Io brings strength from between the planes.",
 		"note": "If you try to tether a unit that is 700 distance or further away from Io, he will latch on and pull himself closer to the tethered unit (to a distance of 300).\nThe tethered unit will heal faster and will heal even if Io is at full health.\nIo's movement speed matches the tethered unit's.",
 		"scepter_grants": false,
@@ -60486,14 +60675,14 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
-		"cast_range": "700",
+		"cast_range": "750",
 		"cast_point": "0.2",
 		"cooldown": "10",
 		"mana_cost": "140",
 		"ability_special": [
 			{
 				"key": "AbilityCastRange",
-				"value": "700"
+				"value": "750"
 			},
 			{
 				"key": "AbilityCastPoint",
@@ -60541,6 +60730,11 @@
 				"header": "DAMAGE INCREASE PER JUMP:"
 			},
 			{
+				"key": "snake_speed_scale",
+				"value": "15%",
+				"header": "SPEED INCREASE PER JUMP:"
+			},
+			{
 				"key": "initial_speed",
 				"value": "800"
 			},
@@ -60579,7 +60773,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/medusa_mystic_snake_png.png",
 		"localized_name": "Mystic Snake",
-		"description": "A mystic snake made of energy jumps from target to target dealing damage that increases with each jump. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake returns **11%**/**14%**/**17%**/**20%** mana based on the targets' total mana.",
+		"description": "A mystic snake made of energy jumps from target to target dealing damage. Damage and speed increases with each jump. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake returns **11%**/**14%**/**17%**/**20%** mana based on the targets' total mana.",
 		"lore": "The Gorgon's curse is her greatest strength.",
 		"note": "Mystic Snake cannot be disjointed.",
 		"scepter_grants": false,
@@ -60599,7 +60793,7 @@
 			"AbilityDraftShardAbility": "medusa_cold_blooded",
 			"HasScepterUpgrade": "1",
 			"AbilityValues": {
-				"AbilityCastRange": "700",
+				"AbilityCastRange": "750",
 				"AbilityCastPoint": "0.2",
 				"AbilityCooldown": {
 					"value": "10",
@@ -60619,6 +60813,7 @@
 				"snake_damage_pct": "0",
 				"snake_mana_steal": "11 14 17 20",
 				"snake_scale": "35",
+				"snake_speed_scale": "15",
 				"initial_speed": "800",
 				"return_speed": "800",
 				"stone_form_scepter_base": {
@@ -61258,7 +61453,7 @@
 				"attack_speed": "140 170 200",
 				"movement_speed": {
 					"value": "25 30 35",
-					"special_bonus_unique_troll_warlord_battle_trance_movespeed": "+15"
+					"special_bonus_unique_troll_warlord_battle_trance_movespeed": "+20"
 				},
 				"range": "900"
 			}
@@ -61330,7 +61525,7 @@
 		"id": 5515,
 		"name": "centaur_double_edge",
 		"hero_id": 96,
-		"behavior": "unit_target",
+		"behavior": "unit_target|aoe",
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "enemy",
@@ -61396,7 +61591,7 @@
 		"shard_description": "Causes Double Edge to slow enemy heroes and increase Centaur's strength per hero hit for a short time. Duration refreshes per stack, up to a max of **5** stacks.",
 		"json_data": {
 			"ID": "5515",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -62197,7 +62392,7 @@
 				"talent_name": "special_bonus_unique_timbersaw",
 				"key": "stat_loss_pct",
 				"value": "10%",
-				"talent_value": "20%",
+				"talent_value": "22%",
 				"header": "STAT LOSS PERCENT:"
 			},
 			{
@@ -67450,7 +67645,7 @@
 				"key": "trigger_chance",
 				"value": "25%",
 				"talent_name": "special_bonus_unique_legion_commander_3",
-				"talent_value": "35%",
+				"talent_value": "37%",
 				"header": "CHANCE TO COUNTERATTACK:"
 			},
 			{
@@ -67533,14 +67728,11 @@
 				"header": "DAMAGE REDUCTION:"
 			},
 			{
-				"key": "scepter_cooldown_reduction",
-				"value": "20",
-				"scepter_upgrade": "1",
-				"header": "COOLDOWN REDUCTION:"
-			},
-			{
 				"key": "AbilityCooldown",
-				"value": "50"
+				"value": "50",
+				"scepter_value": "30",
+				"scepter_bonus": "20",
+				"header": "COOLDOWN:"
 			}
 		],
 		"slot": 6,
@@ -67586,11 +67778,10 @@
 					"value": "50",
 					"RequiresScepter": "1"
 				},
-				"scepter_cooldown_reduction": {
-					"value": "20.0",
-					"RequiresScepter": "1"
-				},
-				"AbilityCooldown": "50"
+				"AbilityCooldown": {
+					"value": "50",
+					"special_bonus_scepter": "-20"
+				}
 			}
 		}
 	},
@@ -68613,7 +68804,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "both",
-		"dispellable": "yes_strong",
+		"dispellable": "yes",
 		"cast_range": "150",
 		"cast_point": "0",
 		"cooldown": "22 18 14 10",
@@ -68670,7 +68861,7 @@
 		"slot": 1,
 		"icon": "/panorama/images/spellicons/earth_spirit_boulder_smash_png.png",
 		"localized_name": "Boulder Smash",
-		"description": "Earth Spirit smashes the target enemy or ally, sending them in the direction he is facing. If Earth Spirit targets an area, he will smash the nearest Stone Remnant in a **200** radius. The travelling unit or Remnant damages all enemy units it hits.  If an enemy is hit by a Stone Remnant, they are also slowed. Stone Remnants travel further than other units.",
+		"description": "Earth Spirit smashes the target enemy or ally, sending them in the direction he is facing. If Earth Spirit targets an area, he will smash the nearest unit in a **200** radius, prioritizing Stone Remnants. The travelling unit or Remnant damages all enemy units it hits.  If an enemy is hit by a Stone Remnant, they are also slowed. Stone Remnants travel further than other units.",
 		"lore": "It is with the power of a mountain that Earth Spirit strikes his enemies.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -68684,7 +68875,7 @@
 			"AbilityUnitTargetFlag": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
-			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_EarthSpirit.BoulderSmash.Target",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
@@ -68742,6 +68933,7 @@
 		"behavior": "point|ignore_backswing|root_disables",
 		"damage_type": "magical",
 		"spell_immunity": "no",
+		"dispellable": "yes_strong",
 		"cast_range": "3000",
 		"cast_point": "0",
 		"cooldown": "16 12 8 4",
@@ -68816,6 +69008,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
 			"AbilitySound": "Hero_EarthSpirit.RollingBoulder.Cast",
 			"AbilityCastRange": "3000",
 			"AbilityCastPoint": "0",
@@ -68985,7 +69178,7 @@
 		"behavior": "point|not_learnable|ignore_backswing|show_in_guides",
 		"cast_range": "1100",
 		"cast_point": "0",
-		"cooldown": "20",
+		"cooldown": "18",
 		"mana_cost": "0",
 		"charges": "7",
 		"ability_special": [
@@ -69041,7 +69234,7 @@
 			"AbilityCastRange": "1100",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "0.0",
-			"AbilityChargeRestoreTime": "20",
+			"AbilityChargeRestoreTime": "18",
 			"AbilityManaCost": "0",
 			"AbilityValues": {
 				"duration": "60.0",
@@ -69150,7 +69343,7 @@
 				},
 				"damage_duration": {
 					"value": "6.0",
-					"special_bonus_unique_earth_spirit_6": "+2",
+					"special_bonus_unique_earth_spirit_6": "+3",
 					"DamageTypeTooltip": "DAMAGE_TYPE_NONE",
 					"CalculateSpellDamageTooltip": "0"
 				},
@@ -69559,12 +69752,12 @@
 		"dispellable": "yes",
 		"cast_range": "700",
 		"cast_point": "0.3",
-		"cooldown": "28 24 20 16",
+		"cooldown": "25 22 19 16",
 		"mana_cost": "35 40 45 50",
 		"ability_special": [
 			{
 				"key": "AbilityCooldown",
-				"value": "28 24 20 16"
+				"value": "25 22 19 16"
 			},
 			{
 				"key": "illusion_duration",
@@ -69613,7 +69806,7 @@
 			"AbilityManaCost": "35 40 45 50",
 			"AbilityValues": {
 				"AbilityCooldown": {
-					"value": "28 24 20 16",
+					"value": "25 22 19 16",
 					"special_bonus_unique_terrorblade_2": "-3"
 				},
 				"illusion_duration": {
@@ -69840,8 +70033,8 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
-			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO | DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_NO",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"FightRecapLevel": "2",
 			"AbilitySound": "Hero_Terrorblade.Sunder.Target",
@@ -70556,7 +70749,7 @@
 		"dispellable": "yes",
 		"cast_range": "900",
 		"cast_point": "0.25",
-		"cooldown": "16 15 14 13",
+		"cooldown": "19 17 15 13",
 		"mana_cost": "70",
 		"ability_special": [
 			{
@@ -70617,7 +70810,7 @@
 			"AbilitySound": "Hero_DrowRanger.Silence",
 			"AbilityCastRange": "900",
 			"AbilityCastPoint": "0.25",
-			"AbilityCooldown": "16 15 14 13",
+			"AbilityCooldown": "19 17 15 13",
 			"AbilityManaCost": "70",
 			"AbilityValues": {
 				"wave_speed": "2000.0",
@@ -71392,6 +71585,7 @@
 		"localized_name": "Enchant Remnant",
 		"description": "Earth Spirit temporarily enchants a hero, granting them the properties of a Stone Remnant. After a short duration the remnant shatters, releasing the hero and damaging nearby enemies. < br>\nCan be cast on Stone Remnants. Has a 5 second cooldown when used that way.\nHas a larger cast range when cast on an ally hero.",
 		"lore": "Kaolin uses the elemental power of the Earth to temporarily petrify living beings, so that they might be conscripted into his stone funerary army.",
+		"note": "Earth Spirit himself can be targeted by Boulder Smash if he is enchanted.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
 		"scepter_description": "Adds new ability: Enchant Remnant.",
@@ -71703,7 +71897,6 @@
 		"cast_range": "1200",
 		"cast_point": "0.3",
 		"cooldown": "7",
-		"damage": "100 180 260 340",
 		"mana_cost": "105 120 135 150",
 		"ability_special": [
 			{
@@ -71738,12 +71931,19 @@
 			{
 				"key": "secondary_projectile_speed",
 				"value": "800"
+			},
+			{
+				"talent_name": "special_bonus_unique_winter_wyvern_7",
+				"key": "damage",
+				"value": "100 180 260 340",
+				"talent_value": "200 280 360 440",
+				"header": "DAMAGE:"
 			}
 		],
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/winter_wyvern_splinter_blast_png.png",
 		"localized_name": "Splinter Blast",
-		"description": "Launches a ball of brittle ice toward an enemy. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a **500** radius. Enemies struck by these splinters are slowed by **30%**.",
+		"description": "Launches a ball of brittle ice toward an enemy. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a **500** base radius. Enemies struck by these splinters are slowed by **30%**.",
 		"lore": "Produced slowly by specialized vesicles in her frozen gullet, Winter Wyvern blast shards of ice at her enemies.",
 		"note": "The primary projectile moves at **650** movement speed, or reaches the target in **1** second, whichever is faster.\nThe primary projectile cannot be disjointed.",
 		"scepter_grants": false,
@@ -71762,7 +71962,6 @@
 			"AbilityCastRange": "1200",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCooldown": "7",
-			"AbilityDamage": "100 180 260 340",
 			"AbilityManaCost": "105 120 135 150",
 			"AbilitySpecial": {
 				"01": {
@@ -71793,6 +71992,11 @@
 				"07": {
 					"var_type": "FIELD_INTEGER",
 					"secondary_projectile_speed": "800"
+				},
+				"08": {
+					"var_type": "FIELD_INTEGER",
+					"damage": "100 180 260 340",
+					"LinkedSpecialBonus": "special_bonus_unique_winter_wyvern_7"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -73330,6 +73534,11 @@
 				"key": "scepter_activation_delay",
 				"value": "2.0",
 				"scepter_upgrade": "1"
+			},
+			{
+				"key": "scepter_duration",
+				"value": "15",
+				"scepter_upgrade": "1"
 			}
 		],
 		"slot": 3,
@@ -73340,7 +73549,7 @@
 		"note": "Spark Wraiths can not be disjointed.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Causes Spark Wraiths to spawn a new Spark Wraith after impacting an enemy, which then starts its **2** second activation period.",
+		"scepter_description": "Causes Spark Wraiths to spawn a new Spark Wraith after impacting an enemy, which then starts its **2** second activation period. The new Spark Wraiths last **15** seconds",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -73371,6 +73580,10 @@
 				"move_speed_slow_pct": "100",
 				"scepter_activation_delay": {
 					"value": "2.0",
+					"RequiresScepter": "1"
+				},
+				"scepter_duration": {
+					"value": "15",
 					"RequiresScepter": "1"
 				}
 			},
@@ -73575,7 +73788,7 @@
 				"attack_damage_penalty": "50",
 				"tempest_double_cooldown_reduction": {
 					"value": "0",
-					"special_bonus_unique_arc_warden_7": "+50"
+					"special_bonus_unique_arc_warden_7": "+40"
 				}
 			}
 		}
@@ -74161,6 +74374,10 @@
 				"header": "CRITICAL DAMAGE:"
 			},
 			{
+				"key": "AbilityCooldown",
+				"value": "28 26 24 22"
+			},
+			{
 				"key": "strike_radius",
 				"value": "150"
 			},
@@ -74219,7 +74436,6 @@
 			"AbilityCastPoint": "0.4",
 			"AbilityCastRange": "1100",
 			"HasShardUpgrade": "1",
-			"AbilityCooldown": "28 26 24 22",
 			"AbilityManaCost": "100",
 			"AbilityValues": {
 				"stun_duration": {
@@ -74229,6 +74445,9 @@
 				"strike_crit_mult": {
 					"value": "135 165 195 225",
 					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL"
+				},
+				"AbilityCooldown": {
+					"value": "28 26 24 22"
 				},
 				"strike_radius": "150",
 				"strike_cast_range": "1100",
@@ -74666,7 +74885,7 @@
 		"behavior": "point|aoe|normal_when_stolen",
 		"damage_type": "physical",
 		"cast_range": "0",
-		"cast_point": "1.2",
+		"cast_point": "1",
 		"cooldown": "120 100 80",
 		"duration": "13",
 		"mana_cost": "100",
@@ -74694,8 +74913,8 @@
 			{
 				"talent_name": "special_bonus_unique_monkey_king_4",
 				"key": "bonus_armor",
-				"value": "12 18 24",
-				"talent_value": "212 218 224",
+				"value": "14 19 24",
+				"talent_value": "214 219 224",
 				"header": "BONUS ARMOR:"
 			},
 			{
@@ -74764,7 +74983,7 @@
 			"AbilitySound": "Hero_MonkeyKing.FurArmy",
 			"HasScepterUpgrade": "1",
 			"AbilityDraftPreAbility": "monkey_king_mischief",
-			"AbilityCastPoint": "1.2",
+			"AbilityCastPoint": "1.0",
 			"AbilityCastRange": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "120 100 80",
@@ -74793,7 +75012,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_armor": "12 18 24",
+					"bonus_armor": "14 19 24",
 					"LinkedSpecialBonus": "special_bonus_unique_monkey_king_4"
 				},
 				"07": {
@@ -79023,6 +79242,10 @@
 			{
 				"key": "bonus_bonus_armor",
 				"value": "20"
+			},
+			{
+				"key": "bonus_tooltip_golem_armor",
+				"value": "20"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
@@ -81356,11 +81579,11 @@
 			},
 			{
 				"key": "bonus_radius",
-				"value": "200"
+				"value": "225"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+200 Windrun Radius",
+		"localized_name": "+225 Windrun Radius",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -81677,11 +81900,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "22"
+				"value": "20"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+22 Tombstone Zombie Damage",
+		"localized_name": "+20 Tombstone Zombie Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -81693,7 +81916,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "22",
+					"value": "20",
 					"ad_linked_abilities": "undying_tombstone"
 				}
 			}
@@ -81705,16 +81928,12 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "13"
-			},
-			{
 				"key": "bonus_damage",
-				"value": "13"
+				"value": "18"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+13 Corrosive Skin Damage",
+		"localized_name": "+18 Corrosive Skin Damage Per Second",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -81723,13 +81942,7 @@
 			"ID": "6156",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "13",
-					"ad_linked_abilities": "viper_corrosive_skin"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -83412,11 +83625,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "10"
+				"value": "12"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+10% Whirling Death Attribute Reduction",
+		"localized_name": "+12% Whirling Death Attribute Reduction",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -83428,7 +83641,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "10",
+					"value": "12",
 					"ad_linked_abilities": "shredder_whirling_death"
 				}
 			}
@@ -85444,11 +85657,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_max_attacks",
-				"value": "2"
+				"value": "3"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+2 Flak Cannon Attacks",
+		"localized_name": "+3 Flak Cannon Attacks",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -86042,7 +86255,7 @@
 			},
 			{
 				"key": "damage_per_tick",
-				"value": "50",
+				"value": "50 55 60 65",
 				"header": "DAMAGE PER TICK:"
 			},
 			{
@@ -86105,7 +86318,7 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_tick": "50"
+					"damage_per_tick": "50 55 60 65"
 				},
 				"07": {
 					"var_type": "FIELD_FLOAT",
@@ -87573,6 +87786,29 @@
 		}
 	},
 	{
+		"id": 6383,
+		"name": "special_bonus_unique_morphling_waveform_cooldown",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_AbilityCooldown",
+				"value": "40%"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-40% Waveform Cooldown",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"json_data": {
+			"ID": "6383",
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
 		"id": 6384,
 		"name": "special_bonus_cast_range_400",
 		"behavior": "passive",
@@ -88116,11 +88352,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "-0.1"
+				"value": "-0.10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "--0.1s Eye of the Storm Strike Interval",
+		"localized_name": "--0.10s Eye of the Storm Strike Interval",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -88132,7 +88368,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "-0.1",
+					"value": "-0.10",
 					"ad_linked_abilities": "razor_eye_of_the_storm"
 				}
 			}
@@ -88819,7 +89055,7 @@
 				"jump_horizontal_distance": "225",
 				"rolling_thunder_cooldown": {
 					"value": "0",
-					"special_bonus_unique_pangolier_2": "+2.5"
+					"special_bonus_unique_pangolier_2": "+3.0"
 				},
 				"slow": "20 25 30 35",
 				"slow_duration": "3"
@@ -88834,11 +89070,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_rolling_thunder_cooldown",
-				"value": "2.5"
+				"value": "3.0"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "2.5s Shield Crash CD in Ball",
+		"localized_name": "3s Shield Crash CD in Ball",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -89033,7 +89269,7 @@
 				"talent_name": "special_bonus_unique_snapfire_7",
 				"key": "damage",
 				"value": "100 160 220 280",
-				"talent_value": "160 220 280 340",
+				"talent_value": "170 230 290 350",
 				"header": "DAMAGE:"
 			},
 			{
@@ -89886,7 +90122,7 @@
 		"localized_name": "Soulbind",
 		"description": "Binds a targeted enemy hero to its nearest allied hero within the bind radius, preventing both from moving away from each other. Any unit-targeted ability that either bound hero receives also gets cast on the other hero. If the bind is broken before the duration expires, the initial target will be bound to its nearest allied hero in the radius.",
 		"lore": "The Ascended were chosen sons of Ashkavor, granted immense power by the bonds forged between their own souls and those they were charged with protecting. In the years that followed the ruination of his kin, Grimstroke discovered much more sinister applications for the binding rituals...",
-		"note": "Affected units are leashed, and prevented from blinking.\nProvides vision of both leashed units.",
+		"note": "If bound to another unit, affected units are leashed and prevented from blinking.\nProvides vision of both leashed units.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -89918,7 +90154,7 @@
 				"creep_duration_pct": "50.0",
 				"bonus_reflected_spell_damage": {
 					"value": "0",
-					"special_bonus_unique_grimstroke_soul_chain_reflect_damage": "+20.0"
+					"special_bonus_unique_grimstroke_soul_chain_reflect_damage": "+25.0"
 				}
 			}
 		}
@@ -90540,7 +90776,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+35 Boar Damage",
+		"localized_name": "+35 Boar Attack Damage",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -90749,11 +90985,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "10"
+				"value": "12"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+10% Moment of Courage Proc Chance",
+		"localized_name": "+12% Moment of Courage Proc Chance",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -90765,7 +91001,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"value": "10",
+					"value": "12",
 					"ad_linked_abilities": "legion_commander_moment_of_courage"
 				}
 			}
@@ -91686,7 +91922,7 @@
 			},
 			{
 				"key": "redirect_speed_penatly",
-				"value": "20%",
+				"value": "18%",
 				"header": "SPEED PENALTY WHEN ACTIVE:"
 			},
 			{
@@ -91740,12 +91976,12 @@
 			"AbilityValues": {
 				"physical_damage_reduction": {
 					"value": "40 50 60 70",
-					"special_bonus_unique_mars_bulwark_damage_reduction": "+10"
+					"special_bonus_unique_mars_bulwark_damage_reduction": "+12"
 				},
 				"forward_angle": "140",
 				"physical_damage_reduction_side": {
 					"value": "20 25 30 35",
-					"special_bonus_unique_mars_bulwark_damage_reduction": "+5"
+					"special_bonus_unique_mars_bulwark_damage_reduction": "+6"
 				},
 				"side_angle": "240",
 				"redirect_chance": {
@@ -91754,7 +91990,7 @@
 				},
 				"redirect_range": "900",
 				"redirect_speed_penatly": {
-					"value": "20",
+					"value": "18",
 					"special_bonus_unique_mars_bulwark_speed": "-10"
 				},
 				"redirect_close_range": "100",
@@ -92617,11 +92853,11 @@
 		"ability_special": [
 			{
 				"key": "value",
-				"value": "0.5"
+				"value": "0.75"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+0.5 Min/Max Chaos Bolt Duration",
+		"localized_name": "+0.75 Min/Max Chaos Bolt Duration",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -92633,7 +92869,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"value": "0.5",
+					"value": "0.75",
 					"ad_linked_abilities": "chaos_knight_chaos_bolt"
 				}
 			}
@@ -99897,6 +100133,14 @@
 			{
 				"key": "bonus_base_mana_regen",
 				"value": "0.5"
+			},
+			{
+				"key": "bonus_proximity_mana_regen_tooltip",
+				"value": "1.5"
+			},
+			{
+				"key": "bonus_self_mana_regen_tooltip",
+				"value": "3.0"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
@@ -101591,12 +101835,12 @@
 			{
 				"key": "boar_base_max_health",
 				"value": "300 450 600 750",
-				"header": "BOAR HEALTH:"
+				"header": "BOAR BASE HEALTH:"
 			},
 			{
 				"key": "boar_base_damage",
 				"value": "20 35 50 65",
-				"header": "BOAR ATTACK DAMAGE:"
+				"header": "BOAR BASE ATTACK DAMAGE:"
 			},
 			{
 				"key": "boar_bonus_damage",
@@ -101672,12 +101916,12 @@
 			{
 				"key": "hawk_base_max_health",
 				"value": "150 200 250 300",
-				"header": "HAWK HEALTH:"
+				"header": "HAWK BASE HEALTH:"
 			},
 			{
 				"key": "hawk_base_movespeed",
 				"value": "300 340 380 420",
-				"header": "HAWK SPEED:"
+				"header": "HAWK BASE SPEED:"
 			},
 			{
 				"key": "hawk_base_gold_bounty",
@@ -103928,11 +104172,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage_duration",
-				"value": "2"
+				"value": "3"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+2s Magnetize Duration",
+		"localized_name": "+3s Magnetize Duration",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -107316,7 +107560,7 @@
 		"cast_range": "1200",
 		"cast_point": "0.2",
 		"channel_time": "2.4",
-		"cooldown": "15",
+		"cooldown": "17",
 		"mana_cost": "200",
 		"ability_special": [
 			{
@@ -107371,7 +107615,7 @@
 			"AbilityCastPoint": "0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityChannelAnimation": "ACT_DOTA_CAST_ABILITY_4",
-			"AbilityCooldown": "15",
+			"AbilityCooldown": "17",
 			"AbilityManaCost": "200",
 			"AbilitySpecial": {
 				"01": {
@@ -107516,7 +107760,7 @@
 		"name": "grimstroke_dark_portrait",
 		"hero_id": 121,
 		"behavior": "unit_target|hidden|show_in_guides",
-		"spell_immunity": "no",
+		"spell_immunity": "yes",
 		"target_team": "enemy",
 		"cast_range": "1200",
 		"cast_point": "0",
@@ -107567,8 +107811,8 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
-			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"FightRecapLevel": "1",
 			"MaxLevel": "1",
 			"IsGrantedByScepter": "1",
@@ -108849,6 +109093,7 @@
 				"value": "300"
 			},
 			{
+				"talent_name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
 				"key": "range",
 				"value": "700 900 1100 1300",
 				"header": "CAST RANGE:"
@@ -108927,7 +109172,8 @@
 				},
 				"13": {
 					"var_type": "FIELD_INTEGER",
-					"range": "700 900 1100 1300"
+					"range": "700 900 1100 1300",
+					"LinkedSpecialBonus": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -108943,6 +109189,14 @@
 		"cast_point": "0",
 		"ability_special": [
 			{
+				"talent_name": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
+				"talent_operation": "SPECIAL_BONUS_SUBTRACT",
+				"key": "attack_count",
+				"value": "3",
+				"talent_value": "2",
+				"header": "ATTACKS REQUIRED:"
+			},
+			{
 				"key": "heal_radius",
 				"value": "650"
 			},
@@ -108952,25 +109206,20 @@
 				"header": "HEALING FROM HEROES:"
 			},
 			{
-				"key": "bonus_damage",
-				"value": "125% 150% 175% 200%",
-				"header": "CRITICAL STRIKE DAMAGE:"
+				"key": "heal_from_creeps",
+				"value": "50%",
+				"header": "CREEP HEAL PENALTY:"
 			},
 			{
-				"talent_name": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
-				"talent_operation": "SPECIAL_BONUS_SUBTRACT",
-				"key": "attack_count",
-				"value": "3",
-				"talent_value": "2"
+				"talent_name": "special_bonus_unique_dawnbreaker_luminosity_crit",
+				"key": "bonus_damage",
+				"value": "125% 150% 175% 200%",
+				"talent_value": "175% 200% 225% 250%",
+				"header": "CRITICAL STRIKE DAMAGE:"
 			},
 			{
 				"key": "proc_cooldown",
 				"value": "0"
-			},
-			{
-				"key": "heal_from_creeps",
-				"value": "50%",
-				"header": "CREEP HEAL PENALTY:"
 			},
 			{
 				"key": "allied_healing_pct",
@@ -108980,7 +109229,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/dawnbreaker_luminosity_png.png",
 		"localized_name": "Luminosity",
-		"description": "After **3** attacks, Dawnbreaker powers up, charging her next attack with a critical hit that heals all allied heroes within **650** units around her for a portion of attack damage dealt. Creeps and neutral enemies provide less healing. Allies are healed for **50%** of the amount.",
+		"description": "After a number of attacks, Dawnbreaker powers up, charging her next attack with a critical hit that heals all allied heroes within **650** units around her for a portion of attack damage dealt. Creeps and neutral enemies provide less healing. Allies are healed for **50%** of the amount.",
 		"lore": "Diminished in power without access to the Children's replenishing light, Valora can still recharge herself and her allies by creating order from the chaos which resides within each fight.",
 		"note": "Luminosity Heal is considered a lifesteal and increased by sources of Lifesteal Amplification.",
 		"scepter_grants": false,
@@ -108998,29 +109247,30 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"heal_radius": "650"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"heal_pct": "35 40 45 50"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "125 150 175 200"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
 					"attack_count": "3",
 					"LinkedSpecialBonus": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
 					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
 				},
-				"05": {
-					"var_type": "FIELD_FLOAT",
-					"proc_cooldown": "0.00"
+				"02": {
+					"var_type": "FIELD_INTEGER",
+					"heal_radius": "650"
 				},
-				"06": {
+				"03": {
+					"var_type": "FIELD_INTEGER",
+					"heal_pct": "35 40 45 50"
+				},
+				"04": {
 					"var_type": "FIELD_INTEGER",
 					"heal_from_creeps": "50"
+				},
+				"05": {
+					"var_type": "FIELD_INTEGER",
+					"bonus_damage": "125 150 175 200",
+					"LinkedSpecialBonus": "special_bonus_unique_dawnbreaker_luminosity_crit"
+				},
+				"06": {
+					"var_type": "FIELD_FLOAT",
+					"proc_cooldown": "0.00"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -110009,8 +110259,8 @@
 			{
 				"talent_name": "special_bonus_unique_grimstroke_6",
 				"key": "movespeed_bonus_pct",
-				"value": "10% 12% 14% 16%",
-				"talent_value": "26% 28% 30% 32%",
+				"value": "12% 14% 16% 18%",
+				"talent_value": "28% 30% 32% 34%",
 				"header": "MOVEMENT SPEED BONUS:"
 			},
 			{
@@ -110094,7 +110344,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"movespeed_bonus_pct": "10 12 14 16",
+					"movespeed_bonus_pct": "12 14 16 18",
 					"LinkedSpecialBonus": "special_bonus_unique_grimstroke_6"
 				},
 				"03": {
@@ -111590,6 +111840,8 @@
 			{
 				"key": "total_damage",
 				"value": "75 150 225 300",
+				"talent_name": "special_bonus_unique_hoodwink_bushwhack_damage",
+				"talent_value": "135 210 285 360",
 				"header": "TOTAL DAMAGE:"
 			},
 			{
@@ -111631,7 +111883,8 @@
 				"projectile_speed": "1300",
 				"total_damage": {
 					"value": "75 150 225 300",
-					"CalculateSpellDamageTooltip": "1"
+					"CalculateSpellDamageTooltip": "1",
+					"LinkedSpecialBonus": "special_bonus_unique_hoodwink_bushwhack_damage"
 				},
 				"animation_rate": "0.3",
 				"visual_height": "50"
@@ -111966,8 +112219,8 @@
 			{
 				"talent_name": "special_bonus_unique_marci_guardian_lifesteal",
 				"key": "lifesteal_pct",
-				"value": "35% 40% 45% 50%",
-				"talent_value": "50% 55% 60% 65%",
+				"value": "30% 35% 40% 45%",
+				"talent_value": "45% 50% 55% 60%",
 				"header": "LIFESTEAL:"
 			},
 			{
@@ -112016,7 +112269,7 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"lifesteal_pct": "35 40 45 50",
+					"lifesteal_pct": "30 35 40 45",
 					"LinkedSpecialBonus": "special_bonus_unique_marci_guardian_lifesteal"
 				},
 				"03": {
@@ -112043,7 +112296,7 @@
 		"spell_immunity": "no",
 		"target_team": "friendly",
 		"dispellable": "yes_strong",
-		"cast_range": "800",
+		"cast_range": "450 550 650 750",
 		"cast_point": "0.1",
 		"cooldown": "24 20 16 12",
 		"mana_cost": "70 80 90 100",
@@ -112054,7 +112307,7 @@
 			},
 			{
 				"key": "move_speed",
-				"value": "2000"
+				"value": "1700"
 			},
 			{
 				"key": "min_jump_distance",
@@ -112062,9 +112315,9 @@
 			},
 			{
 				"key": "max_jump_distance",
-				"value": "800",
+				"value": "450 550 650 750",
 				"talent_name": "special_bonus_unique_marci_lunge_range",
-				"talent_value": "925",
+				"talent_value": "575 675 775 875",
 				"header": "CAST / JUMP RANGE:"
 			},
 			{
@@ -112161,7 +112414,7 @@
 			"AbilitySound": "Hero_Marci.Rebound.Cast",
 			"HasShardUpgrade": "1",
 			"AbilityCastPoint": "0.1",
-			"AbilityCastRange": "800",
+			"AbilityCastRange": "450 550 650 750",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
 			"AbilityManaCost": "70 80 90 100",
 			"AbilityValues": {
@@ -112169,10 +112422,10 @@
 					"value": "24 20 16 12",
 					"special_bonus_unique_marci_lunge_cooldown": "-3"
 				},
-				"move_speed": "2000",
+				"move_speed": "1700",
 				"min_jump_distance": "450",
 				"max_jump_distance": {
-					"value": "800",
+					"value": "450 550 650 750",
 					"LinkedSpecialBonus": "special_bonus_unique_marci_lunge_range"
 				},
 				"landing_radius": "275",
@@ -112679,10 +112932,10 @@
 				"header": "BASE DAMAGE:"
 			},
 			{
-				"talent_name": "special_bonus_unique_hoodwink_sharpshooter_speed",
+				"talent_name": "special_bonus_unique_hoodwink_acorn_shot_bounces",
 				"key": "bounce_count",
 				"value": "2 3 4 5",
-				"talent_value": "1.25 2.25 3.25 4.25",
+				"talent_value": "4 5 6 7",
 				"header": "BOUNCE COUNT:"
 			},
 			{
@@ -112746,7 +112999,7 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"bounce_count": "2 3 4 5",
-					"LinkedSpecialBonus": "special_bonus_unique_hoodwink_sharpshooter_speed"
+					"LinkedSpecialBonus": "special_bonus_unique_hoodwink_acorn_shot_bounces"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -113024,11 +113277,11 @@
 		"ability_special": [
 			{
 				"key": "bonus_speed_bonus",
-				"value": "10"
+				"value": "12"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+10% Movement Speed per active Battle Hunger",
+		"localized_name": "+12% Movement Speed per active Battle Hunger",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
