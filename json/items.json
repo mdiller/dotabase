@@ -11059,7 +11059,7 @@
 			},
 			{
 				"key": "bonus_magic_resist",
-				"value": "25",
+				"value": "25%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
@@ -13923,7 +13923,7 @@
 		"icon": "/panorama/images/items/flicker_png.png",
 		"cost": 0,
 		"cooldown": "5",
-		"description": "# Active: Flicker\nDispells debuffs and blinks you in a random forward direction for a random distance between **200** and **600**. If cast within 3 seconds of receving player damage, it will blink in place.\n\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Flicker\nDispells debuffs and blinks you in a random forward direction for a random distance between **200** and **600**. If cast within 3 seconds of receiving player damage, it will blink in place.\n\nDispel Type: **Basic Dispel**",
 		"lore": "The technically-true-to-his-word 'teleportation device' crafted by a notorious fae trickster.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -13973,7 +13973,7 @@
 		"localized_name": "Telescope",
 		"icon": "/panorama/images/items/spy_gadget_png.png",
 		"cost": 0,
-		"description": "# Passive: Prescient Aura\nLowers Scan cooldown by **50%** . Increases attack and cast range of allies in a **1200** unit radius.",
+		"description": "# Passive: Prescient Aura\nLowers Scan cooldown by **50%** . Increases attack range (Ranged only) and cast range of allies in a **1200** unit radius.",
 		"lore": "A handy tool that manages to make close what once was far.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -13986,7 +13986,7 @@
 			{
 				"key": "attack_range",
 				"value": "100",
-				"header": "AURA BONUS ATTACK RANGE:"
+				"header": "AURA BONUS ATTACK RANGE (RANGED ONLY):"
 			},
 			{
 				"key": "cast_range",
@@ -20349,6 +20349,119 @@
 		}
 	},
 	{
+		"id": 1090,
+		"name": "item_muertas_gun",
+		"localized_name": "Mercy & Grace",
+		"icon": "/panorama/images/items/muertas_gun_png.png",
+		"cost": 0,
+		"cooldown": "10",
+		"mana_cost": "160",
+		"description": "# Active: Dead Shot\nFires a ghostly bullet at an enemy unit or tree. When the bullet strikes it will deal **300** damage and slow the target by **-100%** for **0.5** seconds, then ricochet in the vector-targeted direction. The ricochet will damage all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet will be feared for **2** seconds in the direction of the shot.",
+		"lore": "One to deliver the body, the other to claim the soul.",
+		"secret_shop": false,
+		"ability_special": [
+			{
+				"key": "AbilityCastRange",
+				"value": "1000"
+			},
+			{
+				"key": "damage",
+				"value": "300"
+			},
+			{
+				"key": "speed",
+				"value": "2000"
+			},
+			{
+				"key": "radius",
+				"value": "100"
+			},
+			{
+				"key": "ricochet_radius_start",
+				"value": "115"
+			},
+			{
+				"key": "ricochet_radius_end",
+				"value": "115"
+			},
+			{
+				"key": "ricochet_stun_duration",
+				"value": "2.0"
+			},
+			{
+				"key": "ricochet_distance_multiplier",
+				"value": "1"
+			},
+			{
+				"key": "ricochet_fear_duration",
+				"value": "2.0"
+			},
+			{
+				"key": "impact_slow_percent",
+				"value": "-100"
+			},
+			{
+				"key": "impact_slow_duration",
+				"value": "0.5"
+			},
+			{
+				"key": "bonus_cast_pct",
+				"value": "100%",
+				"header": "BONUS CAST RANGE"
+			},
+			{
+				"key": "bonus_spell_amp",
+				"value": "100%",
+				"header": "SPELL AMPLIFICATION"
+			},
+			{
+				"key": "health_pct_penalty",
+				"value": "70%",
+				"header": "HEALTH PENALTY"
+			}
+		],
+		"json_data": {
+			"ID": "1090",
+			"Model": "models/props_gameplay/muerta_minigame_guns.vmdl",
+			"ModelScale": "10",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_TREE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"ItemSellable": "0",
+			"ItemKillable": "0",
+			"AllowedInBackpack": "0",
+			"ItemShareability": "ITEM_FULLY_SHAREABLE",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCastPoint": "0.15",
+			"AbilityCooldown": "10",
+			"AbilityManaCost": "160",
+			"ItemCost": "0",
+			"ItemIsNeutralDrop": "0",
+			"ItemPurchasable": "0",
+			"AbilityValues": {
+				"AbilityCastRange": "1000",
+				"damage": "300",
+				"speed": "2000",
+				"radius": "100",
+				"ricochet_radius_start": "115",
+				"ricochet_radius_end": "115",
+				"ricochet_stun_duration": "2.0",
+				"ricochet_distance_multiplier": "1",
+				"ricochet_fear_duration": "2.0",
+				"impact_slow_percent": "-100",
+				"impact_slow_duration": "0.5",
+				"bonus_cast_pct": "100",
+				"bonus_spell_amp": "100",
+				"health_pct_penalty": "70"
+			}
+		}
+	},
+	{
 		"id": 1466,
 		"name": "item_gungir",
 		"localized_name": "Gleipnir",
@@ -20517,6 +20630,128 @@
 			"ItemResult": "item_gungir",
 			"ItemRequirements": {
 				"01": "item_maelstrom;item_rod_of_atos*"
+			}
+		}
+	},
+	{
+		"id": 4300,
+		"name": "item_ofrenda",
+		"localized_name": "Beloved Memory",
+		"icon": "/panorama/images/items/ofrenda_png.png",
+		"cost": 0,
+		"cooldown": "3",
+		"cast_range": "600",
+		"mana_cost": "0",
+		"description": "# Active: Honor the Dead\nPlace this Offering on an Altar to honor the dead with a memory from those they left behind.",
+		"lore": "Take joy in remembering those beloved who've passed now beyond the veil.",
+		"secret_shop": false,
+		"ability_special": [
+			{
+				"key": "speed",
+				"value": "1000"
+			}
+		],
+		"json_data": {
+			"ID": "4300",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE ",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+			"AbilityCastRange": "600",
+			"AbilityCastPoint": "0.2",
+			"AbilityCooldown": "3",
+			"ItemCost": "0",
+			"ItemIsNeutralDrop": "0",
+			"ItemPurchasable": "0",
+			"ItemSellable": "0",
+			"ItemKillable": "0",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilityValues": {
+				"speed": "1000"
+			}
+		}
+	},
+	{
+		"id": 4301,
+		"name": "item_ofrenda_shovel",
+		"localized_name": "Scrying Shovel",
+		"icon": "/panorama/images/items/ofrenda_shovel_png.png",
+		"cost": 0,
+		"cooldown": "8",
+		"cast_range": "250",
+		"mana_cost": "0",
+		"description": "# Active: Dig\nSearch the map for Offerings to the dead.",
+		"lore": "You don't know where it came from, but it knows where you need to go. All you need to do is dig.",
+		"secret_shop": false,
+		"ability_special": [],
+		"json_data": {
+			"ID": "4301",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_CHANNELLED  | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityCastAnimation": "ACT_DOTA_GENERIC_CHANNEL_1",
+			"MaxLevel": "1",
+			"AbilityCastRange": "250",
+			"AbilityCastPoint": "0.1",
+			"AbilityChannelTime": "1",
+			"ItemCost": "0",
+			"ItemIsNeutralDrop": "0",
+			"ItemPurchasable": "0",
+			"ItemSellable": "0",
+			"ItemKillable": "0",
+			"AbilityCooldown": "8",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0"
+		}
+	},
+	{
+		"id": 4302,
+		"name": "item_ofrenda_pledge",
+		"localized_name": "Forebearer's Fortune",
+		"icon": "/panorama/images/items/ofrenda_pledge_png.png",
+		"cost": 0,
+		"cooldown": "0.5",
+		"cast_range": "1200",
+		"mana_cost": "0",
+		"description": "# Active: Undying Promise\nSignal to the spirits of the other realm your commitment to honoring them. If everyone in the battle makes an Undying Promise before the fight begins, the dead might be willing to listen.",
+		"lore": "This item seems unstable. Like it might just disappear.",
+		"secret_shop": false,
+		"ability_special": [
+			{
+				"key": "radius",
+				"value": "600"
+			},
+			{
+				"key": "speed",
+				"value": "1200"
+			},
+			{
+				"key": "linger_duration",
+				"value": "5.0"
+			}
+		],
+		"json_data": {
+			"ID": "4302",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE ",
+			"AbilityCastAnimation": "ACT_INVALID",
+			"MaxLevel": "1",
+			"AbilityCastRange": "1200",
+			"AbilityCastPoint": "0.0",
+			"ItemCost": "0",
+			"ItemIsNeutralDrop": "0",
+			"ItemPurchasable": "1",
+			"ItemStockMax": "5",
+			"ItemStockInitial": "5",
+			"ItemSellable": "0",
+			"ItemKillable": "0",
+			"AbilityCooldown": "0.5",
+			"AbilityDamage": "0",
+			"AbilityManaCost": "0",
+			"AbilityValues": {
+				"radius": "600",
+				"speed": "1200",
+				"linger_duration": "5.0"
 			}
 		}
 	}
