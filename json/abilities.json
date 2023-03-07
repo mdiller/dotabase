@@ -1004,7 +1004,7 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "bonus_purgable",
+				"key": "bonus_undispellable",
 				"value": "1"
 			}
 		],
@@ -9379,6 +9379,7 @@
 		"behavior": "no_target|hidden|show_in_guides",
 		"damage_type": "pure",
 		"spell_immunity": "yes",
+		"dispellable": "yes",
 		"cast_point": "0.15",
 		"cooldown": "15",
 		"mana_cost": "50",
@@ -9428,6 +9429,7 @@
 			"ID": "662",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"MaxLevel": "1",
 			"FightRecapLevel": "1",
@@ -10498,7 +10500,10 @@
 				"berserk_bonus_movement_speed": "50",
 				"melee_bonus": "100",
 				"duration": "7",
-				"health_cost_pct": "20"
+				"health_cost_pct": {
+					"value": "20",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PURE"
+				}
 			}
 		}
 	},
@@ -11742,7 +11747,7 @@
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+25% X Mark the Spot Move Speed",
+		"localized_name": "+25% X Marks the Spot Move Speed",
 		"description": "Affects Allies positively and Enemies negatively",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -13790,6 +13795,10 @@
 			{
 				"key": "value",
 				"value": "100"
+			},
+			{
+				"key": "bonus_AbilityCastRange",
+				"value": "100"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
@@ -14686,7 +14695,6 @@
 		"name": "abyssal_underlord_dark_portal",
 		"hero_id": 108,
 		"behavior": "point|ignore_backswing",
-		"spell_immunity": "yes",
 		"dispellable": "yes",
 		"cast_range": "0",
 		"cast_point": "0.45",
@@ -14738,7 +14746,6 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING ",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"FightRecapLevel": "1",
-			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_Undying.Tombstone",
 			"MaxLevel": "3",
@@ -15264,6 +15271,10 @@
 			{
 				"key": "pre_chase_time",
 				"value": "0.1"
+			},
+			{
+				"key": "max_chase_time",
+				"value": "4"
 			}
 		],
 		"slot": 1,
@@ -15307,7 +15318,8 @@
 				},
 				"speed": "500.0",
 				"acceleration": "2000",
-				"pre_chase_time": "0.1"
+				"pre_chase_time": "0.1",
+				"max_chase_time": "4"
 			}
 		}
 	},
@@ -15474,7 +15486,6 @@
 		"name": "techies_reactive_tazer",
 		"hero_id": 105,
 		"behavior": "no_target",
-		"damage_type": "magical",
 		"spell_immunity": "no",
 		"target_team": "friendly",
 		"dispellable": "yes",
@@ -15506,7 +15517,8 @@
 			{
 				"key": "scepter_damage",
 				"value": "300",
-				"scepter_upgrade": "1"
+				"scepter_upgrade": "1",
+				"header": "DAMAGE:"
 			}
 		],
 		"slot": 2,
@@ -15516,13 +15528,12 @@
 		"lore": "A steady bomb hand prefers an abundance of personal space.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Reactive Tazer can be cast on allies and deals **300** damage on detonation. Also deals damage to any enemy that attacks the affected ally.",
+		"scepter_description": "Reactive Tazer can be cast on allies and deals damage on detonation. Also deals damage to any enemy that attacks the affected ally.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "886",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
@@ -15542,7 +15553,8 @@
 				"stun_radius": "400",
 				"scepter_damage": {
 					"value": "300",
-					"RequiresScepter": "1"
+					"RequiresScepter": "1",
+					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
 				}
 			}
 		}
@@ -16516,7 +16528,7 @@
 		"icon": "/panorama/images/spellicons/shadow_demon_demonic_cleanse_png.png",
 		"localized_name": "Demonic Cleanse",
 		"description": "Cleanses the target allied unit, removing negative buffs for the duration.  At the end of the duration, the unit is healed. Units under the effect of Disruption can still be affected by Demonic Cleanse.\n\nDISPEL TYPE: Basic Dispel",
-		"note": "Negative buffs are continously removed from the target for the duration of the Cleanse.",
+		"note": "Can be cast on invulnerable units.\nNegative buffs are continously removed from the target for the duration of the Cleanse.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Cooldown is removed, replaced with **3** charges that replenish every **60** seconds.",
@@ -16536,7 +16548,6 @@
 			"HasScepterUpgrade": "1",
 			"IsGrantedByShard": "1",
 			"AbilitySound": "Hero_ShadowDemon.DemonicPurge.Cast",
-			"LinkedAbility": "shadow_demon_demonic_purge",
 			"AbilityDuration": "7.0",
 			"AbilityCooldown": "60",
 			"AbilityCastRange": "800",
@@ -16719,7 +16730,8 @@
 		"ability_special": [
 			{
 				"key": "spell_amp",
-				"value": "5"
+				"value": "5%",
+				"header": "INCREASED SPELL DAMAGE RECEIVED:"
 			},
 			{
 				"key": "radius",
@@ -19301,7 +19313,7 @@
 		"id": 1001,
 		"name": "shadow_demon_disseminate",
 		"hero_id": 79,
-		"behavior": "unit_target",
+		"behavior": "unit_target|aoe",
 		"spell_immunity": "no",
 		"target_team": "both",
 		"cast_range": "700 800 900 1000",
@@ -19334,7 +19346,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "1001",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
@@ -21395,14 +21407,18 @@
 				"value": "200"
 			},
 			{
-				"key": "tooltip_channel_time",
-				"value": "3"
+				"talent_name": "special_bonus_unique_tinker_5",
+				"talent_operation": "SPECIAL_BONUS_SUBTRACT",
+				"key": "channel_time_tooltip",
+				"value": "4.5 4 3.5",
+				"talent_value": "4 3.5 3",
+				"header": "CHANNEL TIME:"
 			}
 		],
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/tinker_keen_teleport_png.png",
 		"localized_name": "Keen Conveyance",
-		"description": "CHANNELED - After channeling for **4.5**/**4**/**3.5**s teleport to a target friendly structure. Level 2 allows teleporting to friendly units and Level 3 to friendly heroes.",
+		"description": "CHANNELED - Teleport to a target friendly structure. Level 2 allows teleporting to friendly units and Level 3 to friendly heroes.",
 		"lore": "As Boush likes to say, 'There is nothing the arcane can accomplish that the curious mind cannot reproduce given time. And proper funding, of course.'",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -21438,7 +21454,9 @@
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
-					"tooltip_channel_time": "3.0"
+					"channel_time_tooltip": "4.5 4.0 3.5",
+					"LinkedSpecialBonus": "special_bonus_unique_tinker_5",
+					"LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
 				}
 			}
 		}
@@ -22960,7 +22978,8 @@
 				"02": {
 					"var_type": "FIELD_INTEGER",
 					"damage": "6 12 18 24",
-					"LinkedSpecialBonus": "special_bonus_unique_drow_ranger_2"
+					"LinkedSpecialBonus": "special_bonus_unique_drow_ranger_2",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -23797,6 +23816,11 @@
 			{
 				"key": "healing_ward_bonus_health",
 				"value": "0"
+			},
+			{
+				"key": "healing_ward_hits_to_kill_tooltip",
+				"value": "1",
+				"header": "HITS TO DESTROY:"
 			}
 		],
 		"slot": 2,
@@ -23827,6 +23851,10 @@
 				},
 				"healing_ward_bonus_health": {
 					"value": "0",
+					"special_bonus_unique_juggernaut_2": "+2"
+				},
+				"healing_ward_hits_to_kill_tooltip": {
+					"value": "1",
 					"special_bonus_unique_juggernaut_2": "+2"
 				}
 			},
@@ -25192,7 +25220,6 @@
 		"name": "mirana_leap",
 		"hero_id": 9,
 		"behavior": "no_target|ignore_backswing|root_disables",
-		"damage_type": "magical",
 		"dispellable": "yes",
 		"cooldown": "45 40 35 30",
 		"mana_cost": "40",
@@ -25274,7 +25301,6 @@
 		"json_data": {
 			"ID": "5050",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Ability.Leap",
 			"HasShardUpgrade": "1",
@@ -25305,7 +25331,8 @@
 				},
 				"shard_damage": {
 					"value": "150",
-					"RequiresShard": "1"
+					"RequiresShard": "1",
+					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
 				},
 				"shard_slow_pct": {
 					"value": "30",
@@ -26213,7 +26240,6 @@
 		"mana_cost": "0",
 		"ability_special": [
 			{
-				"damagetype": "DAMAGE_TYPE_NONE",
 				"talent_name": "special_bonus_unique_nevermore_1",
 				"key": "necromastery_damage_per_soul",
 				"value": "1 2 3 4",
@@ -26292,8 +26318,7 @@
 					"var_type": "FIELD_INTEGER",
 					"necromastery_damage_per_soul": "1 2 3 4",
 					"CalculateSpellDamageTooltip": "0",
-					"LinkedSpecialBonus": "special_bonus_unique_nevermore_1",
-					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
+					"LinkedSpecialBonus": "special_bonus_unique_nevermore_1"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -27356,13 +27381,14 @@
 			},
 			{
 				"key": "duration",
-				"value": "5 6 7 8"
+				"value": "5 6 7 8",
+				"header": "DURATION:"
 			}
 		],
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/pudge_flesh_heap_png.png",
 		"localized_name": "Flesh Heap",
-		"description": "Gives Pudge a guaranteed damage block against all types of attack. Passively grants bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity.  Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active.",
+		"description": "Gives Pudge damage block against all sources. Passively grants bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity.  Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active.",
 		"lore": "The Butcher gives new meaning to the words 'meat shield.'",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -27669,7 +27695,7 @@
 		"slot": 6,
 		"icon": "/panorama/images/spellicons/pudge_dismember_png.png",
 		"localized_name": "Dismember",
-		"description": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Pudge gets healed for the same amount he damages. Lasts longer on creeps.",
+		"description": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Damage is increased by Pudge's Strength and heals him for the total amount. Pudge pulls the unit at a rate of **75** units, up to a minimum of **125** range. Lasts longer on creeps.",
 		"lore": "'When I'm through with these vermin, they'll be fit for a pie!'",
 		"note": "If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember.",
 		"scepter_grants": false,
@@ -28035,6 +28061,13 @@
 				"header": "ATTACK DAMAGE:"
 			},
 			{
+				"talent_name": "special_bonus_unique_shadow_shaman_8",
+				"key": "attack_range_tooltip",
+				"value": "650",
+				"talent_value": "770",
+				"header": "ATTACK RANGE:"
+			},
+			{
 				"key": "duration",
 				"value": "45",
 				"header": "DURATION:"
@@ -28101,25 +28134,30 @@
 					"CalculateSpellDamageTooltip": "0"
 				},
 				"03": {
+					"var_type": "FIELD_INTEGER",
+					"attack_range_tooltip": "650",
+					"LinkedSpecialBonus": "special_bonus_unique_shadow_shaman_8"
+				},
+				"04": {
 					"var_type": "FIELD_FLOAT",
 					"duration": "45.0 45.0 45.0"
 				},
-				"04": {
+				"05": {
 					"var_type": "FIELD_INTEGER",
 					"scepter_range": "225",
 					"RequiresScepter": "1"
 				},
-				"05": {
+				"06": {
 					"var_type": "FIELD_INTEGER",
 					"spawn_radius": "150"
 				},
-				"06": {
+				"07": {
 					"var_type": "FIELD_INTEGER",
 					"hits_to_destroy_tooltip": "2",
 					"LinkedSpecialBonus": "special_bonus_unique_shadow_shaman_1",
 					"LinkedSpecialBonusField": "value2"
 				},
-				"07": {
+				"08": {
 					"var_type": "FIELD_INTEGER",
 					"hits_to_destroy_tooltip_creeps": "4",
 					"LinkedSpecialBonus": "special_bonus_unique_shadow_shaman_1"
@@ -28644,6 +28682,7 @@
 		"name": "skeleton_king_vampiric_aura",
 		"hero_id": 42,
 		"behavior": "no_target",
+		"damage_type": "physical",
 		"target_team": "friendly",
 		"cast_point": "0.1",
 		"cooldown": "50",
@@ -28687,6 +28726,13 @@
 			{
 				"key": "xp_bounty",
 				"value": "5"
+			},
+			{
+				"key": "skeleton_damage_tooltip",
+				"value": "34",
+				"talent_name": "special_bonus_unique_wraith_king_6",
+				"talent_value": "60",
+				"header": "SKELETON DAMAGE:"
 			}
 		],
 		"slot": 2,
@@ -28702,6 +28748,7 @@
 		"json_data": {
 			"ID": "5087",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityCastPoint": "0.1",
 			"AbilityManaCost": "70 80 90 100",
@@ -28726,7 +28773,12 @@
 				"spawn_interval": "0.25",
 				"reincarnate_time": "3",
 				"gold_bounty": "5",
-				"xp_bounty": "5"
+				"xp_bounty": "5",
+				"skeleton_damage_tooltip": {
+					"value": "34",
+					"LinkedSpecialBonus": "special_bonus_unique_wraith_king_6",
+					"CalculateSpellDamageTooltip": "0"
+				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
@@ -28830,7 +28882,7 @@
 				"header": "BONUS MOVE SPEED:"
 			},
 			{
-				"scepter_upgrade": "1",
+				"shard_upgrade": "1",
 				"key": "shard_skeleton_count",
 				"value": "3"
 			}
@@ -28846,7 +28898,7 @@
 		"scepter_description": "If a nearby allied hero is slain, they will be transformed into a wraith and have their death delayed and gain bonus attack and movement speed.",
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Causes Reincarnation to have no mana cost and spawn %shard_skeleton_count% skeletons to attack each nearby enemy hero when Reincarnation is triggered.",
+		"shard_description": "Causes Reincarnation to have no mana cost and spawn **3** skeletons to attack each nearby enemy hero when Reincarnation is triggered.",
 		"json_data": {
 			"ID": "5089",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -28907,7 +28959,7 @@
 				"11": {
 					"var_type": "FIELD_INTEGER",
 					"shard_skeleton_count": "3",
-					"RequiresScepter": "1"
+					"RequiresShard": "1"
 				}
 			}
 		}
@@ -30602,6 +30654,7 @@
 				"header": "BONUS BASE DAMAGE:"
 			},
 			{
+				"damagetype": "DAMAGE_TYPE_NONE",
 				"key": "bonus_damage_buildings",
 				"value": "40% 55% 70% 85%",
 				"header": "BONUS BUILDING DAMAGE:"
@@ -30675,7 +30728,8 @@
 				"03": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_damage_buildings": "40 55 70 85",
-					"CalculateSpellDamageTooltip": "0"
+					"CalculateSpellDamageTooltip": "0",
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -30710,6 +30764,7 @@
 		"name": "tiny_grow",
 		"hero_id": 19,
 		"behavior": "passive",
+		"damage_type": "physical",
 		"ability_special": [
 			{
 				"key": "bonus_armor",
@@ -30750,6 +30805,7 @@
 			"ID": "5109",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilitySound": "Tiny.Grow",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityValues": {
@@ -30760,7 +30816,9 @@
 				},
 				"tree_bonus_damage_pct": {
 					"value": "20 30 40",
-					"special_bonus_unique_tiny_7": "+40"
+					"special_bonus_unique_tiny_7": "+40",
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"attack_speed_reduction": "-30",
 				"toss_bonus_damage": {
@@ -31897,10 +31955,9 @@
 		"localized_name": "Vengeance Aura",
 		"description": "Vengeful Spirit's presence increases the damage of nearby friendly heroes.",
 		"lore": "Although they may not share her undying passion for revenge, allies do draw on her fanaticism in combat.",
-		"note": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.\nStrong Illusions are not instantly killed by spells.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes full damage and can cast all of her spells. Illusion has **12%** movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her.",
+		"scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes full damage and can cast all of her spells. Illusion has **12%** movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her. Strong Illusions are not instantly killed by spells.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -32043,7 +32100,7 @@
 		"ability_special": [
 			{
 				"key": "damage_reduction",
-				"value": "30 40 50",
+				"value": "30% 40% 50%",
 				"header": "DAMAGE REDUCTION:"
 			},
 			{
@@ -34957,7 +35014,8 @@
 				"talent_name": "special_bonus_unique_sniper_4",
 				"key": "duration",
 				"value": "3",
-				"talent_value": "4"
+				"talent_value": "4",
+				"header": "DURATION:"
 			},
 			{
 				"key": "slow",
@@ -34971,7 +35029,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/sniper_take_aim_png.png",
 		"localized_name": "Take Aim",
-		"description": "Extends the attack range of Sniper's rifle. Can be activated to provide **100%** Headshot chance for 3 seconds. Slows you by **45**/**40**/**35**/**30%** for the duration.",
+		"description": "Extends the attack range of Sniper's rifle. Can be activated to provide **100%** Headshot chance. Slows you by **45**/**40**/**35**/**30%** for the duration.",
 		"lore": "Kardel always takes it upon himself to stay as far from harm as he can while still performing his role - taking perfect aim.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -35414,6 +35472,11 @@
 				"key": "mana_per_kill",
 				"value": "1 2 3",
 				"header": "MANA REGEN:"
+			},
+			{
+				"key": "AbilityCastRange",
+				"value": "600",
+				"header": "CAST RANGE:"
 			}
 		],
 		"slot": 6,
@@ -35441,13 +35504,16 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
 			"AbilityCooldown": "110",
 			"AbilityManaCost": "250 375 500",
-			"AbilityCastRange": "600",
 			"AbilityModifierSupportValue": "0.1",
 			"AbilityValues": {
 				"damage_per_health": "0.7 0.8 0.9",
 				"stun_duration": "1.5 1.5 1.5",
 				"hp_per_kill": "2 4 6",
-				"mana_per_kill": "1 2 3"
+				"mana_per_kill": "1 2 3",
+				"AbilityCastRange": {
+					"value": "600",
+					"special_bonus_unique_necrophos_6": "+100"
+				}
 			}
 		}
 	},
@@ -36012,7 +36078,8 @@
 			},
 			{
 				"key": "duration",
-				"value": "12"
+				"value": "12",
+				"header": "DEBUFF DURATION:"
 			},
 			{
 				"key": "damage_amp",
@@ -36131,7 +36198,6 @@
 		"id": 5171,
 		"name": "beastmaster_boar_poison",
 		"behavior": "passive",
-		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"ability_special": [
@@ -36161,7 +36227,6 @@
 		"json_data": {
 			"ID": "5171",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityValues": {
@@ -37776,7 +37841,7 @@
 		"localized_name": "Stifling Dagger",
 		"description": "Throws a dagger slowing the enemy unit's movement speed, dealing **65**+**25%**/**40%**/**55%**/**70%** of Phantom Assassin's attack damage as physical damage and applying attack effects from items and abilities.",
 		"lore": "The first skill learned by the Sisters of the Veil often signals an incoming hit.",
-		"note": "If an attack effect is chance-based, the chance of its application will be the same as its chance to occur.\nSpell-immune enemies are not affected by Stifling Dagger's slow.",
+		"note": "If an attack effect is chance-based, the chance of its application will be the same as its chance to occur.\nSpell-immune enemies are not affected by Stifling Dagger's slow.\nStifling Dagger grants vision around its location while it travels and upon impact.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -41495,7 +41560,7 @@
 		"localized_name": "Sprout",
 		"description": "Sprouts a ring of trees around a unit, trapping it in place, and providing vision in a **250** radius.",
 		"lore": "Verdant overgrowth is a common ailment reported by Nature's Prophet's attackers.",
-		"note": "Sprout can be cast on any unit, or the ground.\nTrees created by Sprout have the same interactions with abilities as regular trees.",
+		"note": "Sprout can be cast on any unit, or the ground.\nTrees created by Sprout have the same interactions with abilities as regular trees.\nA Tango that consumes a tree created by Sprout provides double the heal duration.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -41713,6 +41778,7 @@
 				"header": "DAMAGE:"
 			},
 			{
+				"damagetype": "DAMAGE_TYPE_NONE",
 				"key": "damage_percent_add",
 				"value": "10%",
 				"header": "ADDED DAMAGE PER BOUNCE:"
@@ -41722,7 +41788,7 @@
 				"value": "0.25"
 			},
 			{
-				"damagetype": "DAMAGE_TYPE_NONE",
+				"damagetype": "DAMAGE_TYPE_PHYSICAL",
 				"key": "kill_damage",
 				"value": "6",
 				"header": "BONUS DAMAGE PER UNIT:"
@@ -41790,7 +41856,9 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_percent_add": "10"
+					"damage_percent_add": "10",
+					"CalculateSpellDamageTooltip": "0",
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -41799,12 +41867,14 @@
 				"05": {
 					"var_type": "FIELD_INTEGER",
 					"kill_damage": "6",
-					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"06": {
 					"var_type": "FIELD_FLOAT",
 					"kill_damage_duration": "50",
-					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"061": {
 					"var_type": "FIELD_FLOAT",
@@ -41891,6 +41961,7 @@
 		"name": "life_stealer_feast",
 		"hero_id": 54,
 		"behavior": "passive",
+		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"ability_special": [
 			{
@@ -41920,6 +41991,7 @@
 			"ID": "5250",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -41928,7 +42000,8 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"hp_damage_percent": "0.8 1.1 1.4 1.7"
+					"hp_damage_percent": "0.8 1.1 1.4 1.7",
+					"CalculateSpellDamageTooltip": "0"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -44013,6 +44086,7 @@
 		"name": "night_stalker_darkness",
 		"hero_id": 60,
 		"behavior": "no_target",
+		"damage_type": "physical",
 		"dispellable": "no",
 		"cast_point": "0.3",
 		"cooldown": "140 135 130",
@@ -44042,6 +44116,7 @@
 			"ID": "5278",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilitySound": "Hero_Nightstalker.Darkness",
 			"AbilityCastPoint": "0.3 0.3 0.3",
@@ -44055,7 +44130,8 @@
 				},
 				"bonus_damage": {
 					"value": "50 100 150",
-					"special_bonus_unique_night_stalker_3": "+35"
+					"special_bonus_unique_night_stalker_3": "+35",
+					"CalculateSpellDamageTooltip": "0"
 				}
 			}
 		}
@@ -44360,7 +44436,8 @@
 			"AbilityManaCost": "50 60 70 80",
 			"AbilityValues": {
 				"bonus_damage": {
-					"value": "35 45 55 65"
+					"value": "35 45 55 65",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"lifesteal_pct": {
 					"value": "40 60 80 100"
@@ -44423,7 +44500,6 @@
 		"id": 5284,
 		"name": "broodmother_poison_sting",
 		"behavior": "passive",
-		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"ability_special": [
@@ -44453,7 +44529,6 @@
 		"json_data": {
 			"ID": "5284",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityModifierSupportBonus": "15",
@@ -46821,7 +46896,7 @@
 		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "yes",
-		"cast_range": "550",
+		"cast_range": "600",
 		"cast_point": "0",
 		"cooldown": "3",
 		"mana_cost": "20",
@@ -46889,7 +46964,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilitySound": "Hero_Batrider.StickyNapalm.Impact",
 			"HasShardUpgrade": "1",
-			"AbilityCastRange": "550",
+			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0",
 			"AbilityCooldown": "3.0 3.0 3.0 3.0",
 			"AbilityManaCost": "20",
@@ -51772,7 +51847,8 @@
 				"bonus_damage": {
 					"value": "10 22 34 46 58 70 82 94",
 					"levelkey": "exortlevel",
-					"special_bonus_unique_invoker_5": "+30"
+					"special_bonus_unique_invoker_5": "+30",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"duration": "9"
 			}
@@ -52768,7 +52844,7 @@
 			},
 			{
 				"key": "wolf_damage",
-				"value": "18 24 30 36",
+				"value": "21 27 33 39",
 				"header": "DAMAGE:"
 			},
 			{
@@ -52821,7 +52897,10 @@
 				"wolf_index": "1 2 3 4",
 				"wolf_duration": "50",
 				"wolf_bat": "1.2 1.1 1.0 0.9",
-				"wolf_damage": "18 24 30 36",
+				"wolf_damage": {
+					"value": "21 27 33 39",
+					"special_bonus_unique_lycan_3": "+10"
+				},
 				"wolf_hp": {
 					"value": "325 375 425 475",
 					"special_bonus_unique_lycan_7": "+200"
@@ -53397,7 +53476,7 @@
 				"key": "shard_tooltip_void_brewling_hp",
 				"value": "1200 1500 1800",
 				"talent_value": "2400 2700 3000",
-				"header": "HP:"
+				"header": "VOID BREWLING HP:"
 			}
 		],
 		"slot": 6,
@@ -53805,8 +53884,10 @@
 		"mana_cost": "75",
 		"ability_special": [
 			{
+				"talent_name": "special_bonus_unique_lone_druid_7",
 				"key": "bear_hp",
 				"value": "1100 1400 1700 2000",
+				"talent_value": "2100 2400 2700 3000",
 				"header": "BEAR HP:"
 			},
 			{
@@ -53838,8 +53919,10 @@
 				"value": "120"
 			},
 			{
+				"talent_name": "special_bonus_unique_lone_druid_11",
 				"key": "movespeed_tooltip",
 				"value": "340 360 380 400",
+				"talent_value": "365 385 405 425",
 				"header": "BEAR MOVESPEED:"
 			}
 		],
@@ -53866,7 +53949,8 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bear_hp": "1100 1400 1700 2000"
+					"bear_hp": "1100 1400 1700 2000",
+					"LinkedSpecialBonus": "special_bonus_unique_lone_druid_7"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -53893,7 +53977,8 @@
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
-					"movespeed_tooltip": "340 360 380 400"
+					"movespeed_tooltip": "340 360 380 400",
+					"LinkedSpecialBonus": "special_bonus_unique_lone_druid_11"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -54377,7 +54462,7 @@
 			{
 				"key": "spell_resistance",
 				"value": "33%",
-				"header": "SPELL RESISTANCE:"
+				"header": "MAGIC RESISTANCE:"
 			},
 			{
 				"key": "bonus_building_damage",
@@ -54392,7 +54477,7 @@
 		],
 		"icon": "/panorama/images/spellicons/lone_druid_spirit_bear_demolish_png.png",
 		"localized_name": "Demolish",
-		"description": "Increases the power of the Spirit Bear, causing it to deal more damage to buildings and have additional spell resistance.",
+		"description": "Increases the power of the Spirit Bear, causing it to deal more damage to buildings and have additional magic resistance.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -54840,7 +54925,7 @@
 		"localized_name": "Demonic Purge",
 		"description": "Purges the target enemy unit, removing positive buffs, and slowing the target for the duration.  The unit slowly regains its speed until the end of the duration, upon which damage is dealt.  Units under the effect of Disruption can still be affected by Demonic Purge.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "Once Shadow Demon no longer has any need for his collected cultist, he releases it from its subservience - and its life.",
-		"note": "The slow starts at **100%** decreases over time to **20%**.\nPositive buffs are continously removed from the target for the duration of the Purge.",
+		"note": "The slow starts at **100%** and decreases over time to **20%**.\nPositive buffs are continously removed from the target for the duration of the Purge.\nCan be cast on invulnerable units.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
 		"scepter_description": "Cooldown is removed, replaced with **3** charges that replenish every **60** seconds. Also causes Demonic Purge to break its target's passive abilities while active.",
@@ -55946,7 +56031,7 @@
 				"header": "DAMAGE PER SECOND:"
 			},
 			{
-				"key": "purgable",
+				"key": "undispellable",
 				"value": "0"
 			}
 		],
@@ -55988,7 +56073,7 @@
 					"value": "85",
 					"CalculateSpellDamageTooltip": "1"
 				},
-				"purgable": {
+				"undispellable": {
 					"value": "0",
 					"special_bonus_unique_treant_11": "+1"
 				}
@@ -56524,6 +56609,7 @@
 		"name": "undying_tombstone",
 		"hero_id": 85,
 		"behavior": "point|ignore_backswing",
+		"damage_type": "physical",
 		"spell_immunity": "no",
 		"cast_range": "500",
 		"cast_point": "0.6",
@@ -56560,6 +56646,13 @@
 				"key": "zombie_interval",
 				"value": "4 3.6 3.2 2.8",
 				"header": "ZOMBIE SPAWN INTERVAL:"
+			},
+			{
+				"talent_name": "special_bonus_unique_undying",
+				"key": "zombie_damage_tooltip",
+				"value": "34",
+				"talent_value": "54",
+				"header": "ZOMBIE ATTACK DAMAGE:"
 			}
 		],
 		"slot": 3,
@@ -56575,6 +56668,7 @@
 		"json_data": {
 			"ID": "5444",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"FightRecapLevel": "1",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilitySound": "Hero_Undying.Tombstone",
@@ -56609,6 +56703,12 @@
 				"06": {
 					"var_type": "FIELD_FLOAT",
 					"zombie_interval": "4.0 3.6 3.2 2.8"
+				},
+				"07": {
+					"var_type": "FIELD_INTEGER",
+					"zombie_damage_tooltip": "34",
+					"LinkedSpecialBonus": "special_bonus_unique_undying",
+					"CalculateSpellDamageTooltip": "0"
 				}
 			}
 		}
@@ -58009,7 +58109,7 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Vendetta now moves faster, and a successful Vendetta attack now reduces the target's Magic Resistance.",
+		"shard_description": "Vendetta now moves faster, and a successful Vendetta attack now increases the target's spell damage taken.",
 		"json_data": {
 			"ID": "5465",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
@@ -58368,7 +58468,7 @@
 		"slot": 3,
 		"icon": "/panorama/images/spellicons/naga_siren_rip_tide_png.png",
 		"localized_name": "Rip Tide",
-		"description": "Every **6** attack from naga and her illusions, the Naga Siren and her images will hit all nearby units with a damaging wave of water that lowers armor for **4** seconds.",
+		"description": "Every **6** attacks from naga and her illusions, the Naga Siren and her images will hit all nearby units with a damaging wave of water that lowers armor for **4** seconds.",
 		"lore": "A torrent from the Deep Ones crushes the defenses of the Siren's enemies.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -59335,10 +59435,8 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"talent_name": "special_bonus_unique_visage_5",
 				"key": "max_layers",
 				"value": "4",
-				"talent_value": "14",
 				"header": "MAX LAYERS:"
 			},
 			{
@@ -59402,8 +59500,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"max_layers": "4",
-					"LinkedSpecialBonus": "special_bonus_unique_visage_5"
+					"max_layers": "4"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -59449,6 +59546,7 @@
 		"name": "visage_summon_familiars",
 		"hero_id": 92,
 		"behavior": "no_target|immediate",
+		"damage_type": "physical",
 		"cast_point": "0",
 		"cooldown": "130 120 110",
 		"mana_cost": "150",
@@ -59497,6 +59595,7 @@
 		"json_data": {
 			"ID": "5483",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"AbilityDraftUltScepterAbility": "visage_silent_as_the_grave",
 			"AbilitySound": "Hero_Visage.SummonFamiliars.Cast",
@@ -59521,7 +59620,8 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"familiar_attack_damage": "25 50 75",
-					"LinkedSpecialBonus": "special_bonus_unique_visage_7"
+					"LinkedSpecialBonus": "special_bonus_unique_visage_7",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -60000,7 +60100,6 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_Wisp.Relocate",
-			"LinkedAbility": "wisp_tether",
 			"AbilityCastPoint": "0",
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "100 90 80",
@@ -66320,7 +66419,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/skywrath_mage_concussive_shot_png.png",
 		"localized_name": "Concussive Shot",
-		"description": "Skywrath Mage sets off a long range shot that hits the closest hero within a long range.  Upon impact, it deals damage and slows in an area of effect.",
+		"description": "Skywrath Mage sets off a long range shot that hits the closest hero within a long range.  Upon impact, it deals damage and slows in an area of effect. Deals **75%** damage to creeps.",
 		"lore": "Those who serve the court of the Ghastly Eyrie are ever locked in covert war. One must always know where danger lurks nearest.",
 		"note": "If no enemy heroes are in range or they are in fog, Concussive Shot targets the nearest enemy creep.\nDamages creeps around the impact area.\nProvides 400 vision around the projectile, and reveals the target area for 3.34 seconds upon impact.",
 		"scepter_grants": false,
@@ -67589,8 +67688,10 @@
 				"header": "BONUS ATTACK SPEED:"
 			},
 			{
+				"talent_name": "special_bonus_unique_legion_commander_6",
 				"key": "hp_regen",
 				"value": "30 40 50 60",
+				"talent_value": "70 80 90 100",
 				"header": "HP REGEN:"
 			}
 		],
@@ -67628,7 +67729,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"hp_regen": "30 40 50 60"
+					"hp_regen": "30 40 50 60",
+					"LinkedSpecialBonus": "special_bonus_unique_legion_commander_6"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -67792,6 +67894,7 @@
 		"behavior": "point|aoe",
 		"damage_type": "magical",
 		"spell_immunity": "no",
+		"dispellable": "yes",
 		"cast_range": "400",
 		"cast_point": "0",
 		"cooldown": "19 17 15",
@@ -67810,7 +67913,6 @@
 			{
 				"key": "damage",
 				"value": "400 575 750",
-				"talent_name": "special_bonus_unique_techies_2",
 				"header": "DAMAGE:"
 			},
 			{
@@ -67869,6 +67971,7 @@
 			"ID": "5599",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"AbilityCastRange": "400",
@@ -67880,8 +67983,7 @@
 				"radius": "500",
 				"proximity_threshold": "1.0",
 				"damage": {
-					"value": "400 575 750",
-					"LinkedSpecialBonus": "special_bonus_unique_techies_2"
+					"value": "400 575 750"
 				},
 				"building_damage_pct": "30",
 				"activation_delay": {
@@ -69493,7 +69595,6 @@
 		"name": "abyssal_underlord_pit_of_malice",
 		"hero_id": 108,
 		"behavior": "point|aoe",
-		"damage_type": "magical",
 		"spell_immunity": "no",
 		"dispellable": "yes",
 		"cast_range": "675",
@@ -69545,7 +69646,6 @@
 		"json_data": {
 			"ID": "5614",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
-			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilitySound": "Hero_AbyssalUnderlord.PitOfMalice",
@@ -69579,7 +69679,8 @@
 		"name": "abyssal_underlord_atrophy_aura",
 		"hero_id": 108,
 		"behavior": "passive|aura",
-		"spell_immunity": "yes",
+		"damage_type": "physical",
+		"spell_immunity": "yes_enemies_no",
 		"target_team": "enemy",
 		"dispellable": "no",
 		"ability_special": [
@@ -69624,18 +69725,31 @@
 		"json_data": {
 			"ID": "5615",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
-			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilityValues": {
 				"radius": "900",
 				"damage_reduction_pct": {
 					"value": "5 15 25 35",
-					"special_bonus_unique_underlord_3": "+15"
+					"special_bonus_unique_underlord_3": "+15",
+					"CalculateSpellDamageTooltip": "0",
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
 				},
-				"bonus_damage_from_creep": "2 4 6 8",
-				"bonus_damage_from_hero": "30 35 40 45",
-				"bonus_damage_duration": "30 45 60 75",
+				"bonus_damage_from_creep": {
+					"value": "2 4 6 8",
+					"CalculateSpellDamageTooltip": "0"
+				},
+				"bonus_damage_from_hero": {
+					"value": "30 35 40 45",
+					"CalculateSpellDamageTooltip": "0"
+				},
+				"bonus_damage_duration": {
+					"value": "30 45 60 75",
+					"CalculateSpellDamageTooltip": "0",
+					"DamageTypeTooltip": "DAMAGE_TYPE_NONE"
+				},
 				"bonus_shared_by_allies_pct": {
 					"special_bonus_unique_underlord_9": "+50"
 				}
@@ -69897,6 +70011,7 @@
 		"name": "terrorblade_metamorphosis",
 		"hero_id": 109,
 		"behavior": "no_target|immediate",
+		"damage_type": "physical",
 		"dispellable": "no",
 		"cast_point": "0.",
 		"cooldown": "150",
@@ -69956,6 +70071,7 @@
 		"json_data": {
 			"ID": "5621",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"AbilitySound": "Hero_Terrorblade.Metamorphosis",
 			"HasScepterUpgrade": "1",
@@ -69987,7 +70103,8 @@
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "30 40 50 60"
+					"bonus_damage": "30 40 50 60",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"07": {
 					"var_type": "FIELD_INTEGER",
@@ -70953,6 +71070,7 @@
 		"localized_name": "Fortune's End",
 		"description": "CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and dispels enemies of buffs in an area around the target. If target is an ally it will only dispel debuffs. The root duration is equal to the time spent channeling.\n\nDISPEL TYPE: Basic Dispel",
 		"lore": "The astral orb crackles with power while raw energy lances out, temporarily disrupting an enemy's connection to their own body.",
+		"note": "Can be cast on invulnerable units.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -74534,7 +74652,7 @@
 			},
 			{
 				"key": "give_up_distance",
-				"value": "1850"
+				"value": "2500"
 			},
 			{
 				"talent_name": "special_bonus_unique_monkey_king_7",
@@ -74623,7 +74741,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"give_up_distance": "1850"
+					"give_up_distance": "2500"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -74711,6 +74829,7 @@
 		"name": "monkey_king_jingu_mastery",
 		"hero_id": 114,
 		"behavior": "passive",
+		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"dispellable": "no",
 		"cooldown": "0",
@@ -74754,7 +74873,7 @@
 		"localized_name": "Jingu Mastery",
 		"description": "Monkey King's attacks awaken the Jingu Bang's power. Upon the fourth hit on the same enemy hero, Monkey King earns four charged attacks that have bonus damage and lifesteal.",
 		"lore": "Always sensitive to the moods of its master, the Jingu Bang radiates power when Sun Wukong's combat fervor is on full display.",
-		"note": "Hitting an enemy with Boundless Strike adds to the hit counter.\nRepeatedly hitting an enemy refreshes the Jingu Mastery debuff duration.\nHit charges on enemies cannot be dispelled.",
+		"note": "Hitting an enemy with Boundless Strike adds to the hit counter.\nRepeatedly hitting an enemy refreshes the Jingu Mastery debuff duration.\nHit charges on enemies cannot be dispelled.\nJingu Mastery buff on self can be dispelled.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -74762,6 +74881,7 @@
 		"json_data": {
 			"ID": "5723",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
 			"FightRecapLevel": "1",
@@ -74785,7 +74905,8 @@
 				"04": {
 					"var_type": "FIELD_INTEGER",
 					"bonus_damage": "40 70 100 130",
-					"LinkedSpecialBonus": "special_bonus_unique_monkey_king_2"
+					"LinkedSpecialBonus": "special_bonus_unique_monkey_king_2",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -78640,10 +78761,6 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "5"
-			},
-			{
 				"key": "bonus_drain_rate",
 				"value": "5"
 			}
@@ -78658,13 +78775,7 @@
 			"ID": "6028",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"value": "5",
-					"ad_linked_abilities": "razor_static_link"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -90771,6 +90882,10 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
+				"key": "bonus_boar_total_damage_tooltip",
+				"value": "35"
+			},
+			{
 				"key": "bonus_boar_bonus_damage",
 				"value": "35"
 			}
@@ -90822,6 +90937,10 @@
 		"name": "special_bonus_unique_lycan_3",
 		"behavior": "passive",
 		"ability_special": [
+			{
+				"key": "bonus_wolf_damage",
+				"value": "10"
+			},
 			{
 				"key": "bonus_bonus_damage",
 				"value": "10"
@@ -93727,6 +93846,10 @@
 		"ability_special": [
 			{
 				"key": "bonus_healing_ward_bonus_health",
+				"value": "2"
+			},
+			{
+				"key": "bonus_healing_ward_hits_to_kill_tooltip",
 				"value": "2"
 			}
 		],
@@ -101823,6 +101946,7 @@
 		"name": "beastmaster_call_of_the_wild_boar",
 		"hero_id": 38,
 		"behavior": "no_target",
+		"damage_type": "physical",
 		"cast_point": "0.3",
 		"cooldown": "42 38 34 30",
 		"mana_cost": "60 65 70 75",
@@ -101839,8 +101963,12 @@
 			},
 			{
 				"key": "boar_base_damage",
+				"value": "20 35 50 65"
+			},
+			{
+				"key": "boar_total_damage_tooltip",
 				"value": "20 35 50 65",
-				"header": "BOAR BASE ATTACK DAMAGE:"
+				"header": "BOAR ATTACK DAMAGE:"
 			},
 			{
 				"key": "boar_bonus_damage",
@@ -101868,7 +101996,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/beastmaster_call_of_the_wild_boar_png.png",
 		"localized_name": "Call of the Wild Boar",
-		"description": "Beastmaster calls forth a Boar to aid in the battlefield.",
+		"description": "Beastmaster calls forth a Boar to aid in the battlefield. The Boar has a passive poison attack that slows attack and movement speeds.",
 		"lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -101877,6 +102005,7 @@
 		"json_data": {
 			"ID": "7230",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilitySound": "Hero_Beastmaster.Call.Boar",
 			"AbilityCastPoint": "0.3",
 			"AbilityCooldown": "42 38 34 30",
@@ -101885,6 +102014,11 @@
 				"duration": "60",
 				"boar_base_max_health": "300 450 600 750",
 				"boar_base_damage": "20 35 50 65",
+				"boar_total_damage_tooltip": {
+					"value": "20 35 50 65",
+					"special_bonus_unique_beastmaster_2": "+35",
+					"CalculateSpellDamageTooltip": "0"
+				},
 				"boar_bonus_damage": {
 					"value": "0",
 					"special_bonus_unique_beastmaster_2": "+35"
@@ -107787,7 +107921,7 @@
 			},
 			{
 				"key": "images_take_damage_percent_tooltip",
-				"value": "300%",
+				"value": "350%",
 				"header": "ILLUSION DAMAGE TAKEN:"
 			},
 			{
@@ -107842,7 +107976,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"images_take_damage_percent_tooltip": "300"
+					"images_take_damage_percent_tooltip": "350"
 				},
 				"06": {
 					"var_type": "FIELD_INTEGER",
@@ -109038,7 +109172,6 @@
 		"mana_cost": "110 120 130 140",
 		"ability_special": [
 			{
-				"talent_name": "special_bonus_unique_dawnbreaker_celestial_blade",
 				"key": "hammer_damage",
 				"value": "50 80 110 140",
 				"header": "HAMMER DAMAGE:"
@@ -109065,6 +109198,7 @@
 				"talent_name": "special_bonus_unique_dawnbreaker_celestial_hammer_slow",
 				"key": "move_slow",
 				"value": "24% 28% 32% 36%",
+				"talent_value": "36% 40% 44% 48%",
 				"header": "FIRE TRAIL MOVEMENT SLOW:"
 			},
 			{
@@ -109096,6 +109230,7 @@
 				"talent_name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
 				"key": "range",
 				"value": "700 900 1100 1300",
+				"talent_value": "1800 2000 2200 2400",
 				"header": "CAST RANGE:"
 			}
 		],
@@ -109122,8 +109257,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"hammer_damage": "50 80 110 140",
-					"LinkedSpecialBonus": "special_bonus_unique_dawnbreaker_celestial_blade"
+					"hammer_damage": "50 80 110 140"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -112172,6 +112306,7 @@
 		"icon": "/panorama/images/spellicons/necronomicon_archer_purge_png.png",
 		"localized_name": "Purge",
 		"description": "Dispels positive buffs from enemies and slows their movement speed.\n\nDISPEL TYPE: Basic Dispel",
+		"note": "Can be cast on invulnerable units.\nThe slow starts at 100% and decreases over time to 20%.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -112203,6 +112338,7 @@
 		"name": "marci_guardian",
 		"hero_id": 136,
 		"behavior": "unit_target",
+		"damage_type": "physical",
 		"spell_immunity": "yes",
 		"target_team": "friendly",
 		"dispellable": "yes",
@@ -112250,6 +112386,7 @@
 		"json_data": {
 			"ID": "8234",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
@@ -112274,7 +112411,8 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "20 35 50 65"
+					"bonus_damage": "20 35 50 65",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -112990,11 +113128,13 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"acorn_shot_damage": "50 75 100 125"
+					"acorn_shot_damage": "50 75 100 125",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"base_damage_pct": "75"
+					"base_damage_pct": "75",
+					"CalculateSpellDamageTooltip": "0"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
