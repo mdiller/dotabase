@@ -2410,13 +2410,13 @@
 		"aliases": "sacred relic",
 		"quality": "secret_shop",
 		"icon": "/panorama/images/items/relic_png.png",
-		"cost": 3750,
+		"cost": 3400,
 		"lore": "An ancient weapon that often turns the tides of war.",
 		"secret_shop": true,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "60",
+				"value": "55",
 				"header": "+",
 				"footer": "Damage"
 			}
@@ -2425,7 +2425,7 @@
 		"json_data": {
 			"ID": "54",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "3750",
+			"ItemCost": "3400",
 			"ItemShopTags": "damage",
 			"ItemQuality": "secret_shop",
 			"ItemAliases": "sacred relic",
@@ -2433,7 +2433,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "60"
+					"bonus_damage": "55"
 				}
 			}
 		}
@@ -3173,7 +3173,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "6 12",
+				"value": "5 10",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -3206,7 +3206,7 @@
 				"bonus_agility": "5 10",
 				"bonus_strength": "2 4",
 				"bonus_intellect": "2 4",
-				"bonus_attack_speed": "6 12",
+				"bonus_attack_speed": "5 10",
 				"bonus_armor": "2 4",
 				"clock_time": "25"
 			}
@@ -4286,7 +4286,7 @@
 		"cost": 2200,
 		"cooldown": "19",
 		"cast_range": "550",
-		"mana_cost": "100",
+		"mana_cost": "150",
 		"description": "# Active: Force\nPushes any target unit **600** units in the direction it is facing.\n\nRange: **550**",
 		"lore": "Allows you to manipulate others, for good or evil.",
 		"secret_shop": false,
@@ -4324,7 +4324,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "19.0",
 			"AbilitySharedCooldown": "force",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "150",
 			"ItemCost": "2200",
 			"ItemShopTags": "int;damage;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
@@ -5113,7 +5113,7 @@
 		"cost": 4400,
 		"cooldown": "30",
 		"mana_cost": "0",
-		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x and also converts the same percentage of damage dealt to mana. Lasts **6** seconds.",
+		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x and also converts the same percentage of damage dealt to mana. Lasts **5** seconds.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5137,7 +5137,7 @@
 			},
 			{
 				"key": "buff_duration",
-				"value": "6"
+				"value": "5"
 			},
 			{
 				"key": "lifesteal_multiplier",
@@ -5169,7 +5169,7 @@
 				"bonus_health": "500",
 				"bonus_mana": "500",
 				"spell_lifesteal": "30",
-				"buff_duration": "6",
+				"buff_duration": "5",
 				"lifesteal_multiplier": "2.5",
 				"hp_cost": "0"
 			}
@@ -5592,7 +5592,7 @@
 		"aliases": "divine rapier",
 		"quality": "epic",
 		"icon": "/panorama/images/items/rapier_png.png",
-		"cost": 5950,
+		"cost": 5600,
 		"description": "# Passive: Everlasting\nDropped on death, and cannot be destroyed. \n\nBecomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up and is killed. A dropped Rapier cannot be picked up by a courier.",
 		"lore": "So powerful, it cannot have a single owner.",
 		"secret_shop": false,
@@ -5610,7 +5610,7 @@
 			"ID": "133",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"Model": "models/props_gameplay/divine_rapier.vmdl",
-			"ItemCost": "5950",
+			"ItemCost": "5600",
 			"ItemShopTags": "damage",
 			"ItemQuality": "epic",
 			"ItemAliases": "divine rapier",
@@ -5721,7 +5721,7 @@
 		"aliases": "radiance",
 		"quality": "epic",
 		"icon": "/panorama/images/items/radiance_png.png",
-		"cost": 5050,
+		"cost": 4700,
 		"cast_range": "700",
 		"description": "# Toggle: Burn\nWhen active, scorches enemies for **60** magical damage per second and causes them to miss **15%** of their attacks. Illusions deal **35** magical damage per second.\n\nRadius: **700**",
 		"lore": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.",
@@ -5729,7 +5729,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "60",
+				"value": "55",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -5766,7 +5766,7 @@
 			"ID": "137",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"AbilityCastRange": "700",
-			"ItemCost": "5050",
+			"ItemCost": "4700",
 			"ItemShopTags": "damage",
 			"ItemQuality": "epic",
 			"ItemAliases": "radiance",
@@ -5774,7 +5774,7 @@
 			"ShouldBeSuggested": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
-				"bonus_damage": "60",
+				"bonus_damage": "55",
 				"aura_damage": "60",
 				"aura_damage_illusions": "35",
 				"upgrade_day_vision": "250",
@@ -6005,35 +6005,14 @@
 			"ItemAliases": "skull basher",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "25"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "10"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"bash_chance_melee": "25"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"bash_chance_ranged": "10"
-				},
-				"05": {
-					"var_type": "FIELD_FLOAT",
-					"bash_duration": "1.5"
-				},
-				"06": {
-					"var_type": "FIELD_FLOAT",
-					"bash_cooldown": "2.3"
-				},
-				"07": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_chance_damage": "100"
-				}
+			"AbilityValues": {
+				"bonus_damage": "25",
+				"bonus_strength": "10",
+				"bash_chance_melee": "25",
+				"bash_chance_ranged": "10",
+				"bash_duration": "1.5",
+				"bash_cooldown": "2.3",
+				"bonus_chance_damage": "100"
 			}
 		}
 	},
@@ -6936,7 +6915,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/skadi_png.png",
 		"cost": 5300,
-		"description": "# Passive: Cold Attack\nAttacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by **40%** for **3** seconds. Slows enemy ranged units by **-40%** movement speed and by **-60** attack speed. Slows enemy melee units by **-20%** movement speed and by **-30** attack speed. ",
+		"description": "# Passive: Cold Attack\nAttacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by **40%** for **3** seconds. Slows enemy ranged units by **-50%** movement speed and by **-60** attack speed. Slows enemy melee units by **-20%** movement speed and by **-30** attack speed. ",
 		"lore": "Extremely rare artifact, guarded by the azure dragons.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6968,7 +6947,7 @@
 			},
 			{
 				"key": "cold_slow_ranged",
-				"value": "-40"
+				"value": "-50"
 			},
 			{
 				"key": "cold_attack_slow_ranged",
@@ -7000,7 +6979,7 @@
 				"bonus_mana": "220",
 				"cold_slow_melee": "-20",
 				"cold_attack_slow_melee": "-30",
-				"cold_slow_ranged": "-40",
+				"cold_slow_ranged": "-50",
 				"cold_attack_slow_ranged": "-60",
 				"cold_duration": "3.0",
 				"heal_reduction": "40"
@@ -7252,7 +7231,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/maelstrom_png.png",
 		"cost": 2700,
-		"description": "# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **140** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **135** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7268,7 +7247,7 @@
 			},
 			{
 				"key": "chain_damage",
-				"value": "140"
+				"value": "135"
 			},
 			{
 				"key": "chain_strikes",
@@ -7309,7 +7288,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"chain_damage": "140"
+					"chain_damage": "135"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -8927,7 +8906,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "25",
+				"value": "30",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -9009,7 +8988,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "25"
+					"bonus_damage": "30"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -9428,7 +9407,7 @@
 		"ability_special": [
 			{
 				"key": "hp_regen",
-				"value": "0.6",
+				"value": "0.4",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
@@ -9459,7 +9438,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"hp_regen": "0.6"
+					"hp_regen": "0.4"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -9651,7 +9630,7 @@
 		"cooldown": "24",
 		"cast_range": "600",
 		"mana_cost": "100",
-		"description": "# Active: Meteor Hammer\nCHANNELED - After a successful channel, summons a meteor that strikes a **400** AoE, stunning enemies for **1.25** seconds and dealing impact damage. Continues to deal damage over time to enemies units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **60** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **60** \n\nChannel Duration: **2.5** seconds.\nLanding Time: **.5** seconds.",
+		"description": "# Active: Meteor Hammer\nCHANNELED - After a successful channel, summons a meteor that strikes a **400** AoE, stunning enemies for **1.25** seconds and dealing impact damage. Continues to deal damage over time to enemies units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **60** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **60** \n\nChannel Duration: **2** seconds.\nLanding Time: **.5** seconds.",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -9702,7 +9681,7 @@
 			},
 			{
 				"key": "max_duration",
-				"value": "2.5"
+				"value": "2"
 			},
 			{
 				"key": "impact_damage_buildings",
@@ -9724,7 +9703,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
-			"AbilityChannelTime": "2.5",
+			"AbilityChannelTime": "2",
 			"AbilityCastRange": "600",
 			"AbilityCooldown": "24",
 			"AbilityManaCost": "100",
@@ -9744,7 +9723,7 @@
 				"burn_interval": "1.0",
 				"land_time": ".5",
 				"impact_radius": "400",
-				"max_duration": "2.5",
+				"max_duration": "2",
 				"impact_damage_buildings": "75",
 				"impact_damage_units": "150",
 				"enemy_particles_visible": "0"
@@ -9758,7 +9737,7 @@
 		"aliases": "nlf|nullifier",
 		"quality": "epic",
 		"icon": "/panorama/images/items/nullifier_png.png",
-		"cost": 4725,
+		"cost": 4375,
 		"cooldown": "10",
 		"cast_range": "900",
 		"mana_cost": "0",
@@ -9767,7 +9746,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "80",
+				"value": "75",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -9811,7 +9790,7 @@
 			"AbilityCooldown": "10.0",
 			"AbilityCastRange": "900",
 			"AbilityManaCost": "0",
-			"ItemCost": "4725",
+			"ItemCost": "4375",
 			"ItemQuality": "epic",
 			"ItemAliases": "nlf;nullifier",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -9819,7 +9798,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "80"
+					"bonus_damage": "75"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -9976,13 +9955,13 @@
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "5",
+				"value": "6",
 				"header": "+",
 				"footer": "All Attributes"
 			},
 			{
 				"key": "self_movement_speed",
-				"value": "20",
+				"value": "25",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -10031,11 +10010,11 @@
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_all_stats": "5"
+					"bonus_all_stats": "6"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"self_movement_speed": "20"
+					"self_movement_speed": "25"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -10086,7 +10065,7 @@
 		"cost": 4950,
 		"cooldown": "40",
 		"mana_cost": "0",
-		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration and **3** armor to allied units. If an allied hero's health falls below **25%**, this is increased to **18.5** health regeneration and **10** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration and **3** armor to allied units. If an allied hero's health falls below **25%**, this is increased to **14.5** health regeneration and **8** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10118,11 +10097,11 @@
 			},
 			{
 				"key": "aura_health_regen_bonus",
-				"value": "18.5"
+				"value": "14.5"
 			},
 			{
 				"key": "aura_armor_bonus",
-				"value": "10"
+				"value": "8"
 			},
 			{
 				"key": "aura_bonus_threshold",
@@ -10170,8 +10149,8 @@
 				"bonus_armor": "4",
 				"aura_health_regen": "2.5",
 				"aura_armor": "3",
-				"aura_health_regen_bonus": "18.5",
-				"aura_armor_bonus": "10",
+				"aura_health_regen_bonus": "14.5",
+				"aura_armor_bonus": "8",
 				"aura_bonus_threshold": "25",
 				"aura_radius": "1200",
 				"replenish_health": "350",
@@ -10465,7 +10444,7 @@
 		"aliases": "quelling blade",
 		"quality": "common",
 		"icon": "/panorama/images/items/iron_talon_png.png",
-		"cost": 301,
+		"cost": 0,
 		"cooldown": "25",
 		"cast_range": "350",
 		"mana_cost": "0",
@@ -10514,7 +10493,7 @@
 			"AbilityCooldown": "25.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityManaCost": "0",
-			"ItemCost": "301",
+			"ItemCost": "0",
 			"ItemShopTags": "damage",
 			"ItemQuality": "common",
 			"ItemAliases": "quelling blade",
@@ -11670,7 +11649,7 @@
 		"cost": 4450,
 		"cooldown": "19",
 		"cast_range": "650",
-		"mana_cost": "100",
+		"mana_cost": "150",
 		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **6** seconds, allows you to make **5** attacks against the target without range restrictions and with +**100** attack speed.\n\nWorks like Force Staff when used on self or allies.\n\nAllied Range: **650**\nEnemy Range: **450**\n\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes.",
 		"lore": "A legendary pike once held as royal sigil of the ancient wyvern riders.",
 		"secret_shop": false,
@@ -11742,7 +11721,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "19.0",
 			"AbilitySharedCooldown": "force",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "150",
 			"ItemCost": "4450",
 			"ItemShopTags": "int;damage;attack_speed;hard_to_tag",
 			"ItemQuality": "epic",
@@ -13120,7 +13099,7 @@
 		"name": "item_ironwood_tree",
 		"localized_name": "Ironwood Tree",
 		"icon": "/panorama/images/items/ironwood_tree_png.png",
-		"cost": 151,
+		"cost": 0,
 		"cooldown": "15",
 		"cast_range": "800",
 		"description": "# Use: Plant Tree\nTargets the ground to plant a happy little tree that lasts for **20** seconds.\n\nRange: **800**",
@@ -13143,7 +13122,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
 			"AbilityCastRange": "800",
 			"AbilityCooldown": "15.0",
-			"ItemCost": "151",
+			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
@@ -19107,7 +19086,7 @@
 		"cost": 6200,
 		"cooldown": "25",
 		"mana_cost": "300",
-		"description": "# Active: Phantom Province\nYour next **5** attacks have True Strike and deal magic damage. Expires after **15** seconds.\n\n Can attack Ethereal units and deals no damage to Magic Immune targets.\n\n\n# Passive: Witch Blade\nCauses your next attack to apply a poison for **4** seconds, slowing by **25%** and dealing **1**x your intelligence as damage every second. Can only trigger once every **9** seconds.",
+		"description": "# Active: Phantom Province\nIncreases attack speed by **60** and your next **5** attacks have True Strike and deal magic damage. Expires after **15** seconds.\n\n Can attack Ethereal units and deals no damage to Magic Immune targets.\n\n\n# Passive: Witch Blade\nCauses your next attack to apply a poison for **4** seconds, slowing by **25%** and dealing **1**x your intelligence as damage every second. Can only trigger once every **9** seconds.",
 		"lore": "The cursed brooch of a fallen guardian who stalks forever between the veil of life and death.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19166,6 +19145,10 @@
 			{
 				"key": "active_duration",
 				"value": "15"
+			},
+			{
+				"key": "active_attack_speed",
+				"value": "60"
 			}
 		],
 		"recipe": "item_witch_blade|item_mystic_staff|item_recipe_revenants_brooch",
@@ -19194,7 +19177,8 @@
 				"damage_penalty": "0",
 				"passive_cooldown": "9",
 				"number_of_attacks": "5",
-				"active_duration": "15"
+				"active_duration": "15",
+				"active_attack_speed": "60"
 			}
 		}
 	},
@@ -19227,7 +19211,7 @@
 		"icon": "/panorama/images/items/boots_of_bearing_png.png",
 		"cost": 4075,
 		"cooldown": "30",
-		"description": "# Active: Endurance\nConsumes a charge and gives +**50** attack speed, +**15%**. Movement Speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\nStarts with 8 Charges. Gains 1 Charge every 3 minutes.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
+		"description": "# Active: Endurance\nGives +**50** attack speed and +**15%** movement speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19264,10 +19248,6 @@
 				"value": "1200"
 			},
 			{
-				"key": "charges_tooltip",
-				"value": "8"
-			},
-			{
 				"key": "bonus_movement_speed",
 				"value": "65",
 				"header": "+",
@@ -19278,10 +19258,6 @@
 				"value": "15",
 				"header": "+",
 				"footer": "Health Regeneration"
-			},
-			{
-				"key": "recharge_time",
-				"value": "180"
 			},
 			{
 				"key": "bonus_ms_duration",
@@ -19300,8 +19276,6 @@
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "marching boots",
-			"ItemInitialCharges": "8",
-			"ItemDisplayCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
@@ -19312,10 +19286,8 @@
 				"bonus_movement_speed_pct": "15",
 				"duration": "6",
 				"radius": "1200",
-				"charges_tooltip": "8",
 				"bonus_movement_speed": "65",
 				"bonus_health_regen": "15",
-				"recharge_time": "180",
 				"bonus_ms_duration": "1.5"
 			}
 		}
@@ -20472,7 +20444,7 @@
 		"cooldown": "18",
 		"cast_range": "1100",
 		"mana_cost": "200",
-		"description": "# Active: Eternal Chains\nRoots all enemies in a target **450** radius for **2** seconds and deals **220** damage.\n\nRange: **1100** \n\n\n# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **160** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Active: Eternal Chains\nRoots all enemies in a target **400** radius for **2** seconds and deals **180** damage.\n\nRange: **1100** \n\n\n# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **160** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "Bindings forged by impossible means to leash an ancient evil.",
 		"secret_shop": false,
 		"ability_special": [
@@ -20526,15 +20498,15 @@
 			},
 			{
 				"key": "duration",
-				"value": "2"
+				"value": "2.0"
 			},
 			{
 				"key": "radius",
-				"value": "450"
+				"value": "400"
 			},
 			{
 				"key": "active_damage",
-				"value": "220"
+				"value": "180"
 			}
 		],
 		"recipe": "item_maelstrom|item_rod_of_atos|item_recipe_gungir",
@@ -20557,59 +20529,20 @@
 			"ItemAliases": "gleipnir;gliepnir;glaypnir",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "30"
-				},
-				"02": {
-					"var_type": "FIELD_INTEGER",
-					"chain_chance": "30"
-				},
-				"03": {
-					"var_type": "FIELD_INTEGER",
-					"chain_damage": "160"
-				},
-				"04": {
-					"var_type": "FIELD_INTEGER",
-					"chain_strikes": "4"
-				},
-				"05": {
-					"var_type": "FIELD_INTEGER",
-					"chain_radius": "650"
-				},
-				"06": {
-					"var_type": "FIELD_FLOAT",
-					"chain_delay": "0.25"
-				},
-				"07": {
-					"var_type": "FIELD_FLOAT",
-					"chain_cooldown": "0.2"
-				},
-				"08": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_intellect": "24"
-				},
-				"09": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "14"
-				},
-				"10": {
-					"var_type": "FIELD_INTEGER",
-					"bonus_agility": "14"
-				},
-				"11": {
-					"var_type": "FIELD_FLOAT",
-					"duration": "2.0"
-				},
-				"12": {
-					"var_type": "FIELD_INTEGER",
-					"radius": "450"
-				},
-				"13": {
-					"var_type": "FIELD_INTEGER",
-					"active_damage": "220"
-				}
+			"AbilityValues": {
+				"bonus_damage": "30",
+				"chain_chance": "30",
+				"chain_damage": "160",
+				"chain_strikes": "4",
+				"chain_radius": "650",
+				"chain_delay": "0.25",
+				"chain_cooldown": "0.2",
+				"bonus_intellect": "24",
+				"bonus_strength": "14",
+				"bonus_agility": "14",
+				"duration": "2.0",
+				"radius": "400",
+				"active_damage": "180"
 			}
 		}
 	},
@@ -20740,9 +20673,7 @@
 			"AbilityCastPoint": "0.0",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "0",
-			"ItemPurchasable": "1",
-			"ItemStockMax": "5",
-			"ItemStockInitial": "5",
+			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"ItemKillable": "0",
 			"AbilityCooldown": "0.5",
