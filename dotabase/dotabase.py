@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
-from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime
+from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime, Unicode
 from sqlalchemy.orm import relationship, Session, declarative_base
+from sqlalchemy_utils import generic_relationship
 import os
 
 # The absolute path to the dotabase Python package
@@ -60,6 +61,7 @@ class Hero(Base):
 	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
 	voice = relationship("Voice", uselist=False, back_populates="hero")
+	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)", viewonly=True)
 
 	json_data = Column(String)
 
@@ -107,6 +109,17 @@ class Ability(Base):
 
 	hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
+	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)", viewonly=True)
+
+	# _locale = None
+	# def __getattr__(self, name: str):
+	# 	if name.endswith("_L"):
+	# 		name = name[:-2]
+	# 		if hasattr(self, name):
+	# 			for string in self.strings:
+	# 				if string.lang == self._locale and string.column == name:
+	# 					return string.value
+	# 	return Base.__getattribute__(self, name)
 
 	@property
 	def aghanim(self):
@@ -122,6 +135,7 @@ class Ability(Base):
 
 	def __repr__(self):
 		return "Ability: %s" % (self.localized_name)
+
 
 class Talent(Base):
 	__tablename__ = 'talents'
@@ -173,6 +187,8 @@ class Item(Base):
 	shop_tags = Column(String)
 
 	json_data = Column(String)
+	
+	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Item', foreign(LocaleString.row_id) == Item.id)", viewonly=True)
 
 	def __repr__(self):
 		return "Item: %s" % (self.localized_name)
@@ -269,6 +285,22 @@ class Patch(Base):
 	dota_url = Column(String)
 	custom_url = Column(String)
 	wiki_url = Column(String)
+
+
+class LocaleString(Base):
+	__tablename__ = 'localestrings'
+	id = Column(Integer, primary_key=True)
+
+	table = Column(Unicode(255))
+	row_id = Column(Integer, nullable=False)
+	column = Column(String)
+	lang = Column(String)
+	value = Column(String)
+
+	target = generic_relationship(table, row_id)
+
+	def __repr__(self):
+		return f"String: [{self.lang}]{self.table}.{self.row_id}.{self.column}"
 
 
 # returns an open dotabase session
