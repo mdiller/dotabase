@@ -9366,7 +9366,7 @@
 			},
 			{
 				"key": "tp_cooldown",
-				"value": "30",
+				"value": "40",
 				"header": "TOWN PORTAL SCROLL COOLDOWN:"
 			},
 			{
@@ -9395,7 +9395,7 @@
 				"bonus_movement_speed": "110",
 				"maximum_distance": "800",
 				"vision_radius": "200",
-				"tp_cooldown": "30",
+				"tp_cooldown": "40",
 				"tp_channel_time": "2"
 			}
 		}
@@ -10465,7 +10465,7 @@
 		"cost": 3600,
 		"cooldown": "35",
 		"cast_range": "1200",
-		"description": "# Active: Guard\nFor **8** seconds, grant nearby allied heroes and buildings a **100%** chance to block damage equal to **70** plus **60%** of the casters Strength value from each incoming attack.\nUnits may only be affected by Guard once every **35** seconds.\n\nRadius: **1200**\n\n\n# Passive: Damage Block\nGrants a **60%** chance to block **75** damage from incoming attacks on melee heroes, and **50** damage on ranged.",
+		"description": "# Active: Guard\nFor **8** seconds, grant nearby allied heroes and buildings a **100%** chance to block damage equal to **70** plus **50%** of the casters Strength value from each incoming attack.\nUnits may only be affected by Guard once every **35** seconds.\n\nRadius: **1200**\n\n\n# Passive: Damage Block\nGrants a **60%** chance to block **75** damage from incoming attacks on melee heroes, and **50** damage on ranged.",
 		"lore": "A cuirass originally built to protect against the dreaded Year Beast.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10521,7 +10521,7 @@
 			},
 			{
 				"key": "strength_pct",
-				"value": "60"
+				"value": "50"
 			}
 		],
 		"recipe": "item_vanguard|item_helm_of_iron_will|item_recipe_crimson_guard",
@@ -10550,7 +10550,7 @@
 				"block_damage_active": "70",
 				"block_chance_active": "100",
 				"tooltip_reapply_time": "35",
-				"strength_pct": "60"
+				"strength_pct": "50"
 			}
 		}
 	},
@@ -11404,7 +11404,7 @@
 		"cooldown": "19",
 		"cast_range": "650",
 		"mana_cost": "150",
-		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **6** seconds, allows you to make **5** attacks against the target without range restrictions and with +**100** attack speed.\n\nWorks like Force Staff when used on self or allies.\nEnemy Range: **450**\n\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes.",
+		"description": "# Active: Hurricane Thrust\nPushes you and target enemy **450** units away from each other, and for **6** seconds, allows you to make **5** attacks against the target without range restrictions and with +**100** attack speed.\n\nCan be cast on self or allies to push the target **600** units in the direction it is facing.\nEnemy Range: **450**\n\n\n# Passive:  Dragon's Reach\nIncreases attack range of ranged heroes.",
 		"lore": "A legendary pike once held as royal sigil of the ancient wyvern riders.",
 		"secret_shop": false,
 		"ability_special": [
@@ -13692,12 +13692,12 @@
 			},
 			{
 				"key": "attack_range",
-				"value": "100",
+				"value": "125",
 				"header": "AURA BONUS ATTACK RANGE (RANGED ONLY):"
 			},
 			{
 				"key": "cast_range",
-				"value": "100",
+				"value": "125",
 				"header": "AURA BONUS CAST RANGE:"
 			},
 			{
@@ -13715,8 +13715,8 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"scan_cooldown_reduction": "50",
-				"attack_range": "100",
-				"cast_range": "100",
+				"attack_range": "125",
+				"cast_range": "125",
 				"aura_range": "1200"
 			}
 		}
@@ -14292,13 +14292,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "14",
+				"value": "16",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "bonus_strength",
-				"value": "14",
+				"value": "16",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -14347,11 +14347,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_damage": "14"
+					"bonus_damage": "16"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_strength": "14"
+					"bonus_strength": "16"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -14772,7 +14772,7 @@
 		"name": "item_fallen_sky",
 		"localized_name": "Fallen Sky",
 		"icon": "/panorama/images/items/fallen_sky_png.png",
-		"cost": 4751,
+		"cost": 0,
 		"cooldown": "15",
 		"cast_range": "1200",
 		"description": "# Active: Fallen Sky\nTransform into a meteor that strikes down at the target area after **1** seconds in a **315** AoE, stunning enemies for **1.6** seconds and dealing impact damage. Continues to deal damage every **1** seconds to enemy units and buildings for **6** seconds.\n\nBuilding Impact Damage: **75** \nBuilding Over Time Damage: **60** \n\nNon-Building Impact Damage: **150** \nNon-Building Over Time Damage: **60**\n\n Range: **1200**",
@@ -14854,7 +14854,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityCastRange": "1200",
 			"AbilityCooldown": "15.0",
-			"ItemCost": "4751",
+			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
@@ -14996,7 +14996,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_mana",
-				"value": "200",
+				"value": "125",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -15018,7 +15018,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_mana": "200"
+					"bonus_mana": "125"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
@@ -16064,6 +16064,7 @@
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilitySpecial": {
 				"01": {
@@ -16143,7 +16144,7 @@
 		"localized_name": "Stormcrafter",
 		"icon": "/panorama/images/items/stormcrafter_png.png",
 		"cost": 0,
-		"description": "# Passive: Bottled Lightning\nZaps **2** enemy targets within **700** range, dealing **200** damage and a **40%** slow for **0.3** seconds. Strikes every **3** seconds.",
+		"description": "# Passive: Bottled Lightning\nZaps **2** enemy targets within **700** range, dealing **200** damage and a **40%** slow for **0.4** seconds. Strikes every **3** seconds.",
 		"lore": "The accidental byproduct of a spell conjured to entrap a lesser god.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -16166,7 +16167,7 @@
 			},
 			{
 				"key": "slow_duration",
-				"value": "0.3"
+				"value": "0.4"
 			},
 			{
 				"key": "bonus_mana_regen",
@@ -16180,7 +16181,7 @@
 			},
 			{
 				"key": "passive_movement_bonus",
-				"value": "25",
+				"value": "30",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -16198,10 +16199,10 @@
 				"damage": "200",
 				"interval": "3",
 				"slow": "40",
-				"slow_duration": "0.3",
+				"slow_duration": "0.4",
 				"bonus_mana_regen": "4",
 				"max_targets": "2",
-				"passive_movement_bonus": "25"
+				"passive_movement_bonus": "30"
 			}
 		}
 	},
@@ -17999,9 +18000,9 @@
 		"localized_name": "Ascetic's Cap",
 		"icon": "/panorama/images/items/ascetic_cap_png.png",
 		"cost": 0,
-		"cooldown": "30",
+		"cooldown": "25",
 		"mana_cost": "0",
-		"description": "# Passive: Endurance\nWhenever a debuff would be applied to the owner, grant **40%** Status resistance for **3** seconds.",
+		"description": "# Passive: Endurance\nWhenever a debuff would be applied to the owner, grant **40%** Status resistance for **4** seconds.",
 		"lore": "An austere hat thought to be of Turstarkuri origin.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -18018,7 +18019,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "3"
+				"value": "4"
 			},
 			{
 				"key": "hp_regen",
@@ -18034,13 +18035,13 @@
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
-			"AbilityCooldown": "30.0",
+			"AbilityCooldown": "25.0",
 			"AbilityManaCost": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"status_resistance": "40",
 				"bonus_health": "250",
-				"duration": "3",
+				"duration": "4",
 				"hp_regen": "15"
 			}
 		}
@@ -19051,7 +19052,6 @@
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "19.0",
-			"AbilitySharedCooldown": "force",
 			"ItemCost": "4500",
 			"ItemPurchasable": "1",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
@@ -19142,9 +19142,9 @@
 		"localized_name": "Seeds of Serenity",
 		"icon": "/panorama/images/items/seeds_of_serenity_png.png",
 		"cost": 0,
-		"cooldown": "40",
+		"cooldown": "35",
 		"cast_range": "350",
-		"description": "# Active: Verdurous Dale\n Target the ground with a **350** radius. Provides +**10** health regeneration to all allied units while they are in the area of effect. Lasts **14** seconds.",
+		"description": "# Active: Verdurous Dale\n Target the ground with a **400** radius. Provides +**10** health regeneration to all allied units while they are in the area of effect. Lasts **14** seconds.",
 		"lore": "An evergreen sprout treasured by the woodkin and highly coveted by interlopers and their like.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -19161,7 +19161,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "350"
+				"value": "400"
 			},
 			{
 				"key": "duration",
@@ -19175,13 +19175,13 @@
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
-			"AbilityCooldown": "40.0",
+			"AbilityCooldown": "35.0",
 			"AbilityCastRange": "350",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_health": "150",
 				"aura_health_regen": "10",
-				"radius": "350",
+				"radius": "400",
 				"duration": "14"
 			}
 		}
@@ -19344,7 +19344,7 @@
 		"cost": 0,
 		"cooldown": "40",
 		"mana_cost": "75",
-		"description": "# Active: Ogre Seal Flop\nFlop forward like an ogre seal **2** times, dealing **150** damage and slowing enemies in a **225** radius by **-100%** for **1** second on each bounce. **400** bounce distance. ",
+		"description": "# Active: Ogre Seal Flop\nFlop forward like an ogre seal **2** times, dealing **150** damage and slowing enemies in a **275** radius by **-100%** for **1.5** second on each bounce. **400** bounce distance. ",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -19368,7 +19368,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "225"
+				"value": "275"
 			},
 			{
 				"key": "flop_damage",
@@ -19376,7 +19376,7 @@
 			},
 			{
 				"key": "slow_duration",
-				"value": "1.0"
+				"value": "1.5"
 			},
 			{
 				"key": "slow",
@@ -19403,9 +19403,9 @@
 				"leap_distance": "400",
 				"leap_speed": "800.0",
 				"leap_acceleration": "1250.0",
-				"radius": "225",
+				"radius": "275",
 				"flop_damage": "150",
-				"slow_duration": "1.0",
+				"slow_duration": "1.5",
 				"slow": "-100",
 				"max_bounces": "2"
 			}
@@ -19582,6 +19582,12 @@
 				"value": "15%",
 				"header": "-",
 				"footer": "Max Mana"
+			},
+			{
+				"key": "bonus_mana_regen",
+				"value": "0.5",
+				"header": "+",
+				"footer": "Mana Regeneration"
 			}
 		],
 		"json_data": {
@@ -19594,7 +19600,8 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"cast_range_bonus": "125",
-				"mana_reduction_pct": "15"
+				"mana_reduction_pct": "15",
+				"bonus_mana_regen": "0.5"
 			}
 		}
 	},
@@ -19916,7 +19923,7 @@
 		"icon": "/panorama/images/items/specialists_array_png.png",
 		"cost": 0,
 		"cooldown": "8",
-		"description": "# Passive: Crackshot\nRanged Only. The next attack fires projectiles at **2** additional targets within attack range. Does not trigger attack modifiers.",
+		"description": "# Passive: Crackshot\nRanged Only. The next attack fires projectiles at **2** additional targets within attack range plus a **225** range bonus. Does not trigger attack modifiers.",
 		"lore": "An impressive kit of trigger enhancements born in an aging assassin's idle mind.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -19929,13 +19936,17 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "10",
+				"value": "12",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "count",
 				"value": "2"
+			},
+			{
+				"key": "secondary_target_range_bonus",
+				"value": "225"
 			}
 		],
 		"json_data": {
@@ -19949,8 +19960,9 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"all_stats": "5",
-				"bonus_damage": "10",
-				"count": "2"
+				"bonus_damage": "12",
+				"count": "2",
+				"secondary_target_range_bonus": "225"
 			}
 		}
 	},
@@ -20692,35 +20704,15 @@
 		}
 	},
 	{
-		"id": 1106,
-		"name": "item_recipe_phylactery",
-		"localized_name": "item_recipe_phylactery",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 200,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ID": "1106",
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "200",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_phylactery",
-			"ItemRequirements": {
-				"01": "item_point_booster;item_diadem"
-			}
-		}
-	},
-	{
 		"id": 1107,
 		"name": "item_phylactery",
 		"localized_name": "Phylactery",
 		"aliases": "phylactery",
 		"quality": "common",
 		"icon": "/panorama/images/items/phylactery_png.png",
-		"cost": 2400,
+		"cost": 2375,
 		"cooldown": "6",
-		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals a separate **125** bonus damage to the target, and slows them by **50%** for **1.2**s.",
+		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals a separate **150** bonus damage to the target, and slows them by **50%** for **1.5**s.",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -20742,25 +20734,31 @@
 				"footer": "All Attributes"
 			},
 			{
+				"key": "bonus_mana_regen",
+				"value": ".7",
+				"header": "+",
+				"footer": "Mana Regeneration"
+			},
+			{
 				"key": "slow",
 				"value": "50"
 			},
 			{
 				"key": "bonus_spell_damage",
-				"value": "125"
+				"value": "150"
 			},
 			{
 				"key": "slow_duration",
-				"value": "1.2"
+				"value": "1.5"
 			}
 		],
-		"recipe": "item_point_booster|item_diadem|item_recipe_phylactery",
+		"recipe": "item_point_booster|item_diadem|item_sobi_mask",
 		"shop_tags": "hard_to_tag",
 		"json_data": {
 			"ID": "1107",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "6.0",
-			"ItemCost": "2400",
+			"ItemCost": "2375",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "phylactery",
@@ -20769,9 +20767,10 @@
 				"bonus_health": "200",
 				"bonus_mana": "200",
 				"bonus_all_stats": "7",
+				"bonus_mana_regen": ".7",
 				"slow": "50",
-				"bonus_spell_damage": "125",
-				"slow_duration": "1.2"
+				"bonus_spell_damage": "150",
+				"slow_duration": "1.5"
 			}
 		}
 	},
@@ -20869,6 +20868,8 @@
 			"ItemShopTags": "consumable",
 			"ItemQuality": "consumable",
 			"ItemAliases": "grenade",
+			"ItemStackable": "1",
+			"ItemStackableMax": "3",
 			"ItemStockMax": "3",
 			"ItemStockInitial": "3",
 			"ItemStockTime": "120",
@@ -21352,14 +21353,15 @@
 		"localized_name": "item_vindicators_axe",
 		"icon": "/panorama/images/items/vindicators_axe_png.png",
 		"cost": 0,
-		"description": "# Passive: Vengeance\nProvides **30** damage if equipped hero is Silenced and **15** armor if equipped hero is Stunned.",
+		"description": "# Passive: Vengeance\nProvides **30** damage if equipped hero is Silenced and **20** armor if equipped hero is Stunned.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "25",
-				"header": "BONUS ATTACK SPEED:"
+				"value": "30",
+				"header": "+",
+				"footer": "Attack Speed"
 			},
 			{
 				"key": "bonus_damage",
@@ -21367,7 +21369,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "15"
+				"value": "20"
 			}
 		],
 		"json_data": {
@@ -21379,9 +21381,9 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_attack_speed": "25",
+				"bonus_attack_speed": "30",
 				"bonus_damage": "30",
-				"bonus_armor": "15"
+				"bonus_armor": "20"
 			}
 		}
 	},
@@ -21529,12 +21531,14 @@
 			{
 				"key": "move_speed",
 				"value": "25",
-				"header": "BONUS MOVEMENT SPEED:"
+				"header": "+",
+				"footer": "Movement Speed"
 			},
 			{
 				"key": "mana",
 				"value": "300",
-				"header": "BONUS MANA:"
+				"header": "+",
+				"footer": "Mana"
 			},
 			{
 				"key": "magic_block",
