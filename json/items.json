@@ -960,7 +960,7 @@
 		"quality": "component",
 		"icon": "/panorama/images/items/lifesteal_png.png",
 		"cost": 900,
-		"description": "# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **50%**.",
+		"description": "# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **40%**.",
 		"lore": "A mask that drains the energy of those caught in its gaze.",
 		"secret_shop": false,
 		"ability_special": [
@@ -972,7 +972,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			}
 		],
 		"shop_tags": "unique",
@@ -986,7 +986,7 @@
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"lifesteal_percent": "18",
-				"creep_lifesteal_reduction_pct": "50"
+				"creep_lifesteal_reduction_pct": "40"
 			}
 		}
 	},
@@ -1860,7 +1860,7 @@
 		"cost": 50,
 		"cooldown": "1",
 		"cast_range": "500",
-		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **900** radius.\nLasts **7** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero. <br/><br/>Range: **500**",
+		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **1000** radius.\nLasts **7** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero. <br/><br/>Range: **500**",
 		"lore": "A form of plant originally grown in the garden of a fearful king.",
 		"secret_shop": false,
 		"ability_special": [
@@ -1874,7 +1874,7 @@
 			},
 			{
 				"key": "true_sight_range",
-				"value": "900"
+				"value": "1000"
 			},
 			{
 				"key": "health",
@@ -1915,7 +1915,7 @@
 			"AbilityValues": {
 				"lifetime": "420",
 				"vision_range": "0",
-				"true_sight_range": "900",
+				"true_sight_range": "1000",
 				"health": "200",
 				"duration_minutes_tooltip": "7"
 			}
@@ -2464,7 +2464,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "5.25",
+				"value": "4.75",
 				"header": "+",
 				"footer": "Health Regeneration"
 			}
@@ -2484,7 +2484,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.25"
+					"bonus_health_regen": "4.75"
 				}
 			}
 		}
@@ -3049,7 +3049,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "2 4",
+				"value": "3 6",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -3082,7 +3082,7 @@
 				"bonus_strength": "5 10",
 				"bonus_agility": "2 4",
 				"bonus_intellect": "2 4",
-				"bonus_damage": "2 4",
+				"bonus_damage": "3 6",
 				"bonus_health_regen": "0.75 1.5",
 				"clock_time": "25"
 			}
@@ -3382,7 +3382,7 @@
 		"icon": "/panorama/images/items/vladmir_png.png",
 		"cost": 2450,
 		"cast_range": "1200",
-		"description": "# Passive: Vladmir's Aura\nGrants **20%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies. Lifesteal from creeps is reduced by **50%**.\n\nRadius: **1200**",
+		"description": "# Passive: Vladmir's Aura\nGrants **20%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **3** armor to nearby allies. Lifesteal from creeps is reduced by **40%**.\n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3400,7 +3400,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			},
 			{
 				"key": "damage_aura",
@@ -3427,7 +3427,7 @@
 				"armor_aura": "3.0",
 				"mana_regen_aura": "1.75",
 				"lifesteal_aura": "20",
-				"creep_lifesteal_reduction_pct": "50",
+				"creep_lifesteal_reduction_pct": "40",
 				"damage_aura": "18",
 				"aura_radius": "1200"
 			}
@@ -3618,20 +3618,20 @@
 		"cost": 3375,
 		"cooldown": "60",
 		"cast_range": "1200",
-		"mana_cost": "100",
+		"mana_cost": "150",
 		"description": "# Active: Barrier\nGives a magic damage barrier that absorbs **450** damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "health_regen",
-				"value": "8.5",
+				"value": "6",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
 			{
 				"key": "magic_resistance",
-				"value": "25%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
@@ -3683,7 +3683,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "2",
 			"AbilityCooldown": "60.0",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "150",
 			"AbilityCastRange": "1200",
 			"ItemCost": "3375",
 			"ItemShopTags": "regen_health;boost_magic_resist",
@@ -3693,8 +3693,8 @@
 			"ItemAlertable": "1",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"health_regen": "8.5",
-				"magic_resistance": "25",
+				"health_regen": "6.0",
+				"magic_resistance": "20",
 				"barrier_debuff_duration": "50.0",
 				"tooltip_resist": "20",
 				"aura_health_regen": "2.5",
@@ -5221,7 +5221,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/vanguard_png.png",
 		"cost": 1700,
-		"description": "# Passive: Damage Block\nGrants a **60%** chance to block **64** damage from incoming attacks on melee heroes, and **32** damage on ranged.",
+		"description": "# Passive: Damage Block\nGrants a **60%** chance to block **56** damage from incoming attacks on melee heroes, and **28** damage on ranged.",
 		"lore": "A powerful shield that defends its wielder from even the most vicious of attacks.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5233,17 +5233,17 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "5.5",
+				"value": "4.75",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
 			{
 				"key": "block_damage_melee",
-				"value": "64"
+				"value": "56"
 			},
 			{
 				"key": "block_damage_ranged",
-				"value": "32"
+				"value": "28"
 			},
 			{
 				"key": "block_chance",
@@ -5269,15 +5269,15 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "5.5"
+					"bonus_health_regen": "4.75"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"block_damage_melee": "64"
+					"block_damage_melee": "56"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"block_damage_ranged": "32"
+					"block_damage_ranged": "28"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -6560,7 +6560,7 @@
 		"icon": "/panorama/images/items/satanic_png.png",
 		"cost": 5050,
 		"cooldown": "30",
-		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **175%** for **6** seconds. \n\nDispel Type: **Basic Dispel** \n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **50%**.",
+		"description": "# Active: Unholy Rage\nIncreases Lifesteal percentage to **175%** for **6** seconds. \n\nDispel Type: **Basic Dispel** \n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **40%**.",
 		"lore": "Immense power at the cost of your soul.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6584,7 +6584,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			},
 			{
 				"key": "unholy_lifesteal_percent",
@@ -6617,7 +6617,7 @@
 				"bonus_strength": "25",
 				"bonus_damage": "25",
 				"lifesteal_percent": "30",
-				"creep_lifesteal_reduction_pct": "50",
+				"creep_lifesteal_reduction_pct": "40",
 				"unholy_lifesteal_percent": "145",
 				"unholy_lifesteal_total_tooltip": "175",
 				"unholy_duration": "6.0"
@@ -7325,7 +7325,7 @@
 		"cost": 1775,
 		"cooldown": "16",
 		"mana_cost": "25",
-		"description": "# Active: Berserk\nGives **110** attack speed and **30** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **50%**.",
+		"description": "# Active: Berserk\nGives **110** attack speed and **30** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of attack damage dealt. Lifesteal from creeps is reduced by **40%**.",
 		"lore": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7349,7 +7349,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			},
 			{
 				"key": "berserk_bonus_attack_speed",
@@ -7388,7 +7388,7 @@
 				"bonus_damage": "10",
 				"bonus_attack_speed": "10",
 				"lifesteal_percent": "24",
-				"creep_lifesteal_reduction_pct": "50",
+				"creep_lifesteal_reduction_pct": "40",
 				"berserk_bonus_attack_speed": "110",
 				"berserk_bonus_movement_speed": "30",
 				"berserk_armor_reduction": "8",
@@ -9293,7 +9293,7 @@
 			},
 			{
 				"key": "true_sight_range",
-				"value": "900",
+				"value": "1000",
 				"header": "SENTRY TRUE SIGHT RANGE:"
 			},
 			{
@@ -9331,7 +9331,7 @@
 				"observer_vision_range_tooltip": "1200",
 				"observer_duration_minutes_tooltip": "6",
 				"sentry_duration_minutes_tooltip": "8",
-				"true_sight_range": "900",
+				"true_sight_range": "1000",
 				"cast_range_observer": "400",
 				"cast_range_sentry": "500"
 			}
@@ -10209,7 +10209,7 @@
 		"aliases": "faerie fire",
 		"quality": "consumable",
 		"icon": "/panorama/images/items/faerie_fire_png.png",
-		"cost": 70,
+		"cost": 65,
 		"cooldown": "5",
 		"description": "# Use: Imbue\nInstantly restores **85** health.",
 		"lore": "The ethereal flames from the ever-burning ruins of Kindertree ignite across realities.",
@@ -10234,7 +10234,7 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "5.0",
-			"ItemCost": "70",
+			"ItemCost": "65",
 			"ItemShopTags": "damage",
 			"ItemQuality": "consumable",
 			"ItemAliases": "faerie fire",
@@ -10462,9 +10462,10 @@
 		"localized_name": "Crimson Guard",
 		"quality": "epic",
 		"icon": "/panorama/images/items/crimson_guard_png.png",
-		"cost": 3600,
+		"cost": 3725,
 		"cooldown": "35",
 		"cast_range": "1200",
+		"mana_cost": "75",
 		"description": "# Active: Guard\nFor **8** seconds, grant nearby allied heroes and buildings a **100%** chance to block damage equal to **70** plus **50%** of the casters Strength value from each incoming attack.\nUnits may only be affected by Guard once every **35** seconds.\n\nRadius: **1200**\n\n\n# Passive: Damage Block\nGrants a **60%** chance to block **75** damage from incoming attacks on melee heroes, and **50** damage on ranged.",
 		"lore": "A cuirass originally built to protect against the dreaded Year Beast.",
 		"secret_shop": false,
@@ -10532,7 +10533,8 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "35.0",
 			"AbilityCastRange": "1200",
-			"ItemCost": "3600",
+			"AbilityManaCost": "75",
+			"ItemCost": "3725",
 			"ItemShopTags": "armor;boost_armor;regen_health;block;health_pool",
 			"ItemQuality": "epic",
 			"ItemAlertable": "1",
@@ -10559,13 +10561,13 @@
 		"name": "item_recipe_crimson_guard",
 		"localized_name": "Crimson Guard Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 925,
+		"cost": 1050,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "243",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "925",
+			"ItemCost": "1050",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_crimson_guard",
@@ -12579,7 +12581,7 @@
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "6%",
+				"value": "10%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -12591,7 +12593,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50%",
+				"value": "40%",
 				"header": "CREEP LIFESTEAL REDUCTION:"
 			}
 		],
@@ -12605,9 +12607,9 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"attack_lifesteal": "15",
-				"spell_lifesteal": "6",
+				"spell_lifesteal": "10",
 				"night_vision": "300",
-				"creep_lifesteal_reduction_pct": "50"
+				"creep_lifesteal_reduction_pct": "40"
 			}
 		}
 	},
@@ -13230,7 +13232,7 @@
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "8",
+				"value": "6",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -13251,7 +13253,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_cooldown": "12",
-				"bonus_all_stats": "8",
+				"bonus_all_stats": "6",
 				"mana_regen": "4"
 			}
 		}
@@ -13572,13 +13574,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_primary_stat",
-				"value": "10",
+				"value": "8",
 				"header": "+",
 				"footer": "Main Vambrace Attribute"
 			},
 			{
 				"key": "bonus_secondary_stat",
-				"value": "5",
+				"value": "4",
 				"header": "+",
 				"footer": "Other Attributes"
 			},
@@ -13610,11 +13612,11 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_primary_stat": "10"
+					"bonus_primary_stat": "8"
 				},
 				"02": {
 					"var_type": "FIELD_INTEGER",
-					"bonus_secondary_stat": "5"
+					"bonus_secondary_stat": "4"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
@@ -13870,7 +13872,7 @@
 		"localized_name": "Trusty Shovel",
 		"icon": "/panorama/images/items/trusty_shovel_png.png",
 		"cost": 0,
-		"cooldown": "50",
+		"cooldown": "40",
 		"cast_range": "250",
 		"description": "# Active: Dig\nChannel for **1** second. \nCan find a Bounty Rune, a Flask, an Enchanted Mango, or a Kobold.",
 		"lore": "Former plaything of a young deity, received as a gift from his uncle.",
@@ -13901,7 +13903,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
 			"AbilityCastAnimation": "ACT_DOTA_GENERIC_CHANNEL_1",
 			"AbilityCastRange": "250",
-			"AbilityCooldown": "50.0",
+			"AbilityCooldown": "40.0",
 			"AbilityCastPoint": "0.1",
 			"AbilityChannelTime": "1",
 			"ItemCost": "0",
@@ -13923,7 +13925,7 @@
 		"localized_name": "Dragon Scale",
 		"icon": "/panorama/images/items/dragon_scale_png.png",
 		"cost": 0,
-		"description": "# Passive: Afterburn\nCauses attacks to burn the enemy, dealing **18** damage per second for **3** seconds. Affects buildings.",
+		"description": "# Passive: Afterburn\nCauses attacks to burn the enemy, dealing **22** damage per second for **3** seconds. Affects buildings.",
 		"lore": "The remains of a dragon always outvalue the wealth of even the most prodigious hoard.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -13942,7 +13944,7 @@
 			},
 			{
 				"key": "damage_per_sec",
-				"value": "18"
+				"value": "22"
 			},
 			{
 				"key": "duration",
@@ -13968,7 +13970,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"damage_per_sec": "18"
+					"damage_per_sec": "22"
 				},
 				"04": {
 					"var_type": "FIELD_FLOAT",
@@ -14099,7 +14101,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_range",
-				"value": "50",
+				"value": "75",
 				"header": "+",
 				"footer": "Attack Range (Ranged Only)"
 			},
@@ -14122,7 +14124,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_attack_range": "50",
+				"bonus_attack_range": "75",
 				"bonus_damage": "225",
 				"active_bonus_attack_range": "350"
 			}
@@ -14286,7 +14288,7 @@
 		"icon": "/panorama/images/items/havoc_hammer_png.png",
 		"cost": 0,
 		"cooldown": "10",
-		"description": "# Active: Havoc\nKnocks back enemies in **400** range around you, slowing them by **50%** for **3** seconds and dealing **175** + **1**x your str as magical damage.",
+		"description": "# Active: Havoc\nKnocks back enemies in **400** range around you, slowing them by **50%** for **3** seconds and dealing **175** + **1.5**x your str as magical damage.",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
@@ -14332,7 +14334,7 @@
 			},
 			{
 				"key": "nuke_str_dmg",
-				"value": "1"
+				"value": "1.5"
 			}
 		],
 		"json_data": {
@@ -14383,7 +14385,7 @@
 				},
 				"10": {
 					"var_type": "FIELD_FLOAT",
-					"nuke_str_dmg": "1"
+					"nuke_str_dmg": "1.5"
 				}
 			}
 		}
@@ -15062,7 +15064,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			}
 		],
 		"json_data": {
@@ -15078,7 +15080,7 @@
 				"bonus_lifesteal": "16",
 				"bonus_spell_lifesteal": "8",
 				"bonus_amp": "14",
-				"creep_lifesteal_reduction_pct": "50"
+				"creep_lifesteal_reduction_pct": "40"
 			}
 		}
 	},
@@ -16181,7 +16183,7 @@
 			},
 			{
 				"key": "passive_movement_bonus",
-				"value": "30",
+				"value": "35",
 				"header": "+",
 				"footer": "Movement Speed"
 			}
@@ -16202,7 +16204,7 @@
 				"slow_duration": "0.4",
 				"bonus_mana_regen": "4",
 				"max_targets": "2",
-				"passive_movement_bonus": "30"
+				"passive_movement_bonus": "35"
 			}
 		}
 	},
@@ -16746,7 +16748,7 @@
 			"ID": "604",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
 			"AbilityCastRange": "1400",
-			"AbilityOvershootCastRange": "960",
+			"AbilityOvershootCastRange": "1120",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "7.0",
 			"AbilityManaCost": "0",
@@ -17074,7 +17076,7 @@
 			},
 			{
 				"key": "creep_lifesteal_reduction_pct",
-				"value": "50"
+				"value": "40"
 			},
 			{
 				"key": "damage_aura",
@@ -17118,7 +17120,7 @@
 				"armor_aura": "3.0",
 				"mana_regen_aura": "2",
 				"lifesteal_aura": "20",
-				"creep_lifesteal_reduction_pct": "50",
+				"creep_lifesteal_reduction_pct": "40",
 				"damage_aura": "18",
 				"aura_radius": "1200"
 			}
@@ -17817,7 +17819,7 @@
 			},
 			{
 				"key": "bonus_strength",
-				"value": "12",
+				"value": "14",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -17845,7 +17847,7 @@
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_spell_resist": "30",
-				"bonus_strength": "12",
+				"bonus_strength": "14",
 				"bonus_health_regen": "7.0",
 				"mana_restore_pct": "25"
 			}
@@ -18002,7 +18004,7 @@
 		"cost": 0,
 		"cooldown": "25",
 		"mana_cost": "0",
-		"description": "# Passive: Endurance\nWhenever a debuff would be applied to the owner, grant **40%** Status resistance for **4** seconds.",
+		"description": "# Passive: Endurance\nWhenever a debuff would be applied to the owner, grant **40%** Status resistance for **5** seconds.",
 		"lore": "An austere hat thought to be of Turstarkuri origin.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -18019,11 +18021,11 @@
 			},
 			{
 				"key": "duration",
-				"value": "4"
+				"value": "5"
 			},
 			{
 				"key": "hp_regen",
-				"value": "15",
+				"value": "20",
 				"header": "+",
 				"footer": "Health Regeneration"
 			}
@@ -18041,8 +18043,8 @@
 			"AbilityValues": {
 				"status_resistance": "40",
 				"bonus_health": "250",
-				"duration": "4",
-				"hp_regen": "15"
+				"duration": "5",
+				"hp_regen": "20"
 			}
 		}
 	},
@@ -18784,13 +18786,13 @@
 		"name": "item_recipe_boots_of_bearing",
 		"localized_name": "Boots of Bearing Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1500,
+		"cost": 1700,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "930",
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1500",
+			"ItemCost": "1700",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_boots_of_bearing",
@@ -18806,7 +18808,7 @@
 		"aliases": "marching boots",
 		"quality": "rare",
 		"icon": "/panorama/images/items/boots_of_bearing_png.png",
-		"cost": 4075,
+		"cost": 4275,
 		"cooldown": "30",
 		"description": "# Active: Endurance\nGives +**50** attack speed and +**15%** movement speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed to allies.  \n\nRadius: **1200**",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
@@ -18869,7 +18871,7 @@
 			"ItemPermanent": "1",
 			"FightRecapLevel": "1",
 			"AbilityCooldown": "30.0",
-			"ItemCost": "4075",
+			"ItemCost": "4275",
 			"ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "marching boots",
@@ -19156,6 +19158,12 @@
 				"footer": "Health"
 			},
 			{
+				"key": "bonus_health_regen",
+				"value": "3",
+				"header": "+",
+				"footer": "Health Regeneration"
+			},
+			{
 				"key": "aura_health_regen",
 				"value": "10"
 			},
@@ -19180,6 +19188,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_health": "150",
+				"bonus_health_regen": "3",
 				"aura_health_regen": "10",
 				"radius": "400",
 				"duration": "14"
@@ -19423,7 +19432,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "5",
+				"value": "7",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -19447,7 +19456,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"ItemSellable": "0",
 			"AbilityValues": {
-				"bonus_armor": "5",
+				"bonus_armor": "7",
 				"all_stats": "7",
 				"counter_cooldown": "5"
 			}
@@ -19585,7 +19594,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.5",
+				"value": "1.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -19601,7 +19610,7 @@
 			"AbilityValues": {
 				"cast_range_bonus": "125",
 				"mana_reduction_pct": "15",
-				"bonus_mana_regen": "0.5"
+				"bonus_mana_regen": "1.25"
 			}
 		}
 	},
@@ -19923,7 +19932,7 @@
 		"icon": "/panorama/images/items/specialists_array_png.png",
 		"cost": 0,
 		"cooldown": "8",
-		"description": "# Passive: Crackshot\nRanged Only. The next attack fires projectiles at **2** additional targets within attack range plus a **225** range bonus. Does not trigger attack modifiers.",
+		"description": "# Passive: Crackshot\nRanged Only. The next attack fires projectiles that deal **20** bonus damage at **2** additional targets within attack range plus a **225** range bonus. Does not trigger attack modifiers.",
 		"lore": "An impressive kit of trigger enhancements born in an aging assassin's idle mind.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -19947,6 +19956,10 @@
 			{
 				"key": "secondary_target_range_bonus",
 				"value": "225"
+			},
+			{
+				"key": "proc_bonus_damage",
+				"value": "20"
 			}
 		],
 		"json_data": {
@@ -19962,7 +19975,8 @@
 				"all_stats": "5",
 				"bonus_damage": "12",
 				"count": "2",
-				"secondary_target_range_bonus": "225"
+				"secondary_target_range_bonus": "225",
+				"proc_bonus_damage": "20"
 			}
 		}
 	},
@@ -20686,7 +20700,7 @@
 	{
 		"id": 1101,
 		"name": "item_recipe_harpoon",
-		"localized_name": "item_recipe_harpoon",
+		"localized_name": "Harpoon Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1000,
 		"secret_shop": false,
@@ -20895,17 +20909,17 @@
 		"localized_name": "item_spark_of_courage",
 		"icon": "/panorama/images/items/spark_of_courage_png.png",
 		"cost": 0,
-		"description": "# Passive: Courage\nProvides **10** damage when the hero is above **50%** Health, and **5** armor when they are below that threshold.",
+		"description": "# Passive: Courage\nProvides **18** damage when the hero is above **50%** Health, and **7** armor when they are below that threshold.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "damage",
-				"value": "10"
+				"value": "18"
 			},
 			{
 				"key": "armor",
-				"value": "5"
+				"value": "7"
 			},
 			{
 				"key": "health_pct",
@@ -20921,8 +20935,8 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"damage": "10",
-				"armor": "5",
+				"damage": "18",
+				"armor": "7",
 				"health_pct": "50"
 			}
 		}
@@ -21359,7 +21373,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "30",
+				"value": "35",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -21381,7 +21395,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_attack_speed": "30",
+				"bonus_attack_speed": "35",
 				"bonus_damage": "30",
 				"bonus_armor": "20"
 			}
@@ -21393,13 +21407,13 @@
 		"localized_name": "item_duelist_gloves",
 		"icon": "/panorama/images/items/duelist_gloves_png.png",
 		"cost": 0,
-		"description": "# Passive: Boldness\nGrants **15** attack speed as long as there are enemy heroes within **900** units.",
+		"description": "# Passive: Boldness\nGrants **20** attack speed as long as there are enemy heroes within **1200** units.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "15"
+				"value": "20"
 			},
 			{
 				"key": "bonus_damage",
@@ -21409,7 +21423,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "900"
+				"value": "1200"
 			}
 		],
 		"json_data": {
@@ -21421,9 +21435,9 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_attack_speed": "15",
+				"bonus_attack_speed": "20",
 				"bonus_damage": "10",
-				"radius": "900"
+				"radius": "1200"
 			}
 		}
 	},
@@ -21623,7 +21637,7 @@
 			},
 			{
 				"key": "magic_resist",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
@@ -21647,7 +21661,7 @@
 			"AbilityCooldown": "40",
 			"AbilityValues": {
 				"duration": "8",
-				"magic_resist": "20",
+				"magic_resist": "25",
 				"damage_redirection": "20",
 				"aura_radius": "900"
 			}
@@ -21659,7 +21673,7 @@
 		"localized_name": "item_gossamer_cape",
 		"icon": "/panorama/images/items/gossamer_cape_png.png",
 		"cost": 0,
-		"cooldown": "5",
+		"cooldown": "4",
 		"description": "# Passive: Sixth Sense\nAutomatically dodge an attack from an enemy hero.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -21679,7 +21693,7 @@
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"AbilityCooldown": "5",
+			"AbilityCooldown": "4",
 			"AbilityValues": {
 				"movement_speed": "20"
 			}
