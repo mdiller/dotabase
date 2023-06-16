@@ -2464,7 +2464,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "4.75",
+				"value": "4.5",
 				"header": "+",
 				"footer": "Health Regeneration"
 			}
@@ -2484,7 +2484,7 @@
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "4.75"
+					"bonus_health_regen": "4.5"
 				}
 			}
 		}
@@ -5221,7 +5221,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/vanguard_png.png",
 		"cost": 1700,
-		"description": "# Passive: Damage Block\nGrants a **60%** chance to block **56** damage from incoming attacks on melee heroes, and **28** damage on ranged.",
+		"description": "# Passive: Damage Block\nGrants a **60%** chance to block **50** damage from incoming attacks on melee heroes, and **25** damage on ranged.",
 		"lore": "A powerful shield that defends its wielder from even the most vicious of attacks.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5233,17 +5233,17 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "4.75",
+				"value": "4.5",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
 			{
 				"key": "block_damage_melee",
-				"value": "56"
+				"value": "50"
 			},
 			{
 				"key": "block_damage_ranged",
-				"value": "28"
+				"value": "25"
 			},
 			{
 				"key": "block_chance",
@@ -5269,15 +5269,15 @@
 				},
 				"02": {
 					"var_type": "FIELD_FLOAT",
-					"bonus_health_regen": "4.75"
+					"bonus_health_regen": "4.5"
 				},
 				"03": {
 					"var_type": "FIELD_INTEGER",
-					"block_damage_melee": "56"
+					"block_damage_melee": "50"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
-					"block_damage_ranged": "28"
+					"block_damage_ranged": "25"
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
@@ -7674,7 +7674,7 @@
 		"icon": "/panorama/images/items/soul_ring_png.png",
 		"cost": 855,
 		"cooldown": "25",
-		"description": "# Active: Sacrifice\nConsume %health_sacrifice% health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
+		"description": "# Active: Sacrifice\nConsume %AbilityHealthCost% health to temporarily gain **150** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
 		"lore": "A ring that feeds on the souls of those who wear it.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9774,7 +9774,7 @@
 			"ItemRecipe": "1",
 			"ItemResult": "item_octarine_core",
 			"ItemRequirements": {
-				"01": "item_pers;item_soul_booster"
+				"01": "item_void_stone;item_void_stone;item_soul_booster"
 			}
 		}
 	},
@@ -10120,18 +10120,16 @@
 			},
 			{
 				"key": "bonus_health_regen",
-				"value": "7.5",
-				"header": "+",
-				"footer": "Health Regeneration"
+				"value": "0"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "3.25",
+				"value": "5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
 		],
-		"recipe": "item_pers|item_soul_booster|item_recipe_octarine_core",
+		"recipe": "item_void_stone|item_void_stone|item_soul_booster|item_recipe_octarine_core",
 		"shop_tags": "move_speed|boost_mana|mana_pool",
 		"json_data": {
 			"ID": "235",
@@ -10148,8 +10146,8 @@
 				"bonus_cooldown": "25",
 				"bonus_health": "625",
 				"bonus_mana": "625",
-				"bonus_health_regen": "7.5",
-				"bonus_mana_regen": "3.25"
+				"bonus_health_regen": "0",
+				"bonus_mana_regen": "5"
 			}
 		}
 	},
@@ -11572,6 +11570,7 @@
 			"ItemStockInitial": "0",
 			"ItemStockMax": "1",
 			"ItemInitialStockTime": "270.0",
+			"ItemInitialStockTimeTurbo": "150.0",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -16146,6 +16145,7 @@
 		"localized_name": "Stormcrafter",
 		"icon": "/panorama/images/items/stormcrafter_png.png",
 		"cost": 0,
+		"cooldown": "3",
 		"description": "# Passive: Bottled Lightning\nZaps **2** enemy targets within **700** range, dealing **200** damage and a **40%** slow for **0.4** seconds. Strikes every **3** seconds.",
 		"lore": "The accidental byproduct of a spell conjured to entrap a lesser god.",
 		"secret_shop": false,
@@ -16195,6 +16195,7 @@
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
+			"AbilityCooldown": "3.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"range": "700",
@@ -16856,7 +16857,7 @@
 			"ItemStockInitial": "0",
 			"ItemStockMax": "1",
 			"ItemInitialStockTime": "990.0",
-			"ItemInitialStockTimeTurbo": "645.0",
+			"ItemInitialStockTimeTurbo": "510.0",
 			"ShouldBeSuggested": "1"
 		}
 	},
@@ -17785,12 +17786,12 @@
 		"name": "item_recipe_eternal_shroud",
 		"localized_name": "Eternal Shroud Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 800,
+		"cost": 600,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"ID": "691",
-			"ItemCost": "800",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_eternal_shroud",
@@ -17806,8 +17807,8 @@
 		"aliases": "eternal shroud|es",
 		"quality": "epic",
 		"icon": "/panorama/images/items/eternal_shroud_png.png",
-		"cost": 3300,
-		"description": "# Passive: Shroud\nRestores mana equal to **25%** of incoming enemy spell damage.",
+		"cost": 3100,
+		"description": "# Passive: Shroud\nRestores mana equal to **30%** of incoming enemy spell damage.",
 		"lore": "A pristine hood that feeds upon strife to empower its owner.",
 		"secret_shop": false,
 		"ability_special": [
@@ -17831,7 +17832,7 @@
 			},
 			{
 				"key": "mana_restore_pct",
-				"value": "25"
+				"value": "30"
 			}
 		],
 		"recipe": "item_cloak|item_ogre_axe|item_ring_of_health|item_recipe_eternal_shroud",
@@ -17839,7 +17840,7 @@
 		"json_data": {
 			"ID": "692",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "3300",
+			"ItemCost": "3100",
 			"ItemShopTags": "regen_health;magic_resist",
 			"ItemQuality": "epic",
 			"ItemAliases": "eternal shroud;es",
@@ -17849,7 +17850,7 @@
 				"bonus_spell_resist": "30",
 				"bonus_strength": "14",
 				"bonus_health_regen": "7.0",
-				"mana_restore_pct": "25"
+				"mana_restore_pct": "30"
 			}
 		}
 	},
@@ -20469,7 +20470,7 @@
 		"cooldown": "15",
 		"cast_range": "600",
 		"mana_cost": "75",
-		"description": "# Active: Suppress\nIf targetting an enemy, slows it for **4** seconds. Both movement speed reduction and increase start at 100% and gradually decrease to 0 over the course of the buff duration. \n\nIf targeting an ally, applies a basic dispel, and increases their movement speed by **100%**, and makes them unslowable for **4** seconds. The movement speed buff is decreased to 0 over the course of the buff duration. \n\nRange: **600**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **8** mana per attack from melee illusions and **8** mana per attack from ranged illusions. \n\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Suppress\nIf targeting an enemy, slows it for **4** seconds.\n\n If targeting an ally, applies a basic dispel, increases their movement speed, and makes them unslowable for **4** seconds.\n\nBoth movement speed reduction and increase start at **100%** and gradually decrease to 0% over the course of the buff duration.\n\nRange: **600**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **8** mana per attack from melee illusions and **8** mana per attack from ranged illusions. \n\nDispel Type: **Basic Dispel**",
 		"secret_shop": false,
 		"ability_special": [
 			{
