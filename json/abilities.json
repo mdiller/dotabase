@@ -560,7 +560,7 @@
 		"slot": 4,
 		"icon": "/panorama/images/spellicons/rattletrap_overclocking_png.png",
 		"localized_name": "Overclocking",
-		"description": "Supercharges Clockwerks abilities: Battery Assault affects all enemies in it's range; Clockwerk's attack speed in Power Cogs is increased; Rocket Flares have a reduced cooldown and fire additional rockets to either side of the target; Hookshot stun radius and duration is increased. Clockwerk becomes stunned after the duration runs out.",
+		"description": "Supercharges Clockwerks abilities: Battery Assault affects all enemies in its range; Clockwerk's attack speed in Power Cogs is increased; Rocket Flares have a reduced cooldown and fire additional rockets to either side of the target; Hookshot stun radius and duration is increased. Clockwerk becomes stunned after the duration runs out.",
 		"lore": "Rattletrap understands the limitations of his armor. Just as he understands the risks of pushing past them in times of need.",
 		"scepter_grants": true,
 		"scepter_upgrades": true,
@@ -8125,7 +8125,7 @@
 		"ability_special": [
 			{
 				"key": "movement_speed",
-				"value": "25% 35% 45% 55%",
+				"value": "10% 25% 40% 55%",
 				"header": "SLOW:"
 			},
 			{
@@ -8181,7 +8181,7 @@
 			"AbilityModifierSupportValue": "0.3",
 			"AbilityValues": {
 				"movement_speed": {
-					"value": "25 35 45 55",
+					"value": "10 25 40 55",
 					"special_bonus_unique_broodmother_4": "+35"
 				},
 				"aoe": {
@@ -13450,7 +13450,7 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
+				"key": "bonus_AbilityCooldown",
 				"value": "15"
 			}
 		],
@@ -13464,13 +13464,7 @@
 			"ID": "807",
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilitySpecial": {
-				"01": {
-					"var_type": "FIELD_FLOAT",
-					"value": "15",
-					"ad_linked_abilities": "undying_tombstone"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -15238,7 +15232,7 @@
 		"dispellable": "yes",
 		"cast_range": "1000",
 		"cast_point": "0.1",
-		"cooldown": "12 10 8 6",
+		"cooldown": "13 11 9 7",
 		"mana_cost": "100 115 130 145",
 		"ability_special": [
 			{
@@ -15315,7 +15309,7 @@
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
 			"AbilityCastRange": "1000",
 			"AbilityCastPoint": "0.1",
-			"AbilityCooldown": "12 10 8 6",
+			"AbilityCooldown": "13 11 9 7",
 			"AbilityManaCost": "100 115 130 145",
 			"AbilityModifierSupportValue": "0.25",
 			"AbilityValues": {
@@ -21560,7 +21554,6 @@
 	{
 		"id": 1108,
 		"name": "undying_tombstone_grab",
-		"hero_id": 85,
 		"behavior": "unit_target|unrestricted|ignore_pseudo_queue|ignore_silence|not_learnable|dont_resume_attack|hidden|ignore_backswing|ignore_channel",
 		"target_team": "friendly",
 		"cast_range": "3000",
@@ -21572,7 +21565,6 @@
 				"header": "MAX LOAD DISTANCE:"
 			}
 		],
-		"slot": 4,
 		"icon": "/panorama/images/spellicons/undying_tombstone_grab_png.png",
 		"localized_name": "Grab Ally",
 		"description": "Load an ally into the nearest available tombstone.",
@@ -23765,8 +23757,7 @@
 			},
 			{
 				"key": "heal_reduction",
-				"value": "0%",
-				"header": "HEAL/REGEN REDUCTION:"
+				"value": "0"
 			},
 			{
 				"key": "cast_reduction",
@@ -27082,7 +27073,7 @@
 		"target_team": "enemy",
 		"cast_range": "600 700 800 900",
 		"cast_point": "0.25",
-		"cooldown": "10",
+		"cooldown": "16 14 12 10",
 		"mana_cost": "40 50 60 70",
 		"ability_special": [
 			{
@@ -27141,7 +27132,7 @@
 			"AbilityCastRange": "600 700 800 900",
 			"AbilityCastPoint": "0.25",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
-			"AbilityCooldown": "10",
+			"AbilityCooldown": "16 14 12 10",
 			"AbilityManaCost": "40 50 60 70",
 			"AbilityModifierSupportValue": "0.3",
 			"AbilityValues": {
@@ -27349,7 +27340,7 @@
 			},
 			{
 				"key": "scepter_stat_steal",
-				"value": "20%",
+				"value": "10%",
 				"scepter_upgrade": "1",
 				"header": "TARGET STATS STOLEN:"
 			},
@@ -27373,7 +27364,7 @@
 			},
 			{
 				"key": "scepter_additional_stats",
-				"value": "20%",
+				"value": "5%",
 				"scepter_upgrade": "1",
 				"header": "ADDITIONAL STAT STEAL (UNI):"
 			},
@@ -27415,7 +27406,7 @@
 					"LinkedSpecialBonus": "special_bonus_unique_morphling_8"
 				},
 				"scepter_stat_steal": {
-					"value": "20",
+					"value": "10",
 					"RequiresScepter": "1"
 				},
 				"scepter_spell_amplify": {
@@ -27431,7 +27422,7 @@
 					"RequiresScepter": "1"
 				},
 				"scepter_additional_stats": {
-					"value": "20",
+					"value": "5",
 					"RequiresScepter": "1"
 				},
 				"scepter_cooldown_reduction": {
@@ -31411,7 +31402,7 @@
 		"cast_range": "300",
 		"cast_point": "0.3",
 		"cooldown": "20 18 16 14",
-		"duration": "1.2 1.5 1.8 2.1",
+		"duration": "0.9 1.3 1.7 2.1",
 		"mana_cost": "60 70 80 90",
 		"ability_special": [
 			{
@@ -31433,7 +31424,7 @@
 			},
 			{
 				"key": "AbilityDuration",
-				"value": "1.2 1.5 1.8 2.1",
+				"value": "0.9 1.3 1.7 2.1",
 				"header": "DURATION:"
 			},
 			{
@@ -31473,7 +31464,7 @@
 				"electric_vortex_self_slow": "-50",
 				"electric_vortex_self_slow_duration": "3.0",
 				"AbilityDuration": {
-					"value": "1.2 1.5 1.8 2.1",
+					"value": "0.9 1.3 1.7 2.1",
 					"special_bonus_unique_storm_spirit": "+0.3"
 				},
 				"radius_scepter": {
@@ -39077,7 +39068,7 @@
 		"cast_range": "600",
 		"cast_point": "0.2",
 		"cooldown": "5",
-		"mana_cost": "85 105 125 145",
+		"mana_cost": "100 115 130 145",
 		"ability_special": [
 			{
 				"key": "structure_damage_mod",
@@ -39121,7 +39112,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.2 0.2 0.2 0.2",
 			"AbilityCooldown": "5",
-			"AbilityManaCost": "85 105 125 145",
+			"AbilityManaCost": "100 115 130 145",
 			"AbilitySpecial": {
 				"01": {
 					"var_type": "FIELD_FLOAT",
@@ -39344,6 +39335,10 @@
 				"header": "ALLY DRAIN/HEAL PER SECOND:"
 			},
 			{
+				"key": "health_to_mana_rate",
+				"value": "50"
+			},
+			{
 				"key": "tick_rate",
 				"value": "0.25 0.25 0.25"
 			},
@@ -39438,6 +39433,7 @@
 				"ally_healing": {
 					"value": "120 210 300"
 				},
+				"health_to_mana_rate": "50",
 				"tick_rate": "0.25 0.25 0.25",
 				"drain_buffer": "200",
 				"shard_damage_pct_from_ward": {
@@ -42383,7 +42379,7 @@
 		"note": "Prioritizes allied heroes over creeps.\nIf enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": " Dazzle can now target enemies with Shadow Wave to create an Inverse Shadow Wave. The inverse wave bounces amonst enemies, dealing damage to them and healing any nearby allied units for **150%** the healing and damage values of Shadow Wave. Dazzle will also perform an attack on any enemy hit by the Inverse Shadow Wave.",
+		"scepter_description": " Dazzle can now target enemies with Shadow Wave to create an Inverse Shadow Wave. The inverse wave bounces amongst enemies, dealing damage to them and healing any nearby allied units for **150%** the healing and damage values of Shadow Wave. Dazzle will also perform an attack on any enemy hit by the Inverse Shadow Wave.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -44999,12 +44995,12 @@
 			},
 			{
 				"key": "enchant_armor",
-				"value": "2 4 6 8",
+				"value": "0 3 6 9",
 				"header": "CREEP ARMOR BONUS:"
 			},
 			{
 				"key": "enchant_damage",
-				"value": "10 30 50 70",
+				"value": "0 25 50 75",
 				"header": "CREEP ATTACK DAMAGE BONUS:"
 			},
 			{
@@ -45061,9 +45057,9 @@
 					"value": "200 300 400 500",
 					"special_bonus_unique_enchantress_enchant_health_damage": "+30%"
 				},
-				"enchant_armor": "2 4 6 8",
+				"enchant_armor": "0 3 6 9",
 				"enchant_damage": {
-					"value": "10 30 50 70",
+					"value": "0 25 50 75",
 					"special_bonus_unique_enchantress_enchant_health_damage": "+30%"
 				},
 				"slow_movement_speed": "-30 -40 -50 -60",
@@ -45172,7 +45168,7 @@
 		"ability_special": [
 			{
 				"key": "distance_damage_pct",
-				"value": "8% 12% 16% 20%",
+				"value": "5% 10% 15% 20%",
 				"header": "DISTANCE DAMAGE:"
 			},
 			{
@@ -45211,7 +45207,7 @@
 			"AbilityManaCost": "50",
 			"AbilityValues": {
 				"distance_damage_pct": {
-					"value": "8 12 16 20",
+					"value": "5 10 15 20",
 					"special_bonus_unique_enchantress_4": "+6.5"
 				},
 				"distance_cap": "1750",
@@ -46150,8 +46146,8 @@
 		"damage_type": "physical",
 		"dispellable": "no",
 		"cast_point": "0.2",
-		"cooldown": "40 35 30 25",
-		"mana_cost": "50 60 70 80",
+		"cooldown": "45 40 35 30",
+		"mana_cost": "80",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
@@ -46206,8 +46202,8 @@
 			"HasShardUpgrade": "1",
 			"AbilityCastPoint": "0.2 0.2 0.2",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
-			"AbilityCooldown": "40 35 30 25",
-			"AbilityManaCost": "50 60 70 80",
+			"AbilityCooldown": "45 40 35 30",
+			"AbilityManaCost": "80",
 			"AbilityValues": {
 				"bonus_damage": {
 					"value": "40 50 60 70",
@@ -50053,7 +50049,7 @@
 		"dispellable": "no",
 		"cast_range": "300",
 		"cast_point": "0.3",
-		"cooldown": "60",
+		"cooldown": "65",
 		"mana_cost": "40 50 60 70",
 		"ability_special": [
 			{
@@ -50101,7 +50097,7 @@
 			"AbilitySound": "Hero_DoomBringer.Devour",
 			"AbilityCastPoint": "0.3 0.3 0.3 0.3",
 			"AbilityCastRange": "300 300 300 300",
-			"AbilityCooldown": "60",
+			"AbilityCooldown": "65",
 			"AbilityManaCost": "40 50 60 70",
 			"AbilityValues": {
 				"bonus_gold": {
@@ -52785,7 +52781,7 @@
 		"id": 5375,
 		"name": "invoker_invoke",
 		"hero_id": 74,
-		"behavior": "no_target|immediate|show_in_guides",
+		"behavior": "no_target|immediate|show_in_guides|not_learnable",
 		"cooldown": "7",
 		"mana_cost": "0",
 		"ability_special": [
@@ -52811,7 +52807,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "5375",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
 			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
 			"MaxLevel": "1",
 			"RequiredLevel": "1",
@@ -58264,11 +58260,16 @@
 		"behavior": "point|ignore_backswing",
 		"damage_type": "physical",
 		"spell_immunity": "no",
+		"target_team": "friendly",
 		"cast_range": "500",
 		"cast_point": "0.6",
 		"cooldown": "90 85 80 75",
 		"mana_cost": "120 140 160 180",
 		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "90 85 80 75"
+			},
 			{
 				"key": "tombstone_health",
 				"value": "20 24 28 32"
@@ -58334,10 +58335,12 @@
 		"scepter_upgrades": false,
 		"shard_grants": false,
 		"shard_upgrades": true,
-		"shard_description": "Allows up to 1 allied hero to bunker inside of the tombstone. Heroes that enter the Tombstone cannot leave for **3** seconds nor can they re-enter after leaving for the same period of time. Adds an ability on the Tombstone and Undying to manually bunker heroes.",
+		"shard_description": "Tombstone can be cast on an allied hero to bunker inside of the tombstone. Heroes that enter the Tombstone cannot leave for **3** seconds nor can they re-enter after leaving.",
 		"json_data": {
 			"ID": "5444",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
 			"FightRecapLevel": "1",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
@@ -58347,9 +58350,12 @@
 			"AbilityCastGestureSlot": "DEFAULT",
 			"AbilityCastRange": "500",
 			"AbilityCastPoint": "0.6",
-			"AbilityCooldown": "90 85 80 75",
 			"AbilityManaCost": "120 140 160 180",
 			"AbilityValues": {
+				"AbilityCooldown": {
+					"value": "90 85 80 75",
+					"special_bonus_unique_undying_7": "-15"
+				},
 				"tombstone_health": {
 					"value": "20 24 28 32",
 					"special_bonus_unique_undying_5": "+24"
@@ -62283,11 +62289,11 @@
 		"ability_special": [
 			{
 				"key": "damage_modifier",
-				"value": "-45 -35 -25 -15"
+				"value": "-65 -50 -35 -20"
 			},
 			{
 				"key": "damage_modifier_tooltip",
-				"value": "55% 65% 75% 85%",
+				"value": "35% 50% 65% 80%",
 				"header": "OUTGOING DAMAGE:"
 			},
 			{
@@ -62318,11 +62324,11 @@
 			"AbilityCastPoint": "0.4 0.4 0.4 0.4",
 			"AbilityValues": {
 				"damage_modifier": {
-					"value": "-45 -35 -25 -15",
+					"value": "-65 -50 -35 -20",
 					"special_bonus_unique_medusa_2": "+10"
 				},
 				"damage_modifier_tooltip": {
-					"value": "55 65 75 85",
+					"value": "35 50 65 80",
 					"special_bonus_unique_medusa_2": "+10"
 				},
 				"arrow_count": "4",
@@ -62385,7 +62391,7 @@
 			},
 			{
 				"key": "snake_mana_steal",
-				"value": "14% 16% 18% 20%",
+				"value": "14% 15% 16% 17%",
 				"header": "MANA GAIN:"
 			},
 			{
@@ -62437,7 +62443,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/medusa_mystic_snake_png.png",
 		"localized_name": "Mystic Snake",
-		"description": "A mystic snake made of energy jumps from target to target dealing damage. Damage and speed increases with each jump. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake returns **14%**/**16%**/**18%**/**20%** mana based on the targets' total mana.",
+		"description": "A mystic snake made of energy jumps from target to target dealing damage. Damage and speed increases with each jump. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake returns **14%**/**15%**/**16%**/**17%** mana based on the targets' total mana.",
 		"lore": "The Gorgon's curse is her greatest strength.",
 		"note": "Mystic Snake cannot be disjointed.",
 		"scepter_grants": false,
@@ -62475,7 +62481,7 @@
 					"CalculateSpellDamageTooltip": "1"
 				},
 				"snake_damage_pct": "0",
-				"snake_mana_steal": "14 16 18 20",
+				"snake_mana_steal": "14 15 16 17",
 				"snake_scale": "35",
 				"snake_speed_scale": "15",
 				"initial_speed": "800",
@@ -64095,7 +64101,7 @@
 			},
 			{
 				"key": "damage",
-				"value": "70 120 170 220",
+				"value": "60 110 160 210",
 				"header": "DAMAGE:"
 			}
 		],
@@ -64139,7 +64145,7 @@
 				},
 				"05": {
 					"var_type": "FIELD_INTEGER",
-					"damage": "70 120 170 220"
+					"damage": "60 110 160 210"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
@@ -64162,7 +64168,7 @@
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "0.4 0.5 0.6 0.7",
+				"value": "0.3 0.4 0.5 0.6",
 				"header": "BONUS HP REGEN:"
 			},
 			{
@@ -64249,7 +64255,7 @@
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
 			"AbilityValues": {
 				"bonus_armor": "0.5 0.6 0.7 0.8",
-				"bonus_hp_regen": "0.4 0.5 0.6 0.7",
+				"bonus_hp_regen": "0.3 0.4 0.5 0.6",
 				"stack_limit": {
 					"value": "10 20 30 40",
 					"LinkedSpecialBonus": "special_bonus_unique_timbersaw_2"
@@ -67888,7 +67894,7 @@
 		"note": "The projectile moves very slowly (500 ms), providing 325 vision around it.  Upon impact, it will reveal the target area for 3.34 seconds.\nArcane Bolt cannot be disjointed.",
 		"scepter_grants": false,
 		"scepter_upgrades": true,
-		"scepter_description": "When Skywrath Mage casts Arcane Bolt, a different random target within **700** range willl be hit with the same ability. Heroes will take priority.",
+		"scepter_description": "When Skywrath Mage casts Arcane Bolt, a different random target within **700** range will be hit with the same ability. Heroes will take priority.",
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"json_data": {
@@ -70088,7 +70094,7 @@
 			},
 			{
 				"key": "attack_interval",
-				"value": "0.2",
+				"value": "0.25",
 				"header": "ATTACK INTERVAL:"
 			},
 			{
@@ -70107,7 +70113,7 @@
 		"localized_name": "Sleight of Fist",
 		"description": "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.",
 		"lore": "The studied warrior must whip and weave through its enemies, burning each without pause.",
-		"note": "Targets are determined when the spell is cast.\nA regular attack is done to each target every **0.2** seconds.\nAny attack modifier that Xin has (such as Critical Strike, Bash, Cleave, or Orb effects) will be applied normally on these attacks.\nAbilities and items can be used while Sleight of Fist is active.",
+		"note": "Targets are determined when the spell is cast.\nA regular attack is done to each target every **0.25** seconds.\nAny attack modifier that Xin has (such as Critical Strike, Bash, Cleave, or Orb effects) will be applied normally on these attacks.\nAbilities and items can be used while Sleight of Fist is active.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -70135,7 +70141,7 @@
 				},
 				"03": {
 					"var_type": "FIELD_FLOAT",
-					"attack_interval": "0.2"
+					"attack_interval": "0.25"
 				},
 				"04": {
 					"var_type": "FIELD_INTEGER",
@@ -70176,9 +70182,9 @@
 			},
 			{
 				"key": "absorb_amount",
-				"value": "65 145 225 305",
+				"value": "60 135 210 285",
 				"talent_name": "special_bonus_unique_ember_spirit_1",
-				"talent_value": "265 345 425 505",
+				"talent_value": "260 335 410 485",
 				"header": "MAGIC BARRIER:"
 			},
 			{
@@ -70227,7 +70233,7 @@
 				"duration": "11 14 17 20",
 				"radius": "400",
 				"absorb_amount": {
-					"value": "65 145 225 305",
+					"value": "60 135 210 285",
 					"LinkedSpecialBonus": "special_bonus_unique_ember_spirit_1"
 				},
 				"tick_interval": "0.2",
@@ -73020,7 +73026,7 @@
 		"id": 5644,
 		"name": "techies_minefield_sign",
 		"hero_id": 105,
-		"behavior": "point|aoe|show_in_guides",
+		"behavior": "point|aoe|show_in_guides|not_learnable",
 		"damage_type": "none",
 		"cast_range": "10",
 		"cast_point": "2",
@@ -73078,7 +73084,7 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "5644",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_NONE",
 			"MaxLevel": "1",
 			"HasScepterUpgrade": "1",
@@ -101658,7 +101664,7 @@
 		"dispellable": "yes_strong",
 		"cast_range": "600 700 800 900",
 		"cast_point": "0.25",
-		"cooldown": "10",
+		"cooldown": "16 14 12 10",
 		"mana_cost": "40 50 60 70",
 		"ability_special": [
 			{
@@ -101722,7 +101728,7 @@
 			"AbilityCastRange": "600 700 800 900",
 			"AbilityCastPoint": "0.25",
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
-			"AbilityCooldown": "10",
+			"AbilityCooldown": "16 14 12 10",
 			"AbilityManaCost": "40 50 60 70",
 			"AbilityModifierSupportValue": "0.3",
 			"AbilityValues": {
@@ -104861,7 +104867,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/brewmaster_cinder_brew_png.png",
 		"localized_name": "Cinder Brew",
-		"description": "Drenches himself and an area in alcohol, causing enemy units to move slower and ignited once they take any spell damage. Duration is increased by **3** seconds when enemies are ignited. While Brewmaster is Brewed Up, His Drunken Brawler Stances are stronger.",
+		"description": "Drenches himself and an area in alcohol, causing enemy units to move slower and ignite once they take any spell damage. Duration is increased by **3** seconds when enemies are ignited. While Brewmaster is Brewed Up, His Drunken Brawler Stances are stronger.",
 		"lore": "The Order of the Oyo's solution to all problems - another round!",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
@@ -115203,9 +115209,9 @@
 	{
 		"id": 8253,
 		"name": "undying_tombstone_unit_grab",
-		"behavior": "unit_target|unrestricted|ignore_pseudo_queue|ignore_silence|not_learnable|dont_resume_attack|ignore_backswing|ignore_channel",
+		"behavior": "unit_target|unrestricted|ignore_pseudo_queue|ignore_silence|not_learnable|dont_resume_attack|ignore_backswing|ignore_channel|immediate",
 		"target_team": "friendly",
-		"cast_range": "400",
+		"cast_range": "1200",
 		"cooldown": "10",
 		"ability_special": [],
 		"icon": "/panorama/images/spellicons/undying_tombstone_unit_grab_png.png",
@@ -115217,11 +115223,11 @@
 		"shard_upgrades": false,
 		"json_data": {
 			"ID": "8253",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"MaxLevel": "1",
-			"AbilityCastRange": "400",
+			"AbilityCastRange": "1200",
 			"AbilityCooldown": "10"
 		}
 	},
