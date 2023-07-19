@@ -71,7 +71,7 @@ class Hero(Base):
     json_data = Column(String)
 
     def __repr__(self):
-        return "Hero: %s" % self.localized_name
+        return f"Hero: {self.localized_name}"
 
 
 class Ability(Base):
@@ -144,7 +144,7 @@ class Ability(Base):
         return len(self.talent_links) > 0
 
     def __repr__(self):
-        return "Ability: %s" % self.localized_name
+        return f"Ability: {self.localized_name}"
 
 
 class Talent(Base):
@@ -170,7 +170,7 @@ class Talent(Base):
         return (self.slot % 2) == 0
 
     def __repr__(self):
-        return "Talent: %s" % self.localized_name
+        return f"Talent: {self.localized_name}"
 
 
 class Item(Base):
@@ -205,7 +205,7 @@ class Item(Base):
     )
 
     def __repr__(self):
-        return "Item: %s" % self.localized_name
+        return f"Item: {self.localized_name}"
 
 
 class Voice(Base):
@@ -242,7 +242,7 @@ class Response(Base):
     voice = relationship("Voice", back_populates="responses")
 
     def __repr__(self):
-        return "Response: %s" % self.name
+        return f"Response: {self.name}"
 
 
 class Criterion(Base):
