@@ -13,319 +13,319 @@ Base = declarative_base()
 
 
 class Hero(Base):
-    __tablename__ = 'heroes'
+	__tablename__ = 'heroes'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    full_name = Column(String)
-    media_name = Column(String)
-    localized_name = Column(String)
-    real_name = Column(String)
-    aliases = Column(String)
-    roles = Column(String)
-    role_levels = Column(String)
-    hype = Column(String)
-    bio = Column(String)
-    image = Column(String)
-    icon = Column(String)
-    portrait = Column(String)
-    color = Column(String)
-    legs = Column(Integer)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	full_name = Column(String)
+	media_name = Column(String)
+	localized_name = Column(String)
+	real_name = Column(String)
+	aliases = Column(String)
+	roles = Column(String)
+	role_levels = Column(String)
+	hype = Column(String)
+	bio = Column(String)
+	image = Column(String)
+	icon = Column(String)
+	portrait = Column(String)
+	color = Column(String)
+	legs = Column(Integer)
 
-    team = Column(String)
-    base_health_regen = Column(Float)
-    base_mana_regen = Column(Float)
-    base_movement = Column(Integer)
-    base_attack_speed = Column(Integer)
-    turn_rate = Column(Float)
-    base_armor = Column(Integer)
-    attack_range = Column(Integer)
-    attack_projectile_speed = Column(Integer)
-    attack_damage_min = Column(Integer)
-    attack_damage_max = Column(Integer)
-    attack_rate = Column(Float)
-    attack_point = Column(Float)
-    attr_primary = Column(String)
-    attr_strength_base = Column(Integer)
-    attr_strength_gain = Column(Float)
-    attr_intelligence_base = Column(Integer)
-    attr_intelligence_gain = Column(Float)
-    attr_agility_base = Column(Integer)
-    attr_agility_gain = Column(Float)
-    vision_day = Column(Integer)
-    vision_night = Column(Integer)
-    magic_resistance = Column(Integer)
-    is_melee = Column(Boolean)
-    material = Column(String)
+	team = Column(String)
+	base_health_regen = Column(Float)
+	base_mana_regen = Column(Float)
+	base_movement = Column(Integer)
+	base_attack_speed = Column(Integer)
+	turn_rate = Column(Float)
+	base_armor = Column(Integer)
+	attack_range = Column(Integer)
+	attack_projectile_speed = Column(Integer)
+	attack_damage_min = Column(Integer)
+	attack_damage_max = Column(Integer)
+	attack_rate = Column(Float)
+	attack_point = Column(Float)
+	attr_primary = Column(String)
+	attr_strength_base = Column(Integer)
+	attr_strength_gain = Column(Float)
+	attr_intelligence_base = Column(Integer)
+	attr_intelligence_gain = Column(Float)
+	attr_agility_base = Column(Integer)
+	attr_agility_gain = Column(Float)
+	vision_day = Column(Integer)
+	vision_night = Column(Integer)
+	magic_resistance = Column(Integer)
+	is_melee = Column(Boolean)
+	material = Column(String)
 
-    abilities = relationship("Ability", order_by="Ability.slot", back_populates="hero")
-    talents = relationship("Talent", order_by="Talent.slot")
-    responses = relationship("Response", back_populates="hero")
-    voice = relationship("Voice", uselist=False, back_populates="hero")
-    strings = relationship(
-        "LocaleString",
-        primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)",
-        viewonly=True
-    )
+	abilities = relationship("Ability", order_by="Ability.slot", back_populates="hero")
+	talents = relationship("Talent", order_by="Talent.slot")
+	responses = relationship("Response", back_populates="hero")
+	voice = relationship("Voice", uselist=False, back_populates="hero")
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)",
+		viewonly=True
+	)
 
-    json_data = Column(String)
+	json_data = Column(String)
 
-    def __repr__(self):
-        return f"Hero: {self.localized_name}"
+	def __repr__(self):
+		return f"Hero: {self.localized_name}"
 
 
 class Ability(Base):
-    __tablename__ = 'abilities'
+	__tablename__ = 'abilities'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
 
-    behavior = Column(String)
-    damage_type = Column(String)
-    spell_immunity = Column(String)
-    target_team = Column(String)
-    dispellable = Column(String)
+	behavior = Column(String)
+	damage_type = Column(String)
+	spell_immunity = Column(String)
+	target_team = Column(String)
+	dispellable = Column(String)
 
-    cast_range = Column(String)
-    cast_point = Column(String)
-    channel_time = Column(String)
-    cooldown = Column(String)
-    duration = Column(String)
-    damage = Column(String)
-    mana_cost = Column(String)
-    charges = Column(String)
-    ability_special = Column(String)
+	cast_range = Column(String)
+	cast_point = Column(String)
+	channel_time = Column(String)
+	cooldown = Column(String)
+	duration = Column(String)
+	damage = Column(String)
+	mana_cost = Column(String)
+	charges = Column(String)
+	ability_special = Column(String)
 
-    slot = Column(Integer)
-    icon = Column(String)
+	slot = Column(Integer)
+	icon = Column(String)
 
-    localized_name = Column(String)
-    description = Column(String)
-    lore = Column(String)
-    note = Column(String)
-    scepter_grants = Column(Boolean)
-    scepter_upgrades = Column(Boolean)
-    scepter_description = Column(String)
-    shard_grants = Column(Boolean)
-    shard_upgrades = Column(Boolean)
-    shard_description = Column(String)
+	localized_name = Column(String)
+	description = Column(String)
+	lore = Column(String)
+	note = Column(String)
+	scepter_grants = Column(Boolean)
+	scepter_upgrades = Column(Boolean)
+	scepter_description = Column(String)
+	shard_grants = Column(Boolean)
+	shard_upgrades = Column(Boolean)
+	shard_description = Column(String)
 
-    json_data = Column(String)
+	json_data = Column(String)
 
-    hero = relationship("Hero", back_populates="abilities")
-    talent_links = relationship("Talent", back_populates="ability")
-    strings = relationship(
-        "LocaleString",
-        primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
-        viewonly=True
-    )
+	hero = relationship("Hero", back_populates="abilities")
+	talent_links = relationship("Talent", back_populates="ability")
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
+		viewonly=True
+	)
 
-    # _locale = None
-    # def __getattr__(self, name: str):
-    # 	if name.endswith("_L"):
-    # 		name = name[:-2]
-    # 		if hasattr(self, name):
-    # 			for string in self.strings:
-    # 				if string.lang == self._locale and string.column == name:
-    # 					return string.value
-    # 	return Base.__getattribute__(self, name)
+	# _locale = None
+	# def __getattr__(self, name: str):
+	# 	if name.endswith("_L"):
+	# 		name = name[:-2]
+	# 		if hasattr(self, name):
+	# 			for string in self.strings:
+	# 				if string.lang == self._locale and string.column == name:
+	# 					return string.value
+	# 	return Base.__getattribute__(self, name)
 
-    @property
-    def aghanim(self):
-        return self.scepter_description
+	@property
+	def aghanim(self):
+		return self.scepter_description
 
-    @property
-    def aghanim_grants(self):
-        return self.scepter_grants
+	@property
+	def aghanim_grants(self):
+		return self.scepter_grants
 
-    @property
-    def is_talent(self):
-        return len(self.talent_links) > 0
+	@property
+	def is_talent(self):
+		return len(self.talent_links) > 0
 
-    def __repr__(self):
-        return f"Ability: {self.localized_name}"
+	def __repr__(self):
+		return f"Ability: {self.localized_name}"
 
 
 class Talent(Base):
-    __tablename__ = 'talents'
+	__tablename__ = 'talents'
 
-    hero_id = Column(Integer, ForeignKey("heroes.id"), primary_key=True, nullable=True)
-    ability_id = Column(Integer, ForeignKey("abilities.id"), primary_key=True)
-    slot = Column(Integer)
-    linked_abilities = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"), primary_key=True, nullable=True)
+	ability_id = Column(Integer, ForeignKey("abilities.id"), primary_key=True)
+	slot = Column(Integer)
+	linked_abilities = Column(String)
 
-    ability = relationship("Ability", back_populates="talent_links")
+	ability = relationship("Ability", back_populates="talent_links")
 
-    @property
-    def localized_name(self):
-        return self.ability.localized_name
+	@property
+	def localized_name(self):
+		return self.ability.localized_name
 
-    @property
-    def level(self):
-        return ((self.slot // 2) * 5) + 10
+	@property
+	def level(self):
+		return ((self.slot // 2) * 5) + 10
 
-    @property
-    def is_right_side(self):
-        return (self.slot % 2) == 0
+	@property
+	def is_right_side(self):
+		return (self.slot % 2) == 0
 
-    def __repr__(self):
-        return f"Talent: {self.localized_name}"
+	def __repr__(self):
+		return f"Talent: {self.localized_name}"
 
 
 class Item(Base):
-    __tablename__ = 'items'
+	__tablename__ = 'items'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    localized_name = Column(String)
-    aliases = Column(String)
-    quality = Column(String)
-    icon = Column(String)
-    cost = Column(Integer)
-    cooldown = Column(String)
-    cast_range = Column(String)
-    mana_cost = Column(String)
-    duration = Column(String)
-    base_level = Column(Integer)
-    description = Column(String)
-    lore = Column(String)
-    secret_shop = Column(Boolean)
-    neutral_tier = Column(String)
-    ability_special = Column(String)
-    recipe = Column(String)
-    shop_tags = Column(String)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	localized_name = Column(String)
+	aliases = Column(String)
+	quality = Column(String)
+	icon = Column(String)
+	cost = Column(Integer)
+	cooldown = Column(String)
+	cast_range = Column(String)
+	mana_cost = Column(String)
+	duration = Column(String)
+	base_level = Column(Integer)
+	description = Column(String)
+	lore = Column(String)
+	secret_shop = Column(Boolean)
+	neutral_tier = Column(String)
+	ability_special = Column(String)
+	recipe = Column(String)
+	shop_tags = Column(String)
 
-    json_data = Column(String)
+	json_data = Column(String)
 
-    strings = relationship(
-        "LocaleString",
-        primaryjoin="and_(foreign(LocaleString.table) == 'Item', foreign(LocaleString.row_id) == Item.id)",
-        viewonly=True
-    )
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Item', foreign(LocaleString.row_id) == Item.id)",
+		viewonly=True
+	)
 
-    def __repr__(self):
-        return f"Item: {self.localized_name}"
+	def __repr__(self):
+		return f"Item: {self.localized_name}"
 
 
 class Voice(Base):
-    __tablename__ = 'voices'
+	__tablename__ = 'voices'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    icon = Column(String)
-    image = Column(String)
-    url = Column(String)
-    media_name = Column(String)
-    voice_actor = Column(String)
-    hero_id = Column(Integer, ForeignKey("heroes.id"))
-    criteria = Column(String)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	icon = Column(String)
+	image = Column(String)
+	url = Column(String)
+	media_name = Column(String)
+	voice_actor = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	criteria = Column(String)
 
-    hero = relationship("Hero", back_populates="voice")
-    responses = relationship("Response", back_populates="voice")
+	hero = relationship("Hero", back_populates="voice")
+	responses = relationship("Response", back_populates="voice")
 
 
 class Response(Base):
-    __tablename__ = 'responses'
+	__tablename__ = 'responses'
 
-    name = Column(String)
-    fullname = Column(String, primary_key=True)
-    mp3 = Column(String)
-    hero_id = Column(Integer, ForeignKey("heroes.id"))
-    voice_id = Column(Integer, ForeignKey("voices.id"))
-    text = Column(String)
-    text_simple = Column(String)
-    criteria = Column(String)
-    pretty_criteria = Column(String)
+	name = Column(String)
+	fullname = Column(String, primary_key=True)
+	mp3 = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"))
+	voice_id = Column(Integer, ForeignKey("voices.id"))
+	text = Column(String)
+	text_simple = Column(String)
+	criteria = Column(String)
+	pretty_criteria = Column(String)
 
-    hero = relationship("Hero", back_populates="responses")
-    voice = relationship("Voice", back_populates="responses")
+	hero = relationship("Hero", back_populates="responses")
+	voice = relationship("Voice", back_populates="responses")
 
-    def __repr__(self):
-        return f"Response: {self.name}"
+	def __repr__(self):
+		return f"Response: {self.name}"
 
 
 class Criterion(Base):
-    __tablename__ = 'criteria'
+	__tablename__ = 'criteria'
 
-    name = Column(String, primary_key=True)
-    pretty = Column(String)
-    matchkey = Column(String)
-    matchvalue = Column(String)
-    weight = Column(Float)
-    required = Column(Boolean)
+	name = Column(String, primary_key=True)
+	pretty = Column(String)
+	matchkey = Column(String)
+	matchvalue = Column(String)
+	weight = Column(Float)
+	required = Column(Boolean)
 
 
 class Emoticon(Base):
-    __tablename__ = 'emoticons'
+	__tablename__ = 'emoticons'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    url = Column(String)
-    frames = Column(Integer)
-    ms_per_frame = Column(Integer)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	url = Column(String)
+	frames = Column(Integer)
+	ms_per_frame = Column(Integer)
 
 
 class ChatWheelMessage(Base):
-    __tablename__ = 'chatwheelmessages'
+	__tablename__ = 'chatwheelmessages'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    message = Column(String)
-    label = Column(String)
-    sound = Column(String)
-    image = Column(String)
-    all_chat = Column(Boolean)
-    category = Column(String)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	message = Column(String)
+	label = Column(String)
+	sound = Column(String)
+	image = Column(String)
+	all_chat = Column(Boolean)
+	category = Column(String)
 
 
 class LoadingScreen(Base):
-    __tablename__ = 'loadingscreens'
+	__tablename__ = 'loadingscreens'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    image = Column(String)
-    thumbnail = Column(String)
-    creation_date = Column(Date)
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	image = Column(String)
+	thumbnail = Column(String)
+	creation_date = Column(Date)
 
-    color = Column(String)
-    hue = Column(Integer)
-    saturation = Column(Integer)
-    value = Column(Integer)
+	color = Column(String)
+	hue = Column(Integer)
+	saturation = Column(Integer)
+	value = Column(Integer)
 
-    hero_ids = Column(String)
-    category = Column(String)
+	hero_ids = Column(String)
+	category = Column(String)
 
 
 class Patch(Base):
-    __tablename__ = 'patches'
+	__tablename__ = 'patches'
 
-    number = Column(String, primary_key=True)
-    timestamp = Column(DateTime)
-    dota_url = Column(String)
-    custom_url = Column(String)
-    wiki_url = Column(String)
+	number = Column(String, primary_key=True)
+	timestamp = Column(DateTime)
+	dota_url = Column(String)
+	custom_url = Column(String)
+	wiki_url = Column(String)
 
 
 class LocaleString(Base):
-    __tablename__ = 'localestrings'
+	__tablename__ = 'localestrings'
 
-    id = Column(Integer, primary_key=True)
-    table = Column(Unicode(255))
-    row_id = Column(Integer, nullable=False)
-    column = Column(String)
-    lang = Column(String)
-    value = Column(String)
+	id = Column(Integer, primary_key=True)
+	table = Column(Unicode(255))
+	row_id = Column(Integer, nullable=False)
+	column = Column(String)
+	lang = Column(String)
+	value = Column(String)
 
-    target = generic_relationship(table, row_id)
+	target = generic_relationship(table, row_id)
 
-    def __repr__(self):
-        return f"String: [{self.lang}]{self.table}.{self.row_id}.{self.column}"
+	def __repr__(self):
+		return f"String: [{self.lang}]{self.table}.{self.row_id}.{self.column}"
 
 
 # returns an open dotabase session
 # if recreate is true, deletes any existing database first
 def dotabase_session() -> Session:
-    engine = create_engine('sqlite:///' + dotabase_db)
-    Base.metadata.create_all(engine)
-    return Session(engine)
+	engine = create_engine('sqlite:///' + dotabase_db)
+	Base.metadata.create_all(engine)
+	return Session(engine)
