@@ -1,9 +1,8 @@
 #!/usr/bin/env python3.6
 
-from setuptools import setup, find_packages
-from codecs import open
 from os import path
-
+from codecs import open
+from setuptools import setup
 
 # Get the long description from the README file
 with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
@@ -15,7 +14,7 @@ with open(path.join(path.dirname(__file__), 'VERSION')) as f:
 setup(
 	name='dotabase',
 	version=version,
-	description='Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper',
+	description='Dota 2 game data extracted as an SQLite database, with an SQLAlchemy wrapper',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
 	author='Malcolm Diller',
