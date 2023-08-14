@@ -1,8 +1,8 @@
-from sqlalchemy import create_engine
-from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Table, Date, DateTime, Unicode
+import os
+
+from sqlalchemy import create_engine, Column, Integer, String, Float, Boolean, ForeignKey, Date, DateTime, Unicode
 from sqlalchemy.orm import relationship, Session, declarative_base
 from sqlalchemy_utils import generic_relationship
-import os
 
 # The absolute path to the dotabase Python package
 dotabase_dir = os.path.dirname(os.path.abspath(__file__))
@@ -10,6 +10,7 @@ dotabase_dir = os.path.dirname(os.path.abspath(__file__))
 dotabase_db = os.path.join(dotabase_dir, 'dotabase.db')
 
 Base = declarative_base()
+
 
 class Hero(Base):
 	__tablename__ = 'heroes'
@@ -61,12 +62,17 @@ class Hero(Base):
 	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
 	voice = relationship("Voice", uselist=False, back_populates="hero")
-	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)", viewonly=True)
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)",
+		viewonly=True
+	)
 
 	json_data = Column(String)
 
 	def __repr__(self):
-		return "Hero: %s" % (self.localized_name)
+		return f"Hero: {self.localized_name}"
+
 
 class Ability(Base):
 	__tablename__ = 'abilities'
@@ -109,7 +115,11 @@ class Ability(Base):
 
 	hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
-	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)", viewonly=True)
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
+		viewonly=True
+	)
 
 	# _locale = None
 	# def __getattr__(self, name: str):
@@ -134,7 +144,7 @@ class Ability(Base):
 		return len(self.talent_links) > 0
 
 	def __repr__(self):
-		return "Ability: %s" % (self.localized_name)
+		return f"Ability: {self.localized_name}"
 
 
 class Talent(Base):
@@ -160,7 +170,7 @@ class Talent(Base):
 		return (self.slot % 2) == 0
 
 	def __repr__(self):
-		return "Talent: %s" % (self.localized_name)
+		return f"Talent: {self.localized_name}"
 
 
 class Item(Base):
@@ -187,11 +197,16 @@ class Item(Base):
 	shop_tags = Column(String)
 
 	json_data = Column(String)
-	
-	strings = relationship("LocaleString", primaryjoin="and_(foreign(LocaleString.table) == 'Item', foreign(LocaleString.row_id) == Item.id)", viewonly=True)
+
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Item', foreign(LocaleString.row_id) == Item.id)",
+		viewonly=True
+	)
 
 	def __repr__(self):
-		return "Item: %s" % (self.localized_name)
+		return f"Item: {self.localized_name}"
+
 
 class Voice(Base):
 	__tablename__ = 'voices'
@@ -208,6 +223,7 @@ class Voice(Base):
 
 	hero = relationship("Hero", back_populates="voice")
 	responses = relationship("Response", back_populates="voice")
+
 
 class Response(Base):
 	__tablename__ = 'responses'
@@ -226,7 +242,8 @@ class Response(Base):
 	voice = relationship("Voice", back_populates="responses")
 
 	def __repr__(self):
-		return "Response: %s" % (self.name)
+		return f"Response: {self.name}"
+
 
 class Criterion(Base):
 	__tablename__ = 'criteria'
@@ -238,6 +255,7 @@ class Criterion(Base):
 	weight = Column(Float)
 	required = Column(Boolean)
 
+
 class Emoticon(Base):
 	__tablename__ = 'emoticons'
 
@@ -246,6 +264,7 @@ class Emoticon(Base):
 	url = Column(String)
 	frames = Column(Integer)
 	ms_per_frame = Column(Integer)
+
 
 class ChatWheelMessage(Base):
 	__tablename__ = 'chatwheelmessages'
@@ -268,7 +287,7 @@ class LoadingScreen(Base):
 	image = Column(String)
 	thumbnail = Column(String)
 	creation_date = Column(Date)
-	
+
 	color = Column(String)
 	hue = Column(Integer)
 	saturation = Column(Integer)
@@ -276,6 +295,7 @@ class LoadingScreen(Base):
 
 	hero_ids = Column(String)
 	category = Column(String)
+
 
 class Patch(Base):
 	__tablename__ = 'patches'
@@ -289,8 +309,8 @@ class Patch(Base):
 
 class LocaleString(Base):
 	__tablename__ = 'localestrings'
-	id = Column(Integer, primary_key=True)
 
+	id = Column(Integer, primary_key=True)
 	table = Column(Unicode(255))
 	row_id = Column(Integer, nullable=False)
 	column = Column(String)
