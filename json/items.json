@@ -1674,7 +1674,7 @@
 		"cost": 50,
 		"cooldown": "1",
 		"cast_range": "500",
-		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **1000** radius.\nLasts **7** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero. <br/><br/>Range: **500**",
+		"description": "# Use: Plant\nPlants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a **1000** radius.\nLasts **7** minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero. \n\nRange: **500**",
 		"lore": "A form of plant originally grown in the garden of a fearful king.",
 		"secret_shop": false,
 		"ability_special": [
@@ -2510,7 +2510,7 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/hand_of_midas_png.png",
 		"cost": 2200,
-		"cooldown": "0",
+		"cooldown": "100",
 		"cast_range": "600",
 		"mana_cost": "0",
 		"description": "# Active: Transmute\nKills a non-hero target for **160** gold and **2.1**x experience. When used on a neutral creep, guarantees to create a neutral item if available. \n\n Cannot be used on Ancient creeps.\n\nRange: **600**",
@@ -7024,7 +7024,8 @@
 		"icon": "/panorama/images/items/soul_ring_png.png",
 		"cost": 805,
 		"cooldown": "25",
-		"description": "# Active: Sacrifice\nConsume %AbilityHealthCost% health to temporarily gain **170** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
+		"health_cost": "170",
+		"description": "# Active: Sacrifice\nConsume **170** health to temporarily gain **170** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
 		"lore": "A ring that feeds on the souls of those who wear it.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10261,7 +10262,7 @@
 		"icon": "/panorama/images/items/aeon_disk_png.png",
 		"cost": 3000,
 		"cooldown": "105 125 145 165",
-		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that provides +**75%** Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. Cooldown increases every time it triggers.<br/><br/>Dispel Type: **Strong Dispel**",
+		"description": "# Passive: Combo Breaker\nWhen you take damage and your health falls below **70%**, a strong dispel is applied and you gain a **2.5** second buff that provides +**75%** Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. Cooldown increases every time it triggers.\n\nDispel Type: **Strong Dispel**",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -10840,9 +10841,9 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/holy_locket_png.png",
 		"cost": 2400,
-		"cooldown": "0",
+		"cooldown": "10",
 		"cast_range": "500",
-		"description": "# Active: Energy Charge\nTarget an allied unit to instantly restore **15** health and mana per charge stored. \n\nAutomatically gains a charge every %AbilityChargeRestoreTime% seconds and whenever a visible enemy within **1200** range uses an ability.\n\n\n# Passive: Holy Blessing\nAmplifies heals you provide by **30%**.\n\n\n# Passive: Regeneration Aura\nGrants **3** health regeneration to allies.\n\nRadius: **1200**",
+		"description": "# Active: Energy Charge\nTarget an allied unit to instantly restore **15** health and mana per charge stored. \n\nAutomatically gains a charge every **10** seconds and whenever a visible enemy within **1200** range uses an ability.\n\n\n# Passive: Holy Blessing\nAmplifies heals you provide by **30%**.\n\n\n# Passive: Regeneration Aura\nGrants **3** health regeneration to allies.\n\nRadius: **1200**",
 		"lore": "A prized relic long thought lost forever in a failed crusade.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19159,6 +19160,7 @@
 		"cost": 50,
 		"cooldown": "10",
 		"cast_range": "900",
+		"health_cost": "75",
 		"description": "# Use: Throw Grenade\nThrow a grenade at the target area. Enemies in the area will take **50** damage on impact, and be slowed by **-15%** and take **15** damage every **1**s for **5** seconds. Radius **300**. ",
 		"secret_shop": false,
 		"ability_special": [
@@ -19879,7 +19881,7 @@
 		"icon": "/panorama/images/items/dandelion_amulet_png.png",
 		"cost": 0,
 		"cooldown": "12",
-		"description": "# Passive: Magical Damage Block\nEvery %AbilityCooldown%s, blocks up to **300** magic damage from damage instances over **75** damage.",
+		"description": "# Passive: Magical Damage Block\nEvery **12**s, blocks up to **300** magic damage from damage instances over **75** damage.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
