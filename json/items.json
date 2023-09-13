@@ -8982,7 +8982,7 @@
 		"cost": 2425,
 		"cooldown": "16",
 		"cast_range": "1000",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, and **18%** movement speed. When cast on an enemy, removes **7** armor, **70** attack speed, and **18%** movement speed.\n\nRemoves **7** armor from the caster when used. \n\nRange: **1000**\n\nDuration: **8**",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, and **15%** movement speed. When cast on an enemy, removes **7** armor, **70** attack speed, and **15%** movement speed.\n\nRemoves **7** armor from the caster when used. \n\nRange: **1000**\n\nDuration: **8**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9012,7 +9012,7 @@
 			},
 			{
 				"key": "target_movement_speed",
-				"value": "18"
+				"value": "15"
 			},
 			{
 				"key": "target_attack_speed",
@@ -9051,7 +9051,7 @@
 				"bonus_all_stats": "6",
 				"self_movement_speed": "25",
 				"bonus_mana_regen_pct": "1.75",
-				"target_movement_speed": "18",
+				"target_movement_speed": "15",
 				"target_attack_speed": "70",
 				"target_armor": "7",
 				"duration": "8"
@@ -9283,7 +9283,6 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/octarine_core_png.png",
 		"cost": 4600,
-		"cooldown": "6",
 		"description": "# Passive: Cooldown Reduction\nReduces the cooldown time of all spells and items.",
 		"lore": "At the core of spellcraft are spectrums only the very gifted can sense.",
 		"secret_shop": false,
@@ -9322,7 +9321,6 @@
 		"json_data": {
 			"ID": "235",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCooldown": "6.0",
 			"ItemCost": "4600",
 			"ItemShopTags": "move_speed;boost_mana;mana_pool",
 			"ItemQuality": "rare",
@@ -12479,7 +12477,7 @@
 			},
 			{
 				"key": "bonus_secondary_stat",
-				"value": "4",
+				"value": "2",
 				"header": "+",
 				"footer": "Other Attributes"
 			},
@@ -12510,7 +12508,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_primary_stat": "8",
-				"bonus_secondary_stat": "4",
+				"bonus_secondary_stat": "2",
 				"bonus_spell_amp": "6",
 				"bonus_magic_resistance": "8",
 				"bonus_attack_speed": "10"
@@ -12615,7 +12613,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_intelligence",
-				"value": "8",
+				"value": "7",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -12644,7 +12642,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_intelligence": "8",
+				"bonus_intelligence": "7",
 				"bonus_armor": "2",
 				"mana_restore": "75",
 				"radius": "1200"
@@ -17600,7 +17598,7 @@
 		"localized_name": "Occult Bracelet",
 		"icon": "/panorama/images/items/occult_bracelet_png.png",
 		"cost": 0,
-		"description": "# Passive: Rites of Eloshar\nEach time the wearer is attacked, they gain a stack of **0.5** mana regen, up to **5** stacks. Stacks last for **10** seconds.",
+		"description": "# Passive: Rites of Eloshar\nEach time the wearer is attacked, they gain a stack of **0.5** mana regen, up to **5** stacks. Stacks last for **5** seconds.",
 		"lore": "A band that bears effigy of the dark goddess Eloshar's unsleeping eye.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -17621,7 +17619,7 @@
 			},
 			{
 				"key": "stack_duration",
-				"value": "10"
+				"value": "5"
 			},
 			{
 				"key": "magic_resistance",
@@ -17642,7 +17640,7 @@
 				"bonus_all_stats": "4",
 				"mana_regen": "0.5",
 				"stack_limit": "5",
-				"stack_duration": "10",
+				"stack_duration": "5",
 				"magic_resistance": "5"
 			}
 		}
@@ -19244,13 +19242,13 @@
 		"localized_name": "item_spark_of_courage",
 		"icon": "/panorama/images/items/spark_of_courage_png.png",
 		"cost": 0,
-		"description": "# Passive: Courage\nProvides **18** damage when the hero is above **50%** Health, and **7** armor when they are below that threshold.",
+		"description": "# Passive: Courage\nProvides **16** damage when the hero is above **50%** Health, and **7** armor when they are below that threshold.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "damage",
-				"value": "18"
+				"value": "16"
 			},
 			{
 				"key": "armor",
@@ -19270,7 +19268,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"damage": "18",
+				"damage": "16",
 				"armor": "7",
 				"health_pct": "50"
 			}
