@@ -279,6 +279,7 @@ class ChatWheelMessage(Base):
 	image = Column(String)
 	all_chat = Column(Boolean)
 	category = Column(String)
+	source = Column(String)
 
 
 class LoadingScreen(Base):
