@@ -182,13 +182,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "6",
+				"value": "4",
 				"header": "+",
 				"footer": "Armor"
 			},
 			{
 				"key": "bonus_regen",
-				"value": "5",
+				"value": "4",
 				"header": "+",
 				"footer": "Health Regeneration"
 			}
@@ -201,8 +201,8 @@
 			"ItemQuality": "component",
 			"ItemAliases": "helm of iron will",
 			"AbilityValues": {
-				"bonus_armor": "6",
-				"bonus_regen": "5"
+				"bonus_armor": "4",
+				"bonus_regen": "4"
 			}
 		}
 	},
@@ -1040,7 +1040,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_evasion",
-				"value": "15%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Evasion"
 			}
@@ -1054,7 +1054,7 @@
 			"ItemAliases": "talisman of evasion",
 			"SecretShop": "1",
 			"AbilityValues": {
-				"bonus_evasion": "15"
+				"bonus_evasion": "20"
 			}
 		}
 	},
@@ -1777,7 +1777,7 @@
 		],
 		"shop_tags": "consumable|tutorial",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
@@ -2750,7 +2750,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "2 4",
+				"value": "1.75 3.5",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -2777,7 +2777,7 @@
 				"bonus_strength": "2 4",
 				"bonus_intellect": "2 4",
 				"bonus_attack_speed": "5 10",
-				"bonus_armor": "2 4",
+				"bonus_armor": "1.75 3.5",
 				"clock_time": "25"
 			}
 		}
@@ -2956,44 +2956,37 @@
 		}
 	},
 	{
-		"id": 80,
-		"name": "item_recipe_vladmir",
-		"localized_name": "Vladmir's Offering Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 250,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "250",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_vladmir",
-			"ItemRequirements": {
-				"01": "item_buckler;item_ring_of_basilius;item_lifesteal;item_blades_of_attack"
-			}
-		}
-	},
-	{
 		"id": 81,
 		"name": "item_vladmir",
 		"localized_name": "Vladmir's Offering",
 		"aliases": "vladmir's offering|vlads",
 		"quality": "rare",
 		"icon": "/panorama/images/items/vladmir_png.png",
-		"cost": 2450,
+		"cost": 2200,
 		"cast_range": "1200",
-		"description": "# Passive: Vladmir's Aura\nGrants **20%** lifesteal, **18%** bonus damage, **1.75** mana regeneration, and **4** armor to nearby allies. Lifesteal from creeps is reduced by **40%**.\n\nRadius: **1200**",
+		"description": "# Passive: Vladmir's Aura\nGrants **20%** lifesteal, **18%** bonus damage, **1** mana regeneration, and **2** armor to nearby allies. Lifesteal from creeps is reduced by **40%**.\n\nRadius: **1200**",
 		"lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
 		"secret_shop": false,
 		"ability_special": [
 			{
+				"key": "armor",
+				"value": "2",
+				"header": "+",
+				"footer": "Armor"
+			},
+			{
+				"key": "mana_regen",
+				"value": "0.75",
+				"header": "+",
+				"footer": "Mana Regeneration"
+			},
+			{
 				"key": "armor_aura",
-				"value": "4.0"
+				"value": "2.0"
 			},
 			{
 				"key": "mana_regen_aura",
-				"value": "1.75"
+				"value": "1"
 			},
 			{
 				"key": "lifesteal_aura",
@@ -3012,20 +3005,23 @@
 				"value": "1200"
 			}
 		],
-		"recipe": "item_buckler|item_ring_of_basilius|item_lifesteal|item_blades_of_attack|item_recipe_vladmir",
+		"recipe": "item_buckler|item_ring_of_basilius|item_lifesteal|item_blades_of_attack",
 		"shop_tags": "damage|armor|regen_mana",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCastRange": "1200",
-			"ItemCost": "2450",
+			"ItemCost": "2200",
 			"ItemShopTags": "damage;armor;regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
-				"armor_aura": "4.0",
-				"mana_regen_aura": "1.75",
+				"armor": "2",
+				"mana_regen": "0.75",
+				"armor_aura": "2.0",
+				"mana_regen_aura": "1",
 				"lifesteal_aura": "20",
 				"creep_lifesteal_reduction_pct": "40",
 				"damage_aura": "18",
@@ -3465,7 +3461,7 @@
 	{
 		"id": 95,
 		"name": "item_recipe_sheepstick",
-		"localized_name": "item_recipe_sheepstick",
+		"localized_name": "Scythe of Vyse Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 600,
 		"secret_shop": false,
@@ -3553,12 +3549,12 @@
 		"name": "item_recipe_orchid",
 		"localized_name": "Orchid Malevolence Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 650,
+		"cost": 450,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "650",
+			"ItemCost": "450",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_orchid",
@@ -3574,7 +3570,7 @@
 		"aliases": "orchid malevolence|silence",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orchid_png.png",
-		"cost": 3475,
+		"cost": 3275,
 		"cooldown": "18",
 		"cast_range": "900",
 		"mana_cost": "100",
@@ -3634,7 +3630,7 @@
 			"AbilityCooldown": "18.0",
 			"AbilitySharedCooldown": "orchid",
 			"AbilityManaCost": "100",
-			"ItemCost": "3475",
+			"ItemCost": "3275",
 			"ItemShopTags": "attack_speed;damage;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "orchid malevolence;silence",
@@ -3853,7 +3849,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/dagon_png.png",
 		"cost": 2850,
-		"cooldown": "35 30 25 20 15",
+		"cooldown": "27 24 21 18 15",
 		"cast_range": "700 750 800 850 900",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 1,
@@ -3897,7 +3893,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "11% 12% 13% 14% 15%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -3915,7 +3911,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700 750 800 850 900",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "35.0 30.0 25.0 20.0 15.0",
+			"AbilityCooldown": "27 24 21 18 15",
 			"AbilitySharedCooldown": "dagon",
 			"MaxUpgradeLevel": "5",
 			"ItemBaseLevel": "1",
@@ -3936,7 +3932,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "11 12 13 14 15",
+				"passive_spell_lifesteal": "15",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -4181,7 +4177,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "35",
+				"value": "40",
 				"header": "+",
 				"footer": "Strength"
 			},
@@ -4203,7 +4199,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_strength": "35",
+				"bonus_strength": "40",
 				"health_regen_pct": "1.6"
 			}
 		}
@@ -4237,7 +4233,7 @@
 		"cost": 4050,
 		"cooldown": "90",
 		"mana_cost": "50",
-		"description": "# Active: Avatar\nApplies a basic dispel. Grants **50%** Magic resistance and immunity to pure and reflected damage. For the duration of the effect, any negative effect from enemy spells has no effect. \n\nDuration: **9**/**8**/**7**/**6** \nDispel Type: **Basic Dispel**",
+		"description": "# Active: Avatar\nApplies a basic dispel. Grants **60%** Magic resistance and immunity to pure and reflected damage. For the duration of the effect, any negative effect from enemy spells has no effect. \n\nDuration: **9**/**8**/**7**/**6** \nDispel Type: **Basic Dispel**",
 		"lore": "A powerful staff imbued with the strength of giants.",
 		"secret_shop": false,
 		"ability_special": [
@@ -4267,7 +4263,7 @@
 			},
 			{
 				"key": "magic_resist",
-				"value": "50"
+				"value": "60"
 			}
 		],
 		"recipe": "item_ogre_axe|item_mithril_hammer|item_recipe_black_king_bar",
@@ -4290,7 +4286,7 @@
 				"duration": "9 8 7 6",
 				"max_level": "4",
 				"model_scale": "30",
-				"magic_resist": "50"
+				"magic_resist": "60"
 			}
 		}
 	},
@@ -4350,12 +4346,12 @@
 		"name": "item_recipe_shivas_guard",
 		"localized_name": "Shiva's Guard Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1700,
+		"cost": 2050,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1700",
+			"ItemCost": "2050",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_shivas_guard",
@@ -4371,7 +4367,7 @@
 		"aliases": "shiva's guard|shivas",
 		"quality": "epic",
 		"icon": "/panorama/images/items/shivas_guard_png.png",
-		"cost": 4825,
+		"cost": 5175,
 		"cooldown": "27",
 		"mana_cost": "75",
 		"description": "# Active: Arctic Blast\nEmits a freezing wave that causes enemies to take **15%** more damage from spells for **16** seconds, deals **200** magical damage and slows their movement by **-40%** for **4** seconds. Deals **150%** damage to illusions.\n\nRadius: **900**\n\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-45** and all heals, regeneration and lifesteal by **25%**. \n\nRadius: **1200**",
@@ -4380,31 +4376,31 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "8",
+				"value": "5",
 				"header": "+",
 				"footer": "Intelligence"
 			},
 			{
 				"key": "bonus_strength",
-				"value": "8",
+				"value": "5",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "bonus_agility",
-				"value": "8",
+				"value": "5",
 				"header": "+",
 				"footer": "Agility"
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "8",
+				"value": "5",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "20",
+				"value": "15",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -4461,18 +4457,18 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCooldown": "27",
 			"AbilityManaCost": "75",
-			"ItemCost": "4825",
+			"ItemCost": "5175",
 			"ItemShopTags": "int;armor;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "shiva's guard;shivas",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_intellect": "8",
-				"bonus_strength": "8",
-				"bonus_agility": "8",
-				"bonus_hp_regen": "8",
-				"bonus_armor": "20",
+				"bonus_intellect": "5",
+				"bonus_strength": "5",
+				"bonus_agility": "5",
+				"bonus_hp_regen": "5",
+				"bonus_armor": "15",
 				"aura_radius": "1200",
 				"aura_attack_speed": "-45",
 				"blast_damage": "200",
@@ -4491,25 +4487,6 @@
 		}
 	},
 	{
-		"id": 120,
-		"name": "item_recipe_bloodstone",
-		"localized_name": "Bloodstone Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 700,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "700",
-			"ItemShopTags": "",
-			"ItemRecipe": "1",
-			"ItemResult": "item_bloodstone",
-			"ItemRequirements": {
-				"01": "item_voodoo_mask;item_soul_booster"
-			}
-		}
-	},
-	{
 		"id": 121,
 		"name": "item_bloodstone",
 		"localized_name": "Bloodstone",
@@ -4519,7 +4496,7 @@
 		"cost": 4400,
 		"cooldown": "35",
 		"mana_cost": "0",
-		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x and also converts the same percentage of damage dealt to mana. Lasts **6** seconds.",
+		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x. Lasts **6** seconds.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"secret_shop": false,
 		"ability_special": [
@@ -4542,6 +4519,10 @@
 				"footer": "Mana"
 			},
 			{
+				"key": "bonus_mp_regen",
+				"value": "3"
+			},
+			{
 				"key": "spell_lifesteal",
 				"value": "30%",
 				"header": "+",
@@ -4560,7 +4541,7 @@
 				"value": "0"
 			}
 		],
-		"recipe": "item_voodoo_mask|item_soul_booster|item_recipe_bloodstone",
+		"recipe": "item_voodoo_mask|item_soul_booster|item_void_stone",
 		"shop_tags": "regen_health|regen_mana|mana_pool|health_pool",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
@@ -4580,6 +4561,7 @@
 				"bonus_aoe": "75",
 				"bonus_health": "500",
 				"bonus_mana": "500",
+				"bonus_mp_regen": "3",
 				"spell_lifesteal": "30",
 				"buff_duration": "6",
 				"lifesteal_multiplier": "2.5",
@@ -4878,7 +4860,7 @@
 				"key": "bonus_spell_amp",
 				"value": "25%",
 				"header": "+",
-				"footer": "Spell Damage"
+				"footer": "Spell Amplification"
 			},
 			{
 				"key": "bonus_damage",
@@ -4916,11 +4898,11 @@
 		"name": "item_recipe_monkey_king_bar",
 		"localized_name": "Monkey King Bar Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 800,
+		"cost": 600,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
-			"ItemCost": "800",
+			"ItemCost": "600",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_monkey_king_bar",
@@ -4936,7 +4918,7 @@
 		"aliases": "mkb|monkey king bar",
 		"quality": "epic",
 		"icon": "/panorama/images/items/monkey_king_bar_png.png",
-		"cost": 4900,
+		"cost": 4700,
 		"description": "# Passive: Pierce\nGrants each attack a **80%** chance to pierce through evasion and deal **70** bonus magical damage.",
 		"lore": "A powerful staff used by a master warrior.",
 		"secret_shop": false,
@@ -4966,7 +4948,7 @@
 		"shop_tags": "damage|attack_speed|hard_to_tag",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "4900",
+			"ItemCost": "4700",
 			"ItemShopTags": "damage;attack_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "mkb;monkey king bar",
@@ -5013,7 +4995,7 @@
 			},
 			{
 				"key": "evasion",
-				"value": "15%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Evasion"
 			},
@@ -5047,7 +5029,7 @@
 				"aura_damage": "60",
 				"aura_damage_illusions": "35",
 				"upgrade_day_vision": "250",
-				"evasion": "15",
+				"evasion": "20",
 				"blind_pct": "15",
 				"aura_radius": "700",
 				"illusion_multiplier_pct": "150"
@@ -5406,7 +5388,7 @@
 		"aliases": "manta style",
 		"quality": "epic",
 		"icon": "/panorama/images/items/manta_png.png",
-		"cost": 4600,
+		"cost": 4550,
 		"cooldown": "30",
 		"mana_cost": "125",
 		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
@@ -5433,7 +5415,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "12",
+				"value": "15",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -5491,7 +5473,7 @@
 			"AbilityCooldown": "30.0",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "125",
-			"ItemCost": "4600",
+			"ItemCost": "4550",
 			"ItemShopTags": "agi;str;int;attack_speed;move_speed;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "manta style",
@@ -5501,7 +5483,7 @@
 				"bonus_strength": "10",
 				"bonus_agility": "26",
 				"bonus_intellect": "10",
-				"bonus_attack_speed": "12",
+				"bonus_attack_speed": "15",
 				"bonus_movement_speed": "10",
 				"images_count": "2",
 				"tooltip_illusion_duration": "20",
@@ -5763,7 +5745,7 @@
 		"aliases": "sny|s&y|sy|sange and yasha",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/sange_and_yasha_png.png",
-		"cost": 4100,
+		"cost": 4000,
 		"lore": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5781,13 +5763,13 @@
 			},
 			{
 				"key": "status_resistance",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Status Resistance"
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "12",
+				"value": "20",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -5799,7 +5781,7 @@
 			},
 			{
 				"key": "hp_regen_amp",
-				"value": "22%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Health Regen and Lifesteal Amp"
 			}
@@ -5808,7 +5790,7 @@
 		"shop_tags": "damage|str|agi|attack_speed|unique",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "4100",
+			"ItemCost": "4000",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sny;s&y;sy;sange and yasha",
@@ -5818,10 +5800,10 @@
 			"AbilityValues": {
 				"bonus_strength": "16",
 				"bonus_agility": "16",
-				"status_resistance": "20",
-				"bonus_attack_speed": "12",
+				"status_resistance": "25",
+				"bonus_attack_speed": "20",
 				"movement_speed_percent_bonus": "12",
-				"hp_regen_amp": "22"
+				"hp_regen_amp": "25"
 			}
 		}
 	},
@@ -6050,7 +6032,7 @@
 	{
 		"id": 159,
 		"name": "item_recipe_skadi",
-		"localized_name": "item_recipe_skadi",
+		"localized_name": "Eye of Skadi Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 1300,
 		"secret_shop": false,
@@ -6148,12 +6130,12 @@
 		"name": "item_recipe_sange",
 		"localized_name": "Sange Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 600,
+		"cost": 550,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "600",
+			"ItemCost": "550",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_sange",
@@ -6169,7 +6151,7 @@
 		"aliases": "sange",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/sange_png.png",
-		"cost": 2050,
+		"cost": 2000,
 		"lore": "Sange is an unusually accurate weapon, seeking weak points automatically.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6181,7 +6163,7 @@
 			},
 			{
 				"key": "status_resistance",
-				"value": "12%",
+				"value": "16%",
 				"header": "+",
 				"footer": "Status Resistance"
 			},
@@ -6196,14 +6178,14 @@
 		"shop_tags": "damage|str|unique",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2050",
+			"ItemCost": "2000",
 			"ItemShopTags": "damage;str;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sange",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_strength": "16",
-				"status_resistance": "12",
+				"status_resistance": "16",
 				"hp_regen_amp": "20"
 			}
 		}
@@ -6478,11 +6460,11 @@
 		"name": "item_recipe_yasha",
 		"localized_name": "Yasha Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 600,
+		"cost": 550,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
-			"ItemCost": "600",
+			"ItemCost": "550",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_yasha",
@@ -6498,7 +6480,7 @@
 		"aliases": "yasha",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/yasha_png.png",
-		"cost": 2050,
+		"cost": 2000,
 		"lore": "Yasha is regarded as the swiftest weapon ever created.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6510,7 +6492,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "12",
+				"value": "15",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -6525,14 +6507,14 @@
 		"shop_tags": "agi|attack_speed|move_speed",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2050",
+			"ItemCost": "2000",
 			"ItemShopTags": "agi;attack_speed;move_speed",
 			"ItemQuality": "artifact",
 			"ItemAliases": "yasha",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_agility": "16",
-				"bonus_attack_speed": "12",
+				"bonus_attack_speed": "15",
 				"movement_speed_percent_bonus": "10"
 			}
 		}
@@ -6639,7 +6621,7 @@
 		"cost": 2500,
 		"cooldown": "15",
 		"cast_range": "600",
-		"mana_cost": "0",
+		"mana_cost": "25",
 		"description": "# Active: Inhibit\nTargets an enemy, slowing it for **4** seconds.\n\nRange: **600**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **8** mana per attack from melee illusions and **8** mana per attack from ranged illusions.",
 		"lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
 		"secret_shop": false,
@@ -6696,9 +6678,10 @@
 			"AbilityCastRange": "600",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
+			"AbilityManaCost": "25",
 			"AbilitySharedCooldown": "diffusal",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"AbilityManaCost": "0",
+			"AbilityManaCost1": "0",
 			"ItemCost": "2500",
 			"ItemShopTags": "agi;int;unique;hard_to_tag",
 			"ItemQuality": "artifact",
@@ -6908,7 +6891,7 @@
 		"recipe": "item_ring_of_protection|item_gauntlets|item_gauntlets|item_recipe_soul_ring",
 		"shop_tags": "regen_health|boost_mana",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_USE_HP",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityCooldown": "25.0",
 			"AbilityHealthCost": "170",
 			"ItemCost": "805",
@@ -6931,7 +6914,7 @@
 	{
 		"id": 179,
 		"name": "item_recipe_arcane_boots",
-		"localized_name": "item_recipe_arcane_boots",
+		"localized_name": "Arcane Boots Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 375,
 		"secret_shop": false,
@@ -7023,7 +7006,7 @@
 		"aliases": "oov|orb of venom",
 		"quality": "component",
 		"icon": "/panorama/images/items/orb_of_venom_png.png",
-		"cost": 275,
+		"cost": 250,
 		"description": "# Passive: Poison Attack\nPoisons the target, dealing **2** magical damage per second and slowing movement by **-13%** if the equipped hero is melee, or by **-4%** if they are ranged. Lasts for **2** seconds.",
 		"lore": "Envenoms your veapon with the venom of a venomous viper.",
 		"secret_shop": false,
@@ -7053,7 +7036,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ItemCost": "275",
+			"ItemCost": "250",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "component",
 			"ItemAliases": "oov;orb of venom",
@@ -7272,19 +7255,19 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "5",
+				"value": "4",
 				"header": "+",
 				"footer": "All Attributes"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "6",
+				"value": "4",
 				"header": "+",
 				"footer": "Armor"
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "5",
+				"value": "4",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
@@ -7317,9 +7300,9 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_all_stats": "5",
-				"bonus_armor": "6",
-				"bonus_hp_regen": "5",
+				"bonus_all_stats": "4",
+				"bonus_armor": "4",
+				"bonus_hp_regen": "4",
 				"spell_amp": "10",
 				"debuff_radius": {
 					"value": "900",
@@ -7337,11 +7320,11 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/dagon_2_png.png",
 		"cost": 4000,
-		"cooldown": "35 30 25 20 15",
+		"cooldown": "27 24 21 18 15",
 		"cast_range": "700 750 800 850 900",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 2,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/**500**/600/700/800\nRange: 700/**750**/800/850/900\nMana Cost: 120/**140**/160/180/200",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Heals the caster **75%** of damage dealt by Dagon. Upgradable.\n\nDamage: 400/**500**/600/700/800\nRange: 700/**750**/800/850/900\nMana Cost: 120/**140**/160/180/200",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7381,7 +7364,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "11% 12% 13% 14% 15%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7399,7 +7382,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700 750 800 850 900",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "35.0 30.0 25.0 20.0 15.0",
+			"AbilityCooldown": "27 24 21 18 15",
 			"AbilitySharedCooldown": "dagon",
 			"MaxUpgradeLevel": "5",
 			"ItemBaseLevel": "2",
@@ -7420,7 +7403,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "11 12 13 14 15",
+				"passive_spell_lifesteal": "15",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7433,11 +7416,11 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/dagon_3_png.png",
 		"cost": 5150,
-		"cooldown": "35 30 25 20 15",
+		"cooldown": "27 24 21 18 15",
 		"cast_range": "700 750 800 850 900",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 3,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/500/**600**/700/800\nRange: 700/750/**800**/850/900\nMana Cost: 120/140/**160**/180/200",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Heals the caster **75%** of damage dealt by Dagon. Upgradable.\n\nDamage: 400/500/**600**/700/800\nRange: 700/750/**800**/850/900\nMana Cost: 120/140/**160**/180/200",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7477,7 +7460,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "11% 12% 13% 14% 15%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7495,7 +7478,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700 750 800 850 900",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "35.0 30.0 25.0 20.0 15.0",
+			"AbilityCooldown": "27 24 21 18 15",
 			"AbilitySharedCooldown": "dagon",
 			"MaxUpgradeLevel": "5",
 			"ItemBaseLevel": "3",
@@ -7516,7 +7499,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "11 12 13 14 15",
+				"passive_spell_lifesteal": "15",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7529,11 +7512,11 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/dagon_4_png.png",
 		"cost": 6300,
-		"cooldown": "35 30 25 20 15",
+		"cooldown": "27 24 21 18 15",
 		"cast_range": "700 750 800 850 900",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 4,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400/500/600/**700**/800\nRange: 700/750/800/**850**/900\nMana Cost: 120/140/160/**180**/200",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Heals the caster **75%** of damage dealt by Dagon. Upgradable.\n\nDamage: 400/500/600/**700**/800\nRange: 700/750/800/**850**/900\nMana Cost: 120/140/160/**180**/200",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7573,7 +7556,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "11% 12% 13% 14% 15%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7591,7 +7574,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700 750 800 850 900",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "35.0 30.0 25.0 20.0 15.0",
+			"AbilityCooldown": "27 24 21 18 15",
 			"AbilitySharedCooldown": "dagon",
 			"MaxUpgradeLevel": "5",
 			"ItemBaseLevel": "4",
@@ -7612,7 +7595,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "11 12 13 14 15",
+				"passive_spell_lifesteal": "15",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7625,11 +7608,11 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/dagon_5_png.png",
 		"cost": 7450,
-		"cooldown": "35 30 25 20 15",
+		"cooldown": "27 24 21 18 15",
 		"cast_range": "700 750 800 850 900",
 		"mana_cost": "120 140 160 180 200",
 		"base_level": 5,
-		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit.\n\nDamage: 400/500/600/700/**800**\nRange: 700/750/800/850/**900**\nMana Cost: 120/140/160/180/**200**",
+		"description": "# Active: Energy Burst\nEmits a powerful burst of magical damage upon a targeted enemy unit. Heals the caster **75%** of damage dealt by Dagon. Upgradable.\n\nDamage: 400/500/600/700/**800**\nRange: 700/750/800/850/**900**\nMana Cost: 120/140/160/180/**200**",
 		"lore": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
 		"secret_shop": false,
 		"ability_special": [
@@ -7669,7 +7652,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "11% 12% 13% 14% 15%",
+				"value": "15%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7687,7 +7670,7 @@
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "700 750 800 850 900",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "35.0 30.0 25.0 20.0 15.0",
+			"AbilityCooldown": "27 24 21 18 15",
 			"AbilitySharedCooldown": "dagon",
 			"MaxUpgradeLevel": "5",
 			"ItemBaseLevel": "5",
@@ -7706,7 +7689,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "11 12 13 14 15",
+				"passive_spell_lifesteal": "15",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7942,7 +7925,7 @@
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/heavens_halberd_png.png",
-		"cost": 3550,
+		"cost": 3500,
 		"cooldown": "18",
 		"cast_range": "650",
 		"mana_cost": "100",
@@ -7952,7 +7935,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_evasion",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Evasion"
 			},
@@ -7978,7 +7961,7 @@
 			},
 			{
 				"key": "hp_regen_amp",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Health Regen and Lifesteal Amp"
 			}
@@ -7994,7 +7977,7 @@
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "100",
-			"ItemCost": "3550",
+			"ItemCost": "3500",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
@@ -8002,12 +7985,12 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_evasion": "20",
+				"bonus_evasion": "25",
 				"bonus_strength": "20",
 				"disarm_range": "5.0",
 				"disarm_melee": "3.0",
 				"status_resistance": "16",
-				"hp_regen_amp": "20"
+				"hp_regen_amp": "25"
 			}
 		}
 	},
@@ -8447,12 +8430,12 @@
 		"name": "item_recipe_meteor_hammer",
 		"localized_name": "Meteor Hammer Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 800,
+		"cost": 400,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "800",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_meteor_hammer",
@@ -8468,7 +8451,7 @@
 		"aliases": "mh|meteor hammer",
 		"quality": "epic",
 		"icon": "/panorama/images/items/meteor_hammer_png.png",
-		"cost": 3300,
+		"cost": 2850,
 		"cooldown": "24",
 		"cast_range": "600",
 		"mana_cost": "100",
@@ -8572,7 +8555,7 @@
 			"AbilityCastRange": "600",
 			"AbilityCooldown": "24",
 			"AbilityManaCost": "100",
-			"ItemCost": "3300",
+			"ItemCost": "2850",
 			"ItemQuality": "epic",
 			"ItemAliases": "mh;meteor hammer",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -8641,7 +8624,7 @@
 			},
 			{
 				"key": "projectile_speed",
-				"value": "1100"
+				"value": "1800"
 			},
 			{
 				"key": "slow_pct",
@@ -8672,7 +8655,7 @@
 				"bonus_armor": "10",
 				"bonus_regen": "6",
 				"mute_duration": "5.0",
-				"projectile_speed": "1100",
+				"projectile_speed": "1800",
 				"slow_pct": "80",
 				"slow_interval_duration": "0.5"
 			}
@@ -8777,19 +8760,20 @@
 		"cost": 2700,
 		"cooldown": "16",
 		"cast_range": "1000",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, **15%** movement speed and a **400** HP Barrier. \n\nDoes not grant bonus armor if used on self. \n\nRange: **1000**\n\nDuration: **8**",
+		"mana_cost": "100",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, **15%** movement speed and a **400** HP Barrier. \n\nDoes not grant bonus armor, movement or attack speed if used on self. \n\nRange: **1000**\n\nDuration: **8**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "6",
+				"value": "4",
 				"header": "+",
 				"footer": "Armor"
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "6",
+				"value": "4",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -8844,6 +8828,7 @@
 			"AbilityCastRange": "1000",
 			"AbilityCooldown": "16.0",
 			"AbilitySharedCooldown": "pavise",
+			"AbilityManaCost": "100",
 			"ItemCost": "2700",
 			"ItemShopTags": "armor;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
@@ -8851,8 +8836,8 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_armor": "6",
-				"bonus_all_stats": "6",
+				"bonus_armor": "4",
+				"bonus_all_stats": "4",
 				"self_movement_speed": "25",
 				"bonus_mana": "300",
 				"bonus_health": "200",
@@ -9621,6 +9606,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CUSTOM",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD",
 			"ItemCost": "4000",
 			"ItemShopTags": "attack_speed",
 			"ItemQuality": "consumable",
@@ -9751,11 +9737,11 @@
 		"aliases": "orchid malevolence",
 		"quality": "epic",
 		"icon": "/panorama/images/items/bloodthorn_png.png",
-		"cost": 6825,
+		"cost": 6625,
 		"cooldown": "15",
 		"cast_range": "900",
 		"mana_cost": "100",
-		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **60%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will deal **60** extra damage and have True Strike.\n\nRange: **900**\n\n\n# Passive: Pierce\nGrants each attack a **40%** chance to pierce through evasion and deal **60** bonus magical damage.",
+		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **60%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will deal **50** extra damage and have True Strike.\n\nRange: **900**\n\n\n# Passive: Pierce\nGrants each attack a **40%** chance to pierce through evasion and deal **60** bonus magical damage.",
 		"lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9773,7 +9759,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "3",
+				"value": "3.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -9807,6 +9793,10 @@
 			},
 			{
 				"key": "proc_damage",
+				"value": "50"
+			},
+			{
+				"key": "passive_proc_damage",
 				"value": "60"
 			},
 			{
@@ -9828,7 +9818,7 @@
 			"AbilityCooldown": "15.0",
 			"AbilitySharedCooldown": "orchid",
 			"AbilityManaCost": "100",
-			"ItemCost": "6825",
+			"ItemCost": "6625",
 			"ItemShopTags": "int;attack_speed;damage;regen_mana;damage;hard_to_tag",
 			"ItemQuality": "epic",
 			"ItemAliases": "orchid malevolence",
@@ -9837,14 +9827,15 @@
 			"AbilityValues": {
 				"bonus_intellect": "15",
 				"bonus_attack_speed": "100",
-				"bonus_mana_regen": "3",
+				"bonus_mana_regen": "3.5",
 				"bonus_health_regen": "6.5",
 				"silence_duration": "5",
 				"silence_damage_percent": "60",
 				"bonus_damage": "10",
 				"duration": "6",
 				"spell_amp_debuff": "35",
-				"proc_damage": "60",
+				"proc_damage": "50",
+				"passive_proc_damage": "60",
 				"proc_chance": "40"
 			}
 		}
@@ -10094,12 +10085,12 @@
 		"name": "item_recipe_kaya",
 		"localized_name": "Kaya Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 600,
+		"cost": 550,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "600",
+			"ItemCost": "550",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_kaya",
@@ -10115,7 +10106,7 @@
 		"aliases": "ky|kaya",
 		"quality": "epic",
 		"icon": "/panorama/images/items/kaya_png.png",
-		"cost": 2050,
+		"cost": 2000,
 		"lore": "The staff of a renowned sorceress, lost for countless millennia.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10127,7 +10118,7 @@
 			},
 			{
 				"key": "spell_amp",
-				"value": "8%",
+				"value": "10%",
 				"header": "+",
 				"footer": "Spell Amplification"
 			},
@@ -10139,7 +10130,7 @@
 			},
 			{
 				"key": "spell_lifesteal_amp",
-				"value": "24%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Spell Lifesteal Amplification"
 			}
@@ -10148,7 +10139,7 @@
 		"shop_tags": "int|mana",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "2050",
+			"ItemCost": "2000",
 			"ItemShopTags": "int;mana",
 			"ItemQuality": "epic",
 			"ItemAliases": "ky;kaya",
@@ -10156,9 +10147,9 @@
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_intellect": "16",
-				"spell_amp": "8",
+				"spell_amp": "10",
 				"mana_regen_multiplier": "50",
-				"spell_lifesteal_amp": "24"
+				"spell_lifesteal_amp": "20"
 			}
 		}
 	},
@@ -10731,7 +10722,7 @@
 		"aliases": "snk|s&k|sk|sange and kaya",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/kaya_and_sange_png.png",
-		"cost": 4100,
+		"cost": 4000,
 		"lore": "Two of three known items of unimaginable power that many believe were crafted at the same enchanter's forge.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10749,7 +10740,7 @@
 			},
 			{
 				"key": "status_resistance",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Status Resistance"
 			},
@@ -10761,19 +10752,19 @@
 			},
 			{
 				"key": "spell_amp",
-				"value": "16%",
+				"value": "12%",
 				"header": "+",
 				"footer": "Spell Amplification"
 			},
 			{
 				"key": "hp_regen_amp",
-				"value": "22%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Health Regen and Lifesteal Amp"
 			},
 			{
 				"key": "spell_lifesteal_amp",
-				"value": "30%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Spell Lifesteal Amplification"
 			}
@@ -10782,7 +10773,7 @@
 		"shop_tags": "damage|str|agi|attack_speed|unique",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "4100",
+			"ItemCost": "4000",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "snk;s&k;sk;sange and kaya",
@@ -10792,11 +10783,11 @@
 			"AbilityValues": {
 				"bonus_strength": "16",
 				"bonus_intellect": "16",
-				"status_resistance": "20",
+				"status_resistance": "25",
 				"mana_regen_multiplier": "50",
-				"spell_amp": "16",
-				"hp_regen_amp": "22",
-				"spell_lifesteal_amp": "30"
+				"spell_amp": "12",
+				"hp_regen_amp": "25",
+				"spell_lifesteal_amp": "25"
 			}
 		}
 	},
@@ -10832,7 +10823,7 @@
 		"aliases": "ynk|y&k|sk|yasha and kaya",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/yasha_and_kaya_png.png",
-		"cost": 4100,
+		"cost": 4000,
 		"lore": "Yasha and Kaya when paired together share a natural resonance.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10850,7 +10841,7 @@
 			},
 			{
 				"key": "bonus_attack_speed",
-				"value": "12",
+				"value": "20",
 				"header": "+",
 				"footer": "Attack Speed"
 			},
@@ -10868,13 +10859,13 @@
 			},
 			{
 				"key": "spell_amp",
-				"value": "16%",
+				"value": "12%",
 				"header": "+",
 				"footer": "Spell Amplification"
 			},
 			{
 				"key": "spell_lifesteal_amp",
-				"value": "30%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Spell Lifesteal Amplification"
 			}
@@ -10883,7 +10874,7 @@
 		"shop_tags": "damage|str|agi|attack_speed|unique",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "4100",
+			"ItemCost": "4000",
 			"ItemShopTags": "damage;str;agi;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "ynk;y&k;sk;yasha and kaya",
@@ -10893,11 +10884,11 @@
 			"AbilityValues": {
 				"bonus_agility": "16",
 				"bonus_intellect": "16",
-				"bonus_attack_speed": "12",
+				"bonus_attack_speed": "20",
 				"mana_regen_multiplier": "50",
 				"movement_speed_percent_bonus": "12",
-				"spell_amp": "16",
-				"spell_lifesteal_amp": "30"
+				"spell_amp": "12",
+				"spell_lifesteal_amp": "25"
 			}
 		}
 	},
@@ -11401,7 +11392,7 @@
 		"ability_special": [
 			{
 				"key": "armor_bonus",
-				"value": "6",
+				"value": "8",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -11433,7 +11424,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"armor_bonus": "6",
+				"armor_bonus": "8",
 				"move_speed": "30",
 				"active_armor": "12",
 				"active_duration": "8",
@@ -11504,7 +11495,7 @@
 				"key": "spell_amp",
 				"value": "15%",
 				"header": "+",
-				"footer": "Spell Damage"
+				"footer": "Spell Amplification"
 			}
 		],
 		"json_data": {
@@ -11727,7 +11718,7 @@
 			"ItemDisplayCharges": "1",
 			"ItemStackable": "0",
 			"ItemPermanent": "0",
-			"IsTempestDoubleClonable": "0",
+			"IsTempestDoubleClonable": "1",
 			"ItemSellable": "0",
 			"AbilityValues": {
 				"bonus_health": "50",
@@ -12402,7 +12393,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_intelligence",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -12430,7 +12421,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_intelligence": "7",
+				"bonus_intelligence": "6",
 				"bonus_armor": "2",
 				"mana_restore": "75",
 				"radius": {
@@ -12537,7 +12528,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "75",
+				"value": "90",
 				"header": "+",
 				"footer": "Health"
 			},
@@ -12567,7 +12558,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_health": "75",
+				"bonus_health": "90",
 				"chance_bounty_rune": "16",
 				"chance_other_item": "28",
 				"kobold_duration": "60"
@@ -12978,19 +12969,19 @@
 		"icon": "/panorama/images/items/panic_button_png.png",
 		"cost": 0,
 		"cooldown": "75",
-		"description": "# Passive: Rejuvenate \nWhen the wearer's health falls below **20%**, they will receive a hard dispel and be healed for **1000** health.",
+		"description": "# Passive: Rejuvenate \nWhen the wearer's health falls below **20%**, they will receive a hard dispel and be healed for **1250** health.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "300",
+				"value": "500",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
 				"key": "heal",
-				"value": "1000"
+				"value": "1250"
 			},
 			{
 				"key": "health_threshold",
@@ -13006,8 +12997,8 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_health": "300",
-				"heal": "1000",
+				"bonus_health": "500",
+				"heal": "1250",
 				"health_threshold": "20"
 			}
 		}
@@ -13754,7 +13745,7 @@
 		"ability_special": [
 			{
 				"key": "spell_lifesteal",
-				"value": "10%",
+				"value": "12%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			}
@@ -13768,7 +13759,7 @@
 			"ItemAliases": "voodoo mask;voom;vodo;vm",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"spell_lifesteal": "10"
+				"spell_lifesteal": "12"
 			}
 		}
 	},
@@ -13996,7 +13987,7 @@
 		"aliases": "ooc|orb of corrosion|corosion|corossion",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orb_of_corrosion_png.png",
-		"cost": 900,
+		"cost": 875,
 		"description": "# Passive: Corrosion\nDealing **5** damage per second, and slowing movement by **13%** if the equipped hero is melee, or by **4%** if they are ranged and reduces heals, health regeneration, lifesteal and spell lifesteal by **20%** . Affects Buildings\n\nLasts for **3** seconds.",
 		"lore": "Seepage from the wounds of a warrior deity, sealed in an arcanist's orb following a campaign of vicious slaughter.",
 		"secret_shop": false,
@@ -14038,7 +14029,7 @@
 		"shop_tags": "hard_to_tag",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "900",
+			"ItemCost": "875",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "ooc;orb of corrosion;corosion;corossion",
@@ -14557,7 +14548,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "75",
+				"value": "50",
 				"header": "+",
 				"footer": "Health"
 			},
@@ -14565,7 +14556,7 @@
 				"key": "spell_amp",
 				"value": "5%",
 				"header": "+",
-				"footer": "Spell Damage"
+				"footer": "Spell Amplification"
 			},
 			{
 				"key": "manacost_reduction",
@@ -14583,7 +14574,7 @@
 			"AbilityCooldown": "8.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_health": "75",
+				"bonus_health": "50",
 				"spell_amp": "5",
 				"manacost_reduction": "5"
 			}
@@ -14670,12 +14661,12 @@
 		"name": "item_recipe_mage_slayer",
 		"localized_name": "Mage Slayer Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 200,
+		"cost": 400,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "200",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_mage_slayer",
@@ -14691,14 +14682,14 @@
 		"aliases": "mage slayer|ms",
 		"quality": "rare",
 		"icon": "/panorama/images/items/mage_slayer_png.png",
-		"cost": 2625,
-		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, dealing **20** damage per second and causing them to do **35%** less spell damage for **6** seconds.",
+		"cost": 2825,
+		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, dealing **25** damage per second and causing them to do **40%** less spell damage for **3** seconds.",
 		"lore": "Forged by a secret order in The Third Age of Praxa'cia to fell the False King.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_magical_armor",
-				"value": "25%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Magic Resistance"
 			},
@@ -14710,7 +14701,7 @@
 			},
 			{
 				"key": "spell_amp_debuff",
-				"value": "35"
+				"value": "40"
 			},
 			{
 				"key": "bonus_mana_regen",
@@ -14720,7 +14711,7 @@
 			},
 			{
 				"key": "duration",
-				"value": "6"
+				"value": "3"
 			},
 			{
 				"key": "bonus_intellect",
@@ -14730,7 +14721,7 @@
 			},
 			{
 				"key": "dps",
-				"value": "20"
+				"value": "25"
 			}
 		],
 		"recipe": "item_cloak|item_oblivion_staff|item_recipe_mage_slayer",
@@ -14741,19 +14732,19 @@
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-			"ItemCost": "2625",
+			"ItemCost": "2825",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "mage slayer;ms",
 			"ShouldBeInitiallySuggested": "1",
 			"AbilityValues": {
-				"bonus_magical_armor": "25",
+				"bonus_magical_armor": "20",
 				"bonus_attack_speed": "45",
-				"spell_amp_debuff": "35",
+				"spell_amp_debuff": "40",
 				"bonus_mana_regen": "2",
-				"duration": "6",
+				"duration": "3",
 				"bonus_intellect": "10",
-				"dps": "20"
+				"dps": "25"
 			}
 		}
 	},
@@ -15198,11 +15189,11 @@
 		"name": "item_recipe_helm_of_the_overlord",
 		"localized_name": "Helm of the Overlord Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 775,
+		"cost": 300,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
-			"ItemCost": "775",
+			"ItemCost": "300",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_helm_of_the_overlord",
@@ -15218,7 +15209,7 @@
 		"aliases": "hoto|helm of the overlord",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/helm_of_the_overlord_png.png",
-		"cost": 6200,
+		"cost": 5725,
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
@@ -15296,7 +15287,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "45",
 			"AbilityManaCost": "0",
-			"ItemCost": "6200",
+			"ItemCost": "5725",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hoto;helm of the overlord",
@@ -15637,13 +15628,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "35",
+				"value": "30",
 				"header": "+",
 				"footer": "Strength"
 			},
 			{
 				"key": "movement_speed",
-				"value": "50",
+				"value": "45",
 				"header": "+",
 				"footer": "Movement Speed"
 			},
@@ -15672,8 +15663,8 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_strength": "35",
-				"movement_speed": "50",
+				"bonus_strength": "30",
+				"movement_speed": "45",
 				"model_scale": "60",
 				"pct_str_damage_per_second": "100",
 				"damage_radius": "100"
@@ -15745,13 +15736,13 @@
 		"ability_special": [
 			{
 				"key": "bonus_health_regen",
-				"value": "3",
+				"value": "2.75",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.5",
+				"value": "2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -15769,7 +15760,7 @@
 			}
 		],
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"AbilityCastRange": "850",
@@ -15780,8 +15771,8 @@
 			"AbilityCooldown": "11.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_health_regen": "3",
-				"bonus_mana_regen": "2.5",
+				"bonus_health_regen": "2.75",
+				"bonus_mana_regen": "2",
 				"duration": "4",
 				"speed": "18",
 				"bullwhip_delay_time": "0.3"
@@ -15874,7 +15865,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/eternal_shroud_png.png",
 		"cost": 3600,
-		"description": "# Passive: Shroud\nRestores mana equal to **20%** of incoming enemy spell damage before reductions.\n\n\n# Passive: Eternal Endurance\nFor every **300** spell damage that equipped hero receives, it gains a stack of Endurance for **8**s up to a maximum of **6** charges. Each charge increases Eternal Shroud's magic resistance by **4%** .",
+		"description": "# Passive: Shroud\nRestores mana equal to **20%** of incoming enemy spell damage before reductions.\n\n\n# Passive: Eternal Endurance\nFor every **300** spell damage that equipped hero receives, it gains a stack of Endurance for **6**s up to a maximum of **6** charges. Each charge increases Eternal Shroud's magic resistance by **4%** .",
 		"lore": "A pristine hood that feeds upon strife to empower its owner.",
 		"secret_shop": false,
 		"ability_special": [
@@ -15892,7 +15883,7 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "300",
+				"value": "250",
 				"header": "+",
 				"footer": "Health"
 			},
@@ -15902,7 +15893,7 @@
 			},
 			{
 				"key": "stack_duration",
-				"value": "8"
+				"value": "6"
 			},
 			{
 				"key": "stack_resist",
@@ -15930,9 +15921,9 @@
 			"AbilityValues": {
 				"bonus_spell_resist": "25",
 				"bonus_strength": "14",
-				"bonus_health": "300",
+				"bonus_health": "250",
 				"stack_threshold": "300",
-				"stack_duration": "8",
+				"stack_duration": "6",
 				"stack_resist": "4",
 				"mana_restore_pct": "20",
 				"max_stacks": "6"
@@ -16683,7 +16674,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/revenants_brooch_png.png",
 		"cost": 4900,
-		"description": "# Toggle: Phantom Province\nWhen enabled, attacks cost **75** mana and deal magical damage.",
+		"description": "# Toggle: Phantom Province\nWhen enabled, attacks cost **50** mana, deal magical damage, and can hit ethereal units.",
 		"lore": "The cursed brooch of a fallen guardian who stalks forever between the veil of life and death.",
 		"secret_shop": false,
 		"ability_special": [
@@ -16695,13 +16686,13 @@
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "20",
+				"value": "20%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
 			{
 				"key": "manacost_per_hit",
-				"value": "75"
+				"value": "50"
 			}
 		],
 		"recipe": "item_relic|item_voodoo_mask|item_recipe_revenants_brooch",
@@ -16718,7 +16709,7 @@
 			"AbilityValues": {
 				"bonus_damage": "70",
 				"spell_lifesteal": "20",
-				"manacost_per_hit": "75"
+				"manacost_per_hit": "50"
 			}
 		}
 	},
@@ -16906,7 +16897,7 @@
 		"cooldown": "19",
 		"cast_range": "700",
 		"mana_cost": "50",
-		"description": "# Active: Draw Forth\nWhen targeting an enemy, fire a harpoon at them, that pulls you and the target closer together, up to **35%** of the distance between you and your target. If the caster is melee, the hero and target are always pulled to within melee distance of each other.\n\n\n# Passive: Echo Strike\nCauses melee attacks to attack twice in quick succession. The double attacks apply a **100%** movement slow for **1** seconds on each strike.",
+		"description": "# Active: Draw Forth\nWhen targeting an enemy, fire a harpoon at them, that pulls you and the target closer together, up to **35%** of the distance between you and your target. If the caster is melee, the hero and target are always pulled to within melee distance of each other.\n\n\n# Passive: Echo Strike\nCauses melee attacks to attack twice in quick succession. The double attacks apply a **100%** movement slow for **1** seconds on each strike. Echo Strike cooldown: **5**s",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -17204,7 +17195,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "4",
+				"value": "3",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -17235,7 +17226,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_all_stats": "4",
+				"bonus_all_stats": "3",
 				"mana_regen": "0.4",
 				"stack_limit": "5",
 				"stack_duration": "5",
@@ -17854,7 +17845,7 @@
 		"ability_special": [
 			{
 				"key": "all_stats",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -17886,7 +17877,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"all_stats": "7",
+				"all_stats": "6",
 				"bonus_damage": "12",
 				"count": "2",
 				"secondary_target_range_bonus": "225",
@@ -18350,12 +18341,12 @@
 		"name": "item_recipe_disperser",
 		"localized_name": "Disperser Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 400,
+		"cost": 800,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "400",
+			"ItemCost": "800",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_disperser",
@@ -18371,11 +18362,11 @@
 		"aliases": "diffusal blade 1",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/disperser_png.png",
-		"cost": 5700,
+		"cost": 6100,
 		"cooldown": "15",
 		"cast_range": "600",
 		"mana_cost": "75",
-		"description": "# Active: Suppress\nAffects all units in a **350** AoE around the target. All enemies around the target are slowed for **5** seconds.\n\n All allies around the target receive a basic dispel, increase their movement speed, and are unslowable for **5** seconds.\n\nBoth movement speed reduction and increase start at %phase_movement_speed% and gradually decrease to 0% over the course of the buff duration.\n\nRange: **600**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **8** mana per attack from melee illusions and **8** mana per attack from ranged illusions.",
+		"description": "# Active: Suppress\nSlows the target for **5** seconds if they are an enemy or grants bonus movespeed, applies Basic Dispel and makes them unslowable for **5** seconds if they are an ally. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at **100%** and gradually decrease to 0% over the course of the buff duration.\n\nRange: **600**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nBurns **8** mana per attack from melee illusions and **8** mana per attack from ranged illusions.",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -18423,12 +18414,12 @@
 				"value": "5.0"
 			},
 			{
-				"key": "radius",
-				"value": "350"
-			},
-			{
 				"key": "movement_speed_buff_rate",
 				"value": "5"
+			},
+			{
+				"key": "phase_movement_speed",
+				"value": "100"
 			}
 		],
 		"recipe": "item_diffusal_blade|item_eagle|item_recipe_disperser",
@@ -18445,7 +18436,7 @@
 			"AbilityManaCost": "75",
 			"AbilitySharedCooldown": "diffusal",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ItemCost": "5700",
+			"ItemCost": "6100",
 			"ItemShopTags": "agi;int;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "diffusal blade 1",
@@ -18464,11 +18455,8 @@
 				"damage_per_burn": "1.0",
 				"enemy_effect_duration": "5.0",
 				"ally_effect_duration": "5.0",
-				"radius": {
-					"value": "350",
-					"affected_by_aoe_increase": "1"
-				},
-				"movement_speed_buff_rate": "5"
+				"movement_speed_buff_rate": "5",
+				"phase_movement_speed": "100"
 			}
 		}
 	},
@@ -18607,7 +18595,7 @@
 	{
 		"id": 1106,
 		"name": "item_recipe_phylactery",
-		"localized_name": "item_recipe_phylactery",
+		"localized_name": "Phylactery Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 200,
 		"secret_shop": false,
@@ -18671,6 +18659,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "6.0",
+			"AbilitySharedCooldown": "phylactery",
 			"ItemCost": "2400",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
@@ -18919,7 +18908,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_armor",
-				"value": "3",
+				"value": "2",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -18931,7 +18920,7 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "175",
+				"value": "150",
 				"header": "+",
 				"footer": "Health"
 			},
@@ -18964,9 +18953,9 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_armor": "3",
+				"bonus_armor": "2",
 				"bonus_mana": "250",
-				"bonus_health": "175",
+				"bonus_health": "150",
 				"duration": "8",
 				"absorb_amount": "300"
 			}
@@ -18992,6 +18981,10 @@
 			{
 				"key": "regen",
 				"value": "100"
+			},
+			{
+				"key": "idle",
+				"value": "5"
 			}
 		],
 		"json_data": {
@@ -19015,7 +19008,8 @@
 			"IsTempestDoubleClonable": "0",
 			"AbilityValues": {
 				"shield": "500",
-				"regen": "100"
+				"regen": "100",
+				"idle": "5"
 			}
 		}
 	},
@@ -19025,7 +19019,7 @@
 		"localized_name": "Ancient Guardian",
 		"icon": "/panorama/images/items/ancient_guardian_png.png",
 		"cost": 0,
-		"description": "# Passive: Ancient Power\nGrants **50** extra bonus damage as long as the unit is within **2000** of an ancient.",
+		"description": "# Passive: Ancient Power\nGrants **50** extra bonus damage as long as the unit is within **2000** range of an ancient.",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
@@ -19064,7 +19058,7 @@
 		"localized_name": "Safety Bubble",
 		"icon": "/panorama/images/items/safety_bubble_png.png",
 		"cost": 0,
-		"description": "# Passive: Bubbled Up\nEquipped Hero has a **100** HP Barrier. Barrier fully regenerates after not receiving damage for **5** seconds",
+		"description": "# Passive: Bubbled Up\nEquipped Hero has a **100** HP Barrier against enemy damage. Barrier fully regenerates after not receiving damage for **8** seconds. Self-inflicted damage bypasses the barrier.",
 		"secret_shop": false,
 		"neutral_tier": "1",
 		"ability_special": [
@@ -19074,11 +19068,13 @@
 			},
 			{
 				"key": "restore_time",
-				"value": "5"
+				"value": "8"
 			},
 			{
 				"key": "bonus_hp_regen",
-				"value": "5"
+				"value": "2",
+				"header": "+",
+				"footer": "Health Regeneration"
 			}
 		],
 		"json_data": {
@@ -19090,8 +19086,8 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"shield": "100",
-				"restore_time": "5",
-				"bonus_hp_regen": "5"
+				"restore_time": "8",
+				"bonus_hp_regen": "2"
 			}
 		}
 	},
@@ -19225,13 +19221,13 @@
 		"localized_name": "Unwavering Condition",
 		"icon": "/panorama/images/items/unwavering_condition_png.png",
 		"cost": 0,
-		"description": "# Passive: Unwavering\nHero's Max Health is set to **1500** and can't be altered by other effects or attributes.",
+		"description": "# Passive: Unwavering\nHero's Max Health is set to **1800** and can't be altered by other effects or attributes.",
 		"secret_shop": false,
 		"neutral_tier": "5",
 		"ability_special": [
 			{
 				"key": "max_health",
-				"value": "1500"
+				"value": "1800"
 			},
 			{
 				"key": "magic_resist",
@@ -19248,7 +19244,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"max_health": "1500",
+				"max_health": "1800",
 				"magic_resist": "95"
 			}
 		}
@@ -19326,7 +19322,7 @@
 		"localized_name": "Rattlecage",
 		"icon": "/panorama/images/items/rattlecage_png.png",
 		"cost": 0,
-		"description": "# Passive: Reverberate\nAfter taking **180** from any source, the wearer fires a projectile at up to **2** random enemies in a **600** radius, prioritizing heroes, that deal **125** physical damage and slow the targets movement and attack speed by **100%** for **0.2**s. ",
+		"description": "# Passive: Reverberate\nAfter taking **180** damage from any source, the wearer fires a projectile at up to **2** random enemies in a **600** radius, prioritizing heroes, that deal **125** physical damage and slow the targets movement and attack speed by **100%** for **0.2**s. ",
 		"secret_shop": false,
 		"neutral_tier": "4",
 		"ability_special": [
@@ -19396,7 +19392,7 @@
 		"aliases": "gleipnir|gliepnir|glaypnir",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/gungir_png.png",
-		"cost": 5650,
+		"cost": 5450,
 		"cooldown": "18",
 		"cast_range": "1100",
 		"mana_cost": "200",
@@ -19482,7 +19478,7 @@
 			"AbilityCastRange": "1100",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "200",
-			"ItemCost": "5650",
+			"ItemCost": "5450",
 			"ItemShopTags": "damage;attack_speed;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "gleipnir;gliepnir;glaypnir",
@@ -19514,12 +19510,12 @@
 		"name": "item_recipe_gungir",
 		"localized_name": "Gleipnir Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 450,
+		"cost": 250,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "450",
+			"ItemCost": "250",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_gungir",
@@ -19566,7 +19562,7 @@
 		"icon": "/panorama/images/items/doubloon_png.png",
 		"cost": 0,
 		"cooldown": "5",
-		"description": "# Toggle: Flip\nToggle to **20%** of your Max Health to Max Mana, or **20%** of your Max Mana to  Max Health.",
+		"description": "# Toggle: Flip\nToggle to convert **20%** of your Max Health to Max Mana, or **20%** of your Max Mana to  Max Health.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -19611,7 +19607,7 @@
 		"cost": 0,
 		"cooldown": "1",
 		"cast_range": "99999",
-		"description": "Creates a banner anywhere on the map. Lane creeps passing by the banner will get a **45**s increase of damage and health. Lasts **300** seconds. Can be destroyed ",
+		"description": "# Use: Place Banner\nCreates a banner anywhere on the map. Lane creeps passing by the banner will get a **45**s increase of damage and health. Lasts **300** seconds. Can be destroyed ",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -19673,13 +19669,32 @@
 		}
 	},
 	{
+		"id": 1805,
+		"name": "item_recipe_devastator",
+		"localized_name": "Parasma Recipe",
+		"icon": "/panorama/images/items/recipe.png",
+		"cost": 400,
+		"secret_shop": false,
+		"ability_special": [],
+		"json_data": {
+			"Model": "models/props_gameplay/recipe.vmdl",
+			"ItemCost": "400",
+			"ItemShopTags": "",
+			"ItemRecipe": "1",
+			"ItemResult": "item_devastator",
+			"ItemRequirements": {
+				"01": "item_witch_blade;item_mystic_staff"
+			}
+		}
+	},
+	{
 		"id": 1806,
 		"name": "item_devastator",
 		"localized_name": "Parasma",
 		"aliases": "staff|misery|sm",
 		"quality": "rare",
 		"icon": "/panorama/images/items/devastator_png.png",
-		"cost": 5575,
+		"cost": 5975,
 		"cooldown": "7",
 		"description": "# Passive: Witch Blade\nCauses your next attack to have true strike, apply a poison for **4** seconds, slowing by **25%** and dealing **1**x your intelligence as damage every second.\n\n\n# Passive: Magic Corruption\nYour attacks reduce the enemy's Magic resistance by **20%** for **4** seconds.",
 		"lore": "Devastating.",
@@ -19687,7 +19702,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "45",
+				"value": "40",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -19702,6 +19717,12 @@
 				"value": "8",
 				"header": "+",
 				"footer": "Armor"
+			},
+			{
+				"key": "bonus_mana_regen",
+				"value": "1.5",
+				"header": "+",
+				"footer": "Mana Regeneration"
 			},
 			{
 				"key": "projectile_speed",
@@ -19730,22 +19751,23 @@
 				"value": "4"
 			}
 		],
-		"recipe": "item_witch_blade|item_mystic_staff",
+		"recipe": "item_witch_blade|item_mystic_staff|item_recipe_devastator",
 		"shop_tags": "int|hard_to_tag",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilityCooldown": "7",
-			"ItemCost": "5575",
+			"ItemCost": "5975",
 			"ItemShopTags": "int;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "staff;misery;sm",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_intellect": "45",
+				"bonus_intellect": "40",
 				"bonus_attack_speed": "40",
 				"bonus_armor": "8",
+				"bonus_mana_regen": "1.5",
 				"projectile_speed": "300",
 				"int_damage_multiplier": "1",
 				"slow": "25",
@@ -19758,7 +19780,7 @@
 	{
 		"id": 1807,
 		"name": "item_recipe_angels_demise",
-		"localized_name": "item_recipe_angels_demise",
+		"localized_name": "Khanda Recipe",
 		"icon": "/panorama/images/items/recipe.png",
 		"cost": 600,
 		"secret_shop": false,
@@ -19783,7 +19805,7 @@
 		"icon": "/panorama/images/items/angels_demise_png.png",
 		"cost": 5000,
 		"cooldown": "6",
-		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals **100** + **75%** of your attack damage as bonus damage to the target, and slows them by **50%** for **1.5**s.\n\n\n# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **160%** damage.",
+		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals **150** + **75%** of your attack damage as bonus damage to the target, and slows them by **50%** for **1.5**s.\n\n\n# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **160%** damage.",
 		"secret_shop": false,
 		"ability_special": [
 			{
@@ -19802,7 +19824,7 @@
 			},
 			{
 				"key": "spell_crit_flat",
-				"value": "100"
+				"value": "150"
 			},
 			{
 				"key": "crit_multiplier",
@@ -19844,6 +19866,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"AbilityCooldown": "6.0",
+			"AbilitySharedCooldown": "phylactery",
 			"ItemCost": "5000",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
@@ -19853,7 +19876,7 @@
 				"bonus_damage": "50",
 				"crit_chance": "30",
 				"spell_crit_multiplier": "75",
-				"spell_crit_flat": "100",
+				"spell_crit_flat": "150",
 				"crit_multiplier": "160",
 				"tooltip_crit_damage": "60",
 				"bonus_health": "200",
