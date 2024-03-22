@@ -214,13 +214,13 @@
 		"quality": "component",
 		"icon": "/panorama/images/items/javelin_png.png",
 		"cost": 900,
-		"description": "# Passive: Pierce\nGrants each attack a **30%** chance to pierce through evasion and deal **60** bonus magical damage.",
+		"description": "# Passive: Pierce\nGrants each attack a **25%** chance to pierce through evasion and deal **60** bonus magical damage.",
 		"lore": "A rather typical spear that can sometimes pierce through an enemy's armor when used to attack.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_chance",
-				"value": "30"
+				"value": "25"
 			},
 			{
 				"key": "bonus_chance_damage",
@@ -235,7 +235,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "javelin",
 			"AbilityValues": {
-				"bonus_chance": "30",
+				"bonus_chance": "25",
 				"bonus_chance_damage": "60"
 			}
 		}
@@ -1109,7 +1109,7 @@
 		"quality": "component",
 		"icon": "/panorama/images/items/magic_stick_png.png",
 		"cost": 200,
-		"cooldown": "13",
+		"cooldown": "17",
 		"cast_range": "1200",
 		"description": "# Active: Energy Charge\nInstantly restores **15** health and mana per charge stored.\n\n Max **10** charges. Gains a charge whenever a visible enemy within **1200** range uses an ability.",
 		"lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
@@ -1132,7 +1132,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"Model": "models/props_gameplay/magic_wand.vmdl",
-			"AbilityCooldown": "13.0",
+			"AbilityCooldown": "17.0",
 			"AbilitySharedCooldown": "magicwand",
 			"AbilityCastRange": "1200",
 			"ItemCost": "200",
@@ -1176,7 +1176,7 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/magic_wand_png.png",
 		"cost": 450,
-		"cooldown": "13",
+		"cooldown": "15",
 		"cast_range": "1200",
 		"description": "# Active: Energy Charge\nInstantly restores **15** health and mana per charge stored. \n\nMax **20** charges. Gains a charge whenever a visible enemy within **1200** range uses an ability.",
 		"lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
@@ -1206,7 +1206,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"Model": "models/props_gameplay/magic_wand.vmdl",
-			"AbilityCooldown": "13.0",
+			"AbilityCooldown": "15.0",
 			"AbilitySharedCooldown": "magicwand",
 			"AbilityCastRange": "1200",
 			"ItemCost": "450",
@@ -2490,7 +2490,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "1.25",
+				"value": "1",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			}
@@ -2506,7 +2506,7 @@
 			"AbilityValues": {
 				"bonus_intellect": "10",
 				"bonus_attack_speed": "35",
-				"bonus_mana_regen": "1.25"
+				"bonus_mana_regen": "1.0"
 			}
 		}
 	},
@@ -2839,7 +2839,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "0.75 1.5",
+				"value": "1 2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -2866,7 +2866,7 @@
 				"bonus_strength": "2 4",
 				"bonus_agility": "2 4",
 				"bonus_max_mana_percentage": "3 6",
-				"bonus_mana_regen": "0.75 1.5",
+				"bonus_mana_regen": "1.0 2.0",
 				"clock_time": "25"
 			}
 		}
@@ -3573,7 +3573,7 @@
 		"cost": 3275,
 		"cooldown": "18",
 		"cast_range": "900",
-		"mana_cost": "100",
+		"mana_cost": "125",
 		"description": "# Active: Soul Burn\nSilences the target unit for **5** seconds. At the end of the silence, **30%** of the damage received while silenced is inflicted as bonus magical damage.\n\nRange: **900**",
 		"lore": "A garnet rod constructed from the essence of a fire demon.",
 		"secret_shop": false,
@@ -3592,7 +3592,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "3.5",
+				"value": "3.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -3604,7 +3604,7 @@
 			},
 			{
 				"key": "bonus_intellect",
-				"value": "12",
+				"value": "10",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -3629,7 +3629,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "18.0",
 			"AbilitySharedCooldown": "orchid",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "125",
 			"ItemCost": "3275",
 			"ItemShopTags": "attack_speed;damage;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
@@ -3639,9 +3639,9 @@
 			"AbilityValues": {
 				"bonus_attack_speed": "40",
 				"bonus_damage": "10",
-				"bonus_mana_regen": "3.5",
+				"bonus_mana_regen": "3.25",
 				"bonus_health_regen": "6.0",
-				"bonus_intellect": "12",
+				"bonus_intellect": "10",
 				"silence_damage_percent": "30",
 				"silence_duration": "5"
 			}
@@ -4231,7 +4231,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/black_king_bar_png.png",
 		"cost": 4050,
-		"cooldown": "90",
+		"cooldown": "95",
 		"mana_cost": "50",
 		"description": "# Active: Avatar\nApplies a basic dispel. Grants **60%** Magic resistance and immunity to pure and reflected damage. For the duration of the effect, any negative effect from enemy spells has no effect. \n\nDuration: **9**/**8**/**7**/**6** \nDispel Type: **Basic Dispel**",
 		"lore": "A powerful staff imbued with the strength of giants.",
@@ -4271,7 +4271,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "2",
-			"AbilityCooldown": "90",
+			"AbilityCooldown": "95",
 			"AbilityManaCost": "50",
 			"ItemCost": "4050",
 			"ItemShopTags": "str;damage;hard_to_tag",
@@ -4852,19 +4852,22 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/rapier_png.png",
 		"cost": 5600,
-		"description": "# Passive: Everlasting\nDropped on death, and cannot be destroyed. \n\nBecomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up and is killed. A dropped Rapier cannot be picked up by a courier.",
+		"cooldown": "6",
+		"description": "# Toggle: Transmute\nToggle to gain either **25%** bonus spell amplification or **250** bonus attack damage.\n\n\n# Passive: Everlasting\nDropped on death, and cannot be destroyed. \n\nBecomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up and is killed. A dropped Rapier cannot be picked up by a courier.",
 		"lore": "So powerful, it cannot have a single owner.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_spell_amp",
-				"value": "25%",
-				"header": "+",
-				"footer": "Spell Amplification"
+				"value": "25"
 			},
 			{
 				"key": "bonus_damage",
-				"value": "350",
+				"value": "250"
+			},
+			{
+				"key": "bonus_damage_base",
+				"value": "100",
 				"header": "+",
 				"footer": "Damage"
 			}
@@ -4872,7 +4875,7 @@
 		"recipe": "item_relic|item_demon_edge",
 		"shop_tags": "damage",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_TOGGLE",
 			"Model": "models/props_gameplay/divine_rapier.vmdl",
 			"ItemCost": "5600",
 			"ItemShopTags": "damage",
@@ -4887,9 +4890,11 @@
 			"IsTempestDoubleClonable": "0",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_NEVER",
 			"ShouldBeSuggested": "1",
+			"AbilityCooldown": "6",
 			"AbilityValues": {
 				"bonus_spell_amp": "25",
-				"bonus_damage": "350"
+				"bonus_damage": "250",
+				"bonus_damage_base": "100"
 			}
 		}
 	},
@@ -5389,7 +5394,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/manta_png.png",
 		"cost": 4550,
-		"cooldown": "30",
+		"cooldown": "34",
 		"mana_cost": "125",
 		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
 		"lore": "An axe made of reflective materials that causes confusion amongst enemy ranks.",
@@ -5470,7 +5475,7 @@
 		"shop_tags": "agi|str|int|attack_speed|move_speed|hard_to_tag",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
-			"AbilityCooldown": "30.0",
+			"AbilityCooldown": "34.0",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "125",
 			"ItemCost": "4550",
@@ -5681,7 +5686,7 @@
 		"cost": 3000,
 		"cooldown": "25",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **14** seconds, or until you attack or cast a spell.  While Shadow Walk is active, you move **20%** faster and can move through units.  \n\nIf attacking to end the invisibility, you gain **175** bonus physical damage on that attack.",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While Shadow Walk is active, you move **20%** faster and can move through units.  \n\nIf attacking to end the invisibility, you gain **175** bonus physical damage on that attack.",
 		"lore": "The blade of a fallen king, it allows you to move unseen and strike from the shadows.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5699,7 +5704,7 @@
 			},
 			{
 				"key": "windwalk_duration",
-				"value": "14.0"
+				"value": "17.0"
 			},
 			{
 				"key": "windwalk_movement_speed",
@@ -5731,7 +5736,7 @@
 			"AbilityValues": {
 				"bonus_damage": "20",
 				"bonus_attack_speed": "35",
-				"windwalk_duration": "14.0",
+				"windwalk_duration": "17.0",
 				"windwalk_movement_speed": "20",
 				"windwalk_fade_time": "0.3",
 				"windwalk_bonus_damage": "175"
@@ -5909,7 +5914,7 @@
 		"cooldown": "35",
 		"cast_range": "800",
 		"mana_cost": "50",
-		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\nRange: **800**\n\n\n# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
+		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\nRange: **800**\n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
 		"lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5959,7 +5964,7 @@
 			},
 			{
 				"key": "chain_chance",
-				"value": "30"
+				"value": "25"
 			},
 			{
 				"key": "chain_damage",
@@ -6018,7 +6023,7 @@
 				"static_seconary_radius": "900",
 				"static_radius": "900",
 				"static_cooldown": "1.0",
-				"chain_chance": "30",
+				"chain_chance": "25",
 				"chain_damage": "180",
 				"chain_strikes": "12",
 				"chain_radius": "650",
@@ -6067,13 +6072,13 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "220",
+				"value": "250",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
 				"key": "bonus_mana",
-				"value": "220",
+				"value": "250",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -6114,8 +6119,8 @@
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "22",
-				"bonus_health": "220",
-				"bonus_mana": "220",
+				"bonus_health": "250",
+				"bonus_mana": "250",
 				"cold_slow_melee": "-20",
 				"cold_attack_slow_melee": "-10",
 				"cold_slow_ranged": "-50",
@@ -6220,7 +6225,7 @@
 		"cast_range": "700",
 		"mana_cost": "0",
 		"base_level": 1,
-		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **380** and max health to a minimum of **1000**. Also provides the unit with +**25** base attack damage, +**12** health regen, +**4** mana regen and +**4** armor. \n\nDominated units with a max health of greater than **1000** retain their original max health.  Dominated unit's bounty is set to **100** gold.\n\nRange: **700**",
+		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **380** and max health to a minimum of **1000**. Also provides the unit with +**25** base attack damage, +**12** health regen, +**4** mana regen and +**4** armor. \n\nDominated units with a max health of greater than **1000** retain their original max health. Grants the caster the gold bounty of the dominated creep.  Dominated unit's bounty is set to **100** gold.\n\nRange: **700**",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6326,7 +6331,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/maelstrom_png.png",
 		"cost": 2950,
-		"description": "# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **120** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
+		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **120** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"secret_shop": false,
 		"ability_special": [
@@ -6344,7 +6349,7 @@
 			},
 			{
 				"key": "chain_chance",
-				"value": "30"
+				"value": "25"
 			},
 			{
 				"key": "chain_damage",
@@ -6384,7 +6389,7 @@
 			"AbilityValues": {
 				"bonus_damage": "25",
 				"bonus_attack_speed": "25",
-				"chain_chance": "30",
+				"chain_chance": "25",
 				"chain_damage": "120",
 				"chain_strikes": "4",
 				"chain_radius": "650",
@@ -6681,7 +6686,6 @@
 			"AbilityManaCost": "25",
 			"AbilitySharedCooldown": "diffusal",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"AbilityManaCost1": "0",
 			"ItemCost": "2500",
 			"ItemShopTags": "agi;int;unique;hard_to_tag",
 			"ItemQuality": "artifact",
@@ -9648,7 +9652,7 @@
 		"cost": 5450,
 		"cooldown": "20",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **14** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage and disable their passive abilities for **5** seconds.\n\n",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage and disable their passive abilities for **5** seconds.\n\n",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9678,7 +9682,7 @@
 			},
 			{
 				"key": "windwalk_duration",
-				"value": "14.0"
+				"value": "17.0"
 			},
 			{
 				"key": "windwalk_movement_speed",
@@ -9721,7 +9725,7 @@
 				"bonus_strength": "0",
 				"bonus_intellect": "0",
 				"bonus_mana_regen": "0",
-				"windwalk_duration": "14.0",
+				"windwalk_duration": "17.0",
 				"windwalk_movement_speed": "25",
 				"windwalk_fade_time": "0.3",
 				"windwalk_bonus_damage": "300",
@@ -9740,14 +9744,14 @@
 		"cost": 6625,
 		"cooldown": "15",
 		"cast_range": "900",
-		"mana_cost": "100",
+		"mana_cost": "125",
 		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **60%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will deal **50** extra damage and have True Strike.\n\nRange: **900**\n\n\n# Passive: Pierce\nGrants each attack a **40%** chance to pierce through evasion and deal **60** bonus magical damage.",
 		"lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "bonus_intellect",
-				"value": "15",
+				"value": "10",
 				"header": "+",
 				"footer": "Intelligence"
 			},
@@ -9817,7 +9821,7 @@
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "15.0",
 			"AbilitySharedCooldown": "orchid",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "125",
 			"ItemCost": "6625",
 			"ItemShopTags": "int;attack_speed;damage;regen_mana;damage;hard_to_tag",
 			"ItemQuality": "epic",
@@ -9825,7 +9829,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ShouldBeSuggested": "1",
 			"AbilityValues": {
-				"bonus_intellect": "15",
+				"bonus_intellect": "10",
 				"bonus_attack_speed": "100",
 				"bonus_mana_regen": "3.5",
 				"bonus_health_regen": "6.5",
@@ -11004,7 +11008,7 @@
 		"ability_special": [
 			{
 				"key": "attack_range_bonus",
-				"value": "100",
+				"value": "75",
 				"header": "+",
 				"footer": "Attack Range (Ranged Only)"
 			},
@@ -11032,7 +11036,7 @@
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"AbilityValues": {
-				"attack_range_bonus": "100",
+				"attack_range_bonus": "75",
 				"attack_speed_bonus": "20",
 				"magic_resistance_reduction": "15",
 				"debuff_duration": "6"
@@ -11662,7 +11666,7 @@
 		"cost": 0,
 		"cooldown": "8",
 		"cast_range": "300",
-		"description": "# Active: Consume\nConsumes all charges and grants a target allied unit a buff that provides +**2** Health Regen and +**1** Mana Regen per charge for **10**s. \n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+		"description": "# Active: Consume\nConsumes all charges and grants a target allied unit a buff that provides +**2.5** Health Regen and +**1.25** Mana Regen per charge for **8**s. \n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
 		"lore": "To those who harvest olgru jelly, success serves more than mere profit--it's often the means to survival--for only the jelly itself can cure the ravages that follow a sting from the vigilant denizens of the giant hives.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -11689,15 +11693,15 @@
 			},
 			{
 				"key": "health_regen",
-				"value": "2.0"
+				"value": "2.5"
 			},
 			{
 				"key": "mana_regen",
-				"value": "1.0"
+				"value": "1.25"
 			},
 			{
 				"key": "regen_duration",
-				"value": "10"
+				"value": "8"
 			}
 		],
 		"json_data": {
@@ -11725,9 +11729,9 @@
 				"bonus_mana": "50",
 				"max_charges": "10",
 				"use_cooldown": "12",
-				"health_regen": "2.0",
-				"mana_regen": "1.0",
-				"regen_duration": "10"
+				"health_regen": "2.5",
+				"mana_regen": "1.25",
+				"regen_duration": "8"
 			}
 		}
 	},
@@ -15213,7 +15217,7 @@
 		"cooldown": "45",
 		"cast_range": "700",
 		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **380** and max health to a minimum of **1800**. Also provides the unit with +**70** base attack damage, +**12** health regen, +**4** mana regen, +**7** armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than **1800** retain their original max health.  Dominated unit's bounty is set to **250** gold.\n\nRange: **700**\n\n",
+		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **380** and max health to a minimum of **1800**. Also provides the unit with +**70** base attack damage, +**12** health regen, +**4** mana regen, +**7** armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than **1800** retain their original max health. Grants the caster the gold bounty of the dominated creep. Dominated unit's bounty is set to **250** gold.\n\nRange: **700**\n\n",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"ability_special": [
@@ -16674,7 +16678,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/revenants_brooch_png.png",
 		"cost": 4900,
-		"description": "# Toggle: Phantom Province\nWhen enabled, attacks cost **50** mana, deal magical damage, and can hit ethereal units.",
+		"description": "# Toggle: Phantom Province\nWhen enabled, attacks cost **50** mana, deal magical damage, and can hit ethereal units, but cannot crit.",
 		"lore": "The cursed brooch of a fallen guardian who stalks forever between the veil of life and death.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19256,7 +19260,7 @@
 		"icon": "/panorama/images/items/light_collector_png.png",
 		"cost": 0,
 		"cooldown": "30",
-		"description": "# Active: Lightbreak \nProduce a brilliant flash of light that destroys trees in a **325** AoE. \n\n\n# Passive: Unclouded \nProvides wearer with health regeneration during the day and mana regeneration during the night. When within a **200** distance of any trees, health and mana regeneration are halved.",
+		"description": "# Active: Lightbreak \nProduce a brilliant flash of light that destroys trees in a **325** AoE. \n\n\n# Passive: Unclouded \nProvides wearer with health regeneration during the day and mana regeneration during the night. When within a **200** distance of any trees, health and mana regeneration are decreased by **75%**.",
 		"secret_shop": false,
 		"neutral_tier": "2",
 		"ability_special": [
@@ -19270,11 +19274,11 @@
 			},
 			{
 				"key": "penalty",
-				"value": "0.5"
+				"value": "75"
 			},
 			{
 				"key": "movespeed_pct",
-				"value": "10"
+				"value": "5"
 			},
 			{
 				"key": "radius",
@@ -19304,8 +19308,8 @@
 			"AbilityValues": {
 				"health_regen": "12",
 				"mana_regen": "6",
-				"penalty": "0.5",
-				"movespeed_pct": "10",
+				"penalty": "75",
+				"movespeed_pct": "5",
 				"radius": "200",
 				"tree_destruction_radius": {
 					"value": "325",
@@ -19396,7 +19400,7 @@
 		"cooldown": "18",
 		"cast_range": "1100",
 		"mana_cost": "200",
-		"description": "# Active: Eternal Chains\nRoots all enemies in a target **375** radius for **2** seconds and deals **180** damage.\n\nRange: **1100** \n\n\n# Passive: Chain Lightning\nGrants a **30%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **160** magical damage to each. Lightning proc pierces evasion. Deals **150%** damage to illusions.",
+		"description": "# Active: Eternal Chains\nRoots all enemies in a target **375** radius for **2** seconds and deals **180** damage.\n\nRange: **1100** \n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **160** magical damage to each. Lightning proc pierces evasion. Deals **150%** damage to illusions.",
 		"lore": "Bindings forged by impossible means to leash an ancient evil.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19414,7 +19418,7 @@
 			},
 			{
 				"key": "chain_chance",
-				"value": "30"
+				"value": "25"
 			},
 			{
 				"key": "chain_damage",
@@ -19487,7 +19491,7 @@
 			"AbilityValues": {
 				"bonus_damage": "30",
 				"bonus_attack_speed": "30",
-				"chain_chance": "30",
+				"chain_chance": "25",
 				"chain_damage": "160",
 				"chain_strikes": "4",
 				"chain_radius": "650",
@@ -19562,7 +19566,7 @@
 		"icon": "/panorama/images/items/doubloon_png.png",
 		"cost": 0,
 		"cooldown": "5",
-		"description": "# Toggle: Flip\nToggle to convert **20%** of your Max Health to Max Mana, or **20%** of your Max Mana to  Max Health.",
+		"description": "# Toggle: Flip\nToggle to convert **20%** of your Max Health to Max Mana, or **20%** of your Max Mana to  Max Health. Mana and health regeneration from Doubloon is increased by **50%**, based on the which side is selected.",
 		"secret_shop": false,
 		"neutral_tier": "3",
 		"ability_special": [
@@ -19581,6 +19585,10 @@
 				"value": "2.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
+			},
+			{
+				"key": "regen_bonus_pct",
+				"value": "50"
 			}
 		],
 		"json_data": {
@@ -19594,7 +19602,8 @@
 			"AbilityValues": {
 				"conversion_pct": "20",
 				"bonus_health_regen": "5",
-				"bonus_mana_regen": "2.5"
+				"bonus_mana_regen": "2.5",
+				"regen_bonus_pct": "50"
 			}
 		}
 	},
@@ -19696,7 +19705,7 @@
 		"icon": "/panorama/images/items/devastator_png.png",
 		"cost": 5975,
 		"cooldown": "7",
-		"description": "# Passive: Witch Blade\nCauses your next attack to have true strike, apply a poison for **4** seconds, slowing by **25%** and dealing **1**x your intelligence as damage every second.\n\n\n# Passive: Magic Corruption\nYour attacks reduce the enemy's Magic resistance by **20%** for **4** seconds.",
+		"description": "# Passive: Witch Blade\nCauses your next attack to have true strike, apply a poison for **4** seconds, slowing by **25%** and dealing **0.75**x your intelligence as damage every second.\n\n\n# Passive: Magic Corruption\nYour attacks reduce the enemy's Magic resistance by **20%** for **4** seconds.",
 		"lore": "Devastating.",
 		"secret_shop": false,
 		"ability_special": [
@@ -19732,7 +19741,7 @@
 			},
 			{
 				"key": "int_damage_multiplier",
-				"value": "1"
+				"value": "0.75"
 			},
 			{
 				"key": "slow",
@@ -19769,7 +19778,7 @@
 				"bonus_armor": "8",
 				"bonus_mana_regen": "1.5",
 				"projectile_speed": "300",
-				"int_damage_multiplier": "1",
+				"int_damage_multiplier": "0.75",
 				"slow": "25",
 				"slow_duration": "4",
 				"active_mres_reduction": "20",
