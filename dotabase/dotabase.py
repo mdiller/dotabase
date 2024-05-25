@@ -112,10 +112,15 @@ class Ability(Base):
 	shard_upgrades = Column(Boolean)
 	shard_description = Column(String)
 
+	innate = Column(Boolean)
+	facet_id = Column(Integer, ForeignKey("facets.id"), nullable=True)
+
 	json_data = Column(String)
 
+	facet = relationship("Facet", back_populates="abilities")
 	hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
+	facet_strings = relationship("FacetAbilityString", order_by="FacetAbilityString.facet_id")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
@@ -131,6 +136,10 @@ class Ability(Base):
 	# 				if string.lang == self._locale and string.column == name:
 	# 					return string.value
 	# 	return Base.__getattribute__(self, name)
+	
+	@property
+	def facet_grants(self):
+		return self.facet_id is not None
 
 	@property
 	def aghanim(self):
@@ -172,6 +181,60 @@ class Talent(Base):
 
 	def __repr__(self):
 		return f"Talent: {self.localized_name}"
+
+class Facet(Base):
+	__tablename__ = 'facets'
+
+	id = Column(Integer, primary_key=True) # auto-generated
+	name = Column(String)
+	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
+	icon =  Column(String)
+	icon_name =  Column(String)
+	color =  Column(String)
+	gradient_id =  Column(Integer)
+	slot = Column(Integer)
+
+	ability_special = Column(String)
+	json_data = Column(String)
+
+	localized_name = Column(String)
+	description = Column(String)
+
+
+	abilities = relationship("Ability", order_by="Ability.id", back_populates="facet")
+	ability_strings = relationship("FacetAbilityString", order_by="FacetAbilityString.ability_id")
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == Facet.id)",
+		viewonly=True
+	)
+
+	# other stuff could include
+	# "KeyValueOverrides": {
+    #   "AttributeBaseStrength": "22",
+    #   "AttributeStrengthGain": "4.0"
+    # },
+	# "AbilityIconReplacements": {
+    #   "windrunner_focusfire": "windrunner_whirlwind",
+    #   "windrunner_focusfire_cancel": "windrunner_whirlwind_stop"
+    # }
+
+	def __repr__(self):
+		return f"Facet: {self.localized_name}"
+
+
+class FacetAbilityString(Base):
+	__tablename__ = 'facetabilitystrings'
+
+	id = Column(Integer, primary_key=True) # auto-generated
+	facet_id = Column(Integer, ForeignKey("facets.id"))
+	ability_id = Column(Integer, ForeignKey("abilities.id"))
+	description = Column(String)
+	strings = relationship(
+		"LocaleString",
+		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == FacetAbilityString.id)",
+		viewonly=True
+	)
 
 
 class Item(Base):
