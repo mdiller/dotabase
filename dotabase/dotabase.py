@@ -62,6 +62,7 @@ class Hero(Base):
 	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
 	voice = relationship("Voice", uselist=False, back_populates="hero")
+	facets = relationship("Facet", back_populates="hero")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)",
@@ -120,7 +121,7 @@ class Ability(Base):
 	facet = relationship("Facet", back_populates="abilities")
 	hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
-	facet_strings = relationship("FacetAbilityString", order_by="FacetAbilityString.facet_id")
+	facet_strings = relationship("FacetAbilityString", back_populates="ability")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
@@ -201,8 +202,9 @@ class Facet(Base):
 	description = Column(String)
 
 
+	hero = relationship("Hero", back_populates="facets")
 	abilities = relationship("Ability", order_by="Ability.id", back_populates="facet")
-	ability_strings = relationship("FacetAbilityString", order_by="FacetAbilityString.ability_id")
+	ability_strings = relationship("FacetAbilityString", back_populates="facet")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == Facet.id)",
@@ -230,6 +232,10 @@ class FacetAbilityString(Base):
 	facet_id = Column(Integer, ForeignKey("facets.id"))
 	ability_id = Column(Integer, ForeignKey("abilities.id"))
 	description = Column(String)
+
+	ability = relationship("Ability", back_populates="facet_strings")
+	facet = relationship("Facet", back_populates="ability_strings")
+
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == FacetAbilityString.id)",
