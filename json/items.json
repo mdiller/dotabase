@@ -41,7 +41,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "blink dagger",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"blink_range": "1200",
 				"blink_damage_cooldown": "3.0",
@@ -327,8 +327,7 @@
 			"ItemShopTags": "damage",
 			"ItemQuality": "component",
 			"ItemAliases": "qb;quelling blade",
-			"ShouldBeSuggested": "1",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"damage_bonus": "8",
 				"damage_bonus_ranged": "4",
@@ -359,7 +358,7 @@
 			"ItemShopTags": "armor",
 			"ItemQuality": "component",
 			"ItemAliases": "rop;ring of protection",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -391,7 +390,7 @@
 			"ItemShopTags": "str",
 			"ItemQuality": "component",
 			"ItemAliases": "gauntlets of strength",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_strength": "3"
 			}
@@ -420,7 +419,7 @@
 			"ItemShopTags": "agi",
 			"ItemQuality": "component",
 			"ItemAliases": "slippers of agility",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_agility": "3"
 			}
@@ -449,7 +448,7 @@
 			"ItemShopTags": "int",
 			"ItemQuality": "component",
 			"ItemAliases": "mantle of intelligence",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "3"
 			}
@@ -489,7 +488,7 @@
 			"ItemShopTags": "agi;int;str",
 			"ItemQuality": "consumable",
 			"ItemAliases": "gg branch;iron branch",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "1",
 				"tree_duration": "20"
@@ -603,7 +602,7 @@
 			"ItemShopTags": "agi;int;str",
 			"ItemQuality": "component",
 			"ItemAliases": "circlet",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "2"
 			}
@@ -780,7 +779,6 @@
 			"ItemShopTags": "unique",
 			"ItemQuality": "component",
 			"ItemAliases": "morbid mask",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"lifesteal_percent": "18",
 				"creep_lifesteal_reduction_pct": "40"
@@ -810,7 +808,7 @@
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
 			"ItemAliases": "ror",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -842,7 +840,7 @@
 			"ItemShopTags": "regen_mana",
 			"ItemQuality": "component",
 			"ItemAliases": "sage's mask",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_mana_regen": "0.7"
 			}
@@ -873,8 +871,8 @@
 			"ItemShopTags": "move_speed",
 			"ItemQuality": "component",
 			"ItemAliases": "boots of speed",
-			"ShouldBeSuggested": "1",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement_speed": "45"
@@ -930,7 +928,7 @@
 			"ItemContributesToNetWorthWhenDropped": "0",
 			"AllowedInBackpack": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"UIPickupSound": "Item.PickUpGemShop",
 			"UIDropSound": "Item.DropGemShop",
@@ -1097,7 +1095,7 @@
 			"ItemAliases": "magic stick",
 			"ItemRequiresCharges": "1",
 			"ItemDisplayCharges": "1",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"max_charges": "10",
 				"charge_radius": {
@@ -1172,7 +1170,7 @@
 			"ItemAliases": "magic wand",
 			"ItemRequiresCharges": "1",
 			"ItemDisplayCharges": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"max_charges": "20",
 				"charge_radius": {
@@ -1221,7 +1219,7 @@
 			"ItemShopTags": "int;agi;str;hard_to_tag",
 			"ItemQuality": "component",
 			"ItemAliases": "ghost scepter",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "5",
 				"duration": "4.0",
@@ -1271,7 +1269,7 @@
 			"ItemStockInitial": "4",
 			"ItemStockTime": "120",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"mana_regen": "6",
@@ -1325,7 +1323,7 @@
 			"ItemStockInitial": "4",
 			"ItemStockTime": "120",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"buff_duration": "13",
@@ -1471,8 +1469,8 @@
 			"ItemInitialCharges": "3",
 			"ItemDisplayCharges": "1",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeSuggested": "1",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"health_restore": "110",
@@ -1541,7 +1539,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"lifetime": "360",
@@ -1611,7 +1609,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
 			"ItemSupport": "1",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"lifetime": "420",
@@ -1668,7 +1666,7 @@
 			"ItemStockTime": "120",
 			"ItemInitialCharges": "3",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"health_regen": "7.0",
@@ -1704,7 +1702,6 @@
 			"ItemKillable": "0",
 			"ItemSellable": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "0",
 			"ItemPurchasable": "0"
 		}
 	},
@@ -1834,7 +1831,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"MaxUpgradeLevel": "2",
 			"ItemBaseLevel": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"UpgradesItems": "item_travel_boots",
 			"UpgradeRecipe": "item_recipe_travel_boots",
@@ -1914,7 +1911,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "phase boots",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement_speed": "50",
@@ -2099,6 +2096,7 @@
 			"ItemShopTags": "regen_health",
 			"ItemQuality": "component",
 			"ItemAliases": "roh;ring of health",
+			"SuggestEarlygame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -2298,7 +2296,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "power treads",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement_speed_ranged": "45",
@@ -2383,7 +2381,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "hand of midas",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_attack_speed": "35",
 				"xp_multiplier": "2.1",
@@ -2563,11 +2561,15 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "3 6"
+				"value": "0"
 			},
 			{
 				"key": "bonus_health_regen",
 				"value": "0.75 1.5"
+			},
+			{
+				"key": "bonus_health",
+				"value": "50 100"
 			},
 			{
 				"key": "clock_time",
@@ -2585,14 +2587,14 @@
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "bracer",
-			"ShouldBeInitiallySuggested": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"bonus_strength": "5 10",
 				"bonus_agility": "2 4",
 				"bonus_intellect": "2 4",
-				"bonus_damage": "3 6",
+				"bonus_damage": "0",
 				"bonus_health_regen": "0.75 1.5",
+				"bonus_health": "50 100",
 				"clock_time": "25"
 			}
 		}
@@ -2664,8 +2666,7 @@
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "wraith band",
-			"ShouldBeInitiallySuggested": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"bonus_agility": "5 10",
 				"bonus_strength": "2 4",
@@ -2743,8 +2744,7 @@
 			"ItemShopTags": "damage;int;agi;str",
 			"ItemQuality": "common",
 			"ItemAliases": "null talisman",
-			"ShouldBeInitiallySuggested": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "5 10",
 				"bonus_strength": "2 4",
@@ -2824,7 +2824,7 @@
 			"ItemAliases": "mechanism;mekansm",
 			"ItemAlertable": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_armor": "4",
 				"aura_radius": {
@@ -2900,7 +2900,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "vladmir's offering;vlads",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
 				"armor": "2",
@@ -3042,7 +3042,7 @@
 			"ItemShopTags": "regen_mana",
 			"ItemQuality": "rare",
 			"ItemAliases": "rob;ring of basilius",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestEarlygame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -3086,7 +3086,7 @@
 		"cooldown": "60",
 		"cast_range": "1200",
 		"mana_cost": "150",
-		"description": "# Active: Barrier\nGives a magic damage barrier that absorbs **450** damage to all nearby allies. Lasts **12** seconds.\n\nRadius: **1200**\n\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **10%** magic resistance.\n\nRadius: **1200**",
+		"description": "# Active: Barrier\nGives a magic damage barrier that absorbs **450** damage to all nearby allies. Lasts **10** seconds.\n\nRadius: **1200**\n\n\n# Passive: Insight Aura\nGives allied units **2.5** health regeneration and **8%** magic resistance.\n\nRadius: **1200**",
 		"lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
 		"secret_shop": false,
 		"ability_special": [
@@ -3116,7 +3116,7 @@
 			},
 			{
 				"key": "magic_resistance_aura",
-				"value": "10"
+				"value": "8"
 			},
 			{
 				"key": "aura_radius",
@@ -3128,7 +3128,7 @@
 			},
 			{
 				"key": "barrier_duration",
-				"value": "12.0"
+				"value": "10.0"
 			},
 			{
 				"key": "barrier_radius",
@@ -3157,20 +3157,20 @@
 			"ItemAliases": "pipe of insight",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemAlertable": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"health_regen": "14.0",
 				"magic_resistance": "20",
 				"barrier_debuff_duration": "50.0",
 				"tooltip_resist": "20",
 				"aura_health_regen": "2.5",
-				"magic_resistance_aura": "10",
+				"magic_resistance_aura": "8",
 				"aura_radius": {
 					"value": "1200",
 					"affected_by_aoe_increase": "1"
 				},
 				"barrier_block": "450",
-				"barrier_duration": "12.0",
+				"barrier_duration": "10.0",
 				"barrier_radius": {
 					"value": "1200",
 					"affected_by_aoe_increase": "1"
@@ -3185,17 +3185,17 @@
 		"name": "item_recipe_urn_of_shadows",
 		"localized_name": "Urn of Shadows Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 375,
+		"cost": 280,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "375",
+			"ItemCost": "280",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_urn_of_shadows",
 			"ItemRequirements": {
-				"01": "item_sobi_mask;item_ring_of_protection;item_circlet"
+				"01": "item_sobi_mask;item_ring_of_protection;item_fluffy_hat"
 			}
 		}
 	},
@@ -3207,7 +3207,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/urn_of_shadows_png.png",
 		"cost": 880,
-		"cooldown": "7",
+		"cooldown": "10",
 		"cast_range": "750",
 		"description": "# Active: Soul Release\nProvides **30** health regeneration when cast on allies, and deals **25** damage per second when cast on enemies. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Urn to the dying hero will gain a charge. ",
 		"lore": "Contains the ashes of powerful demons.",
@@ -3220,12 +3220,12 @@
 				"footer": "Mana Regeneration"
 			},
 			{
-				"key": "bonus_all_stats",
+				"key": "bonus_armor",
 				"value": "2"
 			},
 			{
-				"key": "bonus_armor",
-				"value": "2"
+				"key": "bonus_health",
+				"value": "125"
 			},
 			{
 				"key": "soul_radius",
@@ -3252,17 +3252,17 @@
 				"value": "8.0"
 			}
 		],
-		"recipe": "item_sobi_mask|item_ring_of_protection|item_circlet|item_recipe_urn_of_shadows",
+		"recipe": "item_sobi_mask|item_ring_of_protection|item_fluffy_hat|item_recipe_urn_of_shadows",
 		"shop_tags": "regen_mana|str|boost_health",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCastRange": "750",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "7.0",
+			"AbilityCooldown": "10.0",
 			"AbilitySharedCooldown": "urn",
 			"ItemRequiresCharges": "1",
 			"ItemDisplayCharges": "1",
@@ -3273,11 +3273,11 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "urn of shadows",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"mana_regen": "1.4",
-				"bonus_all_stats": "2",
 				"bonus_armor": "2",
+				"bonus_health": "125",
 				"soul_radius": {
 					"value": "1400",
 					"affected_by_aoe_increase": "1"
@@ -3346,6 +3346,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "headdress",
 			"AbilityCastRange": "1200",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"health_regen": "0.5",
 				"aura_health_regen": "2.0",
@@ -3428,7 +3429,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "hex;sheepstick;scythe of vyse",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "30",
 				"bonus_mana_regen": "8.5",
@@ -3519,7 +3520,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "orchid malevolence;silence",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_attack_speed": "40",
 				"bonus_damage": "10",
@@ -3604,7 +3605,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "cyclone euls;eul's scepter of divinity",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "10",
 				"bonus_mana_regen": "2.5",
@@ -3686,7 +3687,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "fs;force staff",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "10",
 				"bonus_health": "175",
@@ -3761,7 +3762,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "15%",
+				"value": "15% 16% 17% 18% 19%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -3791,7 +3792,6 @@
 			"ItemAliases": "dagon 1",
 			"UpgradesItems": "item_dagon;item_dagon_2;item_dagon_3;item_dagon_4",
 			"UpgradeRecipe": "item_recipe_dagon",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_int": "7 9 11 13 15",
 				"bonus_str": "7 9 11 13 15",
@@ -3800,7 +3800,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "15",
+				"passive_spell_lifesteal": "15 16 17 18 19",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -3843,7 +3843,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "ags;ultimate;aghanim's scepter;ags",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "10",
 				"bonus_health": "175",
@@ -3910,7 +3910,8 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "refresher orb",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
+			"CooldownPausedOutOfInventory": "1",
 			"AbilityValues": {
 				"bonus_health_regen": "18",
 				"bonus_mana_regen": "8.0",
@@ -3986,7 +3987,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "ac;assault cuirass",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_attack_speed": "30",
 				"bonus_armor": "10",
@@ -4036,7 +4037,7 @@
 			},
 			{
 				"key": "health_regen_pct",
-				"value": "1.6%",
+				"value": "1.4%",
 				"header": "+",
 				"footer": "Max Health Regen"
 			}
@@ -4050,10 +4051,10 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "hot;heart of tarrasque",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "40",
-				"health_regen_pct": "1.6"
+				"health_regen_pct": "1.4"
 			}
 		}
 	},
@@ -4128,7 +4129,7 @@
 			"ItemAliases": "bkb;black king bar",
 			"ItemSellable": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "10",
 				"bonus_damage": "24",
@@ -4302,7 +4303,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "shiva's guard;shivas",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "5",
 				"bonus_strength": "5",
@@ -4339,7 +4340,7 @@
 		"cost": 4400,
 		"cooldown": "35",
 		"mana_cost": "0",
-		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **2.5**x. Lasts **6** seconds.",
+		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal by **4**x. Lasts **5** seconds.",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"secret_shop": false,
 		"ability_special": [
@@ -4361,17 +4362,17 @@
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "30%",
+				"value": "20%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
 			{
 				"key": "buff_duration",
-				"value": "6"
+				"value": "5"
 			},
 			{
 				"key": "lifesteal_multiplier",
-				"value": "2.5"
+				"value": "4"
 			},
 			{
 				"key": "hp_cost",
@@ -4393,15 +4394,15 @@
 			"ItemAliases": "bs;bloodstone",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"AllowedInBackpack": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_aoe": "75",
 				"bonus_health": "450",
 				"bonus_mana": "450",
 				"bonus_mp_regen": "3",
-				"spell_lifesteal": "30",
-				"buff_duration": "6",
-				"lifesteal_multiplier": "2.5",
+				"spell_lifesteal": "20",
+				"buff_duration": "5",
+				"lifesteal_multiplier": "4",
 				"hp_cost": "0"
 			}
 		}
@@ -4479,7 +4480,7 @@
 			"ItemAliases": "ls;linken's sphere",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ActiveDescriptionLine": "2",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "16",
 				"bonus_health_regen": "6",
@@ -4532,7 +4533,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "vg;vanguard",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
 				"bonus_health": "250",
@@ -4617,7 +4618,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "bm;blade mail;blademail",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "18",
 				"bonus_armor": "7",
@@ -4707,7 +4708,6 @@
 			"AllowedInBackpack": "0",
 			"IsTempestDoubleClonable": "0",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_NEVER",
-			"ShouldBeSuggested": "1",
 			"AbilityCooldown": "6",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
@@ -4773,7 +4773,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "mkb;monkey king bar",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "40",
 				"bonus_attack_speed": "45",
@@ -4832,13 +4832,13 @@
 		"recipe": "item_relic|item_talisman_of_evasion",
 		"shop_tags": "damage",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"ItemCost": "4700",
 			"ItemShopTags": "damage",
 			"ItemQuality": "epic",
 			"ItemAliases": "radiance",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
 				"bonus_damage": "55",
@@ -4892,7 +4892,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "bfly;butterfly",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "35",
 				"bonus_evasion": "35",
@@ -4954,7 +4954,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "daedalus",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "88",
 				"crit_chance": "30",
@@ -5036,7 +5036,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "skull basher",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "30",
 				"bonus_strength": "10",
@@ -5143,7 +5143,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "bf;battle fury",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "65",
 				"bonus_health_regen": "7.5",
@@ -5196,7 +5196,7 @@
 		"cost": 4650,
 		"cooldown": "34",
 		"mana_cost": "125",
-		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **20** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **18** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
 		"lore": "An axe made of reflective materials that causes confusion amongst enemy ranks.",
 		"secret_shop": false,
 		"ability_special": [
@@ -5225,8 +5225,8 @@
 				"value": "2"
 			},
 			{
-				"key": "tooltip_illusion_duration",
-				"value": "20"
+				"key": "illusion_duration",
+				"value": "18"
 			},
 			{
 				"key": "images_do_damage_percent_melee",
@@ -5273,7 +5273,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "manta style",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "10",
 				"bonus_agility": "26",
@@ -5281,7 +5281,7 @@
 				"bonus_attack_speed": "15",
 				"bonus_movement_speed": "10",
 				"images_count": "2",
-				"tooltip_illusion_duration": "20",
+				"illusion_duration": "18",
 				"images_do_damage_percent_melee": "-67",
 				"tooltip_damage_outgoing_melee": "33",
 				"images_take_damage_percent": "200",
@@ -5349,7 +5349,6 @@
 			"ItemShopTags": "damage;crit",
 			"ItemQuality": "epic",
 			"ItemAliases": "crystalys",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_damage": "32",
 				"crit_chance": "30",
@@ -5441,7 +5440,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "armlet of mordiggian",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "15",
 				"bonus_attack_speed": "25",
@@ -5508,7 +5507,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "sb;invis;shadow blade;silver edge",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "20",
 				"bonus_attack_speed": "35",
@@ -5577,7 +5576,7 @@
 			"ItemAliases": "sny;s&y;sy;sange and yasha",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "16",
 				"bonus_agility": "16",
@@ -5645,7 +5644,7 @@
 			"ItemQuality": "artifact",
 			"ItemAliases": "satanic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "25",
 				"bonus_damage": "25",
@@ -5780,7 +5779,7 @@
 			"ItemQuality": "artifact",
 			"ItemAliases": "mjollnir",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "25",
 				"bonus_attack_speed": "90",
@@ -5879,7 +5878,7 @@
 			"ItemQuality": "artifact",
 			"ItemAliases": "eos;eye of skadi",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "22",
 				"bonus_health": "250",
@@ -5948,7 +5947,7 @@
 			"ItemShopTags": "damage;str;unique",
 			"ItemQuality": "artifact",
 			"ItemAliases": "sange",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "16",
 				"slow_resistance": "20",
@@ -6060,7 +6059,7 @@
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hotd;helm of the dominator",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_stats": "6",
 				"bonus_armor": "6",
@@ -6136,7 +6135,7 @@
 			"ItemQuality": "artifact",
 			"ItemAliases": "maelstrom",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "25",
 				"bonus_attack_speed": "25",
@@ -6197,7 +6196,7 @@
 			"ItemAliases": "desolator",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilityValues": {
 				"bonus_damage": "50",
@@ -6261,7 +6260,7 @@
 			"ItemShopTags": "agi;attack_speed;move_speed",
 			"ItemQuality": "artifact",
 			"ItemAliases": "yasha",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "16",
 				"bonus_attack_speed": "15",
@@ -6328,7 +6327,7 @@
 			"ItemAliases": "mom;mask of madness",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "20",
 				"lifesteal_percent": "24",
@@ -6432,7 +6431,7 @@
 			"ItemPermanent": "1",
 			"UpgradesItems": "item_diffusal_blade",
 			"UpgradeRecipe": "item_recipe_diffusal_blade",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "15",
 				"bonus_intellect": "10",
@@ -6529,7 +6528,7 @@
 			},
 			{
 				"key": "projectile_speed",
-				"value": "1275"
+				"value": "1400"
 			}
 		],
 		"recipe": "item_aether_lens|item_ghost|item_recipe_ethereal_blade",
@@ -6551,7 +6550,7 @@
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemAliases": "eb;ethereal blade;eblade",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "8",
 				"bonus_strength": "8",
@@ -6565,7 +6564,7 @@
 				"blast_damage_base": "50",
 				"duration_ally": "4.0",
 				"ethereal_damage_bonus": "-40",
-				"projectile_speed": "1275"
+				"projectile_speed": "1400"
 			}
 		}
 	},
@@ -6630,7 +6629,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "soul ring",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -6713,7 +6712,7 @@
 			"ItemAliases": "mana;mb;arcane boots",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemAlertable": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement": "45",
@@ -6766,13 +6765,13 @@
 		],
 		"shop_tags": "hard_to_tag",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"ItemCost": "250",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "component",
 			"ItemAliases": "oov;orb of venom",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"poison_damage_melee": "2.0",
 				"poison_damage_range": "2.0",
@@ -6861,7 +6860,7 @@
 			"ItemInitialCharges": "8",
 			"ItemDisplayCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"aura_movement_speed": "20",
 				"bonus_str": "7",
@@ -6940,7 +6939,7 @@
 			"ItemSupport": "1",
 			"ItemAlertable": "1",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"application_radius": {
@@ -7028,7 +7027,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "vod;veil of discord",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "4",
 				"bonus_armor": "4",
@@ -7088,7 +7087,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "15%",
+				"value": "15% 16% 17% 18% 19%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7118,7 +7117,6 @@
 			"ItemAliases": "dagon 2",
 			"UpgradesItems": "item_dagon_2;item_dagon_3;item_dagon_4",
 			"UpgradeRecipe": "item_recipe_dagon",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_int": "7 9 11 13 15",
 				"bonus_str": "7 9 11 13 15",
@@ -7127,7 +7125,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "15",
+				"passive_spell_lifesteal": "15 16 17 18 19",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7178,7 +7176,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "15%",
+				"value": "15% 16% 17% 18% 19%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7208,7 +7206,6 @@
 			"ItemAliases": "dagon 3",
 			"UpgradesItems": "item_dagon_3;item_dagon_4",
 			"UpgradeRecipe": "item_recipe_dagon",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_int": "7 9 11 13 15",
 				"bonus_str": "7 9 11 13 15",
@@ -7217,7 +7214,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "15",
+				"passive_spell_lifesteal": "15 16 17 18 19",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7268,7 +7265,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "15%",
+				"value": "15% 16% 17% 18% 19%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7298,7 +7295,6 @@
 			"ItemAliases": "dagon 4",
 			"UpgradesItems": "item_dagon_4",
 			"UpgradeRecipe": "item_recipe_dagon",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_int": "7 9 11 13 15",
 				"bonus_str": "7 9 11 13 15",
@@ -7307,7 +7303,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "15",
+				"passive_spell_lifesteal": "15 16 17 18 19",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7358,7 +7354,7 @@
 			},
 			{
 				"key": "passive_spell_lifesteal",
-				"value": "15%",
+				"value": "15% 16% 17% 18% 19%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -7386,7 +7382,7 @@
 			"ItemShopTags": "damage;int;str;agi;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "dagon 5",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_int": "7 9 11 13 15",
 				"bonus_str": "7 9 11 13 15",
@@ -7395,7 +7391,7 @@
 				"damage_delay": "0",
 				"mana_cost_tooltip": "120 140 160 180 200",
 				"int_damage": "0",
-				"passive_spell_lifesteal": "15",
+				"passive_spell_lifesteal": "15 16 17 18 19",
 				"dagon_spell_lifesteal": "75"
 			}
 		}
@@ -7464,7 +7460,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "rod of atos",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "15",
 				"bonus_hp": "300",
@@ -7576,7 +7572,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "abyssal blade",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "35",
 				"bonus_health": "250",
@@ -7622,7 +7618,7 @@
 		"cost": 3500,
 		"cooldown": "18",
 		"cast_range": "650",
-		"mana_cost": "100",
+		"mana_cost": "75",
 		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **5** seconds on ranged targets.",
 		"lore": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not.",
 		"secret_shop": false,
@@ -7645,7 +7641,7 @@
 			},
 			{
 				"key": "slow_resistance",
-				"value": "20%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Slow Resistance"
 			},
@@ -7666,20 +7662,20 @@
 			"AbilityCooldown": "18",
 			"AbilityCastRange": "650",
 			"AbilityCastPoint": "0.0",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "75",
 			"ItemCost": "3500",
 			"ItemShopTags": "str;damage;evasion",
 			"ItemQuality": "artifact",
 			"ItemAliases": "heaven's halberd",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_evasion": "25",
 				"bonus_strength": "20",
 				"disarm_range": "5.0",
 				"disarm_melee": "3.0",
-				"slow_resistance": "20",
+				"slow_resistance": "25",
 				"hp_regen_amp": "25"
 			}
 		}
@@ -7733,7 +7729,6 @@
 			"ItemShareability": "",
 			"ActiveDescriptionLine": "2",
 			"ItemPurchasable": "0",
-			"ShouldBeSuggested": "0",
 			"ItemSellable": "0",
 			"ItemIsNeutralDrop": "1",
 			"DisplayOverheadAlertOnReceived": "0",
@@ -7821,7 +7816,7 @@
 			"ItemAliases": "tranquil boots",
 			"ItemHideCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement_speed": "65",
@@ -7844,36 +7839,43 @@
 		"aliases": "shadow amulet",
 		"icon": "/panorama/images/items/shadow_amulet_png.png",
 		"cost": 1000,
-		"cooldown": "7",
+		"cooldown": "18",
 		"cast_range": "600",
 		"mana_cost": "0",
-		"description": "# Active: Fade\nGrants invisibility to you or a target allied hero as long as the target unit remains still for up to **15**s.  \n\nHas a **1.25** second fade time, and breaks instantly upon moving. \n\nThere is no cooldown when using this item on yourself.",
+		"description": "# Active: Fade\nGrants invisibility to you or a target allied hero for up to **3.5**s. Movement speed during the invisibility is reduced by **35%**",
 		"lore": "A small talisman that clouds the senses of one's enemies when held perfectly still.",
 		"secret_shop": false,
 		"ability_special": [
 			{
 				"key": "fade_time",
-				"value": "1.25"
+				"value": "1.25",
+				"header": "FADE TIME:"
+			},
+			{
+				"key": "movement_speed_reduction",
+				"value": "35"
 			},
 			{
 				"key": "fade_duration",
-				"value": "15"
+				"value": "3.5"
 			}
 		],
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"FightRecapLevel": "1",
 			"AbilityCastRange": "600",
-			"AbilityCooldown": "7.0",
+			"AbilityCooldown": "18.0",
 			"AbilityManaCost": "0",
 			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemAliases": "shadow amulet",
 			"AbilityValues": {
 				"fade_time": "1.25",
-				"fade_duration": "15"
+				"movement_speed_reduction": "35",
+				"fade_duration": "3.5"
 			}
 		}
 	},
@@ -7921,7 +7923,7 @@
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"hp_regen": "0.4",
@@ -8078,7 +8080,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"MaxUpgradeLevel": "2",
 			"ItemBaseLevel": "2",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement_speed": "110",
@@ -8235,7 +8237,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "mh;meteor hammer",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "6",
 				"bonus_agility": "6",
@@ -8320,7 +8322,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "nlf;nullifier",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "75",
 				"bonus_armor": "10",
@@ -8343,7 +8345,7 @@
 		"cooldown": "15",
 		"cast_range": "900",
 		"mana_cost": "175",
-		"description": "# Active: Echo Shell\nApplies a shield to the target unit for **6** seconds which re-casts most targeted spells back to their caster.\n\nThe shielded unit will still take damage from the spell.\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Echo Shell\nApplies a shield to the target unit for **5** seconds which re-casts most targeted spells back to their caster.\n\nThe shielded unit will still take damage from the spell.\nDispel Type: **Basic Dispel**",
 		"lore": "The jewel at its center still reflects a pale image of its creator.",
 		"secret_shop": false,
 		"ability_special": [
@@ -8365,7 +8367,7 @@
 			},
 			{
 				"key": "active_duration",
-				"value": "6"
+				"value": "5"
 			}
 		],
 		"recipe": "item_pers|item_platemail|item_energy_booster|item_recipe_lotus_orb",
@@ -8384,13 +8386,13 @@
 			"ItemAliases": "ls;lotus orb",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_armor": "10",
 				"bonus_health_regen": "6.5",
 				"bonus_mana_regen": "4.0",
 				"bonus_mana": "250",
-				"active_duration": "6"
+				"active_duration": "5"
 			}
 		}
 	},
@@ -8399,12 +8401,12 @@
 		"name": "item_recipe_solar_crest",
 		"localized_name": "Solar Crest Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 600,
+		"cost": 500,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "600",
+			"ItemCost": "500",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_solar_crest",
@@ -8420,11 +8422,11 @@
 		"aliases": "solar crest",
 		"quality": "rare",
 		"icon": "/panorama/images/items/solar_crest_png.png",
-		"cost": 2700,
+		"cost": 2600,
 		"cooldown": "16",
 		"cast_range": "1000",
 		"mana_cost": "100",
-		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, **15%** movement speed and a **400** HP Barrier. \n\nDoes not grant bonus armor, movement or attack speed if used on self. \n\nDuration: **8**",
+		"description": "# Active: Shine\nWhen cast on an ally, grants them **7** armor, **70** attack speed, **15%** movement speed and a **400** physical damage barrier. \n\nDoes not grant bonus armor, movement or attack speed if used on self. \n\nDuration: **8**",
 		"lore": "A talisman forged to honor the daytime sky.",
 		"secret_shop": false,
 		"ability_special": [
@@ -8484,12 +8486,12 @@
 			"AbilityCooldown": "16.0",
 			"AbilitySharedCooldown": "pavise",
 			"AbilityManaCost": "100",
-			"ItemCost": "2700",
+			"ItemCost": "2600",
 			"ItemShopTags": "armor;regen_mana;hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "solar crest",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_armor": "4",
 				"bonus_all_stats": "4",
@@ -8531,7 +8533,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/guardian_greaves_png.png",
 		"cost": 4950,
-		"cooldown": "40",
+		"cooldown": "45",
 		"mana_cost": "0",
 		"description": "# Active: Mend\nRestores **350** health and **200** mana to nearby allies, and removes most negative effects from the caster.\n\nRadius: **1200**\nDispel Type: **Basic Dispel**\n\n\n# Passive: Guardian Aura\nGrants **2.5** health regeneration, **1.5** mana regeneration and **3** armor to allied units. If an allied hero's health falls below **25%**, this is increased to **14.5** health regeneration, **5** mana regeneration and **8** armor. \n\nRadius: **1200** \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "One of many holy instruments constructed to honor the Omniscience.",
@@ -8605,7 +8607,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "40",
+			"AbilityCooldown": "45",
 			"AbilityManaCost": "0",
 			"ItemCost": "4950",
 			"ItemShopTags": "int;armor;regen_health;hard_to_tag",
@@ -8613,7 +8615,7 @@
 			"ItemAliases": "guardian greaves",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemAlertable": "1",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"bonus_movement": "50",
@@ -8676,7 +8678,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "aether lens",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_mana": "300",
 				"bonus_mana_regen": "2.5",
@@ -8765,7 +8767,7 @@
 			"ItemAliases": "mana;mb;octarine core",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_cooldown": "25",
 				"bonus_health": "500",
@@ -8810,7 +8812,7 @@
 			"ItemShopTags": "damage",
 			"ItemQuality": "artifact",
 			"ItemAliases": "dragon lance",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "15",
 				"bonus_strength": "10",
@@ -8856,7 +8858,7 @@
 			"ItemInitialCharges": "1",
 			"ItemHideCharges": "1",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
@@ -8875,16 +8877,17 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/iron_talon_png.png",
 		"cost": 0,
-		"cooldown": "25",
+		"cooldown": "20",
 		"cast_range": "350",
 		"mana_cost": "0",
-		"description": "# Active: Chop\nTargets a non-player enemy unit to remove **40%** of its current HP.\n\nIf cast on a tree, instantly destroys it.\n\nUnit  Tree Range: **350**",
+		"description": "# Active: Chop\nTargets a non-player enemy unit to remove **80%** of its current HP.\n\nIf cast on a tree, instantly destroys it.\n\nUnit  Tree Range: **350**",
 		"lore": "A simple but effective weapon devised to quell a great Hellbear uprising.",
 		"secret_shop": false,
+		"neutral_tier": "2",
 		"ability_special": [
 			{
 				"key": "bonus_attack_speed",
-				"value": "15"
+				"value": "20"
 			},
 			{
 				"key": "quelling_range_tooltip",
@@ -8896,11 +8899,11 @@
 			},
 			{
 				"key": "creep_damage_pct",
-				"value": "40"
+				"value": "80"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "2"
+				"value": "4"
 			},
 			{
 				"key": "alternative_cooldown",
@@ -8915,7 +8918,7 @@
 			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_PREFER_ENEMIES",
 			"AbilityCastRange": "350",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "25.0",
+			"AbilityCooldown": "20.0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityManaCost": "0",
 			"ItemCost": "0",
@@ -8927,11 +8930,11 @@
 			"DisplayOverheadAlertOnReceived": "0",
 			"ItemSellable": "0",
 			"AbilityValues": {
-				"bonus_attack_speed": "15",
+				"bonus_attack_speed": "20",
 				"quelling_range_tooltip": "350",
 				"cast_range_ward": "450",
-				"creep_damage_pct": "40",
-				"bonus_armor": "2",
+				"creep_damage_pct": "80",
+				"bonus_armor": "4",
 				"alternative_cooldown": "4"
 			}
 		}
@@ -8965,7 +8968,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "component",
 			"ItemAliases": "blight stone",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
 			"AbilityValues": {
 				"corruption_armor": "-2",
@@ -9032,10 +9035,10 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/crimson_guard_png.png",
 		"cost": 3725,
-		"cooldown": "35",
+		"cooldown": "40",
 		"cast_range": "1200",
 		"mana_cost": "75",
-		"description": "# Active: Guard\nFor **8** seconds, grant nearby allied heroes and buildings a **100%** chance to block damage equal to **70** plus **2.5%** of the casters max health value from each incoming attack.\nUnits may only be affected by Guard once every **35** seconds.\n\nRadius: **1200**\n\n\n# Passive: Damage Block\nGrants a **60%** chance to block **75** damage from incoming attacks on melee heroes, and **50** damage on ranged.",
+		"description": "# Active: Guard\nFor **8** seconds, grant nearby allied heroes and buildings a **100%** chance to block damage equal to **70** plus **2.2%** of the casters max health value from each incoming attack.\nUnits may only be affected by Guard once every **35** seconds.\n\nRadius: **1200**\n\n\n# Passive: Damage Block\nGrants a **60%** chance to block **75** damage from incoming attacks on melee heroes, and **50** damage on ranged.",
 		"lore": "A cuirass originally built to protect against the dreaded Year Beast.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9085,7 +9088,7 @@
 			},
 			{
 				"key": "max_hp_pct",
-				"value": "2.5"
+				"value": "2.2"
 			}
 		],
 		"recipe": "item_vanguard|item_helm_of_iron_will|item_recipe_crimson_guard",
@@ -9093,7 +9096,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
-			"AbilityCooldown": "35.0",
+			"AbilityCooldown": "40.0",
 			"AbilityCastRange": "1200",
 			"AbilityManaCost": "75",
 			"ItemCost": "3725",
@@ -9101,7 +9104,7 @@
 			"ItemQuality": "epic",
 			"ItemAlertable": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_health": "250",
 				"bonus_health_regen": "12",
@@ -9117,7 +9120,7 @@
 				"block_damage_active": "70",
 				"block_chance_active": "100",
 				"tooltip_reapply_time": "35",
-				"max_hp_pct": "2.5"
+				"max_hp_pct": "2.2"
 			}
 		}
 	},
@@ -9167,7 +9170,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "wind lace",
 			"ItemPermanent": "1",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -9235,7 +9238,7 @@
 			"ItemShopTags": "attack_speed",
 			"ItemQuality": "consumable",
 			"ItemAliases": "moon shard",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_attack_speed": "140",
 				"bonus_night_vision": "400",
@@ -9334,7 +9337,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "sb;invis;shadow blade",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "60",
 				"bonus_attack_speed": "35",
@@ -9361,7 +9364,7 @@
 		"cooldown": "15",
 		"cast_range": "900",
 		"mana_cost": "125",
-		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **60%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will deal **50** extra damage and have True Strike.\n\n\n# Passive: Pierce\nGrants each attack a **40%** chance to pierce through evasion and deal **60** bonus magical damage.",
+		"description": "# Active: Soul Rend\nSilences a target for **5** seconds. At the end of the silence, an additional **60%** of all damage taken during the silence will be dealt to the target as magical damage.\n\nAll attacks on the silenced target will deal additional damage equal to **50** if the attacker is a hero, and **25**, if the attacker is a creep, and have True Strike.\n\n\n# Passive: Pierce\nGrants each attack a **40%** chance to pierce through evasion and deal **60** bonus magical damage.",
 		"lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
 		"secret_shop": false,
 		"ability_special": [
@@ -9402,8 +9405,12 @@
 				"value": "35"
 			},
 			{
-				"key": "proc_damage",
+				"key": "proc_damage_heroes",
 				"value": "50"
+			},
+			{
+				"key": "proc_damage_creeps",
+				"value": "25"
 			},
 			{
 				"key": "passive_proc_damage",
@@ -9433,7 +9440,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "orchid malevolence",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "10",
 				"bonus_attack_speed": "100",
@@ -9444,7 +9451,8 @@
 				"bonus_damage": "10",
 				"duration": "6",
 				"spell_amp_debuff": "35",
-				"proc_damage": "50",
+				"proc_damage_heroes": "50",
+				"proc_damage_creeps": "25",
 				"passive_proc_damage": "60",
 				"proc_chance": "40"
 			}
@@ -9501,7 +9509,7 @@
 			"ItemAliases": "echo sabre",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "20",
 				"bonus_strength": "15",
@@ -9583,7 +9591,7 @@
 			"ItemShopTags": "",
 			"ItemQuality": "rare",
 			"ItemAliases": "glimmer cape",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"initial_fade_delay": "0.5",
 				"secondary_fade_delay": "0.5",
@@ -9666,7 +9674,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "ad;aeon disk",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_health": "250",
 				"bonus_mana": "300",
@@ -9740,7 +9748,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "ky;kaya",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "16",
 				"spell_amp": "10",
@@ -9794,6 +9802,7 @@
 			"ItemContributesToNetWorthWhenDropped": "0",
 			"IsTempestDoubleClonable": "0",
 			"SpeciallyBannedFromNeutralSlot": "1",
+			"CooldownPausedOutOfInventory": "1",
 			"AbilityValues": {
 				"bonus_health_regen": "12",
 				"bonus_mana_regen": "6.0",
@@ -9824,7 +9833,7 @@
 			"ItemShopTags": "agi;int;str",
 			"ItemQuality": "component",
 			"ItemAliases": "crown",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"bonus_all_stats": "4"
 			}
@@ -9940,7 +9949,7 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "fs;force staff",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "15",
 				"bonus_health": "200",
@@ -10009,7 +10018,7 @@
 			"ItemStockMax": "1",
 			"ItemInitialStockTime": "270.0",
 			"ItemInitialStockTimeTurbo": "150.0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"UIPickupSound": "Item.PickUpRingShop",
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
@@ -10026,17 +10035,17 @@
 		"name": "item_recipe_spirit_vessel",
 		"localized_name": "Spirit Vessel Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1200,
+		"cost": 900,
 		"secret_shop": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1200",
+			"ItemCost": "900",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_spirit_vessel",
 			"ItemRequirements": {
-				"01": "item_urn_of_shadows*;item_crown;item_fluffy_hat"
+				"01": "item_urn_of_shadows*;item_vitality_booster"
 			}
 		}
 	},
@@ -10048,9 +10057,9 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/spirit_vessel_png.png",
 		"cost": 2780,
-		"cooldown": "7",
+		"cooldown": "10",
 		"cast_range": "750",
-		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration, healing, lifesteal and spell lifesteal by **45%**. Deals **35** damage per second. \n\nWhen used on allies, it provides **40** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge. ",
+		"description": "# Active: Soul Release\nWhen used against enemies, it reduces health by **4%** of current health per second, and reduces HP regeneration, healing, lifesteal and spell lifesteal by **50%**. Deals **25** damage per second. \n\nWhen used on allies, it provides **40** health regeneration per second. \n\nLasts **8** seconds.  \n\nGains charges every time an enemy hero dies within **1400** units.  Only the closest Spirit Vessel to the dying hero will gain a charge. ",
 		"lore": "Forged by a god to entrap the soul of another.",
 		"secret_shop": false,
 		"ability_special": [
@@ -10062,7 +10071,7 @@
 			},
 			{
 				"key": "bonus_all_stats",
-				"value": "6"
+				"value": "0"
 			},
 			{
 				"key": "bonus_armor",
@@ -10070,7 +10079,7 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "125"
+				"value": "375"
 			},
 			{
 				"key": "soul_radius",
@@ -10090,7 +10099,7 @@
 			},
 			{
 				"key": "soul_damage_amount",
-				"value": "35"
+				"value": "25"
 			},
 			{
 				"key": "duration",
@@ -10098,20 +10107,20 @@
 			},
 			{
 				"key": "hp_regen_reduction_enemy",
-				"value": "45"
+				"value": "50"
 			},
 			{
 				"key": "enemy_hp_drain",
 				"value": "4"
 			}
 		],
-		"recipe": "item_urn_of_shadows|item_crown|item_fluffy_hat|item_recipe_spirit_vessel",
+		"recipe": "item_urn_of_shadows|item_vitality_booster|item_recipe_spirit_vessel",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
 			"AbilityCastRange": "750",
-			"AbilityCooldown": "7.0",
+			"AbilityCooldown": "10.0",
 			"AbilitySharedCooldown": "urn",
 			"ItemRequiresCharges": "1",
 			"ItemDisplayCharges": "1",
@@ -10121,12 +10130,12 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "sv;spirit vessel",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_mana_regen": "1.75",
-				"bonus_all_stats": "6",
+				"bonus_all_stats": "0",
 				"bonus_armor": "2",
-				"bonus_health": "125",
+				"bonus_health": "375",
 				"soul_radius": {
 					"value": "1400",
 					"affected_by_aoe_increase": "1"
@@ -10134,9 +10143,9 @@
 				"soul_initial_charge": "2",
 				"soul_additional_charges": "1",
 				"soul_heal_amount": "40",
-				"soul_damage_amount": "35",
+				"soul_damage_amount": "25",
 				"duration": "8.0",
-				"hp_regen_reduction_enemy": "45",
+				"hp_regen_reduction_enemy": "50",
 				"enemy_hp_drain": "4"
 			}
 		}
@@ -10224,7 +10233,7 @@
 			"ItemCost": "2250",
 			"ItemQuality": "rare",
 			"ItemAliases": "hl;holy locket",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityCooldown": "0.0",
 			"AbilitySharedCooldown": "magicwand",
 			"AbilityCharges": "20",
@@ -10360,7 +10369,7 @@
 			"ItemAliases": "snk;s&k;sk;sange and kaya",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_strength": "16",
 				"bonus_intellect": "16",
@@ -10462,7 +10471,7 @@
 			"ItemAliases": "ynk;y&k;sk;yasha and kaya",
 			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "16",
 				"bonus_intellect": "16",
@@ -10657,6 +10666,7 @@
 		"localized_name": "Philosopher's Stone",
 		"icon": "/panorama/images/items/philosophers_stone_png.png",
 		"cost": 0,
+		"description": "# Passive: Boom Bust\nHas **750** charges. Depletes a charge every time it grants gold to the owner. When all charges are depleted, the item is destroyed, and the owner receives **375** gold.",
 		"lore": "A weightless charm created by an enchanter with a powerful scorn for brute force.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -10672,6 +10682,14 @@
 			{
 				"key": "bonus_damage",
 				"value": "-30"
+			},
+			{
+				"key": "gold_on_expire",
+				"value": "375"
+			},
+			{
+				"key": "charges_tooltip",
+				"value": "750"
 			}
 		],
 		"json_data": {
@@ -10681,11 +10699,15 @@
 			"DisplayOverheadAlertOnReceived": "0",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
+			"ItemInitialCharges": "750",
+			"ItemPermanent": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_gpm": "75",
 				"bonus_mana": "200",
-				"bonus_damage": "-30"
+				"bonus_damage": "-30",
+				"gold_on_expire": "375",
+				"charges_tooltip": "750"
 			}
 		}
 	},
@@ -10698,7 +10720,7 @@
 		"cooldown": "8",
 		"cast_range": "750",
 		"mana_cost": "75",
-		"description": "# Active: Force\nDispels the user and pushes them **750** units in the direction they are facing.\n\nDispel Type: **Basic Dispel**\n\n\n# Passive: Speed Unlock\nCompletely removes the speed limit for the wearer \nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Force\nPushes the target **750** units in the direction they are facing. Dispels if cast on an ally.\n\nDispel Type: **Basic Dispel**\n\n\n# Passive: Speed Unlock\nCompletely removes the speed limit for the wearer \nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Elusive marvels never successfully studied for proper classification in the archives.",
 		"secret_shop": false,
 		"neutral_tier": "5",
@@ -11159,24 +11181,6 @@
 		}
 	},
 	{
-		"id": 303,
-		"name": "item_recipe_ironwood_tree",
-		"localized_name": "Ironwood Tree Recipe",
-		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1,
-		"secret_shop": false,
-		"ability_special": [],
-		"json_data": {
-			"ItemCost": "1",
-			"ItemIsNeutralDrop": "1",
-			"ItemPurchasable": "0",
-			"ItemSellable": "0",
-			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"ItemRecipe": "1",
-			"ItemResult": "item_ironwood_tree"
-		}
-	},
-	{
 		"id": 304,
 		"name": "item_ironwood_tree",
 		"localized_name": "Ironwood Tree",
@@ -11187,10 +11191,11 @@
 		"description": "# Use: Plant Tree\nTargets the ground to plant a happy little tree that lasts for **20** seconds.",
 		"lore": "Precious. And hearty as a weed.",
 		"secret_shop": false,
+		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "6"
+				"value": "5"
 			},
 			{
 				"key": "tree_duration",
@@ -11207,7 +11212,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_all_stats": "6",
+				"bonus_all_stats": "5",
 				"tree_duration": "20"
 			}
 		}
@@ -11790,30 +11795,30 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/vambrace_png.png",
 		"cost": 0,
-		"description": "Also provides one of the following, based on the Vambrace's main attribute:\n Strength: +**8%** Magic Resistance \n Agility: +**10** Attack Speed \n Intelligence: +**6%** Spell Amp",
+		"description": "Also provides one of the following, based on the Vambrace's main attribute:\n Strength: +**10%** Magic Resistance \n Agility: +**15** Attack Speed \n Intelligence: +**8%** Spell Amp",
 		"lore": "The coveted treasure that divided the heirs of Queen Raiya upon her death, resulting in the eventual downfall of her kingdom.",
 		"secret_shop": false,
-		"neutral_tier": "2",
+		"neutral_tier": "3",
 		"ability_special": [
 			{
 				"key": "bonus_primary_stat",
-				"value": "8"
+				"value": "10"
 			},
 			{
 				"key": "bonus_secondary_stat",
-				"value": "2"
+				"value": "4"
 			},
 			{
 				"key": "bonus_spell_amp",
-				"value": "6"
-			},
-			{
-				"key": "bonus_magic_resistance",
 				"value": "8"
 			},
 			{
-				"key": "bonus_attack_speed",
+				"key": "bonus_magic_resistance",
 				"value": "10"
+			},
+			{
+				"key": "bonus_attack_speed",
+				"value": "15"
 			}
 		],
 		"shop_tags": "damage|int|agi|str",
@@ -11828,11 +11833,11 @@
 			"ItemPurchasable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"bonus_primary_stat": "8",
-				"bonus_secondary_stat": "2",
-				"bonus_spell_amp": "6",
-				"bonus_magic_resistance": "8",
-				"bonus_attack_speed": "10"
+				"bonus_primary_stat": "10",
+				"bonus_secondary_stat": "4",
+				"bonus_spell_amp": "8",
+				"bonus_magic_resistance": "10",
+				"bonus_attack_speed": "15"
 			}
 		}
 	},
@@ -12053,7 +12058,7 @@
 		"cost": 0,
 		"cooldown": "40",
 		"cast_range": "250",
-		"description": "# Active: Dig\nChannel for **1** second. \nCan find a Bounty Rune, a Flask, an Enchanted Mango, or a Kobold.",
+		"description": "# Active: Dig\nChannel for **1** second. \nCan find a Bounty Rune, a Flask, an Enchanted Mango, or a Kobold. If digging in a river, always digs up a Water Rune.\n\n This item's cooldown only progresses in your hero's Neutral Item slot",
 		"lore": "Former plaything of a young deity, received as a gift from his uncle.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -12086,6 +12091,7 @@
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
+			"CooldownPausedOutOfInventory": "1",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"bonus_health": "90",
@@ -13221,7 +13227,6 @@
 			"ItemShopTags": "unique",
 			"ItemQuality": "component",
 			"ItemAliases": "voodoo mask;voom;vodo;vm",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"spell_lifesteal": "12"
 			}
@@ -13331,7 +13336,7 @@
 			"ItemShopTags": "damage;int;attack_speed;regen_mana",
 			"ItemQuality": "common",
 			"ItemAliases": "witch blade;wb",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_attack_speed": "40",
 				"bonus_intellect": "12",
@@ -13488,7 +13493,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "ooc;orb of corrosion;corosion;corossion",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"armor": "3",
 				"slow_melee": "13",
@@ -13656,7 +13661,7 @@
 			}
 		],
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"ItemCost": "0",
 			"ItemIsNeutralDrop": "1",
 			"ItemPurchasable": "0",
@@ -14003,7 +14008,6 @@
 		"cooldown": "8",
 		"lore": "A small token imbued with the fortune of the fae in recognition of an intriguing display of mortal kindness.",
 		"secret_shop": false,
-		"neutral_tier": "1",
 		"ability_special": [
 			{
 				"key": "bonus_health",
@@ -14060,7 +14064,7 @@
 			"ItemShopTags": "health_pool",
 			"ItemQuality": "secret_shop",
 			"ItemAliases": "flf;fluffy hat;hat;fh",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"AbilityValues": {
 				"bonus_health": "125"
 			}
@@ -14098,7 +14102,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "fb;falcon blade",
-			"ShouldBeSuggested": "1",
+			"SuggestEarlygame": "1",
 			"AbilityValues": {
 				"bonus_health": "200",
 				"bonus_mana_regen": "1.8",
@@ -14169,7 +14173,7 @@
 		"recipe": "item_cloak|item_oblivion_staff|item_recipe_mage_slayer",
 		"shop_tags": "hard_to_tag",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
@@ -14178,7 +14182,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "rare",
 			"ItemAliases": "mage slayer;ms",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_magical_armor": "20",
 				"bonus_attack_speed": "45",
@@ -14285,7 +14289,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "blink dagger",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"blink_range": "1200",
 				"blink_damage_cooldown": "3.0",
@@ -14363,7 +14367,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "blink dagger",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"blink_range": "1200",
 				"blink_damage_cooldown": "3.0",
@@ -14430,7 +14434,7 @@
 			"ItemQuality": "component",
 			"ItemAliases": "blink dagger",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"blink_range": "1400",
 				"blink_damage_cooldown": "3.0",
@@ -14523,7 +14527,7 @@
 			"ItemStockMax": "1",
 			"ItemInitialStockTime": "990.0",
 			"ItemInitialStockTimeTurbo": "510.0",
-			"ShouldBeSuggested": "1"
+			"SuggestLategame": "1"
 		}
 	},
 	{
@@ -14584,7 +14588,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "cyclone;wind waker;ww",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_movement_speed": "30",
 				"bonus_mana_regen": "3.0",
@@ -14715,7 +14719,7 @@
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
 			"ItemAliases": "hoto;helm of the overlord",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_stats": "21",
 				"bonus_armor": "7",
@@ -15279,7 +15283,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/eternal_shroud_png.png",
 		"cost": 3700,
-		"description": "# Passive: Shroud\nRestores mana equal to **20%** of incoming enemy spell damage before reductions.\n\n\n# Passive: Eternal Endurance\nFor every **300** spell damage that equipped hero receives, it gains a stack of Endurance for **5**s up to a maximum of **6** charges. Each charge increases Eternal Shroud's magic resistance by **4%** .",
+		"description": "# Passive: Shroud\nRestores mana equal to **20%** of incoming enemy spell damage before reductions.\n\n\n# Passive: Eternal Endurance\nFor every **300** spell damage that equipped hero receives, it gains a stack of Endurance for **5**s up to a maximum of **6** charges. Each charge increases Eternal Shroud's magic resistance by **3.5%** .",
 		"lore": "A pristine hood that feeds upon strife to empower its owner.",
 		"secret_shop": false,
 		"ability_special": [
@@ -15305,7 +15309,7 @@
 			},
 			{
 				"key": "stack_resist",
-				"value": "4"
+				"value": "3.5"
 			},
 			{
 				"key": "mana_restore_pct",
@@ -15325,14 +15329,14 @@
 			"ItemQuality": "epic",
 			"ItemAliases": "eternal shroud;es",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_spell_resist": "20",
 				"bonus_strength": "10",
 				"bonus_health": "250",
 				"stack_threshold": "300",
 				"stack_duration": "5",
-				"stack_resist": "4",
+				"stack_resist": "3.5",
 				"mana_restore_pct": "20",
 				"max_stacks": "6"
 			}
@@ -15794,7 +15798,7 @@
 		],
 		"json_data": {
 			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
@@ -15901,7 +15905,7 @@
 		"cost": 0,
 		"cooldown": "25",
 		"mana_cost": "50",
-		"description": "# Active: Pig, Out!\nTurns your hero into a critter for **4** seconds and gives them +10% Movement Speed.",
+		"description": "# Active: Pig, Out!\nTurns your hero into a critter for **4** seconds and gives them +**15%** Movement Speed.",
 		"lore": "A makeshift charm misplaced by a peace-loving, addlebrained enchanter.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -15912,9 +15916,13 @@
 			},
 			{
 				"key": "all_stats",
-				"value": "5",
+				"value": "4",
 				"header": "+",
 				"footer": "All Attributes"
+			},
+			{
+				"key": "active_movespeed_pct",
+				"value": "15"
 			}
 		],
 		"json_data": {
@@ -15928,7 +15936,8 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"duration": "4",
-				"all_stats": "5"
+				"all_stats": "4",
+				"active_movespeed_pct": "15"
 			}
 		}
 	},
@@ -16111,7 +16120,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "staff;misery;sm",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "70",
 				"spell_lifesteal": "20",
@@ -16204,7 +16213,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "marching boots",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"aura_movement_speed": "20",
@@ -16373,7 +16382,7 @@
 			"ItemPurchasable": "1",
 			"ItemCost": "4700",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "25",
 				"bonus_strength": "25",
@@ -16657,15 +16666,19 @@
 		"localized_name": "Ogre Seal Totem",
 		"icon": "/panorama/images/items/ogre_seal_totem_png.png",
 		"cost": 0,
-		"cooldown": "40",
+		"cooldown": "35",
 		"mana_cost": "25",
-		"description": "# Active: Ogre Seal Flop\nFlop forward like an ogre seal **2** times, dealing **150** damage and slowing enemies in a **275** radius by **-100%** for **1.5** second on each bounce. **400** bounce distance. ",
+		"description": "# Active: Ogre Seal Flop\nFlop forward like an ogre seal **2** times, dealing **250** damage and slowing enemies in a **275** radius by **-100%** for **1.5** second on each bounce. **400** bounce distance. ",
 		"secret_shop": false,
-		"neutral_tier": "3",
+		"neutral_tier": "4",
 		"ability_special": [
 			{
 				"key": "bonus_strength",
-				"value": "10"
+				"value": "12"
+			},
+			{
+				"key": "movement_turn_rate",
+				"value": "75"
 			},
 			{
 				"key": "leap_distance",
@@ -16685,7 +16698,7 @@
 			},
 			{
 				"key": "flop_damage",
-				"value": "150"
+				"value": "250"
 			},
 			{
 				"key": "slow_duration",
@@ -16708,10 +16721,11 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityCastPoint": "0.3",
-			"AbilityCooldown": "40.0",
+			"AbilityCooldown": "35.0",
 			"AbilityManaCost": "25",
 			"AbilityValues": {
-				"bonus_strength": "10",
+				"bonus_strength": "12",
+				"movement_turn_rate": "75",
 				"leap_distance": "400",
 				"leap_speed": "800.0",
 				"leap_acceleration": "1250.0",
@@ -16719,7 +16733,7 @@
 					"value": "275",
 					"affected_by_aoe_increase": "1"
 				},
-				"flop_damage": "150",
+				"flop_damage": "250",
 				"slow_duration": "1.5",
 				"slow": "-100",
 				"max_bounces": "2"
@@ -17496,7 +17510,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "tabi",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"ItemPurchasable": "0",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
@@ -17593,7 +17607,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "sandals",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"ItemPurchasable": "0",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
@@ -17685,7 +17699,7 @@
 			"ItemShopTags": "regen_health;magic_resist",
 			"ItemQuality": "common",
 			"ItemAliases": "lunar crest",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_health": "300",
 				"bonus_spell_resist": "22",
@@ -17799,7 +17813,7 @@
 			"ItemPermanent": "1",
 			"UpgradesItems": "item_diffusal_blade",
 			"UpgradeRecipe": "item_recipe_diffusal_blade",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_agility": "40",
 				"bonus_intellect": "10",
@@ -17911,7 +17925,7 @@
 			"ItemQuality": "common",
 			"ItemAliases": "switch",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_health_regen": "3.5",
 				"bonus_mana_regen": "2",
@@ -18008,7 +18022,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "phylactery",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_health": "200",
 				"bonus_mana": "200",
@@ -18095,7 +18109,7 @@
 		],
 		"shop_tags": "consumable",
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
 			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
@@ -18115,7 +18129,7 @@
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "1",
+			"SuggestPregame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"speed": "1100",
@@ -18250,7 +18264,7 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "150"
+				"value": "175"
 			},
 			{
 				"key": "duration",
@@ -18279,11 +18293,10 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "pavise",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
 			"AbilityValues": {
 				"bonus_armor": "2",
 				"bonus_mana": "250",
-				"bonus_health": "150",
+				"bonus_health": "175",
 				"duration": "8",
 				"absorb_amount": "300"
 			}
@@ -18871,7 +18884,7 @@
 			"ItemQuality": "artifact",
 			"ItemAliases": "gleipnir;gliepnir;glaypnir",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "30",
 				"bonus_attack_speed": "30",
@@ -19003,7 +19016,7 @@
 			},
 			{
 				"key": "radius",
-				"value": "600"
+				"value": "650"
 			},
 			{
 				"key": "health",
@@ -19045,7 +19058,7 @@
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
 				"duration": "120",
-				"radius": "600",
+				"radius": "650",
 				"health": "24",
 				"hp_bonus": "75",
 				"damage_bonus": "50",
@@ -19140,7 +19153,7 @@
 			"ItemQuality": "rare",
 			"ItemAliases": "staff;misery;sm",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_intellect": "40",
 				"bonus_attack_speed": "40",
@@ -19241,7 +19254,7 @@
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
 			"ItemAliases": "angel;demise",
-			"ShouldBeSuggested": "1",
+			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "50",
 				"crit_chance": "30",
@@ -19613,7 +19626,6 @@
 		"cooldown": "40",
 		"description": "# Active: Martyrdom\nRedirect **25%** of all magic damage dealt to your allied heroes within **900** radius towards you for **10** seconds.",
 		"secret_shop": false,
-		"neutral_tier": "4",
 		"ability_special": [
 			{
 				"key": "duration",
@@ -19727,7 +19739,7 @@
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "0",
+			"SuggestPregame": "0",
 			"ItemPurchasable": "0",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
 			"SpeciallyBannedFromNeutralSlot": "1",
@@ -19775,7 +19787,7 @@
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "0",
+			"SuggestPregame": "0",
 			"ItemPurchasable": "0",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
 			"SpeciallyBannedFromNeutralSlot": "1",
@@ -19822,7 +19834,7 @@
 			"ItemInitialCharges": "1",
 			"ItemPermanent": "0",
 			"IsTempestDoubleClonable": "0",
-			"ShouldBeInitiallySuggested": "0",
+			"SuggestPregame": "0",
 			"ItemPurchasable": "0",
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
 			"ItemAllowCombineFromGround": "0",
