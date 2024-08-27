@@ -111,6 +111,102 @@
 		}
 	},
 	{
+		"id": 195,
+		"name": "ringmaster_spotlight",
+		"hero_id": 131,
+		"behavior": "point|aoe",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"dispellable": "no",
+		"cast_range": "1500",
+		"cast_point": "0.5",
+		"cooldown": "30",
+		"duration": "8",
+		"mana_cost": "50",
+		"ability_special": [
+			{
+				"key": "radius",
+				"value": "550",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "illusion_percent_damage",
+				"value": "50%",
+				"header": "ILLUSION MAX HEALTH LOSS:"
+			},
+			{
+				"key": "pulse_interval",
+				"value": "0.1"
+			},
+			{
+				"key": "duration",
+				"value": "8"
+			},
+			{
+				"key": "miss_chance",
+				"value": "30%",
+				"header": "MISS CHANCE:"
+			},
+			{
+				"key": "initial_speed",
+				"value": "3000"
+			},
+			{
+				"key": "sweep_speed",
+				"value": "0.785"
+			},
+			{
+				"key": "sweep_radius",
+				"value": "450"
+			},
+			{
+				"key": "linger_duration",
+				"value": "0.1"
+			}
+		],
+		"slot": 5,
+		"icon": "/panorama/images/spellicons/ringmaster_spotlight_png.png",
+		"localized_name": "Spotlight",
+		"description": "Ringmaster shines a spotlight that sweeps over an area. Enemies in the light have a chance to miss their attacks and are revealed if invisible.\n\nIllusions hit by the beam fade away, losing a percentage of their maximum health each second.",
+		"lore": "Are you ready for your fifteen seconds? The limelight draws no distinction between infamy and fame.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": true,
+		"shard_upgrades": false,
+		"shard_description": "Adds new ability: Spotlight.",
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.SpotLight.Cast",
+			"MaxLevel": "1",
+			"IsGrantedByShard": "1",
+			"AbilityCastPoint": "0.5",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"AbilityCastRange": "1500",
+			"AbilityCooldown": "30",
+			"AbilityManaCost": "50",
+			"AbilityDuration": "8",
+			"AbilityValues": {
+				"radius": {
+					"value": "550",
+					"affected_by_aoe_increase": "1"
+				},
+				"illusion_percent_damage": "50",
+				"pulse_interval": "0.1",
+				"duration": "8",
+				"miss_chance": "30",
+				"initial_speed": "3000",
+				"sweep_speed": "0.785",
+				"sweep_radius": "450",
+				"linger_duration": "0.1"
+			}
+		}
+	},
+	{
 		"id": 296,
 		"name": "tiny_craggy_exterior",
 		"hero_id": 19,
@@ -1229,6 +1325,140 @@
 		}
 	},
 	{
+		"id": 352,
+		"name": "ringmaster_tame_the_beasts",
+		"hero_id": 131,
+		"behavior": "point|aoe|channelled",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"dispellable": "yes",
+		"cast_range": "700 750 800 850",
+		"cast_point": "0",
+		"channel_time": "1",
+		"cooldown": "16 14 12 10",
+		"mana_cost": "90 105 120 135",
+		"ability_special": [
+			{
+				"key": "start_width",
+				"value": "450",
+				"header": "RADIUS START:"
+			},
+			{
+				"key": "end_width",
+				"value": "200",
+				"header": "RADIUS END:"
+			},
+			{
+				"key": "damage_min",
+				"value": "45 70 95 120",
+				"header": "MIN DAMAGE:"
+			},
+			{
+				"key": "damage_max",
+				"value": "180 280 380 480",
+				"header": "MAX DAMAGE:"
+			},
+			{
+				"key": "crack_duration",
+				"value": "0.2"
+			},
+			{
+				"key": "max_multiplier",
+				"value": "4.0"
+			},
+			{
+				"key": "whip_channel_reduction",
+				"value": "0"
+			},
+			{
+				"key": "whip_cooldown_reduction",
+				"value": "0"
+			},
+			{
+				"key": "magic_resist",
+				"value": "0"
+			},
+			{
+				"key": "has_debuff_immunity",
+				"value": "0"
+			},
+			{
+				"key": "fear_duration_min",
+				"value": "0.1 0.2 0.3 0.4",
+				"header": "MIN FEAR DURATION:"
+			},
+			{
+				"key": "fear_duration_max",
+				"value": "0.6 0.8 1 1.2",
+				"header": "MAX FEAR DURATION:"
+			}
+		],
+		"slot": 1,
+		"icon": "/panorama/images/spellicons/ringmaster_tame_the_beasts_png.png",
+		"localized_name": "Tame the Beasts",
+		"description": "CHANNELED - Ringmaster twirls his whip for up to **1** second then cracks it. Whipped enemies are damaged and flee in fear from Ringmaster. Channel time exponentially increases damage and extends the fear duration, but reduces the radius.",
+		"lore": "From unhappy crowds to unruly acts, nothing persuades a pack of animals quite like the crack of the Ringmaster's whip.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.Whip.Channel",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
+			"AbilityChannelAnimation": "ACT_DOTA_CHANNEL_ABILITY_1",
+			"AbilityCastPoint": "0",
+			"AbilityChannelTime": "1.0",
+			"AbilityCastRange": "700 750 800 850",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCooldown": "16 14 12 10",
+			"AbilityManaCost": "90 105 120 135",
+			"AbilityValues": {
+				"start_width": {
+					"value": "450",
+					"affected_by_aoe_increase": "1",
+					"special_bonus_unique_ringmaster_whip_radius": "+75"
+				},
+				"end_width": {
+					"value": "200",
+					"affected_by_aoe_increase": "1",
+					"special_bonus_unique_ringmaster_whip_radius": "+75"
+				},
+				"damage_min": {
+					"value": "45 70 95 120",
+					"special_bonus_unique_ringmaster_whip_damage": "+75"
+				},
+				"damage_max": {
+					"value": "180 280 380 480",
+					"special_bonus_unique_ringmaster_whip_damage": "+300"
+				},
+				"crack_duration": "0.2",
+				"max_multiplier": "4.0",
+				"whip_channel_reduction": {
+					"value": "0"
+				},
+				"whip_cooldown_reduction": {
+					"value": "0"
+				},
+				"magic_resist": {
+					"value": "0",
+					"special_bonus_unique_ringmaster_whip_debuff_immunity": "+50"
+				},
+				"has_debuff_immunity": {
+					"value": "0",
+					"special_bonus_unique_ringmaster_whip_debuff_immunity": "+1"
+				},
+				"fear_duration_min": "0.1 0.2 0.3 0.4",
+				"fear_duration_max": "0.6 0.8 1.0 1.2"
+			}
+		}
+	},
+	{
 		"id": 353,
 		"name": "special_bonus_unique_ember_spirit_6",
 		"behavior": "passive",
@@ -1250,6 +1480,42 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 380,
+		"name": "ringmaster_tame_the_beasts_crack",
+		"hero_id": 131,
+		"behavior": "no_target|immediate|not_learnable|hidden|ignore_channel",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"dispellable": "yes",
+		"cast_range": "0",
+		"cast_point": "0",
+		"cooldown": "0.5",
+		"mana_cost": "0",
+		"ability_special": [],
+		"slot": 7,
+		"icon": "/panorama/images/spellicons/ringmaster_tame_the_beasts_crack_png.png",
+		"localized_name": "Crack",
+		"description": "*CRACK*",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.Whip.Target",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
+			"AbilityCastRange": "0",
+			"AbilityCooldown": "0.5",
+			"AbilityCastPoint": "0",
+			"AbilityManaCost": "0"
 		}
 	},
 	{
@@ -1286,6 +1552,144 @@
 		}
 	},
 	{
+		"id": 383,
+		"name": "ringmaster_the_box",
+		"hero_id": 131,
+		"behavior": "unit_target|ignore_backswing",
+		"spell_immunity": "no",
+		"target_team": "friendly",
+		"dispellable": "no",
+		"cast_range": "600",
+		"cast_point": "0.4",
+		"cooldown": "38 32 26 20",
+		"mana_cost": "80",
+		"ability_special": [
+			{
+				"key": "AbilityCastRange",
+				"value": "600"
+			},
+			{
+				"key": "invis_duration",
+				"value": "2 2.4 2.8 3.2",
+				"header": "DURATION:"
+			},
+			{
+				"key": "move_speed",
+				"value": "5% 10% 15% 20%",
+				"header": "BONUS MOVEMENT SPEED:"
+			},
+			{
+				"key": "magic_resist",
+				"value": "50% 60% 70% 80%",
+				"header": "BONUS MAGIC RESISTANCE:"
+			},
+			{
+				"key": "slow_resist",
+				"value": "100%",
+				"header": "SLOW RESISTANCE:"
+			},
+			{
+				"key": "transform_time",
+				"value": "0.5"
+			},
+			{
+				"key": "model_scale_time",
+				"value": "0.2"
+			},
+			{
+				"key": "leash_radius",
+				"value": "500"
+			},
+			{
+				"key": "heal_ally",
+				"value": "0"
+			},
+			{
+				"key": "launch_daggers",
+				"value": "0"
+			},
+			{
+				"key": "leap_distance",
+				"value": "250"
+			},
+			{
+				"key": "leap_speed",
+				"value": "1300.0"
+			},
+			{
+				"key": "leap_acceleration",
+				"value": "20000.0"
+			},
+			{
+				"key": "grant_debuff_immunity",
+				"value": "0"
+			},
+			{
+				"key": "strong_dispel",
+				"value": "0"
+			},
+			{
+				"key": "grant_flying",
+				"value": "0"
+			}
+		],
+		"slot": 2,
+		"icon": "/panorama/images/spellicons/ringmaster_the_box_png.png",
+		"localized_name": "Escape Act",
+		"description": "Ringmaster packs himself or an allied hero into a mobile, extradimensional box. Boxed units gain phased movement, slow resistance, bonus magic resistance, and bonus movement speed. They are also untargetable, muted, silenced, and disarmed. The box will pop open after the effect expires or it moves more than **500** units away.",
+		"lore": "An adept assistant has nothing to fear within the confines of The Box. An amateur has...much darker prospects indeed.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.Box.Destroy",
+			"AbilityCastPoint": "0.4",
+			"AbilityCooldown": "38 32 26 20",
+			"AbilityManaCost": "80",
+			"AbilityValues": {
+				"AbilityCastRange": {
+					"value": "600",
+					"special_bonus_unique_ringmaster_box_cast_range": "+200"
+				},
+				"invis_duration": "2.0 2.4 2.8 3.2",
+				"move_speed": "5 10 15 20",
+				"magic_resist": "50 60 70 80",
+				"slow_resist": "100",
+				"transform_time": "0.5",
+				"model_scale_time": "0.2",
+				"leash_radius": "500",
+				"heal_ally": "0",
+				"launch_daggers": {
+					"value": "0"
+				},
+				"leap_distance": "250",
+				"leap_speed": "1300.0",
+				"leap_acceleration": "20000.0",
+				"grant_debuff_immunity": {
+					"value": "0"
+				},
+				"strong_dispel": {
+					"value": "0",
+					"special_bonus_unique_ringmaster_the_box_strong_dispel_and_flying": "+1"
+				},
+				"grant_flying": {
+					"value": "0",
+					"special_bonus_unique_ringmaster_the_box_strong_dispel_and_flying": "+1"
+				}
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
+			"AbilityCastGestureSlot": "DEFAULT"
+		}
+	},
+	{
 		"id": 384,
 		"name": "special_bonus_unique_snapfire_7",
 		"behavior": "passive",
@@ -1307,6 +1711,511 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 385,
+		"name": "ringmaster_wheel",
+		"hero_id": 131,
+		"behavior": "point|aoe",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"dispellable": "no",
+		"cast_range": "1400",
+		"cast_point": "0.2",
+		"cooldown": "90 80 70",
+		"mana_cost": "175 275 375",
+		"ability_special": [
+			{
+				"key": "min_range",
+				"value": "700",
+				"header": "MINIMUM RANGE:"
+			},
+			{
+				"key": "mesmerize_radius",
+				"value": "600",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "projectile_speed",
+				"value": "1200"
+			},
+			{
+				"key": "AbilityCastRange",
+				"value": "1400"
+			},
+			{
+				"key": "trap_duration",
+				"value": "8"
+			},
+			{
+				"key": "wheel_stun",
+				"value": "2.75 3 3.25",
+				"header": "TIMER DURATION:"
+			},
+			{
+				"key": "face_duration",
+				"value": "0.5"
+			},
+			{
+				"key": "aura_tick_interval",
+				"value": "0.5"
+			},
+			{
+				"key": "aura_damage",
+				"value": "50 75 100",
+				"header": "AURA DAMAGE PER SECOND:"
+			},
+			{
+				"key": "aura_slow",
+				"value": "-50"
+			},
+			{
+				"key": "explosion_damage",
+				"value": "300 450 600",
+				"header": "EXPLOSION DAMAGE:"
+			},
+			{
+				"key": "vision_radius",
+				"value": "400"
+			},
+			{
+				"key": "damage_per_second",
+				"value": "0"
+			},
+			{
+				"key": "tick_rate",
+				"value": "0.25"
+			},
+			{
+				"key": "vision_cone",
+				"value": "0.08715"
+			},
+			{
+				"key": "knockback_radius",
+				"value": "100"
+			},
+			{
+				"key": "knockback_duration",
+				"value": "0.35"
+			},
+			{
+				"key": "knockback_distance",
+				"value": "100"
+			},
+			{
+				"key": "knockback_height",
+				"value": "100"
+			}
+		],
+		"slot": 6,
+		"icon": "/panorama/images/spellicons/ringmaster_wheel_png.png",
+		"localized_name": "Wheel of Wonder",
+		"description": "Ringmaster rolls the Wheel of Wonder to the targeted location, knocking aside enemies along the way. After it reaches its target, enemies in range of the wheel take damage over time and are slowed by **-50%**.\n\nEnemy heroes who face the wheel for more than **0.5** seconds are mesmerized and drawn towards it. The first enemy to be mesmerized triggers a timer for the wheel to explode. If the timer is not triggered, it will automatically explode after **8** seconds.",
+		"lore": "No, brave friends, illusions are for charlatans and card sharks. What you witness today is the power of true magic. But only if you dare set your gaze upon...the mesmerizing wheel.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_NO",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.Wheel.Target",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
+			"AbilityCastPoint": "0.2",
+			"AbilityCooldown": "90 80 70",
+			"AbilityManaCost": "175 275 375",
+			"AbilityValues": {
+				"min_range": "700",
+				"mesmerize_radius": {
+					"value": "600",
+					"affected_by_aoe_increase": "1",
+					"special_bonus_unique_ringmaster_wheel_radius": "+100"
+				},
+				"projectile_speed": "1200",
+				"AbilityCastRange": {
+					"value": "1400",
+					"special_bonus_unique_ringmaster_wheel_radius": "+100"
+				},
+				"trap_duration": "8",
+				"wheel_stun": "2.75 3.0 3.25",
+				"face_duration": "0.5",
+				"aura_tick_interval": "0.5",
+				"aura_damage": "50 75 100",
+				"aura_slow": "-50",
+				"explosion_damage": "300 450 600",
+				"vision_radius": "400",
+				"damage_per_second": "0",
+				"tick_rate": "0.25",
+				"vision_cone": "0.08715",
+				"knockback_radius": "100",
+				"knockback_duration": "0.35",
+				"knockback_distance": "100",
+				"knockback_height": "100"
+			}
+		}
+	},
+	{
+		"id": 386,
+		"name": "ringmaster_impalement",
+		"hero_id": 131,
+		"behavior": "point",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"dispellable": "yes",
+		"cast_range": "2400",
+		"cast_point": "0.3",
+		"cooldown": "17",
+		"mana_cost": "80",
+		"charges": "1 2 3 4",
+		"ability_special": [
+			{
+				"key": "damage_impact",
+				"value": "75",
+				"header": "IMPACT DAMAGE:"
+			},
+			{
+				"key": "bleed_health_pct",
+				"value": "3.5% 4% 4.5% 5%",
+				"header": "MAX HEALTH DAMAGE PER SECOND (HEROES):"
+			},
+			{
+				"key": "bleed_creep_dps",
+				"value": "100",
+				"header": "DAMAGE PER SECOND (CREEPS):"
+			},
+			{
+				"key": "bleed_duration",
+				"value": "4",
+				"header": "DURATION:"
+			},
+			{
+				"key": "slow_percent",
+				"value": "100%",
+				"header": "MOVEMENT SLOW:"
+			},
+			{
+				"key": "slow_duration",
+				"value": "0.8",
+				"header": "SLOW DURATION:"
+			},
+			{
+				"key": "dagger_speed",
+				"value": "1350"
+			},
+			{
+				"key": "dagger_width",
+				"value": "130"
+			},
+			{
+				"key": "dagger_range",
+				"value": "2400"
+			},
+			{
+				"key": "dagger_vision",
+				"value": "200"
+			},
+			{
+				"key": "tick_interval",
+				"value": "1.0"
+			},
+			{
+				"key": "dagger_pass_through",
+				"value": "0"
+			}
+		],
+		"slot": 3,
+		"icon": "/panorama/images/spellicons/ringmaster_impalement_png.png",
+		"localized_name": "Impalement Arts",
+		"description": "Ringmaster throws one of his daggers to a precise point of his choosing. If he strikes an enemy, the dagger deals impact damage, briefly slows the unit hit, and causes them to bleed. The bleeding deals a percentage of the victim's maximum health in damage every second to heroes and flat damage per second to creeps.",
+		"lore": "Passed down through generations, it simply wouldn't be a Kettle Circus without the Great Cogliostro's signature trick.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Ringmaster.Impalement.Cast",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_6",
+			"AbilityCastPoint": "0.3",
+			"AbilityCastRange": "2400",
+			"AbilityCharges": "1 2 3 4",
+			"AbilityChargeRestoreTime": "17",
+			"AbilityCooldown": "1",
+			"AbilityManaCost": "80",
+			"AbilityValues": {
+				"damage_impact": "75",
+				"bleed_health_pct": "3.5 4 4.5 5.0",
+				"bleed_creep_dps": "100",
+				"bleed_duration": {
+					"value": "4",
+					"special_bonus_unique_ringmaster_dagger_bleed_and_slow_duration": "+1"
+				},
+				"slow_percent": "100",
+				"slow_duration": {
+					"value": "0.8",
+					"special_bonus_unique_ringmaster_dagger_bleed_and_slow_duration": "+1"
+				},
+				"dagger_speed": "1350",
+				"dagger_width": "130",
+				"dagger_range": "2400",
+				"dagger_vision": "200",
+				"tick_interval": "1.0",
+				"dagger_pass_through": {
+					"value": "0",
+					"special_bonus_unique_ringmaster_dagger_penetrates": "+1"
+				}
+			}
+		}
+	},
+	{
+		"id": 387,
+		"name": "ringmaster_empty_souvenir",
+		"hero_id": 131,
+		"behavior": "passive|not_learnable|is_fake_item",
+		"ability_special": [],
+		"slot": 4,
+		"icon": "/panorama/images/spellicons/ringmaster_empty_souvenir_png.png",
+		"localized_name": "Souvenir Slot",
+		"description": "Gather souvenirs from kills and assists.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IS_FAKE_ITEM",
+			"MaxLevel": "0"
+		}
+	},
+	{
+		"id": 388,
+		"name": "ringmaster_dark_carnival_souvenirs",
+		"hero_id": 131,
+		"behavior": "passive|skip_for_keybinds",
+		"ability_special": [
+			{
+				"key": "souvenir_collection_range",
+				"value": "925"
+			}
+		],
+		"slot": 18,
+		"icon": "/panorama/images/hud/facets/innate_icon_large_png.png",
+		"localized_name": "Dark Carnival Barker",
+		"description": "Ringmaster receives a random single-use Dark Carnival Souvenir whenever an enemy hero dies within **925** units of him. Additional Souvenirs are held as charges.\n\nIf Ringmaster does not have a Souvenir when he respawns he will be granted one.\n\nSouvenirs of the Dark Carnival include a Funhouse Mirror, a Strongman Tonic, and a Whoopee Cushion.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": true,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS",
+			"MaxLevel": "1",
+			"Innate": "1",
+			"AbilityValues": {
+				"souvenir_collection_range": "925"
+			}
+		}
+	},
+	{
+		"id": 389,
+		"name": "ringmaster_funhouse_mirror",
+		"hero_id": 131,
+		"behavior": "no_target|ignore_silence|affected_by_mute|is_fake_item|dont_resume_attack|hidden|not_learnable|show_in_guides",
+		"cast_point": "0",
+		"cooldown": "0",
+		"charges": "99",
+		"ability_special": [
+			{
+				"key": "images_count",
+				"value": "1"
+			},
+			{
+				"key": "illusion_duration",
+				"value": "18"
+			},
+			{
+				"key": "images_do_damage_percent_melee",
+				"value": "-67"
+			},
+			{
+				"key": "tooltip_damage_outgoing_melee",
+				"value": "33"
+			},
+			{
+				"key": "images_take_damage_percent",
+				"value": "200"
+			},
+			{
+				"key": "tooltip_damage_incoming_total_pct",
+				"value": "300"
+			},
+			{
+				"key": "images_do_damage_percent_ranged",
+				"value": "-72"
+			},
+			{
+				"key": "tooltip_damage_outgoing_ranged",
+				"value": "28"
+			},
+			{
+				"key": "invuln_duration",
+				"value": "0.2"
+			},
+			{
+				"key": "vision_radius",
+				"value": "1000"
+			},
+			{
+				"key": "num_scale_sets",
+				"value": "3"
+			},
+			{
+				"key": "model_scale_animate_time",
+				"value": "0.05"
+			},
+			{
+				"key": "illusion_model_scale_1",
+				"value": "0"
+			},
+			{
+				"key": "illusion_model_scale_2",
+				"value": "0"
+			},
+			{
+				"key": "illusion_model_scale_3",
+				"value": "50"
+			},
+			{
+				"key": "health_bar_offset_1",
+				"value": "180"
+			},
+			{
+				"key": "health_bar_offset_2",
+				"value": "220"
+			},
+			{
+				"key": "health_bar_offset_3",
+				"value": "280"
+			}
+		],
+		"slot": 19,
+		"icon": "/panorama/images/spellicons/ringmaster_funhouse_mirror_png.png",
+		"localized_name": "Funhouse Mirror",
+		"description": "# Use: Proportion Distortion\nCreates **1** imperfect image of your hero that lasts **18** seconds. Your illusion deals **28%** and takes  **300%** damage.",
+		"note": "Has a **0.2** second cast time during which you are invulnerable.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_AFFECTED_BY_MUTE | DOTA_ABILITY_BEHAVIOR_IS_FAKE_ITEM | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"MaxLevel": "1",
+			"AbilityCooldown": "3.0",
+			"AbilitySharedCooldown": "dark_carnival_souvenir",
+			"AbilityCastPoint": "0.0",
+			"AbilityCharges": "99",
+			"AbilityChargeRestoreTime": "0",
+			"InitialAbilityCharges": "0",
+			"AbilityValues": {
+				"images_count": "1",
+				"illusion_duration": "18",
+				"images_do_damage_percent_melee": "-67",
+				"tooltip_damage_outgoing_melee": "33",
+				"images_take_damage_percent": "200",
+				"tooltip_damage_incoming_total_pct": "300",
+				"images_do_damage_percent_ranged": "-72",
+				"tooltip_damage_outgoing_ranged": "28",
+				"invuln_duration": "0.2",
+				"vision_radius": "1000",
+				"num_scale_sets": "3",
+				"model_scale_animate_time": "0.05",
+				"illusion_model_scale_1": "0",
+				"illusion_model_scale_2": "0",
+				"illusion_model_scale_3": "50",
+				"health_bar_offset_1": "180",
+				"health_bar_offset_2": "220",
+				"health_bar_offset_3": "280"
+			}
+		}
+	},
+	{
+		"id": 390,
+		"name": "ringmaster_whoopee_cushion",
+		"hero_id": 131,
+		"behavior": "no_target|ignore_silence|affected_by_mute|is_fake_item|root_disables|hidden|not_learnable|show_in_guides",
+		"cast_point": "0",
+		"cooldown": "0",
+		"charges": "99",
+		"ability_special": [
+			{
+				"key": "leap_distance",
+				"value": "400"
+			},
+			{
+				"key": "leap_speed",
+				"value": "1300.0"
+			},
+			{
+				"key": "leap_acceleration",
+				"value": "10000.0"
+			},
+			{
+				"key": "fart_cloud_duration",
+				"value": "3.0"
+			},
+			{
+				"key": "fart_cloud_slow",
+				"value": "-30.0"
+			},
+			{
+				"key": "fart_cloud_aura_linger_duration",
+				"value": "1.0"
+			},
+			{
+				"key": "fart_cloud_radius",
+				"value": "200"
+			}
+		],
+		"slot": 21,
+		"icon": "/panorama/images/spellicons/ringmaster_whoopee_cushion_png.png",
+		"localized_name": "Whoopee Cushion",
+		"description": "# Use: Whoopsie\nPropels your hero forward **400** units. Leaves a **200** radius stink cloud behind for **3** seconds that slows enemies by **-30%**.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_AFFECTED_BY_MUTE | DOTA_ABILITY_BEHAVIOR_IS_FAKE_ITEM | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"MaxLevel": "1",
+			"AbilityCooldown": "3.0",
+			"AbilitySharedCooldown": "dark_carnival_souvenir",
+			"AbilityCastPoint": "0.0",
+			"AbilityCharges": "99",
+			"AbilityChargeRestoreTime": "0",
+			"InitialAbilityCharges": "0",
+			"AbilityValues": {
+				"leap_distance": "400",
+				"leap_speed": "1300.0",
+				"leap_acceleration": "10000.0",
+				"fart_cloud_duration": "3.0",
+				"fart_cloud_slow": "-30.0",
+				"fart_cloud_aura_linger_duration": "1.0",
+				"fart_cloud_radius": "200"
+			}
 		}
 	},
 	{
@@ -1343,6 +2252,82 @@
 				"aura_radius": "1200",
 				"aura_damage": "30",
 				"aura_interval": "0.2"
+			}
+		}
+	},
+	{
+		"id": 392,
+		"name": "ringmaster_strongman_tonic",
+		"hero_id": 131,
+		"behavior": "unit_target|ignore_silence|affected_by_mute|is_fake_item|hidden|not_learnable|show_in_guides",
+		"target_team": "friendly",
+		"dispellable": "yes",
+		"cast_range": "750",
+		"cast_point": "0",
+		"cooldown": "0",
+		"charges": "99",
+		"ability_special": [
+			{
+				"key": "projectile_speed",
+				"value": "1400"
+			},
+			{
+				"key": "strength_bonus_base",
+				"value": "5.0"
+			},
+			{
+				"key": "strength_bonus_per_level",
+				"value": "1.5"
+			},
+			{
+				"key": "model_scale",
+				"value": "30"
+			},
+			{
+				"key": "model_scale_animate_time",
+				"value": "0.1"
+			},
+			{
+				"key": "duration",
+				"value": "8.0"
+			},
+			{
+				"key": "effect_strength_max_duration",
+				"value": "4.0"
+			}
+		],
+		"slot": 20,
+		"icon": "/panorama/images/spellicons/ringmaster_strongman_tonic_png.png",
+		"localized_name": "Strongman Tonic",
+		"description": "# Use: Forcefully Imbibe\nTemporarily increases an allied hero's Strength by **5** plus **1.5** per Ringmaster's level for **8** seconds. The effect holds for **4** seconds and then deteriorates over the duration.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_AFFECTED_BY_MUTE | DOTA_ABILITY_BEHAVIOR_IS_FAKE_ITEM | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"MaxLevel": "1",
+			"AbilityCastRange": "750",
+			"AbilityCooldown": "3.0",
+			"AbilitySharedCooldown": "dark_carnival_souvenir",
+			"AbilityCastPoint": "0.0",
+			"AbilityCastAnimation": "ACT_DOTA_OVERRIDE_ABILITY_2",
+			"AbilityCharges": "99",
+			"AbilityChargeRestoreTime": "0",
+			"InitialAbilityCharges": "0",
+			"AbilityValues": {
+				"projectile_speed": "1400",
+				"strength_bonus_base": "5.0",
+				"strength_bonus_per_level": "1.5",
+				"model_scale": "30",
+				"model_scale_animate_time": "0.1",
+				"duration": "8.0",
+				"effect_strength_max_duration": "4.0"
 			}
 		}
 	},
@@ -1487,6 +2472,147 @@
 					"value": "50 50 50 50"
 				}
 			}
+		}
+	},
+	{
+		"id": 396,
+		"name": "special_bonus_unique_ringmaster_whip_radius",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_start_width",
+				"value": "75",
+				"header": "RADIUS START:"
+			},
+			{
+				"key": "bonus_end_width",
+				"value": "75",
+				"header": "RADIUS END:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+75 Tame the Beasts Radius",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_tame_the_beasts",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 397,
+		"name": "special_bonus_unique_ringmaster_box_cast_range",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_AbilityCastRange",
+				"value": "200"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+200 Escape Act Cast Range",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_the_box",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 398,
+		"name": "special_bonus_unique_ringmaster_the_box_strong_dispel_and_flying",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_strong_dispel",
+				"value": "1"
+			},
+			{
+				"key": "bonus_grant_flying",
+				"value": "1"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Escape Act Grants Strong Dispel and Flying",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_the_box",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 399,
+		"name": "special_bonus_unique_ringmaster_whip_damage",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_damage_min",
+				"value": "75",
+				"header": "MIN DAMAGE:"
+			},
+			{
+				"key": "bonus_damage_max",
+				"value": "300",
+				"header": "MAX DAMAGE:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+75/+300 Tame the Beasts Min/Max Damage",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_tame_the_beasts",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 400,
+		"name": "special_bonus_unique_ringmaster_wheel_radius",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_mesmerize_radius",
+				"value": "100",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "bonus_AbilityCastRange",
+				"value": "100"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+100 Wheel Radius and Range",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_tame_the_beasts",
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -8892,6 +10018,35 @@
 					"value": "40"
 				}
 			}
+		}
+	},
+	{
+		"id": 707,
+		"name": "special_bonus_unique_ringmaster_whip_debuff_immunity",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_magic_resist",
+				"value": "50"
+			},
+			{
+				"key": "bonus_has_debuff_immunity",
+				"value": "1"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Debuff Immunity While Channeling Tame the Beasts",
+		"description": "Also grants 50% magic resistance.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_tame_the_beasts",
+			"BaseClass": "special_bonus_base"
 		}
 	},
 	{
@@ -26919,7 +28074,7 @@
 		],
 		"icon": "/panorama/images/spellicons/lone_druid_spirit_bear_fetch_png.png",
 		"localized_name": "Fetch",
-		"description": "Grabs the Target Ally, Enemy or Rune, and uncontrollably drags them towards Lone Druid for the duration. Enemies receive damage every **0.5**s. When dragging a unit, they are Rooted and the Spirit Bear is slowed by **0%**. ",
+		"description": "Grabs the Target Ally, Enemy or Rune, and uncontrollably drags them towards Lone Druid for the duration. Enemies receive damage every **0.5**s. When dragging a unit, they are Rooted. ",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -32739,6 +33894,60 @@
 		"json_data": {
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 1492,
+		"name": "special_bonus_unique_ringmaster_dagger_penetrates",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_dagger_pass_through",
+				"value": "1"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Impalement Arts Penetrates One Target",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_impalement",
+			"BaseClass": "special_bonus_base"
+		}
+	},
+	{
+		"id": 1493,
+		"name": "special_bonus_unique_ringmaster_dagger_bleed_and_slow_duration",
+		"behavior": "passive",
+		"ability_special": [
+			{
+				"key": "bonus_bleed_duration",
+				"value": "1",
+				"header": "DURATION:"
+			},
+			{
+				"key": "bonus_slow_duration",
+				"value": "1",
+				"header": "SLOW DURATION:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+1s Impalement Arts Bleed and Slow Duration",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"ad_linked_abilities": "ringmaster_impalement",
 			"BaseClass": "special_bonus_base"
 		}
 	},
@@ -56750,7 +57959,8 @@
 				"key": "max_creeps",
 				"value": "1",
 				"scepter_value": "2",
-				"scepter_bonus": "1"
+				"scepter_bonus": "1",
+				"header": "MAX ENCHANTED CREEPS:"
 			},
 			{
 				"key": "bonus_health",
@@ -56768,7 +57978,7 @@
 		"slot": 2,
 		"icon": "/panorama/images/spellicons/enchantress_enchant_png.png",
 		"localized_name": "Enchant",
-		"description": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for **5**s.\n\n If the enemy is a creep, she brings it under her control and receives **50%** of their experience bounty.  Enchantress can control up to **1** creeps at a time for up to **30**/**60**/**90**/**120**s. \n\nDISPEL TYPE: Basic Dispel",
+		"description": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for **5**s.\n\n If the enemy is a creep, she brings it under her control and receives **50%** of their experience bounty.  Enchantress can control creeps for up to **30**/**60**/**90**/**120**s. \n\nDISPEL TYPE: Basic Dispel",
 		"lore": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs.",
 		"note": "Illusions can be converted.",
 		"scepter_grants": false,
