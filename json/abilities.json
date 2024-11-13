@@ -207,6 +207,34 @@
 		}
 	},
 	{
+		"id": 212,
+		"name": "item_ring_of_aquila",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Ring of Aquila",
+		"description": "# Passive: Aquila Aura\nGrants %aura_mana_regen% mana regeneration and %aura_bonus_armor% armor to nearby allies.\n\nRadius: %aura_radius%\n\n# Toggle: Aura\nDeactivate to stop affecting non-hero units.",
+		"lore": "The ring of the fallen Warlord Aquila continues to support armies in battle.",
+		"note": "Multiple instances of Aquila Aura do not stack.",
+		"json_data": {}
+	},
+	{
+		"id": 275,
+		"name": "item_trident",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Trident",
+		"description": "Combines Sange, Yasha and Kaya together.",
+		"json_data": {}
+	},
+	{
+		"id": 276,
+		"name": "item_combo_breaker",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "item_combo_breaker",
+		"json_data": {}
+	},
+	{
 		"id": 296,
 		"name": "tiny_craggy_exterior",
 		"hero_id": 19,
@@ -698,6 +726,14 @@
 		}
 	},
 	{
+		"id": 323,
+		"name": "special_bonus_unique_vengeful_spirit_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Vengeance Aura Illusion Casts Spells",
+		"json_data": {}
+	},
+	{
 		"id": 324,
 		"name": "special_bonus_unique_earth_spirit_4",
 		"behavior": "passive",
@@ -720,6 +756,15 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 328,
+		"name": "item_mango_tree",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Mango Tree",
+		"description": "# Use: Plant a Mango Tree\nTargets the ground to plant a mango tree that provides unlimited mango power. The tree generates Enchanted Mangoes every %seconds% seconds, and provides unobstructed vision in the area .",
+		"json_data": {}
 	},
 	{
 		"id": 329,
@@ -1073,6 +1118,22 @@
 		}
 	},
 	{
+		"id": 341,
+		"name": "special_bonus_unique_treant_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Gains Tree Walking",
+		"json_data": {}
+	},
+	{
+		"id": 342,
+		"name": "special_bonus_unique_treant_11",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Overgrowth Undispellable",
+		"json_data": {}
+	},
+	{
 		"id": 343,
 		"name": "drow_ranger_multishot",
 		"hero_id": 6,
@@ -1207,6 +1268,14 @@
 		}
 	},
 	{
+		"id": 345,
+		"name": "special_bonus_unique_clinkz_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Death Pact Health",
+		"json_data": {}
+	},
+	{
 		"id": 346,
 		"name": "special_bonus_unique_enigma_4",
 		"behavior": "passive",
@@ -1305,7 +1374,6 @@
 	{
 		"id": 351,
 		"name": "special_bonus_unique_alchemist_6",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_movespeed",
@@ -1315,16 +1383,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+50 Chemical Rage Movement Speed",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 352,
@@ -1993,7 +2052,7 @@
 		"innate": false,
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IS_FAKE_ITEM",
-			"MaxLevel": "0"
+			"MaxLevel": "1"
 		}
 	},
 	{
@@ -2005,6 +2064,10 @@
 			{
 				"key": "souvenir_collection_range",
 				"value": "925"
+			},
+			{
+				"key": "souvenir_set",
+				"value": "1"
 			}
 		],
 		"slot": 18,
@@ -2021,7 +2084,10 @@
 			"MaxLevel": "1",
 			"Innate": "1",
 			"AbilityValues": {
-				"souvenir_collection_range": "925"
+				"souvenir_collection_range": "925",
+				"souvenir_set": {
+					"value": "1"
+				}
 			}
 		}
 	},
@@ -2838,6 +2904,14 @@
 		}
 	},
 	{
+		"id": 410,
+		"name": "special_bonus_unique_silencer_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Arcane Curse Slow",
+		"json_data": {}
+	},
+	{
 		"id": 411,
 		"name": "special_bonus_unique_skywrath_6",
 		"behavior": "passive",
@@ -2947,6 +3021,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 416,
+		"name": "special_bonus_unique_venomancer_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Plague Ward Duration",
+		"json_data": {}
 	},
 	{
 		"id": 417,
@@ -3077,16 +3159,12 @@
 		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "8"
-			},
-			{
 				"key": "bonus_AbilityCooldown",
 				"value": "5"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "-8s Blinding Light Cooldown",
+		"localized_name": "-5s Blinding Light Cooldown",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": false,
@@ -3095,13 +3173,16 @@
 		"json_data": {
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "8",
-					"ad_linked_abilities": "keeper_of_the_light_blinding_light"
-				}
-			}
+			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 422,
+		"name": "special_bonus_unique_keeper_of_the_light_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Will-O-Wisp AoE",
+		"json_data": {}
 	},
 	{
 		"id": 423,
@@ -3223,6 +3304,14 @@
 				"scepter_meta_duration": "10"
 			}
 		}
+	},
+	{
+		"id": 426,
+		"name": "special_bonus_unique_phoenix_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Sun Ray During Supernova",
+		"json_data": {}
 	},
 	{
 		"id": 427,
@@ -3970,7 +4059,6 @@
 	{
 		"id": 453,
 		"name": "special_bonus_unique_centaur_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
@@ -3979,16 +4067,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-25s Stampede Cooldown",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "centaur_stampede"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 454,
@@ -4126,6 +4205,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 459,
+		"name": "special_bonus_unique_doom_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Doom Duration",
+		"json_data": {}
 	},
 	{
 		"id": 460,
@@ -4277,6 +4364,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "lion_mana_drain"
 		}
+	},
+	{
+		"id": 466,
+		"name": "special_bonus_unique_mars_spear_cooldown",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Spear Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 467,
@@ -4502,6 +4597,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "bane_nightmare"
 		}
+	},
+	{
+		"id": 477,
+		"name": "special_bonus_unique_wraith_king_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Wraithfire Blast Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 478,
@@ -4856,6 +4959,14 @@
 		}
 	},
 	{
+		"id": 493,
+		"name": "special_bonus_unique_vengeful_spirit_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Vengeance Aura Attack Range",
+		"json_data": {}
+	},
+	{
 		"id": 494,
 		"name": "special_bonus_unique_clinkz_7",
 		"behavior": "passive",
@@ -4929,6 +5040,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 497,
+		"name": "special_bonus_unique_sand_king_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Caustic Finale Slow",
+		"json_data": {}
 	},
 	{
 		"id": 498,
@@ -5056,6 +5175,14 @@
 		}
 	},
 	{
+		"id": 503,
+		"name": "special_bonus_unique_night_stalker_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_movement_speed_pct_night% Hunter In The Night Movement Speed",
+		"json_data": {}
+	},
+	{
 		"id": 504,
 		"name": "special_bonus_unique_slardar_5",
 		"behavior": "passive",
@@ -5178,9 +5305,16 @@
 		}
 	},
 	{
+		"id": 509,
+		"name": "special_bonus_unique_leshrac_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Split Earth Radius",
+		"json_data": {}
+	},
+	{
 		"id": 510,
 		"name": "special_bonus_unique_chaos_knight_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_chance",
@@ -5190,16 +5324,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10% Chaos Strike Chance",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 511,
@@ -5402,6 +5527,30 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 519,
+		"name": "special_bonus_unique_skywrath_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% AoE Ancient Seal",
+		"json_data": {}
+	},
+	{
+		"id": 520,
+		"name": "special_bonus_unique_enigma_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_eidelon_max_health% Eidolon Health",
+		"json_data": {}
+	},
+	{
+		"id": 521,
+		"name": "special_bonus_unique_enigma_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Midnight Pulse Duration",
+		"json_data": {}
 	},
 	{
 		"id": 522,
@@ -5672,6 +5821,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "lich_chain_frost"
 		}
+	},
+	{
+		"id": 532,
+		"name": "keeper_of_the_light_solar_bind",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "keeper_of_the_light_solar_bind",
+		"json_data": {}
 	},
 	{
 		"id": 535,
@@ -5961,6 +6118,14 @@
 		}
 	},
 	{
+		"id": 540,
+		"name": "special_bonus_unique_lion_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Earth Spike Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 541,
 		"name": "special_bonus_unique_lion_8",
 		"behavior": "passive",
@@ -6121,6 +6286,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 546,
+		"name": "special_bonus_unique_meepo_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Divided We Stand Clone",
+		"json_data": {}
 	},
 	{
 		"id": 547,
@@ -6306,6 +6479,14 @@
 		}
 	},
 	{
+		"id": 551,
+		"name": "special_bonus_unique_chen_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Holy Persuasion Targets Ancients",
+		"json_data": {}
+	},
+	{
 		"id": 552,
 		"name": "omniknight_angelic_flight",
 		"behavior": "unit_target|hidden|show_in_guides",
@@ -6368,6 +6549,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 553,
+		"name": "jakiro_liquid_frost",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "jakiro_liquid_frost",
+		"json_data": {}
 	},
 	{
 		"id": 554,
@@ -6621,7 +6810,6 @@
 	{
 		"id": 562,
 		"name": "special_bonus_unique_axe_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
@@ -6631,16 +6819,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+100 Culling Blade Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 563,
@@ -6697,6 +6876,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 567,
+		"name": "special_bonus_unique_razor_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Storm Surge Move Speed",
+		"json_data": {}
 	},
 	{
 		"id": 568,
@@ -6893,6 +7080,14 @@
 		}
 	},
 	{
+		"id": 583,
+		"name": "special_bonus_unique_clinkz_11",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Kills Reset Death Pact Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 584,
 		"name": "special_bonus_attack_range_325",
 		"behavior": "passive",
@@ -6918,6 +7113,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 586,
+		"name": "special_bonus_unique_razor_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Static Link Charges",
+		"json_data": {}
 	},
 	{
 		"id": 587,
@@ -6964,6 +7167,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 591,
+		"name": "special_bonus_unique_dark_seer_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Vacuum Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 592,
@@ -7015,6 +7226,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 594,
+		"name": "special_bonus_unique_doom_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Permanent Scorched Earth",
+		"json_data": {}
 	},
 	{
 		"id": 595,
@@ -7317,6 +7536,14 @@
 		}
 	},
 	{
+		"id": 615,
+		"name": "special_bonus_unique_centaur_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Stampede Damage Reduction",
+		"json_data": {}
+	},
+	{
 		"id": 616,
 		"name": "special_bonus_unique_undying_6",
 		"behavior": "passive",
@@ -7339,6 +7566,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 617,
+		"name": "special_bonus_unique_clinkz_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Burning Barrage arrows",
+		"json_data": {}
 	},
 	{
 		"id": 618,
@@ -7370,6 +7605,15 @@
 		}
 	},
 	{
+		"id": 619,
+		"name": "special_bonus_unique_invoker_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Vector Target Ice Wall",
+		"description": "Allows Ice Wall to be cast as a Vector Target ability with %bonus_vector_cast_range% cast range.",
+		"json_data": {}
+	},
+	{
 		"id": 620,
 		"name": "special_bonus_unique_enigma_9",
 		"behavior": "passive",
@@ -7392,6 +7636,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 621,
+		"name": "special_bonus_unique_lycan_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_attack_damage_reduction% Howl Attack Damage Reduction",
+		"json_data": {}
 	},
 	{
 		"id": 622,
@@ -7470,6 +7722,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 624,
+		"name": "special_bonus_unique_keeper_of_the_light_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_stun_duration%s Solar Bind Stun when target is fully slowed",
+		"json_data": {}
 	},
 	{
 		"id": 625,
@@ -7795,6 +8055,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 634,
+		"name": "special_bonus_unique_phantom_lancer_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Spirit Lance Multishot",
+		"json_data": {}
 	},
 	{
 		"id": 636,
@@ -8189,6 +8457,14 @@
 				"goo_stacks": "2"
 			}
 		}
+	},
+	{
+		"id": 644,
+		"name": "special_bonus_unique_dark_seer_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Wall of Replica Stun",
+		"json_data": {}
 	},
 	{
 		"id": 645,
@@ -8833,6 +9109,14 @@
 		}
 	},
 	{
+		"id": 659,
+		"name": "special_bonus_unique_bristleback_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_armor_per_stack% Goo Armor Per Stack",
+		"json_data": {}
+	},
+	{
 		"id": 660,
 		"name": "dragon_knight_fireball",
 		"hero_id": 49,
@@ -9162,6 +9446,14 @@
 		}
 	},
 	{
+		"id": 667,
+		"name": "special_bonus_unique_shadow_demon_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Soul Catcher Duration",
+		"json_data": {}
+	},
+	{
 		"id": 668,
 		"name": "slark_fish_bait",
 		"behavior": "unit_target|hidden|show_in_guides",
@@ -9225,9 +9517,16 @@
 		}
 	},
 	{
+		"id": 669,
+		"name": "special_bonus_unique_keeper_of_the_light_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Illuminate Daytime Heal",
+		"json_data": {}
+	},
+	{
 		"id": 670,
 		"name": "special_bonus_unique_axe_6",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_slow",
@@ -9237,16 +9536,23 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10% Battle Hunger Slow",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 671,
+		"name": "special_bonus_unique_bane_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value% Enfeeble Regen Reduction",
+		"json_data": {}
+	},
+	{
+		"id": 672,
+		"name": "special_bonus_unique_bane_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Brain Sap Pure and Pierces Immunity",
+		"json_data": {}
 	},
 	{
 		"id": 673,
@@ -9448,6 +9754,14 @@
 		}
 	},
 	{
+		"id": 685,
+		"name": "special_bonus_unique_arc_warden_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Tempest Double Duration",
+		"json_data": {}
+	},
+	{
 		"id": 687,
 		"name": "dark_seer_normal_punch",
 		"hero_id": 55,
@@ -9546,6 +9860,22 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 689,
+		"name": "special_bonus_unique_dark_seer_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Surge Charges",
+		"json_data": {}
+	},
+	{
+		"id": 690,
+		"name": "special_bonus_unique_dark_seer_11",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Wall of Replica Length",
+		"json_data": {}
 	},
 	{
 		"id": 693,
@@ -9712,6 +10042,31 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 695,
+		"name": "special_bonus_unique_slardar_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Corrosive Hazed targets leave Puddle trails",
+		"description": "Trails are %bonus_puddle_radius% units wide and last %bonus_puddle_duration% seconds",
+		"json_data": {}
+	},
+	{
+		"id": 696,
+		"name": "special_bonus_unique_centaur_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Stampede Duration",
+		"json_data": {}
+	},
+	{
+		"id": 697,
+		"name": "special_bonus_unique_dark_seer_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Wall of Replica Slow",
+		"json_data": {}
 	},
 	{
 		"id": 698,
@@ -9962,6 +10317,14 @@
 		}
 	},
 	{
+		"id": 704,
+		"name": "special_bonus_unique_troll_warlord_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Battle Trance Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 705,
 		"name": "special_bonus_unique_grimstroke_7",
 		"behavior": "passive",
@@ -10046,6 +10409,14 @@
 		}
 	},
 	{
+		"id": 708,
+		"name": "special_bonus_unique_lion_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value% Mana Drain Attack Speed",
+		"json_data": {}
+	},
+	{
 		"id": 709,
 		"name": "special_bonus_unique_lifestealer_6",
 		"behavior": "passive",
@@ -10094,6 +10465,14 @@
 		}
 	},
 	{
+		"id": 711,
+		"name": "special_bonus_unique_lone_druid_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Entangle Disarms",
+		"json_data": {}
+	},
+	{
 		"id": 712,
 		"name": "special_bonus_unique_magnus_7",
 		"behavior": "passive",
@@ -10115,6 +10494,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 713,
+		"name": "special_bonus_unique_phoenix_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Sun Ray Slow",
+		"json_data": {}
 	},
 	{
 		"id": 714,
@@ -10139,6 +10526,15 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 715,
+		"name": "special_bonus_unique_queen_of_pain_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Sonic Wave %value%s Fear",
+		"description": "Enemies damaged by Sonic Wave are forced to run away from Queen of Pain for %value% seconds.",
+		"json_data": {}
 	},
 	{
 		"id": 716,
@@ -10309,6 +10705,13 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 723,
+		"name": "special_bonus_unique_huskar_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"json_data": {}
 	},
 	{
 		"id": 724,
@@ -10550,30 +10953,23 @@
 	{
 		"id": 733,
 		"name": "special_bonus_unique_doom_9",
-		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
+				"key": "bonus_AbilityCooldown",
 				"value": "10"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-10s Scorched Earth Cooldown",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "10",
-					"ad_linked_abilities": "doom_bringer_scorched_earth"
-				}
-			}
-		}
+		"json_data": {}
+	},
+	{
+		"id": 734,
+		"name": "special_bonus_unique_sven_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_movespeed% Warcry Movement Speed",
+		"json_data": {}
 	},
 	{
 		"id": 735,
@@ -10705,7 +11101,6 @@
 	{
 		"id": 740,
 		"name": "special_bonus_unique_dragon_knight_7",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_attack_range",
@@ -10715,16 +11110,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+150 Elder Dragon Form Attack Range",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 741,
@@ -10757,7 +11143,6 @@
 	{
 		"id": 742,
 		"name": "special_bonus_unique_dragon_knight_8",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_dragon_aoe",
@@ -10766,16 +11151,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+400 AoE Dragon Tail During Elder Dragon Form",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 743,
@@ -10851,6 +11227,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 746,
+		"name": "special_bonus_unique_lifestealer_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_attack_speed_bonus% Ghoul Frenzy Attack Speed",
+		"json_data": {}
 	},
 	{
 		"id": 747,
@@ -11192,6 +11576,14 @@
 		}
 	},
 	{
+		"id": 759,
+		"name": "special_bonus_unique_morphling_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value% Adaptive Strike Armor Reduction",
+		"json_data": {}
+	},
+	{
 		"id": 760,
 		"name": "special_bonus_unique_shadow_shaman_7",
 		"behavior": "passive",
@@ -11309,6 +11701,14 @@
 		}
 	},
 	{
+		"id": 765,
+		"name": "special_bonus_unique_tinker_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Heat-Seeking Missile Count",
+		"json_data": {}
+	},
+	{
 		"id": 766,
 		"name": "special_bonus_unique_kunkka_7",
 		"behavior": "passive",
@@ -11362,6 +11762,22 @@
 		}
 	},
 	{
+		"id": 768,
+		"name": "special_bonus_unique_warlock_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Shadow Word Duration",
+		"json_data": {}
+	},
+	{
+		"id": 769,
+		"name": "special_bonus_unique_chen_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Global Divine Favor Aura",
+		"json_data": {}
+	},
+	{
 		"id": 770,
 		"name": "special_bonus_unique_luna_6",
 		"behavior": "passive",
@@ -11383,6 +11799,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "luna_eclipse"
 		}
+	},
+	{
+		"id": 771,
+		"name": "special_bonus_unique_keeper_of_the_light_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Blinding Light Charges",
+		"json_data": {}
 	},
 	{
 		"id": 772,
@@ -11407,6 +11831,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "crystal_maiden_crystal_nova"
 		}
+	},
+	{
+		"id": 773,
+		"name": "special_bonus_unique_lina_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage% Laguna Blade Damage",
+		"json_data": {}
 	},
 	{
 		"id": 774,
@@ -12007,6 +12439,30 @@
 		}
 	},
 	{
+		"id": 797,
+		"name": "special_bonus_unique_puck_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown%s Illusory Orb Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 798,
+		"name": "special_bonus_unique_phantom_assassin_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Phantom Strike Charges",
+		"json_data": {}
+	},
+	{
+		"id": 799,
+		"name": "special_bonus_unique_night_stalker_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Crippling Fear Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 800,
 		"name": "special_bonus_mana_reduction_8",
 		"behavior": "passive",
@@ -12083,6 +12539,14 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		}
+	},
+	{
+		"id": 803,
+		"name": "special_bonus_unique_beastmaster_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Hawks Grant True Sight",
+		"json_data": {}
 	},
 	{
 		"id": 804,
@@ -12199,6 +12663,14 @@
 		}
 	},
 	{
+		"id": 808,
+		"name": "special_bonus_unique_naga_siren_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Song of the Siren heals allies %value% Max HP/s",
+		"json_data": {}
+	},
+	{
 		"id": 809,
 		"name": "special_bonus_unique_wraith_king_11",
 		"behavior": "passive",
@@ -12223,6 +12695,14 @@
 		}
 	},
 	{
+		"id": 810,
+		"name": "special_bonus_unique_ember_spirit_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_unit_count% Searing Chains Target",
+		"json_data": {}
+	},
+	{
 		"id": 811,
 		"name": "special_bonus_unique_venomancer_8",
 		"behavior": "passive",
@@ -12244,6 +12724,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 812,
+		"name": "special_bonus_unique_warlock_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Fatal Bond Targets",
+		"json_data": {}
 	},
 	{
 		"id": 813,
@@ -12706,6 +13194,14 @@
 		}
 	},
 	{
+		"id": 843,
+		"name": "special_bonus_unique_mars_bulwark_speed",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_redirect_speed_penatly% Bulwark Movespeed Penalty",
+		"json_data": {}
+	},
+	{
 		"id": 844,
 		"name": "special_bonus_unique_lina_6",
 		"behavior": "passive",
@@ -12861,6 +13357,14 @@
 		}
 	},
 	{
+		"id": 851,
+		"name": "special_bonus_unique_clockwerk_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_mana_burn% Power Cogs Mana Burn",
+		"json_data": {}
+	},
+	{
 		"id": 852,
 		"name": "special_bonus_unique_slardar_7",
 		"behavior": "passive",
@@ -12882,6 +13386,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 853,
+		"name": "special_bonus_unique_slardar_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Slithereen Crush Attack/Move Slow",
+		"json_data": {}
 	},
 	{
 		"id": 856,
@@ -12906,6 +13418,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 857,
+		"name": "special_bonus_unique_dawnbreaker_fire_wreath_aoe",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Starbreaker AoE",
+		"json_data": {}
 	},
 	{
 		"id": 858,
@@ -13389,9 +13909,16 @@
 		}
 	},
 	{
+		"id": 870,
+		"name": "special_bonus_unique_chaos_knight_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_incoming_damage% Phantasm Illusion Incoming Damage",
+		"json_data": {}
+	},
+	{
 		"id": 871,
 		"name": "special_bonus_unique_chaos_knight_6",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_lifesteal",
@@ -13401,21 +13928,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+30% Chaos Strike Lifesteal",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 872,
 		"name": "special_bonus_unique_chaos_knight_8",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
@@ -13424,16 +13941,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-3s Chaos Bolt Cooldown",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 873,
@@ -13576,6 +14084,22 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 876,
+		"name": "special_bonus_unique_bounty_hunter_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Half Track Bonus Speed to Allies",
+		"json_data": {}
+	},
+	{
+		"id": 877,
+		"name": "special_bonus_unique_bounty_hunter_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Shuriken Toss Charges",
+		"json_data": {}
 	},
 	{
 		"id": 878,
@@ -13744,6 +14268,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 881,
+		"name": "special_bonus_unique_keeper_of_the_light_13",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Solar Bind Charges",
+		"json_data": {}
+	},
+	{
+		"id": 883,
+		"name": "special_bonus_unique_mars_rebuke_slow",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_knockback_slow_duration%s God's Rebuke Slow",
+		"json_data": {}
 	},
 	{
 		"id": 884,
@@ -14379,6 +14919,14 @@
 		}
 	},
 	{
+		"id": 899,
+		"name": "special_bonus_unique_jakiro_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage% Liquid Fire Damage",
+		"json_data": {}
+	},
+	{
 		"id": 900,
 		"name": "special_bonus_unique_broodmother_6",
 		"behavior": "passive",
@@ -14545,6 +15093,15 @@
 		}
 	},
 	{
+		"id": 904,
+		"name": "special_bonus_unique_primal_beast_pulverize_pierces_magic_immunity",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Pulverize Pierces Magic Immunity",
+		"description": "Damage is changed to Pure",
+		"json_data": {}
+	},
+	{
 		"id": 905,
 		"name": "special_bonus_unique_bloodseeker_rupture_charges",
 		"behavior": "passive",
@@ -14574,6 +15131,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 906,
+		"name": "special_bonus_unique_sniper_grenade_self_push",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Concussive Grenade Pushes Sniper back",
+		"json_data": {}
 	},
 	{
 		"id": 909,
@@ -15176,7 +15741,6 @@
 	{
 		"id": 928,
 		"name": "special_bonus_unique_sniper_headshot_damage",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
@@ -15186,16 +15750,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+30 Headshot Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 929,
@@ -15888,6 +16443,14 @@
 		}
 	},
 	{
+		"id": 955,
+		"name": "special_bonus_unique_dark_seer_15",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Ion Shell Duration",
+		"json_data": {}
+	},
+	{
 		"id": 956,
 		"name": "special_bonus_unique_crystal_maiden_frostbite_castrange",
 		"behavior": "passive",
@@ -16072,6 +16635,14 @@
 		}
 	},
 	{
+		"id": 962,
+		"name": "special_bonus_unique_lina_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Spells deal %bonus_bonus_spell_damage% more damage for each Fiery Soul Charge.",
+		"json_data": {}
+	},
+	{
 		"id": 963,
 		"name": "special_bonus_unique_tidehunter_9",
 		"behavior": "passive",
@@ -16167,9 +16738,16 @@
 		}
 	},
 	{
+		"id": 967,
+		"name": "special_bonus_unique_hoodwink_bushwhack_radius",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_trap_radius% Bushwhack Radius",
+		"json_data": {}
+	},
+	{
 		"id": 970,
 		"name": "special_bonus_unique_doom_10",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_does_mute",
@@ -16178,21 +16756,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Doom applies Mute",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 971,
 		"name": "special_bonus_unique_doom_11",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_does_break",
@@ -16201,16 +16769,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Doom applies Break",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 972,
@@ -16263,7 +16822,6 @@
 	{
 		"id": 974,
 		"name": "special_bonus_unique_axe_7",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_armor",
@@ -16273,16 +16831,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10 Berserker's Call Armor",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 975,
@@ -16560,6 +17109,14 @@
 				"max_root": "5"
 			}
 		}
+	},
+	{
+		"id": 982,
+		"name": "special_bonus_unique_monkey_king_12",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_invul_duration%s Mischief Invulnerability Duration",
+		"json_data": {}
 	},
 	{
 		"id": 983,
@@ -16893,6 +17450,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 991,
+		"name": "special_bonus_unique_juggernaut_omnislash_cast_range",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_AbilityCastRange% Omnislash Cast Range",
+		"json_data": {}
 	},
 	{
 		"id": 992,
@@ -17693,7 +18258,6 @@
 	{
 		"id": 1002,
 		"name": "special_bonus_unique_alchemist_7",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
@@ -17702,21 +18266,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+2 Damage per Greevil's Greed stack",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1003,
 		"name": "special_bonus_unique_alchemist_8",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_base_attack_time",
@@ -17726,16 +18280,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-0.1s Chemical Rage Base Attack Time",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1004,
@@ -18125,6 +18670,14 @@
 		}
 	},
 	{
+		"id": 1014,
+		"name": "special_bonus_unique_kunkka_ghostship_cooldown",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown% Ghostship Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 1015,
 		"name": "special_bonus_unique_kunkka_tidebringer_slow",
 		"behavior": "passive",
@@ -18252,6 +18805,24 @@
 		}
 	},
 	{
+		"id": 1029,
+		"name": "item_super_blink",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Super Blink Dagger",
+		"description": "# Active: Blink\nTeleport to a target point up to %blink_range% units away.",
+		"lore": "The fabled dagger used by the fastest assassin ever to walk the lands.",
+		"json_data": {}
+	},
+	{
+		"id": 1030,
+		"name": "item_pocket_tower",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Pocket Tower",
+		"json_data": {}
+	},
+	{
 		"id": 1031,
 		"name": "special_bonus_unique_mars_bulwark_redirect_chance",
 		"behavior": "passive",
@@ -18326,6 +18897,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1035,
+		"name": "special_bonus_unique_lifestealer_rage_armor",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_armor% Armor during Rage",
+		"json_data": {}
+	},
+	{
+		"id": 1036,
+		"name": "special_bonus_unique_lifestealer_ghoul_frenzy_miss",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%bonus_miss_pct% Miss Chance on Ghoul Frenzy",
+		"json_data": {}
 	},
 	{
 		"id": 1037,
@@ -18437,6 +19024,14 @@
 		}
 	},
 	{
+		"id": 1041,
+		"name": "special_bonus_unique_wraith_king_vampiric_skeleton_duration",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_skeleton_duration% Summon Skeleton Duration/-%bonus_AbilityCooldown% Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 1042,
 		"name": "special_bonus_unique_marci_unleash_speed",
 		"behavior": "passive",
@@ -18462,7 +19057,6 @@
 	{
 		"id": 1043,
 		"name": "special_bonus_unique_dragon_knight_9",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_dragon_form_bonus_pct",
@@ -18471,16 +19065,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+85% Breathe Fire Damage/Cast Range in Dragon Form",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1044,
@@ -18507,6 +19092,14 @@
 		}
 	},
 	{
+		"id": 1045,
+		"name": "special_bonus_unique_medusa_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_movement_slow% Mystic Snake Turn and Movement Speed Slow",
+		"json_data": {}
+	},
+	{
 		"id": 1046,
 		"name": "special_bonus_unique_keeper_of_the_light_illuminate_cooldown",
 		"behavior": "passive",
@@ -18528,6 +19121,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1047,
+		"name": "special_bonus_unique_sniper_grenade_range",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_AbilityCastRange% Concussive Grenade Cast Range",
+		"json_data": {}
 	},
 	{
 		"id": 1048,
@@ -18625,6 +19226,14 @@
 		}
 	},
 	{
+		"id": 1052,
+		"name": "special_bonus_unique_oracle_fortunes_end_damage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage% Fortune's End Damage",
+		"json_data": {}
+	},
+	{
 		"id": 1053,
 		"name": "special_bonus_unique_pangolier_shield_crash_herostacks",
 		"behavior": "passive",
@@ -18671,6 +19280,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1055,
+		"name": "special_bonus_unique_phantom_lancer_doppel_illusion2_amt",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_illusion_2_amount% Doppelganger Illusion",
+		"json_data": {}
 	},
 	{
 		"id": 1056,
@@ -18843,6 +19460,14 @@
 		}
 	},
 	{
+		"id": 1063,
+		"name": "special_bonus_unique_ursa_enrage_radius",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Enrage provides half benefits to allies in a %bonus_aoe_radius% radius",
+		"json_data": {}
+	},
+	{
 		"id": 1064,
 		"name": "special_bonus_unique_razor_plasmafield_second_ring",
 		"behavior": "passive",
@@ -18963,6 +19588,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1069,
+		"name": "special_bonus_unique_tinker_defense_matrix_cdr",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Defense Matrix Grants %bonus_cooldown_reduction%  Cooldown Reduction",
+		"json_data": {}
 	},
 	{
 		"id": 1070,
@@ -19095,9 +19728,16 @@
 		}
 	},
 	{
+		"id": 1075,
+		"name": "special_bonus_unique_hoodwink_scurry_evasion",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_active_evasion% Scurry Evasion When Active",
+		"json_data": {}
+	},
+	{
 		"id": 1078,
 		"name": "special_bonus_unique_bristleback_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCastRange",
@@ -19106,21 +19746,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+250 Goo Cast Range",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1079,
 		"name": "special_bonus_unique_bristleback_6",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_side_damage_reduction",
@@ -19135,16 +19765,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+8%/4% Bristleback Back/Side Damage Reduction",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1080,
@@ -19240,6 +19861,14 @@
 		}
 	},
 	{
+		"id": 1084,
+		"name": "special_bonus_unique_lion_manadrain_damage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage_pct% Mana Drain Damage",
+		"json_data": {}
+	},
+	{
 		"id": 1085,
 		"name": "special_bonus_unique_slardar_slithereen_crush_stun",
 		"behavior": "passive",
@@ -19304,6 +19933,15 @@
 		}
 	},
 	{
+		"id": 1087,
+		"name": "special_bonus_unique_drow_ranger_gust_invis",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Gust Reveals Invisible Units",
+		"description": "Does not reveal Wards",
+		"json_data": {}
+	},
+	{
 		"id": 1088,
 		"name": "special_bonus_unique_drow_ranger_gust_selfmovespeed",
 		"behavior": "passive",
@@ -19350,6 +19988,14 @@
 				"value": "14"
 			}
 		}
+	},
+	{
+		"id": 1102,
+		"name": "special_bonus_unique_furion_sprout_treant_duration",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_treant_duration%s Treant Duration",
+		"json_data": {}
 	},
 	{
 		"id": 1103,
@@ -20110,6 +20756,14 @@
 		}
 	},
 	{
+		"id": 1118,
+		"name": "special_bonus_unique_furion_teleportation_max_stacks",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_furion_teleportation_max_stacks",
+		"json_data": {}
+	},
+	{
 		"id": 1119,
 		"name": "clinkz_tar_bomb",
 		"hero_id": 56,
@@ -20794,6 +21448,14 @@
 		}
 	},
 	{
+		"id": 1139,
+		"name": "special_bonus_unique_marci_sidekick_damage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_marci_sidekick_damage",
+		"json_data": {}
+	},
+	{
 		"id": 1140,
 		"name": "arc_warden_tempest_recall",
 		"behavior": "no_target|hidden",
@@ -20972,6 +21634,14 @@
 		}
 	},
 	{
+		"id": 1144,
+		"name": "lone_druid_summon_spirit_bear_fetch",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear_fetch",
+		"json_data": {}
+	},
+	{
 		"id": 1145,
 		"name": "special_bonus_unique_leshrac_pulse_nova_lightning",
 		"behavior": "passive",
@@ -21090,6 +21760,14 @@
 		}
 	},
 	{
+		"id": 1151,
+		"name": "special_bonus_unique_death_prophet_crypt_swarm_slow",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Crypt Swarm applies %bonus_slow_percent% slow for %bonus_slow_duration%s",
+		"json_data": {}
+	},
+	{
 		"id": 1152,
 		"name": "special_bonus_unique_lycan_howl_armor",
 		"behavior": "passive",
@@ -21139,6 +21817,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 1155,
+		"name": "special_bonus_unique_earth_spirit_rolling_boulder_cooldown",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown% Rolling Boulder Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 1165,
@@ -21262,6 +21948,14 @@
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
 		}
+	},
+	{
+		"id": 1170,
+		"name": "special_bonus_unique_death_prophet_silence_slow",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_movement_slow% Silence Move Speed Slow",
+		"json_data": {}
 	},
 	{
 		"id": 1171,
@@ -21416,6 +22110,14 @@
 		}
 	},
 	{
+		"id": 1177,
+		"name": "special_bonus_unique_lina_thermal_runaway_stacks",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_lina_thermal_runaway_stacks",
+		"json_data": {}
+	},
+	{
 		"id": 1178,
 		"name": "special_bonus_unique_lina_crit_debuff",
 		"behavior": "passive",
@@ -21442,6 +22144,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1179,
+		"name": "special_bonus_unique_queen_of_pain_strike_heal",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration_heal% Shadow Strike Heal Per Tick",
+		"json_data": {}
 	},
 	{
 		"id": 1180,
@@ -21670,26 +22380,16 @@
 	{
 		"id": 1189,
 		"name": "special_bonus_unique_axe_culling_blade_speed_duration",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_speed_duration",
 				"value": "3",
-				"header": "KILL SPEED DURATION:"
+				"header": "KILL BUFF DURATION:"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
-		"localized_name": "+3s Culling Blade Speed Bonus Duration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"localized_name": "+3s Culling Blade Kill Buff Bonus Duration",
+		"json_data": {}
 	},
 	{
 		"id": 1190,
@@ -21760,6 +22460,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1193,
+		"name": "special_bonus_unique_broodmother_web_hpregen",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_health_regen% Spin Web Health Regeneration",
+		"json_data": {}
 	},
 	{
 		"id": 1194,
@@ -21870,6 +22578,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1198,
+		"name": "lycan_innate_lone_wolf",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lycan_innate_lone_wolf",
+		"json_data": {}
+	},
+	{
+		"id": 1199,
+		"name": "lycan_innate_wolfpack",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lycan_innate_wolfpack",
+		"json_data": {}
 	},
 	{
 		"id": 1200,
@@ -23386,6 +24110,14 @@
 		}
 	},
 	{
+		"id": 1233,
+		"name": "special_bonus_unique_vengeful_spirit_swap_damage_reduction",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage_reduction% Nether Swap Damage Reduction",
+		"json_data": {}
+	},
+	{
 		"id": 1234,
 		"name": "sven_wrath_of_god",
 		"hero_id": 18,
@@ -23594,6 +24326,14 @@
 		}
 	},
 	{
+		"id": 1240,
+		"name": "kunkka_ghost_ship_fire_cannons",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "kunkka_ghost_ship_fire_cannons",
+		"json_data": {}
+	},
+	{
 		"id": 1241,
 		"name": "special_bonus_unique_kunkka_rum",
 		"behavior": "passive",
@@ -23626,6 +24366,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 1242,
+		"name": "kunkka_innate_kunkkas_spyglass",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "kunkka_innate_kunkkas_spyglass",
+		"json_data": {}
+	},
+	{
+		"id": 1243,
+		"name": "kunkka_innate_kunkkas_flask",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "kunkka_innate_kunkkas_flask",
+		"json_data": {}
 	},
 	{
 		"id": 1244,
@@ -24725,7 +25481,6 @@
 	{
 		"id": 1269,
 		"name": "special_bonus_unique_sniper_take_aim_armor",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_armor",
@@ -24735,16 +25490,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+15 Take Aim Armor",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1270,
@@ -25729,6 +26475,31 @@
 		}
 	},
 	{
+		"id": 1289,
+		"name": "viper_innate_corrosive_skin_vile",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "viper_innate_corrosive_skin_vile",
+		"json_data": {}
+	},
+	{
+		"id": 1290,
+		"name": "viper_innate_corrosive_skin_virulent",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "viper_innate_corrosive_skin_virulent",
+		"json_data": {}
+	},
+	{
+		"id": 1291,
+		"name": "luna_selemenes_favor",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Selemene's Favor",
+		"description": "At night, Luna receives %night_cast_range_pct% bonus cast range.",
+		"json_data": {}
+	},
+	{
 		"id": 1292,
 		"name": "dragon_knight_inherited_vigor",
 		"hero_id": 49,
@@ -26421,6 +27192,14 @@
 				"duration": "5"
 			}
 		}
+	},
+	{
+		"id": 1308,
+		"name": "enchantress_forest_freebie",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "enchantress_forest_freebie",
+		"json_data": {}
 	},
 	{
 		"id": 1309,
@@ -28339,6 +29118,14 @@
 		}
 	},
 	{
+		"id": 1354,
+		"name": "chaos_knight_innate_spell_refund",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "chaos_knight_innate_spell_refund",
+		"json_data": {}
+	},
+	{
 		"id": 1355,
 		"name": "meepo_pack_rat",
 		"hero_id": 82,
@@ -29310,6 +30097,14 @@
 		}
 	},
 	{
+		"id": 1377,
+		"name": "troll_warlord_innate_unflinching",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "troll_warlord_innate_unflinching",
+		"json_data": {}
+	},
+	{
 		"id": 1378,
 		"name": "troll_warlord_innate_masterful",
 		"behavior": "passive|innate_ui",
@@ -29389,6 +30184,10 @@
 			{
 				"key": "upgrade_rate",
 				"value": "120.0"
+			},
+			{
+				"key": "bonus_hp_total",
+				"header": "PERMANENT MAX HP:"
 			}
 		],
 		"slot": 7,
@@ -29406,7 +30205,10 @@
 			"Innate": "1",
 			"AbilityValues": {
 				"health_per_upgrade": "30",
-				"upgrade_rate": "120.0"
+				"upgrade_rate": "120.0",
+				"bonus_hp_total": {
+					"dynamic_value": "true"
+				}
 			}
 		}
 	},
@@ -29860,6 +30662,23 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 1390,
+		"name": "abaddon_font_of_avernus",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "abaddon_font_of_avernus",
+		"json_data": {}
+	},
+	{
+		"id": 1391,
+		"name": "abaddon_soul_suck",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Soul Suck",
+		"description": "Abaddon Absorbs the souls of a recently dead unit (up to 10 seconds dead) within %radius% radius, healing for %regen% of that unit's Max HP. Soul Suck prioritizes the dead units with the highest amount of HP",
+		"json_data": {}
 	},
 	{
 		"id": 1392,
@@ -31309,7 +32128,7 @@
 			{
 				"key": "mark_duration",
 				"value": "7",
-				"header": "MARK DURATION:"
+				"header": "DEBUFF DURATION:"
 			},
 			{
 				"key": "slow_pct",
@@ -31342,7 +32161,7 @@
 		"slot": 5,
 		"icon": "/panorama/images/spellicons/hoodwink_hunters_boomerang_png.png",
 		"localized_name": "Hunter's Boomerang",
-		"description": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink.  The boomerang will deal damage as it passes through or hits enemies, and apply a Hunter's Mark that causes affected enemies to be slowed and be more vulnerable to spell damage.",
+		"description": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink.  The boomerang will deal damage as it passes through or hits enemies, and apply a debuff that causes affected enemies to be slowed and be more vulnerable to spell damage.",
 		"scepter_grants": false,
 		"scepter_upgrades": false,
 		"shard_grants": true,
@@ -32479,7 +33298,6 @@
 	{
 		"id": 1455,
 		"name": "special_bonus_unique_sniper_shrapnel_damage",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_shrapnel_damage",
@@ -32489,16 +33307,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+30% Shrapnel Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 1456,
@@ -33925,6 +34734,14 @@
 		}
 	},
 	{
+		"id": 1490,
+		"name": "special_bonus_special_bonus_unique_medusa_gorgons_grasp_duration",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_special_bonus_unique_medusa_gorgons_grasp_duration",
+		"json_data": {}
+	},
+	{
 		"id": 1491,
 		"name": "special_bonus_special_bonus_unique_medusa_gorgons_grasp_volleys",
 		"behavior": "passive",
@@ -34157,6 +34974,1072 @@
 		}
 	},
 	{
+		"id": 1497,
+		"name": "kez_switch_weapons",
+		"hero_id": 145,
+		"behavior": "no_target|ignore_backswing|immediate|ignore_invisible",
+		"cast_point": "0",
+		"cooldown": "8",
+		"ability_special": [
+			{
+				"key": "katana_attack_range",
+				"value": "225",
+				"header": "KATANA ATTACK RANGE:"
+			},
+			{
+				"key": "katana_base_attack_time",
+				"value": "2",
+				"header": "KATANA BASE ATTACK TIME:"
+			},
+			{
+				"key": "katana_bonus_damage",
+				"value": "20%",
+				"header": "KATANA BONUS DAMAGE:"
+			},
+			{
+				"key": "sai_attack_range",
+				"value": "150",
+				"header": "SAI ATTACK RANGE:"
+			},
+			{
+				"key": "sai_base_attack_time",
+				"value": "1.5",
+				"header": "SAI BASE ATTACK TIME:"
+			},
+			{
+				"key": "cooldown_reduction_per_level",
+				"value": "0.2"
+			},
+			{
+				"key": "scepter_cooldown_timer",
+				"value": "3"
+			}
+		],
+		"slot": 4,
+		"icon": "/panorama/images/hud/facets/innate_icon_large_png.png",
+		"localized_name": "Switch Discipline",
+		"description": "Kez switches between his Kazurai Katana and Shodo Sai.\n\nHe gains different attack capabilities and abilities based on the weapon equipped. The abilities level up together, and when an ability is used, the associated alternate weapon ability also goes on cooldown.\n\nSwitch Discipline cooldown decreases by **0.2**s per Hero level.",
+		"lore": "As former followers of the Shodo, the leaders of the Kazurai Order can switch effortlessly between twin disciplines of martial mastery over sai and blade.",
+		"scepter_grants": false,
+		"scepter_upgrades": true,
+		"scepter_description": "Casting any weapon ability refreshes the cooldown of Switch Discipline.\n\nThe first ability Kez casts **3** seconds after using Switch Discipline will not set its alternate weapon ability on cooldown.",
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": true,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_INVISIBLE",
+			"Innate": "1",
+			"MaxLevel": "1",
+			"AbilityTextureName": "kez_switch_weapons_sai",
+			"HasScepterUpgrade": "1",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_5",
+			"AbilityCastGestureSlot": "ATTACK",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "8.0",
+			"AbilityValues": {
+				"katana_attack_range": "225",
+				"katana_base_attack_time": "2.0",
+				"katana_bonus_damage": "20",
+				"sai_attack_range": "150",
+				"sai_base_attack_time": "1.5",
+				"cooldown_reduction_per_level": "0.2",
+				"scepter_cooldown_timer": "3"
+			}
+		}
+	},
+	{
+		"id": 1498,
+		"name": "kez_echo_slash",
+		"hero_id": 145,
+		"behavior": "no_target|ignore_backswing|dont_resume_movement",
+		"damage_type": "physical",
+		"target_team": "enemy",
+		"cast_range": "800",
+		"cast_point": "0.2",
+		"cooldown": "20 18 16 14",
+		"mana_cost": "85 100 115 130",
+		"ability_special": [
+			{
+				"key": "katana_echo_damage",
+				"value": "70% 80% 90% 100%",
+				"header": "ATTACK DAMAGE:"
+			},
+			{
+				"key": "echo_hero_damage",
+				"value": "30 45 60 75",
+				"header": "BONUS HERO DAMAGE:"
+			},
+			{
+				"key": "katana_strikes",
+				"value": "2",
+				"header": "ATTACKS:"
+			},
+			{
+				"key": "strike_interval",
+				"value": "1.2",
+				"header": "ECHO DELAY:"
+			},
+			{
+				"key": "katana_radius",
+				"value": "200"
+			},
+			{
+				"key": "katana_distance",
+				"value": "800"
+			},
+			{
+				"key": "travel_distance",
+				"value": "250"
+			},
+			{
+				"key": "tag_slow",
+				"value": "100%",
+				"header": "MOVE SLOW:"
+			},
+			{
+				"key": "tag_slow_duration",
+				"value": "0.25",
+				"header": "SLOW DURATION:"
+			}
+		],
+		"slot": 1,
+		"icon": "/panorama/images/spellicons/kez_echo_slash_png.png",
+		"localized_name": "Echo Slash",
+		"description": "Kez slashes forward in a line with his Katana, dealing a percentage of his attack damage and a brief slow to targets in the area. After a short delay, the area is attacked again. Heroes take bonus damage.",
+		"lore": "Kez and his master Kraw have worked tirelessly to train the Kazurai new ways to keep the flyers off balance by improving upon ancient techniques.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Kez.EchoSlash.Katana.Start",
+			"LinkedAbility": "kez_falcon_rush",
+			"AbilityCastPoint": "0.2",
+			"AbilityCastRange": "800",
+			"AbilityCooldown": "20 18 16 14",
+			"AbilityManaCost": "85 100 115 130",
+			"AbilityValues": {
+				"katana_echo_damage": {
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL",
+					"value": "70 80 90 100"
+				},
+				"echo_hero_damage": {
+					"value": "30 45 60 75",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL"
+				},
+				"katana_strikes": {
+					"value": "2",
+					"special_bonus_unique_kez_echo_slash_strike_count": "+1"
+				},
+				"strike_interval": {
+					"value": "1.2",
+					"special_bonus_unique_kez_echo_slash_strike_count": "-0.6"
+				},
+				"katana_radius": {
+					"value": "200",
+					"affected_by_aoe_increase": "1"
+				},
+				"katana_distance": {
+					"value": "800",
+					"affected_by_aoe_increase": "1"
+				},
+				"travel_distance": "250",
+				"tag_slow": "100",
+				"tag_slow_duration": "0.25"
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
+		}
+	},
+	{
+		"id": 1499,
+		"name": "kez_grappling_claw",
+		"hero_id": 145,
+		"behavior": "unit_target|ignore_backswing|root_disables|dont_resume_movement",
+		"spell_immunity": "no",
+		"target_team": "enemy",
+		"cast_range": "700 800 900 1000",
+		"cast_point": "0",
+		"cooldown": "15 12 9 6",
+		"mana_cost": "50",
+		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "15 12 9 6"
+			},
+			{
+				"key": "AbilityCastRange",
+				"value": "700 800 900 1000"
+			},
+			{
+				"key": "land_distance",
+				"value": "75"
+			},
+			{
+				"key": "projectile_speed",
+				"value": "3000"
+			},
+			{
+				"key": "grapple_speed",
+				"value": "1800"
+			},
+			{
+				"key": "bonus_flat_lifesteal",
+				"value": "50 100 150 200",
+				"header": "HERO BONUS LIFESTEAL:"
+			},
+			{
+				"key": "lifesteal_pct",
+				"value": "100"
+			},
+			{
+				"key": "creep_lifesteal_reduction_pct",
+				"value": "40"
+			},
+			{
+				"key": "katana_ms_slow_pct",
+				"value": "80%",
+				"header": "MOVE SLOW:"
+			}
+		],
+		"slot": 2,
+		"icon": "/panorama/images/spellicons/kez_grappling_claw_png.png",
+		"localized_name": "Grappling Claw",
+		"description": "Kez swings on a grappling hook towards the target unit or tree.  When the grappling hook collides with the target, that unit has slowed movement speed until Kez arrives. Upon landing, he attacks with **100%** lifesteal plus a flat bonus if the target is a Hero.",
+		"lore": "The Kazurai have the speed and reach to drag even the highest flyers from the skies.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_TREE",
+			"AbilityUnitTargetFlag": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Kez.GrapplingClaw.Katana.Cast",
+			"LinkedAbility": "kez_talon_toss",
+			"AbilityCastPoint": "0.0",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
+			"AbilityManaCost": "50",
+			"AbilityValues": {
+				"AbilityCooldown": "15 12 9 6",
+				"AbilityCastRange": "700 800 900 1000",
+				"land_distance": "75",
+				"projectile_speed": "3000",
+				"grapple_speed": "1800",
+				"bonus_flat_lifesteal": "50 100 150 200",
+				"lifesteal_pct": "100",
+				"creep_lifesteal_reduction_pct": "40",
+				"katana_ms_slow_pct": "80"
+			},
+			"AbilityCastAnimation1": "ACT_DOTA_CAST_ABILITY_2"
+		}
+	},
+	{
+		"id": 1500,
+		"name": "kez_kazurai_katana",
+		"hero_id": 145,
+		"behavior": "passive",
+		"damage_type": "physical",
+		"spell_immunity": "yes",
+		"target_team": "enemy",
+		"dispellable": "yes",
+		"cast_range": "150",
+		"cast_point": "0",
+		"cooldown": "0",
+		"mana_cost": "0",
+		"ability_special": [
+			{
+				"key": "katana_attack_range",
+				"value": "225"
+			},
+			{
+				"key": "katana_base_attack_time",
+				"value": "2.0"
+			},
+			{
+				"key": "katana_bonus_damage",
+				"value": "20"
+			},
+			{
+				"key": "katana_bleed_duration",
+				"value": "5 6 7 8",
+				"header": "DURATION:"
+			},
+			{
+				"key": "katana_bleed_attack_damage_pct",
+				"value": "7% 8% 9% 10%",
+				"header": "DAMAGE PER SECOND:"
+			},
+			{
+				"key": "heal_reduction_pct",
+				"value": "20% 25% 30% 35%",
+				"header": "REGEN REDUCTION:"
+			},
+			{
+				"key": "AbilityCooldown",
+				"value": "0",
+				"shard_value": "5",
+				"shard_bonus": "5"
+			},
+			{
+				"key": "AbilityManaCost",
+				"value": "0",
+				"shard_value": "50",
+				"shard_bonus": "50"
+			},
+			{
+				"key": "stun_duration",
+				"value": "0",
+				"shard_upgrade": "1",
+				"shard_value": "0.6",
+				"shard_bonus": "06",
+				"header": "IMPALE DURATION:"
+			},
+			{
+				"key": "bleed_as_rupture_pct",
+				"value": "0%",
+				"shard_upgrade": "1",
+				"shard_value": "100",
+				"shard_bonus": "100",
+				"header": "STACKS AS BURST DAMAGE:"
+			}
+		],
+		"slot": 3,
+		"icon": "/panorama/images/spellicons/kez_kazurai_katana_png.png",
+		"localized_name": "Kazurai Katana",
+		"description": "Katana attacks and abilities apply a stacking damage over time to enemies that deals a percentage of the original attack's damage as additional damage over time. Affected enemies have non-stacking reduced health regeneration.",
+		"lore": "To fight back against the reach of Imperia and her Queensguard, the Kazurai had to become skilled in the ways of attrition.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": true,
+		"shard_description": "Kez may activate the ability to impale the target with his attack, briefly stunning himself and the target in place. The target's debuff bursts, removing it and causing the attack to deal bonus damage based on the stack amount.",
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"FightRecapLevel": "1",
+			"LinkedAbility": "kez_shodo_sai",
+			"HasShardUpgrade": "1",
+			"AbilitySound": "Hero_Kez.Katana.Impale.Start",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCastPoint": "0.0",
+			"AbilityCastRange": "150",
+			"AbilityValues": {
+				"katana_attack_range": "225",
+				"katana_base_attack_time": "2.0",
+				"katana_bonus_damage": "20",
+				"katana_bleed_duration": "5.0 6.0 7.0 8.0",
+				"katana_bleed_attack_damage_pct": {
+					"value": "7 8 9 10",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL",
+					"special_bonus_unique_kez_kazura_katana_bleed_damage": "+5.0"
+				},
+				"heal_reduction_pct": "20 25 30 35",
+				"AbilityCooldown": {
+					"value": "0",
+					"special_bonus_shard": "5"
+				},
+				"AbilityManaCost": {
+					"value": "0",
+					"special_bonus_shard": "50"
+				},
+				"stun_duration": {
+					"value": "0",
+					"special_bonus_shard": "0.6",
+					"RequiresShard": "1"
+				},
+				"bleed_as_rupture_pct": {
+					"value": "0",
+					"special_bonus_shard": "100",
+					"RequiresShard": "1",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL"
+				}
+			}
+		}
+	},
+	{
+		"id": 1501,
+		"name": "kez_raptor_dance",
+		"hero_id": 145,
+		"behavior": "channelled|no_target|aoe|ignore_backswing",
+		"damage_type": "pure",
+		"spell_immunity": "yes",
+		"target_team": "enemy",
+		"cast_point": "0",
+		"channel_time": "1",
+		"cooldown": "40 32 24",
+		"mana_cost": "100 125 150",
+		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "40 32 24"
+			},
+			{
+				"key": "strike_interval",
+				"value": "0.25"
+			},
+			{
+				"key": "strikes",
+				"value": "2 3 4",
+				"header": "STRIKES:"
+			},
+			{
+				"key": "radius",
+				"value": "450",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "base_damage",
+				"value": "75",
+				"header": "BASE DAMAGE:"
+			},
+			{
+				"key": "max_health_damage_pct",
+				"value": "4%",
+				"header": "MAX HEALTH AS DAMAGE:"
+			},
+			{
+				"key": "lifesteal_pct",
+				"value": "100%",
+				"header": "SLASH LIFESTEAL:"
+			},
+			{
+				"key": "magic_resist",
+				"value": "100"
+			},
+			{
+				"key": "hard_dispel",
+				"value": "1"
+			}
+		],
+		"slot": 6,
+		"icon": "/panorama/images/spellicons/kez_raptor_dance_png.png",
+		"localized_name": "Raptor Dance",
+		"description": "Kez enters into an uncontrollable channel for **1** second, gaining debuff immunity and **100%** magic resistance. If the channel completes successfully, Kez performs a series of deadly radial slashes around him that deal damage based on the max health of the target and heal Kez for a percentage of all damage dealt. Kez receives a strong dispel upon completion.",
+		"lore": "Unleash the inner fury of the Flightless to feast on the essence of your foes.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"FightRecapLevel": "1",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"LinkedAbility": "kez_ravens_veil",
+			"AbilitySound": "Hero_Kez.RaptorDance.Katana.Cast",
+			"AbilityCastPoint": "0.0",
+			"AbilityChannelTime": "1.0",
+			"AbilityManaCost": "100 125 150",
+			"AbilityValues": {
+				"AbilityCooldown": {
+					"value": "40 32 24",
+					"special_bonus_unique_kez_ultimate_cooldown": "-4"
+				},
+				"strike_interval": "0.25",
+				"strikes": "2 3 4",
+				"radius": {
+					"value": "450",
+					"affected_by_aoe_increase": "1",
+					"special_bonus_unique_kez_raptor_dance_radius": "+50"
+				},
+				"base_damage": {
+					"value": "75",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PURE"
+				},
+				"max_health_damage_pct": {
+					"value": "4",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PURE"
+				},
+				"lifesteal_pct": "100",
+				"magic_resist": "100",
+				"hard_dispel": "1"
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4"
+		}
+	},
+	{
+		"id": 1502,
+		"name": "kez_falcon_rush",
+		"hero_id": 145,
+		"behavior": "hidden|no_target|immediate|ignore_backswing|show_in_guides",
+		"target_team": "enemy",
+		"dispellable": "yes",
+		"cast_point": "0",
+		"cooldown": "20 18 16 14",
+		"mana_cost": "85 90 95 100",
+		"ability_special": [
+			{
+				"key": "duration",
+				"value": "7",
+				"header": "DURATION:"
+			},
+			{
+				"key": "rush_range",
+				"value": "650",
+				"header": "RUSH RANGE:"
+			},
+			{
+				"key": "buff_evasion_pct",
+				"value": "0%",
+				"header": "EVASION:"
+			},
+			{
+				"key": "rush_speed",
+				"value": "1000",
+				"header": "RUSH SPEED:"
+			},
+			{
+				"key": "base_attack_rate",
+				"value": "1.3 1.2 1.1 1",
+				"header": "BASE ATTACK RATE:"
+			},
+			{
+				"key": "attack_speed_factor",
+				"value": "6% 7% 8% 9%",
+				"header": "ATTACK SPEED FACTOR:"
+			},
+			{
+				"key": "current_attack_rate_tooltip",
+				"header": "CURRENT ATTACK RATE:"
+			},
+			{
+				"key": "echo_damage",
+				"value": "100"
+			}
+		],
+		"slot": 7,
+		"icon": "/panorama/images/spellicons/kez_falcon_rush_png.png",
+		"localized_name": "Falcon Rush",
+		"description": "Kez gains the ability to rush towards enemy targets to deliver echoing secondary attacks.  While in this state, Kez has phased collision and an attack rate that is less affected by attack speed.",
+		"lore": "An ancient Shodo technique used to hunt faster aerial foes, stealing the advantage and delivering multiple attacks within a single flap of their prey's panicking wings.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
+			"AbilitySound": "Hero_Kez.FalconRush.Sai.Cast",
+			"LinkedAbility": "kez_echo_slash",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCastPoint": "0.0",
+			"AbilityCooldown": "20 18 16 14",
+			"AbilityManaCost": "85 90 95 100",
+			"AbilityValues": {
+				"duration": {
+					"value": "7.0",
+					"special_bonus_unique_kez_falcon_rush_duration": "+2.0"
+				},
+				"rush_range": {
+					"value": "650",
+					"affected_by_aoe_increase": "1"
+				},
+				"buff_evasion_pct": {
+					"value": "0",
+					"special_bonus_unique_kez_falcon_rush_evasion": "+50"
+				},
+				"rush_speed": "1000",
+				"base_attack_rate": "1.3 1.2 1.1 1.0",
+				"attack_speed_factor": "6 7 8 9",
+				"current_attack_rate_tooltip": {
+					"dynamic_value": "true"
+				},
+				"echo_damage": {
+					"value": "100",
+					"DamageTypeTooltip": "DAMAGE_TYPE_PHYSICAL"
+				}
+			}
+		}
+	},
+	{
+		"id": 1503,
+		"name": "kez_talon_toss",
+		"hero_id": 145,
+		"behavior": "hidden|unit_target|aoe|ignore_backswing|show_in_guides",
+		"damage_type": "magical",
+		"spell_immunity": "no",
+		"target_team": "enemy",
+		"cast_range": "1200",
+		"cast_point": "0.2",
+		"cooldown": "15 12 9 6",
+		"mana_cost": "75",
+		"ability_special": [
+			{
+				"key": "radius",
+				"value": "275",
+				"header": "RADIUS:"
+			},
+			{
+				"key": "damage",
+				"value": "75 125 175 225",
+				"header": "DAMAGE:"
+			},
+			{
+				"key": "speed",
+				"value": "2000"
+			},
+			{
+				"key": "silence_duration",
+				"value": "1.75 2 2.25 2.5",
+				"header": "SILENCE DURATION:"
+			}
+		],
+		"slot": 8,
+		"icon": "/panorama/images/spellicons/kez_talon_toss_png.png",
+		"localized_name": "Talon Toss",
+		"description": "Kez throws a Sai at the target unit. The Sai detonates when it hits, dealing damage and applying silence to all enemies in the area.",
+		"lore": "The Shodo learned to rely upon distance and disorientation to survive against much stronger opposition.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+			"FightRecapLevel": "1",
+			"LinkedAbility": "kez_grappling_claw",
+			"AbilitySound": "Hero_Kez.TalonToss.Target",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2",
+			"AbilityCastPoint": "0.2",
+			"AbilityCastRange": "1200",
+			"AbilityManaCost": "75",
+			"AbilityCooldown": "15 12 9 6",
+			"AbilityValues": {
+				"radius": {
+					"value": "275",
+					"affected_by_aoe_increase": "1"
+				},
+				"damage": {
+					"value": "75 125 175 225",
+					"DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
+				},
+				"speed": "2000",
+				"silence_duration": "1.75 2.0 2.25 2.5"
+			}
+		}
+	},
+	{
+		"id": 1504,
+		"name": "kez_shodo_sai",
+		"hero_id": 145,
+		"behavior": "hidden|point|immediate|ignore_backswing|dont_cancel_movement|show_in_guides",
+		"spell_immunity": "yes",
+		"dispellable": "yes_strong",
+		"cast_point": "0",
+		"cooldown": "20 15 10 5",
+		"mana_cost": "30 20 10 0",
+		"ability_special": [
+			{
+				"key": "sai_attack_range",
+				"value": "150"
+			},
+			{
+				"key": "sai_base_attack_time",
+				"value": "1.5"
+			},
+			{
+				"key": "sai_proc_vuln_chance",
+				"value": "17%",
+				"header": "CHANCE TO MARK:"
+			},
+			{
+				"key": "vuln_slow",
+				"value": "10%",
+				"header": "MARKED MOVE SLOW:"
+			},
+			{
+				"key": "vuln_duration",
+				"value": "8",
+				"header": "MARKED DURATION:"
+			},
+			{
+				"key": "base_crit_pct",
+				"value": "140% 160% 180% 200%",
+				"header": "MARKED CRITICAL STRIKE:"
+			},
+			{
+				"key": "stun_duration",
+				"value": "0.5",
+				"header": "MARKED STUN DURATION:"
+			},
+			{
+				"key": "shard_base_movement_speed",
+				"value": "0",
+				"shard_upgrade": "1",
+				"shard_value": "10",
+				"shard_bonus": "10"
+			},
+			{
+				"key": "shard_vuln_movement_speed",
+				"value": "0",
+				"shard_upgrade": "1",
+				"shard_value": "10",
+				"shard_bonus": "10"
+			},
+			{
+				"key": "forward_angle",
+				"value": "180"
+			},
+			{
+				"key": "speed_penalty",
+				"value": "25"
+			},
+			{
+				"key": "parry_duration",
+				"value": "2.0"
+			},
+			{
+				"key": "parry_bonus_crit",
+				"value": "25% 50% 75% 100%",
+				"header": "PARRY BONUS CRITICAL STRIKE:"
+			},
+			{
+				"key": "parry_stun_duration",
+				"value": "0.5",
+				"header": "PARRY BONUS STUN DURATION:"
+			}
+		],
+		"slot": 9,
+		"icon": "/panorama/images/spellicons/kez_shodo_sai_png.png",
+		"localized_name": "Shodo Sai",
+		"description": "Kez's attacks and abilities with the Sai have a chance to Mark enemies. Marked enemies are slowed, and the next attack or ability damage from Kez gains True Strike and will stun the enemy and deal a critical strike, consuming the buff.\n\nKez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for **2** seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned and Marked, taking additional critical strike and stun when the debuff is triggered.\n\nThe sub-ability may be used to cancel the blocking early.",
+		"lore": "The Shodo may have lost their way, but Kez and the Kazurai can still use Shodo knowledge for the good of the people.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": true,
+		"shard_description": "Passively grants **10** movement speed, and an additional **10** movement speed per Marked enemy.",
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"FightRecapLevel": "1",
+			"HasShardUpgrade": "1",
+			"AbilitySound": "Hero_Kez.Sai.Proc",
+			"LinkedAbility": "kez_shodo_sai_parry_cancel",
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
+			"AbilityCastGestureSlot": "DEFAULT",
+			"AbilityCastPoint": "0.0",
+			"AbilityManaCost": "30 20 10 0",
+			"AbilityCooldown": "20 15 10 5",
+			"AbilityValues": {
+				"sai_attack_range": "150",
+				"sai_base_attack_time": "1.5",
+				"sai_proc_vuln_chance": "17",
+				"vuln_slow": "10",
+				"vuln_duration": "8.0",
+				"base_crit_pct": {
+					"value": "140 160 180 200",
+					"special_bonus_unique_kez_mark_damage": "+75"
+				},
+				"stun_duration": "0.5",
+				"shard_base_movement_speed": {
+					"value": "0",
+					"special_bonus_shard": "10",
+					"RequiresShard": "1"
+				},
+				"shard_vuln_movement_speed": {
+					"value": "0",
+					"special_bonus_shard": "10",
+					"RequiresShard": "1"
+				},
+				"forward_angle": "180",
+				"speed_penalty": "25",
+				"parry_duration": "2.0",
+				"parry_bonus_crit": "25 50 75 100",
+				"parry_stun_duration": "0.5"
+			}
+		}
+	},
+	{
+		"id": 1505,
+		"name": "kez_shodo_sai_parry_cancel",
+		"hero_id": 145,
+		"behavior": "no_target|immediate|ignore_backswing|not_learnable|hidden|dont_resume_movement",
+		"cast_range": "0",
+		"cast_point": "0",
+		"cooldown": "1",
+		"ability_special": [],
+		"slot": 11,
+		"icon": "/panorama/images/spellicons/kez_shodo_sai_parry_cancel_png.png",
+		"localized_name": "kez_shodo_sai_parry_cancel",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
+			"AbilityCooldown": "1.0",
+			"AbilityCastPoint": "0.0",
+			"AbilityCastRange": "0",
+			"MaxLevel": "1",
+			"LinkedAbility": "kez_kazurai_katana"
+		}
+	},
+	{
+		"id": 1506,
+		"name": "kez_ravens_veil",
+		"hero_id": 145,
+		"behavior": "hidden|no_target|ignore_backswing|show_in_guides",
+		"spell_immunity": "yes",
+		"target_team": "enemy",
+		"dispellable": "yes_strong",
+		"cast_range": "0",
+		"cast_point": "0.3",
+		"cooldown": "40 32 24",
+		"mana_cost": "100 125 150",
+		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "40 32 24"
+			},
+			{
+				"key": "blast_radius",
+				"value": "1500",
+				"header": "WAVE RADIUS:"
+			},
+			{
+				"key": "blast_speed",
+				"value": "1500",
+				"header": "WAVE SPEED:"
+			},
+			{
+				"key": "buff_duration",
+				"value": "7 8 9",
+				"header": "DURATION:"
+			},
+			{
+				"key": "blind_duration",
+				"value": "4",
+				"header": "BLIND DURATION:"
+			},
+			{
+				"key": "bonus_ms",
+				"value": "15% 25% 35%",
+				"header": "BONUS MOVEMENT SPEED:"
+			},
+			{
+				"key": "basic_dispel",
+				"value": "1"
+			},
+			{
+				"key": "fade_delay",
+				"value": "0.0"
+			},
+			{
+				"key": "apply_parry_bonus",
+				"value": "1"
+			}
+		],
+		"slot": 10,
+		"icon": "/panorama/images/spellicons/kez_ravens_veil_png.png",
+		"localized_name": "Raven's Veil",
+		"description": "Kez releases a wave of smoke that applies his Mark with Parry bonus to nearby enemies, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
+		"lore": "Eying either threat or opportunity, Shodo masters slip instantly into shadow to reset the terms of any engagement in their own favor.",
+		"scepter_grants": false,
+		"scepter_upgrades": false,
+		"shard_grants": false,
+		"shard_upgrades": false,
+		"innate": false,
+		"json_data": {
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+			"AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+			"AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+			"SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+			"AbilityDamageType": "DAMAGE_TYPE_PURE",
+			"AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+			"FightRecapLevel": "1",
+			"AbilitySound": "Hero_Kez.RavensVeil.Sai.Cast",
+			"LinkedAbility": "kez_raptor_dance",
+			"AbilityCastPoint": "0.3",
+			"AbilityCastRange": "0",
+			"AbilityManaCost": "100 125 150",
+			"AbilityValues": {
+				"AbilityCooldown": {
+					"value": "40 32 24",
+					"special_bonus_unique_kez_ultimate_cooldown": "-4"
+				},
+				"blast_radius": {
+					"value": "1500",
+					"affected_by_aoe_increase": "1"
+				},
+				"blast_speed": "1500",
+				"buff_duration": "7 8 9",
+				"blind_duration": "4.0",
+				"bonus_ms": "15 25 35",
+				"basic_dispel": "1",
+				"fade_delay": "0.0",
+				"apply_parry_bonus": "1"
+			},
+			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+			"AbilityCastGestureSlot": "DEFAULT"
+		}
+	},
+	{
+		"id": 1507,
+		"name": "special_bonus_unique_kez_grapple_cast_range",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_AbilityCastRange% Grappling Claw Cast Range",
+		"json_data": {}
+	},
+	{
+		"id": 1508,
+		"name": "special_bonus_unique_kez_parry_bonus",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_parry_bonus_crit% Parry Bonuses",
+		"json_data": {}
+	},
+	{
+		"id": 1509,
+		"name": "special_bonus_unique_kez_raptor_dance_radius",
+		"ability_special": [
+			{
+				"key": "bonus_radius",
+				"value": "50",
+				"header": "RADIUS:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+50 Raptor Dance Radius",
+		"json_data": {}
+	},
+	{
+		"id": 1510,
+		"name": "special_bonus_unique_kez_kazura_katana_bleed_damage",
+		"ability_special": [
+			{
+				"key": "bonus_katana_bleed_attack_damage_pct",
+				"value": "5%",
+				"header": "DAMAGE PER SECOND:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+5% Kazurai Katana Damage Per Second",
+		"json_data": {}
+	},
+	{
+		"id": 1511,
+		"name": "special_bonus_unique_kez_falcon_rush_duration",
+		"ability_special": [
+			{
+				"key": "bonus_duration",
+				"value": "2",
+				"header": "DURATION:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+2s Falcon Rush Duration",
+		"json_data": {}
+	},
+	{
+		"id": 1512,
+		"name": "special_bonus_unique_kez_slip_applies_parry_bonus",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_kez_slip_applies_parry_bonus",
+		"json_data": {}
+	},
+	{
+		"id": 1513,
+		"name": "special_bonus_unique_kez_echo_slash_strike_count",
+		"ability_special": [
+			{
+				"key": "bonus_katana_strikes",
+				"value": "1",
+				"header": "ATTACKS:"
+			},
+			{
+				"key": "bonus_strike_interval",
+				"value": "0.6",
+				"header": "ECHO DELAY:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+1 Echo Slash Attack",
+		"description": "-0.6s Interval",
+		"json_data": {}
+	},
+	{
+		"id": 1514,
+		"name": "special_bonus_unique_kez_mark_damage",
+		"ability_special": [
+			{
+				"key": "bonus_base_crit_pct",
+				"value": "75%",
+				"header": "MARKED CRITICAL STRIKE:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+75% Shodo Sai Mark Critical Strike",
+		"json_data": {}
+	},
+	{
+		"id": 1515,
+		"name": "special_bonus_unique_kez_ultimate_cooldown",
+		"ability_special": [
+			{
+				"key": "bonus_AbilityCooldown",
+				"value": "4"
+			},
+			{
+				"key": "bonus_AbilityCooldown",
+				"value": "4"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-4s Raptor Dance / Raven's Veil Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 1516,
+		"name": "special_bonus_unique_kez_falcon_rush_evasion",
+		"ability_special": [
+			{
+				"key": "bonus_buff_evasion_pct",
+				"value": "50%",
+				"header": "EVASION:"
+			}
+		],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+50% Falcon Rush Evasion",
+		"json_data": {}
+	},
+	{
 		"id": 1539,
 		"name": "special_bonus_unique_zeus_static_field_dmg",
 		"behavior": "passive",
@@ -34270,6 +36153,51 @@
 		"shard_grants": false,
 		"shard_upgrades": false,
 		"innate": false,
+		"json_data": {}
+	},
+	{
+		"id": 2091,
+		"name": "item_tier1_token",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tier 1 Token",
+		"description": "Activate to redeem a Tier 1 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+		"json_data": {}
+	},
+	{
+		"id": 2092,
+		"name": "item_tier2_token",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tier 2 Token",
+		"description": "Activate to redeem a Tier 2 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+		"json_data": {}
+	},
+	{
+		"id": 2093,
+		"name": "item_tier3_token",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tier 3 Token",
+		"description": "Activate to redeem a Tier 3 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+		"json_data": {}
+	},
+	{
+		"id": 2094,
+		"name": "item_tier4_token",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tier 4 Token",
+		"description": "Activate to redeem a Tier 4 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+		"json_data": {}
+	},
+	{
+		"id": 2095,
+		"name": "item_tier5_token",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tier 5 Token",
+		"description": "Activate to redeem a Tier 5 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
 		"json_data": {}
 	},
 	{
@@ -35407,17 +37335,17 @@
 			{
 				"key": "armor_bonus",
 				"value": "20 25 30",
-				"header": "ARMOR BONUS:"
+				"header": "KILL ARMOR BONUS:"
 			},
 			{
 				"key": "speed_duration",
 				"value": "6",
-				"header": "KILL SPEED DURATION:"
+				"header": "KILL BUFF DURATION:"
 			},
 			{
 				"key": "speed_aoe",
 				"value": "900",
-				"header": "KILL SPEED RADIUS:"
+				"header": "KILL BUFF RADIUS:"
 			},
 			{
 				"key": "charge_speed",
@@ -36476,6 +38404,14 @@
 				"silence_radius": "300"
 			}
 		}
+	},
+	{
+		"id": 5021,
+		"name": "drow_ranger_precision_aura",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "drow_ranger_precision_aura",
+		"json_data": {}
 	},
 	{
 		"id": 5022,
@@ -38971,6 +40907,14 @@
 		}
 	},
 	{
+		"id": 5049,
+		"name": "mirana_moonlight_shadow",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "mirana_moonlight_shadow",
+		"json_data": {}
+	},
+	{
 		"id": 5050,
 		"name": "mirana_leap",
 		"hero_id": 9,
@@ -40805,6 +42749,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 5068,
+		"name": "phantom_lancer_phantom_rush",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "phantom_lancer_phantom_rush",
+		"json_data": {}
 	},
 	{
 		"id": 5069,
@@ -44296,6 +46248,14 @@
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
+	},
+	{
+		"id": 5104,
+		"name": "sand_king_caustic_finale",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "sand_king_caustic_finale",
+		"json_data": {}
 	},
 	{
 		"id": 5105,
@@ -50307,6 +52267,22 @@
 		}
 	},
 	{
+		"id": 5166,
+		"name": "warlock_champion_of_gorroth_flaming_fists",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "warlock_champion_of_gorroth_flaming_fists",
+		"json_data": {}
+	},
+	{
+		"id": 5167,
+		"name": "warlock_champion_of_gorroth_permanent_immolation",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "warlock_champion_of_gorroth_permanent_immolation",
+		"json_data": {}
+	},
+	{
 		"id": 5168,
 		"name": "beastmaster_wild_axes",
 		"hero_id": 38,
@@ -54968,6 +56944,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 5232,
+		"name": "dragon_knight_frost_breath",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Frost Breath",
+		"json_data": {}
 	},
 	{
 		"id": 5233,
@@ -59701,6 +61685,14 @@
 		}
 	},
 	{
+		"id": 5285,
+		"name": "bounty_hunter_through_and_through_toss",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "bounty_hunter_through_and_through_toss",
+		"json_data": {}
+	},
+	{
 		"id": 5286,
 		"name": "bounty_hunter_jinada",
 		"hero_id": 62,
@@ -63444,6 +65436,9 @@
 			{
 				"key": "AbilityCooldown",
 				"value": "70.0"
+			},
+			{
+				"key": "can_target_ancient"
 			}
 		],
 		"slot": 1,
@@ -63491,6 +65486,9 @@
 				"AbilityCooldown": {
 					"value": "70.0",
 					"special_bonus_facet_doom_bringer_gluttony": "=0.0"
+				},
+				"can_target_ancient": {
+					"special_bonus_unique_doom_2": "=1"
 				}
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
@@ -63509,6 +65507,10 @@
 		"cooldown": "41 39 37 35",
 		"mana_cost": "60 70 80 90",
 		"ability_special": [
+			{
+				"key": "AbilityCooldown",
+				"value": "41 39 37 35"
+			},
 			{
 				"key": "damage_per_second",
 				"value": "20 35 50 65",
@@ -63558,9 +65560,12 @@
 			"HasShardUpgrade": "1",
 			"AbilityCastPoint": "0.0 0.0 0.0 0.0",
 			"AbilityCastRange": "600 600 600 600",
-			"AbilityCooldown": "41 39 37 35",
 			"AbilityManaCost": "60 70 80 90",
 			"AbilityValues": {
+				"AbilityCooldown": {
+					"value": "41 39 37 35",
+					"special_bonus_unique_doom_9": "-10"
+				},
 				"damage_per_second": {
 					"value": "20 35 50 65",
 					"special_bonus_unique_doom_4": "+10"
@@ -65925,6 +67930,14 @@
 				"brew_explosion": "7.0"
 			}
 		}
+	},
+	{
+		"id": 5368,
+		"name": "alchemist_greevils_greed",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "alchemist_greevils_greed",
+		"json_data": {}
 	},
 	{
 		"id": 5369,
@@ -69419,6 +71432,14 @@
 		}
 	},
 	{
+		"id": 5412,
+		"name": "lone_druid_summon_spirit_bear",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear",
+		"json_data": {}
+	},
+	{
 		"id": 5413,
 		"name": "lone_druid_rabid",
 		"behavior": "no_target|immediate",
@@ -69786,6 +71807,30 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 5418,
+		"name": "lone_druid_summon_spirit_bear_return",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear_return",
+		"json_data": {}
+	},
+	{
+		"id": 5419,
+		"name": "lone_druid_summon_spirit_bear_entangle",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear_entangle",
+		"json_data": {}
+	},
+	{
+		"id": 5420,
+		"name": "lone_druid_summon_spirit_bear_demolish",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear_demolish",
+		"json_data": {}
 	},
 	{
 		"id": 5421,
@@ -73844,7 +75889,6 @@
 			"SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
 			"FightRecapLevel": "1",
 			"AbilitySound": "Hero_KeeperOfTheLight.Illuminate.Discharge",
-			"AbilityDraftPreAbility": "keeper_of_the_light_spirit_form_illuminate",
 			"AbilityCastRange": "1800",
 			"AbilityCastPoint": "0",
 			"AbilityChannelTime": "3",
@@ -74334,6 +76378,17 @@
 			"AbilityCastAnimation": "ACT_INVALID",
 			"AbilityCooldown": "1.0 1.0 1.0"
 		}
+	},
+	{
+		"id": 5479,
+		"name": "keeper_of_the_light_spirit_form_illuminate",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/keeper_of_the_light_spirit_form_illuminate_png.png",
+		"localized_name": "Illuminate",
+		"description": "Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+		"lore": "Ezalor's hidden light reveals itself in marvelous fashion.",
+		"note": "Gives increasing vision over the channeling time.",
+		"json_data": {}
 	},
 	{
 		"id": 5480,
@@ -75901,6 +77956,15 @@
 		}
 	},
 	{
+		"id": 5503,
+		"name": "keeper_of_the_light_spirit_form_illuminate_end",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/keeper_of_the_light_spirit_form_illuminate_end_png.png",
+		"localized_name": "Release Illuminate",
+		"description": "Release the channel early.",
+		"json_data": {}
+	},
+	{
 		"id": 5504,
 		"name": "medusa_split_shot",
 		"hero_id": 94,
@@ -77152,6 +79216,9 @@
 			{
 				"key": "aura_radius",
 				"value": "1200"
+			},
+			{
+				"key": "aura_enabled"
 			}
 		],
 		"slot": 3,
@@ -77183,6 +79250,9 @@
 				"aura_radius": {
 					"value": "1200",
 					"affected_by_aoe_increase": "1"
+				},
+				"aura_enabled": {
+					"special_bonus_unique_centaur_1": "=1"
 				}
 			}
 		}
@@ -82643,6 +84713,14 @@
 		}
 	},
 	{
+		"id": 5591,
+		"name": "elder_titan_astral_spirit",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "elder_titan_astral_spirit",
+		"json_data": {}
+	},
+	{
 		"id": 5592,
 		"name": "elder_titan_return_spirit",
 		"hero_id": 103,
@@ -84636,6 +86714,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 5611,
+		"name": "earth_spirit_stone_remnant",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "earth_spirit_stone_remnant",
+		"json_data": {}
 	},
 	{
 		"id": 5612,
@@ -91366,6 +93452,14 @@
 		}
 	},
 	{
+		"id": 5763,
+		"name": "special_bonus_unique_tusk_tag_team_armor_reduction",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_armor_reduction% Tag Team Armor Reduction",
+		"json_data": {}
+	},
+	{
 		"id": 5900,
 		"name": "special_bonus_hp_100",
 		"behavior": "passive",
@@ -93740,7 +95834,6 @@
 	{
 		"id": 5988,
 		"name": "special_bonus_unique_centaur_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_stun_duration",
@@ -93750,16 +95843,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+0.8s Hoof Stomp Duration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "centaur_hoof_stomp"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 5989,
@@ -94622,6 +96706,14 @@
 		}
 	},
 	{
+		"id": 6024,
+		"name": "special_bonus_unique_treant",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Living Armor Block Instances",
+		"json_data": {}
+	},
+	{
 		"id": 6025,
 		"name": "special_bonus_20_bash_2",
 		"behavior": "passive",
@@ -95052,6 +97144,14 @@
 		}
 	},
 	{
+		"id": 6045,
+		"name": "special_bonus_unique_sven",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Storm Hammer Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 6047,
 		"name": "special_bonus_unique_dark_seer",
 		"behavior": "passive",
@@ -95345,6 +97445,14 @@
 		}
 	},
 	{
+		"id": 6057,
+		"name": "special_bonus_unique_vengeful_spirit_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Magic Missile Damage Becomes Pure And Pierces Debuff Immunity",
+		"json_data": {}
+	},
+	{
 		"id": 6058,
 		"name": "special_bonus_unique_venomancer",
 		"behavior": "passive",
@@ -95632,6 +97740,14 @@
 		}
 	},
 	{
+		"id": 6068,
+		"name": "special_bonus_unique_bane_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Enfeeble Attack Speed Reduction",
+		"json_data": {}
+	},
+	{
 		"id": 6069,
 		"name": "special_bonus_unique_bane_2",
 		"behavior": "passive",
@@ -95739,7 +97855,6 @@
 	{
 		"id": 6073,
 		"name": "special_bonus_unique_doom_1",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_burn_damage_pct",
@@ -95749,16 +97864,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+2.5% Infernal Blade Max HP As Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6074,
@@ -95943,6 +98049,14 @@
 		}
 	},
 	{
+		"id": 6083,
+		"name": "special_bonus_unique_bristleback",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Max Goo Stacks",
+		"json_data": {}
+	},
+	{
 		"id": 6084,
 		"name": "special_bonus_unique_furion",
 		"behavior": "passive",
@@ -96078,9 +98192,16 @@
 		}
 	},
 	{
+		"id": 6089,
+		"name": "special_bonus_unique_kunkka",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_radius% Torrent AoE",
+		"json_data": {}
+	},
+	{
 		"id": 6090,
 		"name": "special_bonus_unique_dragon_knight",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_base_health_regen",
@@ -96095,16 +98216,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+12 Dragon Blood HP Regen/Armor",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6091,
@@ -96269,6 +98381,14 @@
 		}
 	},
 	{
+		"id": 6097,
+		"name": "special_bonus_unique_invoker_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%bonus_spirit_count% Forged Spirits Summoned",
+		"json_data": {}
+	},
+	{
 		"id": 6098,
 		"name": "special_bonus_unique_invoker_2",
 		"behavior": "passive",
@@ -96349,7 +98469,6 @@
 	{
 		"id": 6101,
 		"name": "special_bonus_unique_alchemist",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_radius",
@@ -96363,21 +98482,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+125 Unstable Concoction Radius",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6102,
 		"name": "special_bonus_unique_axe",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_armor_multiplier",
@@ -96387,16 +98496,15 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "2x Battle Hunger Armor Multiplier",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 6103,
+		"name": "special_bonus_unique_beastmaster",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_axe_damage% Wild Axes Damage",
+		"json_data": {}
 	},
 	{
 		"id": 6104,
@@ -96421,6 +98529,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6105,
+		"name": "special_bonus_unique_juggernaut",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_blade_fury_radius% Blade Fury Radius",
+		"json_data": {}
 	},
 	{
 		"id": 6106,
@@ -97107,7 +99223,6 @@
 	{
 		"id": 6133,
 		"name": "special_bonus_unique_chaos_knight",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_pierces_immunity",
@@ -97116,16 +99231,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Reality Rift Pierces Spell Immunity",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6134,
@@ -97369,6 +99475,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6144,
+		"name": "special_bonus_unique_windranger",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_radius% Windrun Radius",
+		"json_data": {}
 	},
 	{
 		"id": 6145,
@@ -98131,6 +100245,15 @@
 		}
 	},
 	{
+		"id": 6174,
+		"name": "special_bonus_unique_lion",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Mana Drain Multi Target",
+		"description": "Automatically targets additional enemy units with a mana pool within 400 distance around the original target.",
+		"json_data": {}
+	},
+	{
 		"id": 6175,
 		"name": "special_bonus_armor_15",
 		"behavior": "passive",
@@ -98577,7 +100700,6 @@
 	{
 		"id": 6198,
 		"name": "special_bonus_unique_sniper_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityChargeRestoreTime",
@@ -98586,16 +100708,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-30s Shrapnel Charge Restore Time",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6199,
@@ -98662,6 +100775,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6201,
+		"name": "special_bonus_unique_wraith_king_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "No Reincarnation Manacost",
+		"json_data": {}
 	},
 	{
 		"id": 6202,
@@ -99059,6 +101180,14 @@
 		}
 	},
 	{
+		"id": 6218,
+		"name": "special_bonus_unique_legion_commander",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Duel Bonus Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6219,
 		"name": "special_bonus_unique_puck",
 		"behavior": "passive",
@@ -99216,6 +101345,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6225,
+		"name": "special_bonus_unique_morphling_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value% Morph Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 6226,
@@ -99381,6 +101518,23 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6230,
+		"name": "special_bonus_unique_bloodseeker",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Blood Rite Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 6231,
+		"name": "special_bonus_unique_clinkz_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Death Pact Steal creep abilities",
+		"note": "Only steals the first ability",
+		"json_data": {}
 	},
 	{
 		"id": 6232,
@@ -99560,6 +101714,15 @@
 		}
 	},
 	{
+		"id": 6240,
+		"name": "special_bonus_unique_leshrac_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Lightning Storm Can Bounce Twice On Units",
+		"description": "Will bounce to units it affected already only when there are no other units available",
+		"json_data": {}
+	},
+	{
 		"id": 6241,
 		"name": "special_bonus_unique_outworld_devourer",
 		"behavior": "passive",
@@ -99637,6 +101800,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6245,
+		"name": "special_bonus_unique_pudge_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Rot Damage",
+		"json_data": {}
 	},
 	{
 		"id": 6247,
@@ -99924,6 +102095,14 @@
 		}
 	},
 	{
+		"id": 6259,
+		"name": "special_bonus_unique_chen_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_AbilityCharges% Holy Persuasion Max Units and Charges",
+		"json_data": {}
+	},
+	{
 		"id": 6260,
 		"name": "special_bonus_unique_chen_2",
 		"behavior": "passive",
@@ -99953,6 +102132,14 @@
 		}
 	},
 	{
+		"id": 6261,
+		"name": "special_bonus_unique_lone_druid_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Spirit Bear Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6262,
 		"name": "special_bonus_unique_lone_druid_2",
 		"behavior": "passive",
@@ -99974,6 +102161,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6263,
+		"name": "special_bonus_unique_lone_druid_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_building_damage% Demolish Building Armor Reduction",
+		"json_data": {}
 	},
 	{
 		"id": 6265,
@@ -100325,6 +102520,14 @@
 		}
 	},
 	{
+		"id": 6288,
+		"name": "special_bonus_unique_meepo",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_slow% Poof Slow",
+		"json_data": {}
+	},
+	{
 		"id": 6289,
 		"name": "special_bonus_lifesteal_15",
 		"behavior": "passive",
@@ -100411,6 +102614,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6293,
+		"name": "special_bonus_unique_shadow_demon_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Soul Catcher Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 6295,
@@ -100620,6 +102831,22 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6303,
+		"name": "special_bonus_unique_monkey_king",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Boundless Strike Crit",
+		"json_data": {}
+	},
+	{
+		"id": 6305,
+		"name": "special_bonus_unique_sniper_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_shrapnel_damage% Shrapnel DPS",
+		"json_data": {}
 	},
 	{
 		"id": 6306,
@@ -100847,30 +103074,15 @@
 	{
 		"id": 6314,
 		"name": "special_bonus_unique_doom_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "0"
+				"key": "bonus_can_target_ancient",
+				"value": "=1"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Devour Can Target Ancients",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "0",
-					"ad_linked_abilities": "doom_bringer_devour"
-				}
-			}
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6316,
@@ -100944,6 +103156,14 @@
 		}
 	},
 	{
+		"id": 6320,
+		"name": "special_bonus_unique_visage_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_movement_speed% Visage and Familiars Movement Speed",
+		"json_data": {}
+	},
+	{
 		"id": 6321,
 		"name": "special_bonus_mp_400",
 		"behavior": "passive",
@@ -100973,31 +103193,16 @@
 	{
 		"id": 6322,
 		"name": "special_bonus_unique_centaur_1",
-		"behavior": "passive",
 		"ability_special": [
 			{
-				"key": "value",
-				"value": "1"
+				"key": "bonus_aura_enabled",
+				"value": "=1"
 			}
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Gains Retaliate Aura",
 		"description": "Allied heroes within 1200 range of Centaur gain the Return Damage aspect of Retaliate.",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "1",
-					"ad_linked_abilities": "centaur_return"
-				}
-			}
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6325,
@@ -101205,6 +103410,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6331,
+		"name": "special_bonus_unique_enchantress_1",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Enchant Affects Ancients",
+		"json_data": {}
 	},
 	{
 		"id": 6332,
@@ -102014,7 +104227,6 @@
 	{
 		"id": 6350,
 		"name": "special_bonus_unique_alchemist_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_max_damage",
@@ -102028,16 +104240,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+400 Unstable Concoction Max Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6351,
@@ -102110,6 +104313,14 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		}
+	},
+	{
+		"id": 6354,
+		"name": "special_bonus_unique_arc_warden_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage_per_second% Flux Damage",
+		"json_data": {}
 	},
 	{
 		"id": 6355,
@@ -102234,7 +104445,6 @@
 	{
 		"id": 6360,
 		"name": "special_bonus_unique_bristleback_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_quill_stack_damage",
@@ -102244,16 +104454,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+20 Quill Stack Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6361,
@@ -102330,6 +104531,14 @@
 			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		}
+	},
+	{
+		"id": 6364,
+		"name": "special_bonus_unique_clockwerk_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Power Cogs Leash Units Inside",
+		"json_data": {}
 	},
 	{
 		"id": 6365,
@@ -102445,7 +104654,6 @@
 	{
 		"id": 6369,
 		"name": "special_bonus_unique_doom_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_magic_resist",
@@ -102454,20 +104662,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Devour grants 15% Magic Resistance",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6370,
 		"name": "special_bonus_unique_doom_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage_per_second",
@@ -102477,16 +104676,15 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10 Scorched Earth Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 6371,
+		"name": "special_bonus_unique_doom_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage% Doom DPS",
+		"json_data": {}
 	},
 	{
 		"id": 6372,
@@ -103233,6 +105431,14 @@
 		}
 	},
 	{
+		"id": 6407,
+		"name": "special_bonus_unique_queen_of_pain",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% AoE Shadow Strike",
+		"json_data": {}
+	},
+	{
 		"id": 6408,
 		"name": "special_bonus_unique_razor_2",
 		"behavior": "passive",
@@ -103743,6 +105949,14 @@
 		}
 	},
 	{
+		"id": 6449,
+		"name": "special_bonus_unique_legion_commander_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_radius% Overwhelming Odds Radius",
+		"json_data": {}
+	},
+	{
 		"id": 6459,
 		"name": "pangolier_gyroshell_stop",
 		"hero_id": 120,
@@ -103964,6 +106178,14 @@
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
 		}
+	},
+	{
+		"id": 6463,
+		"name": "special_bonus_unique_pangolier_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%bonus_rolling_thunder_cooldown%s Shield Crash CD in Ball",
+		"json_data": {}
 	},
 	{
 		"id": 6464,
@@ -105009,6 +107231,14 @@
 		}
 	},
 	{
+		"id": 6490,
+		"name": "special_bonus_unique_snapfire_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_snapfire_4",
+		"json_data": {}
+	},
+	{
 		"id": 6491,
 		"name": "grimstroke_soul_chain",
 		"hero_id": 121,
@@ -105410,6 +107640,14 @@
 		}
 	},
 	{
+		"id": 6508,
+		"name": "special_bonus_unique_lone_druid_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Spirit Bear Magic Resistance",
+		"json_data": {}
+	},
+	{
 		"id": 6509,
 		"name": "special_bonus_unique_lina_4",
 		"behavior": "passive",
@@ -105583,6 +107821,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "enchantress_impetus"
 		}
+	},
+	{
+		"id": 6516,
+		"name": "special_bonus_unique_brewmaster_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Thunder Clap Slow",
+		"json_data": {}
 	},
 	{
 		"id": 6517,
@@ -105966,6 +108212,14 @@
 		}
 	},
 	{
+		"id": 6534,
+		"name": "special_bonus_unique_ancient_apparition_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_movement_speed_pct% Ice Vortex Slow/Increased Magic Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6535,
 		"name": "special_bonus_unique_chen_4",
 		"behavior": "passive",
@@ -105988,6 +108242,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6536,
+		"name": "special_bonus_unique_disruptor_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_radius% Thunder Strike Radius",
+		"json_data": {}
+	},
+	{
+		"id": 6537,
+		"name": "special_bonus_unique_wisp_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tether Stuns",
+		"json_data": {}
 	},
 	{
 		"id": 6538,
@@ -106971,6 +109241,14 @@
 		}
 	},
 	{
+		"id": 6598,
+		"name": "mars_blood_sport_of_blood",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "mars_blood_sport_of_blood",
+		"json_data": {}
+	},
+	{
 		"id": 6600,
 		"name": "special_bonus_unique_lion_3",
 		"behavior": "passive",
@@ -107075,7 +109353,6 @@
 	{
 		"id": 6604,
 		"name": "special_bonus_unique_alchemist_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_armor_allies",
@@ -107084,16 +109361,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "Acid Spray grants armor to allies",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6605,
@@ -107170,7 +109438,6 @@
 	{
 		"id": 6608,
 		"name": "special_bonus_unique_axe_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_radius",
@@ -107180,16 +109447,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+100 Berserker's Call AoE",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6609,
@@ -107354,7 +109612,6 @@
 	{
 		"id": 6615,
 		"name": "special_bonus_unique_bristleback_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage_per_stack",
@@ -107364,21 +109621,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+18 Warpath Damage Per Stack",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6616,
 		"name": "special_bonus_unique_centaur_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_return_damage",
@@ -107388,21 +109635,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+45 Retaliate Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "centaur_return"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6617,
 		"name": "special_bonus_unique_centaur_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_strength_damage",
@@ -107412,21 +109649,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+30% Double Edge Strength Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ad_linked_abilities": "centaur_double_edge"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6618,
 		"name": "special_bonus_unique_chaos_knight_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_pull_distance",
@@ -107436,21 +109663,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+225 Reality Rift Pull Distance",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6619,
 		"name": "special_bonus_unique_chaos_knight_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_stun_min",
@@ -107465,16 +109682,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+0.6 Min/Max Chaos Bolt Duration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6620,
@@ -107737,9 +109945,16 @@
 		}
 	},
 	{
+		"id": 6634,
+		"name": "special_bonus_unique_drow_ranger_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_wave_width% Gust Width",
+		"json_data": {}
+	},
+	{
 		"id": 6635,
 		"name": "special_bonus_unique_dragon_knight_2",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_stun_duration",
@@ -107749,16 +109964,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+0.4s Dragon Tail Stun",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6640,
@@ -108017,6 +110223,14 @@
 		}
 	},
 	{
+		"id": 6653,
+		"name": "special_bonus_unique_gyrocopter_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_movement_speed% Movement Speed during Rocket Barrage",
+		"json_data": {}
+	},
+	{
 		"id": 6654,
 		"name": "special_bonus_unique_gyrocopter_5",
 		"behavior": "passive",
@@ -108072,6 +110286,15 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6656,
+		"name": "special_bonus_unique_invoker_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Cataclysm",
+		"description": "Launched when Sun Strike is double tapped. Puts it on a %cooldown% second cooldown. Creates %value% visible Sun Strikes within %min_range%-%max_range% range of each enemy hero.",
+		"json_data": {}
 	},
 	{
 		"id": 6657,
@@ -108246,6 +110469,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6665,
+		"name": "special_bonus_unique_keeper_of_the_light_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Will-O-Wisp Flicker",
+		"json_data": {}
 	},
 	{
 		"id": 6666,
@@ -108454,6 +110685,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6679,
+		"name": "special_bonus_unique_lone_druid_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Spirit Link Attack Speed",
+		"json_data": {}
+	},
+	{
+		"id": 6680,
+		"name": "special_bonus_unique_lone_druid_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_bear_hp% True Form and Spirit Bear Health",
+		"json_data": {}
 	},
 	{
 		"id": 6682,
@@ -108761,6 +111008,23 @@
 		}
 	},
 	{
+		"id": 6697,
+		"name": "special_bonus_unique_monkey_king_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Armor Wukong's Command",
+		"json_data": {}
+	},
+	{
+		"id": 6698,
+		"name": "special_bonus_unique_morphling_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Multishot Adaptive Strike",
+		"description": "Additional enemy units within cast range are also targeted by Adaptive Strike.",
+		"json_data": {}
+	},
+	{
 		"id": 6700,
 		"name": "special_bonus_evasion_30",
 		"behavior": "passive",
@@ -109014,6 +111278,22 @@
 		}
 	},
 	{
+		"id": 6710,
+		"name": "special_bonus_unique_oracle_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Fate's Edict Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 6711,
+		"name": "special_bonus_unique_outworld_devourer_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Mind Over Matter Slow",
+		"json_data": {}
+	},
+	{
 		"id": 6712,
 		"name": "special_bonus_unique_outworld_devourer_3",
 		"behavior": "passive",
@@ -109162,6 +111442,14 @@
 		}
 	},
 	{
+		"id": 6766,
+		"name": "special_bonus_unique_mars_blood_sport_of_blood_hp_regen",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_mars_blood_sport_of_blood_hp_regen",
+		"json_data": {}
+	},
+	{
 		"id": 6800,
 		"name": "special_bonus_unique_antimage_5",
 		"behavior": "passive",
@@ -109275,6 +111563,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6805,
+		"name": "special_bonus_unique_death_prophet_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Spirit Siphon Move Speed Slow",
+		"json_data": {}
 	},
 	{
 		"id": 6806,
@@ -109404,6 +111700,14 @@
 		}
 	},
 	{
+		"id": 6811,
+		"name": "special_bonus_unique_invoker_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_main_damage% Chaos Meteor Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6812,
 		"name": "special_bonus_unique_disruptor_5",
 		"behavior": "passive",
@@ -109431,6 +111735,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6814,
+		"name": "special_bonus_unique_nyx_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Vendetta Unobstructed Pathing",
+		"json_data": {}
+	},
+	{
+		"id": 6815,
+		"name": "special_bonus_unique_axe_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_armor_per_stack% Bonus Armor per Culling Blade Stack",
+		"json_data": {}
 	},
 	{
 		"id": 6816,
@@ -109549,6 +111869,22 @@
 		}
 	},
 	{
+		"id": 6821,
+		"name": "special_bonus_unique_wraith_king_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_min_skeleton_spawn% Minimum Skeletons Spawned",
+		"json_data": {}
+	},
+	{
+		"id": 6822,
+		"name": "special_bonus_unique_wraith_king_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_talent_skeleton_damage% Skeletons Attack Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6825,
 		"name": "special_bonus_mana_break_35",
 		"behavior": "passive",
@@ -109595,6 +111931,15 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6826,
+		"name": "special_bonus_unique_bane_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Enfeeble Steals Attack Speed",
+		"description": "Bane gains attack speed equal to the attack speed stolen for the duration of Enfeeble.",
+		"json_data": {}
 	},
 	{
 		"id": 6827,
@@ -109825,6 +112170,14 @@
 		}
 	},
 	{
+		"id": 6849,
+		"name": "special_bonus_unique_phantom_lancer_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Max Juxtapose Illusions",
+		"json_data": {}
+	},
+	{
 		"id": 6850,
 		"name": "special_bonus_unique_phantom_lancer_4",
 		"behavior": "passive",
@@ -109909,6 +112262,15 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6855,
+		"name": "special_bonus_unique_puck_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Dream Coil Rapid Fire",
+		"description": "Puck instantly attacks all enemies while affected by Dream Coil, every %value% seconds.",
+		"json_data": {}
 	},
 	{
 		"id": 6856,
@@ -110128,6 +112490,14 @@
 		}
 	},
 	{
+		"id": 6866,
+		"name": "special_bonus_unique_riki_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Tricks of the Trade Radius",
+		"json_data": {}
+	},
+	{
 		"id": 6867,
 		"name": "special_bonus_unique_riki_5",
 		"behavior": "passive",
@@ -110333,6 +112703,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6877,
+		"name": "special_bonus_unique_shadow_shaman_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Hex Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 6878,
@@ -110674,7 +113052,6 @@
 	{
 		"id": 6896,
 		"name": "special_bonus_unique_sniper_3",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_knockback_distance",
@@ -110684,21 +113061,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+50 Max Headshot Knockback Distance",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6897,
 		"name": "special_bonus_unique_sniper_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_duration",
@@ -110708,15 +113075,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+1s Take Aim Duration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6900,
@@ -110855,6 +113214,22 @@
 		}
 	},
 	{
+		"id": 6906,
+		"name": "special_bonus_unique_storm_spirit_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Ball Lightning Damage",
+		"json_data": {}
+	},
+	{
+		"id": 6907,
+		"name": "special_bonus_unique_storm_spirit_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Overload Pierces Immunity",
+		"json_data": {}
+	},
+	{
 		"id": 6908,
 		"name": "special_bonus_unique_storm_spirit_4",
 		"behavior": "passive",
@@ -110934,6 +113309,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6912,
+		"name": "special_bonus_unique_nevermore_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Presence Aura Armor",
+		"json_data": {}
 	},
 	{
 		"id": 6915,
@@ -111071,6 +113454,15 @@
 		}
 	},
 	{
+		"id": 6924,
+		"name": "special_bonus_unique_wisp_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tether Grants Scepter Bonus",
+		"description": "While tethered to a friendly Hero, that Hero gains its Aghanim's Scepter ability upgrades for the duration.",
+		"json_data": {}
+	},
+	{
 		"id": 6926,
 		"name": "special_bonus_mp_regen_175",
 		"behavior": "passive",
@@ -111096,6 +113488,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6927,
+		"name": "special_bonus_unique_morphling_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Morph Targets Allies",
+		"json_data": {}
 	},
 	{
 		"id": 6930,
@@ -111344,6 +113744,15 @@
 		}
 	},
 	{
+		"id": 6940,
+		"name": "special_bonus_unique_templar_assassin_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Psi Blades Spill Paralyzes",
+		"description": "Enemies hit by the spill of Psi Blades have their movement speed slowed by %value% for %value2% second.",
+		"json_data": {}
+	},
+	{
 		"id": 6942,
 		"name": "special_bonus_unique_terrorblade_2",
 		"behavior": "passive",
@@ -111439,6 +113848,15 @@
 		}
 	},
 	{
+		"id": 6947,
+		"name": "special_bonus_unique_tidehunter_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_bonus_reduction_per_stack% Kraken Shell Damage Block per Anchor Smash Kill",
+		"description": "Retroactively counts any hero who died with Anchor Smash debuff.",
+		"json_data": {}
+	},
+	{
 		"id": 6948,
 		"name": "special_bonus_unique_timbersaw_2",
 		"behavior": "passive",
@@ -111528,6 +113946,22 @@
 		}
 	},
 	{
+		"id": 6952,
+		"name": "special_bonus_unique_tinker_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% March of the Machines Damage",
+		"json_data": {}
+	},
+	{
+		"id": 6953,
+		"name": "special_bonus_unique_tinker_3",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Heat-Seeking Missile Ministun",
+		"json_data": {}
+	},
+	{
 		"id": 6955,
 		"name": "special_bonus_unique_treant_3",
 		"behavior": "passive",
@@ -111550,6 +113984,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 6956,
+		"name": "special_bonus_unique_treant_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Nature's Guise Invisibility",
+		"json_data": {}
+	},
+	{
+		"id": 6957,
+		"name": "special_bonus_unique_treant_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Eyes and Overgrowth AoE",
+		"json_data": {}
 	},
 	{
 		"id": 6958,
@@ -111747,6 +114197,14 @@
 		}
 	},
 	{
+		"id": 6967,
+		"name": "special_bonus_unique_underlord_2",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Firestorm Wave Damage",
+		"json_data": {}
+	},
+	{
 		"id": 6968,
 		"name": "special_bonus_unique_underlord_3",
 		"behavior": "passive",
@@ -111803,6 +114261,15 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "abyssal_underlord_firestorm"
 		}
+	},
+	{
+		"id": 6970,
+		"name": "special_bonus_unique_oracle_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "False Promise Invisibility",
+		"description": "The target of False Promise also becomes invisible for the duration (with a 0.6 second fade time).",
+		"json_data": {}
 	},
 	{
 		"id": 6971,
@@ -111950,6 +114417,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6976,
+		"name": "special_bonus_unique_ursa_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% AoE Earthshock",
+		"json_data": {}
 	},
 	{
 		"id": 6977,
@@ -112182,6 +114657,14 @@
 		}
 	},
 	{
+		"id": 6986,
+		"name": "special_bonus_unique_warlock_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Shadow Word AoE",
+		"json_data": {}
+	},
+	{
 		"id": 6987,
 		"name": "special_bonus_mana_break_20",
 		"behavior": "passive",
@@ -112303,7 +114786,6 @@
 	{
 		"id": 6991,
 		"name": "special_bonus_unique_axe_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_damage",
@@ -112313,16 +114795,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+25 Counter Helix Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 6992,
@@ -112351,6 +114824,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 6993,
+		"name": "special_bonus_unique_windranger_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Shackleshot Target",
+		"json_data": {}
 	},
 	{
 		"id": 6994,
@@ -112474,6 +114955,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "techies_land_mines"
 		}
+	},
+	{
+		"id": 6999,
+		"name": "special_bonus_unique_venomancer_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Poison Nova AoE",
+		"json_data": {}
 	},
 	{
 		"id": 7000,
@@ -112605,6 +115094,14 @@
 		}
 	},
 	{
+		"id": 7002,
+		"name": "special_bonus_unique_shadow_demon_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_disruption_duration%s Disruption Banish Duration",
+		"json_data": {}
+	},
+	{
 		"id": 7005,
 		"name": "special_bonus_unique_tiny_5",
 		"behavior": "passive",
@@ -112719,6 +115216,30 @@
 		}
 	},
 	{
+		"id": 7016,
+		"name": "special_bonus_unique_invoker_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_duration%s Cold Snap Duration",
+		"json_data": {}
+	},
+	{
+		"id": 7017,
+		"name": "special_bonus_unique_invoker_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_lift_duration%s Tornado Lift Time",
+		"json_data": {}
+	},
+	{
+		"id": 7018,
+		"name": "special_bonus_unique_vengeful_spirit_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Wave of Terror Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 7019,
 		"name": "special_bonus_night_vision_600",
 		"behavior": "passive",
@@ -112821,6 +115342,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 7024,
+		"name": "special_bonus_unique_monkey_king_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Tree Dance Vision AoE",
+		"json_data": {}
 	},
 	{
 		"id": 7025,
@@ -113028,6 +115557,14 @@
 		}
 	},
 	{
+		"id": 7036,
+		"name": "special_bonus_unique_lone_druid_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "0 Entangling Claws Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 7038,
 		"name": "special_bonus_unique_monkey_king_7",
 		"behavior": "passive",
@@ -113111,6 +115648,14 @@
 		}
 	},
 	{
+		"id": 7042,
+		"name": "special_bonus_unique_crystal_maiden_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_base_mana_regen% Arcane Aura Base Mana Regeneration",
+		"json_data": {}
+	},
+	{
 		"id": 7045,
 		"name": "special_bonus_20_crit_15",
 		"behavior": "passive",
@@ -113145,6 +115690,15 @@
 		}
 	},
 	{
+		"id": 7046,
+		"name": "special_bonus_unique_dark_seer_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Parallel Wall",
+		"description": "A second Wall of Replica is created %value% units behind the first wall.  Illusions are independent for each Wall.",
+		"json_data": {}
+	},
+	{
 		"id": 7047,
 		"name": "special_bonus_unique_luna_4",
 		"behavior": "passive",
@@ -113167,6 +115721,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "luna_lucent_beam"
 		}
+	},
+	{
+		"id": 7048,
+		"name": "special_bonus_unique_silencer_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Glaives Silence",
+		"json_data": {}
 	},
 	{
 		"id": 7050,
@@ -113219,9 +115781,16 @@
 		}
 	},
 	{
+		"id": 7052,
+		"name": "special_bonus_unique_morphling_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%bonus_AbilityCharges% Waveform Charges",
+		"json_data": {}
+	},
+	{
 		"id": 7054,
 		"name": "special_bonus_unique_alchemist_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_health_regen",
@@ -113231,16 +115800,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+50 Chemical Rage Regeneration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7055,
@@ -113265,6 +115825,30 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"ad_linked_abilities": "luna_eclipse"
 		}
+	},
+	{
+		"id": 7056,
+		"name": "special_bonus_unique_morphling_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown%s Adaptive Strike Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 7057,
+		"name": "special_bonus_unique_puck_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_coil_stun_duration%s Dream Coil Stun Duration",
+		"json_data": {}
+	},
+	{
+		"id": 7058,
+		"name": "special_bonus_unique_templar_assassin_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Psionic Traps",
+		"json_data": {}
 	},
 	{
 		"id": 7059,
@@ -113316,6 +115900,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 7061,
+		"name": "special_bonus_unique_shadow_demon_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Soul Catcher Creates 2 Illusion On Death",
+		"json_data": {}
 	},
 	{
 		"id": 7062,
@@ -113500,6 +116092,14 @@
 		}
 	},
 	{
+		"id": 7103,
+		"name": "special_bonus_unique_treant_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Global Living Armor",
+		"json_data": {}
+	},
+	{
 		"id": 7104,
 		"name": "special_bonus_unique_arc_warden_3",
 		"behavior": "passive",
@@ -113584,6 +116184,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 7107,
+		"name": "special_bonus_unique_wraith_king_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value%s Wraithfire Blast Slow Duration",
+		"json_data": {}
+	},
+	{
+		"id": 7108,
+		"name": "special_bonus_unique_wraith_king_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Skeletons Spawned",
+		"json_data": {}
 	},
 	{
 		"id": 7109,
@@ -113687,12 +116303,7 @@
 	{
 		"id": 7113,
 		"name": "special_bonus_unique_dragon_knight_3",
-		"behavior": "passive",
 		"ability_special": [
-			{
-				"key": "value",
-				"value": "-30"
-			},
 			{
 				"key": "bonus_reduction",
 				"value": "30%",
@@ -113701,21 +116312,15 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "30% Breathe Fire Damage Reduction",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "-30",
-					"ad_linked_abilities": "dragon_knight_breathe_fire"
-				}
-			}
-		}
+		"json_data": {}
+	},
+	{
+		"id": 7114,
+		"name": "special_bonus_unique_dragon_knight_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Wyrm's Wrath Aura",
+		"json_data": {}
 	},
 	{
 		"id": 7115,
@@ -113934,7 +116539,6 @@
 	{
 		"id": 7123,
 		"name": "special_bonus_unique_doom_6",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_movement_speed_pct",
@@ -113944,16 +116548,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+5% Scorched Earth Movement Speed",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7124,
@@ -114037,6 +116632,14 @@
 		}
 	},
 	{
+		"id": 7131,
+		"name": "special_bonus_unique_kunkka_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown%s Tidebringer Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 7132,
 		"name": "special_bonus_mp_regen_150",
 		"behavior": "passive",
@@ -114062,6 +116665,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 7133,
+		"name": "special_bonus_unique_ursa_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Enrage gains %value% Status Resistance",
+		"json_data": {}
 	},
 	{
 		"id": 7135,
@@ -114194,7 +116805,6 @@
 	{
 		"id": 7144,
 		"name": "special_bonus_unique_alchemist_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_armor_reduction",
@@ -114204,16 +116814,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+1 Acid Spray Armor Reduction",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7145,
@@ -115033,6 +117634,14 @@
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
 		}
+	},
+	{
+		"id": 7308,
+		"name": "lone_druid_summon_spirit_bear_defender",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "lone_druid_summon_spirit_bear_defender",
+		"json_data": {}
 	},
 	{
 		"id": 7309,
@@ -116179,6 +118788,30 @@
 		}
 	},
 	{
+		"id": 7380,
+		"name": "special_bonus_unique_dragon_knight_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Frost Breath Slow",
+		"json_data": {}
+	},
+	{
+		"id": 7381,
+		"name": "special_bonus_unique_dragon_knight_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Splash Attack Damage",
+		"json_data": {}
+	},
+	{
+		"id": 7382,
+		"name": "special_bonus_unique_lone_druid_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_bear_bat% Spirit Bear Base Attack Time",
+		"json_data": {}
+	},
+	{
 		"id": 7383,
 		"name": "special_bonus_corruption_3",
 		"behavior": "passive",
@@ -116337,6 +118970,14 @@
 		}
 	},
 	{
+		"id": 7390,
+		"name": "special_bonus_unique_invoker_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_damage_per_mana_pct% E.M.P. Mana Burnt",
+		"json_data": {}
+	},
+	{
 		"id": 7394,
 		"name": "special_bonus_unique_juggernaut_4",
 		"behavior": "passive",
@@ -116386,7 +119027,6 @@
 	{
 		"id": 7396,
 		"name": "special_bonus_unique_sniper_5",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_slow_movement_speed",
@@ -116396,16 +119036,15 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10% Shrapnel Movement Slow",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 7398,
+		"name": "special_bonus_unique_keeper_of_the_light_4",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Will-O-Wisp Health Count",
+		"json_data": {}
 	},
 	{
 		"id": 7401,
@@ -116528,7 +119167,6 @@
 	{
 		"id": 7651,
 		"name": "special_bonus_unique_chaos_knight_4",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_illusion_duration",
@@ -116538,16 +119176,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10s Phantasm Duration",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7652,
@@ -116649,6 +119278,14 @@
 		}
 	},
 	{
+		"id": 7656,
+		"name": "special_bonus_unique_disruptor_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Kinetic Field Grants True Sight",
+		"json_data": {}
+	},
+	{
 		"id": 7657,
 		"name": "special_bonus_unique_earth_spirit_5",
 		"behavior": "passive",
@@ -116697,6 +119334,22 @@
 		}
 	},
 	{
+		"id": 7659,
+		"name": "special_bonus_unique_grimstroke_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Ink Swell Max Damage",
+		"json_data": {}
+	},
+	{
+		"id": 7660,
+		"name": "special_bonus_unique_jakiro_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Dual Breath Range",
+		"json_data": {}
+	},
+	{
 		"id": 7661,
 		"name": "special_bonus_unique_earth_spirit_6",
 		"behavior": "passive",
@@ -116719,6 +119372,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 7662,
+		"name": "special_bonus_unique_earth_spirit_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Boulder Smash Distance",
+		"json_data": {}
 	},
 	{
 		"id": 7670,
@@ -117290,6 +119951,22 @@
 		}
 	},
 	{
+		"id": 7711,
+		"name": "special_bonus_unique_void_spirit_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Larger Dissimilate Portals",
+		"json_data": {}
+	},
+	{
+		"id": 7712,
+		"name": "special_bonus_unique_void_spirit_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Dissimilate Grants %value%s Invisibility",
+		"json_data": {}
+	},
+	{
 		"id": 7713,
 		"name": "special_bonus_unique_void_spirit_7",
 		"behavior": "passive",
@@ -117346,6 +120023,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 7715,
+		"name": "special_bonus_unique_void_spirit_9",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Astral Step Charges",
+		"json_data": {}
 	},
 	{
 		"id": 7739,
@@ -120601,6 +123286,14 @@
 		}
 	},
 	{
+		"id": 7888,
+		"name": "special_bonus_unique_windranger_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Windrun Grants Invisibility",
+		"json_data": {}
+	},
+	{
 		"id": 7889,
 		"name": "special_bonus_unique_windranger_8",
 		"behavior": "passive",
@@ -120681,6 +123374,14 @@
 		}
 	},
 	{
+		"id": 7892,
+		"name": "special_bonus_unique_sniper_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Take Aim Range",
+		"json_data": {}
+	},
+	{
 		"id": 7893,
 		"name": "special_bonus_attack_speed_175",
 		"behavior": "passive",
@@ -120708,6 +123409,22 @@
 		}
 	},
 	{
+		"id": 7894,
+		"name": "special_bonus_unique_chen_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Divine Favor Cooldown",
+		"json_data": {}
+	},
+	{
+		"id": 7895,
+		"name": "special_bonus_unique_clinkz_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%value%s Burning Army Cooldown",
+		"json_data": {}
+	},
+	{
 		"id": 7896,
 		"name": "special_bonus_lifesteal_40",
 		"behavior": "passive",
@@ -120733,6 +123450,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 7897,
+		"name": "special_bonus_unique_wisp_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Spirits Apply Slow",
+		"json_data": {}
 	},
 	{
 		"id": 7898,
@@ -121118,6 +123843,14 @@
 		}
 	},
 	{
+		"id": 7911,
+		"name": "special_bonus_unique_windranger_10",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Windrun HP Regen",
+		"json_data": {}
+	},
+	{
 		"id": 7914,
 		"name": "dawnbreaker_celestial_hammer",
 		"hero_id": 135,
@@ -121370,7 +124103,6 @@
 	{
 		"id": 7930,
 		"name": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_radius",
@@ -121380,21 +124112,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+150 Solar Guardian Radius",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7931,
 		"name": "special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
@@ -121403,22 +124125,26 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-5s Starbreaker Cooldown",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base",
-			"ad_linked_abilities": "dawnbreaker_fire_wreath"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 7932,
+		"name": "special_bonus_unique_dawnbreaker_converge_slow",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"json_data": {}
+	},
+	{
+		"id": 7933,
+		"name": "special_bonus_unique_dawnbreaker_celestial_hammer_damage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Celestial Hammer damage",
+		"json_data": {}
 	},
 	{
 		"id": 7934,
 		"name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_projectile_speed",
@@ -121432,21 +124158,26 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+80% Celestial Hammer Cast Range/Speed",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 7935,
+		"name": "special_bonus_unique_dawnbreaker_fire_wreath_ministun",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"json_data": {}
+	},
+	{
+		"id": 7936,
+		"name": "special_bonus_unique_storm_spirit_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Overload Damage",
+		"json_data": {}
 	},
 	{
 		"id": 7937,
 		"name": "special_bonus_unique_dawnbreaker_luminosity_crit",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_bonus_damage",
@@ -121456,21 +124187,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+50% Luminosity Critical Strike Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7938,
 		"name": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_AbilityCooldown",
@@ -121479,21 +124200,19 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-20s Solar Guardian Cooldown",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
+	},
+	{
+		"id": 7939,
+		"name": "special_bonus_unique_dawnbreaker_fire_wreath_charges",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value% Starbreaker Charges",
+		"json_data": {}
 	},
 	{
 		"id": 7940,
 		"name": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_attack_count",
@@ -121503,26 +124222,12 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "-1 Luminosity Attacks Required",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7941,
 		"name": "special_bonus_unique_dawnbreaker_fire_wreath_swipe",
-		"behavior": "passive",
 		"ability_special": [
-			{
-				"key": "value",
-				"value": "18"
-			},
 			{
 				"key": "bonus_swipe_damage",
 				"value": "20",
@@ -121535,26 +124240,11 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+20 Starbreaker Swipe/Smash Damage",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityValues": {
-				"value": {
-					"value": "18",
-					"ad_linked_abilities": "dawnbreaker_fire_wreath"
-				}
-			}
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7942,
 		"name": "special_bonus_unique_dawnbreaker_celestial_hammer_slow",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_move_slow",
@@ -121564,16 +124254,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+15% Celestial Hammer Slow",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 7968,
@@ -121640,6 +124321,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 7977,
+		"name": "special_bonus_unique_tidehunter_6",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_damage_cleanse% Kraken Shell Damage Threshold",
+		"json_data": {}
 	},
 	{
 		"id": 7978,
@@ -122283,6 +124972,14 @@
 		}
 	},
 	{
+		"id": 8010,
+		"name": "special_bonus_unique_drow_ranger_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_miss_chance% Gust Blind",
+		"json_data": {}
+	},
+	{
 		"id": 8011,
 		"name": "special_bonus_lifesteal_35",
 		"behavior": "passive",
@@ -122757,6 +125454,15 @@
 		}
 	},
 	{
+		"id": 8026,
+		"name": "special_bonus_unique_phantom_assassin_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Range and Ground Target Stifling Dagger",
+		"description": "Allows using Blink Strike on the Dagger. Grants 800 vision. Lasts up to 2 minutes.",
+		"json_data": {}
+	},
+	{
 		"id": 8027,
 		"name": "pangolier_rollup",
 		"hero_id": 120,
@@ -123198,6 +125904,15 @@
 		}
 	},
 	{
+		"id": 8036,
+		"name": "seasonal_10th_anniversary_party_hat",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Tastefully-sized Party Hat",
+		"description": "Put on your fancy party hat to celebrate the 10th Anniversary of Dota 2! The hat will stay on your head until you die a horrible death.",
+		"json_data": {}
+	},
+	{
 		"id": 8037,
 		"name": "dawnbreaker_land",
 		"hero_id": 135,
@@ -123307,6 +126022,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 8041,
+		"name": "special_bonus_unique_earthshaker_5",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_aftershock_range% Aftershock Range",
+		"json_data": {}
 	},
 	{
 		"id": 8106,
@@ -123943,6 +126666,14 @@
 		}
 	},
 	{
+		"id": 8234,
+		"name": "marci_sidekick",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "marci_sidekick",
+		"json_data": {}
+	},
+	{
 		"id": 8235,
 		"name": "marci_companion_run",
 		"hero_id": 136,
@@ -124125,6 +126856,22 @@
 		}
 	},
 	{
+		"id": 8236,
+		"name": "special_bonus_unique_marci_lunge_ally_absorb",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Rebound Ally Shield Absorb",
+		"json_data": {}
+	},
+	{
+		"id": 8237,
+		"name": "special_bonus_unique_marci_lunge_damage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%value% Rebound Damage",
+		"json_data": {}
+	},
+	{
 		"id": 8238,
 		"name": "special_bonus_unique_marci_grapple_stun_duration",
 		"behavior": "passive",
@@ -124147,6 +126894,38 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 8239,
+		"name": "special_bonus_unique_marci_sidekick_magic_immune",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_marci_sidekick_magic_immune",
+		"json_data": {}
+	},
+	{
+		"id": 8240,
+		"name": "special_bonus_unique_marci_unleash_flurry_crits",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_marci_unleash_flurry_crits",
+		"json_data": {}
+	},
+	{
+		"id": 8241,
+		"name": "special_bonus_unique_marci_unleash_silence",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%value%s Unleash Pulse Silence",
+		"json_data": {}
+	},
+	{
+		"id": 8242,
+		"name": "special_bonus_unique_marci_sidekick_lifesteal",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_marci_sidekick_lifesteal",
+		"json_data": {}
 	},
 	{
 		"id": 8243,
@@ -124175,6 +126954,22 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 8244,
+		"name": "special_bonus_unique_marci_unleash_pulse_lunge_refresh",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Unleash Pulse Refreshes Rebound",
+		"json_data": {}
+	},
+	{
+		"id": 8245,
+		"name": "special_bonus_unique_marci_lunge_cooldown",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "-%bonus_AbilityCooldown%s Rebound Cooldown",
+		"json_data": {}
 	},
 	{
 		"id": 8246,
@@ -124352,6 +127147,14 @@
 		}
 	},
 	{
+		"id": 8255,
+		"name": "special_bonus_unique_dazzle_shadow_wave_cast_range",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_AbilityCastRange% Shadow Wave Cast Range",
+		"json_data": {}
+	},
+	{
 		"id": 8340,
 		"name": "dark_willow_terrorize",
 		"hero_id": 119,
@@ -124436,6 +127239,14 @@
 				}
 			}
 		}
+	},
+	{
+		"id": 8347,
+		"name": "special_bonus_unique_marci_dispose_range",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "special_bonus_unique_marci_dispose_range",
+		"json_data": {}
 	},
 	{
 		"id": 8351,
@@ -124854,9 +127665,33 @@
 		}
 	},
 	{
+		"id": 9268,
+		"name": "special_bonus_unique_meepo_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Pack Rat",
+		"description": "Can equip any item in the neutral item slot",
+		"json_data": {}
+	},
+	{
+		"id": 9269,
+		"name": "special_bonus_unique_meepo_8",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_slow_duration%s Poof Slow Duration",
+		"json_data": {}
+	},
+	{
+		"id": 9391,
+		"name": "special_bonus_unique_pangolier_7",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "+%bonus_strikes% Swashbuckle Strike",
+		"json_data": {}
+	},
+	{
 		"id": 9401,
 		"name": "special_bonus_unique_axe_8",
-		"behavior": "passive",
 		"ability_special": [
 			{
 				"key": "bonus_speed_bonus",
@@ -124865,16 +127700,7 @@
 		],
 		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
 		"localized_name": "+10% Movement Speed per active Battle Hunger",
-		"scepter_grants": false,
-		"scepter_upgrades": false,
-		"shard_grants": false,
-		"shard_upgrades": false,
-		"innate": false,
-		"json_data": {
-			"AbilityType": "DOTA_ABILITY_TYPE_ATTRIBUTES",
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"BaseClass": "special_bonus_base"
-		}
+		"json_data": {}
 	},
 	{
 		"id": 9418,
@@ -125023,6 +127849,23 @@
 			},
 			"AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
 		}
+	},
+	{
+		"id": 9505,
+		"name": "special_bonus_unique_hoodwink_camouflage",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "Scurry Camouflage",
+		"description": "Hoodwink becomes invisible near trees after %fade_time% seconds of not moving, attacking, or casting spells.",
+		"json_data": {}
+	},
+	{
+		"id": 9506,
+		"name": "special_bonus_unique_hoodwink_sharpshooter_speed",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "%pct_change% Sharpshooter Faster Projectile / Charge Time",
+		"json_data": {}
 	},
 	{
 		"id": 9507,
@@ -125179,6 +128022,14 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
 			"BaseClass": "special_bonus_base"
 		}
+	},
+	{
+		"id": 9627,
+		"name": "hoodwink_go_nutss_boomerang",
+		"ability_special": [],
+		"icon": "/panorama/images/spellicons/attribute_bonus_png.png",
+		"localized_name": "hoodwink_go_nutss_boomerang",
+		"json_data": {}
 	},
 	{
 		"id": 9709,
