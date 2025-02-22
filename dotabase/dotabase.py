@@ -263,6 +263,7 @@ class Item(Base):
 	lore = Column(String)
 	secret_shop = Column(Boolean)
 	neutral_tier = Column(String)
+	is_neutral_enhancement = Column(Boolean)
 	ability_special = Column(String)
 	recipe = Column(String)
 	shop_tags = Column(String)
