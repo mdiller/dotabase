@@ -27,4 +27,5 @@ setup(
 	classifiers=[
 		'License :: OSI Approved :: MIT License'
 	],
+	license_files=["LICENSE"]
 )
