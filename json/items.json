@@ -976,6 +976,7 @@
 			"AllowedInBackpack": "0",
 			"IsTempestDoubleClonable": "0",
 			"SpeciallyBannedFromNeutralSlot": "1",
+			"ShouldNotSuggestMainGame": "1",
 			"UIPickupSound": "Item.PickUpGemShop",
 			"UIDropSound": "Item.DropGemShop",
 			"WorldDropSound": "Item.DropGemWorld",
@@ -1113,7 +1114,6 @@
 		"icon": "/panorama/images/items/magic_stick_png.png",
 		"cost": 200,
 		"cooldown": "17",
-		"cast_range": "1200",
 		"description": "# Active: Energy Charge\nInstantly restores **15** health and mana per charge stored.\n\n Max **10** charges. Gains a charge whenever a visible enemy within **1200** range uses an ability.",
 		"lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
 		"secret_shop": false,
@@ -1138,7 +1138,6 @@
 			"Model": "models/props_gameplay/magic_wand.vmdl",
 			"AbilityCooldown": "17.0",
 			"AbilitySharedCooldown": "magicwand",
-			"AbilityCastRange": "1200",
 			"ItemCost": "200",
 			"ItemShopTags": "regen_health;regen_mana;boost_health;boost_mana;laning;regen_mana",
 			"ItemQuality": "component",
@@ -1184,7 +1183,6 @@
 		"icon": "/panorama/images/items/magic_wand_png.png",
 		"cost": 450,
 		"cooldown": "15",
-		"cast_range": "1200",
 		"description": "# Active: Energy Charge\nInstantly restores **15** health and mana per charge stored. \n\nMax **20** charges. Gains a charge whenever a visible enemy within **1200** range uses an ability.",
 		"lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
 		"secret_shop": false,
@@ -1216,7 +1214,6 @@
 			"Model": "models/props_gameplay/magic_wand.vmdl",
 			"AbilityCooldown": "15.0",
 			"AbilitySharedCooldown": "magicwand",
-			"AbilityCastRange": "1200",
 			"ItemCost": "450",
 			"ItemShopTags": "regen_health;regen_mana;boost_health;boost_mana;int;agi;str;laning;regen_mana",
 			"ItemQuality": "common",
@@ -4060,8 +4057,8 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/refresher_png.png",
 		"cost": 5000,
-		"cooldown": "180",
-		"mana_cost": "350",
+		"cooldown": "180 190 200 210",
+		"mana_cost": "400",
 		"description": "# Active: Reset Cooldowns\nResets the cooldowns of all your items and abilities. Shares a cooldown with Refresher Shard. This item's cooldown only progresses in your hero's main inventory.",
 		"lore": "A powerful artifact created for wizards.",
 		"secret_shop": false,
@@ -4084,6 +4081,15 @@
 				"value": "10",
 				"header": "+",
 				"footer": "Damage"
+			},
+			{
+				"key": "max_level",
+				"value": "4"
+			},
+			{
+				"key": "cooldown_duration",
+				"value": "180 190 200 210",
+				"header": "COOLDOWN:"
 			}
 		],
 		"recipe": "item_cornucopia|item_ring_of_tarrasque|item_tiara_of_selemene|item_recipe_refresher",
@@ -4091,8 +4097,8 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "180.0",
-			"AbilityManaCost": "350",
+			"AbilityCooldown": "180.0 190.0 200.0 210.0",
+			"AbilityManaCost": "400",
 			"ItemCost": "5000",
 			"ItemShopTags": "regen_health;regen_mana;hard_to_tag;teamfight",
 			"ItemQuality": "rare",
@@ -4102,7 +4108,9 @@
 			"AbilityValues": {
 				"bonus_health_regen": "18",
 				"bonus_mana_regen": "8.0",
-				"bonus_damage": "10"
+				"bonus_damage": "10",
+				"max_level": "4",
+				"cooldown_duration": "180.0 190.0 200.0 210.0"
 			}
 		}
 	},
@@ -4417,7 +4425,7 @@
 		"id": 119,
 		"name": "item_shivas_guard",
 		"localized_name": "Shiva's Guard",
-		"aliases": "shiva's guard|shivas|healing|reduction",
+		"aliases": "shiva's guard|shivas",
 		"quality": "epic",
 		"icon": "/panorama/images/items/shivas_guard_png.png",
 		"cost": 5175,
@@ -4804,20 +4812,20 @@
 		"cost": 2300,
 		"cooldown": "25",
 		"mana_cost": "25",
-		"description": "# Active: Damage Return\nFor **5.5** seconds, return all incoming damage, increasing the percentage by **85%**.\n\n\n# Passive: Damage Return\nEverytime you are attacked, you return **20** damage plus **20%** of the attack damage dealt to you.",
+		"description": "# Active: Damage Return\nFor **5.5** seconds, return all incoming damage, increasing the percentage by **85%**.\n\n\n# Passive: Damage Return\nEverytime you are attacked, you return **10** damage plus **15%** of the attack damage dealt to you.",
 		"lore": "A razor-sharp coat of mail, it is the choice of selfless martyrs in combat.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "18",
+				"value": "15",
 				"header": "+",
 				"footer": "Damage"
 			},
 			{
 				"key": "bonus_armor",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -4831,11 +4839,11 @@
 			},
 			{
 				"key": "passive_reflection_constant",
-				"value": "20"
+				"value": "10"
 			},
 			{
 				"key": "passive_reflection_pct",
-				"value": "20"
+				"value": "15"
 			},
 			{
 				"key": "active_reflection_pct",
@@ -4854,12 +4862,12 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"SuggestLategame": "1",
 			"AbilityValues": {
-				"bonus_damage": "18",
-				"bonus_armor": "7",
+				"bonus_damage": "15",
+				"bonus_armor": "6",
 				"bonus_intellect": "0",
 				"duration": "5.5",
-				"passive_reflection_constant": "20",
-				"passive_reflection_pct": "20",
+				"passive_reflection_constant": "10",
+				"passive_reflection_pct": "15",
 				"active_reflection_pct": "85"
 			}
 		}
@@ -5989,7 +5997,7 @@
 		"cooldown": "35",
 		"cast_range": "800",
 		"mana_cost": "50",
-		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
+		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -6068,7 +6076,7 @@
 			},
 			{
 				"key": "illusion_multiplier_pct",
-				"value": "150"
+				"value": "100"
 			}
 		],
 		"recipe": "item_maelstrom|item_hyperstone|item_recipe_mjollnir",
@@ -6105,7 +6113,7 @@
 				"chain_delay": "0.25",
 				"chain_cooldown": "0.2",
 				"max_charges": "0",
-				"illusion_multiplier_pct": "150"
+				"illusion_multiplier_pct": "100"
 			}
 		}
 	},
@@ -6113,7 +6121,7 @@
 		"id": 160,
 		"name": "item_skadi",
 		"localized_name": "Eye of Skadi",
-		"aliases": "eos|eye of skadi|healing|reduction",
+		"aliases": "eos|eye of skadi",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/skadi_png.png",
 		"cost": 5900,
@@ -6287,9 +6295,9 @@
 		"cost": 2550,
 		"cooldown": "45",
 		"cast_range": "700",
-		"mana_cost": "0",
+		"mana_cost": "50",
 		"base_level": 1,
-		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **380** and max health to a minimum of **1000**. Also provides the unit with +**25** base attack damage, +**12** health regen, +**4** mana regen and +**4** armor. \n\nDominated units with a max health of greater than **1000** retain their original max health. Grants the caster the gold and experience bounty of the dominated creep.  Dominated unit's bounty is set to **100** gold and it can no longer be killed by abilities that instantly kill creeps otherwise.",
+		"description": "# Active: Dominate\nTakes control of one neutral, non-ancient target unit and sets its movement speed to **370** and max health to a minimum of **1000**. Also provides the unit with +**25** base attack damage, +**12** health regen, +**4** mana regen and +**4** armor. \n\nDominated units with a max health of greater than **1000** retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to **100** gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for **3** seconds after the dominated creep takes damage from an enemy hero or Roshan.",
 		"lore": "The powerful headpiece of a dead necromancer.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -6318,7 +6326,7 @@
 			},
 			{
 				"key": "speed_base",
-				"value": "380"
+				"value": "370"
 			},
 			{
 				"key": "bounty_gold",
@@ -6351,6 +6359,10 @@
 			{
 				"key": "creep_ability_level_increase",
 				"value": "0"
+			},
+			{
+				"key": "creep_damage_taken_cooldown",
+				"value": "3"
 			}
 		],
 		"recipe": "item_helm_of_iron_will|item_crown|item_recipe_helm_of_the_dominator",
@@ -6365,7 +6377,7 @@
 			"AbilityCooldown": "45.0",
 			"MaxUpgradeLevel": "2",
 			"ItemBaseLevel": "1",
-			"AbilityManaCost": "0",
+			"AbilityManaCost": "50",
 			"ItemCost": "2550",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
@@ -6375,7 +6387,7 @@
 				"bonus_armor": "6",
 				"bonus_regen": "6",
 				"health_min": "1000",
-				"speed_base": "380",
+				"speed_base": "370",
 				"bounty_gold": "100",
 				"creep_bonus_damage": "25",
 				"creep_bonus_hp_regen": "12",
@@ -6383,7 +6395,8 @@
 				"creep_bonus_armor": "4",
 				"model_scale": "0",
 				"count_limit": "1",
-				"creep_ability_level_increase": "0"
+				"creep_ability_level_increase": "0",
+				"creep_damage_taken_cooldown": "3"
 			}
 		}
 	},
@@ -6395,7 +6408,7 @@
 		"quality": "artifact",
 		"icon": "/panorama/images/items/maelstrom_png.png",
 		"cost": 2950,
-		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **110** magical damage to each. Lightning proc pierces evasion.  Deals **150%** damage to illusions.",
+		"description": "# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **4** targets within a **650** radius, dealing **110** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -6438,7 +6451,7 @@
 			},
 			{
 				"key": "illusion_multiplier_pct",
-				"value": "150"
+				"value": "100"
 			}
 		],
 		"recipe": "item_mithril_hammer|item_javelin|item_gloves",
@@ -6459,7 +6472,7 @@
 				"chain_radius": "650",
 				"chain_delay": "0.25",
 				"chain_cooldown": "0.2",
-				"illusion_multiplier_pct": "150"
+				"illusion_multiplier_pct": "100"
 			}
 		}
 	},
@@ -6599,7 +6612,7 @@
 		"cost": 1900,
 		"cooldown": "16",
 		"mana_cost": "25",
-		"description": "# Active: Berserk\nGives **110** attack speed and **25** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of physical damage dealt.",
+		"description": "# Active: Berserk\nGives **100** attack speed and **25** movement speed, but reduces your armor by **8** and silences you.  Lasts **6** seconds.\n\n\n# Passive: Lifesteal\nHeals the attacker for a percentage of physical damage dealt.",
 		"lore": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -6618,7 +6631,7 @@
 			},
 			{
 				"key": "berserk_bonus_attack_speed",
-				"value": "110"
+				"value": "100"
 			},
 			{
 				"key": "berserk_bonus_movement_speed",
@@ -6650,7 +6663,7 @@
 			"AbilityValues": {
 				"bonus_damage": "20",
 				"lifesteal_percent": "24",
-				"berserk_bonus_attack_speed": "110",
+				"berserk_bonus_attack_speed": "100",
 				"berserk_bonus_movement_speed": "25",
 				"berserk_armor_reduction": "8",
 				"berserk_duration": "6.0"
@@ -7992,7 +8005,7 @@
 		"cooldown": "18",
 		"cast_range": "650",
 		"mana_cost": "25",
-		"description": "# Active: Disarm\nPrevents a target from attacking for **3** seconds on melee targets, and **4** seconds on ranged targets.\n\n \n# Passive: Damage Block\nGrants a **60%** chance to block **60** damage from incoming attacks on melee heroes, and **30** damage on ranged.",
+		"description": "# Active: Disarm\nPrevents a target from attacking for **3.5** seconds on melee targets, and **4.5** seconds on ranged targets.\n\n \n# Passive: Damage Block\nGrants a **60%** chance to block **60** damage from incoming attacks on melee heroes, and **30** damage on ranged.",
 		"lore": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -8029,11 +8042,11 @@
 			},
 			{
 				"key": "disarm_range",
-				"value": "4.0"
+				"value": "4.5"
 			},
 			{
 				"key": "disarm_melee",
-				"value": "3.0"
+				"value": "3.5"
 			}
 		],
 		"recipe": "item_vanguard|item_crown|item_recipe_heavens_halberd",
@@ -8060,8 +8073,8 @@
 				"block_damage_ranged": "30",
 				"block_chance": "60",
 				"bonus_all_stats": "5",
-				"disarm_range": "4.0",
-				"disarm_melee": "3.0"
+				"disarm_range": "4.5",
+				"disarm_melee": "3.5"
 			}
 		}
 	},
@@ -9180,13 +9193,13 @@
 			},
 			{
 				"key": "bonus_health",
-				"value": "500",
+				"value": "450",
 				"header": "+",
 				"footer": "Health"
 			},
 			{
 				"key": "bonus_mana",
-				"value": "500",
+				"value": "450",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -9213,8 +9226,8 @@
 			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_cooldown": "25",
-				"bonus_health": "500",
-				"bonus_mana": "500",
+				"bonus_health": "450",
+				"bonus_mana": "450",
 				"bonus_health_regen": "0",
 				"bonus_mana_regen": "6"
 			}
@@ -9247,7 +9260,7 @@
 			},
 			{
 				"key": "base_attack_range",
-				"value": "150",
+				"value": "140",
 				"header": "+",
 				"footer": "Attack Range (Ranged Only)"
 			}
@@ -9263,7 +9276,7 @@
 			"AbilityValues": {
 				"bonus_agility": "15",
 				"bonus_strength": "10",
-				"base_attack_range": "150"
+				"base_attack_range": "140"
 			}
 		}
 	},
@@ -10031,7 +10044,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/glimmer_cape_png.png",
 		"cost": 2150,
-		"cooldown": "14",
+		"cooldown": "15",
 		"cast_range": "600",
 		"mana_cost": "125",
 		"description": "# Active: Glimmer\nAfter a **0.5** second delay, grants invisibility, **20** movement speed and a magic damage barrier that absorbs up to **375** damage to you or a target allied unit for **5** seconds.\n\nCan be cast while channeling.",
@@ -10075,7 +10088,7 @@
 			"FightRecapLevel": "1",
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCastRange": "600",
-			"AbilityCooldown": "14.0",
+			"AbilityCooldown": "15.0",
 			"AbilityManaCost": "125",
 			"ItemCost": "2150",
 			"ItemShopTags": "teamfight;escape;save;magic_resist",
@@ -10157,6 +10170,10 @@
 				"key": "cooldown_duration",
 				"value": "105 125 145 165",
 				"header": "COOLDOWN:"
+			},
+			{
+				"key": "initial_cooldown",
+				"value": "6"
 			}
 		],
 		"recipe": "item_vitality_booster|item_energy_booster|item_recipe_aeon_disk",
@@ -10176,7 +10193,8 @@
 				"status_resistance": "75",
 				"buff_duration": "2.5",
 				"max_level": "4",
-				"cooldown_duration": "105.0 125.0 145.0 165.0"
+				"cooldown_duration": "105.0 125.0 145.0 165.0",
+				"initial_cooldown": "6"
 			}
 		}
 	},
@@ -10400,7 +10418,7 @@
 			},
 			{
 				"key": "base_attack_range",
-				"value": "150",
+				"value": "140",
 				"header": "+",
 				"footer": "Attack Range (Ranged Only)"
 			},
@@ -10463,7 +10481,7 @@
 				"bonus_health": "200",
 				"bonus_agility": "20",
 				"bonus_strength": "15",
-				"base_attack_range": "150",
+				"base_attack_range": "140",
 				"push_length": "600",
 				"enemy_length": "450",
 				"range_duration": "6",
@@ -10562,7 +10580,7 @@
 		"id": 267,
 		"name": "item_spirit_vessel",
 		"localized_name": "Spirit Vessel",
-		"aliases": "sv|spirit vessel|healing|reduction",
+		"aliases": "sv|spirit vessel",
 		"quality": "rare",
 		"icon": "/panorama/images/items/spirit_vessel_png.png",
 		"cost": 2725,
@@ -12248,8 +12266,8 @@
 		"localized_name": "Helm of the Undying",
 		"icon": "/panorama/images/items/helm_of_the_undying_png.png",
 		"cost": 0,
-		"cooldown": "50",
-		"description": "# Passive: Death Delay\nSurvive for an extra **5** seconds after receiving a killing blow. If any enemy heroes dies within **1200** units, the death delay effect is extended by **5** seconds.",
+		"cooldown": "100",
+		"description": "# Passive: Death Delay\nSurvive for an extra **6** seconds after receiving a killing blow. If any enemy heroes dies within **1200** units, the death delay effect is extended by **5** seconds. The hero cannot attack buildings during Death Delay.",
 		"lore": "The price for wearing it is paid in the afterlife.",
 		"secret_shop": false,
 		"neutral_tier": "5",
@@ -12257,7 +12275,7 @@
 		"ability_special": [
 			{
 				"key": "duration",
-				"value": "5"
+				"value": "6"
 			},
 			{
 				"key": "bonus_kill_duration",
@@ -12275,10 +12293,10 @@
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
-			"AbilityCooldown": "50",
+			"AbilityCooldown": "100",
 			"AbilityValues": {
 				"duration": {
-					"value": "5",
+					"value": "6",
 					"apply_curio_bonus": "1"
 				},
 				"bonus_kill_duration": "5",
@@ -13950,7 +13968,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "6",
+				"value": "5",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -13986,7 +14004,7 @@
 				"bonus_attack_speed": "40",
 				"bonus_intellect": "12",
 				"bonus_mana_regen": "1.5",
-				"bonus_armor": "6",
+				"bonus_armor": "5",
 				"int_damage_multiplier": "0.75",
 				"slow": "25",
 				"slow_duration": "4",
@@ -14000,7 +14018,7 @@
 		"localized_name": "Chipped Vest",
 		"icon": "/panorama/images/items/chipped_vest_png.png",
 		"cost": 0,
-		"description": "# Passive: Chipper\nEverytime you are attacked, you return **30** damage to heroes and **20** damage to creeps.",
+		"description": "# Passive: Chipper\nEvery time you are attacked, you return **30** damage to heroes and **20** damage to creeps.",
 		"lore": "It doesn't look like much, but it's oddly comfy.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -14085,7 +14103,7 @@
 		"id": 569,
 		"name": "item_orb_of_corrosion",
 		"localized_name": "Orb of Corrosion",
-		"aliases": "ooc|orb of corrosion|corosion|corossion|healing|reduction",
+		"aliases": "ooc|orb of corrosion|corosion|corossion",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orb_of_corrosion_png.png",
 		"cost": 1050,
@@ -15293,8 +15311,8 @@
 		"cost": 5650,
 		"cooldown": "45",
 		"cast_range": "700",
-		"mana_cost": "0",
-		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **380** and max health to a minimum of **1800**. Also provides the unit with +**70** base attack damage, +**12** health regen, +**4** mana regen, +**7** armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than **1800** retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to **250** gold and it can no longer be killed by abilities that instantly kill creeps otherwise.",
+		"mana_cost": "50",
+		"description": "# Active: Dominate\nTakes control of one neutral target unit and sets its movement speed to **380** and max health to a minimum of **1800**. Also provides the unit with +**70** base attack damage, +**12** health regen, +**4** mana regen, +**7** armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than **1800** retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to **250** gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for **3** seconds after the dominated creep takes damage from an enemy hero or Roshan.",
 		"lore": "The powerful headpiece of an undead necromancer.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -15360,6 +15378,10 @@
 			{
 				"key": "is_overlord",
 				"value": "1"
+			},
+			{
+				"key": "creep_damage_taken_cooldown",
+				"value": "3"
 			}
 		],
 		"recipe": "item_helm_of_the_dominator|item_ultimate_orb|item_recipe_helm_of_the_overlord",
@@ -15372,7 +15394,7 @@
 			"AbilityCastRange": "700",
 			"AbilityCastPoint": "0.0",
 			"AbilityCooldown": "45",
-			"AbilityManaCost": "0",
+			"AbilityManaCost": "50",
 			"ItemCost": "5650",
 			"ItemShopTags": "damage;armor;unique;hard_to_tag",
 			"ItemQuality": "artifact",
@@ -15391,7 +15413,8 @@
 				"model_scale": "20",
 				"count_limit": "1",
 				"creep_ability_level_increase": "1",
-				"is_overlord": "1"
+				"is_overlord": "1",
+				"creep_damage_taken_cooldown": "3"
 			}
 		}
 	},
@@ -15556,7 +15579,7 @@
 		"localized_name": "Psychic Headband",
 		"icon": "/panorama/images/items/psychic_headband_png.png",
 		"cost": 0,
-		"cooldown": "20",
+		"cooldown": "15",
 		"cast_range": "600",
 		"description": "# Active: Psychic Push\nPushes the target enemy unit away from you **400** distance.",
 		"lore": "A failed experiment in finer telekinetic control, still fit for other ends.",
@@ -15590,7 +15613,7 @@
 			"ItemIsNeutralActiveDrop": "1",
 			"ItemPurchasable": "0",
 			"ItemSellable": "0",
-			"AbilityCooldown": "20",
+			"AbilityCooldown": "15",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"intelligence_pct": "0",
@@ -18684,13 +18707,13 @@
 		"name": "item_recipe_phylactery",
 		"localized_name": "Phylactery Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 400,
+		"cost": 300,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "400",
+			"ItemCost": "300",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_phylactery",
@@ -18706,8 +18729,8 @@
 		"aliases": "phylactery",
 		"quality": "common",
 		"icon": "/panorama/images/items/phylactery_png.png",
-		"cost": 2600,
-		"cooldown": "10",
+		"cost": 2500,
+		"cooldown": "9",
 		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals a separate **150** bonus damage to the target and slows them by **30%** for **3**s.",
 		"lore": "An amulet overflowing with powerful magics.",
 		"secret_shop": false,
@@ -18760,9 +18783,9 @@
 		"shop_tags": "hard_to_tag",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCooldown": "10.0",
+			"AbilityCooldown": "9.0",
 			"AbilitySharedCooldown": "phylactery",
-			"ItemCost": "2600",
+			"ItemCost": "2500",
 			"ItemShopTags": "hard_to_tag",
 			"ItemQuality": "common",
 			"SuggestLategame": "1",
@@ -19012,7 +19035,7 @@
 		"cost": 1400,
 		"cooldown": "16",
 		"cast_range": "1000",
-		"mana_cost": "100",
+		"mana_cost": "60",
 		"description": "# Active: Protect\nWhen cast on an ally, grants them a physical damage barrier that absorbs **250** damage. Duration: **7**s.",
 		"lore": "Devised by a wizard who made one too many enemies.",
 		"secret_shop": false,
@@ -19056,7 +19079,7 @@
 			"SpellDispellableType": "SPELL_DISPELLABLE_YES",
 			"AbilityCastRange": "1000",
 			"AbilityCooldown": "16.0",
-			"AbilityManaCost": "100",
+			"AbilityManaCost": "60",
 			"AbilitySharedCooldown": "pavise",
 			"ItemCost": "1400",
 			"ItemShopTags": "armor;regen_mana;hard_to_tag;teamfight;save;tank",
@@ -19698,7 +19721,7 @@
 		"id": 1575,
 		"name": "item_orb_of_frost",
 		"localized_name": "Orb of Frost",
-		"aliases": "oof|orb of frost|frost|healing|reduction",
+		"aliases": "oof|orb of frost|frost",
 		"quality": "rare",
 		"icon": "/panorama/images/items/orb_of_frost_png.png",
 		"cost": 300,
@@ -20001,7 +20024,7 @@
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "1 1.75 2.5 3.25",
+				"value": "0.8 1.6 2.4 3.2",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -20027,7 +20050,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"MaxLevel": "4",
 			"AbilityValues": {
-				"mana_regen": "1 1.75 2.5 3.25",
+				"mana_regen": "0.8 1.6 2.4 3.2",
 				"magic_res": "0 10 13 16",
 				"bonus_cast_range": "0 0 0 100"
 			}
@@ -20095,7 +20118,7 @@
 			},
 			{
 				"key": "health_regen",
-				"value": "0 4 8 12",
+				"value": "0 3 6 9",
 				"header": "+",
 				"footer": "Health Regeneration"
 			},
@@ -20116,7 +20139,7 @@
 			"MaxLevel": "4",
 			"AbilityValues": {
 				"health_bonus": "110 150 190 230",
-				"health_regen": "0 4 8 12",
+				"health_regen": "0 3 6 9",
 				"slow_resist": "0 0 0 25"
 			}
 		}
@@ -20244,7 +20267,7 @@
 		"ability_special": [
 			{
 				"key": "health_restoration",
-				"value": "20% 30%",
+				"value": "30% 40%",
 				"header": "+",
 				"footer": "Health Restoration"
 			},
@@ -20256,7 +20279,7 @@
 			},
 			{
 				"key": "intelligence_pct",
-				"value": "-8%",
+				"value": "-5%",
 				"header": "-",
 				"footer": "Intelligence"
 			}
@@ -20270,9 +20293,9 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"MaxLevel": "2",
 			"AbilityValues": {
-				"health_restoration": "20 30",
+				"health_restoration": "30 40",
 				"bat_reduce": "12 18",
-				"intelligence_pct": "-8"
+				"intelligence_pct": "-5"
 			}
 		}
 	},
@@ -20294,7 +20317,7 @@
 			},
 			{
 				"key": "bonus_cast_range",
-				"value": "350",
+				"value": "275",
 				"header": "+",
 				"footer": "Cast Range"
 			}
@@ -20309,7 +20332,7 @@
 			"MaxLevel": "1",
 			"AbilityValues": {
 				"bonus_attack_range": "150",
-				"bonus_cast_range": "350"
+				"bonus_cast_range": "275"
 			}
 		}
 	},
@@ -20360,13 +20383,13 @@
 		"ability_special": [
 			{
 				"key": "debuff_amp",
-				"value": "10% 15%",
+				"value": "8% 15%",
 				"header": "+",
 				"footer": "Debuff Duration"
 			},
 			{
 				"key": "spell_amp",
-				"value": "8% 16%",
+				"value": "6% 16%",
 				"header": "+",
 				"footer": "Spell Amplification"
 			}
@@ -20380,8 +20403,8 @@
 			"MaxLevel": "2",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"debuff_amp": "10 15",
-				"spell_amp": "8 16"
+				"debuff_amp": "8 15",
+				"spell_amp": "6 16"
 			}
 		}
 	},
@@ -20450,7 +20473,7 @@
 			},
 			{
 				"key": "spell_lifesteal",
-				"value": "8% 10% 12%",
+				"value": "6% 8% 10%",
 				"header": "+",
 				"footer": "Spell Lifesteal"
 			},
@@ -20471,7 +20494,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"attack_lifesteal": "12 14 16",
-				"spell_lifesteal": "8 10 12",
+				"spell_lifesteal": "6 8 10",
 				"bonus_night_vision": "0 0 200"
 			}
 		}
@@ -20646,7 +20669,7 @@
 		"cost": 0,
 		"cooldown": "60",
 		"cast_range": "650",
-		"description": "# Active: Bottoms Up\nRestores **60** + **4%** of the caster's maximum mana over **6** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nHold Control to use on an allied hero.\n\n\n# Passive: Fill Up\nCooldown Speed of Mana Draught is increased by **30%** while in water.",
+		"description": "# Active: Bottoms Up\nRestores **70** + **3%** of the caster's maximum mana over **6** seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nHold Control to use on an allied hero.\n\n\n# Passive: Fill Up\nCooldown Speed of Mana Draught is increased by **30%** while in water.",
 		"lore": "A refreshing drink best shared with friends.",
 		"secret_shop": false,
 		"neutral_tier": "2",
@@ -20654,11 +20677,11 @@
 		"ability_special": [
 			{
 				"key": "mana_restore",
-				"value": "60"
+				"value": "70"
 			},
 			{
 				"key": "mana_restore_pct",
-				"value": "4"
+				"value": "3"
 			},
 			{
 				"key": "heal_duration",
@@ -20681,9 +20704,9 @@
 			"AbilityCooldown": "60",
 			"AbilityCastRange": "650",
 			"AbilityValues": {
-				"mana_restore": "60",
+				"mana_restore": "70",
 				"mana_restore_pct": {
-					"value": "4",
+					"value": "3",
 					"apply_curio_bonus": "1"
 				},
 				"heal_duration": "6",
@@ -20698,7 +20721,7 @@
 		"icon": "/panorama/images/items/rippers_lash_png.png",
 		"cost": 0,
 		"cooldown": "25",
-		"cast_range": "700",
+		"cast_range": "850",
 		"mana_cost": "0",
 		"description": "# Active: Flay\nEmbeds thorns into all enemies in a **200** unit radius. Affected units take additional damage when attacked for **10** seconds.",
 		"lore": "The Fae horticulturists of Revtel are known to push the boundaries of both cross pollination and safety.",
@@ -20735,7 +20758,7 @@
 			"ItemSellable": "0",
 			"AbilityCooldown": "25",
 			"AbilityManaCost": "0",
-			"AbilityCastRange": "700",
+			"AbilityCastRange": "850",
 			"AbilityValues": {
 				"thorn_area": "200",
 				"bonus_damage_hero": "16",
@@ -20812,7 +20835,7 @@
 		"icon": "/panorama/images/items/gale_guard_png.png",
 		"cost": 0,
 		"cooldown": "30",
-		"description": "# Active: Cyclonic Shield\nEnvelops the caster in an all damage barrier that absorbs **75%** of incoming damage up to a max of **250**. Lasts for up to **10** seconds and while the barrier is active you have **50%** Slow Resistance.",
+		"description": "# Active: Cyclonic Shield\nEnvelops the caster in an all damage barrier that absorbs **75%** of incoming damage up to a max of **225**. Lasts for up to **10** seconds and while the barrier is active you have **50%** Slow Resistance.",
 		"lore": "If one truly listens, they can always rely upon the wind to make its will known.",
 		"secret_shop": false,
 		"neutral_tier": "3",
@@ -20824,7 +20847,7 @@
 			},
 			{
 				"key": "barrier_amount",
-				"value": "250"
+				"value": "225"
 			},
 			{
 				"key": "barrier_pct",
@@ -20846,7 +20869,7 @@
 			"AbilityValues": {
 				"barrier_duration": "10",
 				"barrier_amount": {
-					"value": "250",
+					"value": "225",
 					"apply_curio_bonus": "1"
 				},
 				"barrier_pct": "75",
@@ -20928,6 +20951,10 @@
 			{
 				"key": "burn_tickrate",
 				"value": ".25"
+			},
+			{
+				"key": "max_range",
+				"value": "2000"
 			}
 		],
 		"json_data": {
@@ -20944,7 +20971,11 @@
 					"apply_curio_bonus": "1"
 				},
 				"burn_duration": "6",
-				"burn_tickrate": ".25"
+				"burn_tickrate": ".25",
+				"max_range": {
+					"value": "2000",
+					"affected_by_aoe_increase": "1"
+				}
 			}
 		}
 	},
@@ -21049,7 +21080,7 @@
 		"cooldown": "0",
 		"cast_range": "0",
 		"mana_cost": "0",
-		"description": "# Passive: Keen Eye\nIncreases cast range by **125** and attack range by **100** (Melee & Ranged). Taking over **25** damage from a player controlled source or Roshan disables this effect for **3** seconds.",
+		"description": "# Passive: Keen Eye\nIncreases cast range by **100** and attack range by **100** (Melee & Ranged). Taking over **25** damage from a player controlled source or Roshan disables this effect for **6** seconds.",
 		"lore": "Deadly refinement.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -21061,11 +21092,11 @@
 			},
 			{
 				"key": "bonus_cast_range",
-				"value": "125"
+				"value": "100"
 			},
 			{
 				"key": "damage_disable",
-				"value": "3"
+				"value": "6"
 			},
 			{
 				"key": "damage_threshold",
@@ -21088,10 +21119,10 @@
 					"apply_curio_bonus": "1"
 				},
 				"bonus_cast_range": {
-					"value": "125",
+					"value": "100",
 					"apply_curio_bonus": "1"
 				},
-				"damage_disable": "3",
+				"damage_disable": "6",
 				"damage_threshold": "25"
 			}
 		}
@@ -21410,7 +21441,7 @@
 		"localized_name": "Sister's Shroud",
 		"icon": "/panorama/images/items/sisters_shroud_png.png",
 		"cost": 0,
-		"description": "# Passive: Veiled\nWhen falling below **50%** HP, gain **200%** evasion for **8** seconds. While active, dodging an attack decreases the evasion bonus by **75%** of its current value.\n\n# Passive: Last Caress\nVeiled cooldown is only reset if the wearer dies or kills an enemy hero.",
+		"description": "# Passive: Veiled\nWhen falling below **50%** HP, gain **150%** evasion for **5** seconds. While active, dodging an attack decreases the evasion bonus by **75%** of its current value.\n\n# Passive: Last Caress\nVeiled cooldown is only reset if the wearer dies or kills an enemy hero.",
 		"lore": "A pall that draped the sarcophagus of the First Sister.",
 		"secret_shop": false,
 		"neutral_tier": "1",
@@ -21422,7 +21453,7 @@
 			},
 			{
 				"key": "evasion_max",
-				"value": "200"
+				"value": "150"
 			},
 			{
 				"key": "evasion_loss",
@@ -21430,7 +21461,7 @@
 			},
 			{
 				"key": "max_duration",
-				"value": "8"
+				"value": "5"
 			}
 		],
 		"json_data": {
@@ -21442,9 +21473,9 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
 				"hp_threshold": "50",
-				"evasion_max": "200",
+				"evasion_max": "150",
 				"evasion_loss": "75",
-				"max_duration": "8"
+				"max_duration": "5"
 			}
 		}
 	},
@@ -21463,7 +21494,7 @@
 		"ability_special": [
 			{
 				"key": "health_regen_loss",
-				"value": "20%",
+				"value": "30%",
 				"header": "HEALTH RESTORATION LOSS:"
 			},
 			{
@@ -21495,7 +21526,7 @@
 			"ItemSellable": "0",
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"AbilityValues": {
-				"health_regen_loss": "20",
+				"health_regen_loss": "30",
 				"hp_damage": {
 					"value": "12",
 					"apply_curio_bonus": "1"
@@ -21513,8 +21544,8 @@
 		"icon": "/panorama/images/items/outworld_staff_png.png",
 		"cost": 0,
 		"cooldown": "30",
-		"mana_cost": "40",
-		"description": "# Active: Self-Exile\nRemoves the caster from the world for **.7** seconds, making them invulnerable and disabled. When returning to the world, the caster takes **5%** of their maximum health as damage.",
+		"mana_cost": "65",
+		"description": "# Active: Self-Exile\nMakes the caster completely invulnerable and disabled for **.7** seconds. When returning to the world, the caster takes **5%** of their maximum health as damage.",
 		"lore": "Proof that the lone sentinel was not always so.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -21532,7 +21563,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
 			"AbilityCooldown": "30",
-			"AbilityManaCost": "40",
+			"AbilityManaCost": "65",
 			"ItemCost": "0",
 			"ItemIsNeutralActiveDrop": "1",
 			"ItemPurchasable": "0",
@@ -21553,7 +21584,7 @@
 		"localized_name": "Dezun Bloodrite",
 		"icon": "/panorama/images/items/dezun_bloodrite_png.png",
 		"cost": 0,
-		"description": "# Passive: Blood Invocation\nSpells have a **15%** larger Area of Effect, but now additionally cost health equal to **35%** of their mana cost.",
+		"description": "# Passive: Blood Invocation\nSpells have a **12%** larger Area of Effect, but now additionally cost health equal to **35%** of their mana cost.",
 		"lore": "The gateway to a lost lineage of power, unlocked only with blood.",
 		"secret_shop": false,
 		"neutral_tier": "4",
@@ -21565,7 +21596,7 @@
 			},
 			{
 				"key": "aoe_pct",
-				"value": "15"
+				"value": "12"
 			}
 		],
 		"json_data": {
@@ -21578,7 +21609,7 @@
 			"AbilityValues": {
 				"health_pct": "35",
 				"aoe_pct": {
-					"value": "15",
+					"value": "12",
 					"apply_curio_bonus": "1"
 				}
 			}
@@ -21619,7 +21650,7 @@
 			},
 			{
 				"key": "debuff_duration",
-				"value": "4",
+				"value": "3",
 				"header": "DURATION:"
 			}
 		],
@@ -21639,7 +21670,7 @@
 				"movespeed_slow": "10",
 				"attack_slow": "15",
 				"cast_slow": "20",
-				"debuff_duration": "4"
+				"debuff_duration": "3"
 			}
 		}
 	},
@@ -22044,7 +22075,7 @@
 		"id": 1804,
 		"name": "item_roshans_banner",
 		"localized_name": "Roshan's Banner",
-		"quality": "artifact",
+		"quality": "consumable",
 		"icon": "/panorama/images/items/roshans_banner_png.png",
 		"cost": 0,
 		"cooldown": "1",
@@ -22091,7 +22122,7 @@
 			"ItemCost": "0",
 			"ItemSellable": "0",
 			"ItemPurchasable": "0",
-			"ItemQuality": "artifact",
+			"ItemQuality": "consumable",
 			"ItemDroppable": "1",
 			"ItemKillable": "1",
 			"ItemContributesToNetWorthWhenDropped": "0",
@@ -22158,7 +22189,7 @@
 			},
 			{
 				"key": "bonus_armor",
-				"value": "8",
+				"value": "7",
 				"header": "+",
 				"footer": "Armor"
 			},
@@ -22209,7 +22240,7 @@
 			"AbilityValues": {
 				"bonus_intellect": "40",
 				"bonus_attack_speed": "40",
-				"bonus_armor": "8",
+				"bonus_armor": "7",
 				"bonus_mana_regen": "1.5",
 				"projectile_speed": "300",
 				"int_damage_multiplier": "0.75",
@@ -22250,8 +22281,8 @@
 		"aliases": "angel|demise|khanda",
 		"quality": "common",
 		"icon": "/panorama/images/items/angels_demise_png.png",
-		"cost": 5700,
-		"cooldown": "10",
+		"cost": 5600,
+		"cooldown": "9",
 		"description": "# Passive: Empower Spell\nThe next Unit Target spell you cast on an enemy deals a separate **250** additional damage and applies a debuff that slows the target by **30%** and disables their passives for **4**s.",
 		"lore": "A blade sharp enough to slice through magic itself.",
 		"secret_shop": false,
@@ -22298,9 +22329,9 @@
 		"shop_tags": "hard_to_tag|magic_dmg",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"AbilityCooldown": "10.0",
+			"AbilityCooldown": "9.0",
 			"AbilitySharedCooldown": "phylactery",
-			"ItemCost": "5700",
+			"ItemCost": "5600",
 			"ItemShopTags": "hard_to_tag;magic_dmg",
 			"ItemQuality": "common",
 			"SuggestLategame": "1",
