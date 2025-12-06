@@ -13,13 +13,14 @@ Base = declarative_base()
 
 
 class Hero(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'heroes'
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
+	localized_name = Column(String)
 	full_name = Column(String)
 	media_name = Column(String)
-	localized_name = Column(String)
 	real_name = Column(String)
 	aliases = Column(String)
 	roles = Column(String)
@@ -61,7 +62,7 @@ class Hero(Base):
 	abilities = relationship("Ability", order_by="Ability.slot", back_populates="hero")
 	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
-	voice = relationship("Voice", uselist=False, back_populates="hero")
+	voice: 'Voice' = relationship("Voice", uselist=False, back_populates="hero")
 	facets = relationship("Facet", back_populates="hero")
 	strings = relationship(
 		"LocaleString",
@@ -76,10 +77,12 @@ class Hero(Base):
 
 
 class Ability(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'abilities'
 
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
+	localized_name = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
 
 	behavior = Column(String)
@@ -102,7 +105,6 @@ class Ability(Base):
 	slot = Column(Integer)
 	icon = Column(String)
 
-	localized_name = Column(String)
 	description = Column(String)
 	lore = Column(String)
 	note = Column(String)
@@ -118,8 +120,8 @@ class Ability(Base):
 
 	json_data = Column(String)
 
-	facet = relationship("Facet", back_populates="abilities")
-	hero = relationship("Hero", back_populates="abilities")
+	facet: 'Facet' = relationship("Facet", back_populates="abilities")
+	hero: Hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
 	facet_strings = relationship("FacetAbilityString", back_populates="ability")
 	strings = relationship(
@@ -159,6 +161,7 @@ class Ability(Base):
 
 
 class Talent(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'talents'
 
 	hero_id = Column(Integer, ForeignKey("heroes.id"), primary_key=True, nullable=True)
@@ -166,7 +169,7 @@ class Talent(Base):
 	slot = Column(Integer)
 	linked_abilities = Column(String)
 
-	ability = relationship("Ability", back_populates="talent_links")
+	ability: Ability = relationship("Ability", back_populates="talent_links")
 
 	@property
 	def localized_name(self):
@@ -184,10 +187,12 @@ class Talent(Base):
 		return f"Talent: {self.localized_name}"
 
 class Facet(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'facets'
 
 	id = Column(Integer, primary_key=True) # auto-generated
 	name = Column(String)
+	localized_name = Column(String)
 	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
 	icon =  Column(String)
 	icon_name =  Column(String)
@@ -198,11 +203,10 @@ class Facet(Base):
 	ability_special = Column(String)
 	json_data = Column(String)
 
-	localized_name = Column(String)
 	description = Column(String)
 
 
-	hero = relationship("Hero", back_populates="facets")
+	hero: Hero = relationship("Hero", back_populates="facets")
 	abilities = relationship("Ability", order_by="Ability.id", back_populates="facet")
 	ability_strings = relationship("FacetAbilityString", back_populates="facet")
 	strings = relationship(
@@ -226,6 +230,7 @@ class Facet(Base):
 
 
 class FacetAbilityString(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'facetabilitystrings'
 
 	id = Column(Integer, primary_key=True) # auto-generated
@@ -233,8 +238,8 @@ class FacetAbilityString(Base):
 	ability_id = Column(Integer, ForeignKey("abilities.id"))
 	description = Column(String)
 
-	ability = relationship("Ability", back_populates="facet_strings")
-	facet = relationship("Facet", back_populates="ability_strings")
+	ability: Ability = relationship("Ability", back_populates="facet_strings")
+	facet: Facet = relationship("Facet", back_populates="ability_strings")
 
 	strings = relationship(
 		"LocaleString",
@@ -244,6 +249,7 @@ class FacetAbilityString(Base):
 
 
 class Item(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'items'
 
 	id = Column(Integer, primary_key=True)
@@ -281,6 +287,7 @@ class Item(Base):
 
 
 class Voice(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'voices'
 
 	id = Column(Integer, primary_key=True)
@@ -293,11 +300,12 @@ class Voice(Base):
 	hero_id = Column(Integer, ForeignKey("heroes.id"))
 	criteria = Column(String)
 
-	hero = relationship("Hero", back_populates="voice")
+	hero: Hero = relationship("Hero", back_populates="voice")
 	responses = relationship("Response", back_populates="voice")
 
 
 class Response(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'responses'
 
 	name = Column(String)
@@ -310,14 +318,15 @@ class Response(Base):
 	criteria = Column(String)
 	pretty_criteria = Column(String)
 
-	hero = relationship("Hero", back_populates="responses")
-	voice = relationship("Voice", back_populates="responses")
+	hero: Hero = relationship("Hero", back_populates="responses")
+	voice: Voice = relationship("Voice", back_populates="responses")
 
 	def __repr__(self):
 		return f"Response: {self.name}"
 
 
 class Criterion(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'criteria'
 
 	name = Column(String, primary_key=True)
@@ -329,6 +338,7 @@ class Criterion(Base):
 
 
 class Emoticon(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'emoticons'
 
 	id = Column(Integer, primary_key=True)
@@ -339,6 +349,7 @@ class Emoticon(Base):
 
 
 class ChatWheelMessage(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'chatwheelmessages'
 
 	id = Column(Integer, primary_key=True)
@@ -353,6 +364,7 @@ class ChatWheelMessage(Base):
 
 
 class LoadingScreen(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'loadingscreens'
 
 	id = Column(Integer, primary_key=True)
@@ -371,6 +383,7 @@ class LoadingScreen(Base):
 
 
 class Patch(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'patches'
 
 	number = Column(String, primary_key=True)
@@ -381,6 +394,7 @@ class Patch(Base):
 
 
 class LocaleString(Base):
+	__allow_unmapped__ = True
 	__tablename__ = 'localestrings'
 
 	id = Column(Integer, primary_key=True)
