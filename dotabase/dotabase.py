@@ -377,6 +377,9 @@ class LoadingScreen(Base):
 	hue = Column(Integer)
 	saturation = Column(Integer)
 	value = Column(Integer)
+	r = Column(Integer)
+	g = Column(Integer)
+	b = Column(Integer)
 
 	hero_ids = Column(String)
 	category = Column(String)
