@@ -9737,7 +9737,7 @@
 		"cost": 5700,
 		"cooldown": "20",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **6** seconds, and cap their movement speed to **200**.\n\n",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **5** seconds, and cap their movement speed to **200**.\n\n",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -9784,7 +9784,7 @@
 			},
 			{
 				"key": "backstab_duration",
-				"value": "6"
+				"value": "5"
 			},
 			{
 				"key": "max_movement_speed",
@@ -9818,7 +9818,7 @@
 				"windwalk_movement_speed": "25",
 				"windwalk_fade_time": "0.3",
 				"windwalk_bonus_damage": "300",
-				"backstab_duration": "6",
+				"backstab_duration": "5",
 				"max_movement_speed": "200",
 				"visibility_radius": "1025"
 			}
@@ -15385,6 +15385,10 @@
 			{
 				"key": "creep_damage_taken_cooldown",
 				"value": "3"
+			},
+			{
+				"key": "bounty_pct",
+				"value": "100"
 			}
 		],
 		"recipe": "item_helm_of_the_dominator|item_ultimate_orb|item_recipe_helm_of_the_overlord",
@@ -15417,7 +15421,8 @@
 				"count_limit": "1",
 				"creep_ability_level_increase": "1",
 				"is_overlord": "1",
-				"creep_damage_taken_cooldown": "3"
+				"creep_damage_taken_cooldown": "3",
+				"bounty_pct": "100"
 			}
 		}
 	},
@@ -18743,7 +18748,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_all_stats",
-				"value": "7",
+				"value": "6",
 				"header": "+",
 				"footer": "All Attributes"
 			},
@@ -18755,7 +18760,7 @@
 			},
 			{
 				"key": "bonus_mana_regen",
-				"value": "2.5",
+				"value": "2.25",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -18795,9 +18800,9 @@
 			"ItemQuality": "common",
 			"SuggestLategame": "1",
 			"AbilityValues": {
-				"bonus_all_stats": "7",
+				"bonus_all_stats": "6",
 				"bonus_health_regen": "6.5",
-				"bonus_mana_regen": "2.5",
+				"bonus_mana_regen": "2.25",
 				"slow": "30",
 				"bonus_spell_damage": "150",
 				"slow_duration": "3",
@@ -22640,6 +22645,7 @@
 			"SuggestLategame": "1",
 			"ItemPurchasable": "1",
 			"ItemSellable": "1",
+			"ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
 			"AbilityValues": {
 				"bonus_health": "450",
 				"bonus_mana": "450",
