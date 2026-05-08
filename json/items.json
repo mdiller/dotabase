@@ -4184,13 +4184,13 @@
 		"name": "item_recipe_heart",
 		"localized_name": "Heart of Tarrasque Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 600,
+		"cost": 700,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "600",
+			"ItemCost": "700",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_heart",
@@ -4206,7 +4206,7 @@
 		"aliases": "hot|heart of tarrasque",
 		"quality": "epic",
 		"icon": "/panorama/images/items/heart_png.png",
-		"cost": 5100,
+		"cost": 5200,
 		"description": "# Passive: Behemoth's Blood\nYour health regeneration is increased by **1.5%** of your missing health.",
 		"lore": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
 		"secret_shop": false,
@@ -4233,7 +4233,7 @@
 		"shop_tags": "str|regen_health|health_pool|tank",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "5100",
+			"ItemCost": "5200",
 			"ItemShopTags": "str;regen_health;health_pool;tank",
 			"ItemQuality": "epic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -4415,7 +4415,7 @@
 		"cost": 4500,
 		"cooldown": "27",
 		"mana_cost": "75",
-		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **260** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **825**\n\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-45**. \n\nRadius: **1200**",
+		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **260** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **825**\n\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-40**. \n\nRadius: **1200**",
 		"lore": "Said to have belonged to a goddess, today it retains much of its former power.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -4444,7 +4444,7 @@
 			},
 			{
 				"key": "aura_attack_speed",
-				"value": "-45"
+				"value": "-40"
 			},
 			{
 				"key": "blast_damage",
@@ -4488,7 +4488,7 @@
 					"value": "1200",
 					"affected_by_aoe_increase": "1"
 				},
-				"aura_attack_speed": "-45",
+				"aura_attack_speed": "-40",
 				"blast_damage": "260",
 				"blast_movement_speed": "-40",
 				"blast_debuff_duration": "4.0",
@@ -4508,16 +4508,16 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/bloodstone_png.png",
 		"cost": 4700,
-		"cooldown": "30",
+		"cooldown": "35",
 		"mana_cost": "0",
-		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal to **60%**. Lasts **5** seconds. \n\n\n# Passive: Spell Weakness Aura\nEnemy units take **12%** increased damage from spells. \n\nRadius: **1200**",
+		"description": "# Active: Bloodpact\nIncreases Bloodstone's Spell Lifesteal to **60%**. Lasts **5** seconds. \n\n\n# Passive: Spell Weakness Aura\nEnemy units take **10%** increased damage from spells. \n\nRadius: **1200**",
 		"lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
 			{
 				"key": "bonus_health",
-				"value": "650",
+				"value": "625",
 				"header": "+",
 				"footer": "Health"
 			},
@@ -4563,7 +4563,7 @@
 			},
 			{
 				"key": "aura_spell_vulnerability",
-				"value": "12"
+				"value": "10"
 			},
 			{
 				"key": "aura_radius",
@@ -4576,7 +4576,7 @@
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
 			"FightRecapLevel": "2",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "30.0",
+			"AbilityCooldown": "35.0",
 			"AbilityManaCost": "0",
 			"ItemCost": "4700",
 			"ItemShopTags": "int;regen_health;mana_pool;health_pool;tank",
@@ -4585,7 +4585,7 @@
 			"AllowedInBackpack": "1",
 			"SuggestLategame": "1",
 			"AbilityValues": {
-				"bonus_health": "650",
+				"bonus_health": "625",
 				"bonus_mana": "450",
 				"bonus_mp_regen": "0",
 				"bonus_hp_regen": "0",
@@ -4594,7 +4594,7 @@
 				"buff_duration": "5",
 				"spell_lifesteal_while_active": "60",
 				"hp_cost": "0",
-				"aura_spell_vulnerability": "12",
+				"aura_spell_vulnerability": "10",
 				"aura_radius": {
 					"value": "1200",
 					"affected_by_aoe_increase": "1"
@@ -6910,7 +6910,7 @@
 		"quality": "common",
 		"icon": "/panorama/images/items/soul_ring_png.png",
 		"cost": 805,
-		"cooldown": "25",
+		"cooldown": "30",
 		"health_cost": "170",
 		"description": "# Active: Sacrifice\nConsume **170** health to temporarily gain **170** mana.  Lasts **10** seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
 		"lore": "A ring that feeds on the souls of those who wear it.",
@@ -6942,7 +6942,7 @@
 		"shop_tags": "regen_health|boost_mana|mana|regen_mana",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
-			"AbilityCooldown": "25.0",
+			"AbilityCooldown": "30.0",
 			"AbilityHealthCost": "170",
 			"ItemCost": "805",
 			"ItemShopTags": "regen_health;boost_mana;mana;regen_mana",
@@ -9737,9 +9737,9 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/silver_edge_png.png",
 		"cost": 5700,
-		"cooldown": "20",
+		"cooldown": "22",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **25%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **5** seconds, and cap their movement speed to **200**.\n\n",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **22%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **5** seconds, and cap their movement speed to **200**.\n\n",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -9774,7 +9774,7 @@
 			},
 			{
 				"key": "windwalk_movement_speed",
-				"value": "25"
+				"value": "22"
 			},
 			{
 				"key": "windwalk_fade_time",
@@ -9802,7 +9802,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "20.0",
+			"AbilityCooldown": "22.0",
 			"AbilitySharedCooldown": "shadow_blade",
 			"AbilityManaCost": "75",
 			"ItemCost": "5700",
@@ -9817,7 +9817,7 @@
 				"bonus_intellect": "0",
 				"bonus_mana_regen": "0",
 				"windwalk_duration": "17.0",
-				"windwalk_movement_speed": "25",
+				"windwalk_movement_speed": "22",
 				"windwalk_fade_time": "0.3",
 				"windwalk_bonus_damage": "300",
 				"backstab_duration": "5",
@@ -10308,6 +10308,7 @@
 			"ItemShareability": "ITEM_FULLY_SHAREABLE",
 			"ItemPermanent": "0",
 			"ItemInitialCharges": "1",
+			"ItemHideCharges": "1",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"ItemContributesToNetWorthWhenDropped": "0",
 			"IsTempestDoubleClonable": "0",
@@ -14468,7 +14469,7 @@
 		"quality": "rare",
 		"icon": "/panorama/images/items/mage_slayer_png.png",
 		"cost": 3100,
-		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, dealing **40** physical damage per second and causing them to do **40%** less spell damage for **3** seconds.",
+		"description": "# Passive: Mage Slayer\nPlaces a debuff when you attack enemies, dealing **35** physical damage per second and causing them to do **40%** less spell damage for **3** seconds.",
 		"lore": "Forged by a secret order in The Third Age of Praxa'cia to fell the False King.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -14507,7 +14508,7 @@
 			},
 			{
 				"key": "dps",
-				"value": "40"
+				"value": "35"
 			}
 		],
 		"recipe": "item_pers|item_cloak|item_blades_of_attack|item_orb_of_venom",
@@ -14529,7 +14530,7 @@
 				"bonus_mana_regen": "2.5",
 				"bonus_damage": "15",
 				"duration": "3",
-				"dps": "40"
+				"dps": "35"
 			}
 		}
 	},
@@ -16052,14 +16053,14 @@
 		"icon": "/panorama/images/items/boots_of_bearing_png.png",
 		"cost": 4225,
 		"cooldown": "30",
-		"description": "# Active: Endurance\nGives +**50** attack speed and +**15%** movement speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **20** movement speed and **2.5** health regeneration to allies.  \n\nRadius: **1200**\nMovement speed bonuses from multiple pairs of boots do not stack.",
+		"description": "# Active: Endurance\nGives +**50** attack speed and +**15%** movement speed to nearby allies for **6** seconds. For the first **1.5** seconds allies are immune to slows.\n\n Radius: **1200**  \n\n\n# Passive: Swiftness Aura\nGrants **15** movement speed and **2.5** health regeneration to allies.  \n\nRadius: **1200**\nMovement speed bonuses from multiple pairs of boots do not stack.",
 		"lore": "Resplendent footwear fashioned for the ancient herald that first dared spread the glory of Stonehall beyond the original borders of its nascent claim.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
 			{
 				"key": "aura_movement_speed",
-				"value": "20"
+				"value": "15"
 			},
 			{
 				"key": "aura_health_regen",
@@ -16125,7 +16126,7 @@
 			"SuggestLategame": "1",
 			"SpeciallyBannedFromNeutralSlot": "1",
 			"AbilityValues": {
-				"aura_movement_speed": "20",
+				"aura_movement_speed": "15",
 				"aura_health_regen": "2.5",
 				"bonus_str": "8",
 				"bonus_int": "0",
@@ -16809,7 +16810,7 @@
 			},
 			{
 				"key": "agility",
-				"value": "12",
+				"value": "15",
 				"header": "+",
 				"footer": "Agility"
 			},
@@ -16861,7 +16862,7 @@
 			"SuggestLategame": "1",
 			"AbilityValues": {
 				"all_stats": "0",
-				"agility": "12",
+				"agility": "15",
 				"damage": "20",
 				"count": "2",
 				"secondary_target_range_bonus": "150",
@@ -17067,7 +17068,7 @@
 		"cooldown": "15",
 		"cast_range": "600",
 		"mana_cost": "75",
-		"description": "# Active: Suppress\nDispels both the wearer and the target. Enemy targets are slowed for **5** seconds. Allied targets gain bonus movespeed and **40%** slow resistance for **5** seconds. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at **100%** and gradually decrease to 0% over the course of the buff duration.\nDispel Type: **Basic Dispel**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nIllusions do not burn mana.",
+		"description": "# Active: Suppress\nDispels both the wearer and the target. Enemy targets are slowed for **4** seconds. Allied targets gain bonus movespeed and **40%** slow resistance for **4** seconds. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at **100%** and gradually decrease to 0% over the course of the buff duration.\nDispel Type: **Basic Dispel**\n\n\n# Passive: Manabreak\nEach attack burns **40** mana from the target, and deals **1** physical damage per burned mana. \n\nIllusions do not burn mana.",
 		"lore": "Once entrusted to an Apostle General of the Rumusque Faithful's expeditionary force.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -17110,15 +17111,15 @@
 			},
 			{
 				"key": "enemy_effect_duration",
-				"value": "5.0"
+				"value": "4.0"
 			},
 			{
 				"key": "ally_effect_duration",
-				"value": "5.0"
+				"value": "4.0"
 			},
 			{
 				"key": "movement_speed_buff_rate",
-				"value": "5"
+				"value": "4"
 			},
 			{
 				"key": "phase_movement_speed",
@@ -17159,9 +17160,9 @@
 				"purge_rate": "5",
 				"purge_root_duration": "3.0",
 				"damage_per_burn": "1.0",
-				"enemy_effect_duration": "5.0",
-				"ally_effect_duration": "5.0",
-				"movement_speed_buff_rate": "5",
+				"enemy_effect_duration": "4.0",
+				"ally_effect_duration": "4.0",
+				"movement_speed_buff_rate": "4",
 				"phase_movement_speed": "100",
 				"slow_resist": "40"
 			}
@@ -18474,7 +18475,7 @@
 		"ability_special": [
 			{
 				"key": "bonus_damage",
-				"value": "7 10 13 16",
+				"value": "6 9 12 15",
 				"header": "+",
 				"footer": "Damage"
 			},
@@ -18500,7 +18501,7 @@
 			"Model": "models/props_gameplay/neutral_box.vmdl",
 			"MaxLevel": "4",
 			"AbilityValues": {
-				"bonus_damage": "7 10 13 16",
+				"bonus_damage": "6 9 12 15",
 				"armor": "0 4 6 8",
 				"knockback_resist": "0 0 0 40"
 			}
@@ -18594,7 +18595,7 @@
 			},
 			{
 				"key": "intelligence_pct",
-				"value": "-6%",
+				"value": "-9%",
 				"header": "-",
 				"footer": "Intelligence"
 			}
@@ -18610,7 +18611,7 @@
 			"AbilityValues": {
 				"health_restoration": "9 12 15",
 				"bat_reduce": "6 9 12",
-				"intelligence_pct": "-6"
+				"intelligence_pct": "-9"
 			}
 		}
 	},
@@ -18737,7 +18738,7 @@
 			},
 			{
 				"key": "bonus_mana",
-				"value": "200 250",
+				"value": "150 200",
 				"header": "+",
 				"footer": "Mana"
 			},
@@ -18761,7 +18762,7 @@
 			"MaxLevel": "2",
 			"AbilityValues": {
 				"bonus_gpm": "75 100",
-				"bonus_mana": "200 250",
+				"bonus_mana": "150 200",
 				"bonus_damage": "-30 -60"
 			}
 		}
@@ -21023,7 +21024,7 @@
 		"cost": 1775,
 		"cooldown": "10",
 		"cast_range": "1000",
-		"description": "# Active: Soul Release\nProvides **40** health regeneration when cast on allies.\n\nCan be ground targeted to lie dormant for up to **15**s and attach to the first enemy that comes within **400** radius. When on enemies, deals **25** damage per second and provides True Sight over them and shares their vision with the wearer's team.\n\nLasts **8** seconds.\n\nGains charges every time an enemy hero dies within **1500** units.",
+		"description": "# Active: Soul Release\nProvides **40** health regeneration when cast on allies.\n\nCan be ground targeted to lie dormant for up to **15**s and attach to the first enemy that comes within **450** radius. When on enemies, deals **25** damage per second and provides True Sight over them and shares their vision with the wearer's team.\n\nLasts **8** seconds.\n\nGains charges every time an enemy hero dies within **1500** units.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
@@ -21081,11 +21082,11 @@
 			},
 			{
 				"key": "latch_range",
-				"value": "400"
+				"value": "450"
 			},
 			{
 				"key": "latch_vision",
-				"value": "400"
+				"value": "450"
 			},
 			{
 				"key": "linger_after_latch_duration",
@@ -21125,8 +21126,8 @@
 				"soul_damage_amount": "25",
 				"duration": "8.0",
 				"ground_duration": "15.0",
-				"latch_range": "400",
-				"latch_vision": "400",
+				"latch_range": "450",
+				"latch_vision": "450",
 				"linger_after_latch_duration": "0.5"
 			}
 		}
@@ -21159,8 +21160,8 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/consecrated_wraps_png.png",
 		"cost": 2600,
-		"cooldown": "3",
-		"description": "# Passive: Hallowed\nGain a charge every **3**s, up to a maximum of %AbilityCharges% charges. Upon gaining a charge, your movement speed is increased by **15%** for **5**s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for **5**s that absorbs **120** damage per charge (**360** max).",
+		"cooldown": "4",
+		"description": "# Passive: Hallowed\nGain a charge every **4**s, up to a maximum of %AbilityCharges% charges. Upon gaining a charge, your movement speed is increased by **15%** for **5**s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for **5**s that absorbs **120** damage per charge (**360** max).",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
@@ -21181,14 +21182,6 @@
 				"value": "250",
 				"header": "+",
 				"footer": "Health"
-			},
-			{
-				"key": "stack_gain_time",
-				"value": "4"
-			},
-			{
-				"key": "max_stacks",
-				"value": "3"
 			},
 			{
 				"key": "movement_speed_pct_on_stack_gain",
@@ -21228,15 +21221,13 @@
 			"ItemRequiresCharges": "1",
 			"ItemDisplayCharges": "1",
 			"AbilityCharges": "3",
-			"AbilityChargeRestoreTime": "3",
+			"AbilityChargeRestoreTime": "4",
 			"AbilityCooldown": "0",
 			"ItemPermanent": "1",
 			"AbilityValues": {
 				"bonus_spell_resist": "12",
 				"bonus_all_stats": "5",
 				"bonus_health": "250",
-				"stack_gain_time": "4",
-				"max_stacks": "3",
 				"movement_speed_pct_on_stack_gain": "15",
 				"stack_threshold_damage": "0",
 				"duration": "5",
@@ -21273,7 +21264,7 @@
 		"icon": "/panorama/images/items/crellas_crozier_png.png",
 		"cost": 4800,
 		"cooldown": "20",
-		"description": "# Active: Rite of Rumusque\nYou enter ghost form for **4** seconds, becoming immune to physical damage, but are unable to attack and **-30%** more vulnerable to magic damage.\n\nSteal **5%** movement speed from enemy heroes in **900** range every second. Movement speed steal lasts **1.5**s.\n\nPutrefaction Aura's effect is increased to **75%**. All of the lost Health Restoration is redirected to you every second.\n\n\n# Passive: Putrefaction Aura\nReduces nearby enemy heroes' Health Restoration by **30%**.\n\nRadius: **900**",
+		"description": "# Active: Rite of Rumusque\nYou enter ghost form for **4** seconds, becoming immune to physical damage, but are unable to attack and **-30%** more vulnerable to magic damage.\n\nSteal **6%** movement speed from enemy heroes in **900** range every second. Movement speed steal lasts **1.5**s.\n\nPutrefaction Aura's effect is increased to **75%**. All of the lost Health Restoration is redirected to you every second.\n\n\n# Passive: Putrefaction Aura\nReduces nearby enemy heroes' Health Restoration by **30%**.\n\nRadius: **900**",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [
@@ -21321,7 +21312,7 @@
 			},
 			{
 				"key": "movespeed_steal_pct",
-				"value": "5"
+				"value": "6"
 			},
 			{
 				"key": "active_health_steal",
@@ -21361,7 +21352,7 @@
 					"value": "900",
 					"affected_by_aoe_increase": "1"
 				},
-				"movespeed_steal_pct": "5",
+				"movespeed_steal_pct": "6",
 				"active_health_steal": "75",
 				"stack_duration": "1.5"
 			}
@@ -22222,7 +22213,7 @@
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
-			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
 			"Model": "models/heroes/tidehunter/tidehunter_fish_pickup.vmdl",
 			"AbilityCastRange": "20",
 			"AbilityCastPoint": "0.0",
