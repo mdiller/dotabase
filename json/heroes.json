@@ -65,7 +65,8 @@
 			"SimilarHeroes": "109,12,94",
 			"Adjectives": {
 				"NicePecs": "1",
-				"Parent": "1"
+				"Parent": "1",
+				"Purple": "1"
 			},
 			"Persona": {
 				"1": {
@@ -369,6 +370,7 @@
 		"json_data": {
 			"Model": "models/heroes/axe/axe.vmdl",
 			"SoundSet": "Hero_Axe",
+			"IdleSoundLoop": "Hero_Axe.IdleLoop",
 			"PickSound": "axe_axe_spawn_01",
 			"BanSound": "axe_axe_anger_01",
 			"Enabled": "1",
@@ -459,6 +461,15 @@
 				"run": "340"
 			},
 			"BoundsHullName": "DOTA_HULL_SIZE_HERO",
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_axe_carnival",
+					"token": "#npc_dota_hero_axe_carnival",
+					"token_english": "#npc_dota_hero_axe_carnival_en",
+					"cosmetic_group_name": "#npc_dota_hero_axe_carnival_cosmetic_group_name",
+					"Model": "models/items/axe/axe_carnival/axe_carnival_base.vmdl"
+				}
+			},
 			"ItemSlots": {
 				"0": {
 					"SlotIndex": "0",
@@ -552,6 +563,48 @@
 					"SlotIndex": "12",
 					"SlotName": "hero_effigy",
 					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "weapon_persona_1",
+					"SlotText": "#LoadoutSlot_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1000",
+					"DisplayInLoadout": "0"
+				},
+				"17": {
+					"SlotIndex": "17",
+					"SlotName": "back_persona_1",
+					"SlotText": "#LoadoutSlot_Back",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "4000",
+					"MaxPolygonsLOD1": "1600",
+					"DisplayInLoadout": "0"
+				},
+				"19": {
+					"SlotIndex": "19",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"CanEquipFromSlotType": {
+						"4": {
+							"SlotTypeName": "taunt",
+							"ItemDefExclusions": "0000"
+						}
+					},
+					"DisplayInLoadout": "1"
+				},
+				"20": {
+					"SlotIndex": "20",
+					"SlotName": "hero_effigy_persona_1",
+					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"21": {
+					"SlotIndex": "21",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"particle_folder": "particles/units/heroes/hero_axe",
@@ -721,7 +774,8 @@
 				"Legs": "4",
 				"Nose": "0",
 				"BadTeeth": "1",
-				"Flying": "1"
+				"Flying": "1",
+				"Purple": "1"
 			},
 			"HealthBarOffset": "230",
 			"Ability1": "bane_enfeeble",
@@ -998,7 +1052,8 @@
 			"Adjectives": {
 				"BadTeeth": "1",
 				"Cape": "1",
-				"Red": "1"
+				"Red": "1",
+				"Mask": "1"
 			},
 			"Ability1": "bloodseeker_bloodrage",
 			"Ability2": "bloodseeker_blood_bath",
@@ -1734,7 +1789,8 @@
 			"Adjectives": {
 				"Female": "1",
 				"Cape": "1",
-				"Icy": "1"
+				"Icy": "1",
+				"Purple": "1"
 			},
 			"NameAliases": "Traxex",
 			"Ability1": "drow_ranger_frost_arrows",
@@ -2072,7 +2128,8 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "29,16,97",
 			"Adjectives": {
-				"Fuzzy": "1"
+				"Fuzzy": "1",
+				"Brown": "1"
 			},
 			"Ability1": "earthshaker_fissure",
 			"Ability2": "earthshaker_enchant_totem",
@@ -2396,7 +2453,8 @@
 				"Nose": "0",
 				"Bearded": "1",
 				"BadTeeth": "1",
-				"NicePecs": "1"
+				"NicePecs": "1",
+				"Mask": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
 			"HeroSelectSoundEffect": "Hero_Juggernaut.Pick",
@@ -2741,7 +2799,8 @@
 			"SimilarHeroes": "21,14,123",
 			"Adjectives": {
 				"Steed": "1",
-				"Female": "1"
+				"Female": "1",
+				"Blue": "1"
 			},
 			"NameAliases": "Princess;Moon;potm",
 			"Ability1": "mirana_starfall",
@@ -3238,6 +3297,15 @@
 					"particles/units/heroes/hero_morphling/morphling_loadout.vpcf": "loadout"
 				}
 			},
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_morphling_carnival",
+					"token": "#npc_dota_hero_morphling_carnival",
+					"token_english": "#npc_dota_hero_morphling_carnival",
+					"cosmetic_group_name": "#npc_dota_hero_morphling_carnival_cosmetic_group_name",
+					"Model": "models/items/morphling/morphling_automaton/morphling_automaton.vmdl"
+				}
+			},
 			"ItemSlots": {
 				"0": {
 					"SlotIndex": "0",
@@ -3311,6 +3379,48 @@
 					"SlotIndex": "9",
 					"SlotName": "hero_effigy",
 					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "arms_persona_1",
+					"SlotText": "#LoadoutSlot_Arms_Pudge_Persona",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1250",
+					"DisplayInLoadout": "0"
+				},
+				"15": {
+					"SlotIndex": "15",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"CanEquipFromSlotType": {
+						"5": {
+							"SlotTypeName": "taunt",
+							"ItemDefExclusions": "0000"
+						}
+					},
+					"DisplayInLoadout": "1"
+				},
+				"16": {
+					"SlotIndex": "16",
+					"SlotName": "neck_persona_1",
+					"SlotText": "#LoadoutSlot_Neck",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "4000",
+					"MaxPolygonsLOD1": "1600",
+					"DisplayInLoadout": "0"
+				},
+				"17": {
+					"SlotIndex": "17",
+					"SlotName": "hero_effigy_persona_1",
+					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"18": {
+					"SlotIndex": "18",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"Bot": {
@@ -4974,7 +5084,8 @@
 			"SimilarHeroes": "7,2,96",
 			"Adjectives": {
 				"Legs": "6",
-				"Nose": "0"
+				"Nose": "0",
+				"Brown": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
 			"HeroSelectSoundEffect": "Hero_Sandking.Pick",
@@ -5478,6 +5589,7 @@
 		"json_data": {
 			"Model": "models/heroes/sven/sven.vmdl",
 			"SoundSet": "Hero_Sven",
+			"IdleSoundLoop": "Hero_Sven.IdleLoop",
 			"PickSound": "sven_sven_spawn_04",
 			"BanSound": "sven_sven_anger_03",
 			"Enabled": "1",
@@ -5499,7 +5611,10 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "42,81,23",
 			"Adjectives": {
-				"NicePecs": "1"
+				"Blue": "1",
+				"Red": "1",
+				"NicePecs": "1",
+				"Mask": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_omniknight",
 			"HeroSelectSoundEffect": "Hero_Sven.Pick",
@@ -5816,7 +5931,8 @@
 			"HeroSelectSoundEffect": "Hero_Tiny.Pick",
 			"SimilarHeroes": "23,97,18",
 			"Adjectives": {
-				"Nose": "0"
+				"Nose": "0",
+				"Brown": "1"
 			},
 			"GibType": "stone",
 			"NameAliases": "Stone Giant",
@@ -6136,7 +6252,7 @@
 				"Female": "1",
 				"Spirit": "1",
 				"Undead": "1",
-				"Green": "1"
+				"Blue": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_death_prophet",
 			"HeroSelectSoundEffect": "Hero_VengefulSpirit.Pick",
@@ -7695,7 +7811,8 @@
 			"SimilarHeroes": "27,79,31",
 			"Adjectives": {
 				"Cape": "1",
-				"Demon": "1"
+				"Demon": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_witch_doctor",
 			"HeroSelectSoundEffect": "Hero_Lion.Pick",
@@ -8003,7 +8120,9 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "26,79,87",
 			"Adjectives": {
-				"BadTeeth": "1"
+				"BadTeeth": "1",
+				"Mask": "1",
+				"Yellow": "1"
 			},
 			"NameAliases": "ss;Rhasta",
 			"workshop_guide_name": "Shadow Shaman",
@@ -8326,7 +8445,8 @@
 			"SimilarHeroes": "114,95,93",
 			"Adjectives": {
 				"Legs": "0",
-				"Aquatic": "1"
+				"Aquatic": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_tidehunter",
 			"HeroSelectSoundEffect": "Hero_Slardar.Pick",
@@ -8547,6 +8667,7 @@
 			"Model": "models/heroes/tidehunter/tidehunter.vmdl",
 			"IdleExpression": "scenes/tidehunter/tidehunter_exp_idle_01.vcd",
 			"SoundSet": "Hero_Tidehunter",
+			"IdleSoundLoop": "Hero_Tidehunter.IdleLoop",
 			"PickSound": "tidehunter_tide_spawn_09",
 			"BanSound": "tidehunter_tide_anger_04",
 			"Enabled": "1",
@@ -8889,7 +9010,8 @@
 			"SimilarHeroes": "31,112,110",
 			"Adjectives": {
 				"BadTeeth": "1",
-				"Potbelly": "1"
+				"Potbelly": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_necrolyte",
 			"HeroSelectSoundEffect": "Hero_Witchdoctor.Pick",
@@ -9524,7 +9646,7 @@
 			"Adjectives": {
 				"Horns": "1",
 				"Bearded": "1",
-				"Blue": "1"
+				"Purple": "1"
 			},
 			"PickSound": "riki_riki_spawn_01",
 			"BanSound": "riki_riki_anger_04",
@@ -9855,7 +9977,7 @@
 				"Nose": "0",
 				"NicePecs": "1",
 				"Flying": "1",
-				"Blue": "1"
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_bane",
 			"HeroSelectSoundEffect": "Hero_Enigma.Pick",
@@ -10093,7 +10215,10 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "39,13,74",
 			"Adjectives": {
-				"Bearded": "1"
+				"Bearded": "1",
+				"Mask": "1",
+				"Yellow": "1",
+				"Brown": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_lina",
 			"HeroSelectSoundEffect": "Hero_Tinker.Pick",
@@ -11577,7 +11702,8 @@
 				"Wings": "1",
 				"Horns": "1",
 				"Female": "1",
-				"Demon": "1"
+				"Demon": "1",
+				"Blue": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_vengefulspirit",
 			"HeroSelectSoundEffect": "Hero_QueenOfPain.Pick",
@@ -12110,7 +12236,8 @@
 			"SimilarHeroes": "1,44,8",
 			"Adjectives": {
 				"Nose": "0",
-				"NicePecs": "1"
+				"NicePecs": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_bounty_hunter",
 			"HeroSelectSoundEffect": "Hero_FacelessVoid.Pick",
@@ -13059,7 +13186,8 @@
 			"SimilarHeroes": "41,114,93",
 			"Adjectives": {
 				"Female": "1",
-				"Cape": "1"
+				"Cape": "1",
+				"Green": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_bounty_hunter",
 			"HeroSelectSoundEffect": "Hero_PhantomAssassin.Pick",
@@ -13425,6 +13553,7 @@
 			"Model": "models/heroes/pugna/pugna.vmdl",
 			"IdleExpression": "scenes/pugna/pugna_exp_idle_01.vcd",
 			"SoundSet": "Hero_Pugna",
+			"IdleSoundLoop": "Hero_Pugna.IdleLoop",
 			"Enabled": "1",
 			"HeroUnlockOrder": "3",
 			"Role": "Nuker,Pusher",
@@ -13702,7 +13831,9 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "44,32,93",
 			"Adjectives": {
-				"Female": "1"
+				"Female": "1",
+				"Masked": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_omniknight",
 			"HeroSelectSoundEffect": "Hero_TemplarAssassin.Pick",
@@ -14929,7 +15060,9 @@
 			"workshop_guide_name": "Dazzle",
 			"new_player_enable": "1",
 			"SimilarHeroes": "57,37,111",
-			"Adjectives": {},
+			"Adjectives": {
+				"Purple": "1"
+			},
 			"LastHitChallengeRival": "npc_dota_hero_witch_doctor",
 			"HeroSelectSoundEffect": "Hero_Dazzle.Pick",
 			"GibType": "default",
@@ -15219,7 +15352,8 @@
 			"SimilarHeroes": "17,71,100",
 			"Adjectives": {
 				"Arachnophobic": "1",
-				"Red": "1"
+				"Red": "1",
+				"Mask": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_sand_king",
 			"HeroSelectSoundEffect": "Hero_Rattletrap.Pick",
@@ -15945,6 +16079,7 @@
 			"Model": "models/heroes/life_stealer/life_stealer.vmdl",
 			"IdleExpression": "scenes/life_stealer/life_stealer_exp_idle_01.vcd",
 			"SoundSet": "Hero_LifeStealer",
+			"IdleSoundLoop": "Hero_LifeStealer.IdleLoop",
 			"Enabled": "1",
 			"HeroUnlockOrder": "1",
 			"Role": "Carry,Durable,Escape,Disabler",
@@ -16245,7 +16380,8 @@
 			"SimilarHeroes": "2,98,108",
 			"Adjectives": {
 				"Bearded": "1",
-				"Parent": "1"
+				"Parent": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_earthshaker",
 			"HeroSelectSoundEffect": "Hero_DarkSeer.Pick",
@@ -16495,7 +16631,8 @@
 			"Adjectives": {
 				"Horns": "1",
 				"Undead": "1",
-				"Fiery": "1"
+				"Fiery": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_windrunner",
 			"HeroSelectSoundEffect": "Hero_Clinkz.Pick",
@@ -17313,7 +17450,8 @@
 			"Adjectives": {
 				"NicePecs": "1",
 				"Fiery": "1",
-				"Undead": "1"
+				"Undead": "1",
+				"Blue": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_dazzle",
 			"HeroSelectSoundEffect": "Hero_Huskar.Pick",
@@ -18095,7 +18233,9 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "28,88,32",
 			"Adjectives": {
-				"BadTeeth": "1"
+				"BadTeeth": "1",
+				"Mask": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
 			"HeroSelectSoundEffect": "Hero_BountyHunter.Pick",
@@ -18413,7 +18553,8 @@
 			"SimilarHeroes": "62,32,44",
 			"Adjectives": {
 				"Legs": "4",
-				"Nose": "0"
+				"Nose": "0",
+				"Blue": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_viper",
 			"HeroSelectSoundEffect": "Hero_Weaver.Pick",
@@ -18975,7 +19116,8 @@
 				"Arachnophobic": "1",
 				"Flying": "1",
 				"Fiery": "1",
-				"Red": "1"
+				"Red": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_lina",
 			"HeroSelectSoundEffect": "Hero_Batrider.Pick",
@@ -19191,7 +19333,8 @@
 			"SimilarHeroes": "58,53,33",
 			"Adjectives": {
 				"Steed": "1",
-				"Arachnophobic": "1"
+				"Arachnophobic": "1",
+				"Yellow": "1"
 			},
 			"workshop_guide_name": "Chen",
 			"LastHitChallengeRival": "npc_dota_hero_sven",
@@ -19469,7 +19612,8 @@
 				"Legs": "0",
 				"Nose": "0",
 				"Female": "1",
-				"Undead": "1"
+				"Undead": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_bounty_hunter",
 			"HeroSelectSoundEffect": "Hero_Spectre.Pick",
@@ -20208,7 +20352,8 @@
 			"SimilarHeroes": "95,44,114",
 			"Adjectives": {
 				"Fuzzy": "1",
-				"Parent": "1"
+				"Parent": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_tiny",
 			"HeroSelectSoundEffect": "Hero_Ursa.Pick",
@@ -20677,7 +20822,9 @@
 			"SimilarHeroes": "94,109,6",
 			"Adjectives": {
 				"Steed": "1",
-				"Flying": "1"
+				"Flying": "1",
+				"Mask": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_sniper",
 			"HeroSelectSoundEffect": "Hero_Gyrocopter.Pick",
@@ -20956,7 +21103,8 @@
 			"Adjectives": {
 				"Steed": "1",
 				"Bearded": "1",
-				"Potbelly": "1"
+				"Potbelly": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_earthshaker",
 			"HeroSelectSoundEffect": "Hero_Alchemist.Pick",
@@ -21635,7 +21783,9 @@
 			"CMEnabled": "1",
 			"new_player_enable": "1",
 			"SimilarHeroes": "87,37,11",
-			"Adjectives": {},
+			"Adjectives": {
+				"Purple": "1"
+			},
 			"LastHitChallengeRival": "npc_dota_hero_zuus",
 			"HeroSelectSoundEffect": "Hero_Silencer.Pick",
 			"GibType": "default",
@@ -22133,7 +22283,8 @@
 			"Adjectives": {
 				"Fuzzy": "1",
 				"Bearded": "1",
-				"Arachnophobic": "1"
+				"Arachnophobic": "1",
+				"Red": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_skeleton_king",
 			"HeroSelectSoundEffect": "Hero_Lycan.Pick",
@@ -22867,7 +23018,8 @@
 			"Adjectives": {
 				"Fuzzy": "1",
 				"Bearded": "1",
-				"Arachnophobic": "1"
+				"Arachnophobic": "1",
+				"Brown": "1"
 			},
 			"PickSound": "lone_druid_lone_druid_spawn_01",
 			"BanSound": "lone_druid_lone_druid_anger_10",
@@ -23135,7 +23287,8 @@
 			"SimilarHeroes": "54,42,18",
 			"Adjectives": {
 				"Steed": "1",
-				"Red": "1"
+				"Red": "1",
+				"Mask": "1"
 			},
 			"BotImplemented": "1",
 			"workshop_guide_name": "Chaos Knight",
@@ -23704,7 +23857,8 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "85,103,105",
 			"Adjectives": {
-				"Green": "1"
+				"Green": "1",
+				"Brown": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_tiny",
 			"HeroSelectSoundEffect": "Hero_Treant.Pick",
@@ -24437,7 +24591,8 @@
 				"Nose": "0",
 				"Cape": "1",
 				"Arachnophobic": "1",
-				"Green": "1"
+				"Green": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_warlock",
 			"HeroSelectSoundEffect": "Hero_Rubick.Pick",
@@ -24933,7 +25088,8 @@
 			"SimilarHeroes": "46,62,32",
 			"Adjectives": {
 				"Legs": "6",
-				"Nose": "0"
+				"Nose": "0",
+				"Red": "1"
 			},
 			"PickSound": "nyx_assassin_nyx_spawn_01",
 			"BanSound": "nyx_assassin_nyx_anger_07",
@@ -25405,7 +25561,8 @@
 			"Adjectives": {
 				"Steed": "1",
 				"Bearded": "1",
-				"Parent": "1"
+				"Parent": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_chaos_knight",
 			"HeroSelectSoundEffect": "Hero_KeeperOfTheLight.Pick",
@@ -26810,7 +26967,8 @@
 			"Adjectives": {
 				"Horns": "1",
 				"Legs": "4",
-				"Bearded": "1"
+				"Bearded": "1",
+				"Brown": "1"
 			},
 			"HeroSelectSoundEffect": "Hero_Centaur.Pick",
 			"GibType": "default",
@@ -27085,7 +27243,8 @@
 			"Adjectives": {
 				"Horns": "1",
 				"Legs": "4",
-				"Fuzzy": "1"
+				"Fuzzy": "1",
+				"Brown": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_tidehunter",
 			"HeroSelectSoundEffect": "Hero_Magnataur.Pick",
@@ -27339,7 +27498,8 @@
 			"SimilarHeroes": "29,108,43",
 			"Adjectives": {
 				"Steed": "1",
-				"BadTeeth": "1"
+				"BadTeeth": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_tiny",
 			"HeroSelectSoundEffect": "Hero_Shredder.Pick",
@@ -27593,7 +27753,8 @@
 			"new_player_enable": "1",
 			"SimilarHeroes": "102,98,129",
 			"Adjectives": {
-				"NicePecs": "1"
+				"NicePecs": "1",
+				"Yellow": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_dragon_knight",
 			"HeroSelectSoundEffect": "Hero_Bristleback.Pick",
@@ -27648,6 +27809,9 @@
 			"AttackAnimationPoint": "0.300000",
 			"AttackAcquisitionRange": "600",
 			"AttackRange": "150",
+			"AttackSpeedActivityModifiers": {
+				"fast": "180"
+			},
 			"AttributePrimary": "DOTA_ATTRIBUTE_STRENGTH",
 			"AttributeBaseStrength": "22",
 			"AttributeStrengthGain": "2.800000",
@@ -27665,6 +27829,15 @@
 			"RenderablePortrait": {
 				"Particles": {
 					"particles/units/heroes/hero_bristleback/bristleback_loadout.vpcf": "loadout"
+				}
+			},
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_bristleback_carnival",
+					"token": "#npc_dota_hero_bristleback_carnival",
+					"token_english": "#npc_dota_hero_bristleback_carnival",
+					"cosmetic_group_name": "#npc_dota_hero_bristleback_carnival_cosmetic_group_name",
+					"Model": "models/items/bristleback/bristlebot/bristlebot.vmdl"
 				}
 			},
 			"ItemSlots": {
@@ -27761,6 +27934,48 @@
 					"SlotIndex": "12",
 					"SlotName": "hero_effigy",
 					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "weapon_persona_1",
+					"SlotText": "#LoadoutSlot_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1000",
+					"DisplayInLoadout": "0"
+				},
+				"15": {
+					"SlotIndex": "15",
+					"SlotName": "back_persona_1",
+					"SlotText": "#LoadoutSlot_Back",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "4000",
+					"MaxPolygonsLOD1": "1600",
+					"DisplayInLoadout": "0"
+				},
+				"18": {
+					"SlotIndex": "18",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"CanEquipFromSlotType": {
+						"6": {
+							"SlotTypeName": "taunt",
+							"ItemDefExclusions": "0000"
+						}
+					},
+					"DisplayInLoadout": "1"
+				},
+				"19": {
+					"SlotIndex": "19",
+					"SlotName": "hero_effigy_persona_1",
+					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"20": {
+					"SlotIndex": "20",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"Bot": {
@@ -28532,7 +28747,8 @@
 			"Adjectives": {
 				"Steed": "1",
 				"Cape": "1",
-				"Blue": "1"
+				"Blue": "1",
+				"Purple": "1"
 			},
 			"LastHitChallengeRival": "npc_dota_hero_chaos_knight",
 			"HeroSelectSoundEffect": "Hero_Abaddon.Pick",
@@ -28789,7 +29005,8 @@
 			"Adjectives": {
 				"Horns": "1",
 				"NicePecs": "1",
-				"Parent": "1"
+				"Parent": "1",
+				"Yellow": "1"
 			},
 			"HeroSelectSoundEffect": "Hero_ElderTitan.Pick",
 			"GibType": "default",
@@ -29003,6 +29220,7 @@
 			"Model": "models/heroes/legion_commander/legion_commander.vmdl",
 			"IdleExpression": "scenes/legion_commander/legion_commander_exp_idle_01.vcd",
 			"SoundSet": "Hero_LegionCommander",
+			"IdleSoundLoop": "Hero_LegionCommander.IdleLoop",
 			"Enabled": "1",
 			"CMEnabled": "1",
 			"Role": "Carry,Disabler,Initiator,Durable,Nuker",
@@ -29082,6 +29300,15 @@
 			"RenderablePortrait": {
 				"Particles": {
 					"particles/units/heroes/hero_legion_commander/legion_loadout.vpcf": "loadout"
+				}
+			},
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_legion_commander_carnival",
+					"token": "#npc_dota_hero_legion_commander_carnival",
+					"token_english": "#npc_dota_hero_legion_commander_carnival__en",
+					"cosmetic_group_name": "#npc_dota_hero_legion_commander_carnival_cosmetic_group_name",
+					"Model": "models/items/legion_commander/dark_carnival_legion_commander/dark_carnival_legion_commander_base.vmdl"
 				}
 			},
 			"ItemSlots": {
@@ -29174,6 +29401,54 @@
 					"SlotIndex": "11",
 					"SlotName": "hero_effigy",
 					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "weapon_persona_1",
+					"SlotText": "#LoadoutSlot_Weapon",
+					"DisplayInLoadout": "0"
+				},
+				"15": {
+					"SlotIndex": "15",
+					"SlotName": "back_persona_1",
+					"SlotText": "#LoadoutSlot_Back",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "4000",
+					"MaxPolygonsLOD1": "1600",
+					"DisplayInLoadout": "0"
+				},
+				"19": {
+					"SlotIndex": "19",
+					"SlotName": "misc_persona_1",
+					"SlotText": "#LoadoutSlot_Misc_Persona_1",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "2800",
+					"MaxPolygonsLOD1": "1400",
+					"DisplayInLoadout": "0"
+				},
+				"20": {
+					"SlotIndex": "20",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"CanEquipFromSlotType": {
+						"6": {
+							"SlotTypeName": "taunt",
+							"ItemDefExclusions": "0000"
+						}
+					},
+					"DisplayInLoadout": "1"
+				},
+				"21": {
+					"SlotIndex": "21",
+					"SlotName": "hero_effigy_persona_1",
+					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"22": {
+					"SlotIndex": "22",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"Bot": {
@@ -29265,7 +29540,8 @@
 				"Legs": "6",
 				"Steed": "1",
 				"Potbelly": "1",
-				"Fiery": "1"
+				"Fiery": "1",
+				"Yellow": "1"
 			},
 			"HeroID": "105",
 			"VoiceFile": "soundevents/voscripts/game_sounds_vo_techies.vsndevts",
@@ -30314,7 +30590,8 @@
 			"Adjectives": {
 				"Wings": "1",
 				"Horns": "1",
-				"Demon": "1"
+				"Demon": "1",
+				"Purple": "1"
 			},
 			"workshop_guide_name": "Terrorblade",
 			"PickSound": "terrorblade_terr_spawn_01",
@@ -30550,7 +30827,8 @@
 				"Nose": "0",
 				"Flying": "1",
 				"Red": "1",
-				"Fiery": "1"
+				"Fiery": "1",
+				"Yellow": "1"
 			},
 			"PickSound": "phoenix_phoenix_bird_respawn",
 			"BanSound": "phoenix_phoenix_bird_moving01",
@@ -30878,6 +31156,15 @@
 					"particles/units/heroes/hero_oracle/oracle_loadout.vpcf": "loadout"
 				}
 			},
+			"Persona": {
+				"1": {
+					"name": "npc_dota_hero_oracle_carnival",
+					"token": "#npc_dota_hero_oracle_carnival",
+					"token_english": "#npc_dota_hero_oracle_carnival__en",
+					"cosmetic_group_name": "#npc_dota_hero_oracle_carnival_cosmetic_group_name",
+					"Model": "models/items/oracle/oracle_carnival/oracle_carnival_base_body.vmdl"
+				}
+			},
 			"ItemSlots": {
 				"0": {
 					"SlotIndex": "0",
@@ -30947,6 +31234,48 @@
 					"SlotIndex": "9",
 					"SlotName": "costume",
 					"SlotText": "#LoadoutSlot_Costume"
+				},
+				"10": {
+					"SlotIndex": "10",
+					"SlotName": "weapon_persona_1",
+					"SlotText": "#LoadoutSlot_Weapon",
+					"TextureWidth": "256",
+					"TextureHeight": "256",
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1000",
+					"DisplayInLoadout": "0"
+				},
+				"13": {
+					"SlotIndex": "13",
+					"SlotName": "back_persona_1",
+					"SlotText": "#LoadoutSlot_Back",
+					"TextureWidth": "512",
+					"TextureHeight": "512",
+					"MaxPolygonsLOD0": "2500",
+					"MaxPolygonsLOD1": "1000",
+					"DisplayInLoadout": "0"
+				},
+				"14": {
+					"SlotIndex": "14",
+					"SlotName": "taunt_persona_1",
+					"SlotText": "#LoadoutSlot_Taunt",
+					"CanEquipFromSlotType": {
+						"4": {
+							"SlotTypeName": "taunt",
+							"ItemDefExclusions": "0000"
+						}
+					},
+					"DisplayInLoadout": "1"
+				},
+				"15": {
+					"SlotIndex": "15",
+					"SlotName": "hero_effigy_persona_1",
+					"SlotText": "#LoadoutSlot_HeroEffigy"
+				},
+				"16": {
+					"SlotIndex": "16",
+					"SlotName": "persona_selector",
+					"SlotText": "#LoadoutSlot_Persona_Selector"
 				}
 			},
 			"Bot": {
@@ -31835,7 +32164,8 @@
 				"Female": "1",
 				"Flying": "1",
 				"Cute": "1",
-				"Green": "1"
+				"Green": "1",
+				"Purple": "1"
 			},
 			"workshop_guide_name": "Dark Willow",
 			"LastHitChallengeRival": "npc_dota_hero_jakiro",
@@ -32350,7 +32680,8 @@
 				"Legs": "0",
 				"Flying": "1",
 				"Undead": "1",
-				"Bearded": "1"
+				"Bearded": "1",
+				"Mask": "1"
 			},
 			"IdleSoundLoop": "Hero_Grimstroke.IdleLoop",
 			"HeroSelectSoundEffect": "Hero_Grimstroke.Pick",
@@ -32825,7 +33156,8 @@
 			"Adjectives": {
 				"Bearded": "1",
 				"NicePecs": "1",
-				"Spirit": "1"
+				"Spirit": "1",
+				"Purple": "1"
 			},
 			"PickSound": "void_spirit_voidspir_spawn_02",
 			"BanSound": "void_spirit_voidspir_anger_03",
@@ -33534,7 +33866,7 @@
 			"SoundSet": "Hero_RingMaster",
 			"IdleSoundLoop": "Hero_RingMaster.IdleLoop",
 			"Enabled": "1",
-			"RandomEnabled": "0",
+			"RandomEnabled": "1",
 			"Role": "Support,Nuker,Escape,Disabler",
 			"Rolelevels": "2,2,2,1",
 			"Complexity": "2",
@@ -33551,6 +33883,10 @@
 			"CMEnabled": "1",
 			"NameAliases": "rm;marionetto;cogliostro",
 			"LastHitChallengeRival": "npc_dota_hero_omniknight",
+			"Adjectives": {
+				"Red": "1",
+				"Yellow": "1"
+			},
 			"HeroSelectSoundEffect": "Hero_RingMaster.Pick",
 			"HealthBarOffset": "240",
 			"GibType": "motor",
@@ -33811,7 +34147,8 @@
 			"NameAliases": "Dawnbreaker, Valora",
 			"Adjectives": {
 				"Female": "1",
-				"Fiery": "1"
+				"Fiery": "1",
+				"Yellow": "1"
 			},
 			"PickSound": "dawnbreaker_pick_shout",
 			"BanSound": "dawnbreaker_ban_shout",
@@ -34301,7 +34638,8 @@
 			"HeroGlowColor": "0 0 255",
 			"Adjectives": {
 				"BadTeeth": "1",
-				"Red": "1"
+				"Red": "1",
+				"Brown": "1"
 			},
 			"PickSound": "0",
 			"BanSound": "0",
@@ -34749,7 +35087,7 @@
 			"IdleExpression": "scenes/kez/kez_exp_idle_01.vcd",
 			"SoundSet": "Hero_Kez",
 			"Enabled": "1",
-			"RandomEnabled": "0",
+			"RandomEnabled": "1",
 			"BotImplemented": "0",
 			"HeroUnlockOrder": "1",
 			"Complexity": "3",
@@ -34788,6 +35126,9 @@
 			"Ability18": "special_bonus_unique_kez_mark_damage",
 			"Ability19": "special_bonus_unique_kez_echo_slash_strike_count",
 			"AbilityTalentStart": "12",
+			"Adjectives": {
+				"Blue": "1"
+			},
 			"AbilityDraftAbilities": {
 				"Ability1": "kez_echo_slash,kez_falcon_rush_ad",
 				"Ability2": "kez_grappling_claw,kez_talon_toss_ad",
@@ -34963,7 +35304,7 @@
 			"IdleExpression": "scenes/largo/largo_idle.vcd",
 			"SoundSet": "Hero_Largo",
 			"Enabled": "1",
-			"RandomEnabled": "0",
+			"RandomEnabled": "1",
 			"Role": "Durable,Disabler,Support",
 			"Rolelevels": "2,1,3",
 			"Complexity": "2",
@@ -34983,6 +35324,10 @@
 			"CMEnabled": "1",
 			"LastHitChallengeRival": "npc_dota_hero_omniknight",
 			"HeroSelectSoundEffect": "Hero_Largo.Pick",
+			"Adjectives": {
+				"Green": "1",
+				"Brown": "1"
+			},
 			"HealthBarOffset": "240",
 			"Ability1": "largo_catchy_lick",
 			"Ability2": "largo_frogstomp",
