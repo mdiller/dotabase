@@ -4185,13 +4185,13 @@
 		"name": "item_recipe_heart",
 		"localized_name": "Heart of Tarrasque Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 700,
+		"cost": 800,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "700",
+			"ItemCost": "800",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_heart",
@@ -4207,7 +4207,7 @@
 		"aliases": "hot|heart of tarrasque",
 		"quality": "epic",
 		"icon": "/panorama/images/items/heart_png.png",
-		"cost": 5200,
+		"cost": 5300,
 		"description": "# Passive: Behemoth's Blood\nYour health regeneration is increased by **1.5%** of your missing health.",
 		"lore": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
 		"secret_shop": false,
@@ -4234,7 +4234,7 @@
 		"shop_tags": "str|regen_health|health_pool|tank",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "5200",
+			"ItemCost": "5300",
 			"ItemShopTags": "str;regen_health;health_pool;tank",
 			"ItemQuality": "epic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -4416,7 +4416,7 @@
 		"cost": 4500,
 		"cooldown": "27",
 		"mana_cost": "75",
-		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **260** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **825**\n\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-40**. \n\nRadius: **1200**",
+		"description": "# Active: Arctic Blast\nEmits a freezing wave that deals **225** magical damage to enemies and slows their movement by **-40%** for **4** seconds.\n\nRadius: **825**\n\n\n# Passive: Freezing Aura\nReduces the attack speed of all enemies by **-40**. \n\nRadius: **1200**",
 		"lore": "Said to have belonged to a goddess, today it retains much of its former power.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -4449,7 +4449,7 @@
 			},
 			{
 				"key": "blast_damage",
-				"value": "260"
+				"value": "225"
 			},
 			{
 				"key": "blast_movement_speed",
@@ -4490,7 +4490,7 @@
 					"affected_by_aoe_increase": "1"
 				},
 				"aura_attack_speed": "-40",
-				"blast_damage": "260",
+				"blast_damage": "225",
 				"blast_movement_speed": "-40",
 				"blast_debuff_duration": "4.0",
 				"blast_radius": {
@@ -5146,13 +5146,13 @@
 		"name": "item_recipe_greater_crit",
 		"localized_name": "Daedalus Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 900,
+		"cost": 1000,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "900",
+			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_greater_crit",
@@ -5168,7 +5168,7 @@
 		"aliases": "daedalus|crit",
 		"quality": "epic",
 		"icon": "/panorama/images/items/greater_crit_png.png",
-		"cost": 5100,
+		"cost": 5200,
 		"description": "# Passive: Critical Strike\nGrants each attack a **30%** chance to deal **225%** damage.",
 		"lore": "A weapon of incredible power that is difficult for even the strongest of warriors to control.",
 		"secret_shop": false,
@@ -5193,7 +5193,7 @@
 		"shop_tags": "damage|crit|dps",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "5100",
+			"ItemCost": "5200",
 			"ItemShopTags": "damage;crit;dps",
 			"ItemQuality": "epic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -5323,7 +5323,7 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/bfury_png.png",
 		"cost": 3900,
-		"cooldown": "4",
+		"cooldown": "3",
 		"cast_range": "350",
 		"description": "# Active: Chop Tree\nDestroy a target tree. \n\n\n# Passive: Quell\nIncreases attack damage against non-hero units by **10** for melee heroes, and **5** for ranged. \n\n\n# Passive: Cleave\nDeals **60%** of attack damage as physical damage in a cone up to **650** around the target. Deals **40%** against creeps. (Melee Only)",
 		"lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
@@ -5393,7 +5393,7 @@
 			"AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
 			"AbilityCastRange": "350",
 			"AbilityCastPoint": "0.0",
-			"AbilityCooldown": "4.0",
+			"AbilityCooldown": "3.0",
 			"ItemCost": "3900",
 			"ItemShopTags": "damage;health_regen;mana_regen;hard_to_tag;farming;dps",
 			"ItemQuality": "epic",
@@ -5452,7 +5452,7 @@
 		"cost": 4650,
 		"cooldown": "34",
 		"mana_cost": "125",
-		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **18** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **28%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
+		"description": "# Active: Mirror Image\nCreates **2** images of your hero that last **18** seconds. \n\nMelee images deal **33%** damage, while Ranged images deal **25%**. Illusions take **300%** damage. \n\nDispel Type: **Basic Dispel**",
 		"lore": "An axe made of reflective materials that causes confusion amongst enemy ranks.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -5513,11 +5513,11 @@
 			},
 			{
 				"key": "images_do_damage_percent_ranged",
-				"value": "-72"
+				"value": "-75"
 			},
 			{
 				"key": "tooltip_damage_outgoing_ranged",
-				"value": "28"
+				"value": "25"
 			},
 			{
 				"key": "invuln_duration",
@@ -5552,8 +5552,8 @@
 				"tooltip_damage_outgoing_melee": "33",
 				"images_take_damage_percent": "200",
 				"tooltip_damage_incoming_total_pct": "300",
-				"images_do_damage_percent_ranged": "-72",
-				"tooltip_damage_outgoing_ranged": "28",
+				"images_do_damage_percent_ranged": "-75",
+				"tooltip_damage_outgoing_ranged": "25",
 				"invuln_duration": "0.1",
 				"vision_radius": "1000"
 			}
@@ -5909,7 +5909,7 @@
 			},
 			{
 				"key": "lifesteal_percent",
-				"value": "30%",
+				"value": "25%",
 				"header": "+",
 				"footer": "Lifesteal"
 			},
@@ -5941,7 +5941,7 @@
 			"AbilityValues": {
 				"bonus_strength": "25",
 				"bonus_damage": "25",
-				"lifesteal_percent": "30",
+				"lifesteal_percent": "25",
 				"unholy_lifesteal_percent": "145",
 				"unholy_lifesteal_total_tooltip": "175",
 				"unholy_duration": "6.0"
@@ -5979,7 +5979,7 @@
 		"cooldown": "35",
 		"cast_range": "800",
 		"mana_cost": "50",
-		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **15** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.",
+		"description": "# Active: Static Charge\nPlaces a charged shield on a target unit for **12** seconds which has a **20%** chance to release a **225** magical damage shocking bolt at a nearby attacker and **4** additional enemies.\n\n\n# Passive: Chain Lightning\nGrants a **25%** chance on attack to release a bolt of electricity that leaps between **12** targets within a **650** radius, dealing **180** magical damage to each. Lightning proc pierces evasion.",
 		"lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -5998,7 +5998,7 @@
 			},
 			{
 				"key": "static_duration",
-				"value": "15.0"
+				"value": "12.0"
 			},
 			{
 				"key": "static_chance",
@@ -6080,7 +6080,7 @@
 			"AbilityValues": {
 				"bonus_damage": "25",
 				"bonus_attack_speed": "90",
-				"static_duration": "15.0",
+				"static_duration": "12.0",
 				"static_chance": "20",
 				"static_strikes": "4",
 				"static_damage": "225",
@@ -6607,7 +6607,7 @@
 			},
 			{
 				"key": "lifesteal_percent",
-				"value": "24%",
+				"value": "22%",
 				"header": "+",
 				"footer": "Lifesteal"
 			},
@@ -6656,7 +6656,7 @@
 			"SuggestLategame": "1",
 			"AbilityValues": {
 				"bonus_damage": "20",
-				"lifesteal_percent": "24",
+				"lifesteal_percent": "22",
 				"berserk_bonus_attack_speed": "100",
 				"berserk_bonus_movement_speed_melee": "12",
 				"berserk_bonus_movement_speed": "6",
@@ -7974,12 +7974,12 @@
 		"name": "item_recipe_heavens_halberd",
 		"localized_name": "Heaven's Halberd Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 450,
+		"cost": 350,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
-			"ItemCost": "450",
+			"ItemCost": "350",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_heavens_halberd",
@@ -7995,7 +7995,7 @@
 		"aliases": "heaven's halberd",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/heavens_halberd_png.png",
-		"cost": 3400,
+		"cost": 3300,
 		"cooldown": "15",
 		"cast_range": "750",
 		"mana_cost": "25",
@@ -8043,7 +8043,7 @@
 			"AbilityCastRange": "750",
 			"AbilityCastPoint": "0.0",
 			"AbilityManaCost": "25",
-			"ItemCost": "3400",
+			"ItemCost": "3300",
 			"ItemShopTags": "regen_health;save;teamfight;tank",
 			"ItemQuality": "artifact",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -8829,12 +8829,12 @@
 		"name": "item_recipe_octarine_core",
 		"localized_name": "Octarine Core Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 200,
+		"cost": 400,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
-			"ItemCost": "200",
+			"ItemCost": "400",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_octarine_core",
@@ -9147,13 +9147,13 @@
 		"name": "item_recipe_dragon_lance",
 		"localized_name": "Dragon Lance Recipe",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 450,
+		"cost": 550,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "450",
+			"ItemCost": "550",
 			"ItemShopTags": "",
 			"ItemRecipe": "1",
 			"ItemResult": "item_dragon_lance",
@@ -9169,7 +9169,7 @@
 		"aliases": "mana|mb|octarine core",
 		"quality": "rare",
 		"icon": "/panorama/images/items/octarine_core_png.png",
-		"cost": 4900,
+		"cost": 5100,
 		"lore": "At the core of spellcraft are spectrums only the very gifted can sense.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -9207,7 +9207,7 @@
 		"shop_tags": "move_speed|boost_mana|mana_pool|mana",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "4900",
+			"ItemCost": "5100",
 			"ItemShopTags": "move_speed;boost_mana;mana_pool;mana",
 			"ItemQuality": "rare",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -9228,7 +9228,7 @@
 		"aliases": "dragon lance",
 		"quality": "artifact",
 		"icon": "/panorama/images/items/dragon_lance_png.png",
-		"cost": 1900,
+		"cost": 2000,
 		"lore": "The forward charge of the wyvern host grants no quarter.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -9260,7 +9260,7 @@
 		"shop_tags": "damage",
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-			"ItemCost": "1900",
+			"ItemCost": "2000",
 			"ItemShopTags": "damage",
 			"ItemQuality": "artifact",
 			"SuggestLategame": "1",
@@ -9743,9 +9743,9 @@
 		"quality": "epic",
 		"icon": "/panorama/images/items/silver_edge_png.png",
 		"cost": 5700,
-		"cooldown": "22",
+		"cooldown": "23",
 		"mana_cost": "75",
-		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **22%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **5** seconds, and cap their movement speed to **200**.\n\n",
+		"description": "# Active: Shadow Walk\nMakes you invisible for **17** seconds, or until you attack or cast a spell.  While invisible, you move **20%** faster and can move through units.  \n\nAttacking to end the invisibility will deal **300** bonus physical damage, disable their passive abilities for **5** seconds, and cap their movement speed to **200**.\n\n",
 		"lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
@@ -9780,7 +9780,7 @@
 			},
 			{
 				"key": "windwalk_movement_speed",
-				"value": "22"
+				"value": "20"
 			},
 			{
 				"key": "windwalk_fade_time",
@@ -9808,7 +9808,7 @@
 		"json_data": {
 			"AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
 			"FightRecapLevel": "1",
-			"AbilityCooldown": "22.0",
+			"AbilityCooldown": "23.0",
 			"AbilitySharedCooldown": "shadow_blade",
 			"AbilityManaCost": "75",
 			"ItemCost": "5700",
@@ -9823,7 +9823,7 @@
 				"bonus_intellect": "0",
 				"bonus_mana_regen": "0",
 				"windwalk_duration": "17.0",
-				"windwalk_movement_speed": "22",
+				"windwalk_movement_speed": "20",
 				"windwalk_fade_time": "0.3",
 				"windwalk_bonus_damage": "300",
 				"backstab_duration": "5",
@@ -10386,7 +10386,7 @@
 		"aliases": "fs|force staff",
 		"quality": "epic",
 		"icon": "/panorama/images/items/hurricane_pike_png.png",
-		"cost": 4450,
+		"cost": 4550,
 		"cooldown": "19",
 		"cast_range": "650",
 		"mana_cost": "150",
@@ -10474,7 +10474,7 @@
 			"AbilityCooldown": "19.0",
 			"AbilitySharedCooldown": "force",
 			"AbilityManaCost": "150",
-			"ItemCost": "4450",
+			"ItemCost": "4550",
 			"ItemShopTags": "int;damage;attack_speed;hard_to_tag;mobility;escape;save",
 			"ItemQuality": "epic",
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -10513,7 +10513,7 @@
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "0.8",
+				"value": "0.6",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -10552,7 +10552,7 @@
 			"UIDropSound": "Item.DropRingShop",
 			"WorldDropSound": "Item.DropRingWorld",
 			"AbilityValues": {
-				"mana_regen": "0.8",
+				"mana_regen": "0.6",
 				"magic_damage_block": "120",
 				"min_damage": "75",
 				"initial_charges": "6"
@@ -18751,7 +18751,7 @@
 			},
 			{
 				"key": "bonus_damage",
-				"value": "-30 -60",
+				"value": "-35 -70",
 				"header": "-",
 				"footer": "Attack Damage"
 			}
@@ -18770,7 +18770,7 @@
 			"AbilityValues": {
 				"bonus_gpm": "65 90",
 				"bonus_mana": "150 200",
-				"bonus_damage": "-30 -60"
+				"bonus_damage": "-35 -70"
 			}
 		}
 	},
@@ -21037,7 +21037,7 @@
 		"ability_special": [
 			{
 				"key": "mana_regen",
-				"value": "1.75",
+				"value": "1.5",
 				"header": "+",
 				"footer": "Mana Regeneration"
 			},
@@ -21120,7 +21120,7 @@
 			"ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
 			"SuggestLategame": "1",
 			"AbilityValues": {
-				"mana_regen": "1.75",
+				"mana_regen": "1.5",
 				"bonus_all_stats": "3",
 				"bonus_armor": "6",
 				"bonus_mana": "150",
@@ -21371,13 +21371,13 @@
 		"name": "item_recipe_hydras_breath",
 		"localized_name": "item_recipe_hydras_breath",
 		"icon": "/panorama/images/items/recipe.png",
-		"cost": 1100,
+		"cost": 1000,
 		"secret_shop": false,
 		"is_neutral_enhancement": false,
 		"ability_special": [],
 		"json_data": {
 			"Model": "models/props_gameplay/recipe.vmdl",
-			"ItemCost": "1100",
+			"ItemCost": "1000",
 			"ItemShopTags": "",
 			"ItemPurchasable": "1",
 			"ItemRecipe": "1",

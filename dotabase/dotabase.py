@@ -63,7 +63,6 @@ class Hero(Base):
 	talents = relationship("Talent", order_by="Talent.slot")
 	responses = relationship("Response", back_populates="hero")
 	voice: 'Voice' = relationship("Voice", uselist=False, back_populates="hero")
-	facets = relationship("Facet", back_populates="hero")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Hero', foreign(LocaleString.row_id) == Hero.id)",
@@ -116,14 +115,11 @@ class Ability(Base):
 	shard_description = Column(String)
 
 	innate = Column(Boolean)
-	facet_id = Column(Integer, ForeignKey("facets.id"), nullable=True)
 
 	json_data = Column(String)
 
-	facet: 'Facet' = relationship("Facet", back_populates="abilities")
 	hero: Hero = relationship("Hero", back_populates="abilities")
 	talent_links = relationship("Talent", back_populates="ability")
-	facet_strings = relationship("FacetAbilityString", back_populates="ability")
 	strings = relationship(
 		"LocaleString",
 		primaryjoin="and_(foreign(LocaleString.table) == 'Ability', foreign(LocaleString.row_id) == Ability.id)",
@@ -140,10 +136,6 @@ class Ability(Base):
 	# 					return string.value
 	# 	return Base.__getattribute__(self, name)
 	
-	@property
-	def facet_grants(self):
-		return self.facet_id is not None
-
 	@property
 	def aghanim(self):
 		return self.scepter_description
@@ -185,67 +177,6 @@ class Talent(Base):
 
 	def __repr__(self):
 		return f"Talent: {self.localized_name}"
-
-class Facet(Base):
-	__allow_unmapped__ = True
-	__tablename__ = 'facets'
-
-	id = Column(Integer, primary_key=True) # auto-generated
-	name = Column(String)
-	localized_name = Column(String)
-	hero_id = Column(Integer, ForeignKey("heroes.id"), nullable=True)
-	icon =  Column(String)
-	icon_name =  Column(String)
-	color =  Column(String)
-	gradient_id =  Column(Integer)
-	slot = Column(Integer)
-
-	ability_special = Column(String)
-	json_data = Column(String)
-
-	description = Column(String)
-
-
-	hero: Hero = relationship("Hero", back_populates="facets")
-	abilities = relationship("Ability", order_by="Ability.id", back_populates="facet")
-	ability_strings = relationship("FacetAbilityString", back_populates="facet")
-	strings = relationship(
-		"LocaleString",
-		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == Facet.id)",
-		viewonly=True
-	)
-
-	# other stuff could include
-	# "KeyValueOverrides": {
-    #   "AttributeBaseStrength": "22",
-    #   "AttributeStrengthGain": "4.0"
-    # },
-	# "AbilityIconReplacements": {
-    #   "windrunner_focusfire": "windrunner_whirlwind",
-    #   "windrunner_focusfire_cancel": "windrunner_whirlwind_stop"
-    # }
-
-	def __repr__(self):
-		return f"Facet: {self.localized_name}"
-
-
-class FacetAbilityString(Base):
-	__allow_unmapped__ = True
-	__tablename__ = 'facetabilitystrings'
-
-	id = Column(Integer, primary_key=True) # auto-generated
-	facet_id = Column(Integer, ForeignKey("facets.id"))
-	ability_id = Column(Integer, ForeignKey("abilities.id"))
-	description = Column(String)
-
-	ability: Ability = relationship("Ability", back_populates="facet_strings")
-	facet: Facet = relationship("Facet", back_populates="ability_strings")
-
-	strings = relationship(
-		"LocaleString",
-		primaryjoin="and_(foreign(LocaleString.table) == 'Facet', foreign(LocaleString.row_id) == FacetAbilityString.id)",
-		viewonly=True
-	)
 
 
 class Item(Base):
